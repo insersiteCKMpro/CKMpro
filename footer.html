@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <br>
+            <h2 class="text-center">Les Cibles</h2>
+            <br>
+            <main class="row">
+                <div class="col-md-6">
+                    <p style="background:red; width: 100%; height: 15vh"></p>
+                    <h4>Profesionnel</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi minus expedita aliquam beatae? Qui, harum in maxime officia hic, ea illo animi quam quidem, nobis eum repellendus? Error, officiis alias.</p>
+                </div>
+                <div class="col-md-6">
+                    <p style="background:blue; width: 100%; height: 15vh"></p>
+                    <h4>Particulier</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa dignissimos iusto perspiciatis aperiam omnis? Eaque, molestias repudiandae!</p>
+                </div>
+            </main>
+        
+        </section>
+
+        <br>
+        <h2 class="text-center">La Boutique CKM</h2>
+        <br>
+        
+        
+
+    </div>
+    <img src="img/not-found-image-15383864787lu.jpg" style="width: 100%; height: 50vh" alt="">
+    <hr>
+    <h1>My First Google Map</h1>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    
+    <br>
+    <footer style="background:grey; width: 100%; height: 26vh;">
+        <div style="width: 100%; height: 20vh; display: flex;">
+            <div class="text-center"  style="background:blue; width: 33.3%; height: 20vh;">
+                <a href="">CKM</a>
+                <a href="">3D</a>
+                <a href="">Nettoyage</a>
+                <a href="">Espace Verts</a>
+            </div>
+            <div class="text-center"  style="background:blueviolet; width: 33.3%; height: 20vh;">
+                <a href="">La Boutique</a>
+                <a href="">Contact</a>
+                <a href="">Mention Légales</a>
+                <a href="">Politique de Confidentialité</a>
+            </div>
+            <div class="text-center"  style="background:green; width: 33.3%; height: 20vh;">
+                <div class="" style="background:purple; height: 6vh"></div>
+                <div class="" style="background:orangered; height: 6vh"><div>
+                <div class="" style="background:salmon; height: 6vh"></div>
+            </div>
+        </div>
+        <br>
+        <div id="copyright" class="text-center" role="contentinfo">Copyright 2020 Insersite</div>
+    </footer>
+
+    <script>
+    function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(48.995487,1.910693),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
