@@ -8,6 +8,30 @@
     <title>Document</title>
 </head>
 <body>
+    <img src="img/téléchargement.png" type="button" width="5%" height="100vh" style="position: fixed; top: 20vh; left: 185vh;" data-toggle="modal" data-target="#exampleModalScrollable">
+      
+      <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">Contact</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              tel:0123456789 <br>
+              email: yaya.ckm@gmail.com
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     <div class="container">
         <section>
             <br>
@@ -45,9 +69,23 @@
     </div>
     
     <hr>
+    
     <h1>My First Google Map</h1>
-
-    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":512,"width":1920,"zoom":17,"queryString":"39 Rue Paul Doumer, 78130 Les Mureaux, France","place_id":"ChIJfdZqCpKS5kcRFerEh13H6cg","satellite":false,"centerCoord":[48.9955122682653,1.9106021499999848],"cid":"0xc8e9c75d87c4ea15","lang":"fr","cityUrl":"/france/versailles-903","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"156020"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=156020';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a></div>
+    
+    <hr>
 
     
     <br>
@@ -81,18 +119,11 @@
         <div id="copyright" class="text-center" role="contentinfo">Copyright 2020 Insersite</div>
     </footer>
 
-    <script>
-    function myMap() {
-    var mapProp= {
-    center:new google.maps.LatLng(48.995487,1.910693),
-    zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
