@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="img/téléchargement.png" type="button" width="5%" height="100vh" style="position: fixed; top: 20vh; left: 185vh;" data-toggle="modal" data-target="#exampleModalScrollable">
-      
+    <img src="img/TOP BAR/telephone.png" type="button" width="5%" height="100vh" style="position: fixed; top: 20vh; left: 185vh;" data-toggle="modal" data-target="#exampleModalScrollable">
       <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
           <div class="modal-content">
@@ -24,102 +23,133 @@
               email: yaya.ckm@gmail.com
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">fermer</button>
             </div>
           </div>
         </div>
       </div>
-
-
-    <div class="container">
+    <div class="container-fluid">
         <section>
             <br>
             <h2 class="text-center">Les Cibles</h2>
             <br>
-            <main class="row">
+            <main class="row justify-content-md-center">
                 <div class="col-md-6">
-                    <p style="background:red; width: 100%; height: 15vh"></p>
-                    <h4>Profesionnel</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi minus expedita aliquam beatae? Qui, harum in maxime officia hic, ea illo animi quam quidem, nobis eum repellendus? Error, officiis alias.</p>
+                    <img src="img/CIBLES/professionnel_maq.png" style="width: 100%; height: 15vh">
+                    <h4 class="text-center">Profesionnel</h4 class="text-center">
+                    <a href="https://www.youtube.com/?hl=fr&gl=FR" target="_blank" style="text-decoration: none; color: black;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi minus expedita aliquam beatae? Qui, harum in maxime officia hic, ea illo animi quam quidem, nobis eum repellendus? Error, officiis alias.</a>
                 </div>
                 <div class="col-md-6">
-                    <p style="background:blue; width: 100%; height: 15vh"></p>
-                    <h4>Particulier</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa dignissimos iusto perspiciatis aperiam omnis? Eaque, molestias repudiandae!</p>
+                    <img src="img/CIBLES/particulier-maq.png" style="width: 100%; height: 15vh">
+                    <h4 class="text-center">Particulier</h4 class="text-center">
+                    <a href="https://www.youtube.com/?hl=fr&gl=FR" target="_blank" style="text-decoration: none; color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa dignissimos iusto perspiciatis aperiam omnis? Eaque, molestias repudiandae!</a>
                 </div>
             </main>
-        
+            <br>
             <div style="width: 100%; height: 20vh; display: flex;">
-                <div  style="background:yellow; width: 49%; height: 20vh;"></div>
-                <div  style="background:black; width: 2%; height: 20vh;"></div>
-                <div  style="background:crimson; width: 49%; height: 20vh;"></div>
+                <div  style="width: 49%; height: 20vh;">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                          <div class="carousel-item active">
+                            <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!</p>
+                            <img src="img/TESTIMONIAUX/5 STARS.png" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!</p>
+                            <img src="img/TESTIMONIAUX/5 STARS.png" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!</p>
+                            <img src="img/TESTIMONIAUX/5 STARS.png" alt="">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div  class="text-center" style="margin-left: auto; margin-right: auto; width:2%; border-left:1px solid gray; height:16vh;"></div>
+                <div  style="width: 49%; height: 20vh;">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                          <div class="carousel-item active">
+                            <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!</p>
+                            <img src="img/TESTIMONIAUX/5 STARS.png" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!</p>
+                            <img src="img/TESTIMONIAUX/5 STARS.png" alt="">
+                          </div>
+                          <div class="carousel-item">
+                            <p class="d-block w-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!</p>
+                            <img src="img/TESTIMONIAUX/5 STARS.png" alt="">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                </div>
             </div>
         </section>
-
         <br>
         <h2 class="text-center">La Boutique CKM</h2>
         <br>
-        
-        <div style="background:burlywood; width: 100%; height: 50vh; display: flex; justify-content: space-around;">
-            <div style="background:cadetblue; width: 30%; height: 25vh; margin: 10vh auto;"></div>
-            <div style="background:chartreuse; width: 30%; height: 25vh; margin: 10vh auto;"></div>
+        <div style="background:url(img/ECOMMERCE_BOUTIQUE/produits_boutique_maq.png) no-repeat;background-size: cover; width: 100%; height: 50vh; display: flex; justify-content: space-around;">
+            <div style="margin: 10vh auto;">
+                <img src="../CKMpro/img/ECOMMERCE_BOUTIQUE/CKM PRO LOGO DEF BOUTIQUE.png" width="65%" height="200vh" alt="">
+            </div>
+            <div style="width: 30%; height: 25vh; margin: 10vh auto;">
+                <img src="../CKMpro/img/ECOMMERCE_BOUTIQUE/produit_spray_2.png" width="22%" height="250vh" alt="">
+            </div>
         </div>
-
     </div>
-    
     <hr>
-    
-    <h1>My First Google Map</h1>
-    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-        var setting = {"height":512,"width":1920,"zoom":17,"queryString":"39 Rue Paul Doumer, 78130 Les Mureaux, France","place_id":"ChIJfdZqCpKS5kcRFerEh13H6cg","satellite":false,"centerCoord":[48.9955122682653,1.9106021499999848],"cid":"0xc8e9c75d87c4ea15","lang":"fr","cityUrl":"/france/versailles-903","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"156020"};
-        var d = document;
-        var s = d.createElement('script');
-        s.src = 'https://1map.com/js/script-for-user.js?embed_id=156020';
-        s.async = true;
-        s.onload = function (e) {
-          window.OneMap.initMap(setting)
-        };
-        var to = d.getElementsByTagName('script')[0];
-        to.parentNode.insertBefore(s, to);
-      })();</script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a></div>
-    
-    <hr>
-
-    
     <br>
-    <footer style="background:grey; width: 100%; height: 26vh;">
-        <div class="row">
-            <div class="col-md-4 text-center"  style="background:blue; width: 33.3%; height: 20vh;">
-                <a href="">CKM</a>
-                <a href="">3D</a>
-                <a href="">Nettoyage</a>
-                <a href="">Espace Verts</a>
-            </div>
-            <div class="col-md-4 text-center"  style="background:blueviolet; width: 33.3%; height: 20vh;">
-                <a href="">La Boutique</a>
-                <a href="">Contact</a>
-                <a href="">Mention Légales</a>
-                <a href="">Politique de Confidentialité</a>
-            </div>
-            <div class="col-md-4 text-center row"  style="background:green; width: 33.4%; height: 20vh;">
-                <div class="col-md-4">
-                    <div style="background:purple; height: 6.7vh; margin: 7vh auto"></div>
+    <footer style="width: 100%; height: 23vh;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 text-center" style="width: 33.3%; height: 15vh;">
+                    <a href="">CKM</a><br>
+                    <a href="">3D</a><br>
+                    <a href="">Nettoyage</a><br>
+                    <a href="">Espace Verts</a><br>
                 </div>
-                <div class="col-md-4">
-                    <div style="background:orangered; height: 6.7vh; margin: 7vh auto"></div>
+                <div class="col-md-4 text-center"  style="width: 33.3%; height: 15vh;">
+                    <a href="">La Boutique</a><br>
+                    <a href="">Contact</a><br>
+                    <a href="">Mention Légales</a><br>
+                    <a href="">Politique de Confidentialité</a><br>
                 </div>
-                <div class="col-md-4">
-                    <div style="background:salmon; height: 6.7vh; margin: 7vh auto"></div>
+                <div class="col-md-4 text-center row" style="width: 33.4%; height: 15vh;">
+                    <div class="col-md-4 row">
+                        <div class="col-sm">
+                            <img src="img/FOOTER - SOCIAL MEDIA/FB.png" style="height: 6.7vh; margin: 7vh auto">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/FOOTER - SOCIAL MEDIA/SNAPCHAT.png" style="height: 6.7vh; margin: 7vh auto">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/FOOTER - SOCIAL MEDIA/INSTAGRAM.png" style="height: 6.7vh; margin: 7vh auto">
+                    </div>
                 </div>
             </div>
+            <br>
+            <div id="copyright" class="text-center" role="contentinfo">Copyright 2020 Insersite</div>
         </div>
-        <br>
-        <div id="copyright" class="text-center" role="contentinfo">Copyright 2020 Insersite</div>
     </footer>
-
-    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
