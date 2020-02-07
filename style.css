@@ -1,6 +1,7 @@
 #conteneur
 {
     width: 960px;	
+    height: auto;
 	background: rgb(181, 182, 178);
 	color: white;
     margin: 0 auto;
@@ -15,16 +16,10 @@ header
     text-align: center;
     border: 1px solid;
 }
-nav 
+nav
 {
-    background: rgba(233, 211, 84, 0.973);
-    height: 60px;
+    border: 1px solid;
     width: 960px;
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-    color: #000;
-
 }
 section
 {
