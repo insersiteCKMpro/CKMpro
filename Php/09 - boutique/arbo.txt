@@ -1,0 +1,21 @@
+Arbo Site ecommerce 
+    1 dossier : 09-boutique
+
+    A l'intérieur 
+
+    1 dossier : admin
+        1 fichier gestion_boutique.php
+        1 fichier gestion_membre.php
+        1 fichier gestion_commande.php
+    1 dossier : include 
+        1 fichier init.php 
+        1 fichier functions.php
+    1 dossier : photo 
+
+        A la racine du dossier 09-boutique
+        1 fichier connexion.php 
+        1 fichier inscription.php 
+        1 fichier profil.php 
+        1 fichier boutique.php 
+        1 fichier fiche_produit.php 
+        1 fichier panier.php 
