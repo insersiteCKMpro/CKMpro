@@ -11,61 +11,85 @@
     <header>
         
     </header>
-    <img src="img/téléchargement.png" type="button" width="5%" height="100vh" style="position: fixed; top: 20vh; left: 185vh;" data-toggle="modal" data-target="#exampleModalScrollable">
-      
-      <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalScrollableTitle">Contact</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              tel:0123456789 <br>
-              email: yaya.ckm@gmail.com
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">fermer</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="container">
+    
+    <div class="container_fluid">
         <section>
             <br>
-            <h2 class="text-center">Les Cibles</h2>
+            <h2 class="text-center">Titre H1</h2>
             <br>
-            <main class="row justify-content-md-center">
-                <div class="col-md-6">
-                    <p style="background:red; width: 100%; height: 15vh"></p>
-                    <h4>Profesionnel</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi minus expedita aliquam beatae? Qui, harum in maxime officia hic, ea illo animi quam quidem, nobis eum repellendus? Error, officiis alias.</p>
+            <br>
+            <main class="row">
+                <div class="col-md-4">
+                    <div style="width: 100%; height: 40vh">
+                        <h2 class="text-center">Contact</h2>
+                        <br>
+                        <div style="margin: 0 20vh ;width: 75%; height: 10vh">
+                            <p>numero de téléphone:</p>
+                            <p>0123456789</p>
+                        </div>
+                    </div>
                 </div>
+                <div  class="text-center" style="width:2%; border-left:1px solid black; height:82vh;"></div>
                 <div class="col-md-6">
-                    <p style="background:blue; width: 100%; height: 15vh"></p>
-                    <h4>Particulier</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa dignissimos iusto perspiciatis aperiam omnis? Eaque, molestias repudiandae!</p>
+                    <div style="width: 65%; height: 80vh">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputName1">Nom*</label>
+                                <input type="nom" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFirsteName1">Prenom*</label>
+                                <input type="prenom" class="form-control" id="exampleInputFirstName1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email*</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPhone1">Téléphone*</label>
+                                <input type="phone" class="form-control" id="exampleInputPhone1" aria-describedby="phoneHelp">
+                            </div>
+                            <div class="form-check form-check-inline">Activité*
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">3D</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Nettoyage</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Espave Vert</label>
+                            </div>
+                            <br>
+                            <select class="form-control">
+                                <option>Default select</option>
+                            </select>
+                            <br>
+                            <select class="form-control">
+                                <option>Default select</option>
+                            </select>
+                            <br>
+                            <select class="form-control">
+                                <option>Default select</option>
+                            </select>
+                            <br>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </main>
         
-            <div style="width: 100%; height: 20vh; display: flex;">
-                <div  style="background:yellow; width: 49%; height: 20vh;"></div>
-                <div  style="background:black; width: 2%; height: 20vh;"></div>
-                <div  style="background:crimson; width: 49%; height: 20vh;"></div>
-            </div>
-        </section>
 
         <br>
-        <h2 class="text-center">La Boutique CKM</h2>
+        
         <br>
         
-        <div style="background:burlywood; width: 100%; height: 50vh; display: flex; justify-content: space-around;">
-            <div style="background:cadetblue; width: 30%; height: 25vh; margin: 10vh auto;"></div>
-            <div style="background:chartreuse; width: 30%; height: 25vh; margin: 10vh auto;"></div>
-        </div>
+        
 
     </div>
     <hr>
@@ -87,36 +111,38 @@
     <hr>
 
     <br>
-    <footer style="background:grey; width: 100%; height: 26vh;">
-        <div class="row">
-            <div class="col-md-4 text-center"  style="background:blue; width: 33.3%; height: 20vh;">
-                <a href="">CKM</a>
-                <a href="">3D</a>
-                <a href="">Nettoyage</a>
-                <a href="">Espace Verts</a>
-            </div>
-            <div class="col-md-4 text-center"  style="background:blueviolet; width: 33.3%; height: 20vh;">
-                <a href="">La Boutique</a>
-                <a href="">Contact</a>
-                <a href="">Mention Légales</a>
-                <a href="">Politique de Confidentialité</a>
-            </div>
-            <div class="col-md-4 text-center row" style="background:green; width: 33.4%; height: 20vh;">
-                <div class="col-md-4 row">
-                    <div class="col-sm">
-                        <div style="background:purple; height: 6.7vh; margin: 7vh auto"></div>
+    <footer style="width: 100%; height: 23vh;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 text-center" style="width: 33.3%; height: 15vh;">
+                    <a href="">CKM</a><br>
+                    <a href="">3D</a><br>
+                    <a href="">Nettoyage</a><br>
+                    <a href="">Espace Verts</a><br>
+                </div>
+                <div class="col-md-4 text-center"  style="width: 33.3%; height: 15vh;">
+                    <a href="">La Boutique</a><br>
+                    <a href="">Contact</a><br>
+                    <a href="">Mention Légales</a><br>
+                    <a href="">Politique de Confidentialité</a><br>
+                </div>
+                <div class="col-md-4 text-center row" style="width: 33.4%; height: 15vh;">
+                    <div class="col-md-4 row">
+                        <div class="col-sm">
+                            <img src="img/FOOTER - SOCIAL MEDIA/FB.png" style="height: 6.7vh; margin: 7vh auto">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/FOOTER - SOCIAL MEDIA/SNAPCHAT.png" style="height: 6.7vh; margin: 7vh auto">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/FOOTER - SOCIAL MEDIA/INSTAGRAM.png" style="height: 6.7vh; margin: 7vh auto">
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-1">
-                    <div style="background:orangered; height: 6.7vh; margin: 7vh auto"></div>
-                </div>
-                <div class="col-md-4 col-sm-1">
-                    <div style="background:salmon; height: 6.7vh; margin: 7vh auto"></div>
-                </div>
             </div>
+            <br>
+            <div id="copyright" class="text-center" role="contentinfo">Copyright 2020 Insersite</div>
         </div>
-        <br>
-        <div id="copyright" class="text-center" role="contentinfo">Copyright 2020 Insersite</div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
