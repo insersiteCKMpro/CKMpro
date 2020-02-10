@@ -1,29 +1,18 @@
-#conteneur
-{
-    width: 960px;	
-    height: 300vh;
-	background: pink;
-	color: white;
-    margin: 0 auto;
-    color: #000;
-    
+#contenair
+{	
+    width: auto;
+    height: auto;
 }
 header 
 {
-
     background: white;
-    height: 15vh;
-    line-height: 60px;
+    height: 25vh;
     text-align: center;
     border: 1px solid;
 }
-img
-{
-    width: 365px;
-    height: 91px;
-}
 nav
 {
+    background-color: chartreuse;
     border: 1px solid;
     width: 960px;
 }
@@ -34,30 +23,27 @@ section
 	background: gray;
 	margin: 10px;	
 }
-.row1 
+.row1 p
 {
-    background-color: rgba(181, 192, 191, 0.329);
-    float: left;
+    background-color: rgba(243, 72, 72, 0.329);
     line-height: 122px;
-
-    height: 22vh;
-    width: 940px;
+    height: 8vh;
+    width: 1418px;
     border: 1px solid;
 }
-img1
+.img
 {
     background-color: blue;
-    width: 940px;
-    height: 10vh;
+    width: 1416px;
+    height: 5vh;
     border: 1px solid;
 }
 .row2
 {
     background-color: white;
     display: flex;
-    height: 33vh;
-
-    width: 940px;
+    height: 25vh;
+    width:1416px;
     border: 1px solid;
 }
 .row3
