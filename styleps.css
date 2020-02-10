@@ -1,0 +1,53 @@
+.top
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right:30vh;
+}
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav
+{
+    justify-content: center;
+    display: flex;
+}
+.BarreNav 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size:1.5em;
+    margin-top:2vh;
+
+}
+.titreNav
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.nav-link
+{
+    color:black !important;
+    text-decoration: none !important;
+}
+.jaune:hover
+{
+    background-color:yellow;
+    border-radius: 10px 10px 10px 10px;
+}
+.bleu:hover
+{
+    background-color:rgb(0, 225, 255);
+    border-radius: 10px 10px 10px 10px;
+}
+.green:hover
+{
+    background-color:green !important;
+    border-radius: 10px 10px 10px 10px;
+}
