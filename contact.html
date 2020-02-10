@@ -6,7 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+    #customControlValidation1:checked~.custom-control-label::before 
+    {
+    color: #fff200;
+    border-color: #fff200;
+    background-color: #fff200;
+    }
+
+    #customControlValidation2:checked~.custom-control-label::before
+    {
+    color: #00aeef;
+    border-color: #00aeef;
+    background-color: #00aeef;
+    }
+
+    #customControlValidation3:checked~.custom-control-label::before 
+    {
+    color:  #00a651;
+    border-color:  #00a651;
+    background-color:  #00a651;
+    }
+    </style>
 </head>
+
 <body>
     <header>
         
@@ -52,16 +75,16 @@
                             <div class="form-check form-check-inline">Activité*
                                 <br>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked">
-                                    <label class="custom-control-label" for="customControlValidation2">3D</label>
+                                    <input type="radio" class="custom-control-input custom-control-label" id="customControlValidation1" name="radio-stacked">
+                                    <label class="custom-control-label" for="customControlValidation1">3D</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked">
+                                    <input type="radio" class="custom-control-input custom-control-input2" id="customControlValidation2" name="radio-stacked">
                                     <label class="custom-control-label" for="customControlValidation2">Nettoyage</label>
                                 </div>
                                 <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked">
-                                    <label class="custom-control-label" for="customControlValidation2">Espaces Verts</label>
+                                <input type="radio" class="custom-control-input custom-control-input3" id="customControlValidation3" name="radio-stacked">
+                                    <label class="custom-control-label" for="customControlValidation3">Espaces Verts</label>
                                 </div>
                             </div>
                             <br>
@@ -87,7 +110,7 @@
                             </select>
                             <br>
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <label for="exampleFormControlTextarea1">Description</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
