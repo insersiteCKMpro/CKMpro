@@ -1,0 +1,128 @@
+#container
+{	
+    width: auto;
+    height: auto;
+}
+.fixed-top 
+{
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+  }
+  .logo 
+  {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+  }
+  #logoHome 
+  {
+    height: 100px;
+  }
+  .nav-link
+  {
+    color: black !important;
+  }
+  #dropdown01:hover 
+  {
+    background-color: yellow;
+    border-radius: 4px;
+  }
+  #dropdown02:hover {
+    background-color: rgb(0, 140, 255);
+    border-radius: 4px;
+  }
+  #dropdown03:hover {
+    background-color: rgb(3, 167, 44);
+    border-radius: 4px;
+  }
+  .dropdown-menu {
+    position: absolute;
+    left: auto;
+  }
+
+  @media screen and (max-width: 1271px) and (min-width: 1024px) 
+  {
+    #homeLogo {
+      height: 4vh !important;
+      width: 4vh !important;
+      position: absolute !important;
+      left: 20vh !important;
+      top: 0vh !important;
+    }
+    .fixed-top {
+      display: block;
+    }
+    #num {
+      position: absolute;
+      right: inherit;
+    }
+    #nom
+     {
+      position: absolute;
+      right: inherit;
+      top: 20px;
+    }
+  }
+.haut
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+}
+.img1
+{
+    margin-top: 30px;
+    width: 40vh;
+    height: 15vh;
+}
+.img2
+{
+    width: 113vh;
+    height: 20vh;
+}
+.img3
+{   
+    width: 280px;
+    height: 200px;
+}
+.img4
+{
+        width: 20px;
+        height: 20px;
+}
+section
+{
+    min-height: 700px;
+    height: 125vh;
+	background: gray;
+	margin: 10px;	
+}
+main
+{
+    background-color: rgb(236, 22, 22);
+    border: 1px solid;
+    height: 3vh;
+}
+.row1
+{
+    background-color: white;
+    height: 30vh;
+    border: 1px solid;
+}
+.row2
+{
+    background-color: white;
+    display: flex;
+    height: 20vh;
+    border: 1px solid;
+}
+.row3
+{
+    background-color:white;
+    display: flex;
+    height:40vh;
+    border: 1px solid;
+}
+
+
