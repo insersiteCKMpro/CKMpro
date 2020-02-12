@@ -9,89 +9,41 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
     <style>
-        .titrec {
-            width: 100%;
-            height: 40vh;
-        }
-
-        .num {
-            margin: 0 20vh;
-            width: 75%;
-            height: 10vh;
-        }
-
-        .trait {
-            width: 2%;
-            border-left: 1px solid black;
-            height: 102vh;
-        }
-
-        .for {
-            width: 65%;
-            height: 100vh;
-        }
-        .radbox{
-            height:15vh;
-        }
-        .labe{
-            width:25%;
-        }
-        .put3D{
-            width:25%;
-            height: 4vh;
-        }
-        .putNet{
-            width:25%;
-            height: 4vh;
-        }
-        .putEV{
-            width:25%;
-            height: 4vh;
-        }
-        footer{
-            width: 100%;
-            height: 23vh;
-        }
-        .reseaux{
-            width: 33.4%;
-            height: 15vh;
-        }
-        .reseaux img{
-            height: 6.7vh;
-            margin: 7vh auto;
-        }
-        .fichec{
-            width: 33.3%;
-            height: 15vh;
-        }
-        #customControlValidation1:checked~.custom-control-label::before {
-            color: #fff200;
-            border-color: #fff200;
-            background-color: #fff200;
-        }
-
-        #customControlValidation2:checked~.custom-control-label::before {
-            color: #00aeef;
-            border-color: #00aeef;
-            background-color: #00aeef;
-        }
-
-        #customControlValidation3:checked~.custom-control-label::before {
-            color: #00a651;
-            border-color: #00a651;
-            background-color: #00a651;
-        }
-
+        .test {min-height: 100vh; display: flex;}
+        .test2 {width: 30%; min-height: 100vh;}
+        .titrec {width: 100%; height: 40vh;}
+        .num {margin: 0 7vh; width: 75%; height: 10vh;}
+        .trait {width: 2%; border-left: 1px solid black; height: 102vh;}
+        .for {width: 45%; height: 100vh;}
+        .radbox {height: 15vh;}
+        .labe {width: 25%;}
+        .put3D {width: 25%; height: 4vh;}
+        .putNet {width: 25%; height: 4vh;}
+        .putEV {width: 25%; height: 4vh;}
+        footer {width: 100%; height: 23vh;}
+        .reseaux {width: 33.4%; height: 15vh;}
+        .reseaux img {height: 6.7vh; margin: 7vh auto;}
+        .fichec {width: 33.3%; height: 15vh;}
+        #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
+        #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
+        #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
         @media screen and (max-width: 1024px) {
+            .test {
+                
+                min-height: 100vh;
+            }
+            .test2 {
+                display: ;
+            }
             .titrec {
-                order :1;
+                order: -1 !important;
+                flex: 1 1 100% !important;
                 width: 100%;
                 height: 30vh;
-                margin: auto;
             }
 
-            main div div div p {
-                margin: auto;
+            .num {
+
             }
 
 
@@ -108,8 +60,8 @@
             <h2 class="text-center">Titre H1</h2>
             <br>
             <br>
-            <main class="row">
-                <div class="col-md-4">
+            <main class="test">
+                <div class="test2">
                     <div class="titrec">
                         <h2 class="text-center">Contact</h2>
                         <br>
@@ -120,91 +72,99 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center trait"></div>
-                <div class="col-md-6">
-                    <div class="for">
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputName1">Nom*</label>
-                                <input type="nom" class="form-control" id="exampleInputName1"
-                                    aria-describedby="nameHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputFirsteName1">Prenom*</label>
-                                <input type="prenom" class="form-control" id="exampleInputFirstName1">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email*</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPhone1">Téléphone*</label>
-                                <input type="phone" class="form-control" id="exampleInputPhone1"
-                                    aria-describedby="phoneHelp">
-                            </div>
-                            <div class="row radbox">
-                                <div class="col-md-3 form-check labe">Activité*</div>
-                                <div class="col-md-9 row">
-                                    <div class="custom-control custom-radio text-center col-md-4 put3D">
-                                        <input type="checkbox" class="custom-control-input"
-                                            id="customControlValidation1" name="radio-stacked">
-                                        <label class="custom-control-label" for="customControlValidation1"></label>
-                                    </div>
-                                    <div class="custom-control custom-radio text-center col-md-4 putNet">
-                                        <input type="checkbox" class="custom-control-input"
-                                            id="customControlValidation2" name="radio-stacked">
-                                        <label class="custom-control-label" for="customControlValidation2"></label>
-                                    </div>
-                                    <div class="custom-control custom-radio text-center col-md-4 putEV">
-                                        <input type="checkbox" class="custom-control-input"
-                                            id="customControlValidation3" name="radio-stacked">
-                                        <label class="custom-control-label" for="customControlValidation3"></label>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="text-center">3D<br>
-                                            Deratisation
-                                            Desinfection
-                                            Desinsectisation
-                                        </p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="text-center">Nettoyage</p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="text-center">Espaces Verts</p>
-                                    </div>
+                <div class="test3">
+                    <div class="titrec">
+                        <h2 class="text-center">Contact</h2>
+                        <br>
+                        <div class="num">
+                            <p>Numero de téléphone: <br>
+                                0123456789
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trait"></div>
+                <div class="for">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputName1">Nom*</label>
+                            <input type="nom" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFirsteName1">Prenom*</label>
+                            <input type="prenom" class="form-control" id="exampleInputFirstName1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email*</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPhone1">Téléphone*</label>
+                            <input type="phone" class="form-control" id="exampleInputPhone1"
+                                aria-describedby="phoneHelp">
+                        </div>
+                        <div class="row radbox">
+                            <div class="col-md-3 form-check labe">Activité*</div>
+                            <div class="col-md-9 row">
+                                <div class="custom-control custom-radio text-center col-md-4 put3D">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1"
+                                        name="radio-stacked">
+                                    <label class="custom-control-label" for="customControlValidation1"></label>
+                                </div>
+                                <div class="custom-control custom-radio text-center col-md-4 putNet">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation2"
+                                        name="radio-stacked">
+                                    <label class="custom-control-label" for="customControlValidation2"></label>
+                                </div>
+                                <div class="custom-control custom-radio text-center col-md-4 putEV">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation3"
+                                        name="radio-stacked">
+                                    <label class="custom-control-label" for="customControlValidation3"></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-center">3D<br>
+                                        Deratisation
+                                        Desinfection
+                                        Desinsectisation
+                                    </p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-center">Nettoyage</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <p class="text-center">Espaces Verts</p>
                                 </div>
                             </div>
-                            <br>
-                            <select class="form-control">
-                                <option>Default select</option>
-                                <option>Default select</option>
-                                <option>Default select</option>
-                                <option>Default select</option>
-                            </select>
-                            <br>
-                            <select class="form-control">
-                                <option>Default select</option>
-                                <option>Default select</option>
-                                <option>Default select</option>
-                            </select>
-                            <br>
-                            <select class="form-control">
-                                <option>Default select</option>
-                                <option>Default select</option>
-                                <option>Default select</option>
-                                <option>Default select</option>
-                                <option>Default select</option>
-                            </select>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Description</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
+                        </div>
+                        <br>
+                        <select class="form-control">
+                            <option>Default select</option>
+                            <option>Default select</option>
+                            <option>Default select</option>
+                            <option>Default select</option>
+                        </select>
+                        <br>
+                        <select class="form-control">
+                            <option>Default select</option>
+                            <option>Default select</option>
+                            <option>Default select</option>
+                        </select>
+                        <br>
+                        <select class="form-control">
+                            <option>Default select</option>
+                            <option>Default select</option>
+                            <option>Default select</option>
+                            <option>Default select</option>
+                            <option>Default select</option>
+                        </select>
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Description</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </main>
             <br>
