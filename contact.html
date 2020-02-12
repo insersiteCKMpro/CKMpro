@@ -9,16 +9,61 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
     <style>
-        .titrec{
+        .titrec {
             width: 100%;
             height: 40vh;
         }
+
         .num {
-            margin: 0 20vh ;
+            margin: 0 20vh;
             width: 75%;
             height: 10vh;
         }
 
+        .trait {
+            width: 2%;
+            border-left: 1px solid black;
+            height: 102vh;
+        }
+
+        .for {
+            width: 65%;
+            height: 100vh;
+        }
+        .radbox{
+            height:15vh;
+        }
+        .labe{
+            width:25%;
+        }
+        .put3D{
+            width:25%;
+            height: 4vh;
+        }
+        .putNet{
+            width:25%;
+            height: 4vh;
+        }
+        .putEV{
+            width:25%;
+            height: 4vh;
+        }
+        footer{
+            width: 100%;
+            height: 23vh;
+        }
+        .reseaux{
+            width: 33.4%;
+            height: 15vh;
+        }
+        .reseaux img{
+            height: 6.7vh;
+            margin: 7vh auto;
+        }
+        .fichec{
+            width: 33.3%;
+            height: 15vh;
+        }
         #customControlValidation1:checked~.custom-control-label::before {
             color: #fff200;
             border-color: #fff200;
@@ -37,12 +82,14 @@
             background-color: #00a651;
         }
 
-        @media screen and (max-width: 425px ) {
-            main div div h2 {
-                width: 50%;
+        @media screen and (max-width: 1024px) {
+            .titrec {
+                order :1;
+                width: 100%;
                 height: 30vh;
-                margin: auto
+                margin: auto;
             }
+
             main div div div p {
                 margin: auto;
             }
@@ -73,9 +120,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center" style="width:2%; border-left:1px solid black; height:102vh;"></div>
+                <div class="text-center trait"></div>
                 <div class="col-md-6">
-                    <div style="width: 65%; height: 100vh">
+                    <div class="for">
                         <form>
                             <div class="form-group">
                                 <label for="exampleInputName1">Nom*</label>
@@ -96,23 +143,20 @@
                                 <input type="phone" class="form-control" id="exampleInputPhone1"
                                     aria-describedby="phoneHelp">
                             </div>
-                            <div class="row" style="height:15vh">
-                                <div class="col-md-3 form-check" style="width:25%;">Activité*</div>
+                            <div class="row radbox">
+                                <div class="col-md-3 form-check labe">Activité*</div>
                                 <div class="col-md-9 row">
-                                    <div class="custom-control custom-radio text-center col-md-4"
-                                        style="width:25%; height: 4vh;">
+                                    <div class="custom-control custom-radio text-center col-md-4 put3D">
                                         <input type="checkbox" class="custom-control-input"
                                             id="customControlValidation1" name="radio-stacked">
                                         <label class="custom-control-label" for="customControlValidation1"></label>
                                     </div>
-                                    <div class="custom-control custom-radio text-center col-md-4"
-                                        style="width:25%; height: 4vh;">
+                                    <div class="custom-control custom-radio text-center col-md-4 putNet">
                                         <input type="checkbox" class="custom-control-input"
                                             id="customControlValidation2" name="radio-stacked">
                                         <label class="custom-control-label" for="customControlValidation2"></label>
                                     </div>
-                                    <div class="custom-control custom-radio text-center col-md-4"
-                                        style="width:25%; height: 4vh;">
+                                    <div class="custom-control custom-radio text-center col-md-4 putEV">
                                         <input type="checkbox" class="custom-control-input"
                                             id="customControlValidation3" name="radio-stacked">
                                         <label class="custom-control-label" for="customControlValidation3"></label>
@@ -165,7 +209,7 @@
             </main>
             <br>
             <br>
-            </section>
+        </section>
     </div>
     <hr>
     <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
@@ -200,30 +244,30 @@
     </div>
     <hr>
     <br>
-    <footer style="width: 100%; height: 23vh;">
+    <footer>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 text-center" style="width: 33.3%; height: 15vh;">
+            <div class="row ">
+                <div class="col-md-4 text-center fichec">
                     <a href="">CKM</a><br>
                     <a href="">3D</a><br>
                     <a href="">Nettoyage</a><br>
                     <a href="">Espace Verts</a><br>
                 </div>
-                <div class="col-md-4 text-center" style="width: 33.3%; height: 15vh;">
+                <div class="col-md-4 text-center fichec">
                     <a href="">La Boutique</a><br>
                     <a href="">Contact</a><br>
                     <a href="">Mention Légales</a><br>
                     <a href="">Politique de Confidentialité</a><br>
                 </div>
-                <div class="col-md-4 text-center row" style="width: 33.4%; height: 15vh;">
+                <div class="col-md-4 text-center row reseaux">
                     <div class="col-md-4">
-                        <img src="img/FOOTER - SOCIAL MEDIA/FB.png" style="height: 6.7vh; margin: 7vh auto">
+                        <img src="img/FOOTER - SOCIAL MEDIA/FB.png">
                     </div>
                     <div class="col-md-4">
-                        <img src="img/FOOTER - SOCIAL MEDIA/SNAPCHAT.png" style="height: 6.7vh; margin: 7vh auto">
+                        <img src="img/FOOTER - SOCIAL MEDIA/SNAPCHAT.png">
                     </div>
                     <div class="col-md-4">
-                        <img src="img/FOOTER - SOCIAL MEDIA/INSTAGRAM.png" style="height: 6.7vh; margin: 7vh auto">
+                        <img src="img/FOOTER - SOCIAL MEDIA/INSTAGRAM.png">
                     </div>
                 </div>
             </div>
