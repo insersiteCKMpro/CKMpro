@@ -15,15 +15,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 50vh;
+            height: 25vh;
           }
           .logo #logoHome {
-            width: 50%;
+            width: 25%;
           }
           .fixed-top {
             display: flex;
             justify-content: flex-end;
             margin-right: 2vh;
+          }
+          .lienImageLogoHome {
+            padding-bottom: 15px;
           }
           #homeLogo {
             width: 30px;
@@ -49,6 +52,25 @@
             height: 1px;
             background-color: black;
           }
+          .dropdown-item1 {
+            color: black;
+            text-decoration: none;
+            background-color: transparent;
+          }
+          #colorY:hover {
+            background-color: yellow;
+            opacity: 0.2;
+          }
+          #navbarsExample01 .navbar-nav #linav3D .dropdown01:hover {
+            background-color: yellow !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
+          @media screen and (max-width: 450px) {
+            .fas {
+              display: none;
+            }
+          }
           @media screen and (min-width: 769px) and (max-width: 2560px) {
             #fass {
               display: none;
@@ -58,6 +80,12 @@
             }
             .trait {
               display: none;
+            }
+            .show {
+              display: grid;
+              justify-content: center;
+              border: 0;
+              background-color: transparent;
             }
           }
           @media screen and (min-width: 450px) and (max-width: 768px) {
@@ -85,12 +113,15 @@
               display: flex !important;
               width: 100% !important;
             }
+            .logo #logoHome {
+              width: 90%;
+            }
             #num {
               width: 50%;
               padding-left: 4vh;
             }
             #nom {
-              width: 30%;
+              width: 35%;
             }
             #fas {
               display: none;
@@ -99,6 +130,42 @@
               padding-left: 0;
             }
           }
+
+            /* --------------COLLAPSE------------------ */
+            @media screen and (max-width: 768px) {
+              .navbar {
+                float: none;
+              }
+              .navbar-toggle {
+                display: block;
+              }
+              .navbar-collapse {
+                border-top: 1px solid transparent;
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+              }
+              .navbar-collapse.collapse {
+                display: none !important;
+              }
+              .navbar-nav {
+                float: none !important;
+                margin: 7.5px -15px;
+              }
+              .navbar-nav>li>a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+              }
+              .navbar-text{
+                float: none;
+                margin: 15px 0;
+              }
+              .navbar-collapse.collapse.in {
+                display: block !important;
+              }
+              .collapsing {
+                overflow: hidden !important;
+              }
+            }
+
 
       
     </style>
@@ -123,7 +190,7 @@
 
       <div class="mx-auto">
         <p class="textMenu"><strong>Menu</strong></p>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
           <div><i class="fas fa-bars"></i></div>
         </button>
       </div>
@@ -131,11 +198,11 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample01">
         <ul class="navbar-nav">
           <li class="nav-item1 lienImageLogoHome">
-            <a class="navbar-brand" href="#"><img src="img/LOGO/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
+            <a class="navbar-brand1" href="#"><img src="img/LOGO/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
           </li>
           <div class="trait trait1"></div>
 
-          <li class="nav-item1 active dropdown">
+          <li class="nav-item1 active dropdown" id="linav3D">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D <span class="sr-only">(current)</span></a>
             <div id="dropdown01" class="dropdown-menu" aria-labelledby="dropdown01">
               <a class="dropdown-item1" href="#">Action</a>
@@ -158,9 +225,9 @@
           <li class="nav-item1 active dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
             <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="#">3D</a>
-              <a class="dropdown-item" href="#">Nettoyage</a>
-              <a class="dropdown-item" href="#">Espaces Verts</a>
+              <a class="dropdown-item1" href="#">3D</a>
+              <a class="dropdown-item1" href="#">Nettoyage</a>
+              <a class="dropdown-item1" href="#">Espaces Verts</a>
             </div>
           </li>
           <div class="trait trait5"></div>
