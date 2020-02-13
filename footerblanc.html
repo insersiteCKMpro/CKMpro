@@ -10,11 +10,11 @@
     <title>Document</title>
 </head>
 <style>
+
     .footerhaut
     {
         display: flex;
         justify-content: space-evenly;
-        
     }
 
 .footerbas
@@ -26,36 +26,112 @@
 {
     
     width: 30%;
-    align-items: flex-end;
+    align-items: center;
+    color: black !important;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
 }
+.ftext1
+{
+    text-decoration: none;
+    color: black;
+}
+.ftext1:hover
+{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    color: white;
+}
+
 .colonne2
 {
     
     width: 30%;
+    color: black !important;
+    text-decoration: none !important;
 }
-.colonne3
+.ftext2
+{
+    text-decoration: none;
+    color: black;
+}
+.ftext2:hover
+{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    color: white;
+}
+
+
+.colonne3 
 {
     display:flex;
     align-items: center;
     width: 30%;
     justify-content: center;
-    
 }
 
 .snap:hover
 {
-    background-color: yellow;
-    border-radius: 25% 10%;
+    transition: all ease .3s .1s;
 }
 .fb:hover
 {
-    background-color:rgb(25, 189, 201);
-    border-radius: 25% 10%;
+    transition: all ease .3s .1s;
 }
 .insta:hover
 {
-    background-color:green;
-    border-radius: 25% 10%;
+    transition: all ease .3s .1s;
+}
+
+@media screen and (max-width: 375px)
+{
+    footer
+    {
+        border-top: 1px solid black;
+    }
+.flogo
+{
+    width: 50%;
+    margin-bottom: 15%;
+}
+.footerhaut
+{
+    flex-direction: column-reverse;
+}
+.colonne2
+{
+    order:-1;
+}
+    .footerhaut
+    {
+        align-items: center;
+        text-align: center;
+    }
+.colonne3
+{
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top:2vh;
+}
+
+}
+@media screen and (max-width: 425px)
+{
+    .flogo
+    {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .flogo
+    {
+        width: 30%;
+    }
 }
     
 </style>
@@ -68,32 +144,33 @@
         <div class="ensemblefooter">
             <div class="footerhaut text-center">
                     <div class="colonne1 text-center">
-                        <a href="">CKM</a><br>
-                        <a href="">3D</a><br>
-                        <a href="">Nettoyage</a><br>
-                        <a href="">Espace Verts</a><br>
+                        
+                        <img class="flogo" src="img/CKMHOMEFOOTER.png" width="10%" height="30%">
+                        <a class="ftext1" href="">3D</a>
+                        <a class="ftext1" href="">Nettoyage</a>
+                        <a class="ftext1" href="">Espace Verts</a>
                     </div>
             
                     <div class="colonne2 text-center">
-                        <a href="">La Boutique</a><br>
-                        <a href="">Contact</a><br>
-                        <a href="">Mention Légales</a><br>
-                        <a href="">Politique de Confidentialité</a><br>
+                        <a class="ftext2" href="">La Boutique</a><br>
+                        <a class="ftext2" href="">Contact</a><br>
+                        <a class="ftext2" href="">Mention Légales</a><br>
+                        <a class="ftext2" href="">Politique de Confidentialité</a><br>
                     </div>
             
                     <div class="colonne3 text-center">
                         <div class="snap">
-                            <img src="img/FOOTER - SOCIAL MEDIA/SNAPCHAT.png" width="50%" height="50%">
+                            <a href="http://snapchat.com" target="_blank"><img src="img/SNAPCHAT.png" width="50%" height="50%"></a>
                         </div>
+
                         <div class="fb">
-                            <img src="img/FOOTER - SOCIAL MEDIA/FB.png" width="50%" height="50%">
+                            <a href="http://facebook.com" target="_blank"><img src="img/FB.png" width="50%" height="50%"></a>
                         </div>
 
                         <div class="insta">
-                            <img src="img/FOOTER - SOCIAL MEDIA/INSTAGRAM.png" width="50%" height="50%">
-                        </div>
+                            <a href="http://instagram.com" target="_blank"><img src="img/INSTAGRAM.png" width="50%" height="50%"></a>
                     </div>
-            
+            </div>
                 </div>
             
                 <div class="footerbas">
