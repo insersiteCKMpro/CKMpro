@@ -7,214 +7,128 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactstyle.css">
     <title>Document</title>
-    <style>
-        @media screen and (min-width: 1024px) {
-        .test {min-height: 100vh; display: flex;}
-        .test2 {width: 30%; min-height: 100vh; display: flex;}
-        .test3{display:none;}
-        .titrec {width: 100%; height: 40vh;}
-        .num {margin: 0 7vh; width: 75%; height: 10vh;}
-        .trait1 {width: 2%; border-left: 1px solid black; height: 102vh;}
-        .trait2 {display: none;}
-        .traitori{display: none;}
-        .espace{display: none;}
-        .for {width: 45%; height: 100vh;}
-        .radbox {height: 15vh;}
-        .labe {width: 25%;}
-        .put3D {width: 25%; height: 4vh;}
-        .putNet {width: 25%; height: 4vh;}
-        .putEV {width: 25%; height: 4vh;}
-        footer {width: 100%; height: 23vh;}
-        .reseaux {width: 33.4%; height: 15vh;}
-        .reseaux img {height: 6.7vh; margin: 7vh auto;}
-        .fichec {width: 33.3%; height: 15vh;}
-        #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
-        #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
-        #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
-        }
-        @media screen and (max-width: 1024px) {
-            .test {
-                min-height: 125vh;
-                display: flex;
-                justify-content: center;
-            }
-            .test2 {
-                display: none;
-            }
-            .test3{
-                display:flex;
-                flex-direction: column;
-                text-align: center;
-                min-height: 17vh;
-                width:100%;
-                border-bottom: 1px solid grey;
-            }
-            .trait1{
-                display: none;
-            }
-            .trait2{
-                width: 100%;
-                border-top: 1px solid #000;
-                height: 0;
-                align-items: center;
-            }
-            .titrec {
-                height: 5vh;
-                text-align: center;
-            }
-            .traitori
-            {
-                background-color: black;
-                height: 2px;
-            }
-            .espace{
-                margin-top: 4px;
-            }
-
-        }
-        @media screen and (min-width: 375px) {
-            .put3D {
-                width: 30%;
-                height: 6vh;
-            }
-            .putNet {
-                width: 30%;
-                height: 6vh;
-            }
-            .putEV {
-                width: 30%;
-                height: 6vh;
-            }
-            .checkio{
-                height: 20vh;
-            }
-            
-        }
-    </style>
 </head>
 
 <body>
     <header>
     </header>
     <div class="container-fluid">
-        <section>
-            <br>
-            <h2 class="text-center">Titre H1</h2>
-            <br>
-            <br>
-            <main class="test">
-                <div class="test2">
-                    <div class="titrec">
-                        <h2 class="text-center">Contact</h2>
-                        <br>
-                        <div class="num">
-                            <p>Numero de téléphone: <br>
-                                0123456789
-                            </p>
-                        </div>
+        <br>
+        <h2 class="text-center">Titre H1</h2>
+        <br>
+        <br>
+        <main class="test">
+            <div class="test2">
+                <div class="titrec">
+                    <h2 class="text-center">Contact</h2>
+                    <br>
+                    <div class="num">
+                        <p>Numero de téléphone: <br>
+                            0123456789
+                        </p>
                     </div>
                 </div>
-                <div class="trait1"></div>
-                <div class="for">
-                    <div class="test3"><!--responsive tablette-->
-                        <div class="titrec"><!--responsive tablette-->
-                            <h2 class="">Contact</h2><!--responsive tablette-->
-                            <br><!--responsive tablette-->
-                            <div class="num"><!--responsive tablette-->
-                                <p>Numero de téléphone: <br>
-                                    0123456789
-                                </p><!--responsive tablette-->
-                            </div><!--responsive tablette-->
+            </div>
+            <div class="trait1"></div>
+            <div class="for">
+                <div class="test3"><!--responsive tablette-->
+                    <div class="titrec"><!--responsive tablette-->
+                        <h2 class="">Contact</h2><!--responsive tablette-->
+                        <br><!--responsive tablette-->
+                        <div class="num"><!--responsive tablette-->
+                            <p>Numero de téléphone: <br>
+                                0123456789
+                            </p><!--responsive tablette-->
                         </div><!--responsive tablette-->
                     </div><!--responsive tablette-->
-                    
-                    <div class="trait2"></div>
-                    <form>
-                        <div class="form-group espace">
-                            <label for="exampleInputName1">Nom*</label>
-                            <input type="nom" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputFirsteName1">Prenom*</label>
-                            <input type="prenom" class="form-control" id="exampleInputFirstName1">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email*</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPhone1">Téléphone*</label>
-                            <input type="phone" class="form-control" id="exampleInputPhone1"
-                                aria-describedby="phoneHelp">
-                        </div>
-                        <div class="row radbox">
-                            <div class="col-md-3 form-check labe">Activité*</div>
-                            <div class="col-md-9 row checkio">
-                                <div class="custom-control custom-radio text-center col-md-4 put3D">
+                </div><!--responsive tablette-->
+                
+                <div class="trait2"></div>
+                <form>
+                    <div class="form-group espace">
+                        <label for="exampleInputName1">Nom*</label>
+                        <input type="nom" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFirsteName1">Prenom*</label>
+                        <input type="prenom" class="form-control" id="exampleInputFirstName1">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email*</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPhone1">Téléphone*</label>
+                        <input type="phone" class="form-control" id="exampleInputPhone1"
+                            aria-describedby="phoneHelp">
+                    </div>
+                    <div class="radbox">
+                        <div class="form-check labe">Activité*</div>
+                        <div class="star">
+                            <div class="checkio">
+                                <div class="custom-control custom-radio text-center put">
                                     <input type="checkbox" class="custom-control-input" id="customControlValidation1"
                                         name="radio-stacked">
                                     <label class="custom-control-label" for="customControlValidation1"></label>
                                 </div>
-                                <div class="custom-control custom-radio text-center col-md-4 putNet">
+                                <div class="custom-control custom-radio text-center put">
                                     <input type="checkbox" class="custom-control-input" id="customControlValidation2"
                                         name="radio-stacked">
                                     <label class="custom-control-label" for="customControlValidation2"></label>
                                 </div>
-                                <div class="custom-control custom-radio text-center col-md-4 putEV">
+                                <div class="custom-control custom-radio text-center put">
                                     <input type="checkbox" class="custom-control-input" id="customControlValidation3"
                                         name="radio-stacked">
                                     <label class="custom-control-label" for="customControlValidation3"></label>
                                 </div>
-                                <div class="col-md-4 put3D">
-                                    <p class="text-center">3D<br>
-                                        Deratisation <br>
-                                        Desinfection <br>
-                                        Desinsectisation <br>
-                                    </p>
-                                </div>
-                                <div class="col-md-4 putNet">
-                                    <p class="text-center">Nettoyage</p>
-                                </div>
-                                <div class="col-md-4 putEV">
-                                    <p class="text-center">Espaces Verts</p>
-                                </div>
+                            </div>
+                            <div class="checkio1">
+                                <p class="text-center put1">3D<br>
+                                    Deratisation <br>
+                                    Desinfection <br>
+                                    Desinsectisation <br>
+                                </p>
+                                <p class="text-center put1">Nettoyage</p>
+                                <p class="text-center put1">Espaces Verts</p>
                             </div>
                         </div>
-                        <br>
-                        <select class="form-control">
-                            <option>Default select</option>
-                            <option>Default select</option>
-                            <option>Default select</option>
-                            <option>Default select</option>
-                        </select>
-                        <br>
-                        <select class="form-control">
-                            <option>Default select</option>
-                            <option>Default select</option>
-                            <option>Default select</option>
-                        </select>
-                        <br>
-                        <select class="form-control">
-                            <option>Default select</option>
-                            <option>Default select</option>
-                            <option>Default select</option>
-                            <option>Default select</option>
-                            <option>Default select</option>
-                        </select>
-                        <br>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Description</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </main>
-            <br>
-            <br>
-        </section>
+                    </div>
+                    <br>
+                    <select class="form-control">
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                    </select>
+                    <br>
+                    <select class="form-control">
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                    </select>
+                    <br>
+                    <select class="form-control">
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                        <option>Default select</option>
+                    </select>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+            </div>
+        </main>
+        <br>
+        <br>
     </div>
     <hr>
     <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
