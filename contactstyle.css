@@ -17,6 +17,8 @@
 .checkio1{width:100%; height: 10vh; display: flex;}
 .put {width: 35.3%;}
 .put1 {width: 33%; height: 6vh; margin-top: 3vh;}
+.buton {background-color: white !important; color: black !important; border: 2px solid black !important;}
+.buton:hover {background-color: black !important; color: white !important;}
 footer {width: 100%; height: 23vh;}
 .reseaux {width: 33.4%; height: 15vh;}
 .reseaux img {height: 6.7vh; margin: 7vh auto;}
