@@ -1,10 +1,10 @@
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
-    .test {min-height: 45vh; display: flex;}
+    .test {min-height: 72vh; display: flex;}
     .test2 {width: 30%; min-height: 45vh; display: flex;}
     .test3{display:none;}
     .titrec {width: 100%; height: 40vh;}
     .num {margin: 0 7vh; width: 75%; height: 10vh;}
-    .trait1 {width: 2%; border-left: 1px solid black; height: 44vh;}
+    .trait1 {width: 2%; border-left: 1px solid black; height: 74vh;}
     .trait2 {display: none;}
     .traitori{display: none;}
     .espace{display: none;}
@@ -104,12 +104,12 @@
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-.test {min-height: 75vh; display: flex;}
+.test {min-height: 97vh; display: flex;}
 .test2 {width: 30%; min-height: 75vh; display: flex;}
 .test3{display:none;}
 .titrec {width: 100%; height: 40vh;}
 .num {margin: 0 7vh; width: 75%; height: 10vh;}
-.trait1 {width: 2%; border-left: 1px solid black; height: 72vh;}
+.trait1 {width: 2%; border-left: 1px solid black; height: 100vh;}
 .trait2 {display: none;}
 .traitori{display: none;}
 .espace{display: none;}
