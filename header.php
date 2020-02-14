@@ -105,10 +105,7 @@
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
-          #dropdownDiv01 {
-            display: grid;
-          }
-          #dropdownDiv02 {
+          .dropdownDiv01 {
             display: grid;
           }
 
@@ -162,8 +159,7 @@
               display: none;
             }
             /* style du déroulant de la nav */
-            .show {
-              display: grid;
+            .dropdown-menu{
               justify-content: center;
               border: 0;
               background-color: transparent;
@@ -254,7 +250,7 @@
 
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
             <div><i class="fas fa-bars"></i></div>
           </button>
         </div>
@@ -266,18 +262,19 @@
             </li>
             <div class="trait trait1"></div>
 
-            <li class="nav-item1 active dropdown" id="linav3D">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-toggle="dropdown">3D <span class="sr-only">(current)</span></a>
-              <div class="dropdown-menu" id="dropdownDiv01" aria-labelledby="dropdown01">
-                <a class="dropdown-item01" href="#">Action</a>
-                <a class="dropdown-item02" href="#">Another</a>
-                <a class="dropdown-item03" href="#">Something</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
+                <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
               </div>
             </li>
+
             <div class="trait trait2"></div>
 
             <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nettoyage</a>
+              <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
             </li>
             <div class="trait trait3"></div>
 
@@ -286,12 +283,14 @@
             </li>
             <div class="trait trait4"></div>
 
+
+
             <li class="nav-item1 active dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown">Galeries</a>
-              <div class="dropdown-menu" id="dropdownDiv01" aria-labelledby="dropdown04">
-                <a class="dropdown-item01" href="#">3D</a>
-                <a class="dropdown-item02" href="#">Nettoyage</a>
-                <a class="dropdown-item03" href="#">Espaces Verts</a>
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
+                <a class="dropdown-item dropdown-item01" href="#">3D</a>
+                <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
+                <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
               </div>
             </li>
             <div class="trait trait5"></div>
@@ -305,9 +304,9 @@
   
   </header>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
 </body>
