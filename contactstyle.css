@@ -1,14 +1,14 @@
-@media screen and (min-width: 1440px) and (max-width: 2560px) {
-    .test {min-height: 95vh; display: flex;}
-    .test2 {width: 30%; min-height: 100vh; display: flex;}
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+    .test {min-height: 45vh; display: flex;}
+    .test2 {width: 30%; min-height: 45vh; display: flex;}
     .test3{display:none;}
     .titrec {width: 100%; height: 40vh;}
     .num {margin: 0 7vh; width: 75%; height: 10vh;}
-    .trait1 {width: 2%; border-left: 1px solid black; height: 90vh;}
+    .trait1 {width: 2%; border-left: 1px solid black; height: 44vh;}
     .trait2 {display: none;}
     .traitori{display: none;}
     .espace{display: none;}
-    .for {width: 45%; height: 95vh;}
+    .for {width: 45%; height: 45vh;}
     .radbox {height: 15vh; display: flex;}
     .labe {width: 25%;}
     .star{display: initial;width:75%; height: 15vh;}
@@ -19,7 +19,7 @@
     .btn{margin-left: 10vh;width: 75%;}
     .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
     .buton:hover {background-color: black !important; color: white !important;}
-    footer {width: 100%; height: 23vh;}
+    footer {width: 100%; height: 10vh;}
     .reseaux {width: 33.4%; height: 15vh;}
     .reseaux img {height: 6.7vh; margin: 7vh auto;}
     .fichec {width: 33.3%; height: 15vh;}
@@ -104,16 +104,16 @@
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-.test {min-height: 95vh; display: flex;}
-.test2 {width: 30%; min-height: 100vh; display: flex;}
+.test {min-height: 75vh; display: flex;}
+.test2 {width: 30%; min-height: 75vh; display: flex;}
 .test3{display:none;}
 .titrec {width: 100%; height: 40vh;}
 .num {margin: 0 7vh; width: 75%; height: 10vh;}
-.trait1 {width: 2%; border-left: 1px solid black; height: 90vh;}
+.trait1 {width: 2%; border-left: 1px solid black; height: 72vh;}
 .trait2 {display: none;}
 .traitori{display: none;}
 .espace{display: none;}
-.for {width: 45%; height: 95vh;}
+.for {width: 45%; height: 70vh;}
 .radbox {height: 15vh; display: flex;}
 .labe {width: 25%;}
 .star{display: initial;width:75%; height: 15vh;}
@@ -121,10 +121,10 @@
 .checkio1{width:100%; height: 10vh; display: flex;}
 .put {width: 35.3%;}
 .put1 {width: 33%; height: 6vh; margin-top: 3vh;}
-.btn{margin-left: 10vh;width: 75%;}
+.btn{margin-left: 6vh;width: 75%;}
 .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
 .buton:hover {background-color: black !important; color: white !important;}
-footer {width: 100%; height: 23vh;}
+footer {width: 100%; height: 16vh;}
 .reseaux {width: 33.4%; height: 15vh;}
 .reseaux img {height: 6.7vh; margin: 7vh auto;}
 .fichec {width: 33.3%; height: 15vh;}
@@ -198,7 +198,7 @@ footer {width: 100%; height: 23vh;}
     transition: all ease .3s .1s;
 }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 451px) and (max-width: 768px) {
 
     .test {
         min-height: 110vh;
@@ -296,7 +296,7 @@ footer {width: 100%; height: 23vh;}
     }
 
 }
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (max-width: 450px) {
 
     .radbox {
         height: 15vh;
