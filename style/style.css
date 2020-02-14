@@ -105,6 +105,15 @@ p
     width: 20px;
     height: 20px;
 }
+.carouselslide
+{
+    margin-left: auto; 
+    margin-right: auto; 
+    border-left:1px solid gray; 
+    align-content: center;
+    width: 49%; 
+    height: 20vh;
+}
 
 
 
