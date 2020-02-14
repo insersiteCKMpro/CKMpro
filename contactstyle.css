@@ -1,14 +1,14 @@
-@media screen and (min-width: 1441px) and (max-width: 2560px) {
-    .test {min-height: 72vh; display: flex;}
-    .test2 {width: 30%; min-height: 45vh; display: flex;}
+@media screen and (min-width: 769px) and (max-width:2560px) {
+    .test {min-height: 93vh; display: flex;}
+    .test2 {width: 30%; min-height: 75vh; display: flex;}
     .test3{display:none;}
     .titrec {width: 100%; height: 40vh;}
     .num {margin: 0 7vh; width: 75%; height: 10vh;}
-    .trait1 {width: 2%; border-left: 1px solid black; height: 74vh;}
+    .trait1 {width: 2%; border-left: 1px solid black; height: 93vh;}
     .trait2 {display: none;}
     .traitori{display: none;}
     .espace{display: none;}
-    .for {width: 45%; height: 45vh;}
+    .for {width: 45%; height: 70vh;}
     .radbox {height: 15vh; display: flex;}
     .labe {width: 25%;}
     .star{display: initial;width:75%; height: 15vh;}
@@ -16,384 +16,76 @@
     .checkio1{width:100%; height: 10vh; display: flex;}
     .put {width: 35.3%;}
     .put1 {width: 33%; height: 6vh; margin-top: 3vh;}
-    .btn{margin-left: 10vh;width: 75%;}
+    .btn{margin-left: 6vh;width: 75%;}
     .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
     .buton:hover {background-color: black !important; color: white !important;}
-    footer {width: 100%; height: 10vh;}
+    footer {width: 100%; height: 16vh;}
     .reseaux {width: 33.4%; height: 15vh;}
     .reseaux img {height: 6.7vh; margin: 7vh auto;}
     .fichec {width: 33.3%; height: 15vh;}
     #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
     #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
     #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
-    .footerhaut
-    {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-.footerbas
-{
-    display: flex;
-    justify-content: center;
-}
-.colonne1
-{
-    
-    width: 30%;
-    align-items: center;
-    color: black !important;
-    text-decoration: none !important;
-    display: flex;
-    flex-direction: column;
-}
-.ftext1
-{
-    text-decoration: none;
-    color: black;
-}
-.ftext1:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
-
-.colonne2
-{
-    
-    width: 30%;
-    color: black !important;
-    text-decoration: none !important;
-}
-.ftext2
-{
-    text-decoration: none;
-    color: black;
-}
-.ftext2:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
-
-
-.colonne3 
-{
-    display:flex;
-    align-items: center;
-    width: 30%;
-    justify-content: center;
-}
-
-.snap:hover
-{
-    transition: all ease .3s .1s;
-}
-.fb:hover
-{
-    transition: all ease .3s .1s;
-}
-.insta:hover
-{
-    transition: all ease .3s .1s;
-}
-
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-.test {min-height: 97vh; display: flex;}
-.test2 {width: 30%; min-height: 75vh; display: flex;}
-.test3{display:none;}
-.titrec {width: 100%; height: 40vh;}
-.num {margin: 0 7vh; width: 75%; height: 10vh;}
-.trait1 {width: 2%; border-left: 1px solid black; height: 100vh;}
-.trait2 {display: none;}
-.traitori{display: none;}
-.espace{display: none;}
-.for {width: 45%; height: 70vh;}
-.radbox {height: 15vh; display: flex;}
-.labe {width: 25%;}
-.star{display: initial;width:75%; height: 15vh;}
-.checkio{width:100%; height: 1vh; display: flex;}
-.checkio1{width:100%; height: 10vh; display: flex;}
-.put {width: 35.3%;}
-.put1 {width: 33%; height: 6vh; margin-top: 3vh;}
-.btn{margin-left: 6vh;width: 75%;}
-.buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
-.buton:hover {background-color: black !important; color: white !important;}
-footer {width: 100%; height: 16vh;}
-.reseaux {width: 33.4%; height: 15vh;}
-.reseaux img {height: 6.7vh; margin: 7vh auto;}
-.fichec {width: 33.3%; height: 15vh;}
-#customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
-#customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
-#customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
-.footerhaut{display: flex;justify-content: space-evenly;}
-.footerbas{display: flex;justify-content: center;}
-.colonne1
-{
-    
-    width: 30%;
-    align-items: center;
-    color: black !important;
-    text-decoration: none !important;
-    display: flex;
-    flex-direction: column;
-}
-.ftext1
-{
-    text-decoration: none;
-    color: black;
-}
-.ftext1:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
-
-.colonne2
-{
-    
-    width: 30%;
-    color: black !important;
-    text-decoration: none !important;
-}
-.ftext2
-{
-    text-decoration: none;
-    color: black;
-}
-.ftext2:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
-
-
-.colonne3 
-{
-    display:flex;
-    align-items: center;
-    width: 30%;
-    justify-content: center;
-}
-
-.snap:hover
-{
-    transition: all ease .3s .1s;
-}
-.fb:hover
-{
-    transition: all ease .3s .1s;
-}
-.insta:hover
-{
-    transition: all ease .3s .1s;
-}
+    .footerhaut{display: flex; justify-content: space-evenly;}
+    .footerbas{display: flex; justify-content: center;}
+    .colonne1{width: 30%; align-items: center; color: black !important; text-decoration: none !important; display: flex; flex-direction: column;}
+    .ftext1{text-decoration: none; color: black;}
+    .ftext1:hover{text-decoration: none; color: black; background-color: blue; color: white;}
+    .colonne2{width: 30%; color: black !important; text-decoration: none !important;}
+    .ftext2{text-decoration: none; color: black;}
+    .ftext2:hover{text-decoration: none; color: black; background-color: blue; color: white;}
+    .colonne3{display:flex; align-items: center; width: 30%; justify-content: center;}
+    .snap:hover{transition: all ease .3s .1s;}
+    .fb:hover{transition: all ease .3s .1s;}
+    .insta:hover{transition: all ease .3s .1s;}
+    .flogo{width: 30%;}
 }
 @media screen and (min-width: 451px) and (max-width: 768px) {
+    .test {min-height: 110vh; display: flex; justify-content: center;}
+    .test2 { display: none;}
+    .test3{ display:flex; flex-direction: column; text-align: center; min-height: 17vh; width:100%; border-bottom: 1px solid grey;}
+    .trait1{display: none;}
+    .trait2{width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .titrec {height: 5vh; text-align: center;}
+    .traitori{background-color: black; height: 2px;}
+    .espace{margin-top: 5px;}
+    .radbox {height: 15vh; display: flex;}
+    .labe {width: 25%;}
+    .star{display: initial; width:75%; height: 15vh;}
+    .checkio{width:100%; height: 4vh; display: flex;}
+    .checkio1{width:100%; height: 10vh; display: flex;}
+    .put {width: 33.3%; min-height: 2vh;}
+    .put1 {width: 33%; height: 6vh; margin-top: 1vh;}    
+    .btn{margin-left: 5vh; width: 75%;}
+    .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
+    .buton:hover {background-color: black !important; color: white !important;}
+    .flogo {width: 40%;}
+}
+@media screen and (max-width: 450px) {
+    .radbox {height: 15vh; display: flex;}
+    .test2 {display: none;}
+    .trait2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .labe {width: 25%;}
+    .star {display: initial; width:75%; height: 15vh;}
+    .checkio {width:100%; height: 4vh; display: flex;}
+    .checkio1 {width:100%; height: 10vh; display: flex;}
+    .put {width: 33.3%; min-height: 2vh;}
+    .put1 {width: 33.3%; height: 6vh;}    
+    .btn {width: 100%;}
+    .buton {background-color: white !important; color: black !important; border: 2px solid black !important;}
+    .buton:hover {background-color: black !important; color: white !important;}
+    footer {border-top: 1px solid black;}
+    .flogo {width: 50%; margin-bottom: 15%;}
+    .footerhaut {flex-direction: column-reverse;}
+    .colonne2 {order:-1;}
+    .footerhaut {align-items: center; text-align: center;}
+    .colonne3 {width: 100%; margin-bottom: 10%; margin-top:2vh;}
+}
 
-    .test {
-        min-height: 110vh;
-        display: flex;
-        justify-content: center;
-    }
-    .test2 {
-        display: none;
-    }
-    .test3{
-        display:flex;
-        flex-direction: column;
-        text-align: center;
-        min-height: 17vh;
-        width:100%;
-        border-bottom: 1px solid grey;
-    }
-    .trait1{
-        display: none;
-    }
-    .trait2{
-        width: 100%;
-        border-top: 1px solid #000;
-        height: 0;
-        align-items: center;
-    }
-    .titrec {
-        height: 5vh;
-        text-align: center;
-    }
-    .traitori
-    {
-        background-color: black;
-        height: 2px;
-    }
-    .espace{
-        margin-top: 5px;
-    }
-    .radbox {
-        height: 15vh;
-        display: flex;
-    }
-
-    .labe {
-        width: 25%;
-    }
-
-    .star{
-        display: initial;
-        width:75%;
-        height: 15vh;
-    }
-
-    .checkio{
-        width:100%;
-        height: 4vh;
-        display: flex;
-    }
-
-    .checkio1{
-        width:100%;
-        height: 10vh;
-        display: flex;
-    }
-
-    .put {
-        width: 33.3%;
-        min-height: 2vh;
-    }
-
-    .put1 {
-        width: 33%;
-        height: 6vh;
-        margin-top: 1vh;
-    }
-    
-    .btn{
-        margin-left: 5vh;
-        width: 75%;
-    }
-
-    .buton {
-        background-color: white !important;
-        color: black !important;
-        border: 1px solid black !important;
-    }
-
-    .buton:hover {
-        background-color: black !important;
-        color: white !important;
-    }
+@media screen and (max-width: 2560px) and (min-width: 769px)
+{
     .flogo
     {
         width: 30%;
-    }
-
-}
-@media screen and (max-width: 450px) {
-
-    .radbox {
-        height: 15vh;
-        display: flex;
-    }
-
-    .test2 {
-        display: none;
-    }
-
-    .trait2{
-        width: 100%;
-        border-top: 1px solid #000;
-        height: 0;
-        align-items: center;
-    }
-
-    .labe {
-        width: 25%;
-    }
-
-    .star{
-        display: initial;
-        width:75%; 
-        height: 15vh;
-    }
-
-    .checkio{
-        width:100%;
-        height: 4vh;
-        display: flex;
-    }
-
-    .checkio1{
-        width:100%;
-        height: 10vh;
-        display: flex;
-    }
-
-    .put {
-        width: 33.3%;
-        min-height: 2vh;
-    }
-
-    .put1 {
-        width: 33.3%;
-        height: 6vh;
-    }
-    
-    .btn{
-        width: 100%;
-    }
-
-    .buton {
-        background-color: white !important;
-        color: black !important;
-        border: 2px solid black !important;
-    }
-
-    .buton:hover {
-        background-color: black !important;
-        color: white !important;
-    }
-    footer
-    {
-        border-top: 1px solid black;
-        display: flex;
-        justify-content: center;
-    }
-
-.footerhaut
-{
-    flex-direction: column-reverse;
-}
-.colonne1
-{
-    display: flex;
-    flex-direction: column;
-}
-.colonne2
-{
-    order:1;
-}
-    .footerhaut
-    {
-        align-items: center;
-        text-align: center;
-    }
-.colonne3
-{
-    height: 10vh;
-    margin-top:2vh;
-    order: -1;
-    display: flex;
-}
-.flogo
-    {
-        width: 10%;
     }
 }
