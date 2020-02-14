@@ -19,6 +19,18 @@
     align-items: center;
     height: 40vh;
 }
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/*.navb
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}*/
 section /*carousel*/
 {
     width: 100%;
@@ -45,16 +57,28 @@ main
     padding-bottom: 0px;
     padding-left: 0px;
 }
+.sectionM /*Entreprise*/
+{
+    width: 100%;
+}
+.p1
+{
+    width: 80%;
+}
 .sectionB/*Activité*/
 {
     display: flex;
 }
-.sectionM
-{
-    width: 100%;
+p
+{   
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 18px;   
 }
-
-
+.p2
+{
+    width: 90%;
+}
 .A1
 {
     width: 33.3%;
@@ -73,7 +97,7 @@ main
 }
 .img2
 {
-    width: 1080px;
+    width: 1100px;
     height: 203px;
 }
 .img3
