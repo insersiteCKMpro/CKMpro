@@ -1,7 +1,7 @@
 #container
 {	
     width: 100%;
-    height: auto;
+    height: 340vh;
     background-color: whitesmoke;
 }
 .fixed-top 
@@ -24,10 +24,10 @@ nav
     display: flex;
     justify-content: center;
 }
-section /*carousel entreprise*/
+section /*carousel Entreprise*/
 {
     width: 100%;
-    height: 40vh;	
+    height: 52vh;	
 }
 .flash /* Débaras*/
 {
@@ -48,11 +48,11 @@ section /*carousel entreprise*/
 .sectionB /*Activité*/
 {
     display: flex;
+    width: 100%;
 }
-main /*professionnel particulier*/
+main /*Professionnel Particulier*/
 {
     background-color: whitesmoke;
-    border: 1px solid;
     height: 3vh;
     width: 97.5%;
     justify-content: center;
@@ -61,13 +61,13 @@ main /*professionnel particulier*/
 .mainh
 {
     width: 100%;
-    height: 50vh;
+    height: 47vh;
     display: flex;
 }
 .mainb
 {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
     display: flex;
 }
 .carouselslide
@@ -81,7 +81,8 @@ p
 {   
     margin-top: 0;
     margin-bottom: 1rem;
-    margin-left: 18px;   
+    /* margin-top: 0; */
+    /* margin-bottom: 1rem; */   
 }
 .A1
 {
@@ -94,9 +95,9 @@ p
     height: 15vh;
 }
 .img3
-{   
-    width: 280px;
-    height:200px;
+{
+    width: 210px;
+    height: 190px;  
 }
 .img4
 {
@@ -110,8 +111,8 @@ p
 }
 .imgM
 {
-    width: 515px;
-    height: 30vh
+    width: 300px;
+    height: 40vh;
 }
 
 
