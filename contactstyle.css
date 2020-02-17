@@ -58,6 +58,9 @@
     .star{display: initial; width:75%; height: 15vh;}
     .checkio{width:100%; height: 4vh; display: flex;}
     .checkio1{width:100%; height: 10vh; display: flex;}
+    #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
+    #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
+    #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
     .put {width: 33.3%; min-height: 2vh;}
     .put1 {width: 33%; height: 6vh; margin-top: 1vh;}    
     .btn{margin-left: 5vh; width: 75%;}
@@ -65,7 +68,8 @@
     .buton:hover {background-color: black !important; color: white !important;}
     .colonne3 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
     .colonne4 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: flex;}
-    .flogo {width: 6%;}
+    .flogo {width: 6%; display: flex; justify-content: center;}
+    .alignf {text-align: center !important; display: flex; flex-direction: column; align-items: center;}
     .snap {width:35%; height: 58%;}
     .fb {width:35%; height: 58%;}
     .insta {width:35%; height: 58%;}
@@ -84,6 +88,9 @@
     .buton {background-color: white !important; color: black !important; border: 2px solid black !important;}
     .buton:hover {background-color: black !important; color: white !important;}
     footer {border-top: 1px solid black;}
+    #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
+    #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
+    #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
     .flogo {width: 13%; margin-bottom: 15%;}
     .footerhaut {flex-direction: column-reverse;}
     .colonne2 {order:-1;}
