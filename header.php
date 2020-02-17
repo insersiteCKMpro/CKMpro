@@ -37,6 +37,14 @@
           #homeLogo {
             width: 30px;
             height: 22px;
+            margin: 0 20px;
+          }
+          .navbar
+          {
+            display:block;
+          }
+          .navbar-expand-lg .navbar-nav {
+            justify-content:center;
           }
           /* bouton menu burger */
           .navbar-toggler {
@@ -49,6 +57,13 @@
           /* liste nav qui contient tout mes li */
           .navbar-nav {
             align-items: center;
+            display:flex;
+            flex-direction:row;
+
+          }
+          .rounded 
+          {
+            border-radius: .25rem!important;
           }
           /* Séparation entre les liens (Menu burger déroulant)  */
           .trait1, .trait2, .trait3, .trait4, .trait5 {
@@ -108,6 +123,10 @@
           .dropdownDiv01 {
             display: grid;
           }
+          .navbar
+          {
+            display: none;
+          }
 
           /* FORMAT MOBILE MAXIMUM */
           @media screen and (max-width: 450px) {
@@ -142,6 +161,11 @@
             .nav-item1 {
               padding-left: 0;
             }
+.navbar
+{
+  display:flex;
+  display:none;
+}
           }
 
           /* FORMAT LAPTOP [MIN FORMAT TABLETTE | MAX FORMAT 4K] */
@@ -170,7 +194,7 @@
             }
           }
           /* FORMAT TABLETTE [MIN FORMAT MOBILE | MAX FORMAT TABLETTE] */
-          @media screen and (min-width: 451px) and (max-width: 768px) {
+          @media screen and (min-width: 451px) and (max-width: 992px) {
             /* class de la div qui contient le num et le nom */
             .fixed-top {
               width: 50% !important;
@@ -190,7 +214,30 @@
             /* On cache les traits */
             .trait {
               display: none;
-            }   
+            }  
+            .navbar-nav 
+            {
+
+              display: flex;
+              padding-left: 0;
+              margin-bottom: 0;
+              list-style: none;
+              flex-direction: row;
+            }
+            .justify-content-md-center 
+            {
+              justify-content: center!important;
+              display: flex !important;
+            }
+            [type=button], [type=reset], [type=submit], button 
+            {
+              -webkit-appearance: button;
+              display: none;
+            }
+            #homeLogo
+            {
+              margin-right:30px;
+            }
           }
 
             /* --------------GERER LE POINT DE RUPTURE DU MENU BURGER------------------
@@ -245,6 +292,55 @@
       <div class="logo">
         <img src="img/LOGOCKMPRODEF.png" alt="logo" id="logoHome">
       </div>
+
+      	<div class="ordi navbar-expand-lg navbar-light rounded">
+    	
+        	<p class="ordi textMenu"><strong>Menu</strong></p>
+
+      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
+        <div class="ordi mx-auto">
+          <p class="ordi textMenu"><strong>Menu</strong></p>
+          <button class="ordi navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
+            <div><i class="ordi fas fa-bars"></i></div>
+          </button>
+        </div>
+        <div class="ordi collapse navbar-collapse justify-content-md-center">
+          <ul class="ordi navbar-nav">
+            <li class="ordi nav-item1 lienImageLogoHome">
+              <a class="ordi navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
+            </li>
+            <div class="ordi trait trait1"></div>
+            <li class="ordi nav-item dropdown">
+              <a class="ordi nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
+              <div class="ordi dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+                <a class="ordi dropdown-item dropdown-item01" href="#">Dératisation</a>
+                <a class="ordi dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                <a class="ordi dropdown-item dropdown-item03" href="#">Désinsectisation</a>
+              </div>
+            </li>
+            <div class="ordi trait trait2"></div>
+            <li class="ordi nav-item1 active">
+              <a class="ordi nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
+            </li>
+            <div class="ordi trait trait3"></div>
+            <li class="ordi nav-item1 active">
+              <a class="ordi nav-link" href="#" id="dropdown03">Espaces Verts</a>
+            </li>
+            <div class="ordi trait trait4"></div>
+            <li class="ordi nav-item1 active dropdown">
+              <a class="ordi nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
+              <div class="ordi dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
+                <a class="ordi dropdown-item dropdown-item01" href="#">3D</a>
+                <a class="ordi dropdown-item dropdown-item02" href="#">Nettoyage</a>
+                <a class="ordi dropdown-item dropdown-item03" href="#">Espaces Verts</a>
+              </div>
+            </li>
+            <div class="ordi trait trait5"></div>
+          </ul>
+        </div>
+      </div>
+
+      
     
       <nav class="navbar navbar-expand-lg navbar-light rounded">
 
@@ -255,7 +351,7 @@
           </button>
         </div>
     
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample01">
+        <div class="" id="navbarsExample01">
           <ul class="navbar-nav">
             <li class="nav-item1 lienImageLogoHome">
               <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
