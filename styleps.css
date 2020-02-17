@@ -23,8 +23,11 @@ footer
     border-top: 2px solid grey;
     height: 30vh;
     align-items: center;
-    /* centrer total */
     
+}
+.ensemblefooter
+{
+    margin-top: 4%;
 }
 .footerhaut
 {
@@ -127,6 +130,10 @@ transition: all ease .3s .1s;
         width: 100%;
     }
 
+    footer
+{
+    height: auto;
+}
     .flogo
 {
     width: 40%;
@@ -186,6 +193,11 @@ transition: all ease .3s .1s;
     footer
 {
     border-top: 1px solid black;
+    height: auto;
+}
+.footerbas
+{
+    margin-top: 5%;
 }
 .flogo
 {
