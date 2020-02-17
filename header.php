@@ -258,7 +258,7 @@
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample01">
           <ul class="navbar-nav">
             <li class="nav-item1 lienImageLogoHome">
-              <a class="navbar-brand1" href="#"><img src="img/LOGO/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
+              <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
             </li>
             <div class="trait trait1"></div>
 
