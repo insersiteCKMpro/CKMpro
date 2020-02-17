@@ -18,10 +18,35 @@
 
 
 /* RESPONSIVE */
-/* ipad pro */
+
+/*TABLETTE*/
+@media screen and (max-width: 768px) and (min-width: 451px)
+{
+    .imgligne1
+    {
+        position: relative;
+        width: 100%;
+    }
+
+    .imgligne2 .titre2 .text2 .bg
+    {
+        width: 100%;
+    }
+    .bg
+    {
+        width: 100%;
+    }
+    .imgligne2
+    {
+        width: 100%;
+    }
+
+}
+
+/* PC */
 
 
-@media screen and (max-width: 1024px) 
+@media screen and (max-width: 2560px) and (min-width: 769px)
 {
     .imgligne1
     {
@@ -45,7 +70,7 @@
 }
 
 /* telephone */
-@media screen and (max-width: 375px) 
+@media screen and (max-width: 450px) 
 {
     .imgligne1
     {
