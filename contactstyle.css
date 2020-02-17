@@ -35,11 +35,12 @@
     .ftext2{text-decoration: none; color: black;}
     .ftext2:hover{text-decoration: none; color: black; background-color: blue; color: white;}
     .colonne3{display:flex; align-items: center; width: 30%; justify-content: center;}
-    .snap {width:35%; height: 58%;}
+    .colonne4 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
+    .snap {width:35%; height: 10vh;}
     .snap:hover{transition: all ease .3s .1s;}
-    .fb {width:50%; height: 50%;}
+    .fb {width:50%; height: 10vh;}
     .fb:hover{transition: all ease .3s .1s;}
-    .insta {width:50%; height: 50%;}
+    .insta {width:50%; height: 10vh;}
     .insta:hover{transition: all ease .3s .1s;}
     .flogo {width: 11.5%; height: 38%;}
 }
@@ -62,6 +63,8 @@
     .btn{margin-left: 5vh; width: 75%;}
     .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
     .buton:hover {background-color: black !important; color: white !important;}
+    .colonne3 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
+    .colonne4 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: flex;}
     .flogo {width: 6%;}
     .snap {width:35%; height: 58%;}
     .fb {width:35%; height: 58%;}
@@ -85,7 +88,8 @@
     .footerhaut {flex-direction: column-reverse;}
     .colonne2 {order:-1;}
     .footerhaut {align-items: center; text-align: center;}
-    .colonne3 {width: 100%; margin-bottom: 10%; margin-top:2vh;}
+    .colonne3 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
+    .colonne4 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: flex;}
     .snap {width:40%; height: 10vh;}
     .fb {width:40%; height: 10vh;}
     .insta {width:40%; height: 10vh;}
