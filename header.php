@@ -49,7 +49,16 @@
           {
             display:block;
           }
+          nav.navbar.navbar-expand-lg.navbar-light.cc
+          {
+            display:flex;
+            justify-content:center;
+          }
           .navbar-expand-lg .navbar-nav {
+            justify-content:center;
+          }
+          .navbar-expand-lg 
+          {
             justify-content:center;
           }
           /* bouton menu burger */
@@ -69,6 +78,8 @@
           .rounded 
           {
             border-radius: .25rem!important;
+            display:flex;
+            flex-direction:center;
           }
           /* Séparation entre les liens (Menu burger déroulant)  */
           .trait1, .trait2, .trait3, .trait4, .trait5 {
@@ -184,6 +195,12 @@
             {
               font-size:1.5em;
             }
+            ul.navbar-nav
+            {
+              display:flex;
+              flex-direction:row;
+            }
+            
             
           }
 
@@ -218,6 +235,11 @@
               margin-bottom: 0;
               list-style: none;
               flex-direction: row;
+            }
+            ul.navbar-nav
+            {
+              display:flex;
+              flex-direction:row;
             }
             .justify-content-md-center 
             {
@@ -277,6 +299,12 @@
             .fas {
               display: block;
             }
+            i.fas.fa-bars::before
+            {
+              display:flex;
+              flex-direction:column;
+              align-items:center;
+            }
             /* li qui contient les liens (3D, Nettoyage, Espaces Verts, Galeries */
             .nav-item1 {
               padding-left: 0;
@@ -291,6 +319,10 @@
               display:flex;
               flex-direction:column;
               justify-content:center;
+            }
+            .navbar-expand-lg .navbar-nav
+            {
+              font-size:1.3em;
             }
             .ordi
             {
@@ -337,6 +369,12 @@
             .navbar-toggle
             {
               display:block;
+            }
+
+            div#dropdownDiv01.dropdown-menu.show , div#dropdownDiv02.dropdown-menu.show
+            {
+              font-size:0.3em;
+              border-bottom:1px solid black
             }
           }
 
@@ -406,9 +444,9 @@
 
       
     
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+      <nav class="navbar navbar-expand-lg navbar-light cc">
 
-        <div class="mx-auto">
+        <div class="bn">
           <p class="textMenu"><strong>Menu</strong></p>
           <a class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
             <div><i class="fas fa-bars"></i></div><img src="img/burger.png" class="burger" alt="">
@@ -424,7 +462,7 @@
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+              <div class="dropdown-menu border border-0 text-center" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
                 <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
                 <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
                 <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
@@ -447,7 +485,7 @@
 
             <li class="nav-item1 active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
+              <div class="dropdown-menu border border-0 text-center" aria-labelledby="dropdown04" id="dropdownDiv02">
                 <a class="dropdown-item dropdown-item01" href="#">3D</a>
                 <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
                 <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
