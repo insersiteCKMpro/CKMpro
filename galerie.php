@@ -1,8 +1,12 @@
 <?php
 require_once("header.php")
 ?>
+<style>
+  nav {
+    display: none;
+}
+</style>
 <section>
-<!------ Include the above in your HEAD tag ---------->
 
   <div class="container-fluid">
   
