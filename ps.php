@@ -24,6 +24,11 @@ require_once("header.php")
 
     .imgligne3 {
         background-color: red;
+        height:45vh;
+    }
+    p.text-center
+    {
+        font-size:2em;
     }
 
     
@@ -49,7 +54,10 @@ require_once("header.php")
         .imgligne2 {
             width: 100%;
         }
-
+        p.text-center
+    {
+        font-size:1em;
+    }
 
 
 
@@ -100,6 +108,10 @@ require_once("header.php")
         .imgligne2 {
             width: 100%;
         }
+        p.text-center
+    {
+        font-size:1em;
+    }
 
     }
     

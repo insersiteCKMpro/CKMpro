@@ -160,6 +160,12 @@
             display: none;
           }
           
+          /* couleur de 3D */
+          a#navbarDropdownMenuLink.nav-link.dropdown-toggle
+          {
+            color:rgb(0,0,0,0.9);
+          }
+          
 /* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
 
 

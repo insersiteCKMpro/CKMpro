@@ -19,6 +19,7 @@
     {
         display: flex;
         justify-content: space-evenly;
+        font-size:1.5em;
     }
 
 
@@ -26,6 +27,7 @@
 {
     display: flex;
     justify-content: center;
+    font-size:1em;
 }
 .colonne1
 {
@@ -128,6 +130,10 @@
     margin-bottom: 10%;
     margin-top:2vh;
 }
+.footerhaut , .footerbas
+{
+    font-size:1em;
+}
 
 }
 @media screen and (max-width: 425px)
@@ -136,6 +142,10 @@
     {
         width: 40%;
     }
+    .footerhaut , .footerbas
+{
+    font-size:1em;
+}
 }
 @media screen and (max-width: 768px)
 {
@@ -143,6 +153,10 @@
     {
         width: 30%;
     }
+    .footerhaut , .footerbas
+{
+    font-size:1em;
+}
 }
     
 </style>
