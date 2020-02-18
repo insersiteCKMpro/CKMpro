@@ -1,387 +1,199 @@
-
-
 .imgligne1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imgligne2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imgligne3
-{
-    background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-footer
-{
-    background-color: rgba(0, 174, 239, 0.5);
-    width: 100%;
-    border-top: 2px solid grey;
-    height: 30vh;
-    align-items: center;
-}
-
-.ensemblefooter
-{
-    margin-top: 4%;
-}
-.footerhaut
-{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.footerbas
-{
-display: flex;
-justify-content: center;
-}
-.colonne1
-{
-
-width: 30%;
-align-items: center;
-color: black !important;
-text-decoration: none !important;
-display: flex;
-flex-direction: column;
-}
-.ftext1
-{
-text-decoration: none;
-color: black;
-}
-.ftext1:hover
-{
-text-decoration: none;
-color: black;
-background-color: blue;
-color: white;
-}
-
-.colonne2
-{
-
-width: 30%;
-color: black !important;
-text-decoration: none !important;
-}
-.ftext2
-{
-text-decoration: none;
-color: black;
-}
-.ftext2:hover
-{
-text-decoration: none;
-color: black;
-background-color: blue;
-color: white;
+.imgligne3 {
+  background-color: red;
 }
 
 
-.colonne3 
-{
-display:flex;
-align-items: center;
-width: 30%;
-justify-content: center;
-}
-
-.snap:hover
-{
-transition: all ease .3s .1s;
-}
-.fb:hover
-{
-transition: all ease .3s .1s;
-}
-.insta:hover
-{
-transition: all ease .3s .1s;
-}
 
 
 /* RESPONSIVE */
 
 /*TABLETTE*/
-@media screen and (max-width: 768px) and (min-width: 451px)
-{
-    .imgligne1
-    {
-        position: relative;
-        width: 100%;
-    }
+@media screen and (max-width: 768px) and (min-width: 451px) {
+  .imgligne1 {
+    position: relative;
+    width: 100%;
+  }
 
-    .imgligne2 .titre2 .text2 .bg
-    {
-        width: 100%;
-    }
-    .bg
-    {
-        width: 100%;
-    }
-    .imgligne2
-    {
-        width: 100%;
-    }
+  .imgligne2 .titre2 .text2 .bg {
+    width: 100%;
+  }
 
-    footer
-{
-    height: auto;
-}
-    .flogo
-{
-    width: 40%;
+  .bg {
+    width: 100%;
+  }
+
+  .imgligne2 {
+    width: 100%;
+  }
+
+ 
+
+/* class de la div qui contient le num et le nom */
+.fixed-top {
+  width: 50% !important;
+  float: right !important;
+  padding-left: 10vh !important;
+  position: inherit !important;
 }
 
+/* icone téléphone */
+#fas {
+  display: none;
+}
 
- /* class de la div qui contient le num et le nom */
- .fixed-top {
-    width: 50% !important;
-    float: right !important;
-    padding-left: 10vh !important;
-    position: inherit !important;
-  }
-  /* icone téléphone */
-  #fas {
-    display: none;
-  }
-  /* On cache le text 'Menu' sur le bouton */
-  .textMenu {
-    display: none;
-  }
-  /* On cache les traits */
-  .trait {
-    display: none;
-  }  
-  .navbar-nav 
-  {
+/* On cache le text 'Menu' sur le bouton */
+.textMenu {
+  display: none;
+}
 
-    display: flex;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    flex-direction: row;
-  }
-  .justify-content-md-center 
-  {
-    justify-content: center!important;
-    display: flex !important;
-  }
-  [type=button], [type=reset], [type=submit], button 
-  {
-    -webkit-appearance: button;
-    display: none;
-  }
-  #homeLogo
-  {
-    margin-right:30px;
-  }
-  .navbar-expand-lg .navbar-nav 
-  {
-    justify-content: center;
-    font-size: 3vh;
-  }
-  .logo #logoHome 
-  {
-    width: 60%;
-  }
-    .fixed-top
-  {
-    font-size:1.2em;
-  }
+/* On cache les traits */
+.trait {
+  display: none;
+}
+
+.navbar-nav {
+
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-direction: row;
+}
+
+.justify-content-md-center {
+  justify-content: center !important;
+  display: flex !important;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+  display: none;
+}
+
+#homeLogo {
+  margin-right: 30px;
+}
+
+.navbar-expand-lg .navbar-nav {
+  justify-content: center;
+  font-size: 3vh;
+}
+
+.logo #logoHome {
+  width: 60%;
+}
+
+.fixed-top {
+  font-size: 1.2em;
+}
+
+.navbar-expand-lg .navbar-nav {
+  justify-content: center;
+  font-size: 1.5vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 
 }
 
 /* PC */
 
 
-@media screen and (max-width: 2560px) and (min-width: 769px)
-{
-    .imgligne1
-    {
-        position: relative;
-        width: 100%;
-    }
+@media screen and (max-width: 2560px) and (min-width: 769px) {
+  .imgligne1 {
+    position: relative;
+    width: 100%;
+  }
 
-    .imgligne2 .titre2 .text2 .bg
-    {
-        width: 100%;
-    }
-    .bg
-    {
-        width: 100%;
-    }
-    .imgligne2
-    {
-        width: 100%;
-    }
+  .imgligne2 .titre2 .text2 .bg {
+    width: 100%;
+  }
+
+  .bg {
+    width: 100%;
+  }
+
+  .imgligne2 {
+    width: 100%;
+  }
 
 
-    #fass {
-        display: none;
-      }
-      /* On cache le text 'Menu' sur le bouton */
-      .textMenu {
-        display: none;
-      }
-      /* On cache les traits */
-      .trait {
-        display: none;
-      }
-      /* style du déroulant de la nav */
-      .dropdown-menu{
-        justify-content: center;
-        border: 0;
-        background-color: transparent;
-      }
-      /* On cache les traits */
-      .navbar-toggle {
-        display: none;
-      }
-      .logo #logoHome 
-      {
-        width: 40%;
-      }
-      .fixed-top
-      {
-        font-size:1.5em;
-      }
+  #fass {
+    display: none;
+  }
+
+  /* On cache le text 'Menu' sur le bouton */
+  .textMenu {
+    display: none;
+  }
+
+  /* On cache les traits */
+  .trait {
+    display: none;
+  }
+
+  /* style du déroulant de la nav */
+  .dropdown-menu {
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+  }
+
+  /* On cache les traits */
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo #logoHome {
+    width: 40%;
+  }
+
+  .fixed-top {
+    font-size: 1.5em;
+  }
 
 }
 
 /* telephone */
-@media screen and (max-width: 450px) 
-{
-    .imgligne1
-    {
-        position: relative;
-        width: 100%;
-    }
+@media screen and (max-width: 450px) {
+  .imgligne1 {
+    position: relative;
+    width: 100%;
+  }
 
-    .imgligne2 .titre2 .text2 .bg
-    {
-        width: 100%;
-    }
-    .bg
-    {
-        width: 100%;
-    }
-    .imgligne2
-    {
-        width: 100%;
-    }
+  .imgligne2 .titre2 .text2 .bg {
+    width: 100%;
+  }
 
-    footer
-{
-    border-top: 1px solid black;
-    height: auto;
-}
-.footerbas
-{
-    margin-top: 5%;
-}
-.flogo
-{
-width: 50%;
-margin-bottom: 15%;
-}
-.footerhaut
-{
-flex-direction: column-reverse;
-}
-.colonne2
-{
-order:-1;
-}
-.footerhaut
-{
-    align-items: center;
-    text-align: center;
-}
-.colonne3
-{
-width: 100%;
-margin-bottom: 10%;
-margin-top:2vh;
-}
+  .bg {
+    width: 100%;
+  }
+
+  .imgligne2 {
+    width: 100%;
+  }
+
+ 
 
 
 
 
- /* On cache l'icone telephone */
- .fas {
-    display: none;
-  }
-  /* class de la div qui contient le num et le nom */
-  .fixed-top {
-    justify-content: space-between !important;
-    display: none;
-    width: 100% !important;
-  }
-  /* image logo titre */
-  .logo #logoHome {
-    width: 90%;
-  }
-  /* numéro */
-  #num {
-    width: 50%;
-    padding-left: 4vh;
-  }
-  /* nom d'entreprise */
-  #nom {
-    width: 35%;
-  }
-  /* icone téléphone */
-  #fas {
-    display: none;
-  }
-  /* li qui contient les liens (3D, Nettoyage, Espaces Verts, Galeries */
-  .nav-item1 {
-    padding-left: 0;
-  }
-  .navbar
-  {
-    display:flex;
-    flex-direction:column;
-  }
-  .navbar-nav
-  {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-  }
-  .ordi
-  {
-    display:none;
-  }
-  .burger
-  {
-    background:url(CKMpro/img/burger.png) no-repeat;
-    background-size:cover;
-    width:20%;
-  }
-  .ml-auto, .mx-auto 
-  {
-    margin-left: auto!important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) 
-  {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-  }
-  #homeLogo
-  {
-    margin:30px 20px 0;
-  }
+ 
 }
-
