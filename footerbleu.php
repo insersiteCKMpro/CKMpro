@@ -13,14 +13,14 @@
     
     footer
     {
-        background-color: rgba(0, 174, 239, 0.5)
-
+        background-color: rgba(0, 174, 239, 0.5);
     }
     .footerhaut
     {
         display: flex;
         justify-content: space-evenly;
     }
+
 
 .footerbas
 {
@@ -36,6 +36,7 @@
     text-decoration: none !important;
     display: flex;
     flex-direction: column;
+    margin-top:2%;
 }
 .ftext1
 {
@@ -56,6 +57,7 @@
     width: 30%;
     color: black !important;
     text-decoration: none !important;
+    margin-top:2%;
 }
 .ftext2
 {
@@ -77,6 +79,7 @@
     align-items: center;
     width: 30%;
     justify-content: center;
+    margin-top:2%;
 }
 
 .snap:hover
@@ -153,7 +156,7 @@
             <div class="footerhaut text-center">
                     <div class="colonne1 text-center">
                         
-                        <img class="flogo" src="img/CKMHOMEFOOTER.png" width="50%">
+                        <img class="flogo" src="img/CKMHOMEFOOTER.png" width="10%">
                         <a class="ftext1" href="">3D</a>
                         <a class="ftext1" href="">Nettoyage</a>
                         <a class="ftext1" href="">Espace Verts</a>
