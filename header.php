@@ -368,7 +368,7 @@
 
 
 
-      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
+      <div class="ordi navbar-expand-lg navbar-light rounded">
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
@@ -413,7 +413,7 @@
 
       
     
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+      < class="navbar navbar-expand-lg navbar-light rounded">
 
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
@@ -474,6 +474,10 @@
     </div>
   
   </header>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 400e491d2da30e0616b70c140ea7012fc2e972cf
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

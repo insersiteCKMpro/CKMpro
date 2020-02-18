@@ -53,9 +53,9 @@ require_once("header.php")
 @media screen and (min-width: 451px) and (max-width: 768px) {
     .test {min-height: 110vh; display: flex; justify-content: center;}
     .test2 { display: none;}
-    .test3{ display:flex; flex-direction: column; text-align: center; min-height: 17vh; width:100%; border-bottom: 1px solid grey;}
-    .trait1{display: none;}
-    .trait2{width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .test3 { display:flex; flex-direction: column; text-align: center; min-height: 17vh; width:100%; border-bottom: 1px solid grey;}
+    .trait1 {display: none;}
+    .trait2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
     .titrec {height: 5vh; text-align: center;}
     .traitori{background-color: black; height: 2px;}
     .espace{margin-top: 5px;}
