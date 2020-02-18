@@ -35,14 +35,8 @@
           }
           /* li qui contient le lien et l'image logo Home  */
           #homeLogo {
-            width: 30px;
-            height: 22px;
-            margin: 0 20px;
-          }
-          #homeLogo 
-          {
-            width: 30px;
-            height: 22px;
+            width: 50%;
+            height: 50%;
             margin: 0 20px;
           }
           .fixed-top 
@@ -50,7 +44,7 @@
             display: flex;
             justify-content: flex-end;
             margin-right: 2vh;
-            font-size: 2em;
+            font-size: 1.2em;
           }
           .navbar
           {
@@ -70,6 +64,12 @@
           /* liste nav qui contient tout mes li */
           .navbar-nav {
             align-items: center;
+            display:flex;
+            flex-direction:row;
+          }
+          .rounded 
+          {
+            border-radius: .25rem!important;
           }
           /* Séparation entre les liens (Menu burger déroulant)  */
           .trait1, .trait2, .trait3, .trait4, .trait5 {
@@ -83,6 +83,14 @@
             width: 100%;
             height: 1px;
             background-color: black;
+          }
+          .dropdown-item
+          {
+            font-size:1.8em;
+          }
+          .navbar-light .navbar-nav .nav-link 
+          {
+            color:black;
           }
           /* lien du déroulant */
           .dropdown-item1 {
@@ -116,13 +124,13 @@
           }
           /* hover style lien 3D */
           .dropdown-item02:hover {
-            background-color: RGB(37, 170, 226) !important;
+            background-color: #fef200 !important;
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
           /* hover style lien 3D */
           .dropdown-item03:hover {
-            background-color: #00a652 !important;
+            background-color: #fef200 !important;
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
@@ -138,8 +146,116 @@
             justify-content: center;
             font-size: 4vh;
           }
+          .boutonTel {
+            display: none;
+          }
+          
+/* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
 
-          /* FORMAT MOBILE MAXIMUM */
+
+/* FORMAT PC */
+            @media screen and (min-width: 769px) and (max-width: 2560px) {
+            /* On cache l'icone telephone */
+            #fass {
+              display: none;
+            }
+            /* On cache le text 'Menu' sur le bouton */
+            .textMenu {
+              display: none;
+            }
+            /* On cache les traits */
+            .trait {
+              display: none;
+            }
+            /* style du déroulant de la nav */
+            .dropdown-menu{
+              justify-content: center;
+              border: 0;
+              background-color: transparent;
+            }
+            /* On cache les traits */
+            .navbar-toggle {
+              display: none;
+            }
+            .logo #logoHome 
+            {
+              width: 40%;
+            }
+            .fixed-top
+            {
+              font-size:1.5em;
+            }
+            .telep {
+              display: none;
+            }
+            
+          }
+
+            
+/* FORMAT TABLETTE */
+
+            @media screen and (min-width: 451px) and (max-width: 768px) {
+            /* class de la div qui contient le num et le nom */
+            .fixed-top {
+              width: 50% !important;
+              float: right !important;
+              padding-left: 10vh !important;
+              position: inherit !important;
+            }
+            /* icone téléphone */
+            #fas {
+              display: none;
+            }
+            /* On cache le text 'Menu' sur le bouton */
+            .textMenu {
+              display: none;
+            }
+            /* On cache les traits */
+            .trait {
+              display: none;
+            }  
+            .navbar-nav 
+            {
+
+              display: flex;
+              padding-left: 0;
+              margin-bottom: 0;
+              list-style: none;
+              flex-direction: row;
+            }
+            .justify-content-md-center 
+            {
+              justify-content: center!important;
+              display: flex !important;
+            }
+            [type=button], [type=reset], [type=submit], button 
+            {
+              -webkit-appearance: button;
+              display: none;
+            }
+            #homeLogo
+            {
+              margin-right:30px;
+            }
+            .navbar-expand-lg .navbar-nav 
+            {
+              justify-content: center;
+              font-size: 3vh;
+            }
+            .logo #logoHome 
+            {
+              width: 60%;
+            }
+              .fixed-top
+            {
+              font-size:1.2em;
+            }
+            .telep {
+              display: none;
+            }
+          }
+
+/* FORMAT MOBILE  */
           @media screen and (max-width: 450px) {
             /* On cache l'icone telephone */
             .fas {
@@ -148,7 +264,7 @@
             /* class de la div qui contient le num et le nom */
             .fixed-top {
               justify-content: space-between !important;
-              display: flex !important;
+              display: none;
               width: 100% !important;
             }
             /* image logo titre */
@@ -209,92 +325,34 @@
             #homeLogo
             {
               margin:30px 20px 0;
+              padding-left: 50px;
             }
-                      }
-
-          /* FORMAT LAPTOP [MIN FORMAT TABLETTE | MAX FORMAT 4K] */
-          @media screen and (min-width: 769px) and (max-width: 2560px) {
-            /* On cache l'icone telephone */
-            #fass {
-              display: none;
-            }
-            /* On cache le text 'Menu' sur le bouton */
-            .textMenu {
-              display: none;
-            }
-            /* On cache les traits */
-            .trait {
-              display: none;
-            }
-            /* style du déroulant de la nav */
-            .dropdown-menu{
+            /* Bouton téléphone  */
+            .boutonTel {
+              width: 8vh;
+              height: 8vh;
+              background-color: lightgrey;
+              border: 1px solid black;
+              border-radius: 50%;
+              display: flex;
               justify-content: center;
-              border: 0;
+              align-items: center;
+              position: fixed;
+              z-index: 1;
+              right: 5px;
+              top: 21vh;
+            }
+            #lienTel {
+              color: black;
+              text-decoration: none;
               background-color: transparent;
             }
-            /* On cache les traits */
-            .navbar-toggle {
-              display: none;
+            #iconTel {
+              font-size: 2em;
+              display: block;<
             }
-          }
-          /* FORMAT TABLETTE [MIN FORMAT MOBILE | MAX FORMAT TABLETTE] */
-          @media screen and (min-width: 451px) and (max-width: 768px) {
-            /* class de la div qui contient le num et le nom */
-            .fixed-top {
-              width: 50% !important;
-              float: right !important;
-              padding-left: 10vh !important;
-              position: inherit !important;
-              display: block !important;
-            }
-            /* icone téléphone */
-            #fas {
-              display: none;
-            }
-            /* On cache le text 'Menu' sur le bouton */
-            .textMenu {
-              display: none;
-            }
-            /* On cache les traits */
-            .trait {
-              display: none;
-            }   
           }
 
-            /* --------------GERER LE POINT DE RUPTURE DU MENU BURGER------------------
-            @media screen and (max-width: 768px) {
-              .navbar {
-                float: none;
-              }
-              .navbar-toggle {
-                display: block;
-              }
-              .navbar-collapse {
-                border-top: 1px solid transparent;
-                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-              }
-              .navbar-collapse.collapse {
-                display: none !important;
-              }
-              .navbar-nav {
-                float: none !important;
-                margin: 7.5px -15px;
-              }
-              .navbar-nav>li>a {
-                padding-top: 10px;
-                padding-bottom: 10px;
-              }
-              .navbar-text{
-                float: none;
-                margin: 15px 0;
-              }
-              .navbar-collapse.collapse.in {
-                display: block !important;
-              }
-              .collapsing {
-                overflow: hidden !important;
-              }
-            } */
     </style>
 
 </head>
@@ -316,7 +374,7 @@
 
 
 
-      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
+      <div class="ordi navbar-expand-lg navbar-light rounded">
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
@@ -333,7 +391,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
                 <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
                 <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
               </div>
             </li>
@@ -361,7 +419,7 @@
 
       
     
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+      <div class="telep navbar-expand-lg navbar-light rounded">
 
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
@@ -370,7 +428,7 @@
           </a>
         </div>
     
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample01">
+        <div class="" id="navbarsExample01">
           <ul class="navbar-nav">
             <li class="nav-item1 lienImageLogoHome">
               <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
@@ -413,11 +471,16 @@
           </ul>
         </div>
 
-    </nav>
+        </div>
 
     <div class="trait6"></div>
+
+    <div class="boutonTel">
+      <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
+    </div>
   
   </header>
+  
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
