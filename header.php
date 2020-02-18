@@ -147,8 +147,105 @@
             justify-content: center;
             font-size: 4vh;
           }
+/* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
 
-          /* FORMAT MOBILE MAXIMUM */
+
+/* FORMAT PC */
+            @media screen and (min-width: 769px) and (max-width: 2560px) {
+            /* On cache l'icone telephone */
+            #fass {
+              display: none;
+            }
+            /* On cache le text 'Menu' sur le bouton */
+            .textMenu {
+              display: none;
+            }
+            /* On cache les traits */
+            .trait {
+              display: none;
+            }
+            /* style du déroulant de la nav */
+            .dropdown-menu{
+              justify-content: center;
+              border: 0;
+              background-color: transparent;
+            }
+            /* On cache les traits */
+            .navbar-toggle {
+              display: none;
+            }
+            .logo #logoHome 
+            {
+              width: 40%;
+            }
+            .fixed-top
+            {
+              font-size:1.5em;
+            }
+          }
+
+            
+/* FORMAT TABLETTE */
+
+            @media screen and (min-width: 451px) and (max-width: 768px) {
+            /* class de la div qui contient le num et le nom */
+            .fixed-top {
+              width: 50% !important;
+              float: right !important;
+              padding-left: 10vh !important;
+              position: inherit !important;
+            }
+            /* icone téléphone */
+            #fas {
+              display: none;
+            }
+            /* On cache le text 'Menu' sur le bouton */
+            .textMenu {
+              display: none;
+            }
+            /* On cache les traits */
+            .trait {
+              display: none;
+            }  
+            .navbar-nav 
+            {
+
+              display: flex;
+              padding-left: 0;
+              margin-bottom: 0;
+              list-style: none;
+              flex-direction: row;
+            }
+            .justify-content-md-center 
+            {
+              justify-content: center!important;
+              display: flex !important;
+            }
+            [type=button], [type=reset], [type=submit], button 
+            {
+              -webkit-appearance: button;
+              display: none;
+            }
+            #homeLogo
+            {
+              margin-right:30px;
+            }
+            .navbar-expand-lg .navbar-nav 
+            {
+              justify-content: center;
+              font-size: 3vh;
+            }
+            .logo #logoHome 
+            {
+              width: 60%;
+            }
+              .fixed-top
+            {
+              font-size:1.2em;
+            }
+          }
+
+          /* FORMAT MOBILE  */
           @media screen and (max-width: 450px) {
             /* On cache l'icone telephone */
             .fas {
@@ -157,7 +254,7 @@
             /* class de la div qui contient le num et le nom */
             .fixed-top {
               justify-content: space-between !important;
-              display: flex !important;
+              display: none;
               width: 100% !important;
             }
             /* image logo titre */
@@ -221,124 +318,9 @@
             }
                       }
 
-          /* FORMAT LAPTOP [MIN FORMAT TABLETTE | MAX FORMAT 4K] */
-          @media screen and (min-width: 769px) and (max-width: 2560px) {
-            /* On cache l'icone telephone */
-            #fass {
-              display: none;
-            }
-            /* On cache le text 'Menu' sur le bouton */
-            .textMenu {
-              display: none;
-            }
-            /* On cache les traits */
-            .trait {
-              display: none;
-            }
-            /* style du déroulant de la nav */
-            .dropdown-menu{
-              justify-content: center;
-              border: 0;
-              background-color: transparent;
-            }
-            /* On cache les traits */
-            .navbar-toggle {
-              display: none;
-            }
-            .logo #logoHome 
-            {
-              width: 40%;
-            }
-          }
-          /* FORMAT TABLETTE [MIN FORMAT MOBILE | MAX FORMAT TABLETTE] */
-          @media screen and (min-width: 451px) and (max-width: 1160px) {
-            /* class de la div qui contient le num et le nom */
-            .fixed-top {
-              width: 50% !important;
-              float: right !important;
-              padding-left: 10vh !important;
-              position: inherit !important;
-              display: block !important;
-            }
-            /* icone téléphone */
-            #fas {
-              display: none;
-            }
-            /* On cache le text 'Menu' sur le bouton */
-            .textMenu {
-              display: none;
-            }
-            /* On cache les traits */
-            .trait {
-              display: none;
-            }  
-            .navbar-nav 
-            {
 
-              display: flex;
-              padding-left: 0;
-              margin-bottom: 0;
-              list-style: none;
-              flex-direction: row;
-            }
-            .justify-content-md-center 
-            {
-              justify-content: center!important;
-              display: flex !important;
-            }
-            [type=button], [type=reset], [type=submit], button 
-            {
-              -webkit-appearance: button;
-              display: none;
-            }
-            #homeLogo
-            {
-              margin-right:30px;
-            }
-            .navbar-expand-lg .navbar-nav 
-            {
-              justify-content: center;
-              font-size: 3vh;
-            }
-            .logo #logoHome {
-    width: 60%;
-}
-          }
+         
 
-            /* --------------GERER LE POINT DE RUPTURE DU MENU BURGER------------------
-            @media screen and (max-width: 768px) {
-              .navbar {
-                float: none;
-              }
-              .navbar-toggle {
-                display: block;
-              }
-              .navbar-collapse {
-                border-top: 1px solid transparent;
-                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-              }
-              .navbar-collapse.collapse {
-                display: none !important;
-              }
-              .navbar-nav {
-                float: none !important;
-                margin: 7.5px -15px;
-              }
-              .navbar-nav>li>a {
-                padding-top: 10px;
-                padding-bottom: 10px;
-              }
-              .navbar-text{
-                float: none;
-                margin: 15px 0;
-              }
-              .navbar-collapse.collapse.in {
-                display: block !important;
-              }
-              .collapsing {
-                overflow: hidden !important;
-              }
-            } */
     </style>
 
 </head>
