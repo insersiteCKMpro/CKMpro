@@ -35,14 +35,8 @@
           }
           /* li qui contient le lien et l'image logo Home  */
           #homeLogo {
-            width: 30px;
-            height: 22px;
-            margin: 0 20px;
-          }
-          #homeLogo 
-          {
-            width: 30px;
-            height: 22px;
+            width: 50%;
+            height: 50%;
             margin: 0 20px;
           }
           .fixed-top 
@@ -90,6 +84,14 @@
             width: 100%;
             height: 1px;
             background-color: black;
+          }
+          .dropdown-item
+          {
+            font-size:1.8em;
+          }
+          .navbar-light .navbar-nav .nav-link 
+          {
+            color:black;
           }
           /* lien du déroulant */
           .dropdown-item1 {
@@ -243,9 +245,13 @@
             .navbar-toggle {
               display: none;
             }
+            .logo #logoHome 
+            {
+              width: 40%;
+            }
           }
           /* FORMAT TABLETTE [MIN FORMAT MOBILE | MAX FORMAT TABLETTE] */
-          @media screen and (min-width: 451px) and (max-width: 992px) {
+          @media screen and (min-width: 451px) and (max-width: 1160px) {
             /* class de la div qui contient le num et le nom */
             .fixed-top {
               width: 50% !important;
@@ -289,6 +295,14 @@
             {
               margin-right:30px;
             }
+            .navbar-expand-lg .navbar-nav 
+            {
+              justify-content: center;
+              font-size: 3vh;
+            }
+            .logo #logoHome {
+    width: 60%;
+}
           }
 
             /* --------------GERER LE POINT DE RUPTURE DU MENU BURGER------------------
