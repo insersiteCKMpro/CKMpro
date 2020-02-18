@@ -147,23 +147,9 @@
             font-size: 4vh;
           }
           .boutonTel {
-            width: 8vh;
-            height: 8vh;
-            background-color: lightgrey;
-            border: 1px solid black;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: none;
           }
-          #lienTel {
-            color: black;
-            text-decoration: none;
-            background-color: transparent;
-          }
-          #iconTel {
-            font-size: 2em;
-          }
+          
 /* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
 
 
@@ -199,6 +185,7 @@
             {
               font-size:1.5em;
             }
+            
           }
 
             
@@ -262,7 +249,7 @@
             }
           }
 
-          /* FORMAT MOBILE  */
+/* FORMAT MOBILE  */
           @media screen and (max-width: 450px) {
             /* On cache l'icone telephone */
             .fas {
@@ -332,11 +319,33 @@
             #homeLogo
             {
               margin:30px 20px 0;
+              padding-left: 50px;
+            }
+            /* Bouton téléphone  */
+            .boutonTel {
+              width: 8vh;
+              height: 8vh;
+              background-color: lightgrey;
+              border: 1px solid black;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: fixed;
+              z-index: 1;
+              right: 5px;
+              top: 21vh;
+            }
+            #lienTel {
+              color: black;
+              text-decoration: none;
+              background-color: transparent;
+            }
+            #iconTel {
+              font-size: 2em;
+              display: block;<
             }
           }
-
-
-         
 
     </style>
 
@@ -458,13 +467,16 @@
 
     </nav>
 
+    <div class="trait6"></div>
+
     <div class="boutonTel">
       <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
     </div>
-
-    <div class="trait6"></div>
   
   </header>
+  <section style="background-color: red; height: 60vh; width: 95%;" class="mx-auto">
+      
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
