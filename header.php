@@ -66,7 +66,6 @@
             align-items: center;
             display:flex;
             flex-direction:row;
-
           }
           .rounded 
           {
@@ -125,13 +124,13 @@
           }
           /* hover style lien 3D */
           .dropdown-item02:hover {
-            background-color: RGB(37, 170, 226) !important;
+            background-color: #fef200 !important;
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
           /* hover style lien 3D */
           .dropdown-item03:hover {
-            background-color: #00a652 !important;
+            background-color: #fef200 !important;
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
@@ -146,6 +145,24 @@
           {
             justify-content: center;
             font-size: 4vh;
+          }
+          .boutonTel {
+            width: 8vh;
+            height: 8vh;
+            background-color: lightgrey;
+            border: 1px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          #lienTel {
+            color: black;
+            text-decoration: none;
+            background-color: transparent;
+          }
+          #iconTel {
+            font-size: 2em;
           }
 /* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
 
@@ -316,7 +333,7 @@
             {
               margin:30px 20px 0;
             }
-                      }
+          }
 
 
          
@@ -359,7 +376,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
                 <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
                 <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
               </div>
             </li>
@@ -440,6 +457,10 @@
         </div>
 
     </nav>
+
+    <div class="boutonTel">
+      <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
+    </div>
 
     <div class="trait6"></div>
   
