@@ -368,7 +368,7 @@
 
 
 
-      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
+      <div class="ordi navbar-expand-lg navbar-light rounded">
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
@@ -413,7 +413,7 @@
 
       
     
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+      < class="navbar navbar-expand-lg navbar-light rounded">
 
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>

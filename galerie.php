@@ -2,7 +2,7 @@
 require_once("header.php")
 ?>
 <style>
-  nav {
+  .ordi {
     display: none;
 }
 </style>
