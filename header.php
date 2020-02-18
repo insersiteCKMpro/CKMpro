@@ -37,8 +37,6 @@
           #homeLogo {
             width: 30px;
             height: 22px;
-<<<<<<< HEAD
-=======
             margin: 0 20px;
           }
           #homeLogo 
@@ -60,7 +58,6 @@
           }
           .navbar-expand-lg .navbar-nav {
             justify-content:center;
->>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
           }
           /* bouton menu burger */
           .navbar-toggler {
@@ -73,6 +70,13 @@
           /* liste nav qui contient tout mes li */
           .navbar-nav {
             align-items: center;
+            display:flex;
+            flex-direction:row;
+
+          }
+          .rounded 
+          {
+            border-radius: .25rem!important;
           }
           /* Séparation entre les liens (Menu burger déroulant)  */
           .trait1, .trait2, .trait3, .trait4, .trait5 {
@@ -132,8 +136,6 @@
           .dropdownDiv01 {
             display: grid;
           }
-<<<<<<< HEAD
-=======
           .navbar
           {
             display: none;
@@ -143,7 +145,6 @@
             justify-content: center;
             font-size: 4vh;
           }
->>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
 
           /* FORMAT MOBILE MAXIMUM */
           @media screen and (max-width: 450px) {
@@ -178,9 +179,6 @@
             .nav-item1 {
               padding-left: 0;
             }
-<<<<<<< HEAD
-          }
-=======
             .navbar
             {
               display:flex;
@@ -220,7 +218,6 @@
               margin:30px 20px 0;
             }
                       }
->>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
 
           /* FORMAT LAPTOP [MIN FORMAT TABLETTE | MAX FORMAT 4K] */
           @media screen and (min-width: 769px) and (max-width: 2560px) {
@@ -248,7 +245,7 @@
             }
           }
           /* FORMAT TABLETTE [MIN FORMAT MOBILE | MAX FORMAT TABLETTE] */
-          @media screen and (min-width: 451px) and (max-width: 768px) {
+          @media screen and (min-width: 451px) and (max-width: 992px) {
             /* class de la div qui contient le num et le nom */
             .fixed-top {
               width: 50% !important;
@@ -268,7 +265,30 @@
             /* On cache les traits */
             .trait {
               display: none;
-            }   
+            }  
+            .navbar-nav 
+            {
+
+              display: flex;
+              padding-left: 0;
+              margin-bottom: 0;
+              list-style: none;
+              flex-direction: row;
+            }
+            .justify-content-md-center 
+            {
+              justify-content: center!important;
+              display: flex !important;
+            }
+            [type=button], [type=reset], [type=submit], button 
+            {
+              -webkit-appearance: button;
+              display: none;
+            }
+            #homeLogo
+            {
+              margin-right:30px;
+            }
           }
 
             /* --------------GERER LE POINT DE RUPTURE DU MENU BURGER------------------
@@ -323,8 +343,6 @@
       <div class="logo">
         <img src="img/LOGOCKMPRODEF.png" alt="logo" id="logoHome">
       </div>
-<<<<<<< HEAD
-=======
 
 
 
@@ -372,7 +390,6 @@
       </div>
 
       
->>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
     
       <nav class="navbar navbar-expand-lg navbar-light rounded">
 
@@ -383,7 +400,7 @@
           </a>
         </div>
     
-        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample01">
+        <div class="" id="navbarsExample01">
           <ul class="navbar-nav">
             <li class="nav-item1 lienImageLogoHome">
               <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
