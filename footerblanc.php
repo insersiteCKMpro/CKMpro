@@ -104,6 +104,10 @@
 {
     flex-direction: column-reverse;
 }
+.colonne1
+{
+    margin-bottom: 5%;
+}
 .colonne2
 {
     order:-1;
@@ -127,7 +131,7 @@
 {
     .flogo
     {
-        width: 40%;
+        width: 20%;
     }
     
 }
@@ -137,15 +141,12 @@
 {
     .flogo
     {
-        width: 30%;
+        width: 10%;
     }
 }
-    
+
 </style>
 <body>
-    <main>
-
-    </main>
 
     <footer>
         <div class="ensemblefooter">
@@ -167,15 +168,15 @@
             
                     <div class="colonne3 text-center">
                         <div class="snap">
-                            <a href="http://snapchat.com" target="_blank"><img src="img/SNAPCHAT.png" width="50%" height="50%"></a>
+                            <a href="http://snapchat.com" target="_blank"><img src="img/ckmsnapchat.png" width="50%" height="50%"></a>
                         </div>
 
                         <div class="fb">
-                            <a href="http://facebook.com" target="_blank"><img src="img/FB.png" width="50%" height="50%"></a>
+                            <a href="http://facebook.com" target="_blank"><img src="img/ckmfbblue.png" width="50%" height="50%"></a>
                         </div>
 
                         <div class="insta">
-                            <a href="http://instagram.com" target="_blank"><img src="img/INSTAGRAM.png" width="50%" height="50%"></a>
+                            <a href="http://instagram.com" target="_blank"><img src="img/ckminstagramgreen.png" width="50%" height="50%"></a>
                     </div>
             </div>
                 </div>
