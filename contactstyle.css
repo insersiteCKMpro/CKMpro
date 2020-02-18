@@ -43,6 +43,10 @@
     .insta {width:50%; height: 10vh;}
     .insta:hover{transition: all ease .3s .1s;}
     .flogo {width: 11.5%; height: 38%;}
+    img {
+        border-style: none;
+        height: 60%;
+    }
 }
 @media screen and (min-width: 451px) and (max-width: 768px) {
     .test {min-height: 110vh; display: flex; justify-content: center;}

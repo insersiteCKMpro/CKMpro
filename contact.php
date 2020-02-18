@@ -1,19 +1,120 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="contactstyle.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-    </header>
+<?php
+require_once("header.php")
+?>
+<style>
+    @media screen and (min-width: 769px) and (max-width:2560px) {
+    .test {min-height: 93vh; display: flex;}
+    .test2 {width: 30%; min-height: 75vh; display: flex;}
+    .test3{display:none;}
+    .titrec {width: 100%; height: 40vh;}
+    .num {margin: 0 7vh; width: 75%; height: 10vh;}
+    .trait1 {width: 2%; border-left: 1px solid black; height: 93vh;}
+    .trait2 {display: none;}
+    .traitori{display: none;}
+    .espace{display: none;}
+    .for {width: 45%; height: 70vh;}
+    .radbox {height: 15vh; display: flex;}
+    .labe {width: 25%;}
+    .star{display: initial;width:75%; height: 15vh;}
+    .checkio{width:100%; height: 1vh; display: flex;}
+    .checkio1{width:100%; height: 10vh; display: flex;}
+    .put {width: 35.3%;}
+    .put1 {width: 33%; height: 6vh; margin-top: 3vh;}
+    .btn{margin-left: 6vh;width: 75%;}
+    .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
+    .buton:hover {background-color: black !important; color: white !important;}
+    footer {width: 100%; height: 16vh;}
+    .reseaux {width: 33.4%; height: 15vh;}
+    .reseaux img {height: 6.7vh; margin: 7vh auto;}
+    .fichec {width: 33.3%; height: 15vh;}
+    #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
+    #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
+    #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
+    .footerhaut{display: flex; justify-content: space-evenly;}
+    .footerbas{display: flex; justify-content: center;}
+    .colonne1{width: 30%; align-items: center; color: black !important; text-decoration: none !important; display: flex; flex-direction: column;}
+    .ftext1{text-decoration: none; color: black;}
+    .ftext1:hover{text-decoration: none; color: black; background-color: blue; color: white;}
+    .colonne2{width: 30%; color: black !important; text-decoration: none !important;}
+    .ftext2{text-decoration: none; color: black;}
+    .ftext2:hover{text-decoration: none; color: black; background-color: blue; color: white;}
+    .colonne3{display:flex; align-items: center; width: 30%; justify-content: center;}
+    .colonne4 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
+    .snap {width:50%; height: 10vh;}
+    .snap:hover{transition: all ease .3s .1s;}
+    .fb {width:50%; height: 10vh;}
+    .fb:hover{transition: all ease .3s .1s;}
+    .insta {width:50%; height: 10vh;}
+    .insta:hover{transition: all ease .3s .1s;}
+    .flogo {width: 11.5%; height: 38%;}
+    img {border-style: none; height: 60%;}
+}
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    .test {min-height: 110vh; display: flex; justify-content: center;}
+    .test2 { display: none;}
+    .test3{ display:flex; flex-direction: column; text-align: center; min-height: 17vh; width:100%; border-bottom: 1px solid grey;}
+    .trait1{display: none;}
+    .trait2{width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .titrec {height: 5vh; text-align: center;}
+    .traitori{background-color: black; height: 2px;}
+    .espace{margin-top: 5px;}
+    .radbox {height: 15vh; display: flex;}
+    .labe {width: 25%;}
+    .star{display: initial; width:75%; height: 15vh;}
+    .checkio{width:100%; height: 4vh; display: flex;}
+    .checkio1{width:100%; height: 10vh; display: flex;}
+    #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
+    #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
+    #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
+    .put {width: 33.3%; min-height: 2vh;}
+    .put1 {width: 33%; height: 6vh; margin-top: 1vh;}    
+    .btn{margin-left: 5vh; width: 75%;}
+    .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
+    .buton:hover {background-color: black !important; color: white !important;}
+    .colonne3 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
+    .colonne4 {width: 100%; margin-bottom: 2%; margin-top:2vh; height: 10vh; display: flex;}
+    .flogo {width: 6%; display: flex; justify-content: center;}
+    .alignf {text-align: center !important; display: flex; flex-direction: column; align-items: center;}
+    .snap {width:35%; height: 5vh;}
+    .fb {width:35%; height: 5vh;}
+    .insta {width:35%; height: 5vh;}
+    .img1{width:40%; height: 5vh;}
+    .img2{width:33.3%; height: 5vh;}
+    img {vertical-align: middle; border-style: none; height: 90%;}
+    
+}
+@media screen and (max-width: 450px) {
+    .radbox {height: 15vh; display: flex;}
+    .test2 {display: none;}
+    .trait2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .labe {width: 25%;}
+    .star {display: initial; width:75%; height: 15vh;}
+    .checkio {width:100%; height: 4vh; display: flex;}
+    .checkio1 {width:100%; height: 10vh; display: flex;}
+    .put {width: 33.3%; min-height: 2vh;}
+    .put1 {width: 33.3%; height: 6vh;}    
+    .btn {width: 100%;}
+    .buton {background-color: white !important; color: black !important; border: 2px solid black !important;}
+    .buton:hover {background-color: black !important; color: white !important;}
+    footer {border-top: 1px solid black;}
+    #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
+    #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
+    #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
+    .flogo {width: 13%; margin-bottom: 15%;}
+    .footerhaut {flex-direction: column-reverse;}
+    .colonne2 {order:-1;}
+    .footerhaut {align-items: center; text-align: center;}
+    .colonne3 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
+    .colonne4 {width: 100%; margin-bottom: 2%; margin-top:2vh; height: 10vh; display: flex;}
+    .snap {width:40%; height: 10vh;}
+    .fb {width:40%; height: 10vh;}
+    .insta {width:40%; height: 10vh;}
+    .alignf {text-align: center !important; display: flex; flex-direction: column; align-items: center;}
+    .img1{width:40%; height: 5vh;}
+    .img2{width:33.3%; height: 5vh;}
+    img {vertical-align: middle; border-style: none; height: 50%;}
+}
+</style>
     <div class="container-fluid">
         <br>
         <h2 class="text-center">Titre H1</h2>
@@ -166,15 +267,15 @@
 
                     <div class="colonne4 text-center">
                         <div class="snap">
-                            <a href="http://snapchat.com" target="_blank"><img src="img/SNAPCHAT.png"></a>
+                            <a href="http://snapchat.com" target="_blank"><img src="img/ckmsnapchat.png"></a>
                         </div>
 
                         <div class="fb">
-                            <a href="http://facebook.com" target="_blank"><img src="img/FB.png"></a>
+                            <a href="http://facebook.com" target="_blank"><img src="img/ckmfbblue.png"></a>
                         </div>
 
                         <div class="insta">
-                            <a href="http://instagram.com" target="_blank"><img src="img/INSTAGRAM.png"></a>
+                            <a href="http://instagram.com" target="_blank"><img src="img/ckminstagramgreen.png"></a>
                         </div>
                     </div>
                 
@@ -195,15 +296,15 @@
             
                     <div class="colonne3 text-center">
                         <div class="snap">
-                            <a href="http://snapchat.com" target="_blank" class="img1"><img src="img/SNAPCHAT.png"></a>
+                            <a href="http://snapchat.com" target="_blank" class="img1"><img src="img/ckmsnapchat.png"></a>
                         </div>
 
                         <div class="fb">
-                            <a href="http://facebook.com" target="_blank"class="img2"><img  src="img/FB.png"></a>
+                            <a href="http://facebook.com" target="_blank"class="img2"><img  src="img/ckmfbblue.png"></a>
                         </div>
 
                         <div class="insta">
-                            <a href="http://instagram.com" target="_blank" class="img1"><img src="img/INSTAGRAM.png"></a>
+                            <a href="http://instagram.com" target="_blank" class="img1"><img src="img/ckminstagramgreen.png"></a>
                         </div>
                     </div>
                 </div>
