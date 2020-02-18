@@ -52,77 +52,9 @@ require_once("header.php")
 
 
 
-        /* class de la div qui contient le num et le nom */
-        .fixed-top {
-            width: 50% !important;
-            float: right !important;
-            padding-left: 10vh !important;
-            position: inherit !important;
-        }
-
-        /* icone téléphone */
-        #fas {
-            display: none;
-        }
-
-        /* On cache le text 'Menu' sur le bouton */
-        .textMenu {
-            display: none;
-        }
-
-        /* On cache les traits */
-        .trait {
-            display: none;
-        }
-
-        .navbar-nav {
-
-            display: flex;
-            padding-left: 0;
-            margin-bottom: 0;
-            list-style: none;
-            flex-direction: row;
-        }
-
-        .justify-content-md-center {
-            justify-content: center !important;
-            display: flex !important;
-        }
-
-        [type=button],
-        [type=reset],
-        [type=submit],
-        button {
-            -webkit-appearance: button;
-            display: none;
-        }
-
-        #homeLogo {
-            margin-right: 30px;
-        }
-
-        .navbar-expand-lg .navbar-nav {
-            justify-content: center;
-            font-size: 3vh;
-        }
-
-        .logo #logoHome {
-            width: 60%;
-        }
-
-        .fixed-top {
-            font-size: 1.2em;
-        }
-
-        .navbar-expand-lg .navbar-nav {
-            justify-content: center;
-            font-size: 1.5vh;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-        }
 
 
+    
     }
 
     /* PC */
@@ -147,40 +79,7 @@ require_once("header.php")
         }
 
 
-        #fass {
-            display: none;
-        }
-
-        /* On cache le text 'Menu' sur le bouton */
-        .textMenu {
-            display: none;
-        }
-
-        /* On cache les traits */
-        .trait {
-            display: none;
-        }
-
-        /* style du déroulant de la nav */
-        .dropdown-menu {
-            justify-content: center;
-            border: 0;
-            background-color: transparent;
-        }
-
-        /* On cache les traits */
-        .navbar-toggle {
-            display: none;
-        }
-
-        .logo #logoHome {
-            width: 40%;
-        }
-
-        .fixed-top {
-            font-size: 1.5em;
-        }
-
+ 
     }
 
     /* telephone */
