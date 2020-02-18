@@ -50,7 +50,7 @@
             display: flex;
             justify-content: flex-end;
             margin-right: 2vh;
-            font-size: 2em;
+            font-size: 1.2em;
           }
           .navbar
           {
