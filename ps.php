@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styleps.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>CKMpro</title>
-</head>
+
+
+                <header>
+
+<?php
+require_once("header.php")
+?>
+
+</header>
+
 <style>
     .imgligne1 {
         display: flex;
@@ -29,7 +26,7 @@
         background-color: red;
     }
 
-
+    
 
 
     /* RESPONSIVE */
@@ -205,27 +202,11 @@
             width: 100%;
         }
 
-
-
-
-
-
-
     }
+    
 </style>
 
-<body>
-
-    <div class="container-fluid">
-
-        <header>
-
-            <body>
-                <header>
-
-
-
-                </header>
+           
 
                 <nav class="BarreNav mt-5">
 
@@ -349,7 +330,9 @@
 
                 <footer>
 
-
+<?php
+require_once("footerbleu.php")
+?>
                 </footer>
     </div>
 </body>
