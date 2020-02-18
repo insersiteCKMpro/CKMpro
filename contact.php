@@ -48,6 +48,7 @@ require_once("header.php")
     .insta:hover{transition: all ease .3s .1s;}
     .flogo {width: 11.5%; height: 38%;}
     img {border-style: none; height: 60%;}
+    .navbar-expand-lg .navbar-nav {justify-content: center !important; font-size: 3vh !important;}
 }
 @media screen and (min-width: 451px) and (max-width: 768px) {
     .test {min-height: 110vh; display: flex; justify-content: center;}
@@ -86,7 +87,9 @@ require_once("header.php")
 @media screen and (max-width: 450px) {
     .radbox {height: 15vh; display: flex;}
     .test2 {display: none;}
-    .trait2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .test3 {display: flex; justify-content: center;}
+    .trait1 {display: none;}
+    .trait2 {text-align: center;}
     .labe {width: 25%;}
     .star {display: initial; width:75%; height: 15vh;}
     .checkio {width:100%; height: 4vh; display: flex;}
@@ -145,7 +148,7 @@ require_once("header.php")
                         </div><!--responsive tablette-->
                     </div><!--responsive tablette-->
                 </div><!--responsive tablette-->
-                <div class="trait2"></div>
+                <div class="mx-auto trait2"></div>
                 <form>
                     <div class="form-group espace">
                         <label for="exampleInputName1">Nom*</label>
