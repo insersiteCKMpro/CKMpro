@@ -1,7 +1,7 @@
 #container
 {	
     width: 100%;
-    height: 260vh;
+    height: 350vh;
     background-color: whitesmoke;
 }
 .fixed-top /*header*/
@@ -33,11 +33,6 @@ section /*carousel Entreprise*/
     width: 100%;
     height: 52vh;	
 }
-/*.sectionM Entreprise
-{
-    width: 100%;
-    height: 18vh;
-}*/
 .ets /*Entreprise*/
 {
 text-align: center;
@@ -46,13 +41,15 @@ text-align: center;
 {
     text-align: center;
 }
-.sectionB /*Activités*/
+.sectionB /*Activités*/   
 {
-    display: flex;
-    width: 100%;
-    height: 48vh;
-    justify-content: space-around;
+        display: flex;
+        /* width: 100%; */
+        height: 52vh;
+        justify-content: space-around;
+        /* flex-direction: column; */
 }
+
 .derat /*Activités*/
 {
     width: 19.3%;
@@ -81,8 +78,7 @@ main /*Professionnel Particulier*/
 }
 .pro
 {
-    width: 50%;
-    height: 32vh;
+    height: 43vh;
     margin-right: 5%;
 }
 .part
@@ -94,9 +90,8 @@ main /*Professionnel Particulier*/
 .mainh /*Professionnel Particulier*/
 {
     width: 100%;
-    height: 38vh;
+    height: 36vh;
     display: flex;
-    
 }
 .ppro
 {
@@ -107,7 +102,7 @@ main /*Professionnel Particulier*/
     width: 100%;
     height: 24vh;
     display: flex;
-    JUSTIFY-CONTENT: space-around;
+    justify-content: space-around;
 }
 .carouL /*carousel avis gauche*/
 {
@@ -132,7 +127,7 @@ main /*Professionnel Particulier*/
 
 .sectionecom /*e-commerce*/
 {
-    height: 25vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
 }
@@ -182,6 +177,76 @@ main /*Professionnel Particulier*/
 {
     width: 40%;
 }
+.footerhaut
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerbas
+{
+    display: flex;
+    justify-content: center;
+}
+.colonne1
+{
+    width: 30%;
+    align-items: center;
+    color: black !important;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+}
+.ftext1
+{
+    text-decoration: none;
+    color: black;
+}
+.ftext1:hover
+{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    color: white;
+}
+
+.colonne2
+{
+    width: 30%;
+    color: black !important;
+    text-decoration: none !important;
+}
+.ftext2
+{
+    text-decoration: none;
+    color: black;
+}
+.ftext2:hover
+{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    color: white;
+}
+.colonne3 
+{
+    display:flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+}
+.snap:hover
+{
+    transition: all ease .3s .1s;
+}
+.fb:hover
+{
+    transition: all ease .3s .1s;
+}
+.insta:hover
+{
+    transition: all ease .3s .1s;
+}
+
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px*/
 @media screen and (min-width:769px) and (max-width: 2560x){
@@ -265,6 +330,17 @@ main /*Professionnel Particulier*/
         justify-content: center;
         margin-left: 1.5vh;
     }
+    .pro
+    {
+        height: 43vh;
+        margin-right: 5%;
+    }
+    .part
+    {
+        width: 50%;
+        height: 32vh;
+        margin-right: 5%;
+    }
     .mainh /*Professionnel Particulier*/
     {
         width: 100%;
@@ -279,10 +355,10 @@ main /*Professionnel Particulier*/
     }
     .sectionecom /*e-commerce*/
     {
-        height: 25vh;
+        height: 117vh;
         display: flex;
         justify-content: center;
-        align-content: space-around;
+        flex-direction: column;;
     }
     .ecom
     {
@@ -314,6 +390,10 @@ main /*Professionnel Particulier*/
         width: 497px;
         height: 20vh;
         display: flex;
+    }
+    .flogo
+    {
+        width: 30%;
     }
 }
 
@@ -404,9 +484,10 @@ main /*Professionnel Particulier*/
     }
     .sectionecom /*e-commerce*/
     {
-        height: 25vh;
+        height: 117vh;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
     .ecom
     {
@@ -438,6 +519,10 @@ main /*Professionnel Particulier*/
         width: 100%;
         height: 20vh;
         display: flex;
+    }
+    .flogo
+    {
+        width: 40%;
     }
     
 }
@@ -491,8 +576,8 @@ main /*Professionnel Particulier*/
     }
     .sectionB /*Activités*/
     {
-
-        height: 328vh;
+        height: 331vh;
+        flex-direction: column;
     }
     .derat /*Activités*/
     {
@@ -520,23 +605,37 @@ main /*Professionnel Particulier*/
         justify-content: center;
         margin-left: 1.5vh;
     }
+    .pro
+    {
+        height: 43vh;
+        margin-right: 5%;
+    }
+    .part
+    {
+        width: 50%;
+        height: 32vh;
+        margin-right: 5%;
+    }
     .mainh /*Professionnel Particulier*/
     {
-        width: 100%;
-        height: 40vh;
+        height: 72vh;
         display: flex;
+        flex-direction: column;
     }
     .mainb  /*avis*/
     {
-        width: 100%;
-        height: 18vh;
+        width: 50%;
+        height: 56vh;
         display: flex;
+        flex-direction: column;
+        text-align: inherit;
     }
     .sectionecom /*e-commerce*/
     {
-        height: 25vh;
+        height: 98vh;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
     .ecom
     {
@@ -568,6 +667,34 @@ main /*Professionnel Particulier*/
         width: 497px;
         height: 20vh;
         display: flex;
+    }
+    footer
+    {
+        border-top: 1px solid black;
+    }
+    .flogo
+    {
+        width: 50%;
+        margin-bottom: 15%;
+    }
+    .footerhaut
+    {
+        flex-direction: column-reverse;
+    }
+    .colonne2
+    {
+        order:-1;
+    }
+    .footerhaut
+    {
+        align-items: center;
+        text-align: center;
+        }
+    .colonne3
+    {
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top:2vh;
     }
 }
 
