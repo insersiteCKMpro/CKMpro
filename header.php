@@ -37,6 +37,30 @@
           #homeLogo {
             width: 30px;
             height: 22px;
+<<<<<<< HEAD
+=======
+            margin: 0 20px;
+          }
+          #homeLogo 
+          {
+            width: 30px;
+            height: 22px;
+            margin: 0 20px;
+          }
+          .fixed-top 
+          {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 2vh;
+            font-size: 2em;
+          }
+          .navbar
+          {
+            display:block;
+          }
+          .navbar-expand-lg .navbar-nav {
+            justify-content:center;
+>>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
           }
           /* bouton menu burger */
           .navbar-toggler {
@@ -108,6 +132,18 @@
           .dropdownDiv01 {
             display: grid;
           }
+<<<<<<< HEAD
+=======
+          .navbar
+          {
+            display: none;
+          }
+          .navbar-expand-lg .navbar-nav 
+          {
+            justify-content: center;
+            font-size: 4vh;
+          }
+>>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
 
           /* FORMAT MOBILE MAXIMUM */
           @media screen and (max-width: 450px) {
@@ -142,7 +178,49 @@
             .nav-item1 {
               padding-left: 0;
             }
+<<<<<<< HEAD
           }
+=======
+            .navbar
+            {
+              display:flex;
+              flex-direction:column;
+            }
+            .navbar-nav
+            {
+              display:flex;
+              flex-direction:column;
+              justify-content:center;
+            }
+            .ordi
+            {
+              display:none;
+            }
+            .burger
+            {
+              background:url(CKMpro/img/burger.png) no-repeat;
+              background-size:cover;
+              width:20%;
+            }
+            .ml-auto, .mx-auto 
+            {
+              margin-left: auto!important;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+            [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) 
+            {
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+            }
+            #homeLogo
+            {
+              margin:30px 20px 0;
+            }
+                      }
+>>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
 
           /* FORMAT LAPTOP [MIN FORMAT TABLETTE | MAX FORMAT 4K] */
           @media screen and (min-width: 769px) and (max-width: 2560px) {
@@ -245,14 +323,64 @@
       <div class="logo">
         <img src="img/LOGOCKMPRODEF.png" alt="logo" id="logoHome">
       </div>
-    
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+<<<<<<< HEAD
+=======
 
+
+
+      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
             <div><i class="fas fa-bars"></i></div>
           </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-md-center">
+          <ul class="navbar-nav">
+            <li class="nav-item1 lienImageLogoHome">
+              <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
+            </li>
+            <div class="trait trait1"></div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
+                <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
+              </div>
+            </li>
+            <div class="trait trait2"></div>
+            <li class="nav-item1 active">
+              <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
+            </li>
+            <div class="trait trait3"></div>
+            <li class="nav-item1 active">
+              <a class="nav-link" href="#" id="dropdown03">Espaces Verts</a>
+            </li>
+            <div class="trait trait4"></div>
+            <li class="nav-item1 active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
+                <a class="dropdown-item dropdown-item01" href="#">3D</a>
+                <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
+                <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
+              </div>
+            </li>
+            <div class="trait trait5"></div>
+          </ul>
+        </div>
+      </div>
+
+      
+>>>>>>> f8bbf8f5808033ebb8b69700ecc839369d58d993
+    
+      <nav class="navbar navbar-expand-lg navbar-light rounded">
+
+        <div class="mx-auto">
+          <p class="textMenu"><strong>Menu</strong></p>
+          <a class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
+            <div><i class="fas fa-bars"></i></div><img src="img/burger.png" class="burger" alt="">
+          </a>
         </div>
     
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample01">
