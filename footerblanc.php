@@ -14,6 +14,7 @@
     footer
     {
         background-color: white;
+        border-top:1px solid black;
     }
     .footerhaut
     {
@@ -23,141 +24,152 @@
     }
 
 
-.footerbas
+    .footerbas
+    {
+        display: flex;
+        justify-content: center;
+        font-size:1em;
+    }
+    .colonne1
+    {
+        
+        width: 30%;
+        align-items: center;
+        color: black !important;
+        text-decoration: none !important;
+        display: flex;
+        flex-direction: column;
+        margin-top:2%;
+    }
+    .ftext1
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .ftext1:hover
+    {
+        text-decoration: none;
+        color: black;
+        background-color: blue;
+        color: white;
+    }
+
+    .colonne2
+    {
+        
+        width: 30%;
+        color: black !important;
+        text-decoration: none !important;
+        margin-top:2%;
+    }
+    .ftext2
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .ftext2:hover
+    {
+        text-decoration: none;
+        color: black;
+        background-color: blue;
+        color: white;
+    }
+
+
+    .colonne3 
+    {
+        display:flex;
+        align-items: center;
+        width: 30%;
+        justify-content: center;
+        margin-top:2%;
+    }
+
+    .snap:hover
+    {
+        transition: all ease .3s .1s;
+    }
+    .fb:hover
+    {
+        transition: all ease .3s .1s;
+    }
+    .insta:hover
+    {
+        transition: all ease .3s .1s;
+    }
+    .ordi
+    {
+        display:none;
+    }
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* ORDINATEUR */
+@media screen and (min-width: 769px) and (max-width: 2560px)
 {
-    display: flex;
-    justify-content: center;
+    .flogo
+    {
+        width: 10%;
+    }
+    .footerhaut , .footerbas
+{
     font-size:1em;
 }
-.colonne1
-{
-    
-    width: 30%;
-    align-items: center;
-    color: black !important;
-    text-decoration: none !important;
-    display: flex;
-    flex-direction: column;
-    margin-top:2%;
 }
-.ftext1
+/* TABLETTE */
+@media screen and (min-width: 451px) and (max-width: 768px)
 {
-    text-decoration: none;
-    color: black;
-}
-.ftext1:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
-
-.colonne2
-{
-    
-    width: 30%;
-    color: black !important;
-    text-decoration: none !important;
-    margin-top:2%;
-}
-.ftext2
-{
-    text-decoration: none;
-    color: black;
-}
-.ftext2:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
-
-
-.colonne3 
-{
-    display:flex;
-    align-items: center;
-    width: 30%;
-    justify-content: center;
-    margin-top:2%;
-}
-
-.snap:hover
-{
-    transition: all ease .3s .1s;
-}
-.fb:hover
-{
-    transition: all ease .3s .1s;
-}
-.insta:hover
-{
-    transition: all ease .3s .1s;
-}
-.ordi
-{
-    display:none;
-}
-@media screen and (max-width: 375px)
-{
-    footer
+    .flogo
     {
-        border-top: 1px solid black;
+        width: 20%;
     }
-.flogo
+    .footerhaut , .footerbas
 {
-    width: 50%;
-    margin-bottom: 15%;
+    font-size:1em;
 }
-.footerhaut
-{
-    flex-direction: column-reverse;
 }
-.colonne2
-{
-    order:-1;
-}
+
+/* TELEPHONE */
+
+    @media screen and (max-width: 450px)
+    {
+        footer
+        {
+            border-top: 1px solid black;
+        }
+    .flogo
+    {
+        width: 50%;
+        margin-bottom: 15%;
+    }
     .footerhaut
     {
-        align-items: center;
-        text-align: center;
+        flex-direction: column-reverse;
     }
-.colonne3
-{
-    width: 100%;
-    margin-bottom: 10%;
-    margin-top:2vh;
-}
-.footerhaut , .footerbas
-{
-    font-size:1em;
-}
+    .colonne2
+    {
+        order:-1;
+    }
+        .footerhaut
+        {
+            align-items: center;
+            text-align: center;
+        }
+    .colonne3
+    {
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top:2vh;
+    }
+    .footerhaut , .footerbas
+    {
+        font-size:1em;
+    }
 
-}
-@media screen and (max-width: 425px)
-{
-    .flogo
-    {
-        width: 40%;
     }
-    .footerhaut , .footerbas
-{
-    font-size:1em;
-}
-}
-@media screen and (max-width: 768px)
-{
-    .flogo
-    {
-        width: 30%;
-    }
-    .footerhaut , .footerbas
-{
-    font-size:1em;
-}
-}
+
+
     
 </style>
 <body>
