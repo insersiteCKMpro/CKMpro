@@ -8,11 +8,11 @@ require_once("header.php")
     .test3{display:none;}
     .titrec {width: 100%; height: 40vh;}
     .num {margin: 0 7vh; width: 75%; height: 10vh;}
-    .trait1 {width: 2%; border-left: 1px solid black; height: 93vh;}
+    .trait1 {width: 2px; height: 93vh; padding: 0;}
     .trait2 {display: none;}
     .traitori{display: none;}
     .espace{display: none;}
-    .for {width: 45%; height: 70vh;}
+    .for {width: 45%; height: 70vh; margin-left: 5vh;}
     .radbox {height: 15vh; display: flex;}
     .labe {width: 25%;}
     .star{display: initial;width:75%; height: 15vh;}
