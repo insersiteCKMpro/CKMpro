@@ -184,7 +184,8 @@
             .fixed-top
             {
               font-size:1.5em;
-            }  
+            }
+            
           }
 
             
@@ -245,9 +246,6 @@
               .fixed-top
             {
               font-size:1.2em;
-            }
-            .telep {
-              display: none;
             }
           }
 
@@ -370,7 +368,7 @@
 
 
 
-      <div class="ordi navbar-expand-lg navbar-light rounded">
+      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
@@ -415,11 +413,7 @@
 
       
     
-<<<<<<< HEAD
-      <div class="telep navbar-expand-lg navbar-light rounded">
-=======
-      <div class="navbar navbar-expand-lg navbar-light rounded">
->>>>>>> 1e592f40b8d2cd806c22c86f1ec517fa9da0b218
+      <nav class="navbar navbar-expand-lg navbar-light rounded">
 
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
@@ -471,7 +465,7 @@
           </ul>
         </div>
 
-        </div>
+    </nav>
 
     <div class="trait6"></div>
 
@@ -480,11 +474,9 @@
     </div>
   
   </header>
-<<<<<<< HEAD
-  
-=======
-
->>>>>>> 1e592f40b8d2cd806c22c86f1ec517fa9da0b218
+  <section style="background-color: red; height: 60vh; width: 95%;" class="mx-auto">
+      
+  </section>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
