@@ -205,6 +205,7 @@
             {
               font-size:1.5em;
             }
+<<<<<<< HEAD
             ul.navbar-nav
             {
               display:flex;
@@ -214,6 +215,8 @@
             {
               font-size:0.3em;
             }
+=======
+>>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
             
           }
 
@@ -281,11 +284,14 @@
             {
               font-size:1.2em;
             }
+<<<<<<< HEAD
 
             div#dropdownDiv01.dropdown-menu.border.border-0.text-center.show , div#dropdownDiv02.dropdown-menu.border.border-0.text-center.show
             {
               font-size:0.3em;
             }
+=======
+>>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
           }
 
 /* FORMAT MOBILE  */
@@ -417,6 +423,7 @@
 
 
 
+<<<<<<< HEAD
 
       
     
@@ -424,6 +431,8 @@
 
 
 
+=======
+>>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
       <div class="ordi navbar-expand-lg navbar-light rounded mobil">
         <div class="mx-auto">
           <p class="textMenu"><strong>Menu</strong></p>
@@ -466,7 +475,16 @@
           </ul>
         </div>
       </div>
+<<<<<<< HEAD
         <div class="bn">
+=======
+
+      
+    
+      <nav class="navbar navbar-expand-lg navbar-light rounded">
+
+        <div class="mx-auto">
+>>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
           <p class="textMenu"><strong>Menu</strong></p>
           <a class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
             <div><i class="fas fa-bars"></i></div>
@@ -525,8 +543,14 @@
     </div>
   
   </header>
+<<<<<<< HEAD
 
 </body>
+=======
+  <section style="background-color: red; height: 60vh; width: 95%;" class="mx-auto">
+      
+  </section>
+>>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
