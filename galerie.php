@@ -2,14 +2,13 @@
 require_once("header.php")
 ?>
 <style>
-  .ordi {
+  .telep {
     display: none;
 }
 </style>
 <section>
 
   <div class="container-fluid">
-  
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -64,7 +63,6 @@ require_once("header.php")
         <span class="sr-only">Next</span>
       </a>
     </div>
-   
   </div>
 </section>
 <?php
