@@ -2,6 +2,268 @@
 require_once("header.php");
 ?>
 <style>
+.carousel{
+    width: 100%
+  }
+  .fixed-top /*header*/
+  {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }
+  .logo  /*header*/
+  {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40vh;
+  }
+  nav  /*header*/
+  {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  .flash /* Débaras*/
+  {
+      color: #00aeef;
+  }
+  section /*carousel Entreprise*/
+  {
+      width: 100%;
+      height: 52vh;	
+  }
+  .ets /*Entreprise*/
+  {
+  text-align: center;
+  }
+  .activités /*Activités*/
+  {
+      text-align: center;
+  }
+  .sectionB /*Activités*/   
+  {
+          display: flex;
+          /* width: 100%; */
+          height: 50vh;
+          justify-content: space-around;
+          /* flex-direction: column; */
+          display: flex;
+  }
+
+  .derat /*Activités*/
+  {
+      width: 33.3%;
+      text-align: center;
+  }
+  .nettoyage /*Activités*/
+  {
+      width: 33.3%;
+      text-align: center;
+  }
+  .espacevert /*Activités*/
+  {
+      width: 33.3%;
+      text-align: center;
+  }
+  .cible
+  {
+      text-align: center;
+  }
+  main /*Professionnel Particulier*/
+  {
+      height: 3vh;
+      width: 97.5%;
+      justify-content: center;
+      margin-left: 1.5vh;
+  }
+  .pro
+  {
+    width: 50%;
+      height: 43vh;
+      margin-right: 5%;
+  }
+  .part
+  {
+      width: 50%;
+      height: 32vh;
+      margin-right: 5%;
+  }
+  .mainh /*Professionnel Particulier*/
+  {
+      width: 100%;
+      height: 36vh;
+      display: flex;
+  }
+  .ppro
+  {
+      width: 90%;
+  }
+  .mainb  /*avis*/
+  {
+      width: 100%;
+      height: 25vh;
+      display: flex;
+      justify-content: space-around;
+  }
+  .carouL /*carousel avis gauche*/
+  {
+      height: 18vh;
+      width: 30%;
+  }
+  .carouR /*carousel avis droite*/
+  {
+      height: 18vh;
+      width: 30%;
+  }
+  .carousel-control-prev /*carousel avis droite et gauche*/
+  {
+      width: 10%;
+      height: 18vh;
+  }
+  .carousel-control-next /*carousel avis droite et gauche*/
+  {
+      width: 10%;
+      height: 18vh;
+  }
+
+  .sectionecom /*e-commerce*/
+  {
+      height: 30vh;
+      display: flex;
+      justify-content: space-around;
+  }
+  .ecom
+  {
+      text-align: center;
+
+  }
+  .img1
+  {
+      margin-top: 30px;
+      width: 40vh;
+      height: 15vh;
+  }
+  .img3
+  {
+      width: 95%;
+      height: 190px;  
+  }
+  .img4
+  {
+      width: 2%;
+      height: 20px;
+  }
+  .imgC
+  {
+      width: 100%;
+      height: 279px;
+  }
+  .imgM 
+  {
+      width: 100%;
+      height: 20vh;
+      display: flex;
+  }
+  .imgl
+  {
+      width: 50%;
+      height: 25vh;
+  }
+  .imgp
+  {
+      width: 10%;
+      height: 25vh;
+  }
+  .fivetoile
+  {
+      width: 40%;
+  }
+  .footerhaut
+  {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .footerbas
+  {
+      display: flex;
+      justify-content: center;
+  }
+  .colonne1
+  {
+      width: 30%;
+      align-items: center;
+      color: black !important;
+      text-decoration: none !important;
+      display: flex;
+      flex-direction: column;
+  }
+  .ftext1
+  {
+      text-decoration: none;
+      color: black;
+  }
+  .ftext1:hover
+  {
+      text-decoration: none;
+      color: black;
+      background-color: blue;
+      color: white;
+  }
+  .colonne2
+  {
+      width: 30%;
+      color: black !important;
+      text-decoration: none !important;
+  }
+  .ftext2
+  {
+      text-decoration: none;
+      color: black;
+  }
+  .ftext2:hover
+  {
+      text-decoration: none;
+      color: black;
+      background-color: blue;
+      color: white;
+  }
+  .colonne3 
+  {
+      display:flex;
+      align-items: center;
+      width: 30%;
+      justify-content: center;
+  }
+  .snap:hover
+  {
+      transition: all ease .3s .1s;
+  }
+  .fb:hover
+  {
+      transition: all ease .3s .1s;
+  }
+  .insta:hover
+  {
+      transition: all ease .3s .1s;
+  }
+  .part
+  {
+      width: 50%;
+      height: 32vh;
+      margin-right: 5%;
+  }
+  .sectionM /*Entreprise*/
+  {
+      width: 100%;
+      height: 20vh;
+  }    
+  .flogo
+  {
+      width: 30%;
+  }
+    
   @media screen and (min-width: 769px) and (max-width: 2560px){
     .carousel{
       width: 100%
@@ -47,7 +309,7 @@ require_once("header.php");
     {
             display: flex;
             /* width: 100%; */
-            height: 52vh;
+            height: 50vh;
             justify-content: space-around;
             /* flex-direction: column; */
             display: flex;
@@ -55,17 +317,17 @@ require_once("header.php");
 
     .derat /*Activités*/
     {
-        width: 19.3%;
+        width: 33.3%;
         text-align: center;
     }
     .nettoyage /*Activités*/
     {
-        width: 19.3%;
+        width: 33.3%;
         text-align: center;
     }
     .espacevert /*Activités*/
     {
-        width: 19.3%;
+        width: 33.3%;
         text-align: center;
     }
     .cible
@@ -104,7 +366,7 @@ require_once("header.php");
     .mainb  /*avis*/
     {
         width: 100%;
-        height: 24vh;
+        height: 25vh;
         display: flex;
         justify-content: space-around;
     }
@@ -131,11 +393,9 @@ require_once("header.php");
 
     .sectionecom /*e-commerce*/
     {
-        height: 50vh;
+        height: 30vh;
         display: flex;
-        justify-content: center;
-        /* height: 50vh; */
-        flex-direction: column;
+        justify-content: space-around;
     }
     .ecom
     {
@@ -150,7 +410,7 @@ require_once("header.php");
     }
     .img3
     {
-        width: 210px;
+        width: 95%;
         height: 190px;  
     }
     .img4
@@ -176,7 +436,7 @@ require_once("header.php");
     }
     .imgp
     {
-        width: 25%;
+        width: 10%;
         height: 25vh;
     }
     .fivetoile
@@ -260,6 +520,7 @@ require_once("header.php");
     .sectionM /*Entreprise*/
     {
         width: 100%;
+        height: 20vh;
     }    
     .flogo
     {
@@ -310,9 +571,9 @@ require_once("header.php");
     {
         text-align: center;
     }
-    .sectionB /*Activités*/
+    .sectionB
     {
-         height: 41vh;
+      height: 52vh;
     }
     .derat /*Activités*/
     {
@@ -352,10 +613,9 @@ require_once("header.php");
         width: 40%;
         height: 15vh;
     }
-    .img3
-    {
-        width: 21%;
-        height: 190px;  
+    .img3 {
+      width: 90%;
+      height: 190px;
     }
     .img4
     {
@@ -410,9 +670,9 @@ require_once("header.php");
         width: 100%;
         height: 52vh;	
     }
-    .sectionM /*Entreprise*/
-    {
-        width: 100%;
+    .sectionM {
+      width: 100%;
+      height: 33vh;
     }
     .ets /*Entreprise*/
     {
@@ -422,25 +682,23 @@ require_once("header.php");
     {
         text-align: center;
     }
-    .sectionB /*Activités*/
-    {
-        height: 331vh;
-        flex-direction: column;
-    }
-    .derat /*Activités*/
-    {
-        width: 19.3%;
-        text-align: center;
-    }
+    .sectionB {
+    height: 142vh;
+    flex-direction: column;
+}
+    .derat {
+    width: 100%;
+    text-align: center;
+}
     .nettoyage /*Activités*/
     {
-        width: 19.3%;
-        text-align: center;
+    width: 100%;
+    text-align: center;
     }
     .espacevert /*Activités*/
-    {
-        width: 19.3%;
-        text-align: center;
+    {  
+    width: 100%;
+    text-align: center;
     }
     .cible
     {
@@ -453,38 +711,44 @@ require_once("header.php");
         justify-content: center;
         margin-left: 1.5vh;
     }
-    .pro
-    {
-        height: 43vh;
-        margin-right: 5%;
+    .pro {
+      height: 43vh;
+      width: 100%;
+      margin-right: 4%;
     }
-    .part
-    {
-        width: 50%;
-        height: 32vh;
-        margin-right: 5%;
-    }
+    .part {
+    width: 100%;
+    height: 32vh;
+    margin-right: 5%;
+}
     .mainh /*Professionnel Particulier*/
     {
         height: 72vh;
         display: flex;
         flex-direction: column;
     }
-    .mainb  /*avis*/
-    {
-        width: 50%;
-        height: 56vh;
-        display: flex;
-        flex-direction: column;
-        text-align: inherit;
+    .mainb {
+      width: 100%;
+      height: 40vh;
+      margin-top: 11vh;
+      display: flex;
+      flex-direction: column;
+      text-align: inherit;
     }
-    .sectionecom /*e-commerce*/
-    {
-        height: 98vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    .carouL {
+        height: 18vh;
+        width: 100%;
     }
+    .carouR /*carousel avis droite*/
+    {
+        height: 18vh;
+        width: 100%;
+    }
+    .sectionecom {
+    height: 28vh;
+    display: flex;
+    flex-direction: row;
+}
     .ecom
     {
         text-align: center;
@@ -492,17 +756,17 @@ require_once("header.php");
     .img1
     {
         margin-top: 30px;
-        width: 4%;
+        width: 92%;
         height: 15vh;
     }
     .img3
     {
-        width: 21%;
+        width: 92%;
         height: 190px;  
     }
     .img4
     {
-        width: 2%;
+        width: 92%;
         height: 20px;
     }
     .imgC
@@ -510,11 +774,14 @@ require_once("header.php");
         width: 100%;
         height: 279px;
     }
-    .imgM 
-    {
-        width: 50%;
-        height: 20vh;
-        display: flex;
+    .imgM {
+      width: 92%;
+      height: 20vh;
+      display: flex;
+    }
+    .imgp {
+      width: 25%;
+      height: 25vh;
     }
     footer
     {
@@ -582,12 +849,12 @@ require_once("header.php");
       </div>
       <h1 class="ets">l'Entreprise</h1>  <!--l'entreprise CKMpro-->
       <div class="sectionM">
-        <p>
+        <p class="text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, ab.
           Perferendis eos repellat provident alias quam pariatur ut.
           Fugiat impedit temporibus officiis accusamus aperiam nostrum reiciendis sequi tempora in et.
         </p>
-        <p>
+        <p class="text-center">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nihil
           fugiat iusto dolorum, rerum quis delectus assumenda qui quasi recusandae,
           necessitatibus aliquid animi eum quae incidunt rem eos quisquam omnis.
@@ -596,24 +863,27 @@ require_once("header.php");
 
       <h2 class="activités">Nos Activités</h2><br> <!--les activités de CKMpro-->
       <div class="sectionB"> 
-        <div class="derat">3D
+        <div class="derat">
           <img src="img/3Dmaq.png" class="img3" alt="">
+          <h2>3D</h2>
           <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
             soluta sapiente sit corrupti similique vero in repellendus
             laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
             Molestiae quasi magnam quos obcaecati?
           </p>
         </div>
-        <div class="nettoyage">Nettoyage
+        <div class="nettoyage">
           <img src="img/nettoyagemaq.png" class="img3" alt="">
+          <h2>Nettoyage</h2>
           <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
             soluta sapiente sit corrupti similique vero in repellendus
             laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
             Molestiae quasi magnam quos obcaecati?
           </p>
         </div>
-        <div class="espacevert">Espace vert 
+        <div class="espacevert"> 
           <img src="img/espacevertmaq.png" class="img3" alt="">
+          <h2>Espace vert</h2>
           <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
             soluta sapiente sit corrupti similique vero in repellendus
             laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
