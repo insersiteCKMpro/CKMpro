@@ -62,11 +62,10 @@ require_once("header.php");
       width: 33.3%;
       text-align: center;
   }
-  .espacevert /*Activités*/
-  {
-      width: 33.3%;
-      text-align: center;
-  }
+  .espacevert {
+    width: 33.3%;
+    text-align: center;
+}
   .cible
   {
       text-align: center;
@@ -75,7 +74,7 @@ require_once("header.php");
   {
       height: 3vh;
       width: 97.5%;
-      justify-content: center;
+      justify-content: space-between;
       margin-left: 1.5vh;
   }
   .pro
@@ -84,11 +83,10 @@ require_once("header.php");
       height: 43vh;
       margin-right: 5%;
   }
-  .part
-  {
+  .part {
       width: 50%;
       height: 32vh;
-      margin-right: 5%;
+      margin-right: 1% !important;
   }
   .mainh /*Professionnel Particulier*/
   {
@@ -338,21 +336,19 @@ require_once("header.php");
     {
         height: 3vh;
         width: 97.5%;
-        justify-content: center;
+        justify-content: space-between;
         margin-left: 1.5vh;
     }
     .pro
     {
       width: 50%;
         height: 43vh;
-        margin-right: 5%;
     }
-    .part
-    {
-        width: 50%;
-        height: 32vh;
-        margin-right: 5%;
-    }
+    .part {
+    width: 50%;
+    height: 32vh;
+    margin-right: 1%;
+}
     .mainh /*Professionnel Particulier*/
     {
         width: 100%;
@@ -678,13 +674,13 @@ require_once("header.php");
     {
     text-align: center;
     }
-    .activités /*Activités*/
-    {
-        text-align: center;
-    }
+    .activités {
+    text-align: center;
+}
     .sectionB {
     height: 142vh;
     flex-direction: column;
+    margin-top: 44vh;
 }
     .derat {
     width: 100%;
@@ -703,6 +699,7 @@ require_once("header.php");
     .cible
     {
         text-align: center;
+        margin-top: 44vh;
     }
     main /*Professionnel Particulier*/
     {
@@ -934,12 +931,7 @@ require_once("header.php");
                 </p>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="sr-only">Next</span>
-            </a>
+
           </div>
         </div>
       
@@ -963,12 +955,7 @@ require_once("header.php");
                 </p>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="sr-only">Next</span>
-            </a>
+            
           </div>
         </div>
       </div>    
