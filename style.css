@@ -1,0 +1,105 @@
+#conteneur
+{
+    width: 960px;	
+    height: auto;
+	background: rgb(181, 182, 178);
+	color: white;
+    margin: 0 auto;
+    color: #000;
+    
+}
+header 
+{
+    background: white;
+    height: 15vh;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid;
+}
+img
+{
+    width: 365px;
+    height: 91px;
+}
+nav
+{
+    border: 1px solid;
+    width: 960px;
+}
+section
+{
+    min-height: 700px;
+    height: 110vh;
+	background: gray;
+	margin: 10px;	
+}
+.row1 
+{
+    background-color: rgba(181, 192, 191, 0.329);
+    float: left;
+    line-height: 122px;
+    height: 22vh;
+    width: 940px;
+    border: 1px solid;
+}
+img1
+{
+    background-color: blue;
+    width: 940px;
+    height: 10vh;
+    border: 1px solid;
+}
+.row2
+{
+    background-color: white;
+    display: flex;
+    height: 33vh;
+    width: 940px;
+    border: 1px solid;
+}
+.row3
+{
+    background-color:wheat;
+    display: flex;
+    justify-content: center;
+    height:40vh;
+    width: 940px;
+    border: 1px solid;
+}
+.img2
+{
+    background-color: blue;
+    width: 313px;
+    height: 10vh;
+    border: 1px solid;
+}
+.img3
+{
+    background-color: blue;
+    width: 313px;
+    height: 10vh;
+    border: 1px solid;
+}
+.img4
+{
+    background-color: blue;
+    width: 313px;
+    height: 10vh;
+    border: 1px solid;
+}
+footer
+{
+    background: rgb(233, 232, 207);
+    min-height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.PZ 
+{
+    border: 1px solid;
+    float: left;
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 234px;
+}
