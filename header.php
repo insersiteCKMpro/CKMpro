@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-    <title>CKMpro-Page-Secondaire</title>
+    <title>CKM pro</title>
 
     <style>
-    /*  */
           /* class de la div qui contient l'image logo titre */
           .logo {
             width: 100%;
@@ -36,7 +35,9 @@
           /* li qui contient le lien et l'image logo Home  */
           #homeLogo {
             width: 50%;
+            height: 50%;
             margin: 0 20px;
+            padding-bottom: 1.99vh;
           }
           .fixed-top 
           {
@@ -49,16 +50,7 @@
           {
             display:block;
           }
-          nav.navbar.navbar-expand-lg.navbar-light.cc
-          {
-            display:flex;
-            justify-content:center;
-          }
           .navbar-expand-lg .navbar-nav {
-            justify-content:center;
-          }
-          .navbar-expand-lg 
-          {
             justify-content:center;
           }
           /* bouton menu burger */
@@ -78,8 +70,6 @@
           .rounded 
           {
             border-radius: .25rem!important;
-            display:flex;
-            flex-direction:center;
           }
           /* Séparation entre les liens (Menu burger déroulant)  */
           .trait1, .trait2, .trait3, .trait4, .trait5 {
@@ -125,22 +115,51 @@
             background-color: #00a652;
             border-radius: 5px;
           }
+          /* #navbarDropdownMenuLink:hover */
 
-          /* hover style lien 3D */
+          #jaune:hover {
+            background-color: #fef200;
+            border-radius: 5px;
+            height: 5vh;
+          }
+          .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+            color: rgba(0,0,0,.7);
+            position: relative;
+            top: -1.5vh;
+          }
+          /* hover style lien Dératisation */
           .dropdown-item01:hover {
             background-color: #fef200 !important;
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
-          /* hover style lien 3D */
+          /* hover style lien Désinfection */
           .dropdown-item02:hover {
             background-color: #fef200 !important;
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
-          /* hover style lien 3D */
+          /* hover style lien Désensectisation */
           .dropdown-item03:hover {
             background-color: #fef200 !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
+          /* hover style lien 3D */
+          .dropdown-item04:hover {
+            background-color: #fef200 !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
+          /* hover style lien Nettoyage */
+          .dropdown-item05:hover {
+            background-color: #25aae2 !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
+          /* hover style lien Espace Verts */
+          .dropdown-item06:hover {
+            background-color: #00a652 !important;
             border-radius: 5px !important;
             opacity: 0.5 !important;
           }
@@ -158,16 +177,6 @@
           }
           .boutonTel {
             display: none;
-          }
-          
-          /* couleur de 3D */
-          a#navbarDropdownMenuLink.nav-link.dropdown-toggle
-          {
-            color:rgb(0,0,0,0.9);
-          }
-          .dropdown-item
-          {
-            border-bottom:1px solid grey;
           }
           
 /* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
@@ -205,19 +214,15 @@
             {
               font-size:1.5em;
             }
-<<<<<<< HEAD
-            ul.navbar-nav
-            {
-              display:flex;
-              flex-direction:row;
+            #dropdownDiv01, #dropdownDiv02 {
+              text-align: center;
             }
-            div#dropdownDiv01.dropdown-menu.border.border-0.text-center.show , div#dropdownDiv02.dropdown-menu.border.border-0.text-center.show
-            {
-              font-size:0.3em;
+            #dropdownDiv01 {
+              left: -75px !important;
             }
-=======
->>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
-            
+            #dropdownDiv02 {
+              left: -20px !important;
+            }
           }
 
             
@@ -245,17 +250,11 @@
             }  
             .navbar-nav 
             {
-
               display: flex;
               padding-left: 0;
               margin-bottom: 0;
               list-style: none;
               flex-direction: row;
-            }
-            ul.navbar-nav
-            {
-              display:flex;
-              flex-direction:row;
             }
             .justify-content-md-center 
             {
@@ -284,14 +283,6 @@
             {
               font-size:1.2em;
             }
-<<<<<<< HEAD
-
-            div#dropdownDiv01.dropdown-menu.border.border-0.text-center.show , div#dropdownDiv02.dropdown-menu.border.border-0.text-center.show
-            {
-              font-size:0.3em;
-            }
-=======
->>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
           }
 
 /* FORMAT MOBILE  */
@@ -320,14 +311,8 @@
               width: 35%;
             }
             /* icone téléphone */
-            .fas {
-              display: block;
-            }
-            i.fas.fa-bars::before
-            {
-              display:flex;
-              flex-direction:column;
-              align-items:center;
+            #fas {
+              display: none;
             }
             /* li qui contient les liens (3D, Nettoyage, Espaces Verts, Galeries */
             .nav-item1 {
@@ -344,15 +329,16 @@
               flex-direction:column;
               justify-content:center;
             }
-            .navbar-expand-lg .navbar-nav
-            {
-              font-size:1.3em;
-            }
             .ordi
             {
               display:none;
             }
-
+            .burger
+            {
+              background:url(CKMpro/img/burger.png) no-repeat;
+              background-size:cover;
+              width:20%;
+            }
             .ml-auto, .mx-auto 
             {
               margin-left: auto!important;
@@ -360,7 +346,12 @@
               flex-direction: column;
               align-items: center;
             }
-            
+            [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) 
+            {
+              cursor: pointer;
+              display: flex;
+              justify-content: center;
+            }
             #homeLogo
             {
               margin:30px 20px 0;
@@ -390,16 +381,6 @@
               font-size: 2em;
               display: block;<
             }
-            .navbar-toggle
-            {
-              display:block;
-            }
-
-            div#dropdownDiv01.dropdown-menu.show , div#dropdownDiv02.dropdown-menu.show
-            {
-              font-size:0.3em;
-              border-bottom:1px solid black
-            }
           }
 
     </style>
@@ -407,153 +388,136 @@
 </head>
 <body>
     <header>
-
-      <div class="fixed-top">
-        <div id="num">
-          <i class="fas fa-phone-alt" id="fass"></i> &nbsp; 0123456789 <i class="fas fa-phone-alt" id="fas"></i> &nbsp;
+      <div class="container-fluid">
+        <div class="fixed-top">
+          <div id="num">
+            <i class="fas fa-phone-alt" id="fass"></i> &nbsp; 0123456789 <i class="fas fa-phone-alt" id="fas"></i> &nbsp;
+          </div>
+          <div id="nom">
+              &nbsp; CKM Boutique
+          </div>
+          <i class="baseline-speaker_phone"></i>
         </div>
-        <div id="nom">
-            &nbsp; CKM Boutique
+        <div class="logo">
+          <img src="img/LOGOCKMPRODEF.png" alt="logo" id="logoHome">
         </div>
-        <i class="baseline-speaker_phone"></i>
-      </div>
-      <div class="logo">
-        <img src="img/LOGOCKMPRODEF.png" alt="logo" id="logoHome">
-      </div>
 
 
 
-<<<<<<< HEAD
+        <div class="ordi navbar-expand-lg navbar-light rounded mobil">
+          <div class="mx-auto">
+            <p class="textMenu"><strong>Menu</strong></p>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
+              <div><i class="fas fa-bars"></i></div>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-md-center">
+            <ul class="navbar-nav">
+              <li class="nav-item1 lienImageLogoHome">
+                <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
+              </li>
+              <div class="trait trait1"></div>
+              <li class="nav-item dropdown" id="jaune">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+                  <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
+                  <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
+                  <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
+                </div>
+              </li>
+              <div class="trait trait2"></div>
+              <li class="nav-item1 active">
+                <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
+              </li>
+              <div class="trait trait3"></div>
+              <li class="nav-item1 active">
+                <a class="nav-link" href="#" id="dropdown03">Espaces Verts</a>
+              </li>
+              <div class="trait trait4"></div>
+              <li class="nav-item1 active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
+                  <a class="dropdown-item dropdown-item04" href="#">3D</a>
+                  <a class="dropdown-item dropdown-item05" href="#">Nettoyage</a>
+                  <a class="dropdown-item dropdown-item06" href="#">Espaces Verts</a>
+                </div>
+              </li>
+              <div class="trait trait5"></div>
+            </ul>
+          </div>
+        </div>
 
+        
       
-    
-      <nav class="navbar navbar-expand-lg navbar-light cc">
+        <nav class="navbar navbar-expand-lg navbar-light rounded">
 
-
-
-=======
->>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
-      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
-        <div class="mx-auto">
-          <p class="textMenu"><strong>Menu</strong></p>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
-            <div><i class="fas fa-bars"></i></div>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse justify-content-md-center">
-          <ul class="navbar-nav">
-            <li class="nav-item1 lienImageLogoHome">
-              <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
-            </li>
-            <div class="trait trait1"></div>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
-                <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
-              </div>
-            </li>
-            <div class="trait trait2"></div>
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
-            </li>
-            <div class="trait trait3"></div>
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="dropdown03">Espaces Verts</a>
-            </li>
-            <div class="trait trait4"></div>
-            <li class="nav-item1 active dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
-                <a class="dropdown-item dropdown-item01" href="#">3D</a>
-                <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
-                <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
-              </div>
-            </li>
-            <div class="trait trait5"></div>
-          </ul>
-        </div>
-      </div>
-<<<<<<< HEAD
-        <div class="bn">
-=======
-
+          <div class="mx-auto">
+            <p class="textMenu"><strong>Menu</strong></p>
+            <a class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
+              <div><i class="fas fa-bars"></i></div><img src="img/burger.png" class="burger" alt="">
+            </a>
+          </div>
       
-    
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+          <div class="" id="navbarsExample01">
+            <ul class="navbar-nav">
+              <li class="nav-item1 lienImageLogoHome">
+                <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
+              </li>
+              <div class="trait trait1"></div>
 
-        <div class="mx-auto">
->>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
-          <p class="textMenu"><strong>Menu</strong></p>
-          <a class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
-            <div><i class="fas fa-bars"></i></div>
-          </a>
-        </div>
-    
-        <div class="" id="navbarsExample01">
-          <ul class="navbar-nav">
-            <li class="nav-item1 lienImageLogoHome">
-              <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
-            </li>
-            <div class="trait trait1"></div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+                  <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
+                  <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                  <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
+                </div>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
-              <div class="dropdown-menu border border-0 text-center" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
-                <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
-              </div>
-            </li>
+              <div class="trait trait2"></div>
 
-            <div class="trait trait2"></div>
+              <li class="nav-item1 active">
+                <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
+              </li>
+              <div class="trait trait3"></div>
 
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
-            </li>
-            <div class="trait trait3"></div>
-
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="dropdown03">Espaces Verts</a>
-            </li>
-            <div class="trait trait4"></div>
+              <li class="nav-item1 active">
+                <a class="nav-link" href="#" id="dropdown03">Espaces Verts</a>
+              </li>
+              <div class="trait trait4"></div>
 
 
 
-            <li class="nav-item1 active dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
-              <div class="dropdown-menu border border-0 text-center" aria-labelledby="dropdown04" id="dropdownDiv02">
-                <a class="dropdown-item dropdown-item01" href="#">3D</a>
-                <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
-                <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
-              </div>
-            </li>
-            <div class="trait trait5"></div>
+              <li class="nav-item1 active dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
+                  <a class="dropdown-item dropdown-item01" href="#">3D</a>
+                  <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
+                  <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
+                </div>
+              </li>
+              <div class="trait trait5"></div>
 
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-    </nav>
+      </nav>
 
-    <div class="trait6"></div>
+      <div class="trait6"></div>
 
-    <div class="boutonTel">
-      <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
+      <div class="boutonTel">
+        <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
+      </div>
     </div>
-  
   </header>
-<<<<<<< HEAD
-
-</body>
-=======
-  <section style="background-color: red; height: 60vh; width: 95%;" class="mx-auto">
+  <!-- <section style="background-color: red; height: 60vh; width: 95%;" class="mx-auto">
       
-  </section>
->>>>>>> 37a4cb77f2e3c916a33a828c5c15323a09c4c0c0
+  </section> -->
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-</head>
+
+</body>
+</html>
