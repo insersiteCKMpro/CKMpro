@@ -46,7 +46,7 @@ require_once("header.php");
   {
           display: flex;
           /* width: 100%; */
-          height: 50vh;
+          height: 40vh !important;
           justify-content: space-around;
           /* flex-direction: column; */
           display: flex;
