@@ -1,105 +1,704 @@
-#conteneur
-{
-    width: 960px;	
-    height: auto;
-	background: rgb(181, 182, 178);
-	color: white;
-    margin: 0 auto;
-    color: #000;
-    
+#container
+{	
+    width: 100%;
+    height: 350vh;
+    background-color: whitesmoke;
 }
-header 
+.fixed-top /*header*/
 {
-    background: white;
-    height: 15vh;
-    line-height: 60px;
-    text-align: center;
-    border: 1px solid;
-}
-img
-{
-    width: 365px;
-    height: 91px;
-}
-nav
-{
-    border: 1px solid;
-    width: 960px;
-}
-section
-{
-    min-height: 700px;
-    height: 110vh;
-	background: gray;
-	margin: 10px;	
-}
-.row1 
-{
-    background-color: rgba(181, 192, 191, 0.329);
-    float: left;
-    line-height: 122px;
-    height: 22vh;
-    width: 940px;
-    border: 1px solid;
-}
-img1
-{
-    background-color: blue;
-    width: 940px;
-    height: 10vh;
-    border: 1px solid;
-}
-.row2
-{
-    background-color: white;
     display: flex;
-    height: 33vh;
-    width: 940px;
-    border: 1px solid;
+    justify-content: flex-end;
+    width: 80%;
 }
-.row3
+.logo  /*header*/
 {
-    background-color:wheat;
+    width: 100%;
     display: flex;
     justify-content: center;
-    height:40vh;
-    width: 940px;
-    border: 1px solid;
+    align-items: center;
+    height: 40vh;
 }
-.img2
+nav  /*header*/
 {
-    background-color: blue;
-    width: 313px;
-    height: 10vh;
-    border: 1px solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.flash /* Débaras*/
+{
+    color: #00aeef;
+}
+section /*carousel Entreprise*/
+{
+    width: 100%;
+    height: 52vh;	
+}
+.ets /*Entreprise*/
+{
+text-align: center;
+}
+.activités /*Activités*/
+{
+    text-align: center;
+}
+.sectionB /*Activités*/   
+{
+        display: flex;
+        /* width: 100%; */
+        height: 52vh;
+        justify-content: space-around;
+        /* flex-direction: column; */
+}
+
+.derat /*Activités*/
+{
+    width: 19.3%;
+    text-align: center;
+}
+.nettoyage /*Activités*/
+{
+    width: 19.3%;
+    text-align: center;
+}
+.espacevert /*Activités*/
+{
+    width: 19.3%;
+    text-align: center;
+}
+.cible
+{
+    text-align: center;
+}
+main /*Professionnel Particulier*/
+{
+    height: 3vh;
+    width: 97.5%;
+    justify-content: center;
+    margin-left: 1.5vh;
+}
+.pro
+{
+    height: 43vh;
+    margin-right: 5%;
+}
+.part
+{
+    width: 50%;
+    height: 32vh;
+    margin-right: 5%;
+}
+.mainh /*Professionnel Particulier*/
+{
+    width: 100%;
+    height: 36vh;
+    display: flex;
+}
+.ppro
+{
+    width: 90%;
+}
+.mainb  /*avis*/
+{
+    width: 100%;
+    height: 24vh;
+    display: flex;
+    justify-content: space-around;
+}
+.carouL /*carousel avis gauche*/
+{
+    height: 18vh;
+    width: 30%;
+}
+.carouR /*carousel avis droite*/
+{
+    height: 18vh;
+    width: 30%;
+}
+.carousel-control-prev /*carousel avis droite et gauche*/
+{
+    WIDTH: 10%;
+    HEIGHT: 18vh;
+}
+.carousel-control-next /*carousel avis droite et gauche*/
+{
+    WIDTH: 10%;
+    HEIGHT: 18vh;
+}
+
+.sectionecom /*e-commerce*/
+{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.ecom
+{
+    text-align: center;
+
+}
+.img1
+{
+    margin-top: 30px;
+    width: 40vh;
+    height: 15vh;
 }
 .img3
 {
-    background-color: blue;
-    width: 313px;
-    height: 10vh;
-    border: 1px solid;
+    width: 210px;
+    height: 190px;  
 }
 .img4
 {
+    width: 20px;
+    height: 20px;
+}
+.imgC
+{
+    width: 1080px;
+    height: 279px;
+}
+.imgM 
+{
+    width: 497px;
+    height: 20vh;
+    display: flex;
+}
+.imgl
+{
+    width: 500px;
+    height: 25vh;
+}
+.imgp
+{
+    width: 250px;
+    height: 25vh;
+}
+.fivetoile
+{
+    width: 40%;
+}
+.footerhaut
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerbas
+{
+    display: flex;
+    justify-content: center;
+}
+.colonne1
+{
+    width: 30%;
+    align-items: center;
+    color: black !important;
+    text-decoration: none !important;
+    display: flex;
+    flex-direction: column;
+}
+.ftext1
+{
+    text-decoration: none;
+    color: black;
+}
+.ftext1:hover
+{
+    text-decoration: none;
+    color: black;
     background-color: blue;
-    width: 313px;
-    height: 10vh;
-    border: 1px solid;
+    color: white;
 }
-footer
+
+.colonne2
 {
-    background: rgb(233, 232, 207);
-    min-height: 70px;
-    line-height: 70px;
-    text-align: center;
+    width: 30%;
+    color: black !important;
+    text-decoration: none !important;
 }
-.PZ 
+.ftext2
 {
-    border: 1px solid;
-    float: left;
-    height: 122px;
-    line-height: 122px;
-    text-align: center;
-    width: 234px;
+    text-decoration: none;
+    color: black;
 }
+.ftext2:hover
+{
+    text-decoration: none;
+    color: black;
+    background-color: blue;
+    color: white;
+}
+.colonne3 
+{
+    display:flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+}
+.snap:hover
+{
+    transition: all ease .3s .1s;
+}
+.fb:hover
+{
+    transition: all ease .3s .1s;
+}
+.insta:hover
+{
+    transition: all ease .3s .1s;
+}
+
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px*/
+@media screen and (min-width:769px) and (max-width: 2560x){
+    #container
+    {	
+        width: 100%;
+        height: 380vh;
+        background-color: whitesmoke;
+    }
+    .fixed-top /*header*/
+    {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+    }
+    .logo  /*header*/
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+    }
+    nav  /*header*/
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .flash /* Débaras*/
+    {
+        color: #00aeef;
+    }
+    section /*carousel Entreprise*/
+    {
+        width: 100%;
+        height: 52vh;	
+    }
+    .sectionM /*Entreprise*/
+    {
+        width: 100%;
+    }
+    .ets /*Entreprise*/
+    {
+    text-align: center;
+    }
+    .activités /*Activités*/
+    {
+        text-align: center;
+    }
+    .sectionB /*Activités*/
+    {
+        display: flex;
+        width: 100%;
+        height: 52vh;
+        justify-content: space-around;;
+    }
+    .derat /*Activités*/
+    {
+        width: 19.3%;
+        text-align: center;
+    }
+    .nettoyage /*Activités*/
+    {
+        width: 19.3%;
+        text-align: center;
+    }
+    .espacevert /*Activités*/
+    {
+        width: 19.3%;
+        text-align: center;
+    }
+    .cible
+    {
+        text-align: center;
+    }
+    main /*Professionnel Particulier*/
+    {
+        height: 3vh;
+        width: 97.5%;
+        justify-content: center;
+        margin-left: 1.5vh;
+    }
+    .pro
+    {
+        height: 43vh;
+        margin-right: 5%;
+    }
+    .part
+    {
+        width: 50%;
+        height: 32vh;
+        margin-right: 5%;
+    }
+    .mainh /*Professionnel Particulier*/
+    {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+    }
+    .mainb  /*avis*/
+    {
+        width: 100%;
+        height: 18vh;
+        display: flex;
+    }
+    .sectionecom /*e-commerce*/
+    {
+        height: 117vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;;
+    }
+    .ecom
+    {
+        text-align: center;
+    }
+    .img1
+    {
+        margin-top: 30px;
+        width: 40vh;
+        height: 15vh;
+    }
+    .img3
+    {
+        width: 210px;
+        height: 190px;  
+    }
+    .img4
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .imgC
+    {
+        width: 1080px;
+        height: 279px;
+    }
+    .imgM 
+    {
+        width: 497px;
+        height: 20vh;
+        display: flex;
+    }
+    .flogo
+    {
+        width: 30%;
+    }
+}
+
+/* Sur tous types d'écran tablette, quand la largeur de la fenêtre est comprise entre 451px et 768px */
+@media all and (min-width: 451px) and (max-width: 768px){
+    #container
+    {	
+        width: 100%;
+        height: 380vh;
+        background-color: whitesmoke;
+    }
+    .fixed-top /*header*/
+    {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+    }
+    .logo  /*header*/
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+    }
+    nav  /*header*/
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .flash /* Débaras*/
+    {
+        color: #00aeef;
+    }
+    section /*carousel Entreprise*/
+    {
+        width: 100%;
+        height: 52vh;	
+    }
+    .sectionM /*Entreprise*/
+    {
+        width: 100%;
+    }
+    .ets /*Entreprise*/
+    {
+        text-align: center;
+    }
+    .activités /*Activités*/
+    {
+        text-align: center;
+    }
+    .sectionB /*Activités*/
+    {
+         height: 41vh;
+    }
+    .derat /*Activités*/
+    {
+        width: 33.3%;
+        text-align: center;
+    }
+    .nettoyage /*Activités*/
+    {
+        width: 33.3%;
+        text-align: center;
+    }
+    .espacevert /*Activités*/
+    {
+        width: 33.3%;
+        text-align: center;
+    }
+    .cible
+    {
+        text-align: center;
+    }
+    main /*Professionnel Particulier*/
+    {
+        height: 3vh;
+        width: 97.5%;
+        justify-content: center;
+        margin-left: 1.5vh;
+    }
+    .mainh /*Professionnel Particulier*/
+    {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+    }
+    .sectionecom /*e-commerce*/
+    {
+        height: 117vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ecom
+    {
+        text-align: center;
+    }
+    .img1
+    {
+        margin-top: 30px;
+        width: 40vh;
+        height: 15vh;
+    }
+    .img3
+    {
+        width: 210px;
+        height: 190px;  
+    }
+    .img4
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .imgC
+    {
+        width: 1080px;
+        height: 279px;
+    }
+    .imgM 
+    {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+    }
+    .flogo
+    {
+        width: 40%;
+    }
+    
+}
+@media all and (max-width: 451px){
+    #container
+    {	
+        width: 100%;
+        height: 380vh;
+        background-color: whitesmoke;
+    }
+    .fixed-top /*header*/
+    {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+    }
+    .logo  /*header*/
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+    }
+    nav  /*header*/
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .flash /* Débaras*/
+    {
+        color: #00aeef;
+    }
+    section /*carousel Entreprise*/
+    {
+        width: 100%;
+        height: 52vh;	
+    }
+    .sectionM /*Entreprise*/
+    {
+        width: 100%;
+    }
+    .ets /*Entreprise*/
+    {
+    text-align: center;
+    }
+    .activités /*Activités*/
+    {
+        text-align: center;
+    }
+    .sectionB /*Activités*/
+    {
+        height: 331vh;
+        flex-direction: column;
+    }
+    .derat /*Activités*/
+    {
+        width: 19.3%;
+        text-align: center;
+    }
+    .nettoyage /*Activités*/
+    {
+        width: 19.3%;
+        text-align: center;
+    }
+    .espacevert /*Activités*/
+    {
+        width: 19.3%;
+        text-align: center;
+    }
+    .cible
+    {
+        text-align: center;
+    }
+    main /*Professionnel Particulier*/
+    {
+        height: 3vh;
+        width: 97.5%;
+        justify-content: center;
+        margin-left: 1.5vh;
+    }
+    .pro
+    {
+        height: 43vh;
+        margin-right: 5%;
+    }
+    .part
+    {
+        width: 50%;
+        height: 32vh;
+        margin-right: 5%;
+    }
+    .mainh /*Professionnel Particulier*/
+    {
+        height: 72vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainb  /*avis*/
+    {
+        width: 50%;
+        height: 56vh;
+        display: flex;
+        flex-direction: column;
+        text-align: inherit;
+    }
+    .sectionecom /*e-commerce*/
+    {
+        height: 98vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ecom
+    {
+        text-align: center;
+    }
+    .img1
+    {
+        margin-top: 30px;
+        width: 40vh;
+        height: 15vh;
+    }
+    .img3
+    {
+        width: 210px;
+        height: 190px;  
+    }
+    .img4
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .imgC
+    {
+        width: 1080px;
+        height: 279px;
+    }
+    .imgM 
+    {
+        width: 497px;
+        height: 20vh;
+        display: flex;
+    }
+    footer
+    {
+        border-top: 1px solid black;
+    }
+    .flogo
+    {
+        width: 50%;
+        margin-bottom: 15%;
+    }
+    .footerhaut
+    {
+        flex-direction: column-reverse;
+    }
+    .colonne2
+    {
+        order:-1;
+    }
+    .footerhaut
+    {
+        align-items: center;
+        text-align: center;
+        }
+    .colonne3
+    {
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top:2vh;
+    }
+}
+
+
+
+
+
