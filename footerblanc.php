@@ -148,7 +148,7 @@
 </style>
 <body>
 
-    <footer class="mt-3">
+    <footer class="mgn">
         <div class="ensemblefooter">
             <div class="footerhaut text-center">
                     <div class="colonne1 text-center">
