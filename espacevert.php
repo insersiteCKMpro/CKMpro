@@ -1,7 +1,6 @@
-
-
 <style>
-    .imgligne1 {
+    .imgligne1 
+    {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -22,20 +21,58 @@
         font-size:2em;
     }
 
-    
-
-
     /* RESPONSIVE */
-
     /*TABLETTE*/
     @media screen and (max-width: 768px) and (min-width: 451px) {
+        .imgligne1
+        {
+            position: relative;
+            width: 100%;
+        }
+        .imgligne2 .titre2 .text2 .bg
+        {
+            width: 100%;
+        }
+        .bg
+        {
+            width: 100%;
+        }
+        .imgligne2
+        {
+            width: 100%;
+        }
+        p.text-center
+        {
+            font-size:1em;
+        }
+    }
+
+    /* PC */
+    @media screen and (max-width: 2560px) and (min-width: 769px) {
+        .imgligne1 {
+            position: relative;
+            width: 100%;
+        }
+        .imgligne2 .titre2 .text2 .bg {
+            width: 100%;
+        }
+        .bg {
+            width: 100%;
+        }
+        .imgligne2 {
+            width: 100%;
+        }
+    }
+
+    /* telephone */
+    @media screen and (max-width: 450px) {
         .imgligne1 
         {
             position: relative;
             width: 100%;
         }
-
-        .imgligne2 .titre2 .text2 .bg {
+        .imgligne2 .titre2 .text2 .bg 
+        {
             width: 100%;
         }
         .bg 
@@ -48,67 +85,11 @@
         }
         p.text-center
         {
-        font-size:1em;
+            font-size:1em;
         }
-    
     }
 
-    /* PC */
-
-
-    @media screen and (max-width: 2560px) and (min-width: 769px) {
-        .imgligne1 {
-            position: relative;
-            width: 100%;
-        }
-
-        .imgligne2 .titre2 .text2 .bg {
-            width: 100%;
-        }
-
-        .bg {
-            width: 100%;
-        }
-
-        .imgligne2 {
-            width: 100%;
-        }
- 
-    }
-
-    /* telephone */
-    @media screen and (max-width: 450px) {
-        .imgligne1 {
-            position: relative;
-            width: 100%;
-        }
-
-        .imgligne2 .titre2 .text2 .bg {
-            width: 100%;
-        }
-
-        .bg {
-            width: 100%;
-        }
-
-        .imgligne2 {
-            width: 100%;
-        }
-        p.text-center
-        {
-        font-size:1em;
-        }
-
-    }
-    
 </style>
-
-           
-
-                <nav class="BarreNav mt-5">
-
-                </nav>
-
                 <div class="imgligne1">
                     <img class="img1" src="img/nettoyagemaq.png" width="33.3%" href="#">
                     <img class="img1" src="img/nettoyagemaq.png" width="33.3%" href="#">
@@ -147,7 +128,7 @@
                     et sit
                     iusto odio.</p>
 
-                <div class="bg" style="background-color: rgba(0, 174, 239, 0.5);">
+                <div class="bg" style="background-color: rgba(0, 166, 81, 0.5);">
                     <div class="imgligne2">
                         <img class="img2" src="img/nettoyagemaq.png" width="50%" href="#">
                         <img class="img2" src="img/nettoyagemaq.png" width="50%" href="#">
@@ -224,10 +205,6 @@
                     et sit
                     iusto odio.</p>
 
-
-                <footer>
-
-                </footer>
     </div>
 </body>
 
