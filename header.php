@@ -433,7 +433,7 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
                 <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
                 <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
               </div>
             </li>
@@ -474,7 +474,10 @@
     </div>
   
   </header>
+<<<<<<< HEAD
+=======
   
+>>>>>>> 400e491d2da30e0616b70c140ea7012fc2e972cf
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
