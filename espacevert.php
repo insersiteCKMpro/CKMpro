@@ -12,7 +12,8 @@
         justify-content: center;
     }
 
-    .imgligne3 {
+    .imgligne3 
+    {
         background-color: red;
         height:45vh;
     }

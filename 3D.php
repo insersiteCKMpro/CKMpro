@@ -1,17 +1,18 @@
 <style>
-    .imgligne1 {
+    .imgligne1 
+    {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .imgligne2 {
+    .imgligne2 
+    {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .imgligne3 {
+    .imgligne3 
+    {
         background-color: red;
         height:45vh;
     }
@@ -19,25 +20,25 @@
     {
         font-size:2em;
     }
-
     /* RESPONSIVE */
 
     /*TABLETTE*/
     @media screen and (max-width: 768px) and (min-width: 451px) {
-        .imgligne1 {
+        .imgligne1 
+        {
             position: relative;
             width: 100%;
         }
-
-        .imgligne2 .titre2 .text2 .bg {
+        .imgligne2 .titre2 .text2 .bg 
+        {
             width: 100%;
         }
-
-        .bg {
+        .bg 
+        {
             width: 100%;
         }
-
-        .imgligne2 {
+        .imgligne2 
+        {
             width: 100%;
         }
         p.text-center
@@ -48,40 +49,41 @@
 
     /* PC */
     @media screen and (max-width: 2560px) and (min-width: 769px) {
-        .imgligne1 {
+        .imgligne1 
+        {
             position: relative;
             width: 100%;
         }
-
-        .imgligne2 .titre2 .text2 .bg {
+        .imgligne2 .titre2 .text2 .bg 
+        {
             width: 100%;
         }
-
-        .bg {
+        .bg 
+        {
             width: 100%;
         }
-
-        .imgligne2 {
+        .imgligne2 
+        {
             width: 100%;
         }
 }
 
     /* telephone */
     @media screen and (max-width: 450px) {
-        .imgligne1 {
+        .imgligne1 
+        {
             position: relative;
             width: 100%;
         }
-
         .imgligne2 .titre2 .text2 .bg {
             width: 100%;
         }
-
-        .bg {
+        .bg 
+        {
             width: 100%;
         }
-
-        .imgligne2 {
+        .imgligne2 
+        {
             width: 100%;
         }
         p.text-center

@@ -224,7 +224,7 @@
                     <br>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        <textarea class="form-control " id="exampleFormControlTextarea1" rows="5"></textarea>
                     </div>
                     <br>
                     <button type="submit" class="btn btn-dark buton">Submit</button>
@@ -234,7 +234,7 @@
         <br>
         <br>
         <!--maps-->
-        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3"> 
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3 mt-5"> 
             <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
             <script> 
                 (function () {
