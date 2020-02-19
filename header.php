@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-    <title>Header</title>
+    <title>CKMpro-Page-Secondaire</title>
 
     <style>
     /*  */
@@ -165,6 +165,10 @@
           {
             color:rgb(0,0,0,0.9);
           }
+          .dropdown-item
+          {
+            border-bottom:1px solid grey;
+          }
           
 /* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
 
@@ -206,7 +210,10 @@
               display:flex;
               flex-direction:row;
             }
-            
+            div#dropdownDiv01.dropdown-menu.border.border-0.text-center.show , div#dropdownDiv02.dropdown-menu.border.border-0.text-center.show
+            {
+              font-size:0.3em;
+            }
             
           }
 
@@ -273,6 +280,11 @@
               .fixed-top
             {
               font-size:1.2em;
+            }
+
+            div#dropdownDiv01.dropdown-menu.border.border-0.text-center.show , div#dropdownDiv02.dropdown-menu.border.border-0.text-center.show
+            {
+              font-size:0.3em;
             }
           }
 
