@@ -417,48 +417,6 @@
 
 
 
-      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
-        <div class="mx-auto">
-          <p class="textMenu"><strong>Menu</strong></p>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
-            <div><i class="fas fa-bars"></i></div>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse justify-content-md-center">
-          <ul class="navbar-nav">
-            <li class="nav-item1 lienImageLogoHome">
-              <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
-            </li>
-            <div class="trait trait1"></div>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
-                <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
-              </div>
-            </li>
-            <div class="trait trait2"></div>
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
-            </li>
-            <div class="trait trait3"></div>
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="dropdown03">Espaces Verts</a>
-            </li>
-            <div class="trait trait4"></div>
-            <li class="nav-item1 active dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
-                <a class="dropdown-item dropdown-item01" href="#">3D</a>
-                <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
-                <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
-              </div>
-            </li>
-            <div class="trait trait5"></div>
-          </ul>
-        </div>
-      </div>
 
       
     
