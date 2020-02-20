@@ -98,71 +98,6 @@
             text-decoration: none;
             background-color: transparent;
           }
-
-          /* hover style '3D' */
-          #dropdown1:hover {
-            background-color: #fef200;
-            border-radius: 5px;
-            /* opacity: 0.2; */
-          }
-          /* hover style 'Netrtoyage' */
-          #navNettoyage:hover {
-            background-color: RGB(37, 170, 226);
-            border-radius: 5px;
-          }
-          /* hover style 'Espaces Verts' */
-          #dropdown03:hover {
-            background-color: #00a652;
-            border-radius: 5px;
-          }
-          /* #navbarDropdownMenuLink:hover */
-
-          #jaune:hover {
-            background-color: #fef200;
-            border-radius: 5px;
-            height: 5vh;
-          }
-          .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-            color: rgba(0,0,0,.7);
-            position: relative;
-            top: -1.5vh;
-          }
-          /* hover style lien Dératisation */
-          .dropdown-item01:hover {
-            background-color: #fef200 !important;
-            border-radius: 5px !important;
-            opacity: 0.5 !important;
-          }
-          /* hover style lien Désinfection */
-          .dropdown-item02:hover {
-            background-color: #fef200 !important;
-            border-radius: 5px !important;
-            opacity: 0.5 !important;
-          }
-          /* hover style lien Désensectisation */
-          .dropdown-item03:hover {
-            background-color: #fef200 !important;
-            border-radius: 5px !important;
-            opacity: 0.5 !important;
-          }
-          /* hover style lien 3D */
-          .dropdown-item04:hover {
-            background-color: #fef200 !important;
-            border-radius: 5px !important;
-            opacity: 0.5 !important;
-          }
-          /* hover style lien Nettoyage */
-          .dropdown-item05:hover {
-            background-color: #25aae2 !important;
-            border-radius: 5px !important;
-            opacity: 0.5 !important;
-          }
-          /* hover style lien Espace Verts */
-          .dropdown-item06:hover {
-            background-color: #00a652 !important;
-            border-radius: 5px !important;
-            opacity: 0.5 !important;
-          }
           .dropdownDiv01 {
             display: grid;
           }
@@ -206,6 +141,13 @@
             .navbar-toggle {
               display: none;
             }
+            #homeLogo {
+              width: 60%;
+              height: 60%;
+              margin: 0;
+              padding-bottom: 0.9vh;
+              padding-right: 4vh;
+            }
             .logo #logoHome 
             {
               width: 40%;
@@ -223,6 +165,53 @@
             #dropdownDiv02 {
               left: -20px !important;
             }
+            .nav-item1 {
+              padding-left: 10vh;
+            }
+            /* hover style '3D' */
+          #dropdown1:hover {
+            background-color: #fef200;
+            border-radius: 5px;
+            /* opacity: 0.2; */
+          }
+          #jaune:hover {
+            background-color: #fef200;
+            border-radius: 5px;
+          }
+          /* hover style 'Netrtoyage' */
+          #navNettoyage:hover {
+            background-color: RGB(37, 170, 226);
+            border-radius: 5px;
+          }
+          /* hover style 'Espaces Verts' */
+          #dropdown03:hover {
+            background-color: #00a652;
+            border-radius: 5px;
+          }
+          /* hover style lien Dératisation / Désinfection / Désensectisation */
+          .dropdown-item01:hover {
+            background-color: #fef200 !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
+          /* hover style lien 3D */
+          .dropdown-item04:hover {
+            background-color: #fef200 !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
+          /* hover style lien Nettoyage */
+          .dropdown-item05:hover {
+            background-color: #25aae2 !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
+          /* hover style lien Espace Verts */
+          .dropdown-item06:hover {
+            background-color: #00a652 !important;
+            border-radius: 5px !important;
+            opacity: 0.5 !important;
+          }
           }
 
             
@@ -282,6 +271,20 @@
               .fixed-top
             {
               font-size:1.2em;
+            }
+            #dropdownDiv01 {
+              text-align: left !important;
+              left: -3vh !important;
+              font-size: 0.4em;
+            }
+            #dropdownDiv02 {
+              text-align: right !important;
+              left: -6vh;
+              font-size: 0.4em;
+            }
+            .dropdown-menu {
+              background-color: transparent;
+              border: 0;
             }
           }
 
@@ -381,6 +384,23 @@
               font-size: 2em;
               display: block;<
             }
+            .dropdown-menu {
+              border: 0px;
+              text-align: center;
+            }
+            .navbar-light .navbar-nav .nav-link {
+              color: rgba(0,0,0,.5);
+              text-align: center;
+            }
+            #dropdownDiv01 {
+              font-size: 0.4em;
+            }
+            #dropdownDiv02 {
+              font-size: 0.4em;
+            }
+            .navbar-light .navbar-nav .nav-link {
+              color: black;
+            }
           }
 
     </style>
@@ -421,8 +441,8 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
                   <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                  <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
-                  <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
+                  <a class="dropdown-item dropdown-item01" href="#">Désinfection</a>
+                  <a class="dropdown-item dropdown-item01" href="#">Désinsectisation</a>
                 </div>
               </li>
               <div class="trait trait2"></div>
@@ -458,7 +478,7 @@
             </a>
           </div>
       
-          <div class="" id="navbarsExample01">
+          <div id="navbarsExample01">
             <ul class="navbar-nav">
               <li class="nav-item1 lienImageLogoHome">
                 <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
@@ -469,7 +489,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
                   <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                  <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
+                  <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
                   <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
                 </div>
               </li>
