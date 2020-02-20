@@ -690,8 +690,8 @@
         }
         .espacevert /*Activités*/
         {  
-        width: 100%;
-        text-align: center;
+            width: 100%;
+            text-align: center;
         }
         .cible
         {
@@ -706,14 +706,14 @@
             margin-left: 1.5vh;
         }
         .pro {
-        height: 43vh;
-        width: 100%;
-        margin-right: 4%;
+            height: 43vh;
+            width: 100%;
+            margin-right: 4%;
         }
         .part {
-        width: 100%;
-        height: 32vh;
-        margin-right: 5%;
+            width: 100%;
+            height: 32vh;
+            margin-right: 5%;
     }
         .mainh /*Professionnel Particulier*/
         {
@@ -722,12 +722,12 @@
             flex-direction: column;
         }
         .mainb {
-        width: 100%;
-        height: 40vh;
-        margin-top: 11vh;
-        display: flex;
-        flex-direction: column;
-        text-align: inherit;
+            width: 100%;
+            height: 40vh;
+            margin-top: 11vh;
+            display: flex;
+            flex-direction: column;
+            text-align: inherit;
         }
         .carouL {
             height: 18vh;
@@ -739,9 +739,9 @@
             width: 100%;
         }
         .sectionecom {
-        height: 28vh;
-        display: flex;
-        flex-direction: row;
+            height: 28vh;
+            display: flex;
+            flex-direction: row;
     }
         .ecom
         {
@@ -769,13 +769,13 @@
             height: 279px;
         }
         .imgM {
-        width: 92%;
-        height: 20vh;
-        display: flex;
+            width: 92%;
+            height: 20vh;
+            display: flex;
         }
         .imgp {
-        width: 25%;
-        height: 25vh;
+            width: 25%;
+            height: 25vh;
         }
         footer
         {
