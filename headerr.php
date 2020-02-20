@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
-    <title>Header</title>
+    <title>CKMpro-Page-Secondaire</title>
 
     <style>
     /*  */
@@ -36,7 +36,6 @@
           /* li qui contient le lien et l'image logo Home  */
           #homeLogo {
             width: 50%;
-            height: 50%;
             margin: 0 20px;
           }
           .fixed-top 
@@ -50,7 +49,16 @@
           {
             display:block;
           }
+          nav.navbar.navbar-expand-lg.navbar-light.cc
+          {
+            display:flex;
+            justify-content:center;
+          }
           .navbar-expand-lg .navbar-nav {
+            justify-content:center;
+          }
+          .navbar-expand-lg 
+          {
             justify-content:center;
           }
           /* bouton menu burger */
@@ -70,6 +78,8 @@
           .rounded 
           {
             border-radius: .25rem!important;
+            display:flex;
+            flex-direction:center;
           }
           /* Séparation entre les liens (Menu burger déroulant)  */
           .trait1, .trait2, .trait3, .trait4, .trait5 {
@@ -150,6 +160,16 @@
             display: none;
           }
           
+          /* couleur de 3D */
+          a#navbarDropdownMenuLink.nav-link.dropdown-toggle
+          {
+            color:rgb(0,0,0,0.9);
+          }
+          .dropdown-item
+          {
+            border-bottom:1px solid grey;
+          }
+          
 /* RESPONSIVE-------------------------------------------------------------------------------------------------------------- */
 
 
@@ -184,6 +204,15 @@
             .fixed-top
             {
               font-size:1.5em;
+            }
+            ul.navbar-nav
+            {
+              display:flex;
+              flex-direction:row;
+            }
+            div#dropdownDiv01.dropdown-menu.border.border-0.text-center.show , div#dropdownDiv02.dropdown-menu.border.border-0.text-center.show
+            {
+              font-size:0.3em;
             }
             
           }
@@ -220,6 +249,11 @@
               list-style: none;
               flex-direction: row;
             }
+            ul.navbar-nav
+            {
+              display:flex;
+              flex-direction:row;
+            }
             .justify-content-md-center 
             {
               justify-content: center!important;
@@ -246,6 +280,11 @@
               .fixed-top
             {
               font-size:1.2em;
+            }
+
+            div#dropdownDiv01.dropdown-menu.border.border-0.text-center.show , div#dropdownDiv02.dropdown-menu.border.border-0.text-center.show
+            {
+              font-size:0.3em;
             }
           }
 
@@ -275,8 +314,14 @@
               width: 35%;
             }
             /* icone téléphone */
-            #fas {
-              display: none;
+            .fas {
+              display: block;
+            }
+            i.fas.fa-bars::before
+            {
+              display:flex;
+              flex-direction:column;
+              align-items:center;
             }
             /* li qui contient les liens (3D, Nettoyage, Espaces Verts, Galeries */
             .nav-item1 {
@@ -293,16 +338,15 @@
               flex-direction:column;
               justify-content:center;
             }
+            .navbar-expand-lg .navbar-nav
+            {
+              font-size:1.3em;
+            }
             .ordi
             {
               display:none;
             }
-            .burger
-            {
-              background:url(CKMpro/img/burger.png) no-repeat;
-              background-size:cover;
-              width:20%;
-            }
+
             .ml-auto, .mx-auto 
             {
               margin-left: auto!important;
@@ -310,12 +354,7 @@
               flex-direction: column;
               align-items: center;
             }
-            [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) 
-            {
-              cursor: pointer;
-              display: flex;
-              justify-content: center;
-            }
+            
             #homeLogo
             {
               margin:30px 20px 0;
@@ -345,6 +384,16 @@
               font-size: 2em;
               display: block;<
             }
+            .navbar-toggle
+            {
+              display:block;
+            }
+
+            div#dropdownDiv01.dropdown-menu.show , div#dropdownDiv02.dropdown-menu.show
+            {
+              font-size:0.3em;
+              border-bottom:1px solid black
+            }
           }
 
     </style>
@@ -368,54 +417,12 @@
 
 
 
-      <div class="ordi navbar-expand-lg navbar-light rounded mobil">
-        <div class="mx-auto">
-          <p class="textMenu"><strong>Menu</strong></p>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
-            <div><i class="fas fa-bars"></i></div>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse justify-content-md-center">
-          <ul class="navbar-nav">
-            <li class="nav-item1 lienImageLogoHome">
-              <a class="navbar-brand1" href="#"><img src="img/CKMHOMEBTN.png" alt="homeLogo" id="homeLogo"></a>
-            </li>
-            <div class="trait trait1"></div>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                <a class="dropdown-item dropdown-item02" href="#">Désinfection</a>
-                <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
-              </div>
-            </li>
-            <div class="trait trait2"></div>
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="navNettoyage" data-toggle="dropdown">Nettoyage</a>
-            </li>
-            <div class="trait trait3"></div>
-            <li class="nav-item1 active">
-              <a class="nav-link" href="#" id="dropdown03">Espaces Verts</a>
-            </li>
-            <div class="trait trait4"></div>
-            <li class="nav-item1 active dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
-                <a class="dropdown-item dropdown-item01" href="#">3D</a>
-                <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
-                <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
-              </div>
-            </li>
-            <div class="trait trait5"></div>
-          </ul>
-        </div>
-      </div>
 
       
     
-      <nav class="navbar navbar-expand-lg navbar-light rounded">
+      <nav class="navbar navbar-expand-lg navbar-light cc">
 
-        <div class="mx-auto">
+        <div class="bn">
           <p class="textMenu"><strong>Menu</strong></p>
           <a class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
             <div><i class="fas fa-bars"></i></div><img src="img/burger.png" class="burger" alt="">
@@ -431,7 +438,7 @@
 
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+              <div class="dropdown-menu border border-0 text-center" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
                 <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
                 <a class="dropdown-item dropdown-item02" href="#">Désinfectionn</a>
                 <a class="dropdown-item dropdown-item03" href="#">Désinsectisation</a>
@@ -454,7 +461,7 @@
 
             <li class="nav-item1 active dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Galeries</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04" id="dropdownDiv02">
+              <div class="dropdown-menu border border-0 text-center" aria-labelledby="dropdown04" id="dropdownDiv02">
                 <a class="dropdown-item dropdown-item01" href="#">3D</a>
                 <a class="dropdown-item dropdown-item02" href="#">Nettoyage</a>
                 <a class="dropdown-item dropdown-item03" href="#">Espaces Verts</a>
@@ -474,14 +481,4 @@
     </div>
   
   </header>
-  <section style="background-color: red; height: 60vh; width: 95%;" class="mx-auto">
-      
-  </section>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
-</body>
-</html>
