@@ -1,5 +1,5 @@
 <?php
-require_once("header.php")
+require_once("headerr.php")
 ?>
 <style>
   .telep {
@@ -66,5 +66,5 @@ require_once("header.php")
   </div>
 </section>
 <?php
-require_once("footerblanc.php")
+require_once("include/footer.php")
 ?>
