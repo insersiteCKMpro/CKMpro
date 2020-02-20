@@ -1,6 +1,4 @@
-<?php
-require_once("header.php");
-?>
+
     <style>
     .carousel{
         width: 100%
