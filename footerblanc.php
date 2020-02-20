@@ -10,150 +10,179 @@
     <title>Document</title>
 </head>
 <style>
-
+    
+    footer
+    {
+        background-color: white;
+        border-top:1px solid black;
+    }
     .footerhaut
     {
         display: flex;
         justify-content: space-evenly;
+        font-size:1.5em;
     }
 
-.footerbas
-{
-    display: flex;
-    justify-content: center;
-}
-.colonne1
-{
-    
-    width: 30%;
-    align-items: center;
-    color: black !important;
-    text-decoration: none !important;
-    display: flex;
-    flex-direction: column;
-}
-.ftext1
-{
-    text-decoration: none;
-    color: black;
-}
-.ftext1:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
 
-.colonne2
-{
-    
-    width: 30%;
-    color: black !important;
-    text-decoration: none !important;
-}
-.ftext2
-{
-    text-decoration: none;
-    color: black;
-}
-.ftext2:hover
-{
-    text-decoration: none;
-    color: black;
-    background-color: blue;
-    color: white;
-}
-
-
-.colonne3 
-{
-    display:flex;
-    align-items: center;
-    width: 30%;
-    justify-content: center;
-}
-
-.snap:hover
-{
-    transition: all ease .3s .1s;
-}
-.fb:hover
-{
-    transition: all ease .3s .1s;
-}
-.insta:hover
-{
-    transition: all ease .3s .1s;
-}
-
-/* RESPONSIVE */
-/* Mobile */
-@media screen and (max-width: 450px)
-{
-    footer
+    .footerbas
     {
-        border-top: 1px solid black;
+        display: flex;
+        justify-content: center;
+        font-size:1em;
     }
-.flogo
-{
-    width: 50%;
-    margin-bottom: 15%;
-}
-.footerhaut
-{
-    flex-direction: column-reverse;
-}
-.colonne1
-{
-    margin-bottom: 5%;
-}
-.colonne2
-{
-    order:-1;
-}
-    .footerhaut
+    .colonne1
     {
+        
+        width: 30%;
         align-items: center;
-        text-align: center;
+        color: black !important;
+        text-decoration: none !important;
+        display: flex;
+        flex-direction: column;
+        margin-top:2%;
     }
-.colonne3
-{
-    width: 100%;
-    margin-bottom: 10%;
-    margin-top:2vh;
-}
-
-}
-
-/* Tablette */
-@media screen and (max-width: 768px) and (min-width: 451px)
-{
-    .flogo
+    .ftext1
     {
-        width: 20%;
+        text-decoration: none;
+        color: black;
     }
-    
-}
+    .ftext1:hover
+    {
+        text-decoration: none;
+        color: black;
+        background-color: blue;
+        color: white;
+    }
 
-/* Ordi */
-@media screen and (max-width: 2560px) and (min-width: 769px)
+    .colonne2
+    {
+        
+        width: 30%;
+        color: black !important;
+        text-decoration: none !important;
+        margin-top:2%;
+    }
+    .ftext2
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .ftext2:hover
+    {
+        text-decoration: none;
+        color: black;
+        background-color: blue;
+        color: white;
+    }
+
+
+    .colonne3 
+    {
+        display:flex;
+        align-items: center;
+        width: 30%;
+        justify-content: center;
+        margin-top:2%;
+    }
+
+    .snap:hover
+    {
+        transition: all ease .3s .1s;
+    }
+    .fb:hover
+    {
+        transition: all ease .3s .1s;
+    }
+    .insta:hover
+    {
+        transition: all ease .3s .1s;
+    }
+    .ordi
+    {
+        display:none;
+    }
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+/* ORDINATEUR */
+@media screen and (min-width: 769px) and (max-width: 2560px)
 {
     .flogo
     {
         width: 10%;
     }
+    .footerhaut , .footerbas
+{
+    font-size:1em;
+}
+}
+/* TABLETTE */
+@media screen and (min-width: 451px) and (max-width: 768px)
+{
+    .flogo
+    {
+        width: 20%;
+    }
+    .footerhaut , .footerbas
+{
+    font-size:1em;
+}
 }
 
+/* TELEPHONE */
+
+    @media screen and (max-width: 450px)
+    {
+        footer
+        {
+            border-top: 1px solid black;
+        }
+    .flogo
+    {
+        width: 50%;
+        margin-bottom: 15%;
+    }
+    .footerhaut
+    {
+        flex-direction: column-reverse;
+    }
+    .colonne2
+    {
+        order:-1;
+    }
+        .footerhaut
+        {
+            align-items: center;
+            text-align: center;
+        }
+    .colonne3
+    {
+        width: 100%;
+        margin-bottom: 10%;
+        margin-top:2vh;
+    }
+    .footerhaut , .footerbas
+    {
+        font-size:1em;
+    }
+
+    }
+
+
+    
 </style>
 <body>
+    <main>
 
-    <footer class="mgn">
+    </main>
+
+    <footer>
         <div class="ensemblefooter">
             <div class="footerhaut text-center">
                     <div class="colonne1 text-center">
                         
-                        <img class="flogo" src="img/CKMHOMEFOOTER.png" width="10%" height="30%">
+                        <img class="flogo" src="img/CKMHOMEFOOTER.png" width="10%">
                         <a class="ftext1" href="">3D</a>
                         <a class="ftext1" href="">Nettoyage</a>
                         <a class="ftext1" href="">Espace Verts</a>
@@ -168,16 +197,16 @@
             
                     <div class="colonne3 text-center">
                         <div class="snap">
-                            <a href="http://snapchat.com" target="_blank"><img src="img/ckmsnapchat.png" width="50%" height="50%"></a>
+                            <img class="snap" src="img\ckmsnapchat.png" alt="" width="50%"><a href="http://www.snapchat.com"></a>
                         </div>
 
                         <div class="fb">
-                            <a href="http://facebook.com" target="_blank"><img src="img/ckmfbblue.png" width="50%" height="50%"></a>
+                            <img class="snap" src="img\ckmfb.png" alt="" width="50%"><a href="http://www.snapchat.com"></a>
                         </div>
 
-                        <div class="insta">
-                            <a href="http://instagram.com" target="_blank"><img src="img/ckminstagramgreen.png" width="50%" height="50%"></a>
-                    </div>
+                        <div class="snap">
+                            <img class="snap" src="img\ckminstagram.png" alt="" width="50%"><a href="http://www.snapchat.com"></a>
+                        </div>
             </div>
                 </div>
             
@@ -188,16 +217,3 @@
             </div>
             
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-</body>
-
-</html>
