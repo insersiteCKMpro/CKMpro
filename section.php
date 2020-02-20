@@ -1,4 +1,6 @@
-
+<?php
+require_once("header.php");
+?>
     <style>
     .carousel{
         width: 100%
@@ -154,7 +156,6 @@
     .imgC
     {
         width: 100%;
-        height: 279px;
     }
     .imgM 
     {
