@@ -1,15 +1,11 @@
-<?php
-require_once("header.php")
-?>
 <style>
-    @media screen and (min-width: 769px) and (max-width:2560px) {
     .test {min-height: 93vh; display: flex;}
     .test2 {width: 30%; min-height: 75vh; display: flex;}
     .test3{display:none;}
     .titrec {width: 100%; height: 40vh;}
     .num {margin: 0 7vh; width: 75%; height: 10vh;}
-    .trait1 {width: 2%; border-left: 1px solid black; height: 93vh;}
-    .trait2 {display: none;}
+    .traits1 {width: 2%; border-left: 1px solid black; height: 93vh;}
+    .traits2 {display: none;}
     .traitori{display: none;}
     .espace{display: none;}
     .for {width: 45%; height: 70vh;}
@@ -20,7 +16,54 @@ require_once("header.php")
     .checkio1{width:100%; height: 10vh; display: flex;}
     .put {width: 35.3%;}
     .put1 {width: 33%; height: 6vh; margin-top: 3vh;}
-    .btn{margin-left: 6vh;width: 75%;}
+    .btn{margin-left: 33vh;width: 30%;}
+    .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
+    .buton:hover {background-color: black !important; color: white !important;}
+    footer {width: 100%; height: 16vh;}
+    .reseaux {width: 33.4%; height: 15vh;}
+    .reseaux img {height: 6.7vh; margin: 7vh auto;}
+    .fichec {width: 33.3%; height: 15vh;}
+    #customControlValidation1:checked~.custom-control-label::before {color: #fff200; border-color: #fff200; background-color: #fff200;}
+    #customControlValidation2:checked~.custom-control-label::before {color: #00aeef; border-color: #00aeef; background-color: #00aeef;}
+    #customControlValidation3:checked~.custom-control-label::before {color: #00a651; border-color: #00a651; background-color: #00a651;}
+    .footerhaut{display: flex; justify-content: space-evenly;}
+    .footerbas{display: flex; justify-content: center;}
+    .colonne1{width: 30%; align-items: center; color: black !important; text-decoration: none !important; display: flex; flex-direction: column;}
+    .ftext1{text-decoration: none; color: black;}
+    .ftext1:hover{text-decoration: none; color: black; background-color: blue; color: white;}
+    .colonne2{width: 30%; color: black !important; text-decoration: none !important;}
+    .ftext2{text-decoration: none; color: black;}
+    .ftext2:hover{text-decoration: none; color: black; background-color: blue; color: white;}
+    .colonne3{display:flex; align-items: center; width: 30%; justify-content: center;}
+    .colonne4 {width: 100%; margin-bottom: 10%; margin-top:2vh; display: none;}
+    .snap {width:50%; height: 10vh;}
+    .snap:hover{transition: all ease .3s .1s;}
+    .fb {width:50%; height: 10vh;}
+    .fb:hover{transition: all ease .3s .1s;}
+    .insta {width:50%; height: 10vh;}
+    .insta:hover{transition: all ease .3s .1s;}
+    .flogo {width: 11.5%; height: 38%;}
+    img {border-style: none; height: 60%;}
+
+    @media screen and (min-width: 769px) and (max-width:2560px) {
+    .test {min-height: 93vh; display: flex;}
+    .test2 {width: 30%; min-height: 75vh; display: flex;}
+    .test3{display:none;}
+    .titrec {width: 100%; height: 40vh;}
+    .num {margin: 0 7vh; width: 75%; height: 10vh;}
+    .traits1 {width: 2%; border-left: 1px solid black; height: 93vh;}
+    .traits2 {display: none;}
+    .traitori{display: none;}
+    .espace{display: none;}
+    .for {width: 45%; height: 70vh;}
+    .radbox {height: 15vh; display: flex;}
+    .labe {width: 25%;}
+    .star{display: initial;width:75%; height: 15vh;}
+    .checkio{width:100%; height: 1vh; display: flex;}
+    .checkio1{width:100%; height: 10vh; display: flex;}
+    .put {width: 35.3%;}
+    .put1 {width: 33%; height: 6vh; margin-top: 3vh;}
+    .btn{margin-left: 33vh;width: 30%;}
     .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
     .buton:hover {background-color: black !important; color: white !important;}
     footer {width: 100%; height: 16vh;}
@@ -53,8 +96,8 @@ require_once("header.php")
     .test {min-height: 110vh; display: flex; justify-content: center;}
     .test2 { display: none;}
     .test3 { display:flex; flex-direction: column; text-align: center; min-height: 17vh; width:100%; border-bottom: 1px solid grey;}
-    .trait1 {display: none;}
-    .trait2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .traits1 {display: none;}
+    .traits2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
     .titrec {height: 5vh; text-align: center;}
     .traitori{background-color: black; height: 2px;}
     .espace{margin-top: 5px;}
@@ -86,14 +129,14 @@ require_once("header.php")
 @media screen and (max-width: 450px) {
     .radbox {height: 15vh; display: flex;}
     .test2 {display: none;}
-    .trait2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
+    .traits2 {width: 100%; border-top: 1px solid #000; height: 0; align-items: center;}
     .labe {width: 25%;}
     .star {display: initial; width:75%; height: 15vh;}
     .checkio {width:100%; height: 4vh; display: flex;}
     .checkio1 {width:100%; height: 10vh; display: flex;}
     .put {width: 33.3%; min-height: 2vh;}
     .put1 {width: 33.3%; height: 6vh;}    
-    .btn {width: 100%;}
+    .btn {width: 50%; margin: auto;}
     .buton {background-color: white !important; color: black !important; border: 2px solid black !important;}
     .buton:hover {background-color: black !important; color: white !important;}
     footer {border-top: 1px solid black;}
@@ -132,20 +175,20 @@ require_once("header.php")
                     </div>
                 </div>
             </div>
-            <div class="trait1"></div>
+            <div class="traits1"></div>
             <div class="for">
                 <div class="test3"><!--responsive tablette-->
-                    <div class="titrec"><!--responsive tablette-->
-                        <h2 class="">Contact</h2><!--responsive tablette-->
-                        <br><!--responsive tablette-->
-                        <div class="num"><!--responsive tablette-->
+                    <div class="titrec">
+                        <h2 class="">Contact</h2>
+                        <br>
+                        <div class="num">
                             <p>Numero de téléphone: <br>
                                 0123456789
-                            </p><!--responsive tablette-->
-                        </div><!--responsive tablette-->
-                    </div><!--responsive tablette-->
+                            </p>
+                        </div>
+                    </div>
                 </div><!--responsive tablette-->
-                <div class="trait2"></div>
+                <div class="traits2"></div>
                 <form>
                     <div class="form-group espace">
                         <label for="exampleInputName1">Nom*</label>
@@ -260,71 +303,4 @@ require_once("header.php")
             </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
         </div>
         <hr>
-        <br>
-        <footer>
-            <div class="ensemblefooter">
-                <div class="footerhaut text-center">
-
-                    <div class="colonne4 text-center">
-                        <div class="snap">
-                            <a href="http://snapchat.com" target="_blank"><img src="img/ckmsnapchat.png"></a>
-                        </div>
-
-                        <div class="fb">
-                            <a href="http://facebook.com" target="_blank"><img src="img/ckmfbblue.png"></a>
-                        </div>
-
-                        <div class="insta">
-                            <a href="http://instagram.com" target="_blank"><img src="img/ckminstagramgreen.png"></a>
-                        </div>
-                    </div>
-                
-                    <div class="colonne1 text-center alignf">
-                        
-                        <img class="flogo" src="img/CKMHOMEFOOTER.png" width="10%" height="30%">
-                        <a class="ftext1" href="">3D</a>
-                        <a class="ftext1" href="">Nettoyage</a>
-                        <a class="ftext1" href="">Espace Verts</a>
-                    </div>
-            
-                    <div class="colonne2 text-center">
-                        <a class="ftext2" href="">La Boutique</a><br>
-                        <a class="ftext2" href="">Contact</a><br>
-                        <a class="ftext2" href="">Mention Légales</a><br>
-                        <a class="ftext2" href="">Politique de Confidentialité</a><br>
-                    </div>
-            
-                    <div class="colonne3 text-center">
-                        <div class="snap">
-                            <a href="http://snapchat.com" target="_blank" class="img1"><img src="img/ckmsnapchat.png"></a>
-                        </div>
-
-                        <div class="fb">
-                            <a href="http://facebook.com" target="_blank"class="img2"><img  src="img/ckmfbblue.png"></a>
-                        </div>
-
-                        <div class="insta">
-                            <a href="http://instagram.com" target="_blank" class="img1"><img src="img/ckminstagramgreen.png"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footerbas text-center">
-                    <div id="copyright" class="mt-5" role="contentinfo">Copyright 2020 Insersite</div>
-                </div>
-            
-            </div>
-                
-        </footer>
-    </div>
-    
-</body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-</html>
+        
