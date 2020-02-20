@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
-</head>
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+    <title>footer</title>
+
 
 <style>
+     header, nav, section 
+    {
+    display: contents;
+    }
     footer {
         background-color: white;
         border-top: 1px solid black;
@@ -95,8 +94,6 @@
     }
 
     /* ----------------------------------------------------------------------------------------------------- */
-
-
     /* ORDINATEUR */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
         .flogo {
@@ -158,7 +155,6 @@
         }
     }
 </style>
-
     <footer>
         <div class="ensemblefooter">
             <div class="footerhaut text-center">
@@ -192,10 +188,8 @@
                     </div>
                 </div>
             </div>
-
             <div class="footerbas">
                 <div id="copyright" class="mt-5" role="contentinfo">Copyright 2020 Insersite</div>
             </div>
-
         </div>
     </footer>
