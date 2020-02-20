@@ -1,5 +1,4 @@
-
-    <style>
+<style>
     .carousel{
         width: 100%
     }
@@ -44,7 +43,7 @@
     {
             display: flex;
             /* width: 100%; */
-            height: 40vh !important;
+            height: 25vh;
             justify-content: space-around;
             /* flex-direction: column; */
             display: flex;
@@ -64,9 +63,9 @@
         width: 33.3%;
         text-align: center;
     }
-    .cible
-    {
+    .cible {
         text-align: center;
+        margin-top: 5vh;
     }
     main /*Professionnel Particulier*/
     {
@@ -304,7 +303,7 @@
         {
                 display: flex;
                 /* width: 100%; */
-                height: 50vh;
+                height: 35vh;
                 justify-content: space-around;
                 /* flex-direction: column; */
                 display: flex;
@@ -325,9 +324,9 @@
             width: 33.3%;
             text-align: center;
         }
-        .cible
-        {
+        .cible {
             text-align: center;
+            margin-top: 11vh;
         }
         main /*Professionnel Particulier*/
         {
@@ -586,6 +585,7 @@
         .cible
         {
             text-align: center;
+            margin: 0;
         }
         main /*Professionnel Particulier*/
         {
@@ -672,12 +672,13 @@
         text-align: center;
         }
         .activités {
-        text-align: center;
-    }
+            text-align: center;
+            margin-top: 5vh;
+        }
         .sectionB {
         height: 142vh;
         flex-direction: column;
-        margin-top: 44vh;
+        margin-top: 0;
     }
         .derat {
         width: 100%;
@@ -696,7 +697,7 @@
         .cible
         {
             text-align: center;
-            margin-top: 44vh;
+            margin-top: 0;
         }
         main /*Professionnel Particulier*/
         {
@@ -735,6 +736,7 @@
         }
         .carouR /*carousel avis droite*/
         {
+            margin-top: 2vh;
             height: 18vh;
             width: 100%;
         }
@@ -742,10 +744,10 @@
             height: 28vh;
             display: flex;
             flex-direction: row;
-    }
-        .ecom
-        {
+        }
+        .ecom {
             text-align: center;
+            margin-top: 3vh;
         }
         .img1
         {
@@ -964,4 +966,3 @@
 
         </section>
     </div>
-  

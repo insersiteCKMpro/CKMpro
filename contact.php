@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 <style>
     .test {height: 94vh; display: flex;}
     .test2 {width: 30%; height: 75vh; display: flex;}
@@ -18,8 +31,58 @@
     .put {width: 35.3%;}
     .put1 {width: 33%; height: 6vh; margin-top: 3vh;}
     .btn {margin: auto;width: 30%;}
-    .buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
-    .buton:hover {background-color: black !important; color: white !important;}
+    /* animation bouton */
+
+    .hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: red;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0s; 
+  transition-duration: 0s; 
+
+}
+.hvr-bounce-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;  /* regler couleur de l'animation */ 
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 1.5s; 
+  transition-duration: 1.5s; /* regler vitesse animation */ 
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  background-color:none;
+}
+.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+  color:white;  /* changer couleur du text dans l'animation */
+  background:none; /* changer couleur background en dessous de l'animation */
+  
+}
+.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  background-color:none;
+}
+
     footer {width: 100%; height: 16vh;}
     .reseaux {width: 33.4%; height: 15vh;}
     .reseaux img {height: 6.7vh; margin: 7vh auto;}
@@ -163,17 +226,56 @@
             width: 30%;
         }
 
-        .buton 
-        {
-            background-color: white !important;
-            color: black !important;
-            border: 1px solid black !important;
-        }
+        /* animation bouton */
 
-        .buton:hover 
-        {
-            background-color: black !important;
-            color: white !important;
+        .hvr-bounce-to-right {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: red;
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0s; 
+            transition-duration: 0s; 
+
+        }
+        .hvr-bounce-to-right:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;  /* regler couleur de l'animation */ 
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 1.5s; 
+            transition-duration: 1.5s; /* regler vitesse animation */ 
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            background-color:none;
+        }
+        .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+            color:white;  /* changer couleur du text dans l'animation */
+            background:none; /* changer couleur background en dessous de l'animation */
+            
+        }
+        .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            background-color:none;
         }
 
         footer 
@@ -463,15 +565,56 @@
             width: 75%;
         }
 
-        .buton {
-            background-color: white !important;
-            color: black !important;
-            border: 1px solid black !important;
-        }
+        /* animation bouton */
 
-        .buton:hover {
-            background-color: black !important;
-            color: white !important;
+        .hvr-bounce-to-right {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: red;
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0s; 
+            transition-duration: 0s; 
+
+        }
+        .hvr-bounce-to-right:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;  /* regler couleur de l'animation */ 
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 1.5s; 
+            transition-duration: 1.5s; /* regler vitesse animation */ 
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            background-color:none;
+        }
+        .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+            color:white;  /* changer couleur du text dans l'animation */
+            background:none; /* changer couleur background en dessous de l'animation */
+            
+        }
+        .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            background-color:none;
         }
 
         .colonne3 {
@@ -622,15 +765,56 @@
             margin: auto;
         }
 
-        .buton {
-            background-color: white !important;
-            color: black !important;
-            border: 2px solid black !important;
-        }
+        /* animation bouton */
 
-        .buton:hover {
-            background-color: black !important;
-            color: white !important;
+        .hvr-bounce-to-right {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: red;
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0s; 
+            transition-duration: 0s; 
+
+        }
+        .hvr-bounce-to-right:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;  /* regler couleur de l'animation */ 
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 1.5s; 
+            transition-duration: 1.5s; /* regler vitesse animation */ 
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            background-color:none;
+        }
+        .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+            color:white;  /* changer couleur du text dans l'animation */
+            background:none; /* changer couleur background en dessous de l'animation */
+            
+        }
+        .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            background-color:none;
         }
 
         footer {
@@ -838,7 +1022,7 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-dark buton">Submit</button>
+                <button type="submit" class="btn border-dark hvr-bounce-to-right">Submit</button>
             </form>
         </div>
     </main>
@@ -875,3 +1059,5 @@
         </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
     </div>
     <hr>
+    </body>
+</html>
