@@ -178,7 +178,7 @@
             background-color: #fef200;
             border-radius: 5px;
           }
-          /* hover style 'Netrtoyage' */
+          /* hover style 'Nettoyage' */
           #navNettoyage:hover {
             background-color: RGB(37, 170, 226);
             border-radius: 5px;
