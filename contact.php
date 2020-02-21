@@ -1,35 +1,13 @@
-<<<<<<< HEAD
 <?php
 require_once("headerr.php");
 ?>
 <style>
     .test {height: 125vh; display: flex;}
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
-<style>
-    .test {height: 94vh; display: flex;}
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
     .test2 {width: 30%; height: 75vh; display: flex;}
     .test3{display:none;}
     .titrec {width: 100%; height: 40vh;}
     .num {margin: 0 7vh; width: 75%; height: 10vh;}
-<<<<<<< HEAD
     .traits1 {width: 2%; border-left: 1px solid black; height: 110vh;}
-=======
-    .traits1 {width: 2%; border-left: 1px solid black; height: 93vh;}
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
     .traits2 {display: none;}
     .traitori{display: none;}
     .espace{display: none;}
@@ -125,11 +103,7 @@ require_once("headerr.php");
     {
         .test 
         {
-<<<<<<< HEAD
-            height: 125vh;
-=======
-            height: 94vh;
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
+            height: 100vh;
             display: flex;
         }
 
@@ -162,11 +136,7 @@ require_once("headerr.php");
         {
             width: 2%;
             border-left: 1px solid black;
-<<<<<<< HEAD
-            height: 110vh;
-=======
-            height: 93vh;
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
+            height: 90vh;
         }
 
         .traits2 
@@ -466,11 +436,7 @@ require_once("headerr.php");
     @media all and (min-width: 451px) and (max-width: 768px) {
 
         .test {
-<<<<<<< HEAD
-            height: 150vh;
-=======
-            height: 110vh;
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
+            height: 122vh;
             display: flex;
             justify-content: center;
         }
@@ -483,11 +449,7 @@ require_once("headerr.php");
             display: flex;
             flex-direction: column;
             text-align: center;
-<<<<<<< HEAD
             height: 22vh;
-=======
-            height: 17vh;
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -712,11 +674,7 @@ require_once("headerr.php");
         }
 
         .test {
-<<<<<<< HEAD
-            height: 150vh;
-=======
-            height: 111vh;
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
+            height: 125vh;
             display: flex;
         }
 
@@ -727,11 +685,7 @@ require_once("headerr.php");
             display: flex;
             flex-direction: column;
             text-align: center;
-<<<<<<< HEAD
             height: 23vh;
-=======
-            height: 17vh;
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -951,22 +905,11 @@ require_once("headerr.php");
     }
 </style>
 <div class="container-fluid">
-<<<<<<< HEAD
     <h2 class="text-center">Titre H1</h2>
-=======
-    <br>
-    <h2 class="text-center">Titre H1</h2>
-    <br>
-    <br>
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
     <main class="test">
         <div class="test2">
             <div class="titrec">
                 <h2 class="text-center">Contact</h2>
-<<<<<<< HEAD
-=======
-                <br>
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
                 <div class="num">
                     <p>Numero de téléphone: <br>
                         0123456789
@@ -1069,11 +1012,6 @@ require_once("headerr.php");
             </form>
         </div>
     </main>
-<<<<<<< HEAD
-=======
-    <br>
-    <br>
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1
     <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
         <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
         <script>
@@ -1105,12 +1043,5 @@ require_once("headerr.php");
         </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
     </div>
     <hr>
-<<<<<<< HEAD
-<?php
-require_once("include/footer.php");
-?>
-        
-=======
     </body>
 </html>
->>>>>>> be6cc1d842ebe0dbcb849490a73ace42166c7de1

@@ -1,6 +1,3 @@
-<?php
-require_once("headerr.php")
-?>
 <style>
   .telep {
     display: none;
@@ -65,6 +62,3 @@ require_once("headerr.php")
     </div>
   </div>
 </section>
-<?php
-require_once("include/footer.php")
-?>
