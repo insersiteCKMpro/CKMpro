@@ -1,19 +1,15 @@
 <?php 
-	include("include/header.php");
+    require_once("include/header.php");
 ?>
 
 <style>
 
-    .flash
-    /* Débaras*/
+    .flash/* Débaras*/
         {
         color: #00aeef;
     }
-
-    section
-
-    /*carousel Entreprise*/
-        {
+    section/*carousel Entreprise*/
+    {
         width: 100%;
         height: 52vh;
     }
@@ -25,17 +21,13 @@
         text-align: center;
     }
 
-    .activités
-
-    /*Activités*/
+    .activités/*Activités*/
         {
         text-align: center;
     }
 
-    .sectionB
-
-    /*Activités*/
-        {
+    .sectionB/*Activités*/
+    {
         display: flex;
         /* width: 100%; */
         height: 25vh;
@@ -44,70 +36,65 @@
         display: flex;
     }
 
-    .derat
+    .derat/*Activités*/
+    {
+        width: 33.3%;
+        text-align: center;
+    }
 
-    /*Activités*/
+    .nettoyage/*Activités*/
         {
         width: 33.3%;
         text-align: center;
     }
 
-    .nettoyage
-
-    /*Activités*/
-        {
+    .espacevert /*Activités*/
+    {
         width: 33.3%;
         text-align: center;
     }
 
-    .espacevert {
-        width: 33.3%;
-        text-align: center;
-    }
-
-    .cible {
+    .cible 
+    {
         text-align: center;
         margin-top: 5vh;
     }
 
-    main
-
-    /*Professionnel Particulier*/
-        {
+    main/*Professionnel Particulier*/
+    {
         height: 3vh;
         width: 97.5%;
         justify-content: space-between;
         margin-left: 1.5vh;
     }
 
-    .pro {
+    .pro 
+    {
         width: 50%;
         height: 43vh;
         margin-right: 5%;
     }
 
-    .part {
+    .part 
+    {
         width: 50%;
         height: 32vh;
         margin-right: 1% !important;
     }
 
-    .mainh
-
-    /*Professionnel Particulier*/
-        {
+    .mainh/*Professionnel Particulier*/
+    {
         width: 100%;
         height: 36vh;
         display: flex;
     }
 
-    .ppro {
+    .ppro 
+    {
         width: 90%;
     }
 
-    .mainb
-
-    /*avis*/
+    .mainb/*avis*/
         {
         width: 100%;
         height: 25vh;
@@ -115,206 +102,107 @@
         justify-content: space-around;
     }
 
-    .carouL
-
-    /*carousel avis gauche*/
+    .carouL/*carousel avis gauche*/
         {
         height: 18vh;
         width: 30%;
     }
 
-    .carouR
-
-    /*carousel avis droite*/
+    .carouR/*carousel avis droite*/
         {
         height: 18vh;
         width: 30%;
     }
 
-    .carousel-control-prev
-
-    /*carousel avis droite et gauche*/
+    .carousel-control-prev /*carousel avis droite et gauche*/
+        {
+        width: 10%;
+        height: 18vh;
+    }
+    .carousel-control-next/*carousel avis droite et gauche*/
         {
         width: 10%;
         height: 18vh;
     }
 
-    .carousel-control-next
-
-    /*carousel avis droite et gauche*/
-        {
-        width: 10%;
-        height: 18vh;
-    }
-
-    .sectionecom
-
-    /*e-commerce*/
+    .sectionecom/*e-commerce*/
         {
         height: 30vh;
         display: flex;
         justify-content: space-around;
     }
-
-    .ecom {
+    .ecom 
+    {
         text-align: center;
 
     }
-
-    .img1 {
+    .img1 
+    {
         margin-top: 30px;
         width: 40vh;
         height: 15vh;
     }
-
-    .img3 {
+    .img3 
+    {
         width: 95%;
         height: 190px;
     }
 
-    .img4 {
+    .img4 
+    {
         width: 2%;
         height: 20px;
     }
 
-    .imgC {
+    .imgC 
+    {
         width: 100%;
     }
-
-    .imgM {
+    .imgM 
+    {
         width: 100%;
         height: 20vh;
         display: flex;
     }
-
-    .imgl {
+    .imgl 
+    {
         width: 50%;
         height: 25vh;
     }
-
     .imgp {
         width: 10%;
         height: 25vh;
     }
-
-    .fivetoile {
+    .fivetoile 
+    {
         width: 40%;
     }
-
-    .footerhaut {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .footerbas {
-        display: flex;
-        justify-content: center;
-    }
-
-    .colonne1 {
-        width: 30%;
-        align-items: center;
-        color: black !important;
-        text-decoration: none !important;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ftext1 {
-        text-decoration: none;
-        color: black;
-    }
-
-    .ftext1:hover {
-        text-decoration: none;
-        color: black;
-        background-color: blue;
-        color: white;
-    }
-
-    .colonne2 {
-        width: 30%;
-        color: black !important;
-        text-decoration: none !important;
-    }
-
-    .ftext2 {
-        text-decoration: none;
-        color: black;
-    }
-
-    .ftext2:hover {
-        text-decoration: none;
-        color: black;
-        background-color: blue;
-        color: white;
-    }
-
-    .colonne3 {
-        display: flex;
-        align-items: center;
-        width: 30%;
-        justify-content: center;
-    }
-
-    .snap:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .fb:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .insta:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .part {
-        width: 50%;
-        height: 32vh;
-        margin-right: 5%;
-    }
-
-    .sectionM
-
-    /*Entreprise*/
-        {
+    .sectionM /*Entreprise*/
+    {
         width: 100%;
         height: 20vh;
     }
-
-    .flogo {
-        width: 30%;
-    }
-
-    @media screen and (min-width: 769px) and (max-width: 2560px) {
+        /* ecran pc */
+        @media screen and (min-width: 769px) and (max-width: 2560px) {
         
         section
-
         /*carousel Entreprise*/
             {
             width: 100%;
             height: 52vh;
         }
 
-        .ets
-
-        /*Entreprise*/
-            {
+        .ets/*Entreprise*/
+        {
             text-align: center;
         }
 
-        .activités
-
-        /*Activités*/
-            {
+        .activités/*Activités*/
+        {
             text-align: center;
         }
-
-        .sectionB
-
-        /*Activités*/
-            {
+        .sectionB /*Activités*/
+       {
             display: flex;
             /* width: 100%; */
             height: 35vh;
@@ -322,133 +210,100 @@
             /* flex-direction: column; */
             display: flex;
         }
-
-        .derat
-
-        /*Activités*/
-            {
+        .derat /*Activités*/
+        {
             width: 33.3%;
             text-align: center;
         }
-
-        .nettoyage
-
-        /*Activités*/
-            {
+        .nettoyage /*Activités*/
+        {
             width: 33.3%;
             text-align: center;
         }
-
-        .espacevert
-
-        /*Activités*/
-            {
+        .espacevert/*Activités*/
+        {
             width: 33.3%;
             text-align: center;
         }
-
-        .cible {
+        .cible 
+        {
             text-align: center;
             margin-top: 11vh;
         }
 
-        main
-
-        /*Professionnel Particulier*/
-            {
+        main/*Professionnel Particulier*/
+        {
             height: 3vh;
             width: 97.5%;
             justify-content: space-between;
             margin-left: 1.5vh;
         }
-
-        .pro {
+        .pro 
+        {
             width: 50%;
             height: 43vh;
         }
-
-        .part {
+        .part 
+        {
             width: 50%;
             height: 32vh;
             margin-right: 1%;
         }
-
-        .mainh
-
-        /*Professionnel Particulier*/
-            {
+        .mainh/*Professionnel Particulier*/
+        {
             width: 100%;
             height: 36vh;
             display: flex;
         }
-
-        .ppro {
+        .ppro 
+        {
             width: 90%;
         }
-
-        .mainb
-
-        /*avis*/
-            {
+        .mainb /*avis*/
+        {
             width: 100%;
             height: 25vh;
             display: flex;
             justify-content: space-around;
         }
-
-        .carouL
-
-        /*carousel avis gauche*/
-            {
+        .carouL/*carousel avis gauche*/
+        {
             height: 18vh;
             width: 30%;
         }
-
-        .carouR
-
-        /*carousel avis droite*/
-            {
+        .carouR/*carousel avis droite*/
+        {
             height: 18vh;
             width: 30%;
         }
-
-        .carousel-control-prev
-
-        /*carousel avis droite et gauche*/
-            {
+        .carousel-control-prev/*carousel avis droite et gauche*/
+        {
             width: 10%;
             height: 18vh;
         }
-
-        .carousel-control-next
-
-        /*carousel avis droite et gauche*/
-            {
+        .carousel-control-next/*carousel avis droite et gauche*/
+        {
             width: 10%;
             height: 18vh;
         }
-
-        .sectionecom
-
-        /*e-commerce*/
-            {
+        .sectionecom/*e-commerce*/
+        {
             height: 30vh;
             display: flex;
             justify-content: space-around;
         }
-
-        .ecom {
+        .ecom 
+        {
             text-align: center;
-
         }
-
-        .img1 {
+        .img1 
+        {
             margin-top: 30px;
             width: 40vh;
             height: 15vh;
         }
-
-        .img3 {
+        .img3 
+        {
             width: 95%;
             height: 190px;
         }
@@ -458,86 +313,38 @@
             height: 20px;
         }
 
-        .imgC {
+        .imgC 
+        {
             width: 100%;
             height: 279px;
         }
 
-        .imgM {
+        .imgM 
+        {
             width: 100%;
             height: 20vh;
             display: flex;
         }
 
-        .imgl {
+        .imgl 
+        {
             width: 50%;
             height: 25vh;
         }
 
-        .imgp {
+        .imgp 
+        {
             width: 10%;
             height: 25vh;
         }
 
-        .fivetoile {
+        .fivetoile 
+        {
             width: 40%;
         }
 
-        .footerhaut {
-            display: flex;
-            justify-content: space-evenly;
-        }
 
-        .footerbas {
-            display: flex;
-            justify-content: center;
-        }
-
-        .colonne1 {
-            width: 30%;
-            align-items: center;
-            color: black !important;
-            text-decoration: none !important;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .ftext1 {
-            text-decoration: none;
-            color: black;
-        }
-
-        .ftext1:hover {
-            text-decoration: none;
-            color: black;
-            background-color: blue;
-            color: white;
-        }
-
-        .colonne2 {
-            width: 30%;
-            color: black !important;
-            text-decoration: none !important;
-        }
-
-        .ftext2 {
-            text-decoration: none;
-            color: black;
-        }
-
-        .ftext2:hover {
-            text-decoration: none;
-            color: black;
-            background-color: blue;
-            color: white;
-        }
-
-        .colonne3 {
-            display: flex;
-            align-items: center;
-            width: 30%;
-            justify-content: center;
-        }
+        
 
         .snap:hover {
             transition: all ease .3s .1s;
@@ -557,54 +364,15 @@
             margin-right: 5%;
         }
 
-        .sectionM
-
-        /*Entreprise*/
-            {
+        .sectionM/*Entreprise*/
+        {
             width: 100%;
             height: 20vh;
         }
-
-        .flogo {
-            width: 30%;
-        }
-
     }
-
-    /* Sur tous types d'écran tablette, quand la largeur de la fenêtre est comprise entre 451px et 768px */
-    @media all and (min-width: 451px) and (max-width: 768px) {
-        .fixed-top
-
-        /*header*/
-            {
-            display: flex;
-            justify-content: flex-end;
-            width: 80%;
-        }
-
-        .logo
-
-        /*header*/
-            {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40vh;
-        }
-
-        nav
-
-        /*header*/
-            {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .flash
-
-        /* Débaras*/
+        /* Sur tous types d'écran tablette, quand la largeur de la fenêtre est comprise entre 451px et 768px */
+         @media all and (min-width: 451px) and (max-width: 768px) {
+        .flash /* Débaras*/
             {
             color: #00aeef;
         }
@@ -716,140 +484,86 @@
             height: 20vh;
             display: flex;
         }
-
-        .flogo {
-            width: 40%;
-        }
-
     }
-
     /* Sur tous types d'écran telephone, quand la largeur de la fenêtre est comprise entre 450px et moins */
     @media all and (max-width: 450px) {
-        .fixed-top
-
-        /*header*/
-            {
-            display: flex;
-            justify-content: flex-end;
-            width: 80%;
-        }
-
-        .logo
-
-        /*header*/
-            {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40vh;
-        }
-
-        nav
-
-        /*header*/
-            {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
         .flash
-
         /* Débaras*/
-            {
+        {
             color: #00aeef;
         }
-
         section
-
         /*carousel Entreprise*/
             {
             width: 100%;
             height: 52vh;
         }
-
         .sectionM {
             width: 100%;
             height: 33vh;
         }
-
-        .ets
-
-        /*Entreprise*/
-            {
+        .ets/*Entreprise*/
+        {
             text-align: center;
         }
-
-        .activités {
+        .activités 
+        {
             text-align: center;
             margin-top: 5vh;
         }
-
-        .sectionB {
+        .sectionB 
+        {
             height: 142vh;
             flex-direction: column;
             margin-top: 0;
         }
-
-        .derat {
+        .derat 
+        {
             width: 100%;
             text-align: center;
         }
-
-        .nettoyage
-
-        /*Activités*/
-            {
+        .nettoyage /*Activités*/
+        {
             width: 100%;
             text-align: center;
         }
-
-        .espacevert
-
-        /*Activités*/
-            {
+        .espacevert /*Activités*/
+        {
             width: 100%;
             text-align: center;
         }
-
-        .cible {
+        .cible 
+        {
             text-align: center;
             margin-top: 0;
         }
-
-        main
-
-        /*Professionnel Particulier*/
+        main /*Professionnel Particulier*/
             {
             height: 3vh;
             width: 97.5%;
             justify-content: center;
             margin-left: 1.5vh;
         }
-
-        .pro {
+        .pro
+        {
             height: 43vh;
             width: 100%;
             margin-right: 4%;
         }
-
-        .part {
+        .part 
+        {
             width: 100%;
             height: 32vh;
             margin-right: 5%;
         }
-
-        .mainh
-
-        /*Professionnel Particulier*/
+        .mainh/*Professionnel Particulier*/
             {
             height: 72vh;
             display: flex;
             flex-direction: column;
         }
-
-        .mainb {
+        .mainb 
+        {
             width: 100%;
             height: 40vh;
             margin-top: 11vh;
@@ -857,90 +571,53 @@
             flex-direction: column;
             text-align: inherit;
         }
-
-        .carouL {
+        .carouL 
+        {
             height: 18vh;
             width: 100%;
         }
-
-        .carouR
-
-        /*carousel avis droite*/
-            {
+        .carouR/*carousel avis droite*/
+        {
             margin-top: 2vh;
             height: 18vh;
             width: 100%;
         }
-
-        .sectionecom {
+        .sectionecom 
+        {
             height: 28vh;
             display: flex;
             flex-direction: row;
         }
-
-        .ecom {
+        .ecom 
+        {
             text-align: center;
             margin-top: 3vh;
         }
-
         .img1 {
             margin-top: 30px;
             width: 92%;
             height: 15vh;
         }
-
         .img3 {
             width: 92%;
             height: 190px;
         }
-
         .img4 {
             width: 92%;
             height: 20px;
         }
-
         .imgC {
             width: 100%;
             height: 279px;
         }
-
         .imgM {
             width: 92%;
             height: 20vh;
             display: flex;
         }
-
         .imgp {
             width: 25%;
             height: 25vh;
-        }
-
-        footer {
-            border-top: 1px solid black;
-        }
-
-        .flogo {
-            width: 50%;
-            margin-bottom: 15%;
-        }
-
-        .footerhaut {
-            flex-direction: column-reverse;
-        }
-
-        .colonne2 {
-            order: -1;
-        }
-
-        .footerhaut {
-            align-items: center;
-            text-align: center;
-        }
-
-        .colonne3 {
-            width: 100%;
-            margin-bottom: 10%;
-            margin-top: 2vh;
         }
     }
 </style>
@@ -966,10 +643,10 @@
                         <img src="img/debarrascarrousel.png" class="imgC" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/3Dmaq.png" class="imgC" alt="...">
+                        <img src="img/newimg2560x765.png" class="imgC" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/produitsboutimaq.png" class="imgC" alt="...">
+                        <img src="img/produitredim2560vw765vh.png" class="imgC" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -1115,7 +792,7 @@
 </body>
 
     <?php 
-	include("include/footer.php");
+	require_once("include/footer.php");
     ?>
 
 </html>
