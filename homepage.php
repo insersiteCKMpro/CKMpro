@@ -2,14 +2,30 @@
     require_once("include/header.php");
 ?>
 
-<style>
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</head>
 
-    .flash/* Débaras*/
+<style>
+    .flash
+
+    /* Débaras*/
         {
         color: #00aeef;
     }
-    section/*carousel Entreprise*/
-    {
+
+    section
+
+    /*carousel Entreprise*/
+        {
         width: 100%;
         height: 52vh;
     }
@@ -21,13 +37,17 @@
         text-align: center;
     }
 
-    .activités/*Activités*/
+    .activités
+
+    /*Activités*/
         {
         text-align: center;
     }
 
-    .sectionB/*Activités*/
-    {
+    .sectionB
+
+    /*Activités*/
+        {
         display: flex;
         /* width: 100%; */
         height: 25vh;
@@ -36,65 +56,73 @@
         display: flex;
     }
 
-    .derat/*Activités*/
-    {
-        width: 33.3%;
-        text-align: center;
-    }
+    .derat
 
-    .nettoyage/*Activités*/
+    /*Activités*/
         {
         width: 33.3%;
         text-align: center;
     }
 
-    .espacevert /*Activités*/
-    {
+    .nettoyage
+
+    /*Activités*/
+        {
         width: 33.3%;
         text-align: center;
     }
 
-    .cible 
-    {
+    .espacevert
+
+    /*Activités*/
+        {
+        width: 33.3%;
+        text-align: center;
+    }
+
+    .cible {
         text-align: center;
         margin-top: 5vh;
     }
 
-    main/*Professionnel Particulier*/
-    {
+    main
+
+    /*Professionnel Particulier*/
+        {
         height: 3vh;
         width: 97.5%;
         justify-content: space-between;
         margin-left: 1.5vh;
     }
 
-    .pro 
-    {
+    .pro {
         width: 50%;
         height: 43vh;
         margin-right: 5%;
     }
 
-    .part 
-    {
+    .part {
         width: 50%;
         height: 32vh;
         margin-right: 1% !important;
     }
 
-    .mainh/*Professionnel Particulier*/
-    {
+    .mainh
+
+    /*Professionnel Particulier*/
+        {
         width: 100%;
         height: 36vh;
         display: flex;
     }
 
-    .ppro 
-    {
+    .ppro {
         width: 90%;
     }
 
-    .mainb/*avis*/
+    .mainb
+
+    /*avis*/
         {
         width: 100%;
         height: 25vh;
@@ -102,107 +130,129 @@
         justify-content: space-around;
     }
 
-    .carouL/*carousel avis gauche*/
+    .carouL
+
+    /*carousel avis gauche*/
         {
         height: 18vh;
         width: 30%;
     }
 
-    .carouR/*carousel avis droite*/
+    .carouR
+
+    /*carousel avis droite*/
         {
         height: 18vh;
         width: 30%;
     }
 
-    .carousel-control-prev /*carousel avis droite et gauche*/
-        {
-        width: 10%;
-        height: 18vh;
-    }
-    .carousel-control-next/*carousel avis droite et gauche*/
+    .carousel-control-prev
+
+    /*carousel avis droite et gauche*/
         {
         width: 10%;
         height: 18vh;
     }
 
-    .sectionecom/*e-commerce*/
+    .carousel-control-next
+
+    /*carousel avis droite et gauche*/
+        {
+        width: 10%;
+        height: 18vh;
+    }
+
+    .sectionecom
+
+    /*e-commerce*/
         {
         height: 30vh;
         display: flex;
         justify-content: space-around;
     }
-    .ecom 
-    {
+
+    .ecom {
         text-align: center;
 
     }
-    .img1 
-    {
+
+    .img1 {
         margin-top: 30px;
         width: 40vh;
         height: 15vh;
     }
-    .img3 
-    {
+
+    .img3 {
         width: 95%;
         height: 190px;
     }
 
-    .img4 
-    {
+    .img4 {
         width: 2%;
         height: 20px;
     }
 
-    .imgC 
-    {
+    .imgC {
         width: 100%;
     }
-    .imgM 
-    {
+
+    .imgM {
         width: 100%;
         height: 20vh;
         display: flex;
     }
-    .imgl 
-    {
+
+    .imgl {
         width: 50%;
         height: 25vh;
     }
+
     .imgp {
         width: 10%;
         height: 25vh;
     }
-    .fivetoile 
-    {
+
+    .fivetoile {
         width: 40%;
     }
-    .sectionM /*Entreprise*/
-    {
+
+    .sectionM
+
+    /*Entreprise*/
+        {
         width: 100%;
         height: 20vh;
     }
-        /* ecran pc */
-        @media screen and (min-width: 769px) and (max-width: 2560px) {
-        
+
+    /* ecran pc */
+    @media screen and (min-width: 769px) and (max-width: 2560px) {
+
         section
+
         /*carousel Entreprise*/
             {
             width: 100%;
             height: 52vh;
         }
 
-        .ets/*Entreprise*/
-        {
+        .ets
+
+        /*Entreprise*/
+            {
             text-align: center;
         }
 
-        .activités/*Activités*/
-        {
+        .activités
+
+        /*Activités*/
+            {
             text-align: center;
         }
-        .sectionB /*Activités*/
-       {
+
+        .sectionB
+
+        /*Activités*/
+            {
             display: flex;
             /* width: 100%; */
             height: 35vh;
@@ -210,100 +260,132 @@
             /* flex-direction: column; */
             display: flex;
         }
-        .derat /*Activités*/
-        {
+
+        .derat
+
+        /*Activités*/
+            {
             width: 33.3%;
             text-align: center;
         }
-        .nettoyage /*Activités*/
-        {
+
+        .nettoyage
+
+        /*Activités*/
+            {
             width: 33.3%;
             text-align: center;
         }
-        .espacevert/*Activités*/
-        {
+
+        .espacevert
+
+        /*Activités*/
+            {
             width: 33.3%;
             text-align: center;
         }
-        .cible 
-        {
+
+        .cible {
             text-align: center;
             margin-top: 11vh;
         }
 
-        main/*Professionnel Particulier*/
-        {
+        main
+
+        /*Professionnel Particulier*/
+            {
             height: 3vh;
             width: 97.5%;
             justify-content: space-between;
             margin-left: 1.5vh;
         }
-        .pro 
-        {
+
+        .pro {
             width: 50%;
             height: 43vh;
         }
-        .part 
-        {
+
+        .part {
             width: 50%;
             height: 32vh;
             margin-right: 1%;
         }
-        .mainh/*Professionnel Particulier*/
-        {
+
+        .mainh
+
+        /*Professionnel Particulier*/
+            {
             width: 100%;
             height: 36vh;
             display: flex;
         }
-        .ppro 
-        {
+
+        .ppro {
             width: 90%;
         }
-        .mainb /*avis*/
-        {
+
+        .mainb
+
+        /*avis*/
+            {
             width: 100%;
             height: 25vh;
             display: flex;
             justify-content: space-around;
         }
-        .carouL/*carousel avis gauche*/
-        {
+
+        .carouL
+
+        /*carousel avis gauche*/
+            {
             height: 18vh;
             width: 30%;
         }
-        .carouR/*carousel avis droite*/
-        {
+
+        .carouR
+
+        /*carousel avis droite*/
+            {
             height: 18vh;
             width: 30%;
         }
-        .carousel-control-prev/*carousel avis droite et gauche*/
-        {
+
+        .carousel-control-prev
+
+        /*carousel avis droite et gauche*/
+            {
             width: 10%;
             height: 18vh;
         }
-        .carousel-control-next/*carousel avis droite et gauche*/
-        {
+
+        .carousel-control-next
+
+        /*carousel avis droite et gauche*/
+            {
             width: 10%;
             height: 18vh;
         }
-        .sectionecom/*e-commerce*/
-        {
+
+        .sectionecom
+
+        /*e-commerce*/
+            {
             height: 30vh;
             display: flex;
             justify-content: space-around;
         }
-        .ecom 
-        {
+
+        .ecom {
             text-align: center;
         }
-        .img1 
-        {
+
+        .img1 {
             margin-top: 30px;
             width: 40vh;
             height: 15vh;
         }
-        .img3 
-        {
+
+        .img3 {
             width: 95%;
             height: 190px;
         }
@@ -313,38 +395,33 @@
             height: 20px;
         }
 
-        .imgC 
-        {
+        .imgC {
             width: 100%;
             height: 279px;
         }
 
-        .imgM 
-        {
+        .imgM {
             width: 100%;
             height: 20vh;
             display: flex;
         }
 
-        .imgl 
-        {
+        .imgl {
             width: 50%;
             height: 25vh;
         }
 
-        .imgp 
-        {
+        .imgp {
             width: 10%;
             height: 25vh;
         }
 
-        .fivetoile 
-        {
+        .fivetoile {
             width: 40%;
         }
 
 
-        
+
 
         .snap:hover {
             transition: all ease .3s .1s;
@@ -364,15 +441,20 @@
             margin-right: 5%;
         }
 
-        .sectionM/*Entreprise*/
-        {
+        .sectionM
+
+        /*Entreprise*/
+            {
             width: 100%;
             height: 20vh;
         }
     }
-        /* Sur tous types d'écran tablette, quand la largeur de la fenêtre est comprise entre 451px et 768px */
-         @media all and (min-width: 451px) and (max-width: 768px) {
-        .flash /* Débaras*/
+
+    /* Sur tous types d'écran tablette, quand la largeur de la fenêtre est comprise entre 451px et 768px */
+    @media all and (min-width: 451px) and (max-width: 768px) {
+        .flash
+
+        /* Débaras*/
             {
             color: #00aeef;
         }
@@ -485,85 +567,105 @@
             display: flex;
         }
     }
+
     /* Sur tous types d'écran telephone, quand la largeur de la fenêtre est comprise entre 450px et moins */
     @media all and (max-width: 450px) {
         .flash
+
         /* Débaras*/
-        {
+            {
             color: #00aeef;
         }
+
         section
+
         /*carousel Entreprise*/
             {
             width: 100%;
             height: 52vh;
         }
+
         .sectionM {
             width: 100%;
             height: 33vh;
         }
-        .ets/*Entreprise*/
-        {
+
+        .ets
+
+        /*Entreprise*/
+            {
             text-align: center;
         }
-        .activités 
-        {
+
+        .activités {
             text-align: center;
             margin-top: 5vh;
         }
-        .sectionB 
-        {
+
+        .sectionB {
             height: 142vh;
             flex-direction: column;
             margin-top: 0;
         }
-        .derat 
-        {
+
+        .derat {
             width: 100%;
             text-align: center;
         }
-        .nettoyage /*Activités*/
-        {
+
+        .nettoyage
+
+        /*Activités*/
+            {
             width: 100%;
             text-align: center;
         }
-        .espacevert /*Activités*/
-        {
+
+        .espacevert
+
+        /*Activités*/
+            {
             width: 100%;
             text-align: center;
         }
-        .cible 
-        {
+
+        .cible {
             text-align: center;
             margin-top: 0;
         }
-        main /*Professionnel Particulier*/
+
+        main
+
+        /*Professionnel Particulier*/
             {
             height: 3vh;
             width: 97.5%;
             justify-content: center;
             margin-left: 1.5vh;
         }
-        .pro
-        {
+
+        .pro {
             height: 43vh;
             width: 100%;
             margin-right: 4%;
         }
-        .part 
-        {
+
+        .part {
             width: 100%;
             height: 32vh;
             margin-right: 5%;
         }
-        .mainh/*Professionnel Particulier*/
+
+        .mainh
+
+        /*Professionnel Particulier*/
             {
             height: 72vh;
             display: flex;
             flex-direction: column;
         }
-        .mainb 
-        {
+
+        .mainb {
             width: 100%;
             height: 40vh;
             margin-top: 11vh;
@@ -571,50 +673,59 @@
             flex-direction: column;
             text-align: inherit;
         }
-        .carouL 
-        {
+
+        .carouL {
             height: 18vh;
             width: 100%;
         }
-        .carouR/*carousel avis droite*/
-        {
+
+        .carouR
+
+        /*carousel avis droite*/
+            {
             margin-top: 2vh;
             height: 18vh;
             width: 100%;
         }
-        .sectionecom 
-        {
+
+        .sectionecom {
             height: 28vh;
             display: flex;
             flex-direction: row;
         }
-        .ecom 
-        {
+
+        .ecom {
             text-align: center;
             margin-top: 3vh;
         }
+
         .img1 {
             margin-top: 30px;
             width: 92%;
             height: 15vh;
         }
+
         .img3 {
             width: 92%;
             height: 190px;
         }
+
         .img4 {
             width: 92%;
             height: 20px;
         }
+
         .imgC {
             width: 100%;
             height: 279px;
         }
+
         .imgM {
             width: 92%;
             height: 20vh;
             display: flex;
         }
+
         .imgp {
             width: 25%;
             height: 25vh;
@@ -640,13 +751,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/debarrascarrousel.png" class="imgC" alt="...">
+                        <img src="include/img/debarrascarrousel.png" class="imgC" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/newimg2560x765.png" class="imgC" alt="...">
+                        <img src="include/img/newimg2560x765.png" class="imgC" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/produitredim2560vw765vh.png" class="imgC" alt="...">
+                        <img src="include/img/produitredim2560vw765vh.png" class="imgC" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -678,7 +789,7 @@
         <!--les activités de CKMpro-->
         <div class="sectionB">
             <div class="derat">
-                <img src="img/3Dmaq.png" class="img3" alt="">
+                <img src="include/img/3Dmaq.png" class="img3" alt="">
                 <h2>3D</h2>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
@@ -687,7 +798,7 @@
                 </p>
             </div>
             <div class="nettoyage">
-                <img src="img/nettoyagemaq.png" class="img3" alt="">
+                <img src="include/img/nettoyagemaq.png" class="img3" alt="">
                 <h2>Nettoyage</h2>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
@@ -696,7 +807,7 @@
                 </p>
             </div>
             <div class="espacevert">
-                <img src="img/espacevertmaq.png" class="img3" alt="">
+                <img src="include/img/espacevertmaq.png" class="img3" alt="">
                 <h2>Espace vert</h2>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
@@ -710,7 +821,7 @@
         <!--les cibles de CKMpro-->
         <main class="mainh">
             <div class="pro">
-                <img src="img/professionnelmaq.png" class="imgM" alt="">
+                <img src="include/img/professionnelmaq.png" class="imgM" alt="">
                 <h4 class="text-center">Professionnel</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -719,7 +830,7 @@
                     <P>
             </div>
             <div class="part">
-                <img src="img/particuliermaq.png" class="imgM" alt="">
+                <img src="include/img/particuliermaq.png" class="imgM" alt="">
                 <h4 class="text-center">Particulier</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -735,7 +846,7 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner text-center">
                         <div class="carousel-item active">
-                            <img src="img/5STARS.png" class="fivetoile" alt="">
+                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
@@ -743,7 +854,7 @@
                             </p>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/5STARS.png" class="fivetoile" alt="">
+                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
@@ -760,7 +871,7 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner text-center">
                         <div class="carousel-item active">
-                            <img src="img/5STARS.png" class="fivetoile" alt="">
+                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
@@ -768,7 +879,7 @@
                             </p>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/5STARS.png" class="fivetoile" alt="">
+                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
@@ -783,16 +894,12 @@
         <h2 class="ecom">La Boutique CKM</h2><br>
         <!--ecommerce-->
         <div class="sectionecom">
-            <img src="img/CKMPROLOGODEFBOUTIQUE.png" class="imgl" alt="">
-            <img src="img/produitspray2.png" class="imgp" alt="">
+            <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl" alt="">
+            <img src="include/img/produitspray2.png" class="imgp" alt="">
         </div>
     </section>
 </div>
 
-</body>
-
-    <?php 
+<?php 
 	require_once("include/footer.php");
     ?>
-
-</html>

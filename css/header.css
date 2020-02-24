@@ -1,6 +1,4 @@
-/* -----------------------------------------------------CODE SOURCE--------------------------------------------------------- */
-
-/* ENTÊTE FIXE STYLE*/
+/* ENTÊTE FIXE STYLE--------------------------------------------code source css-----------------------------------------------------------------------*/
 .fixed-top {
   display: flex;
   justify-content: flex-end;
@@ -8,17 +6,23 @@
   font-size: 1.2em;
 }
 
+#fass {
+  display: none;
+}
+
 .logo {
+  margin-top: 2.5em;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 20vh;
 }
 
 /* LOGO TITRE STYLE */
-.logo #logoTitre {
-  width: 25%;
+.logoTitre {
+  height: 17vh;
+  width: 49vw;
 }
 
 /* NAVBAR STYLE */
@@ -53,7 +57,7 @@
   width: 100%;
 }
 
-#logoHome {
+.logoHome {
   width: 100%;
   position: relative;
   top: -0.9vh;
@@ -69,102 +73,107 @@
   border: none;
 }
 
-
-
-
-/* -----------------------------------------------------RESPONSIVE--------------------------------------------------------- */
-
-/* ------------------------------------------------------FORMAT PC-------------------------------------------------------- */
+/* ----------RESPONSIVE--------------------------------------------FORMAT PC-------------------------------------------------------- */
 
 @media screen and (min-width: 769px) and (max-width: 2560px) {
 
   /* ENTÊTE FIXE STYLE */
   .fixed-top {
-    font-size: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vh;
+    font-size: 1.2em;
   }
 
-  /* ICONE TEL ENTÊTE FIXE STYLE */
   #fass {
     display: none;
   }
 
-  /* LOGO STYLE */
-
-  .logo #logoTitre {
-    width: 40%;
+  .logo {
+    margin-top: 2.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
   }
 
-  /* HOVER LIENS */
-  .colorJ:hover {
-    background-color: #fef200;
-    border-radius: 5px;
+  /* LOGO TITRE STYLE */
+  .logoTitre {
+    height: 17vh;
+    width: 49vw;
   }
 
-  .colorB:hover {
-    background-color: RGB(37, 170, 226);
-    border-radius: 5px;
+  /* NAVBAR STYLE */
+  .bg-dark {
+    background-color: white !important;
   }
 
-  .colorV:hover {
-    background-color: #00a652;
-    border-radius: 5px;
+  .navbar-dark .navbar-toggler {
+    color: black;
+    border-color: transparent;
   }
 
-  /* HOVER LIENS DROPDOWN */
-  .dropdown-item01:hover {
-    background-color: #fef200 !important;
-    border-radius: 5px !important;
-    opacity: 0.5 !important;
+  .navbar-dark .navbar-nav .active>.nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show>.nav-link {
+    color: black;
   }
 
-  /* hover style lien 3D */
-  .dropdown-item02:hover {
-    background-color: #fef200 !important;
-    border-radius: 5px !important;
-    opacity: 0.5 !important;
+  .navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+    font-size: x-large;
   }
 
-  /* hover style lien Nettoyage */
-  .dropdown-item03:hover {
-    background-color: #25aae2 !important;
-    border-radius: 5px !important;
-    opacity: 0.5 !important;
+  /* LOGO HOME STYLE */
+  #tailleLi {
+    height: 5vh;
+    width: 7%;
   }
 
-  /* hover style lien Espace Verts */
-  .dropdown-item04:hover {
-    background-color: #00a652 !important;
-    border-radius: 5px !important;
-    opacity: 0.5 !important;
+  #tailleA {
+    width: 100%;
   }
-  b, strong {
-    font-weight: bolder;
-    display: none;
+
+  .logoHome {
+    width: 100%;
+    position: relative;
+    top: -0.9vh;
+  }
+
+  .navMarg {
+    margin-left: 10vh;
+  }
+
+  /* DROPDOWN MENU */
+  .dropdown-menu {
+    left: 8vh;
+    border: none;
+  }
+
 }
-}
 
-/* ---------------------------------------------------------FORMAT TABLETTE----------------------------------------------------- */
+
+/* ---------RESPONSIVE------------------------------------------------FORMAT TABLETTE----------------------------------------------------- */
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
 
   /* ENTÊTE FIXE STYLE */
-  .fixed-top {
-    width: 50% !important;
-    float: right !important;
-    padding-left: 27vh !important;
-    position: inherit !important;
-    font-size: 1.2em;
-    display: block;
-  }
 
   /* ICONE TEL ENTÊTE FIXE STYLE */
-  #fas {
-    display: none;
-  }
 
   /* LOGO STYLE */
-  .logo #logoTitre {
-    width: 60%;
+  .logoTitre {
+    height: 14vh;
+    width: 60vw;
+  }
+
+  /* logo navbar */
+  .logoHome {
+    width: 7vw;
+    position: relative;
+    top: -0.9vh;
   }
 
   /* LOGO HOME STYLE */
@@ -176,27 +185,35 @@
   .dropdown-menu {
     left: 2vh;
   }
-  b, strong {
+
+  b,
+  strong {
     font-weight: bolder;
     display: none;
-}
+  }
 }
 
-/* --------------------------------------------------------FORMAT MOBILE------------------------------------------------------ */
+/* -------RESPONSIVE-------------------------------------------------FORMAT MOBILE------------------------------------------------------ */
 
 @media screen and (max-width: 450px) {
   /* ENTÊTE FIXE STYLE */
 
-  .fixed-top {
+  /*
+  .fixed-top 
+  {
     justify-content: space-between !important;
     width: 100% !important;
-  }
+  } 
+  */
 
   /* ICONE TEL ENTÊTE FIXE STYLE */
 
-  #fas {
+  /* 
+  #fas 
+  {
     display: none;
   }
+  */
 
   /* NUMERO */
 
@@ -213,13 +230,26 @@
 
   /* LOGO STYLE */
 
-  .logo #logoTitre {
-    width: 90%;
+  .logoTitre {
+    height: 11vh;
+    width: 65vw;
   }
 
   /* MENU BURGER */
   .textMenu {
     margin-bottom: 0;
+  }
+
+  .fa,
+  .fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    justify-content: center;
+  }
+
+  .logoHome {
+    width: 10vw;
+    position: relative;
   }
 
   #tailleLi {
@@ -245,9 +275,10 @@
   .navbar-nav .dropdown-menu {
     text-align: center;
   }
+
   .navbar-dark .navbar-toggler {
     color: black !important;
-  
+  }
 }
 
 /* ---------------------------------------------------------- */
