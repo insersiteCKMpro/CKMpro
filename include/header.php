@@ -14,6 +14,11 @@
 
 <style>
   /* ENTÊTE FIXE STYLE--------------------------------------------code source css-----------------------------------------------------------------------*/
+ .container-fluid
+ {
+   padding: 0 !important;
+ }
+
  nav{
    border-bottom: 1px solid black;
  }
