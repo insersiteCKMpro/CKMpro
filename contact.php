@@ -2,25 +2,16 @@
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
-
-<head>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
-</head>
-
-<body>
     <style>
         .test {
-            height: 119vh;
+            height: 100vh;
             display: flex;
         }
+        .titrre
+        {                
+            text-align: center;
+        }
+        
 
         .test2 {
             width: 30%;
@@ -46,7 +37,7 @@
         .traits1 {
             width: 2%;
             border-left: 1px solid black;
-            height: 110vh;
+            height: 120vh;
         }
 
         .traits2 {
@@ -317,12 +308,17 @@
         /********************************************format pc responsive-------------------------------------------------------------------- */
         @media screen and (min-width: 769px) and (max-width:2560px) {
             .test {
-                height: 119vh;
+                height: 105vh;
                 display: flex;
             }
 
+            .titrre
+            {
+                text-align: center;
+            }
+            
             .test2 {
-                width: 30%;
+                width: 27%;
                 height: 75vh;
                 display: flex;
             }
@@ -345,7 +341,8 @@
             .traits1 {
                 width: 2%;
                 border-left: 1px solid black;
-                height: 90vh;
+                height: 98vh;
+                margin-right: 3vh;
             }
 
             .traits2 {
@@ -618,9 +615,14 @@
         @media all and (min-width: 451px) and (max-width: 768px) {
 
             .test {
-                height: 122vh;
+                height: 128vh;
                 display: flex;
                 justify-content: center;
+            }
+
+            .titrre
+            {
+                text-align: center;
             }
 
             .test2 {
@@ -863,9 +865,16 @@
             }
 
             .test {
-                height: 125vh;
+                height: 128vh;
                 display: flex;
             }
+
+            .titrre
+            {
+                text-align: center;
+                margin: 0;
+            }
+
 
             .test2 {
                 display: none;
@@ -1101,8 +1110,10 @@
             }
         }
     </style>
+    <body>
+        
     <div class="container-fluid">
-        <h2 class="text-center">Ecrivez-nous</h2>
+        
         <main class="test">
             <div class="test2">
                 <div class="titrec">
@@ -1131,6 +1142,7 @@
                 <!--responsive tablette-->
                 <div class="traits2"></div>
                 <form>
+                <h2 class="titrre">Ecrivez-nous</h2>
                     <div class="form-group espace">
                         <label for="exampleInputName1">Nom*</label>
                         <input type="nom" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
@@ -1240,9 +1252,7 @@
             </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
         </div>
         <hr>
-
-
-
-        <?php 
-    require_once("include/footer.php");
+        
+<?php 
+require_once("include/footer.php");
 ?>
