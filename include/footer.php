@@ -82,7 +82,6 @@
         filter: drop-shadow(1px 2px 0px black);
         
     }
-    }
 
     .snap:hover {
         transition: all ease .3s .1s;
