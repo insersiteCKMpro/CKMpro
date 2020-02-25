@@ -77,6 +77,13 @@
         margin-top: 2%;
     }
 
+    .insta
+    {
+        filter: drop-shadow(1px 2px 0px black);
+        
+    }
+    }
+
     .snap:hover {
         transition: all ease .3s .1s;
     }
@@ -175,11 +182,11 @@
 
                 <div class="colonne3 text-center">
                     <div class="snap">
-                        <img class="snap" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"><a
+                        <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"><a
                             href="http://www.snapchat.com"></a>
                     </div>
-                    <div class="fb">
-                        <img class="snap" src="include/img/ckmfbblue.png" alt="" width="50%"><a
+                    <div class="snap">
+                        <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%"><a
                             href="http://www.facebook.com"></a>
                     </div>
                     <div class="snap">
