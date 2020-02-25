@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-
     <title>CKM pro</title>
 
     <style>
@@ -440,7 +439,7 @@
               <li class="nav-item dropdown" id="jaune">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                  <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
+                  <a class="dropdown-item dropdown-item01" href="psjaune.php?id=#test">Dératisation</a>
                   <a class="dropdown-item dropdown-item01" href="#">Désinfection</a>
                   <a class="dropdown-item dropdown-item01" href="#">Désinsectisation</a>
                 </div>
@@ -474,7 +473,7 @@
           <div class="mx-auto">
             <p class="textMenu"><strong>Menu</strong></p>
             <a class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01"  aria-label="Toggle navigation">
-              <div><i class="fas fa-bars"></i></div><img src="img/burger.png" class="burger" alt="">
+              <div><i class="fas fa-bars"></i></div>
             </a>
           </div>
       

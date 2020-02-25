@@ -168,7 +168,7 @@ require_once("header.php")
                     </div>
 
 
-                    <h2 class="titre2 text-center col-md-12">Titre H2</h2>
+                    <h2 class="titre2 text-center col-md-12" id="test">Titre H2</h2>
                     <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
                         amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
                         mollitia
