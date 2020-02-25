@@ -174,7 +174,7 @@
 
                 <div class="colonne2 text-center">
                     <a class="ftext2" href="">La Boutique</a><br>
-                    <a class="ftext2" href="">Contact</a><br>
+                    <a class="ftext2" href="contact.php">Contact</a><br>
                     <a class="ftext2" href="">Mention Légales</a><br>
                     <a class="ftext2" href="">Politique de Confidentialité</a><br>
                 </div>
