@@ -181,7 +181,7 @@
 
                 <img class="imgligne3" src="img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-                <h2 class="text-center mt-5">Titre H2</h2>
+                <h2 class="text-center mt-5" id="test">Titre H2</h2>
                 <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
                     amet
                     consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
