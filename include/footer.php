@@ -168,9 +168,9 @@
                 <div class="colonne1 text-center">
 
                     <img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="10%">
-                    <a class="ftext1" href="">3D</a>
-                    <a class="ftext1" href="">Nettoyage</a>
-                    <a class="ftext1" href="">Espace Verts</a>
+                    <a class="ftext1" href="3D.php">3D</a>
+                    <a class="ftext1" href="nettoyage.php">Nettoyage</a>
+                    <a class="ftext1" href="espacevert.php">Espace Verts</a>
                 </div>
 
                 <div class="colonne2 text-center">
