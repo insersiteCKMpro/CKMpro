@@ -279,27 +279,27 @@ display: contents;
                 <a class="nav-link dropdown-toggle navMarg colorJ" href="#" id="dropdown03" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">3D</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                    <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                    <a class="dropdown-item dropdown-item01" href="#">Désinfection</a>
-                    <a class="dropdown-item dropdown-item01" href="#">Désinsectisation</a>
+                    <a class="dropdown-item dropdown-item01" href="3D.php">Dératisation</a>
+                    <a class="dropdown-item dropdown-item01" href="3D.php#desinfection">Désinfection</a>
+                    <a class="dropdown-item dropdown-item01" href="3D.php#desinsectisation">Désinsectisation</a>
                 </div>
                 </li>
                 <hr class="mx-auto bg-dark text-center">
                 <li class="nav-item li3">
-                <a class="nav-link navMarg colorB" href="#">Nettoyage</a>
+                <a class="nav-link navMarg colorB" href="nettoyage.php">Nettoyage</a>
                 </li>
                 <hr class="mx-auto bg-dark text-center">
                 <li class="nav-item li4">
-                <a class="nav-link navMarg colorV" href="#" tabindex="-1" aria-disabled="true">Espaces Verts</a>
+                <a class="nav-link navMarg colorV" href="espacevert.php" tabindex="-1" aria-disabled="true">Espaces Verts</a>
                 </li>
                 <hr class="mx-auto bg-dark text-center">
                 <li class="nav-item dropdown li5">
                 <a class="nav-link dropdown-toggle navMarg" href="#" id="dropdown03" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Galeries</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown03">
-                    <a class="dropdown-item dropdown-item02" href="#">3D</a>
-                    <a class="dropdown-item dropdown-item03" href="#">Nettoyage</a>
-                    <a class="dropdown-item dropdown-item04" href="#">Espaces Verts</a>
+                    <a class="dropdown-item dropdown-item02" href="galerie3D.php">3D</a>
+                    <a class="dropdown-item dropdown-item03" href="galerienettoyage.php">Nettoyage</a>
+                    <a class="dropdown-item dropdown-item04" href="galerieespacevert.php">Espaces Verts</a>
                 </div>
                 </li>
                 <hr class="mx-auto bg-dark text-center">

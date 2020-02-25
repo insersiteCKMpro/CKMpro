@@ -147,7 +147,7 @@
         </div>
 
 
-        <h2 class="titre2 text-center col-md-12">3D</h2>
+        <h2 class="titre2 text-center col-md-12" id="desinfection">3D</h2>
         <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
             mollitia
@@ -183,7 +183,7 @@
 
     <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-    <h2 class="text-center mt-5">3D</h2>
+    <h2 class="text-center mt-5" id="desinsectisation">3D</h2>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
         amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
