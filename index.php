@@ -11,288 +11,398 @@
     <title>CKMpro</title>
 </head>
 <style>
-    /*ENTÊTE FIXE STYLE--------------------------------------------code source css-----------------------------------------------------------------------*/
+  /* ENTÊTE FIXE STYLE--------------------------------------------code source css-----------------------------------------------------------------------*/
+  .container-fluid
+ {
+   padding: 0 !important;
+ }
+
+ nav{
+   border-bottom: 1px solid black;
+ }
+
+  .fixed-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2vh;
+    font-size: 1.2em;
+    background-color: white;
+  }
+
+  .logo {
+    /*margin-top: 2.5em;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+  }
+
+  /* LOGO TITRE STYLE */
+  .logoTitre {
+    height: 13vh;
+    width: 20vw!important; 
+  }
+
+  /* NAVBAR STYLE */
+  .bg-dark {
+    background-color: white !important;
+  }
+
+  .navbar-dark .navbar-toggler {
+    color: black;
+    border-color: transparent;
+  }
+
+  .navbar-dark .navbar-nav .active>.nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show>.nav-link {
+    color: black;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+    font-size: x-large;
+  }
+
+  /* LOGO HOME STYLE */
+  #tailleLi {
+    height: 5vh;
+    width: 7%;
+  }
+
+  #tailleA {
+    width: 100%;
+  }
+
+  .logoHome {
+    width: 100%;
+    position: relative;
+    top: -0.9vh;
+  }
+
+  .navMarg {
+    margin-left: 10vh;
+  }
+
+  /* DROPDOWN MENU */
+  .dropdown-menu {
+    left: 8vh !important;
+    border: none !important;
+    background-color: #ffffffb8 !important;
+  }
+  .boutonTel 
+  {
+    display: none;
+  }
+
+  /* ----------RESPONSIVE--------------------------------------------FORMAT PC-------------------------------------------------------- */
+
+  @media screen and (min-width: 769px) and (max-width: 2560px) {
+
+    /* ENTÊTE FIXE STYLE */
     .fixed-top {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 2vh;
-        font-size: 1.2em;
+      /*display: flex;
+      justify-content: flex-end;
+      margin-right: 2vh;*/
+      font-size: 1.5em;
+    }
+    #fass /* ICONE TEL ENTÊTE FIXE STYLE */
+    {             
+    display: none;
     }
 
-    #fass {
-        display: none;
-    }
-
-    .logo {
-        margin-top: 2.5em;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 20vh;
-    }
+    /*.logo {
+      margin-top: 2.5em;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+    }*/
 
     /* LOGO TITRE STYLE */
-    .logoTitre {
-        height: 17vh;
-        width: 49vw;
+    .logoTitre 
+    {
+      /*height: 17vh;*/
+      width: 40%;
+    }
+      /* HOVER LIENS */
+    .colorJ:hover
+    {
+      background-color: #fef200;
+      border-radius: 5px;
+    }
+    .colorB:hover
+    {
+      background-color: RGB(37, 170, 226);
+      border-radius: 5px;
+    }
+    .colorV:hover
+    {
+      background-color: #00a652;
+      border-radius: 5px;
     }
 
-    /* NAVBAR STYLE */
+    /* HOVER LIENS DROPDOWN */
+    .dropdown-item01:hover 
+    {
+      background-color: #fef200 !important;
+      border-radius: 5px !important;
+      opacity: 0.5 !important;
+    }
+
+    /* hover style lien 3D */
+    .dropdown-item02:hover 
+    {
+      background-color: #fef200 !important;
+      border-radius: 5px !important;
+      opacity: 0.5 !important;
+    }
+
+    /* hover style lien Nettoyage */
+    .dropdown-item03:hover 
+    {
+      background-color: #25aae2 !important;
+      border-radius: 5px !important;
+      opacity: 0.5 !important;
+    }
+
+    /* hover style lien Espace Verts */
+    .dropdown-item04:hover 
+    {
+      background-color: #00a652 !important;
+      border-radius: 5px !important;
+      opacity: 0.5 !important;
+    }
+
+    /* NAVBAR STYLE 
     .bg-dark {
-        background-color: white !important;
+      background-color: white !important;
     }
 
     .navbar-dark .navbar-toggler {
-        color: black;
-        border-color: transparent;
+      color: black;
+      border-color: transparent;
     }
 
     .navbar-dark .navbar-nav .active>.nav-link,
     .navbar-dark .navbar-nav .nav-link.active,
     .navbar-dark .navbar-nav .nav-link.show,
     .navbar-dark .navbar-nav .show>.nav-link {
-        color: black;
+      color: black;
     }
 
     .navbar-dark .navbar-nav .nav-link {
-        color: black !important;
-        font-size: x-large;
+      color: black !important;
+      font-size: x-large;
     }
 
-    /* LOGO HOME STYLE */
+    /* LOGO HOME STYLE 
     #tailleLi {
-        height: 5vh;
-        width: 7%;
+      height: 5vh;
+      width: 7%;
     }
 
     #tailleA {
-        width: 100%;
+      width: 100%;
     }
 
     .logoHome {
-        width: 100%;
-        position: relative;
-        top: -0.9vh;
+      width: 100%;
+      position: relative;
+      top: -0.9vh;
     }
 
     .navMarg {
-        margin-left: 10vh;
+      margin-left: 10vh;
     }
 
-    /* DROPDOWN MENU */
+    /* DROPDOWN MENU
     .dropdown-menu {
-        left: 8vh;
-        border: none;
+      left: 8vh;
+      border: none;
+    }*/
+
+  }
+
+
+  /* ---------RESPONSIVE------------------------------------------------FORMAT TABLETTE----------------------------------------------------- */
+
+  @media screen and (min-width: 451px) and (max-width: 768px) {
+
+    /* ENTÊTE FIXE STYLE */
+    .fixed-top 
+      {
+        width: 50% !important;
+        float: right !important;
+        padding-left: 27vh !important;
+        position: inherit !important;
+        font-size:1.2em;
+        display: block;
+      }
+      /* ICONE TEL ENTÊTE FIXE STYLE */
+      #fas 
+      {
+        display: none;
+      }
+    /* LOGO STYLE */
+    .logoTitre {
+      /*height: 14vh;*/
+      width: 60%;
     }
 
-    /* -----------------------------------------------------FORMAT PC Responsive------------------------------------------------------- */
+    /* logo navbar 
+    .logoHome {
+      width: 7vw;
+      position: relative;
+      top: -0.9vh;
+    }
+    */
 
-    @media screen and (min-width: 769px) and (max-width: 2560px) {
-
-        /* ENTÊTE FIXE STYLE */
-        .fixed-top {
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 2vh;
-            font-size: 1.2em;
-        }
-
-        .logo {
-            margin-top: 2.5em;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 20vh;
-        }
-
-        /* LOGO TITRE STYLE */
-        .logoTitre {
-            height: 17vh;
-            width: 49vw;
-        }
-
-        /* NAVBAR STYLE */
-        .bg-dark {
-            background-color: white !important;
-        }
-
-        .navbar-dark .navbar-toggler {
-            color: black;
-            border-color: transparent;
-        }
-
-        .navbar-dark .navbar-nav .active>.nav-link,
-        .navbar-dark .navbar-nav .nav-link.active,
-        .navbar-dark .navbar-nav .nav-link.show,
-        .navbar-dark .navbar-nav .show>.nav-link {
-            color: black;
-        }
-
-        .navbar-dark .navbar-nav .nav-link {
-            color: black !important;
-            font-size: x-large;
-        }
-
-        /* LOGO HOME STYLE */
-        #tailleLi {
-            height: 5vh;
-            width: 7%;
-        }
-
-        #tailleA {
-            width: 100%;
-        }
-
-        .logoHome {
-            width: 100%;
-            position: relative;
-            top: -0.9vh;
-        }
-
-        .navMarg {
-            margin-left: 10vh;
-        }
-
-        /* DROPDOWN MENU */
-        .dropdown-menu {
-            left: 8vh;
-            border: none;
-        }
-
+    /* LOGO HOME STYLE */
+    .navMarg {
+      margin-left: 4vh;
     }
 
-
-    /* ---------------------------------------------------FORMAT TABLETTE - RESPONSIVE---------------------------------------------------- */
-
-    @media screen and (min-width: 451px) and (max-width: 768px) {
-
-        /* ENTÊTE FIXE STYLE */
-
-        /* ICONE TEL ENTÊTE FIXE STYLE */
-
-        /* LOGO STYLE */
-        .logoTitre {
-            height: 14vh;
-            width: 60vw;
-        }
-
-        /* logo navbar */
-        .logoHome {
-            width: 7vw;
-            position: relative;
-            top: -0.9vh;
-        }
-
-        /* LOGO HOME STYLE */
-        .navMarg {
-            margin-left: 4vh;
-        }
-
-        /* DROPDOWN STYLE */
-        .dropdown-menu {
-            left: 2vh;
-        }
-
-        b,
-        strong {
-            font-weight: bolder;
-            display: none;
-        }
+    /* DROPDOWN STYLE */
+    .dropdown-menu {
+      left: 15px !important;
     }
 
-    /* --------------------------------------------------------FORMAT MOBILE-RESPONSIVE----------------------------------------------------- */
+    /*
+    b,
+    strong {
+      font-weight: bolder;
+      display: none;
+    }
+    */
+  }
 
-    @media screen and (max-width: 450px) {
+  /* -------RESPONSIVE-------------------------------------------------FORMAT MOBILE------------------------------------------------------ */
 
-        /* ENTÊTE FIXE STYLE */
-        .fixed-top {
-            justify-content: space-between !important;
-            width: 100% !important;
-        }
+  @media screen and (max-width: 450px) {
 
-        /* ICONE TEL ENTÊTE FIXE STYLE */
-        #fas {
-            display: none;
-        }
-
-        /* NUMERO */
-
-        #num {
-            width: 50%;
-            padding-left: 4vh;
-        }
-
-        /* NOM */
-
-        #nom {
-            width: 35%;
-        }
-
-        /* LOGO STYLE */
-
-        .logoTitre {
-            height: 11vh;
-            width: 65vw;
-        }
-
-        /* MENU BURGER */
-        .textMenu {
-            margin-bottom: 0;
-        }
-
-        .fa,
-        .fas {
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            justify-content: center;
-        }
-
-        .logoHome {
-            width: 10vw;
-            position: relative;
-        }
-
-        #tailleLi {
-            width: 10%;
-        }
-
-        .nav-item {
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .nav-link {
-            margin: 0;
-        }
-
-        .navbar-dark .navbar-nav .active>.nav-link,
-        .navbar-dark .navbar-nav .nav-link.active,
-        .navbar-dark .navbar-nav .nav-link.show,
-        .navbar-dark .navbar-nav .show>.nav-link {
-            text-align: center;
-        }
-
-        .navbar-nav .dropdown-menu {
-            text-align: center;
-        }
-
-        .navbar-dark .navbar-toggler {
-            color: black !important;
-        }
+    /* ENTÊTE FIXE STYLE */
+    .fixed-top {
+      /*justify-content: space-between !important;*/
+      width: 100% !important;
     }
 
-    /* ---------------------------------------------------------responsive - portable---------------------------------------------------- */
-
-    @media (min-width: 576px) {
-        .textMenu {
-            display: none;
-        }
+    /* ICONE TEL ENTÊTE FIXE STYLE */
+    #fas {
+      display: none;
     }
 
+    /* NUMERO */
+
+    #num {
+     /* width: 50%;*/
+     /* padding-left: 4vh;*/
+     display:none;
+    }
+
+    /* NOM */
+
+    /*#nom {
+      width: 35%;
+    }
+    */
+    /* LOGO STYLE */
+
+    .logoTitre {
+      /*height: 11vh;*/
+      width: 90%;
+    }
+
+    /* MENU BURGER */
+    .textMenu {
+      margin-bottom: 0;
+    }
+
+    .fa-bars
+    {
+      color: black;
+    }
+    
+    /*
+    .logoHome {
+      width: 10vw;
+      position: relative;
+    }
+    */
+    #tailleLi {
+      width: 10%;
+    }
+
+    .nav-item {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nav-link {
+      margin: 0;
+    }
+
+    .navbar-dark .navbar-nav .active>.nav-link,
+    .navbar-dark .navbar-nav .nav-link.active,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .navbar-dark .navbar-nav .show>.nav-link {
+      text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+      text-align: center;
+    }
+
+    /*
+    .navbar-dark .navbar-toggler {
+      color: black !important;
+    }
+    */
+    hr
+    {
+      width: 10vh;
+      margin: 0;
+      height: 1vh;
+    }
+    /* Bouton téléphone  */
+    .boutonTel {
+      width: 8vh;
+      height: 8vh;
+      background-color: lightgrey;
+      border: 1px solid black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      z-index: 1;
+      right: 5px;
+      top: 21vh;
+    }
+    #lienTel {
+      color: black;
+      text-decoration: none;
+      background-color: transparent;
+    }
+    #iconTel {
+      font-size: 2em;
+      display: block;
+    }
+  }
+
+  /* ---------------------------------------------------------- */
+
+  @media (min-width: 576px) {
+    .textMenu {
+      display: none;
+    }
+  }
+
+    /*-----------------------------------------------code source section-----------------------------------------*/
     .flash
-
     /* Débaras*/
         {
         color: #00aeef;
@@ -500,7 +610,7 @@
         height: 20vh;
     }
 
-    /* ecran pc */
+    /*-------------------------------------------------section-ecran pc--------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
 
         section
@@ -695,10 +805,6 @@
         .fivetoile {
             width: 40%;
         }
-
-
-
-
         .snap:hover {
             transition: all ease .3s .1s;
         }
@@ -726,7 +832,7 @@
         }
     }
 
-    /* Sur tous types d'écran tablette, quand la largeur de la fenêtre est comprise entre 451px et 768px */
+    /* --------------------------------------------section tablette----------------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
         .flash
 
@@ -844,7 +950,7 @@
         }
     }
 
-    /* Sur tous types d'écran telephone, quand la largeur de la fenêtre est comprise entre 450px et moins */
+    /* -------------------------------------------------------section-portable-----------------------------------------*/
     @media all and (max-width: 450px) {
         .flash
 
@@ -1007,7 +1113,7 @@
             height: 25vh;
         }
     }
-
+        /*----------------------------------------------source footer--------------------------------------*/
     header,
     nav,
     section {
@@ -1098,8 +1204,7 @@
         display: none;
     }
 
-    /* ----------------------------------------------------------------------------------------------------- */
-    /* ORDINATEUR */
+    /* -----------------------------------------------footer-ORDINATEUR-------------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
         .flogo {
             width: 10%;
@@ -1111,7 +1216,7 @@
         }
     }
 
-    /* TABLETTE */
+    /*-----------------------------------------------footer-TABLETTE---------------------------------------- */
     @media screen and (min-width: 451px) and (max-width: 768px) {
         .flogo {
             width: 20%;
@@ -1123,7 +1228,7 @@
         }
     }
 
-    /* TELEPHONE */
+    /*----------------------------------------------footer-TELEPHONE----------------------------------------- */
 
     @media screen and (max-width: 450px) {
         footer {
@@ -1162,69 +1267,76 @@
 </style>
 
 <body>
-    <div class="container-fluid">
-        <header>
-            <div class="fixed-top">
-                <div id="num">
-                    <i class="fas fa-phone-alt" id="fass"></i> &nbsp; 0123456789 <i class="fas fa-phone-alt"
-                        id="fas"></i> &nbsp;
-                </div>
-                <div id="nom">
-                    &nbsp; CKM Boutique
-                </div>
-                <i class="baseline-speaker_phone"></i>
-            </div>
-            <div class="logo">
-                <img src="img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre">
-            </div>
+  <div class="container-fluid">
+    <header>
+      <div class="fixed-top">
+        <div id="num">
+          <i class="fas fa-phone-alt" id="fass"></i> &nbsp; 0123456789 <i class="fas fa-phone-alt" id="fas"></i> &nbsp;
+        </div>
+        <div id="nom">
+          &nbsp; CKM Boutique
+        </div>
+        <i class="baseline-speaker_phone"></i>
+      </div>
+      <div class="logo">
+        <img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre">
+      </div>
 
 
-            <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
-                <div class="mx-auto">
-                    <p class="textMenu">
-                        <strong>Menu</strong>
-                    </p>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-                        aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                <div class="traitDeSeparattion2"></div>
-                <div class="collapse navbar-collapse" id="navbarsExample03">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item li1" id="tailleLi">
-                            <a class="nav-link" id="tailleA" href="#"><img src="img/CKMHOMEFOOTER.png" alt="Logo Home"
-                                    class="logoHome"></a>
-                        </li>
-                        <li class="nav-item dropdown li2">
-                            <a class="nav-link dropdown-toggle navMarg colorJ" href="#" id="dropdown03"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3D</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
-                                <a class="dropdown-item dropdown-item01" href="#">Désinfection</a>
-                                <a class="dropdown-item dropdown-item01" href="#">Désinsectisation</a>
-                            </div>
-                        </li>
-                        <li class="nav-item li3">
-                            <a class="nav-link navMarg colorB" href="#">Nettoyage</a>
-                        </li>
-                        <li class="nav-item li4">
-                            <a class="nav-link navMarg colorV" href="#" tabindex="-1" aria-disabled="true">Espaces
-                                Verts</a>
-                        </li>
-                        <li class="nav-item dropdown li5">
-                            <a class="nav-link dropdown-toggle navMarg" href="#" id="dropdown03" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Galeries</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown03">
-                                <a class="dropdown-item dropdown-item02" href="#">3D</a>
-                                <a class="dropdown-item dropdown-item03" href="#">Nettoyage</a>
-                                <a class="dropdown-item dropdown-item04" href="#">Espaces Verts</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
+        <div class="mx-auto">
+          <p class="textMenu">
+            <strong>Menu</strong>
+          </p>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="traitDeSeparattion2"></div>
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item li1" id="tailleLi">
+              <a class="nav-link" id="tailleA" href="#"><img src="include/img/CKMHOMEFOOTER.png" alt="Logo Home"
+                  class="logoHome"></a>
+            </li>
+            <hr class="mx-auto bg-dark text-center">
+            <li class="nav-item dropdown li2">
+              <a class="nav-link dropdown-toggle navMarg colorJ" href="#" id="dropdown03" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">3D</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
+                <a class="dropdown-item dropdown-item01" href="#">Dératisation</a>
+                <a class="dropdown-item dropdown-item01" href="#">Désinfection</a>
+                <a class="dropdown-item dropdown-item01" href="#">Désinsectisation</a>
+              </div>
+            </li>
+            <hr class="mx-auto bg-dark text-center">
+            <li class="nav-item li3">
+              <a class="nav-link navMarg colorB" href="#">Nettoyage</a>
+            </li>
+            <hr class="mx-auto bg-dark text-center">
+            <li class="nav-item li4">
+              <a class="nav-link navMarg colorV" href="#" tabindex="-1" aria-disabled="true">Espaces Verts</a>
+            </li>
+            <hr class="mx-auto bg-dark text-center">
+            <li class="nav-item dropdown li5">
+              <a class="nav-link dropdown-toggle navMarg" href="#" id="dropdown03" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Galeries</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+                <a class="dropdown-item dropdown-item02" href="#">3D</a>
+                <a class="dropdown-item dropdown-item03" href="#">Nettoyage</a>
+                <a class="dropdown-item dropdown-item04" href="#">Espaces Verts</a>
+              </div>
+            </li>
+            <hr class="mx-auto bg-dark text-center">
+          </ul>
+        </div>
+      </nav>
+      <div class="boutonTel">
+        <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
+      </div>
+    </header>
+  </div>
         <!-------------------------------------------------------------Section---------------------------------------------------------------------->
         <section>
             <main>
@@ -1243,13 +1355,13 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/debarrascarrousel.png" class="imgC" alt="...">
+                            <img src="include/img/debarrascarrousel.png" class="imgC" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/newimg2560x765.png" class="imgC" alt="...">
+                            <img src="include/img/newimg2560x765.png" class="imgC" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/produitredim2560vw765vh.png" class="imgC" alt="...">
+                            <img src="include/img/produitredim2560vw765vh.png" class="imgC" alt="...">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -1281,7 +1393,7 @@
             <!--les activités de CKMpro-->
             <div class="sectionB">
                 <div class="derat">
-                    <img src="img/3Dmaq.png" class="img3" alt="">
+                    <img src="include/img/3Dmaq.png" class="img3" alt="">
                     <h2>3D</h2>
                     <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                         soluta sapiente sit corrupti similique vero in repellendus
@@ -1290,7 +1402,7 @@
                     </p>
                 </div>
                 <div class="nettoyage">
-                    <img src="img/nettoyagemaq.png" class="img3" alt="">
+                    <img src="include/img/nettoyagemaq.png" class="img3" alt="">
                     <h2>Nettoyage</h2>
                     <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                         soluta sapiente sit corrupti similique vero in repellendus
@@ -1299,7 +1411,7 @@
                     </p>
                 </div>
                 <div class="espacevert">
-                    <img src="img/espacevertmaq.png" class="img3" alt="">
+                    <img src="include/img/espacevertmaq.png" class="img3" alt="">
                     <h2>Espace vert</h2>
                     <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                         soluta sapiente sit corrupti similique vero in repellendus
@@ -1313,7 +1425,7 @@
             <!--les cibles de CKMpro-->
             <main class="mainh">
                 <div class="pro">
-                    <img src="img/professionnelmaq.png" class="imgM" alt="">
+                    <img src="include/img/professionnelmaq.png" class="imgM" alt="">
                     <h4 class="text-center">Professionnel</h4>
                     <P class="ppro">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -1322,7 +1434,7 @@
                         <P>
                 </div>
                 <div class="part">
-                    <img src="img/particuliermaq.png" class="imgM" alt="">
+                    <img src="include/img/particuliermaq.png" class="imgM" alt="">
                     <h4 class="text-center">Particulier</h4>
                     <P class="ppro">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -1338,7 +1450,7 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner text-center">
                             <div class="carousel-item active">
-                                <img src="img/5STARS.png" class="fivetoile" alt="">
+                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
@@ -1346,7 +1458,7 @@
                                 </p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/5STARS.png" class="fivetoile" alt="">
+                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
@@ -1362,7 +1474,7 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner text-center">
                             <div class="carousel-item active">
-                                <img src="img/5STARS.png" class="fivetoile" alt="">
+                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
@@ -1370,7 +1482,7 @@
                                 </p>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/5STARS.png" class="fivetoile" alt="">
+                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit

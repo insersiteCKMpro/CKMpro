@@ -242,7 +242,7 @@
 </body>
 
 <?php 
-    require_once("include/footer.php");
+    require_once("include/footerb.php");
 ?>
 
 </html>

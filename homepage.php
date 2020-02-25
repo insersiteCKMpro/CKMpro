@@ -15,8 +15,8 @@
 </head>
 
 <style>
+    /*-----------------------------------------------code source section-----------------------------------------*/
     .flash
-
     /* Débaras*/
         {
         color: #00aeef;
@@ -224,7 +224,7 @@
         height: 20vh;
     }
 
-    /* ecran pc */
+    /*-------------------------------------------------section-ecran pc--------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
 
         section
@@ -419,10 +419,6 @@
         .fivetoile {
             width: 40%;
         }
-
-
-
-
         .snap:hover {
             transition: all ease .3s .1s;
         }
@@ -450,7 +446,7 @@
         }
     }
 
-    /* Sur tous types d'écran tablette, quand la largeur de la fenêtre est comprise entre 451px et 768px */
+    /* --------------------------------------------section tablette----------------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
         .flash
 
@@ -568,7 +564,7 @@
         }
     }
 
-    /* Sur tous types d'écran telephone, quand la largeur de la fenêtre est comprise entre 450px et moins */
+    /* -------------------------------------------------------section-portable-----------------------------------------*/
     @media all and (max-width: 450px) {
         .flash
 

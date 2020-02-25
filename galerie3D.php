@@ -79,7 +79,7 @@
 </section>
 </body>
 <?php 
-    require_once("include/footer.php");
+    require_once("include/footerj.php");
 ?>
 
 </html>

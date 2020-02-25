@@ -80,7 +80,7 @@
 </body>
 
 <?php 
-    require_once("include/footer.php");
+    require_once("include/footerv.php");
 ?>
 
 </html>

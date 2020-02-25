@@ -32,7 +32,6 @@
         }
 
         .imgligne3 {
-            background-color: red;
             height: 45vh;
         }
 
@@ -196,7 +195,7 @@
             et sit iusto odio.</p>
     </div>
 
-    <img class="imgligne3" src="inlude/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
+    <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
     <h2 class="text-center mt-5">Espace Vert</h2>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
@@ -236,7 +235,7 @@
 </body>
 
 <?php 
-    require_once("include/footer.php");
+    require_once("include/footerv.php");
 ?>
 
 </html>
