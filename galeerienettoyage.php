@@ -1,6 +1,7 @@
 <html>
 <?php 
     require_once("include/header.php");
+    require_once("include/nav.php");
 ?>
 
 <head>
@@ -15,9 +16,12 @@
     </script>
 </head>
 <style>
-    .telep {
+
+    .telep 
+    {
         display: none;
     }
+    
 </style>
 <section>
     <div class="container-fluid">
@@ -78,6 +82,7 @@
     </div>
 </section>
 </body>
+
 <?php 
     require_once("include/footerb.php");
 ?>
