@@ -1,10 +1,17 @@
-<style>
-  .telep {
-    display: none;
-}
-</style>
-<section>
+<html>
+<?php 
+    require_once("include/header.php");
+    require_once("include/nav.php");
+?>
 
+<style>
+  .telep 
+  {
+    display: none;
+  }
+</style>
+
+<section>
   <div class="container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -21,34 +28,34 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="First slide">
+          <img class="d-block w-100" height="500px" src="include/img/fourmi-myrmecologie.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Second slide">
+          <img class="d-block w-100" height="500px" src="include/img/insecte319255large.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" height="500px" src="img/unnamed.gif" alt="Third slide">
+          <img class="d-block w-100" height="500px" src="iclude/img/unnamed.gif" alt="Third slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -62,3 +69,9 @@
     </div>
   </div>
 </section>
+</body>
+<?php 
+    require_once("include/footerj.php");
+?>
+
+</html>

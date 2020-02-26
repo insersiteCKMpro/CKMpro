@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
         crossorigin="anonymous">
     <title>CKMpro</title>
@@ -10,7 +10,7 @@
     display: contents;
     }
     footer {
-        background-color: white;
+        background-color: rgba(0, 174, 239, 0.5);
         border-top: 1px solid black;
     }
 
@@ -77,12 +77,6 @@
         margin-top: 2%;
     }
 
-    .insta
-    {
-        filter: drop-shadow(1px 2px 0px black);
-        
-    }
-
     .snap:hover {
         transition: all ease .3s .1s;
     }
@@ -98,12 +92,17 @@
     .ordi {
         display: none;
     }
+    .insta
+    {
+        filter: drop-shadow(1px 2px 0px black);
+        
+    }
 
     /* ----------------------------------------------------------------------------------------------------- */
     /* ORDINATEUR */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
         .flogo {
-            width: 10%;
+            width: 80%;
         }
 
         .footerhaut,
@@ -115,7 +114,7 @@
     /* TABLETTE */
     @media screen and (min-width: 451px) and (max-width: 768px) {
         .flogo {
-            width: 20%;
+            width: 70%;
         }
 
         .footerhaut,
@@ -132,7 +131,7 @@
         }
 
         .flogo {
-            width: 50%;
+            width: 70%;
             margin-bottom: 15%;
         }
 
@@ -166,7 +165,7 @@
             <div class="footerhaut text-center">
                 <div class="colonne1 text-center">
 
-                    <a href="homepage.php"></a><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="10%">
+                    <a href="homepage.php"><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="100%"></a>
                     <a class="ftext1" href="3D.php">3D</a>
                     <a class="ftext1" href="nettoyage.php">Nettoyage</a>
                     <a class="ftext1" href="espacevert.php">Espace Verts</a>
@@ -184,7 +183,7 @@
                         <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"><a
                             href="http://www.snapchat.com"></a>
                     </div>
-                    <div class="snap">
+                    <div class="fb">
                         <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%"><a
                             href="http://www.facebook.com"></a>
                     </div>
