@@ -8,6 +8,8 @@
 <body>
 
     <style>
+        /* ------------------------css-source-EV--------------------------------- */ 
+
         .imgligne1 {
             display: flex;
             align-items: center;
@@ -25,20 +27,48 @@
         }
 
         p.text-center {
-            font-size: 2em;
+            font-size: 1.5em;
+            font-family: 'Red Hat Display',serif;
         }
 
-        /* RESPONSIVE */
+        .titre2 , .titre3{
+            width: 100%;
+            font-size: 2.5rem;
+            font-family: 'Red Hat Display',serif;
+            font-weight: 800;
+        }    
 
-        /*TABLETTE*/
+            /* ------------------------RESPONSIVE-EV-ecran pc-------------------------------- */ 
+        @media screen and (max-width: 2560px) and (min-width: 769px) {
+        .imgligne1 {
+            position: relative;
+            width: 100%;
+        }
+
+        .imgligne2 .titre2 .titre3 .text2 .bg {
+            width: 100%;
+            font-size: 2.5rem;
+        }
+
+        .bg {
+            width: 100%;
+        }
+
+        .imgligne2 {
+            width: 100%;
+        }
+    }
+        /* ------------------------RESPONSIVE-EV-tablette-------------------------------- */
         @media screen and (max-width: 768px) and (min-width: 451px) {
             .imgligne1 {
                 position: relative;
                 width: 100%;
             }
 
-            .imgligne2 .titre2 .text2 .bg {
+            .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
+                font-size: 2.5rem;
+                font-family: 'Red Hat Display',serif ;
             }
 
             .bg {
@@ -50,42 +80,22 @@
             }
 
             p.text-center {
-                font-size: 1em;
-            }
-
-        }
-
-        /* PC */
-
-
-        @media screen and (max-width: 2560px) and (min-width: 769px) {
-            .imgligne1 {
-                position: relative;
-                width: 100%;
-            }
-
-            .imgligne2 .titre2 .text2 .bg {
-                width: 100%;
-            }
-
-            .bg {
-                width: 100%;
-            }
-
-            .imgligne2 {
-                width: 100%;
+                font-size: 1.5em;
+                font-family: 'Red Hat Display',serif ;
             }
         }
-
-        /* telephone */
+        /* ------------------------RESPONSIVE-EV-mobile-------------------------------- */
         @media screen and (max-width: 450px) {
             .imgligne1 {
                 position: relative;
                 width: 100%;
             }
 
-            .imgligne2 .titre2 .text2 .bg {
+            .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
+                font-size: 2.5rem;
+                font-family: 'Red Hat Display',serif ;
+                
             }
 
             .bg {
@@ -97,21 +107,19 @@
             }
 
             p.text-center {
-                font-size: 1em;
+                font-size: 1.5em;
+                font-family: 'Red Hat Display',serif ;
             }
-
         }
+
     </style>
 
-    <nav class="BarreNav mt-5">
-
-    </nav>
     <div class="imgligne1">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
-    <h1 class="text-center mt-5">Espace vert</h1>
+    <h1 class="text-center mt-5">Espaces verts</h1><br>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
         Lorem ipsum dolor sit amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
@@ -141,16 +149,16 @@
         molestiae, ex
         natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
         et sit
-        iusto odio.</p>
+        iusto odio.</p><br>
 
     <div class="bg" style="background-color: rgba(0, 166, 81, 0.5);">
         <div class="imgligne2">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
-        </div>
+        </div><br>
 
 
-        <h2 class="titre2 text-center col-md-12">Espace vert</h2>
+        <h2 class="titre2 text-center mt-5">Espaces verts</h2><br>
         <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
             mollitia
@@ -181,12 +189,12 @@
             molestiae,
             ex natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus!
             Beatae
-            et sit iusto odio.</p>
+            et sit iusto odio.</p><br>
     </div>
 
     <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-    <h2 class="text-center mt-5">Espace Vert</h2>
+    <h2 class="titre3 text-center mt-5">Espaces Verts</h2><br>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
         amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia

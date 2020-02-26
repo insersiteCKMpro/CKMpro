@@ -3,7 +3,8 @@
     require_once("include/nav.php");
 ?>
     <style>
-        .test {
+        .test 
+        {
             height: 100vh;
             display: flex;
         }
@@ -12,100 +13,83 @@
             text-align: center;
         }
         
-
         .test2 {
-            width: 30%;
             height: 75vh;
             display: flex;
+            width: 30%;
         }
-
-        .test3 {
+        .test3
+        {
             display: none;
         }
-
-        .titrec {
+        .titrec
+        {
             width: 100%;
-            height: 40vh;
+            height: 40vh;  
         }
-
-        .num {
+        .num
+        {
             margin: 0 7vh;
             width: 75%;
             height: 10vh;
         }
-
         .traits1 {
             width: 2%;
             border-left: 1px solid black;
             height: 120vh;
         }
-
         .traits2 {
             display: none;
         }
-
         .traitori {
             display: none;
         }
-
         .espace {
             display: none;
         }
-
         .for {
             width: 45%;
             height: 70vh;
         }
-
         .radbox {
             height: 15vh;
             display: flex;
         }
-
         .labe {
             width: 25%;
         }
-
         .star {
             display: initial;
             width: 75%;
             height: 15vh;
         }
-
         form {
             display: flex;
             flex-direction: column;
         }
-
         .checkio {
             width: 100%;
             height: 1vh;
             display: flex;
         }
-
         .checkio1 {
             width: 100%;
             height: 10vh;
             display: flex;
         }
-
         .put {
             width: 35.3%;
         }
-
         .put1 {
             width: 33%;
             height: 6vh;
             margin-top: 3vh;
         }
-
         .btn {
             margin: auto;
             width: 30%;
         }
-
         /* animation bouton */
-
         .hvr-bounce-to-right {
             display: inline-block;
             vertical-align: middle;
@@ -166,145 +150,6 @@
             transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
             background-color: none;
         }
-
-        footer {
-            width: 100%;
-            height: 16vh;
-        }
-
-        .reseaux {
-            width: 33.4%;
-            height: 15vh;
-        }
-
-        .reseaux img {
-            height: 6.7vh;
-            margin: 7vh auto;
-        }
-
-        .fichec {
-            width: 33.3%;
-            height: 15vh;
-        }
-
-        #customControlValidation1:checked~.custom-control-label::before {
-            color: #fff200;
-            border-color: #fff200;
-            background-color: #fff200;
-        }
-
-        #customControlValidation2:checked~.custom-control-label::before {
-            color: #00aeef;
-            border-color: #00aeef;
-            background-color: #00aeef;
-        }
-
-        #customControlValidation3:checked~.custom-control-label::before {
-            color: #00a651;
-            border-color: #00a651;
-            background-color: #00a651;
-        }
-
-        .footerhaut {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .footerbas {
-            display: flex;
-            justify-content: center;
-        }
-
-        .colonne1 {
-            width: 30%;
-            align-items: center;
-            color: black !important;
-            text-decoration: none !important;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .ftext1 {
-            text-decoration: none;
-            color: black;
-        }
-
-        .ftext1:hover {
-            text-decoration: none;
-            color: black;
-            background-color: blue;
-            color: white;
-        }
-
-        .colonne2 {
-            width: 30%;
-            color: black !important;
-            text-decoration: none !important;
-        }
-
-        .ftext2 {
-            text-decoration: none;
-            color: black;
-        }
-
-        .ftext2:hover {
-            text-decoration: none;
-            color: black;
-            background-color: blue;
-            color: white;
-        }
-
-        .colonne3 {
-            display: flex;
-            align-items: center;
-            width: 30%;
-            justify-content: center;
-        }
-
-        .colonne4 {
-            width: 100%;
-            margin-bottom: 10%;
-            margin-top: 2vh;
-            display: none;
-        }
-
-        .snap {
-            width: 50%;
-            height: 10vh;
-        }
-
-        .snap:hover {
-            transition: all ease .3s .1s;
-        }
-
-        .fb {
-            width: 50%;
-            height: 10vh;
-        }
-
-        .fb:hover {
-            transition: all ease .3s .1s;
-        }
-
-        .insta {
-            width: 50%;
-            height: 10vh;
-        }
-
-        .insta:hover {
-            transition: all ease .3s .1s;
-        }
-
-        .flogo {
-            width: 11.5%;
-            height: 38%;
-        }
-
-        img {
-            border-style: none;
-            height: 60%;
-        }
-
         /********************************************format pc responsive-------------------------------------------------------------------- */
         @media screen and (min-width: 769px) and (max-width:2560px) {
             .test {
@@ -472,25 +317,7 @@
                 background-color: none;
             }
 
-            footer {
-                width: 100%;
-                height: 16vh;
-            }
-
-            .reseaux {
-                width: 33.4%;
-                height: 15vh;
-            }
-
-            .reseaux img {
-                height: 6.7vh;
-                margin: 7vh auto;
-            }
-
-            .fichec {
-                width: 33.3%;
-                height: 15vh;
-            }
+            
 
             #customControlValidation1:checked~.custom-control-label::before {
                 color: #fff200;
@@ -510,108 +337,8 @@
                 border-color: #00a651;
                 background-color: #00a651;
             }
-
-            .footerhaut {
-                display: flex;
-                justify-content: space-evenly;
-            }
-
-            .footerbas {
-                display: flex;
-                justify-content: center;
-            }
-
-            .colonne1 {
-                width: 30%;
-                align-items: center;
-                color: black !important;
-                text-decoration: none !important;
-                display: flex;
-                flex-direction: column;
-            }
-
-            .ftext1 {
-                text-decoration: none;
-                color: black;
-            }
-
-            .ftext1:hover {
-                text-decoration: none;
-                color: black;
-                background-color: blue;
-                color: white;
-            }
-
-            .colonne2 {
-                width: 30%;
-                color: black !important;
-                text-decoration: none !important;
-            }
-
-            .ftext2 {
-                text-decoration: none;
-                color: black;
-            }
-
-            .ftext2:hover {
-                text-decoration: none;
-                color: black;
-                background-color: blue;
-                color: white;
-            }
-
-            .colonne3 {
-                display: flex;
-                align-items: center;
-                width: 30%;
-                justify-content: center;
-            }
-
-            .colonne4 {
-                width: 100%;
-                margin-bottom: 10%;
-                margin-top: 2vh;
-                display: none;
-            }
-
-            .snap {
-                width: 50%;
-                height: 10vh;
-            }
-
-            .snap:hover {
-                transition: all ease .3s .1s;
-            }
-
-            .fb {
-                width: 50%;
-                height: 10vh;
-            }
-
-            .fb:hover {
-                transition: all ease .3s .1s;
-            }
-
-            .insta {
-                width: 50%;
-                height: 10vh;
-            }
-
-            .insta:hover {
-                transition: all ease .3s .1s;
-            }
-
-            .flogo {
-                width: 11.5%;
-                height: 38%;
-            }
-
-            img {
-                border-style: none;
-                height: 60%;
-            }
         }
-
+        /*-----------------------------responsive tablette------------------------------------*/
         @media all and (min-width: 451px) and (max-width: 768px) {
 
             .test {
@@ -619,16 +346,13 @@
                 display: flex;
                 justify-content: center;
             }
-
             .titrre
             {
                 text-align: center;
             }
-
             .test2 {
                 display: none !important;
             }
-
             .test3 {
                 display: flex;
                 flex-direction: column;
@@ -637,70 +361,57 @@
                 width: 100%;
                 border-bottom: 1px solid grey;
             }
-
             .num {
                 margin: auto;
                 width: 75%;
                 height: 10vh;
             }
-
             .traits1 {
                 display: none;
             }
-
             .traits2 {
                 width: 100%;
                 border-top: 1px solid #000;
                 height: 0.5vh;
                 align-items: center;
             }
-
             .titrec {
                 height: 5vh;
                 text-align: center;
             }
-
             .traitori {
                 background-color: black;
                 height: 2px;
             }
-
             .espace {
                 margin-top: 5px;
             }
-
             .radbox {
                 height: 15vh;
                 display: flex;
             }
-
             .labe {
                 width: 25%;
             }
-
             .star {
                 display: initial;
                 width: 75%;
                 height: 15vh;
             }
-
             form {
                 display: flex;
                 flex-direction: column;
             }
-
             .checkio {
                 width: 100%;
                 height: 4vh;
                 display: flex;
             }
-
             .checkio1 {
                 width: 100%;
                 height: 10vh;
                 display: flex;
             }
-
             #customControlValidation1:checked~.custom-control-label::before {
                 color: #fff200;
                 border-color: #fff200;
@@ -753,7 +464,6 @@
                 transition-duration: 0s;
 
             }
-
             .hvr-bounce-to-right:before {
                 content: "";
                 position: absolute;
@@ -797,85 +507,23 @@
                 transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
                 background-color: none;
             }
-
-            .colonne3 {
-                width: 100%;
-                margin-bottom: 10%;
-                margin-top: 2vh;
-                display: none;
-            }
-
-            .colonne4 {
-                width: 100%;
-                margin-bottom: 2%;
-                margin-top: 2vh;
-                height: 10vh;
-                display: flex;
-            }
-
-            .flogo {
-                width: 6%;
-                display: flex;
-                justify-content: center;
-            }
-
-            .alignf {
-                text-align: center !important;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .snap {
-                width: 35%;
-                height: 5vh;
-            }
-
-            .fb {
-                width: 35%;
-                height: 5vh;
-            }
-
-            .insta {
-                width: 35%;
-                height: 5vh;
-            }
-
-            .img1 {
-                width: 40%;
-                height: 5vh;
-            }
-
-            .img2 {
-                width: 33.3%;
-                height: 5vh;
-            }
-
-            img {
-                vertical-align: middle;
-                border-style: none;
-                height: 90%;
-            }
+         
         }
-
+        /*-----------------------------responsive  mobile---------------------------------*/
         @media all and (max-width: 450px) {
             .radbox {
                 height: 15vh;
                 display: flex;
             }
-
             .test {
                 height: 128vh;
                 display: flex;
             }
-
             .titrre
             {
                 text-align: center;
                 margin: 0;
             }
-
-
             .test2 {
                 display: none;
             }
@@ -1015,11 +663,6 @@
                 transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
                 background-color: none;
             }
-
-            footer {
-                border-top: 1px solid black;
-            }
-
             #customControlValidation1:checked~.custom-control-label::before {
                 color: #fff200;
                 border-color: #fff200;
@@ -1037,81 +680,14 @@
                 border-color: #00a651;
                 background-color: #00a651;
             }
-
-            .flogo {
-                width: 13%;
-                margin-bottom: 15%;
-            }
-
-            .footerhaut {
-                flex-direction: column-reverse;
-            }
-
-            .colonne2 {
-                order: -1;
-            }
-
-            .footerhaut {
-                align-items: center;
-                text-align: center;
-            }
-
-            .colonne3 {
-                width: 100%;
-                margin-bottom: 10%;
-                margin-top: 2vh;
-                display: none;
-            }
-
-            .colonne4 {
-                width: 100%;
-                margin-bottom: 2%;
-                margin-top: 2vh;
-                height: 10vh;
-                display: flex;
-            }
-
-            .snap {
-                width: 40%;
-                height: 10vh;
-            }
-
-            .fb {
-                width: 40%;
-                height: 10vh;
-            }
-
-            .insta {
-                width: 40%;
-                height: 10vh;
-            }
-
-            .alignf {
-                text-align: center !important;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .img1 {
-                width: 40%;
-                height: 5vh;
-            }
-
-            .img2 {
-                width: 33.3%;
-                height: 5vh;
-            }
-
-            img {
-                vertical-align: middle;
-                border-style: none;
-                height: 50%;
-            }
         }
     </style>
+
+    
     <body>
         
+    
+
     <div class="container-fluid">
         
         <main class="test">
@@ -1250,8 +826,9 @@
                     to.parentNode.insertBefore(s, to);
                 })();
             </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
-        </div>
-        <hr>
+        </div> 
+          
+      
         
 <?php 
 require_once("include/footer.php");

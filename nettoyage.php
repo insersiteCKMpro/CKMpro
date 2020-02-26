@@ -8,6 +8,7 @@
 <body>
 
     <style>
+        /* ------------------------css-source-nettoyage--------------------------------- */ 
         .imgligne1 {
             display: flex;
             align-items: center;
@@ -26,92 +27,94 @@
         }
 
         p.text-center {
-            font-size: 2em;
-        }
-
-
-
-
-        /* RESPONSIVE */
-
-        /*TABLETTE*/
-        @media screen and (max-width: 768px) and (min-width: 451px) {
-            .imgligne1 {
-                position: relative;
-                width: 100%;
-            }
-
-            .imgligne2 .titre2 .text2 .bg {
-                width: 100%;
-            }
-
-            .bg {
-                width: 100%;
-            }
-
-            .imgligne2 {
-                width: 100%;
-            }
-
-            p.text-center {
-                font-size: 1em;
-            }
+            font-size: 1.5em;
+            font-family: 'Red Hat Display',serif ;
 
         }
-
-        /* PC */
-
-
-        @media screen and (max-width: 2560px) and (min-width: 769px) {
-            .imgligne1 {
-                position: relative;
-                width: 100%;
-            }
-
-            .imgligne2 .titre2 .text2 .bg {
-                width: 100%;
-            }
-
-            .bg {
-                width: 100%;
-            }
-
-            .imgligne2 {
-                width: 100%;
-            }
-
+        .titre2 , .titre3{
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-family: 'Red Hat Display',serif;
         }
+        
+/* ------------------------responsive-nettoyage-ecran pc-------------------------------- */
+    @media screen and (max-width: 2560px) and (min-width: 769px) {
+    .imgligne1 {
+        position: relative;
+        width: 100%;
+    }
 
-        /* telephone */
-        @media screen and (max-width: 450px) {
-            .imgligne1 {
-                position: relative;
-                width: 100%;
-            }
+    .imgligne2 .titre2 .titre3 .text2 .bg {
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 800;
+        font-family: 'Red Hat Display',serif;
+    }
 
-            .imgligne2 .titre2 .text2 .bg {
-                width: 100%;
-            }
+    .bg {
+        width: 100%;
+    }
 
-            .bg {
-                width: 100%;
-            }
+    .imgligne2 {
+        width: 100%;
+    }
+}
+/* ------------------------responsive-nettoyage-tablette-------------------------------- */
+    @media screen and (max-width: 768px) and (min-width: 451px) {
+    .imgligne1 {
+        position: relative;
+        width: 100%;
+    }
 
-            .imgligne2 {
-                width: 100%;
-            }
+    .imgligne2 .titre2 .titre3 .text2 .bg {
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 800;
+        font-family: 'Red Hat Display',serif;
+    }
 
-            p.text-center {
-                font-size: 1em;
-            }
+    .bg {
+        width: 100%;
+    }
 
-        }
+    .imgligne2 {
+        width: 100%;
+    }
+
+    p.text-center {
+        font-size: 1.5em;
+    }    
+}
+/* ------------------------responsive-nettoyage-mobile-------------------------------- */
+    @media screen and (max-width: 450px) {
+    .imgligne1 {
+        position: relative;
+        width: 100%;
+    }
+
+    .imgligne2 .titre2 .titre3 .text2 .bg {
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 800;
+        font-family: 'Red Hat Display',serif;
+    }
+
+    .bg {
+        width: 100%;
+    }
+
+    .imgligne2 {
+        width: 100%;
+    }
+
+    p.text-center {
+        font-size: 1.5em;
+        font-family: 'Red Hat Display',serif;
+    }
+        
+    }
     </style>
 
-
-    <nav class="BarreNav mt-5">
-
-    </nav>
 
     <div class="imgligne1">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
@@ -119,7 +122,7 @@
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
 
-    <h1 class="text-center mt-5">Nettoyage</h1>
+    <h1 class="text-center mt-5">Nettoyage</h1><br>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
         amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
@@ -157,8 +160,7 @@
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
         </div>
 
-
-        <h2 class="titre2 text-center col-md-12">Nettoyage</h2>
+        <h2 class="titre2 text-center mt-5">Nettoyage</h2><br>
         <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
             mollitia
@@ -194,7 +196,7 @@
 
     <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-    <h2 class="text-center mt-5">Nettoyage</h2>
+    <h2 class="titre3 text-center mt-5">Nettoyage</h2><br>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
         amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia

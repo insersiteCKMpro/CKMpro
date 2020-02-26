@@ -5,38 +5,34 @@
 
 <style>
     /*-----------------------------------------------code source section-----------------------------------------*/
-    .flash
     /* Débaras*/
-        {
+    .flash
+    {
         color: #00aeef;
     }
 
-    section
-
     /*carousel Entreprise*/
-        {
+    section
+    {
         width: 100%;
         height: 52vh;
     }
 
-    .ets
-
     /*Entreprise*/
-        {
+    .ets
+    {
         text-align: center;
     }
 
+    /*Activités*/
     .activités
-
-    /*Activités*/
-        {
+    {
         text-align: center;
     }
 
-    .sectionB
-
     /*Activités*/
-        {
+    .sectionB
+    {
         display: flex;
         /* width: 100%; */
         height: 25vh;
@@ -45,39 +41,35 @@
         display: flex;
     }
 
+    /*Activités*/
     .derat
-
-    /*Activités*/
-        {
+    {
         width: 33.3%;
         text-align: center;
     }
 
+    /*Activités*/
     .nettoyage
-
-    /*Activités*/
-        {
+    {
         width: 33.3%;
         text-align: center;
     }
 
+    /*Activités*/
     .espacevert
-
-    /*Activités*/
-        {
+    {
         width: 33.3%;
         text-align: center;
     }
 
-    .cible {
+    .cible 
+    {
         text-align: center;
         margin-top: 5vh;
     }
-
-    main
-
     /*Professionnel Particulier*/
-        {
+    main
+    {
         height: 3vh;
         width: 97.5%;
         justify-content: space-between;
@@ -90,14 +82,14 @@
         margin-right: 5%;
     }
 
-    .part {
+    .part 
+    {
         width: 50%;
         height: 32vh;
         margin-right: 1% !important;
     }
 
     .mainh
-
     /*Professionnel Particulier*/
         {
         width: 100%;
@@ -105,64 +97,59 @@
         display: flex;
     }
 
-    .ppro {
+    .ppro 
+    {
         width: 90%;
     }
 
-    .mainb
-
     /*avis*/
-        {
+    .mainb
+    {
         width: 100%;
         height: 25vh;
         display: flex;
         justify-content: space-around;
     }
 
-    .carouL
-
     /*carousel avis gauche*/
-        {
+    .carouL
+    {
         height: 18vh;
         width: 30%;
     }
-
-    .carouR
 
     /*carousel avis droite*/
-        {
+    .carouR
+    {
         height: 18vh;
         width: 30%;
     }
 
+    /*carousel avis droite et gauche*/
     .carousel-control-prev
-
-    /*carousel avis droite et gauche*/
-        {
+    {
         width: 10%;
         height: 18vh;
     }
 
+    /*carousel avis droite et gauche*/
     .carousel-control-next
-
-    /*carousel avis droite et gauche*/
-        {
+    {
         width: 10%;
         height: 18vh;
     }
-
-    .sectionecom
 
     /*e-commerce*/
-        {
+    .sectionecom
+    {
         height: 30vh;
         display: flex;
         justify-content: space-around;
     }
 
-    .ecom {
+    .ecom 
+    {
         text-align: center;
-
     }
 
     .img1 {
@@ -205,10 +192,9 @@
         width: 40%;
     }
 
-    .sectionM
-
     /*Entreprise*/
-        {
+    .sectionM
+    {
         width: 100%;
         height: 20vh;
     }
@@ -216,32 +202,28 @@
     /*-------------------------------------------------section-ecran pc--------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
 
-        section
-
         /*carousel Entreprise*/
-            {
+        section
+        {
             width: 100%;
             height: 52vh;
         }
 
-        .ets
-
         /*Entreprise*/
-            {
+        .ets
+        {
             text-align: center;
         }
 
+        /*Activités*/
         .activités
-
-        /*Activités*/
-            {
+        {
             text-align: center;
         }
 
-        .sectionB
-
         /*Activités*/
-            {
+        .sectionB
+        {
             display: flex;
             /* width: 100%; */
             height: 35vh;
@@ -250,60 +232,58 @@
             display: flex;
         }
 
+        /*Activités*/
         .derat
-
-        /*Activités*/
-            {
+        {
             width: 33.3%;
             text-align: center;
         }
 
+        /*Activités*/
         .nettoyage
-
-        /*Activités*/
-            {
+        {
             width: 33.3%;
             text-align: center;
         }
 
+        /*Activités*/
         .espacevert
-
-        /*Activités*/
-            {
+        {
             width: 33.3%;
             text-align: center;
         }
 
-        .cible {
+        .cible 
+        {
             text-align: center;
             margin-top: 11vh;
         }
 
-        main
-
         /*Professionnel Particulier*/
-            {
+        main
+        {
             height: 3vh;
             width: 97.5%;
             justify-content: space-between;
             margin-left: 1.5vh;
         }
 
-        .pro {
+        .pro 
+        {
             width: 50%;
             height: 43vh;
         }
 
-        .part {
+        .part 
+        {
             width: 50%;
             height: 32vh;
             margin-right: 1%;
         }
 
-        .mainh
-
         /*Professionnel Particulier*/
-            {
+        .mainh
+        {
             width: 100%;
             height: 36vh;
             display: flex;
@@ -313,102 +293,106 @@
             width: 90%;
         }
 
-        .mainb
-
         /*avis*/
-            {
+        .mainb
+        {
             width: 100%;
             height: 25vh;
             display: flex;
             justify-content: space-around;
         }
 
-        .carouL
-
         /*carousel avis gauche*/
-            {
+        .carouL
+        {
             height: 18vh;
             width: 30%;
         }
-
-        .carouR
 
         /*carousel avis droite*/
-            {
+        .carouR   
+        {
             height: 18vh;
             width: 30%;
         }
 
+        /*carousel avis droite et gauche*/
         .carousel-control-prev
-
-        /*carousel avis droite et gauche*/
-            {
+        {
             width: 10%;
             height: 18vh;
         }
 
+        /*carousel avis droite et gauche*/
         .carousel-control-next
-
-        /*carousel avis droite et gauche*/
-            {
+        {
             width: 10%;
             height: 18vh;
         }
-
-        .sectionecom
 
         /*e-commerce*/
+        .sectionecom
             {
             height: 30vh;
             display: flex;
             justify-content: space-around;
         }
 
-        .ecom {
+        .ecom 
+        {
             text-align: center;
         }
 
-        .img1 {
+        .img1 
+        {
             margin-top: 30px;
             width: 40vh;
             height: 15vh;
         }
 
-        .img3 {
+        .img3 
+        {
             width: 95%;
             height: 190px;
         }
 
-        .img4 {
+        .img4 
+        {
             width: 2%;
             height: 20px;
         }
 
-        .imgC {
+        .imgC 
+        {
             width: 100%;
             height: 279px;
         }
 
-        .imgM {
+        .imgM 
+        {
             width: 100%;
             height: 20vh;
             display: flex;
         }
 
-        .imgl {
+        .imgl 
+        {
             width: 50%;
             height: 25vh;
         }
 
-        .imgp {
+        .imgp 
+        {
             width: 10%;
             height: 25vh;
         }
 
-        .fivetoile {
+        .fivetoile 
+        {
             width: 40%;
         }
-        .snap:hover {
+        .snap:hover 
+        {
             transition: all ease .3s .1s;
         }
 
@@ -416,20 +400,20 @@
             transition: all ease .3s .1s;
         }
 
-        .insta:hover {
+        .insta:hover 
+        {
             transition: all ease .3s .1s;
         }
-
-        .part {
+        .part 
+        {
             width: 50%;
             height: 32vh;
             margin-right: 5%;
         }
 
-        .sectionM
-
         /*Entreprise*/
-            {
+        .sectionM
+        {
             width: 100%;
             height: 20vh;
         }
@@ -437,38 +421,40 @@
 
     /* --------------------------------------------section tablette----------------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
-        .flash
-
         /* Débaras*/
-            {
+        .flash    
+        {
             color: #00aeef;
         }
 
-        section
-
+        
         /*carousel Entreprise*/
+        section
             {
             width: 100%;
             height: 52vh;
         }
 
-        .sectionM
+        
 
         /*Entreprise*/
+        .sectionM
             {
             width: 100%;
         }
 
-        .ets
+        
 
         /*Entreprise*/
+        .ets
             {
             text-align: center;
         }
 
-        .activités
+        
 
         /*Activités*/
+        .activités
             {
             text-align: center;
         }
@@ -477,25 +463,28 @@
             height: 52vh;
         }
 
+        
+
+        /*Activités*/
         .derat
-
-        /*Activités*/
             {
             width: 33.3%;
             text-align: center;
         }
 
+        
+
+        /*Activités*/
         .nettoyage
-
-        /*Activités*/
             {
             width: 33.3%;
             text-align: center;
         }
 
-        .espacevert
+        
 
         /*Activités*/
+        .espacevert
             {
             width: 33.3%;
             text-align: center;
@@ -506,20 +495,19 @@
             margin: 0;
         }
 
-        main
-
+        
         /*Professionnel Particulier*/
-            {
+        main
+        {
             height: 3vh;
             width: 97.5%;
             justify-content: center;
             margin-left: 1.5vh;
         }
 
-        .mainh
-
         /*Professionnel Particulier*/
-            {
+        .mainh
+        {
             width: 100%;
             height: 40vh;
             display: flex;
@@ -555,16 +543,16 @@
 
     /* -------------------------------------------------------section-portable-----------------------------------------*/
     @media all and (max-width: 450px) {
-        .flash
+        
 
         /* Débaras*/
+        .flash
             {
             color: #00aeef;
         }
 
-        section
-
         /*carousel Entreprise*/
+        section
             {
             width: 100%;
             height: 52vh;
@@ -575,9 +563,8 @@
             height: 33vh;
         }
 
-        .ets
-
         /*Entreprise*/
+        .ets
             {
             text-align: center;
         }
@@ -598,17 +585,15 @@
             text-align: center;
         }
 
-        .nettoyage
-
         /*Activités*/
+        .nettoyage
             {
             width: 100%;
             text-align: center;
         }
 
-        .espacevert
-
         /*Activités*/
+        .espacevert
             {
             width: 100%;
             text-align: center;
@@ -619,9 +604,8 @@
             margin-top: 0;
         }
 
-        main
-
         /*Professionnel Particulier*/
+        main
             {
             height: 3vh;
             width: 97.5%;
@@ -641,9 +625,8 @@
             margin-right: 5%;
         }
 
-        .mainh
-
         /*Professionnel Particulier*/
+        .mainh
             {
             height: 72vh;
             display: flex;
@@ -663,10 +646,9 @@
             height: 18vh;
             width: 100%;
         }
-
-        .carouR
-
+        
         /*carousel avis droite*/
+        .carouR
             {
             margin-top: 2vh;
             height: 18vh;
@@ -754,8 +736,8 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
-        <h1 class="ets">l'Entreprise</h1>
+        </div><br>
+        <h1 class="ets">L'entreprise</h1><br>
         <!--l'entreprise CKMpro-->
         <div class="sectionM">
             <p class="text-center">
@@ -774,7 +756,7 @@
         <!--les activités de CKMpro-->
         <div class="sectionB">
             <div class="derat">
-                <img src="include/img/3Dmaq.png" class="img3" alt="">
+                <img src="include/img/3Dmaq.png" class="img3" alt="">br
                 <h2>3D</h2>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
@@ -793,7 +775,7 @@
             </div>
             <div class="espacevert">
                 <img src="include/img/espacevertmaq.png" class="img3" alt="">
-                <h2>Espace vert</h2>
+                <h2>Espaces verts</h2>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?

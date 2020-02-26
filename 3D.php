@@ -5,6 +5,7 @@
 
 <body>
     <style>
+/*------------------------css-source-3D---------------------------------*/    
         .imgligne1 {
             display: flex;
             align-items: center;
@@ -23,83 +24,92 @@
         }
 
         p.text-center {
-            font-size: 2em;
+            font-size: 1.3em;
+            font-family: 'Red Hat Display',serif ;
         }
 
-
-
-
-        /* RESPONSIVE */
-
-        /*TABLETTE*/
-        @media screen and (max-width: 768px) and (min-width: 451px) {
-            .imgligne1 {
-                position: relative;
-                width: 100%;
-            }
-
-            .imgligne2 .titre2 .text2 .bg {
-                width: 100%;
-            }
-
-            .bg {
-                width: 100%;
-            }
-
-            .imgligne2 {
-                width: 100%;
-            }
-
-            p.text-center {
-                font-size: 1em;
-            }
+        .titre2 , .titre3{
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-family: 'Red Hat Display',serif;
         }
 
-        /* PC */
-
-
+/*-----------------------resposive-3D-ecran pc--------------------------------*/  
         @media screen and (max-width: 2560px) and (min-width: 769px) {
-            .imgligne1 {
-                position: relative;
-                width: 100%;
-            }
-
-            .imgligne2 .titre2 .text2 .bg {
-                width: 100%;
-            }
-
-            .bg {
-                width: 100%;
-            }
-
-            .imgligne2 {
-                width: 100%;
-            }
+        .imgligne1 {
+            position: relative;
+            width: 100%;
         }
 
-        /* telephone */
+        .imgligne2 .titre2 .titre3 .text2 .bg {
+            width: 100%;
+            font-size: 2.5rem;
+            font-family: 'Red Hat Display',serif ;
+        }
+
+        .bg {
+            width: 100%;
+        }
+
+        .imgligne2 {
+            width: 100%;
+        }  
+    }
+/*------------------------resposive-3D-tablette--------------------------------*/ 
+        @media screen and (max-width: 768px) and (min-width: 451px) {
+        .imgligne1 {
+            position: relative;
+            width: 100%;
+        }
+
+        .imgligne2 .titre2 .titre3 .text2 .bg {
+            width: 100%;
+            font-size: 2.5rem;
+            font-family: 'Red Hat Display',serif ;
+            font-weight: 800;
+        }
+
+        .bg {
+            width: 100%;
+        }
+
+        .imgligne2 {
+            width: 100%;
+        }
+
+        p.text-center {
+            font-size: 1.5em;
+            font-family: 'Red Hat Display',serif ;
+        }
+    }
+/* ------------------------resposive-3D-mobile-------------------------------- */ 
         @media screen and (max-width: 450px) {
-            .imgligne1 {
-                position: relative;
-                width: 100%;
-            }
-
-            .imgligne2 .titre2 .text2 .bg {
-                width: 100%;
-            }
-
-            .bg {
-                width: 100%;
-            }
-
-            .imgligne2 {
-                width: 100%;
-            }
-
-            p.text-center {
-                font-size: 1em;
-            }
+        .imgligne1 {
+            position: relative;
+            width: 100%;
         }
+
+        .imgligne2 .titre2 .titre3 .text2 .bg {
+            width: 100%;
+            font-size: 2.5rem;
+            font-family: 'Red Hat Display',serif ;
+            font-weight: 800px;
+        }
+
+        .bg {
+            width: 100%;
+        }
+
+        .imgligne2 {
+            width: 100%;
+        }
+
+        p.text-center {
+            font-size: 1.5em;
+            font-family: 'Red Hat Display',serif ;
+        }   
+    }
+
     </style>
 
     <div class="imgligne1">
@@ -108,7 +118,7 @@
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
 
-    <h1 class="text-center mt-5">3D</h1>
+    <h1 class="text-center mt-5">3D</h1><br>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
         amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
@@ -138,17 +148,17 @@
         molestiae, ex
         natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
         et sit
-        iusto odio.</p>
+        iusto odio.</p><br>
 
     <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);">
         <div class="imgligne2">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
-        </div>
+        </div><br>
 
 
-        <h2 class="titre2 text-center col-md-12" id="desinfection">3D</h2>
-        <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
+        <h2 class="titre2 text-center mt-5" id="desinfection">3D</h2><br>
+        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
             mollitia
             tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate,
@@ -164,7 +174,7 @@
             Beatae
             et sit iusto odio.</p>
 
-        <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
+        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
             mollitia
             tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate,
@@ -178,12 +188,12 @@
             molestiae,
             ex natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus!
             Beatae
-            et sit iusto odio.</p>
+            et sit iusto odio.</p><br>
     </div>
 
     <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-    <h2 class="text-center mt-5" id="desinsectisation">3D</h2>
+    <h2 class="titre3 text-center mt-5" id="desinsectisation">3D</h2>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
         amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
@@ -200,7 +210,7 @@
         et sit
         iusto odio.</p>
 
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify mb-5">Lorem ipsum
+    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum
         dolor sit
         amet
         consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
@@ -215,7 +225,7 @@
         molestiae, ex
         natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
         et sit
-        iusto odio.</p>
+        iusto odio.</p><br>
 
 <?php 
     require_once("include/footerj.php");

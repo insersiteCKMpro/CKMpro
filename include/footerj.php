@@ -9,25 +9,29 @@
     {
     display: contents;
     }
-    footer {
+    footer 
+    {
         background-color: rgba(255, 242, 0, 0.5);
         border-top: 1px solid black;
+        font-size: 0.95em;
+        font-family: 'Red Hat Display',serif;
     }
 
     .footerhaut {
         display: flex;
         justify-content: space-evenly;
-        font-size: 1.5em;
+        font-size: 0.95em;
+        font-family: 'Red Hat Display',serif;
     }
 
     .footerbas {
         display: flex;
         justify-content: center;
-        font-size: 1em;
+        font-size: 0.95em;
+        font-family: 'Red Hat Display',serif;
     }
 
     .colonne1 {
-
         width: 30%;
         align-items: center;
         color: black !important;
@@ -102,24 +106,25 @@
     /* ORDINATEUR */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
         .flogo {
-            width: 10%;
+            width: 80%;
         }
 
-        .footerhaut,
-        .footerbas {
-            font-size: 1em;
+        .footerhaut,.footerbas {
+            font-size: 0.95em;
+            font-family: 'Red Hat Display',serif;
         }
     }
 
     /* TABLETTE */
     @media screen and (min-width: 451px) and (max-width: 768px) {
-        .flogo {
-            width: 20%;
+        .flogo 
+        {
+            width: 70%;
         }
 
-        .footerhaut,
-        .footerbas {
-            font-size: 1em;
+        .footerhaut,.footerbas {
+            font-size: 0.95em;
+            font-family: 'Red Hat Display',serif;
         }
     }
 
@@ -128,24 +133,25 @@
     @media screen and (max-width: 450px) {
         footer {
             border-top: 1px solid black;
+            font-size: 0.95em;
+            font-family: 'Red Hat Display',serif;
         }
 
         .flogo {
-            width: 50%;
+            width: 70%;
             margin-bottom: 15%;
         }
 
-        .footerhaut {
+        .footerhaut ,.footerbas{
+            align-items: center;
+            text-align: center;
             flex-direction: column-reverse;
+            font-size: 0.95em;
+            font-family: 'Red Hat Display',serif;
         }
 
         .colonne2 {
             order: -1;
-        }
-
-        .footerhaut {
-            align-items: center;
-            text-align: center;
         }
 
         .colonne3 {
@@ -154,9 +160,9 @@
             margin-top: 2vh;
         }
 
-        .footerhaut,
         .footerbas {
-            font-size: 1em;
+            font-size: 0.95em;
+            font-family: 'Red Hat Display',serif;
         }
     }
 </style>
@@ -165,15 +171,15 @@
             <div class="footerhaut text-center">
                 <div class="colonne1 text-center">
 
-                    <img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="10%">
-                    <a class="ftext1" href="">3D</a>
-                    <a class="ftext1" href="">Nettoyage</a>
-                    <a class="ftext1" href="">Espace Verts</a>
+                    <a href="homepage.php"><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="100%"></a>
+                    <a class="ftext1" href="3D.php">3D</a>
+                    <a class="ftext1" href="nettoyage.php">Nettoyage</a>
+                    <a class="ftext1" href="espacevert.php">Espace Verts</a>
                 </div>
 
                 <div class="colonne2 text-center">
                     <a class="ftext2" href="">La Boutique</a><br>
-                    <a class="ftext2" href="">Contact</a><br>
+                    <a class="ftext2" href="contact.php">Contact</a><br>
                     <a class="ftext2" href="">Mention Légales</a><br>
                     <a class="ftext2" href="">Politique de Confidentialité</a><br>
                 </div>
