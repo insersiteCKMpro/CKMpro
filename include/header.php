@@ -12,10 +12,7 @@
 
  
 <style>
-.container-fluid
- {
-   padding: 0 !important;
- }
+
  .fixed-top {
     display: flex;
     justify-content: flex-end;

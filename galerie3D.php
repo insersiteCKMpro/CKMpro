@@ -5,249 +5,317 @@
 ?>
 
 <style>
-  .telep 
-  {
+  .telep {
     display: none;
   }
-  .row > .column {
-  padding: 0 8px;
-}
+  /*------------------------------------------------------------------------code source---------------------------------------------------------------------*/
+  .colon1{display:flex;flex-direction: column;}
+  .colon2{display:flex;flex-direction: row;}
+  .colum{width:100%;}
+  .imgg1{width: 50%; display: flex; margin: 3vh auto;}
+  .imgg2{width: 25%; display: flex; margin: 6vh auto;}
+  .imgg3{width: 25%; display: flex; margin: 6vh auto;}
+  .imgg4{width: 25%; display: flex; margin: 6vh auto;}
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
+  .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
+  .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
+  .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
 
-/* Create four equal columns that floats next to eachother */
-.column {
-  float: left;
-  width: 25%;
-}
+  .mySlides1{width: 100%; height: 60vh; margin: 7vh auto; display: flex;}
+  .mySlides2{width: 75%; height: 75vh; margin: auto; display: flex;}
+  .mySlides3{width: 75%; height: 75h; margin: auto; display: flex;}
+  .mySlides4{width: 75%; height: 75vh; margin: auto; display: flex;}
+  /*------------------------------------------------------------------------Responsive PC---------------------------------------------------------------------*/
+  @media screen and (min-width:769px) and (max-width: 2560px){
+    .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
+    .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
+    .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
+    .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
+    .mySlides1{width: 100%; height: 60vh; margin: 7vh auto; display: flex;}
+    .mySlides2{width: 75%; height: 75vh; margin: auto; display: flex;}
+    .mySlides3{width: 75%; height: 75vh; margin: auto; display: flex;}
+    .mySlides4{width: 75%; height: 75vh; margin: auto; display: flex;}
+  }
+  /*------------------------------------------------------------------------Responsive Tab---------------------------------------------------------------------*/
+  @media screen and (min-width: 451px) and (max-width: 769px){
+    .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
+    .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
+    .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
+    .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
+    .mySlides1{width: 100%; height: 60vh; margin: 7vh auto; display: flex;}
+    .mySlides2{width: 73%; height: 75vh; margin: auto; display: flex;}
+    .mySlides3{width: 73%; height: 75vh; margin: auto; display: flex;}
+    .mySlides4{width: 73%; height: 75vh; margin: auto; display: flex;}
+  }
+  /*------------------------------------------------------------------------Responsive Mobil---------------------------------------------------------------------*/
+  @media screen and (max-width: 450px){
+    .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
+    .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
+    .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
+    .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
 
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
+    .mySlides1{width: 100%; height: 25vh; margin: 28vh auto; display: flex;}
+    .mySlides2{width: 100%; height: 75vh; margin: auto; display: flex;}
+    .mySlides3{width: 100%; height: 75vh; margin: auto; display: flex;}
+    .mySlides4{width: 100%; height: 75vh; margin: auto; display: flex;}
+  }
 
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
+  .row>.column {
+    padding: 0 8px;
+  }
 
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
 
-/* Caption text */
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-img.demo {
-  opacity: 0.6;
-}
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+    height: 75vh;
+    margin: auto;
+  }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
 
-img.hover-shadow {
-  transition: 0.3s;
-}
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  img.demo {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 </style>
 
 <section>
   <div class="container-fluid">
-  <div class="row">
-  <div class="column">
-    <img src="include/img/professionnelmaq.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="include/img/rongeursmignonsecureuils.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="include/img/professionnelmaq.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="include/img/rongeursmignonsecureuils.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 4</div>
-      <img src="include/img/professionnelmaq.png" style="width:100%">
+    <div class="colon1">
+      <div class="colum">
+        <img src="include/img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
+      </div>
+      <div class="colum">
+        <img src="include/img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+      </div>
+      <div class="colum">
+        <img src="include/img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+      </div>
+    </div>
+    <div class="colon2">
+      <div class="columm">
+        <img src="include/img/3d-galerie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
+      </div>
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 4</div>
-      <img src="include/img/rongeursmignonsecureuils.jpg" style="width:100%">
-    </div>
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
 
-    <div class="mySlides">
-      <div class="numbertext">3 / 4</div>
-      <img src="include/img/professionnelmaq.png" style="width:100%">
-    </div>
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="include/img/3d-galerie-1.png" class="mySlides1">
+        </div>
 
-    <div class="mySlides">
-      <div class="numbertext">4 / 4</div>
-      <img src="include/img/rongeursmignonsecureuils.jpg" style="width:100%">
-    </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="include/img/3d-galerie-2.png" class="mySlides2">
+        </div>
 
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="include/img/3d-galerie-3.png" class="mySlides3">
+        </div>
 
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="include/img/3d-galerie-4.png" class="mySlides4">
+        </div>
 
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="include/img/professionnelmaq.png" onclick="currentSlide(1)" alt="Nature">
-    </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="column">
-      <img class="demo" src="include/img/rongeursmignonsecureuils.jpg" onclick="currentSlide(2)" alt="Snow">
-    </div>
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
 
-    <div class="column">
-      <img class="demo" src="include/img/professionnelmaq.png" onclick="currentSlide(3)" alt="Mountains">
-    </div>
+        <!-- Thumbnail image controls -->
+        <div class="row">
+          <div class="column">
+            <img class="demo1" src="include/img/3d-galerie-1.png"
+              onclick="currentSlide(1)" alt="Bonhomme">
+          </div>
 
-    <div class="column">
-      <img class="demo" src="include/img/rongeursmignonsecureuils.jpg" onclick="currentSlide(4)" alt="Lights">
+          <div class="column">
+            <img class="demo2" src="include/img/3d-galerie-2.png"
+              onclick="currentSlide(2)" alt="Rat">
+          </div>
+
+          <div class="column">
+            <img class="demo3" src="include/img/3d-galerie-3.png"
+              onclick="currentSlide(3)" alt="Spray">
+          </div>
+
+          <div class="column">
+            <img class="demo4" src="include/img/3d-galerie-4.png"
+              onclick="currentSlide(4)" alt="Savon">
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
   </div>
 </section>
 <script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // Open the Modal
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  // Close the Modal
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
+  }
 </script>
 <?php 
     require_once("include/footerj.php");

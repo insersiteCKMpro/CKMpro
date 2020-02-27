@@ -82,7 +82,6 @@
         height: 3vh;
         width: 100%;
         justify-content: space-between;
-        margin-left: 1.5vh;
     }
 
     .pro {
@@ -282,7 +281,6 @@
             height: 3vh;
             width: 100%;
             justify-content: space-between;
-            margin-left: 1.5vh;
         }
 
         .pro {
@@ -507,7 +505,6 @@
             height: 3vh;
             width: 100%;
             justify-content: center;
-            margin-left: 1.5vh;
         }
 
         .mainh
@@ -622,7 +619,6 @@
             height: 3vh;
             width: 100%;
             justify-content: center;
-            margin-left: 0 ;
         }
 
         .pro {
