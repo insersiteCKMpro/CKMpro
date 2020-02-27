@@ -140,7 +140,7 @@
         et sit
         iusto odio.</p>
 
-    <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);">
+    <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);" id="desinfection">
         <div class="imgligne2">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
@@ -181,7 +181,7 @@
             et sit iusto odio.</p>
     </div>
 
-    <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
+    <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" id="desinsectisation" alt="">
 
     <h2 class="text-center mt-5" id="desinsectisation">3D</h2>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit

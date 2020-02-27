@@ -180,16 +180,13 @@
 
                 <div class="colonne3 text-center">
                     <div class="snap">
-                        <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"><a
-                            href="http://www.snapchat.com"></a>
+                    <a href="http://www.snapchat.com"><img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"></a>
                     </div>
                     <div class="fb">
-                        <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%"><a
-                            href="http://www.facebook.com"></a>
+                    <a href="http://www.facebook.com"><img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%"></a>
                     </div>
                     <div class="snap">
-                        <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"><a
-                            href="http://www.instagram.com"></a>
+                    <a href="http://www.instagram.com"><img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
                     </div>
                 </div>
             </div>

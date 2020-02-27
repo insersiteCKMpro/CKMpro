@@ -88,13 +88,11 @@
     .pro {
         width: 50%;
         height: 43vh;
-        margin-right: 5%;
     }
 
     .part {
         width: 50%;
         height: 32vh;
-        margin-right: 1%;
     }
 
     .mainh
@@ -185,8 +183,6 @@
     }
 
     .imgM {
-        width: 100%;
-        height: 20vh;
         display: flex;
     }
 
@@ -197,7 +193,8 @@
 
     .imgp {
         width: 10%;
-        height: 25vh;
+        height: 20vh;
+        margin-top: 3vh
     }
 
     .fivetoile {
@@ -296,7 +293,7 @@
         .part {
             width: 50%;
             height: 50vh;
-            margin-right: 1%;
+            margin: 0 3%;
         }
 
         .mainh
@@ -304,7 +301,7 @@
         /*Professionnel Particulier*/
             {
             width: 100%;
-            height: 51vh;
+            height: 70vh;
             display: flex;
         }
 
@@ -389,8 +386,6 @@
         }
 
         .imgM {
-            width: 75%;
-            height: 20vh;
             display: flex;
             margin: auto;
         }
@@ -403,6 +398,7 @@
         .imgp {
             width: 10%;
             height: 25vh;
+            margin-top: 0;
         }
 
         .fivetoile {
@@ -419,12 +415,6 @@
 
         .insta:hover {
             transition: all ease .3s .1s;
-        }
-
-        .part {
-            width: 50%;
-            height: 32vh;
-            margin-right: 5%;
         }
 
         .sectionM
@@ -551,8 +541,6 @@
         }
 
         .imgM {
-            width: 100%;
-            height: 20vh;
             display: flex;
         }
     }
@@ -725,8 +713,6 @@
         }
 
         .imgM {
-            width: 100%;
-            height: 20vh;
             display: flex;
         }
         .imgl {
@@ -833,7 +819,7 @@
         <!--les cibles de CKMpro-->
         <main class="mainh">
             <div class="pro">
-                <img src="include/img/professionnelmaq.png" class="imgM" alt="">
+                <img src="include/img/professionnelmaq.png" class="imgM img-fluid" alt="">
                 <h4 class="text-center">Professionnel</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -872,7 +858,7 @@
                 </div>
             </div>
             <div class="part">
-                <img src="include/img/particuliermaq.png" class="imgM" alt="">
+                <img src="include/img/particuliermaq.png" class="imgM img-fluid" alt="">
                 <h4 class="text-center">Particulier</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
