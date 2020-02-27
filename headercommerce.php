@@ -11,216 +11,151 @@
 </head>
 
 <style>
-header
-{
-    /* background-color:red; */
-    max-height:auto;
-}
-.lignehaut 
+
+/* tel+num+ckmboutique */
+.lignehaut  
 {
     display:flex;
-    justify-content:flex-end;
-    /* background-color:green; */
+    background-color:red;
     height:3vh;
-    margin-top:2vh;
-    font-size:1.5em;
-}
-.vitrine
-{
-    margin-left:1%;
-    margin-right:1%;
-
+    justify-content:flex-end;
+    font-size:2.5vh;
 }
 .info
 {
     display:flex;
+    background-color:yellow;
+    height:3vh;
+    justify-content:flex-end;
+    font-size:2.5vh;
 }
+/* img du tel */
 .tel
-{
-    margin-left:-2%;
-    height:100%;
-}
-.deuxlogo .logoboutique
-{
-    display:flex;
-    justify-content:center;
-    position:relative;
-}
-.deuxlogo .logoclick
-{
-    display:flex;
-    justify-content:center;
-    position:absolute;
-    left:10%;
-    top:15%;
-}
-
-.deuxlogo
-{
-    display:block;
-}
-.clickco
 {
     width:100%;
 }
+/* numero de tel */
+p.num 
+{
+    display:flex;
+    margin-left:2%;
+}
+/* div du rond clickandcollect */
+.image1
+{
+    background-color:purple;
+    width:33.3%;
+    height:20vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+
+}
+/* div du logo ckmboutique */
+.image2
+{
+    background-color:orange;
+    width:33.3%;
+    height:25vh;
+    align-items:flex-end;
+    display:flex;
+}
+/* div qui englobe la div image 1 et 2 */
+.imageall
+{
+    background-color:pink;
+    display:flex;
+    align-items:flex-end;
+    height:25vh;
+}
+/* juste l'image qui est dans la div image1 */
+.img1
+{
+    width:25%;
+}
+/* juste l'image qui est dans la div image2 */
+.img2
+{
+    width:100%;
+    height:100%;
+}
+
 
     /* RESPONSIVE */
 
-    /* ECRAN 4K */
-    @media screen and (max-width: 2560px) and (min-width: 1439px) 
-    {
+/* ECRAN 4K */
+    @media screen and (max-width: 2560px) and (min-width: 1441px) {
 
-.lignehaut
-{
-    font-size:1.3em;
+
+
 }
 
-.clickco
+/* PC */
+    @media screen and (max-width: 1440px) and (min-width: 769px) {
+.img1
 {
-    width:100%;
+    width:30%;
 }
-.logo
-{
-    width:46%;
-}
+
 
     }
 
- /* PC */
- @media screen and (max-width: 1440px) and (min-width: 1023px) 
- {
-    .clickco
-{
-    width:100%;
-}
-.clicko
-{
-    width:70%;
-    right:30%;
-    position:relative;
-    
-}
+/*TABLETTE*/
+    @media screen and (max-width: 768px) and (min-width: 451px) {
 
-    }
-
-    @media screen and (max-width: 1024px) and (min-width: 767px) 
-{
-    .logo
-{
-    display:flex;
-    justify-content:center;
-    position:relative;
-    width:47%;
-    margin-top:6%;
-}
-.deuxlogo .logoclick
-
-{
+.lignehaut {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 10%;
-    top: 20%;
-    width: 11%;
+    background-color: red;
+    height: 9vh;
+    justify-content: flex-end;
+    font-size: 2.5vh;
+    flex-direction: column;
 }
-.lignehaut
-{
-    font-size: 1.3em ;
-}
-
-
-}
-
-    /*TABLETTE*/
-    @media screen and (max-width: 768px) and (min-width: 424px) {
-        .lignehaut
-        {
-            display:flex;
-            flex-direction:column;
-            height:10vh;
-            align-items:flex-end;
-        }
-
-        .info {
-    margin-right: 1%;
+.info {
     display: flex;
-    margin-left: 7%;
+    background-color: yellow;
+    height: 3vh;
+    justify-content: flex-end;
+    font-size: 2.5vh;
+    flex-direction: row;
 }
-
 .tel {
-    margin-left: -9%;
-    height: 50%;
+    width: 3%;
 }
-.num
-{
-    margin-left:10%;
-}
-    }
-
-
-
-  /* telephone */
-    @media screen and (max-width: 425px) {
-        .vitrine
-        {
-            margin-left:17%;
-        }
-        .logo
-        {
-            width:65%;
-            position:absolute;
-        }
-        .lignehaut
-        {
-            font-size:0.9em;
-            margin-bottom:5%;
-            width:100%;
-            display:flex;
-            flex-direction:row;
-            height:4vh;
-        }
-        .clickco
-        {
-            display:none;
-        }
-        .tel
-        {
-            margin-right:3%;
-            height:20%;
-        }
-        .num
-        {
-            margin-right:5%;
-        }
-        .info
+.numm
 {
     display:flex;
-    margin-right:25%;
+    flex-direction:row-reverse;
 }
+
+}
+
+/* telephone */
+    @media screen and (max-width: 450px){
 
     }
 </style>
 
 <header>
-<div class="container-fluid"></div>
+<div class="container-fluid">
 
 <div class="lignehaut">
 
 <div class="info">
-<img class="tel" src="img/telephonedesktop.png" alt="">
+<img class="tel mr-2 img-fluid" src="img/telephonedesktop.png" alt="">
 <p class="num"> 01.25.74.89.12</p>
 </div>
-<p class="vitrine"> CKM Pro Vitrine</p>
+<p class="numm"> CKM Pro Vitrine</p>
 </div>
 
-<div class="deuxlogo">
+<div class="imageall">
 
-<div class="logoclick">
-<img class="clickco" src="img/click.png" alt="">
+<div class="image1">
+<img class="img1 img-fluid"src="img/ClickAndCollect.png" alt="">
 </div>
 
-<div class="logoboutique">
-<img class="logo"src="img/CKMPROLOGODEFBOUTIQUE.png" alt="">
+<div class="image2">
+<img class="img2 img-fluid" src="img/CKMPROLOGODEFBOUTIQUE.png" alt="">
 </div>
 
 </div>
