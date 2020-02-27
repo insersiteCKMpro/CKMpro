@@ -6,6 +6,13 @@
 <style>
     /*-----------------------------------------------code source section-----------------------------------------*/
     /* Débaras*/
+    marquee
+    {
+        height: 10vh;
+        font-family: 'Red Hat Display',serif;
+        font-height: bold 800;
+        
+    }
     .flash
     {
         color: #00aeef;
@@ -35,7 +42,7 @@
     {
         display: flex;
         /* width: 100%; */
-        height: 25vh;
+        height: 40vh;
         justify-content: space-around;
         /* flex-direction: column; */
         display: flex;
@@ -196,7 +203,7 @@
     .sectionM
     {
         width: 100%;
-        height: 20vh;
+        height: 25vh;
     }
 
     /*-------------------------------------------------section-ecran pc--------------------------------------- */
@@ -226,7 +233,7 @@
         {
             display: flex;
             /* width: 100%; */
-            height: 35vh;
+            height: 40vh;
             justify-content: space-around;
             /* flex-direction: column; */
             display: flex;
@@ -415,7 +422,7 @@
         .sectionM
         {
             width: 100%;
-            height: 20vh;
+            height: 25vh;
         }
     }
 
@@ -427,7 +434,6 @@
             color: #00aeef;
         }
 
-        
         /*carousel Entreprise*/
         section
             {
@@ -435,23 +441,17 @@
             height: 52vh;
         }
 
-        
-
         /*Entreprise*/
         .sectionM
             {
             width: 100%;
         }
 
-        
-
         /*Entreprise*/
         .ets
             {
             text-align: center;
         }
-
-        
 
         /*Activités*/
         .activités
@@ -547,7 +547,7 @@
 
         /* Débaras*/
         .flash
-            {
+        {
             color: #00aeef;
         }
 
@@ -560,7 +560,7 @@
 
         .sectionM {
             width: 100%;
-            height: 33vh;
+            height: 100vh;
         }
 
         /*Entreprise*/
@@ -705,7 +705,7 @@
         <main>
             <marquee class="flash" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous
                 chargeons
-                aussi de débarraser!!</marquee>
+                aussi de débarrasser!!</marquee>
             <!--le debaras en flash-->
         </main>
         <div class="sectionH">
@@ -741,23 +741,25 @@
         <!--l'entreprise CKMpro-->
         <div class="sectionM">
             <p class="text-center">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, ab.
-                Perferendis eos repellat provident alias quam pariatur ut.
-                Fugiat impedit temporibus officiis accusamus aperiam nostrum reiciendis sequi tempora in et.
+            Agence de proximité à taille humaine, CKM PRO fidélise ses clients par une personnalisation du service apporté et la mise en place d'une structure d'encadrement efficiente. 
+            L'expérience et l'ancienneté du gérant et de ses collaborateurs contribue au développement et à la bonne gestion de la société.   
+            Discrétion : Professionnels, que vous soyez restaurateurs, gérants d’hôtels ou autres, il est évident que la discrétion et la capacité à intervenir à des horaires qui ne gênent pas le bon fonctionnement 
+            de votre établissement sont primordiaux. C’est pourquoi nos contrats réservés aux professionnels et particuliers tiennent compte de ces contraintes pour vous offrir un service qui soit le plus discret possible.  
             </p>
             <p class="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nihil
-                fugiat iusto dolorum, rerum quis delectus assumenda qui quasi recusandae,
-                necessitatibus aliquid animi eum quae incidunt rem eos quisquam omnis.
-                <p>
-        </div>
+            Réactivité / rapidité : Nous répondons aux urgences avec la même qualité et la même conscience professionnelle que pour toute autre mission.   Respect des délais :   Le temps de travail est estimé à sa juste valeur et les délais sont toujours respectés.   
+            Professionnalisme : Le travail est toujours rendu impeccable malgré les conditions parfois extrêmes dans lesquelles nous intervenons.   
+            Sécurité /Hygiène :  Toutes les mesures d'hygiène et de sécurité sont prises sur les chantiers pendant l'exécution des travaux. Éliminer les nuisible est notre mission.   Mais nous n’oublions pas la sécurité : de vos enfants, de vous-même de vos animaux domestiques et de l’environnement.     
+            Entreprise agréée et produits professionnels certifiés seront les gages d’une intervention efficace en toute sécurité.  
+            <p>
+        </div><br>
 
         <h2 class="activités">Nos Activités</h2><br>
         <!--les activités de CKMpro-->
         <div class="sectionB">
             <div class="derat">
-                <img src="include/img/3Dmaq.png" class="img3" alt="">br
-                <h2>3D</h2>
+                <img src="include/img/3Dmaq.png" class="img3" alt=""><br>
+                <br><h2>3D</h2><br>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
@@ -765,8 +767,8 @@
                 </p>
             </div>
             <div class="nettoyage">
-                <img src="include/img/nettoyagemaq.png" class="img3" alt="">
-                <h2>Nettoyage</h2>
+                <img src="include/img/nettoyagemaq.png" class="img3" alt=""><br>
+                <br><h2>Nettoyage</h2>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
@@ -774,8 +776,8 @@
                 </p>
             </div>
             <div class="espacevert">
-                <img src="include/img/espacevertmaq.png" class="img3" alt="">
-                <h2>Espaces verts</h2>
+                <img src="include/img/espacevertmaq.png" class="img3" alt=""><br>
+                <br><h2>Espaces verts</h2><br>
                 <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
@@ -788,7 +790,7 @@
         <!--les cibles de CKMpro-->
         <main class="mainh">
             <div class="pro">
-                <img src="include/img/professionnelmaq.png" class="imgM" alt="">
+                <img src="include/img/professionnelmaq.png" class="imgM" alt=""><br>
                 <h4 class="text-center">Professionnel</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -797,7 +799,7 @@
                     <P>
             </div>
             <div class="part">
-                <img src="include/img/particuliermaq.png" class="imgM" alt="">
+                <img src="include/img/particuliermaq.png" class="imgM" alt=""><br>
                 <h4 class="text-center">Particulier</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem

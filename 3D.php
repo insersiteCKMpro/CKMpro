@@ -193,39 +193,28 @@
 
     <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-    <h2 class="titre3 text-center mt-5" id="desinsectisation">3D</h2>
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
-        amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
+    <h2 class="titre3 text-center mt-5" id="desinsectisation">3D</h2><br>
+    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati 
+        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque 
+        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero 
+        magnam officiis velit harum magni cupiditate earum quasi
         consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p>
+        debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod 
+        fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+    </p>
 
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum
-        dolor sit
-        amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p><br>
+    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati 
+        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque 
+        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero 
+        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro 
+        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt 
+        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum. 
+        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis 
+        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+    </p><br>
 
 <?php 
     require_once("include/footerj.php");
