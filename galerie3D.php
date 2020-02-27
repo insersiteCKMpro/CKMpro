@@ -28,7 +28,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" height="500px" src="include/img/fourmi-myrmecologie.jpg" alt="First slide">
+          <img class="img-fluid d-block w-100" src="include/img/fourmi-myrmecologie.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" height="500px" src="include/img/insecte319255large.jpg" alt="Second slide">
@@ -70,6 +70,7 @@
   </div>
 </section>
 </body>
+
 <?php 
     require_once("include/footerj.php");
 ?>

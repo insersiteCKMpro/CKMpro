@@ -146,7 +146,7 @@
     }
   }  
   
-    /*--------------------------------------responsive moobile nav--------------------*/
+    /*--------------------------------------responsive mobile nav--------------------*/
     @media screen and (max-width: 450px) {
     /* MENU BURGER */
     .textMenu {

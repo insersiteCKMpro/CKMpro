@@ -4,72 +4,79 @@
 ?>
 
 <style>
-    /*-----------------------------------------------code source section-----------------------------------------*/
-    /* Débaras*/
-    .flash
-    {
+ /* Débaras*/    
+.flash
+        {
         color: #00aeef;
     }
 
-    /*carousel Entreprise*/
     section
-    {
+
+    /*carousel Entreprise*/
+        {
         width: 100%;
         height: 52vh;
     }
 
-    /*Entreprise*/
     .ets
-    {
+
+    /*Entreprise*/
+        {
         text-align: center;
     }
 
-    /*Activités*/
     .activités
-    {
+
+    /*Activités*/
+        {
         text-align: center;
     }
 
-    /*Activités*/
     .sectionB
-    {
+
+    /*Activités*/
+        {
         display: flex;
         /* width: 100%; */
-        height: 43vh;
+        height: 25vh;
         justify-content: space-around;
         /* flex-direction: column; */
         display: flex;
     }
 
-    /*Activités*/
     .derat
-    {
+
+    /*Activités*/
+        {
         width: 33.3%;
         text-align: center;
     }
 
-    /*Activités*/
     .nettoyage
-    {
-        width: 33.3%;
-        text-align: center;
-    }
 
     /*Activités*/
-    .espacevert
-    {
+        {
         width: 33.3%;
         text-align: center;
     }
 
-    .cible 
-    {
+    .espacevert
+
+    /*Activités*/
+        {
+        width: 33.3%;
+        text-align: center;
+    }
+
+    .cible {
         text-align: center;
         margin-top: 5vh;
     }
-    /*Professionnel Particulier*/
+
     main
-    {
+
+    /*Professionnel Particulier*/
+        {
         height: 3vh;
         width: 100%;
         justify-content: space-between;
@@ -80,13 +87,13 @@
         height: 43vh;
     }
 
-    .part 
-    {
+    .part {
         width: 50%;
         height: 32vh;
     }
 
     .mainh
+
     /*Professionnel Particulier*/
         {
         width: 100%;
@@ -94,52 +101,62 @@
         display: flex;
     }
 
+    .ppro {
+        text-align: center;
+    }
 
+    .mainb
 
     /*avis*/
-    .mainb
-    {
+        {
         width: 100%;
         height: 25vh;
         display: flex;
         justify-content: space-around;
     }
 
+    .carouL
 
-
-    /*carousel avis droite*/
-    .carouR
+    /*carousel avis gauche*/
     {
         width: 90%;
-        display: flex;
-        margin: auto;
     }
 
-    /*carousel avis droite et gauche*/
+    /*carousel avis droite*/
+    .carouR {
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
     .carousel-control-prev
-    {
+
+    /*carousel avis droite et gauche*/
+        {
         width: 10%;
         height: 18vh;
     }
 
-    /*carousel avis droite et gauche*/
     .carousel-control-next
-    {
+
+    /*carousel avis droite et gauche*/
+        {
         width: 10%;
         height: 18vh;
     }
+
+    .sectionecom
 
     /*e-commerce*/
-    .sectionecom
-    {
+        {
         height: 30vh;
         display: flex;
         justify-content: space-around;
     }
 
-    .ecom 
-    {
+    .ecom {
         text-align: center;
+
     }
 
     .img1 {
@@ -181,98 +198,104 @@
         width: 40%;
     }
 
-    /*Entreprise*/
     .sectionM
-    {
+
+    /*Entreprise*/
+        {
         width: 100%;
-        height: 35vh;
-        
+        height: 20vh;
     }
 
     /*-------------------------------------------------section-ecran pc--------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
 
-        /*carousel Entreprise*/
         section
-        {
+
+        /*carousel Entreprise*/
+            {
             width: 100%;
             height: 52vh;
         }
 
-        /*Entreprise*/
         .ets
-        {
+
+        /*Entreprise*/
+            {
             text-align: center;
         }
 
-        /*Activités*/
         .activités
-        {
+
+        /*Activités*/
+            {
             text-align: center;
         }
 
-        /*Activités*/
         .sectionB
-        {
+
+        /*Activités*/
+            {
             display: flex;
             /* width: 100%; */
-            height: 43vh;
+            height: 35vh;
             justify-content: space-around;
             /* flex-direction: column; */
             display: flex;
         }
 
-        /*Activités*/
         .derat
-        {
+
+        /*Activités*/
+            {
             width: 33.3%;
             text-align: center;
         }
 
-        /*Activités*/
         .nettoyage
-        {
-            width: 33.3%;
-            text-align: center;
-        }
 
         /*Activités*/
-        .espacevert
-        {
+            {
             width: 33.3%;
             text-align: center;
         }
 
-        .cible 
-        {
+        .espacevert
+
+        /*Activités*/
+            {
+            width: 33.3%;
+            text-align: center;
+        }
+
+        .cible {
             text-align: center;
             margin-top: 11vh;
         }
 
-        /*Professionnel Particulier*/
         main
-        {
+
+        /*Professionnel Particulier*/
+            {
             height: 3vh;
             width: 100%;
             justify-content: space-between;
         }
 
-        .pro 
-        {
+        .pro {
             width: 50%;
             height: 50vh;
         }
 
-        .part 
-        {
+        .part {
             width: 50%;
             height: 50vh;
-            margin-right: 0 3%;
+            margin: 0 3%;
         }
+
+        .mainh
 
         /*Professionnel Particulier*/
-        .mainh
-        {
+            {
             width: 100%;
             height: 70vh;
             display: flex;
@@ -282,44 +305,50 @@
             text-align: center;
         }
 
-        /*avis*/
         .mainb
-        {
+
+        /*avis*/
+            {
             width: 100%;
             height: 25vh;
             display: flex;
             justify-content: space-around;
         }
 
-        /*carousel avis gauche*/
         .carouL
-        {
+
+        /*carousel avis gauche*/
+            {
             width: 100%;
         }
+
+        .carouR
 
         /*carousel avis droite*/
-        .carouR   
-        {
+            {
             height: 18vh;
             width: 100%;
         }
 
-        /*carousel avis droite et gauche*/
         .carousel-control-prev
-        {
+
+        /*carousel avis droite et gauche*/
+            {
             width: 10%;
             height: 18vh;
         }
 
-        /*carousel avis droite et gauche*/
         .carousel-control-next
-        {
+
+        /*carousel avis droite et gauche*/
+            {
             width: 10%;
             height: 18vh;
         }
+
+        .sectionecom
 
         /*e-commerce*/
-        .sectionecom
             {
             height: 30vh;
             margin-top: 5vh;
@@ -327,61 +356,52 @@
             justify-content: space-around;
         }
 
-        .ecom 
-        {
+        .ecom {
             text-align: center;
         }
 
-        .img1 
-        {
+        .img1 {
             margin-top: 30px;
             width: 40vh;
             height: 15vh;
         }
 
-        .img3 
-        {
+        .img3 {
             width: 95%;
             height: 190px;
         }
 
-        .img4 
-        {
+        .img4 {
             width: 2%;
             height: 20px;
         }
 
-        .imgC 
-        {
+        .imgC {
             width: 100%;
             height: 279px;
         }
 
-        .imgM 
-        {
+        .imgM {
             display: flex;
             margin: auto;
         }
 
-        .imgl 
-        {
+        .imgl {
             width: 50%;
             height: 25vh;
         }
 
-        .imgp 
-        {
+        .imgp {
             width: 10%;
             height: 25vh;
             margin-top: 0;
         }
 
-        .fivetoile 
-        {
+        .fivetoile {
             width: 40%;
         }
-        .snap:hover 
-        {
+
+        .snap:hover {
             transition: all ease .3s .1s;
         }
 
@@ -389,85 +409,84 @@
             transition: all ease .3s .1s;
         }
 
-        .insta:hover 
-        {
+        .insta:hover {
             transition: all ease .3s .1s;
         }
-        .part 
-        {
-            width: 50%;
-            height: 32vh;
-            margin-right: 5%;
-        }
+
+        .sectionM
 
         /*Entreprise*/
-        .sectionM
-        {
+            {
             width: 100%;
-            height: 35vh;
-            margin: 0 auto;
+            height: 20vh;
         }
     }
 
     /* --------------------------------------------section tablette----------------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
+        .flash
+
         /* Débaras*/
-        .flash    
-        {
+            {
             color: #00aeef;
         }
 
-        /*carousel Entreprise*/
         section
+
+        /*carousel Entreprise*/
             {
             width: 100%;
             height: 52vh;
         }
 
-        /*Entreprise*/
         .sectionM
-            {
-            height: 45vh;
-        }
 
         /*Entreprise*/
+            {
+            width: 100%;
+        }
+
         .ets
+
+        /*Entreprise*/
             {
             text-align: center;
         }
 
-        /*Activités*/
         .activités
+
+        /*Activités*/
             {
             text-align: center;
         }
 
         .sectionB {
-            height: 43vh;
+            height: 52vh;
         }
-        
 
-        /*Activités*/
         .derat
+
+        /*Activités*/
             {
             width: 33.3%;
             text-align: center;
         }
 
-        /*Activités*/
         .nettoyage
-            {
-            width: 33.3%;
-            text-align: center;
-        }
 
         /*Activités*/
-        .espacevert
             {
             width: 33.3%;
             text-align: center;
         }
 
+        .espacevert
+
+        /*Activités*/
+            {
+            width: 33.3%;
+            text-align: center;
+        }
         .dne {
             width: 90%
         }
@@ -477,18 +496,19 @@
             margin: 0;
         }
 
-        
-        /*Professionnel Particulier*/
         main
-        {
+
+        /*Professionnel Particulier*/
+            {
             height: 3vh;
             width: 100%;
             justify-content: center;
         }
 
-        /*Professionnel Particulier*/
         .mainh
-        {
+
+        /*Professionnel Particulier*/
+            {
             width: 100%;
             height: 62vh;
             display: flex;
@@ -525,14 +545,17 @@
         body {
             width: 100%
         }
-        /* Débaras*/
+        
         .flash
-        {
+
+        /* Débaras*/
+            {
             color: #00aeef;
         }
 
-        /*carousel Entreprise*/
         section
+
+        /*carousel Entreprise*/
             {
             width: 100%;
             height: 52vh;
@@ -540,11 +563,12 @@
 
         .sectionM {
             width: 100%;
-            height: 100vh;
+            height: 33vh;
         }
 
-        /*Entreprise*/
         .ets
+
+        /*Entreprise*/
             {
             text-align: center;
         }
@@ -565,15 +589,17 @@
             text-align: center;
         }
 
-        /*Activités*/
         .nettoyage
+
+        /*Activités*/
             {
             width: 100%;
             text-align: center;
         }
 
-        /*Activités*/
         .espacevert
+
+        /*Activités*/
             {
             width: 100%;
             text-align: center;
@@ -584,8 +610,9 @@
             margin-top: 0;
         }
 
-        /*Professionnel Particulier*/
         main
+
+        /*Professionnel Particulier*/
             {
             height: 3vh;
             width: 100%;
@@ -608,18 +635,15 @@
             flex-direction: column;
             margin: 5vh auto;
             border: 0.5px solid gray;
+
         }
 
         .ppro {
             text-align: center
         }
+        .mainh
 
         /*Professionnel Particulier*/
-        .sectionM{
-            width: 100%;
-            height: 80vh;
-        }
-        .mainh
             {
             height: 135vh;
             display: flex;
@@ -628,8 +652,7 @@
 
         .mainb {
             width: 100%;
-            height: 40vh;
-            margin-top: 11vh;
+            height: 20vh;
             display: flex;
             flex-direction: column;
             text-align: inherit;
@@ -639,9 +662,10 @@
             height: 18vh;
             width: 100%;
         }
-        
-        /*carousel avis droite*/
+
         .carouR
+
+        /*carousel avis droite*/
             {
             margin-top: 2vh;
             height: 18vh;
@@ -666,7 +690,7 @@
         }
 
         .img3 {
-            width: 92%;
+            width: 100%;
             height: 20vh;
             display: flex;
             margin: auto;
@@ -685,7 +709,6 @@
         .imgM {
             display: flex;
         }
-
         .imgl {
             width: 50%;
             height: 10vh;
@@ -742,13 +765,13 @@
         <h1 class="ets">L'entreprise</h1><br>
         <!--l'entreprise CKMpro-->
         <div class="sectionM">
-            <p class="text-justify">
+            <p class="text-center">
             Agence de proximité à taille humaine, CKM PRO fidélise ses clients par une personnalisation du service apporté et la mise en place d'une structure d'encadrement efficiente. 
             L'expérience et l'ancienneté du gérant et de ses collaborateurs contribue au développement et à la bonne gestion de la société.   
             Discrétion : Professionnels, que vous soyez restaurateurs, gérants d’hôtels ou autres, il est évident que la discrétion et la capacité à intervenir à des horaires qui ne gênent pas le bon fonctionnement 
             de votre établissement sont primordiaux. C’est pourquoi nos contrats réservés aux professionnels et particuliers tiennent compte de ces contraintes pour vous offrir un service qui soit le plus discret possible.  
             </p>
-            <p class="text-justify">
+            <p class="text-center">
             Réactivité / rapidité : Nous répondons aux urgences avec la même qualité et la même conscience professionnelle que pour toute autre mission.   Respect des délais :   Le temps de travail est estimé à sa juste valeur et les délais sont toujours respectés.   
             Professionnalisme : Le travail est toujours rendu impeccable malgré les conditions parfois extrêmes dans lesquelles nous intervenons.   
             Sécurité /Hygiène :  Toutes les mesures d'hygiène et de sécurité sont prises sur les chantiers pendant l'exécution des travaux. Éliminer les nuisible est notre mission.   Mais nous n’oublions pas la sécurité : de vos enfants, de vous-même de vos animaux domestiques et de l’environnement.     
@@ -792,74 +815,82 @@
         <!--les cibles de CKMpro-->
         <main class="mainh">
             <div class="pro">
-                <img src="include/img/professionnelmaq.png" class="imgM" alt="">
-                <h4 class="text-center"><br>Professionnel</h4>
+                <img src="include/img/professionnelmaq.png" class="imgM img-fluid" alt="">
+                <h4 class="text-center">Professionnel</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
                     praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
                     dignissimos iusto perspiciatis.
-                    <P>
+                <P>
+                <div class="mainb">
+                    <!--Les Avis -->
+                    <div class="carouL">
+                        <!--Les Avis carousel de gauche -->
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active">
+                                    <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit
+                                        suscipit
+                                        assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum
+                                        ea qui!
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit
+                                        suscipit
+                                        assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum
+                                        ea qui!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="part">
-                <img src="include/img/particuliermaq.png" class="imgM" alt="">
-                <h4 class="text-center"><br>Particulier</h4>
+                <img src="include/img/particuliermaq.png" class="imgM img-fluid" alt="">
+                <h4 class="text-center">Particulier</h4>
                 <P class="ppro">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
                     praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
                     dignissimos iusto perspiciatis.
-                    <P>
+                <P>
+                <div class="carouR">
+                    <!--Les Avis carousel de droite -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores voluptas voluptate libero, quasi adipisci vero
+                                    delectus odit suscipit
+                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde.
+                                    Quas earum ea qui!
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores voluptas voluptate libero, quasi adipisci vero
+                                    delectus odit suscipit
+                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde.
+                                    Quas earum ea qui!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
-        <div class="mainb">
-            <!--Les Avis -->
-            <div class="carouL">
-                <!--Les Avis carousel de gauche -->
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner text-center">
-                        <div class="carousel-item active">
-                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                            </p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carouR">
-                <!--Les Avis carousel de droite -->
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner text-center">
-                        <div class="carousel-item active">
-                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                            </p>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+         
         <h2 class="ecom">La Boutique CKM</h2><br>
         <!--ecommerce-->
         <div class="sectionecom">
