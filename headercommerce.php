@@ -17,7 +17,6 @@
 {
     display:flex;
     background-color:red;
-    height:3vh;
     justify-content:flex-end;
     font-size:2.5vh;
 }
@@ -25,9 +24,9 @@
 {
     display:flex;
     background-color:yellow;
-    height:3vh;
     justify-content:flex-end;
     font-size:2.5vh;
+    align-items:center;
 }
 /* img du tel */
 .tel
@@ -35,17 +34,17 @@
     width:100%;
 }
 /* numero de tel */
-p.num 
+.num .numm
 {
     display:flex;
     margin-left:2%;
+    align-items:center;
 }
 /* div du rond clickandcollect */
 .image1
 {
     background-color:purple;
     width:33.3%;
-    height:20vh;
     display:flex;
     justify-content:center;
     align-items:flex-end;
@@ -56,9 +55,9 @@ p.num
 {
     background-color:orange;
     width:33.3%;
-    height:25vh;
     align-items:flex-end;
     display:flex;
+    justify-content:center;
 }
 /* div qui englobe la div image 1 et 2 */
 .imageall
@@ -66,19 +65,24 @@ p.num
     background-color:pink;
     display:flex;
     align-items:flex-end;
-    height:25vh;
+    width:100%;
 }
 /* juste l'image qui est dans la div image1 */
 .img1
 {
-    width:25%;
+    width:100%;
 }
 /* juste l'image qui est dans la div image2 */
 .img2
 {
     width:100%;
-    height:100%;
 }
+.image3
+{
+    width:33.3%;
+    background-color:green;
+}
+
 
 
     /* RESPONSIVE */
@@ -86,28 +90,19 @@ p.num
 /* ECRAN 4K */
     @media screen and (max-width: 2560px) and (min-width: 1441px) {
 
-
+        .img1
+{
+    width:30%;
+}
 
 }
 
 /* PC */
     @media screen and (max-width: 1440px) and (min-width: 769px) {
+
 .img1
 {
     width:30%;
-}
-
-.image1
-{
-    width:23.3%;
-}
-.image2
-{
-    width:53.3%;
-}
-.img1
-{
-    width:45%;
 }
 
     }
@@ -118,7 +113,6 @@ p.num
 .lignehaut {
     display: flex;
     background-color: red;
-    height: 9vh;
     justify-content: flex-end;
     font-size: 2.5vh;
     flex-direction: column;
@@ -126,7 +120,6 @@ p.num
 .info {
     display: flex;
     background-color: yellow;
-    height: 3vh;
     justify-content: flex-end;
     font-size: 2.5vh;
     flex-direction: row;
@@ -141,12 +134,17 @@ p.num
 }
 .image1
 {
-    width:23.3%;
+    width:33.3%;
 }
 .image2
 {
-    width:53.3%;
+    width:33.3%;
 }
+.image3
+{
+    width:33.3%;
+}
+
 .img1
 {
     width:70%;
@@ -159,6 +157,10 @@ p.num
     @media screen and (max-width: 450px){
 
         .image1
+{
+    display:none;
+}
+.image3
 {
     display:none;
 }
@@ -195,6 +197,10 @@ p.num
 
 <div class="image2">
 <img class="img2 img-fluid" src="img/CKMPROLOGODEFBOUTIQUE.png" alt="">
+</div>
+
+<div class="image3">
+
 </div>
 
 </div>
