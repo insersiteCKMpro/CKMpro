@@ -49,6 +49,18 @@
         color: white;
     }
 
+    .ftext2 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .ftext2:hover {
+        text-decoration: none;
+        color: black;
+        background-color: blue;
+        color: white;
+    }
+
     .colonne2 {
 
         width: 30%;
@@ -57,12 +69,12 @@
         margin-top: 2%;
     }
 
-    .ftext2 {
+    .ftext3 {
         text-decoration: none;
         color: black;
     }
 
-    .ftext2:hover {
+    .ftext3:hover {
         text-decoration: none;
         color: black;
         background-color: blue;
@@ -103,7 +115,7 @@
     /* ORDINATEUR */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
         .flogo {
-            width: 10%;
+            width: 70%;
         }
 
         .footerhaut,
@@ -115,7 +127,7 @@
     /* TABLETTE */
     @media screen and (min-width: 451px) and (max-width: 768px) {
         .flogo {
-            width: 20%;
+            width: 70%;
         }
 
         .footerhaut,
@@ -132,7 +144,7 @@
         }
 
         .flogo {
-            width: 50%;
+            width: 70%;
             margin-bottom: 15%;
         }
 
@@ -166,17 +178,19 @@
             <div class="footerhaut text-center">
                 <div class="colonne1 text-center">
 
-                    <a href="homepage.php"></a><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="10%">
+                    <a href="homepage.php"><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="10%"></a>
                     <a class="ftext1" href="3D.php">3D</a>
                     <a class="ftext1" href="nettoyage.php">Nettoyage</a>
-                    <a class="ftext1" href="espacevert.php">Espace Verts</a>
+                    <a class="ftext2" href="espacevert.php"><img class="flogoo" src="CKMBOUTIQUE/include/img/profil.png" width="2%">Connexion</a>
+                    <a class="ftext2" href="espacevert.php"><img class="flogoo" src="CKMBOUTIQUE/include/img/panier.png" width="2%">Panier</a>
+                    <a class="ftext2" href="espacevert.php"><img class="flogoo" src="CKMBOUTIQUE/include/img/loupe-recherche.png" width="2%">Recherche</a>
                 </div>
 
                 <div class="colonne2 text-center">
-                    <a class="ftext2" href="">La Boutique</a><br>
-                    <a class="ftext2" href="contact.php">Contact</a><br>
-                    <a class="ftext2" href="">Mention Légales</a><br>
-                    <a class="ftext2" href="">Politique de Confidentialité</a><br>
+                    <a class="ftext3" href="">La Vitrine</a><br>
+                    <a class="ftext3" href="contact.php">Contact</a><br>
+                    <a class="ftext3" href="">Politique de Confidentialité</a><br>
+                    <a class="ftext3" href="">Mention Légales</a><br>
                 </div>
 
                 <div class="colonne3 text-center">

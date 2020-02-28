@@ -9,13 +9,13 @@
     display: none;
   }
   /*------------------------------------------------------------------------code source---------------------------------------------------------------------*/
-  .colon1{display:flex;flex-direction: column;}
-  .colon2{display:flex;flex-direction: row;}
+  .colon1{display:flex; flex-direction: column;}
+  .colon2{display: flex; flex-direction: row; width: 55.5%; margin: auto;}
   .colum{width:100%;}
   .imgg1{width: 50%; display: flex; margin: 3vh auto;}
-  .imgg2{width: 25%; display: flex; margin: 6vh auto;}
-  .imgg3{width: 25%; display: flex; margin: 6vh auto;}
-  .imgg4{width: 25%; display: flex; margin: 6vh auto;}
+  .imgg2{width: 80%; display: flex; margin: 3vh auto;}
+  .imgg3{width: 80%; display: flex; margin: 3vh auto;}
+  .imgg4{width: 25%; display: flex; margin: 3vh auto;}
 
   .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
   .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
@@ -52,6 +52,16 @@
   }
   /*------------------------------------------------------------------------Responsive Mobil---------------------------------------------------------------------*/
   @media screen and (max-width: 450px){
+
+    .colon1{display: flex; flex-direction: column;}
+    .colon2{display: flex; flex-direction: column; width: 55.5%; margin: auto;}
+    .colum{width:100%;}
+
+    .imgg1{width: 80%; display: flex; margin: 3vh auto;}
+    .imgg2{width: 80%; display: flex; margin: 3vh auto;}
+    .imgg3{width: 80%; display: flex; margin: 3vh auto;}
+    .imgg4{width: 44%; display: flex; margin: 3vh auto;}
+
     .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
     .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
     .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
@@ -197,15 +207,17 @@
     <div class="colon1">
       <div class="colum">
         <img src="include/img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
-      </div>
-      <div class="colum">
-        <img src="include/img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
-      </div>
-      <div class="colum">
-        <img src="include/img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+        <div class="colon2">
+          <div class="colum">
+            <img src="include/img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+          </div>
+          <div class="colum">
+            <img src="include/img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="colon2">
+    <div class="colon3">
       <div class="columm">
         <img src="include/img/3d-galerie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
       </div>
@@ -318,5 +330,5 @@
   }
 </script>
 <?php 
-    require_once("include/footerj.php");
+    require_once("footerecom.php");
 ?>
