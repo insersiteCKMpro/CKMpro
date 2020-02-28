@@ -109,7 +109,6 @@
             font-family: 'Red Hat Display',serif ;
         }   
     }
-
     </style>
 
     <div class="imgligne1">
@@ -119,36 +118,24 @@
     </div>
 
     <h1 class="text-center mt-5">3D</h1><br>
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
-        amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p>
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
-        amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p><br>
+    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati 
+        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque 
+        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero 
+        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro 
+        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt 
+        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum. 
+        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis 
+        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p>
+
+    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati 
+        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque 
+        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero 
+        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro 
+        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt 
+        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum. 
+        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis 
+        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p><br>
 
     <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);">
         <div class="imgligne2">
@@ -156,39 +143,25 @@
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
         </div><br>
 
-
         <h2 class="titre2 text-center mt-5" id="desinfection">3D</h2><br>
-        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
-            mollitia
-            tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate,
-            eligendi.
-            Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate
-            earum
-            quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto
-            molestias
-            debitis possimus tenetur incidunt consectetur! Maiores, nulla.
-            Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-            molestiae,
-            ex natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus!
-            Beatae
-            et sit iusto odio.</p>
+        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati 
+        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque 
+        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero 
+        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro 
+        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt 
+        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum. 
+        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis 
+        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p>
 
-        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
-            mollitia
-            tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate,
-            eligendi.
-            Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate
-            earum
-            quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto
-            molestias
-            debitis possimus tenetur incidunt consectetur! Maiores, nulla.
-            Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-            molestiae,
-            ex natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus!
-            Beatae
-            et sit iusto odio.</p><br>
+        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati 
+        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque 
+        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero 
+        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro 
+        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt 
+        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum. 
+        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis 
+        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p><br>
     </div>
 
     <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">

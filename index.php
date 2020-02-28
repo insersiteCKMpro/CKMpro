@@ -3,7 +3,6 @@
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
-
 <style>
     /*-----------------------------------------------code source section-----------------------------------------*/
 /* Débaras*/
@@ -34,9 +33,8 @@
     /*Activités*/
     .sectionB
     {
-        display: flex;
         /* width: 100%; */
-        height: 25vh;
+        height: 34vh;
         justify-content: space-around;
         /* flex-direction: column; */
         display: flex;
@@ -63,11 +61,6 @@
         text-align: center;
     }
 
-    .cible 
-    {
-        text-align: center;
-        margin-top: 9vh;
-    }
     /*Professionnel Particulier*/
     main
     {
@@ -116,11 +109,12 @@
     }
 
     /*carousel avis droite*/
-    .carouR {
-    width: 90%;
-    display: flex;
-    margin: auto;
-}
+    .carouR 
+    {
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
 
     /*carousel avis droite et gauche*/
     .carousel-control-prev
@@ -128,7 +122,6 @@
         width: 10%;
         height: 18vh;
     }
-
 
     /*carousel avis droite et gauche*/
     .carousel-control-next
@@ -214,9 +207,8 @@
         /*Activités*/
         .sectionB
         {
-            display: flex;
             /* width: 100%; */
-            height: 28vh;
+            height: 33vh;
             justify-content: space-around;
             /* flex-direction: column; */
             display: flex;
@@ -224,11 +216,11 @@
 
         /*Activités*/
         .derat
-            {
-                width: 30%;
-                text-align: center;
-                display: flow-root;
-            }
+        {
+            width: 30%;
+            text-align: center;
+            display: flow-root;
+        }
 
         /*Activités*/
         .nettoyage
@@ -247,8 +239,9 @@
             }
 
         .cible {
-            text-align: center;
+    
             margin-top: 15vh;
+            text-align: center;
         }
 
         /*Professionnel Particulier*/
@@ -269,7 +262,7 @@
         .mainh
             {
                 width: 100%;
-                height: 80vh;
+                height: 75vh;
                 display: flex;
             }
 
@@ -390,8 +383,9 @@
         .sectionM
         {
             width: 75%;
-            height: 25vh;
-            display: flex;
+            height: 32
+vh;
+            /*display: flex;*/
             margin: 0 auto;
             display: flow-root;
         }
@@ -508,28 +502,28 @@
 
     /* -------------------------------------------------------section-portable-----------------------------------------*/
     @media all and (max-width: 450px) {
-        body {
+        body 
+        {
             width: 100%
         }
         
-        .flash
-
         /* Débaras*/
+        .flash
             {
             color: #00aeef;
         }
 
-        section
-
         /*carousel Entreprise*/
+        section
             {
             width: 100%;
             height: 52vh;
         }
 
-        .sectionM {
+        .sectionM 
+        {
             width: 100%;
-            height: 33vh;
+            height: 94vh;
         }
 
         /*Entreprise*/
@@ -544,7 +538,7 @@
         }
 
         .sectionB {
-            height: 142vh;
+            height: 160vh;
             flex-direction: column;
             margin-top: 0;
         }
@@ -583,7 +577,7 @@
         }
 
         .propart {
-            height: 65vh;
+            height: 70vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -625,9 +619,10 @@
         }
 
         .sectionecom {
-            height: 28vh;
+            height: 25vh;
             display: flex;
             flex-direction: row;
+            JUSTIFY-CONTENT: space-around
         }
 
         .ecom {
@@ -751,7 +746,7 @@
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
                     Molestiae quasi magnam quos obcaecati?
                 </p>
-            </div>
+            </div><br>
             <div class="nettoyage">
                 <img src="include/img/nettoyagemaq.png" class="img3" alt="">
                 <h2><br>Nettoyage</h2>
@@ -760,7 +755,7 @@
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
                     Molestiae quasi magnam quos obcaecati?
                 </p>
-            </div>
+            </div><br>
             <div class="espacevert">
                 <img src="include/img/espacevertmaq.png" class="img3" alt="">
                 <h2><br>Espaces verts</h2>
@@ -769,7 +764,7 @@
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
                     Molestiae quasi magnam quos obcaecati?
                 </p>
-            </div>
+            </div><br>
         </div>
 
         <h2 class="cible">Qui sont nos clients ?</h2><br>
