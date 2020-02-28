@@ -97,6 +97,18 @@ p.num
     width:30%;
 }
 
+.image1
+{
+    width:23.3%;
+}
+.image2
+{
+    width:53.3%;
+}
+.img1
+{
+    width:45%;
+}
 
     }
 
@@ -127,11 +139,38 @@ p.num
     display:flex;
     flex-direction:row-reverse;
 }
+.image1
+{
+    width:23.3%;
+}
+.image2
+{
+    width:53.3%;
+}
+.img1
+{
+    width:70%;
+}
+
 
 }
 
 /* telephone */
     @media screen and (max-width: 450px){
+
+        .image1
+{
+    display:none;
+}
+.image2
+{
+    width:80%;
+}
+.imageall
+{
+    display:flex;
+    justify-content:center;
+}
 
     }
 </style>
@@ -142,7 +181,7 @@ p.num
 <div class="lignehaut">
 
 <div class="info">
-<img class="tel mr-2 img-fluid" src="img/telephonedesktop.png" alt="">
+<img class="tel img-fluid" src="img/telephonedesktop.png" alt="">
 <p class="num"> 01.25.74.89.12</p>
 </div>
 <p class="numm"> CKM Pro Vitrine</p>
@@ -160,6 +199,7 @@ p.num
 
 </div>
 </header>
+
 
 </div>
 </html>
