@@ -6,9 +6,19 @@
 <style>
     /*-----------------------------------------------code source section-----------------------------------------*/
 /* Débaras*/
+marquee.flash:hover
+{
+    font-size: 2em;
+    height: 6.1vh;
+    background-color: rgba(0, 174, 239, 0.5);
+    margin-bottom: 5%;
+    color: #fff200;
+    /* align-content: center; */
+    /* display: flex; */
+}
 .flash
     {
-        color: #00aeef;
+        color: #00a651;
     }
 
     /*carousel Entreprise*/
@@ -162,6 +172,7 @@
 
     .imgC {
         width: 100%;
+        
     }
 
     .imgM {
@@ -338,7 +349,7 @@
         .imgC 
         {
             width: 100%;
-            height: 279px;
+            margin-top: 1.5%;
         }
 
         .imgM 
@@ -684,9 +695,8 @@ vh;
 <div class="container-fluid">
     <section>
         <main>
-            <marquee class="flash" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous
-                chargeons
-                aussi de débarraser!!</marquee>
+            <a href="nettoyage.php#debarras" > <marquee class="flash" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous
+                chargeons aussi de débarrasser!!</marquee></a>
             <!--le debaras en flash-->
         </main>
         <div class="sectionH">

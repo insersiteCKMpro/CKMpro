@@ -30,6 +30,7 @@
         font-size: 1.2em;
         background-color: white;
         font-family: 'Red Hat Display',serif;
+  
       }
 
       .logo {
@@ -59,7 +60,10 @@
         /* ENTÊTE FIXE STYLE */
         .fixed-top 
         {
-          font-size: 1.5em;
+          width: 50% !important;
+          float: right !important;
+          position: inherit !important;
+          font-size: 1.2em;
           font-family: 'Red Hat Display',serif;
         }
 
@@ -85,10 +89,8 @@
         {
           width: 50% !important;
           float: right !important;
-          padding-left: 27vh !important;
           position: inherit !important;
           font-size: 1.2em;
-          display: block;
           font-family: 'Red Hat Display',serif;
         }
 
