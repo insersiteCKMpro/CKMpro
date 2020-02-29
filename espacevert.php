@@ -8,7 +8,7 @@
 <body>
 
     <style>
-        /* ------------------------css-source-EV--------------------------------- */ 
+        /* ------------------------css-source-EV--------------------------------- */
 
         .imgligne1 {
             display: flex;
@@ -28,36 +28,38 @@
 
         p.text-center {
             font-size: 1.5em;
-            font-family: 'Red Hat Display',serif;
+            font-family: 'Red Hat Display', serif;
         }
 
-        .titre2 , .titre3{
+        .titre2,
+        .titre3 {
             width: 100%;
             font-size: 2.5rem;
-            font-family: 'Red Hat Display',serif;
+            font-family: 'Red Hat Display', serif;
             font-weight: 800;
-        }    
+        }
 
-            /* ------------------------RESPONSIVE-EV-ecran pc-------------------------------- */ 
+        /* ------------------------RESPONSIVE-EV-ecran pc-------------------------------- */
         @media screen and (max-width: 2560px) and (min-width: 769px) {
-        .imgligne1 {
-            position: relative;
-            width: 100%;
+            .imgligne1 {
+                position: relative;
+                width: 100%;
+            }
+
+            .imgligne2 .titre2 .titre3 .text2 .bg {
+                width: 100%;
+                font-size: 2.5rem;
+            }
+
+            .bg {
+                width: 100%;
+            }
+
+            .imgligne2 {
+                width: 100%;
+            }
         }
 
-        .imgligne2 .titre2 .titre3 .text2 .bg {
-            width: 100%;
-            font-size: 2.5rem;
-        }
-
-        .bg {
-            width: 100%;
-        }
-
-        .imgligne2 {
-            width: 100%;
-        }
-    }
         /* ------------------------RESPONSIVE-EV-tablette-------------------------------- */
         @media screen and (max-width: 768px) and (min-width: 451px) {
             .imgligne1 {
@@ -68,7 +70,7 @@
             .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
                 font-size: 2.5rem;
-                font-family: 'Red Hat Display',serif ;
+                font-family: 'Red Hat Display', serif;
             }
 
             .bg {
@@ -81,9 +83,10 @@
 
             p.text-center {
                 font-size: 1.5em;
-                font-family: 'Red Hat Display',serif ;
+                font-family: 'Red Hat Display', serif;
             }
         }
+
         /* ------------------------RESPONSIVE-EV-mobile-------------------------------- */
         @media screen and (max-width: 450px) {
             .imgligne1 {
@@ -94,8 +97,8 @@
             .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
                 font-size: 2.5rem;
-                font-family: 'Red Hat Display',serif ;
-                
+                font-family: 'Red Hat Display', serif;
+
             }
 
             .bg {
@@ -108,10 +111,9 @@
 
             p.text-center {
                 font-size: 1.5em;
-                font-family: 'Red Hat Display',serif ;
+                font-family: 'Red Hat Display', serif;
             }
         }
-
     </style>
 
     <div class="imgligne1">
@@ -121,35 +123,23 @@
     </div>
     <h1 class="text-center mt-5">Espaces verts</h1><br>
     <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
-        Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p>
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
-        amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
+    </p>
+    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+    </p><br>
 
     <div class="bg" style="background-color: rgba(0, 166, 81, 0.5);">
         <div class="imgligne2">
@@ -157,76 +147,50 @@
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
         </div><br>
 
-
         <h2 class="titre2 text-center mt-5">Espaces verts</h2><br>
-        <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
-            mollitia
-            tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate,
-            eligendi.
-            Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate
-            earum
-            quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto
-            molestias
-            debitis possimus tenetur incidunt consectetur! Maiores, nulla.
-            Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-            molestiae,
-            ex natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus!
-            Beatae
-            et sit iusto odio.</p>
+        <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
+        </p>
 
-        <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta
-            mollitia
-            tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate,
-            eligendi.
-            Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate
-            earum
-            quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto
-            molestias
-            debitis possimus tenetur incidunt consectetur! Maiores, nulla.
-            Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-            molestiae,
-            ex natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus!
-            Beatae
-            et sit iusto odio.</p><br>
+        <p class="text2 text-center mx-auto col-md-6 border-dark rounded text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
+        </p><br>
     </div>
 
     <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-    <h2 class="titre3 text-center mt-5">Espaces Verts</h2><br>
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">Lorem ipsum dolor sit
-        amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p>
+        <h2 class="titre3 text-center mt-5">Espaces Verts</h2><br>
+        <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
+        </p>
 
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify mb-5">Lorem ipsum
-        dolor sit
-        amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae illo? Soluta mollitia
-        tempore,
-        aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! Voluptate, eligendi.
-        Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni cupiditate earum
-        quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis
-        possimus tenetur incidunt consectetur! Maiores, nulla.
-        Exercitationem facere architecto possimus placeat ipsum. In excepturi debitis doloremque? Eos
-        molestiae, ex
-        natus enim iure quod fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae
-        et sit
-        iusto odio.</p>
+        <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify mb-5">        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
+        </p>
     </div>
 
 </body>

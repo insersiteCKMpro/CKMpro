@@ -6,26 +6,24 @@
 
 <style>
   /*-----------------------------------------------css source nav------------------- */
-  header,nav,section 
-  {
+  header,
+  nav,
+  section {
     display: contents;
   }
 
-  nav 
-  {
+  nav {
     border-bottom: 1px solid black;
-    font-family: 'Red Hat Display',serif;
+    font-family: 'Red Hat Display', serif;
     font-weight: 650;
   }
 
   /* NAVBAR STYLE */
-  .bg-dark 
-  {
+  .bg-dark {
     background-color: white !important;
   }
 
-  .navbar-dark .navbar-toggler 
-  {
+  .navbar-dark .navbar-toggler {
     color: black;
     border-color: transparent;
   }
@@ -33,44 +31,37 @@
   .navbar-dark .navbar-nav .active>.nav-link,
   .navbar-dark .navbar-nav .nav-link.active,
   .navbar-dark .navbar-nav .nav-link.show,
-  .navbar-dark .navbar-nav .show>.nav-link 
-  {
+  .navbar-dark .navbar-nav .show>.nav-link {
     color: black;
   }
 
-  .navbar-dark .navbar-nav .nav-link 
-  {
+  .navbar-dark .navbar-nav .nav-link {
     color: black !important;
     font-size: x-large;
   }
 
   /* LOGO HOME STYLE */
-  #tailleLi 
-  {
+  #tailleLi {
     height: 5vh;
     width: 7%;
   }
 
-  #tailleA 
-  {
+  #tailleA {
     width: 100%;
   }
 
-  .logoHome 
-  {
+  .logoHome {
     width: 100%;
     position: relative;
     top: -0.9vh;
   }
 
-  .navMarg 
-  {
+  .navMarg {
     margin-left: 10vh;
   }
 
   /* DROPDOWN MENU */
-  .dropdown-menu 
-  {
+  .dropdown-menu {
     left: 8vh !important;
     border: none !important;
     background-color: #ffffffb8 !important;
@@ -144,10 +135,11 @@
     .dropdown-menu {
       left: 15px !important;
     }
-  }  
-  
-    /*--------------------------------------responsive mobile nav--------------------*/
-    @media screen and (max-width: 450px) {
+  }
+
+  /*--------------------------------------responsive mobile nav--------------------*/
+  @media screen and (max-width: 450px) {
+
     /* MENU BURGER */
     .textMenu {
       margin-bottom: 0;
@@ -179,7 +171,7 @@
 
     .navbar-nav .dropdown-menu {
       text-align: center;
-      font-family: 'Red Hat Display',serif;
+      font-family: 'Red Hat Display', serif;
     }
 
     hr {
@@ -189,7 +181,7 @@
     }
   }
 
-    @media (min-width: 576px) {
+  @media (min-width: 576px) {
     .textMenu {
       display: none;
     }

@@ -13,8 +13,7 @@
     <title>CKMpro</title>
     
     <style>
-      /* ------------------------Css source-header---------------------------------- */
-      
+      /* ------------------------Css source-header------------------------------------- */
       @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
 
       .container-fluid 
@@ -53,10 +52,8 @@
         display: none;
       }
 
-
       /* ------------------------RESPONSIVE-header-ecran pc--------------------------------- */
       @media screen and (min-width: 769px) and (max-width: 2560px) {
-
         /* ENTÊTE FIXE STYLE */
         .fixed-top 
         {
@@ -83,7 +80,6 @@
 
 /* ------------------------RESPONSIVE-header-tablette--------------------------------- */      
       @media screen and (min-width: 451px) and (max-width: 768px) {
-
         /* ENTÊTE FIXE STYLE */
         .fixed-top 
         {
@@ -111,10 +107,8 @@
           height: 14vh;
         }
       }
-
       /* ------------------------RESPONSIVE-header-mobile--------------------------------- */      
       @media screen and (max-width: 450px) {
-
         /* ENTÊTE FIXE STYLE */
         .fixed-top 
         {
@@ -166,9 +160,7 @@
           display: block;
         }
       }
-
       /* ----------------------------------------------------------*/
-
       @media (min-width: 576px) {
         .textMenu 
         {

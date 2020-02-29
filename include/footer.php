@@ -1,185 +1,174 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>CKMpro</title>
     </head>
-    
-<style>
-     header, nav, section 
-    {
-    display: contents;
-    }
-    footer 
-    {
-        background-color: white;
-        border-top: 1px solid black;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
-    }
 
-    .footerhaut 
-    {
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
-    }
-
-    .footerbas 
-    {
-        display: flex;
-        justify-content: center;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
-    }
-
-    .colonne1 {
-
-        width: 30%;
-        align-items: center;
-        color: black !important;
-        text-decoration: none !important;
-        display: flex;
-        flex-direction: column;
-        margin-top: 2%;
-    }
-
-    .ftext1 {
-        text-decoration: none;
-        color: black;
-    }
-
-    .ftext1:hover {
-        text-decoration: none;
-        color: black;
-        background-color: blue;
-        color: white;
-    }
-
-    .colonne2 {
-
-        width: 30%;
-        color: black !important;
-        text-decoration: none !important;
-        margin-top: 2%;
-    }
-
-    .ftext2 {
-        text-decoration: none;
-        color: black;
-    }
-
-    .ftext2:hover {
-        text-decoration: none;
-        color: black;
-        background-color: blue;
-        color: white;
-    }
-
-    .colonne3 {
-        display: flex;
-        align-items: center;
-        width: 30%;
-        justify-content: center;
-        margin-top: 2%;
-    }
-
-    .insta
-    {
-        filter: drop-shadow(1px 2px 0px black);
-        
-    }
-
-    .snap:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .fb:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .insta:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .ordi {
-        display: none;
-    }
-
-    /* ----------------------------------------------------------------------------------------------------- */
-    /* ORDINATEUR */
-    @media screen and (min-width: 769px) and (max-width: 2560px) {
-        .flogo {
-            width: 10%;
+    <style>
+        header, nav, section {
+            display: contents;
         }
 
-        .footerhaut,.footerbas 
-        {
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
-        }
-    }
-
-    /* TABLETTE */
-    @media screen and (min-width: 451px) and (max-width: 768px) {
-        .flogo 
-        {
-            width: 20%;
-        }
-
-        .footerhaut,.footerbas 
-        {
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
-        }
-    }
-
-    /* TELEPHONE */
-
-    @media screen and (max-width: 450px) {
-        footer 
-        {
+        footer {
+            background-color: white;
             border-top: 1px solid black;
             font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+            font-family: 'Red Hat Display', serif;
         }
 
-        .flogo {
-            width: 50%;
-            margin-bottom: 15%;
+        .footerhaut {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 0.95em;
+            font-family: 'Red Hat Display', serif;
         }
 
-        .footerhaut 
-        {
-            flex-direction: column-reverse;
-            font-family: 'Red Hat Display',serif;
+        .footerbas {
+            display: flex;
+            justify-content: center;
+            font-size: 0.95em;
+            font-family: 'Red Hat Display', serif;
+        }
+
+        .colonne1 {
+
+            width: 30%;
+            align-items: center;
+            color: black !important;
+            text-decoration: none !important;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+        }
+
+        .ftext1 {
+            text-decoration: none;
+            color: black;
+        }
+
+        .ftext1:hover {
+            text-decoration: none;
+            color: black;
+            background-color: blue;
+            color: white;
         }
 
         .colonne2 {
-            order: -1;
+
+            width: 30%;
+            color: black !important;
+            text-decoration: none !important;
+            margin-top: 2%;
         }
 
-        .footerhaut 
-        {
-            align-items: center;
-            text-align: center;
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+        .ftext2 {
+            text-decoration: none;
+            color: black;
+        }
+
+        .ftext2:hover {
+            text-decoration: none;
+            color: black;
+            background-color: blue;
+            color: white;
         }
 
         .colonne3 {
-            width: 100%;
-            margin-bottom: 10%;
-            margin-top: 2vh;
+            display: flex;
+            align-items: center;
+            width: 30%;
+            justify-content: center;
+            margin-top: 2%;
         }
 
-        .footerhaut,.footerbas 
-        {
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+        .insta {
+            filter: drop-shadow(1px 2px 0px black);
         }
-    }
-</style>
+
+        .snap:hover {
+            transition: all ease .3s .1s;
+        }
+
+        .fb:hover {
+            transition: all ease .3s .1s;
+        }
+
+        .insta:hover {
+            transition: all ease .3s .1s;
+        }
+
+        .ordi {
+            display: none;
+        }
+
+        /* -----------------------------------------responsive ecran pc----------------------------------------------------------- */
+        
+        @media screen and (min-width: 769px) and (max-width: 2560px) {
+            .flogo {
+                width: 10%;
+            }
+
+            .footerhaut,
+            .footerbas {
+                font-size: 0.95em;
+                font-family: 'Red Hat Display', serif;
+            }
+        }
+
+        /* ------------------------------------------responsive tablette----------------------------------------------------------- */
+        @media screen and (min-width: 451px) and (max-width: 768px) {
+            .flogo {
+                width: 20%;
+            }
+
+            .footerhaut,
+            .footerbas {
+                font-size: 0.95em;
+                font-family: 'Red Hat Display', serif;
+            }
+        }
+        /* ------------------------------------------responsive telephone----------------------------------------------------------- */
+
+        @media screen and (max-width: 450px) {
+            footer {
+                border-top: 1px solid black;
+                font-size: 0.95em;
+                font-family: 'Red Hat Display', serif;
+            }
+
+            .flogo {
+                width: 50%;
+                margin-bottom: 15%;
+            }
+
+            .footerhaut {
+                flex-direction: column-reverse;
+                font-family: 'Red Hat Display', serif;
+            }
+
+            .colonne2 {
+                order: -1;
+            }
+
+            .footerhaut {
+                align-items: center;
+                text-align: center;
+                font-size: 0.95em;
+                font-family: 'Red Hat Display', serif;
+            }
+
+            .colonne3 {
+                width: 100%;
+                margin-bottom: 10%;
+                margin-top: 2vh;
+            }
+
+            .footerhaut,
+            .footerbas {
+                font-size: 0.95em;
+                font-family: 'Red Hat Display', serif;
+            }
+        }
+    </style>
     <footer>
         <div class="ensemblefooter">
             <div class="footerhaut text-center">
@@ -201,17 +190,17 @@
                 <div class="colonne3 text-center">
                     <div class="snap">
                         <a href="http://www.snapchat.com">
-                        <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%">
-                    </a>
+                            <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%">
+                        </a>
                     </div>
                     <div class="snap">
                         <a href="http://www.facebook.com">
-                        <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%">
-                    </a>
+                            <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%">
+                        </a>
                     </div>
                     <div class="snap">
                         <a href="http://www.instagram.com">
-                        <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
+                            <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
                     </div>
                 </div>
             </div>
@@ -222,8 +211,14 @@
     </footer>
     </body>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
-</html>
+    </html>

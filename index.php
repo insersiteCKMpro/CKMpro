@@ -1,48 +1,42 @@
-
 <?php 
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
 <style>
     /*-----------------------------------------------code source section-----------------------------------------*/
-/* Débaras*/
-marquee.flash:hover
-{
-    font-size: 2em;
-    height: 6.1vh;
-    background-color: rgba(0, 174, 239, 0.5);
-    margin-bottom: 5%;
-    color: #fff200;
-    /* align-content: center; */
-    /* display: flex; */
-}
-.flash
-    {
+    /* Débaras*/
+    marquee.flash:hover {
+        font-size: 2em;
+        height: 6.1vh;
+        background-color: rgba(0, 174, 239, 0.5);
+        margin-bottom: 5%;
+        color: #fff200;
+        /* align-content: center; */
+        /* display: flex; */
+    }
+
+    .flash {
         color: #00a651;
     }
 
     /*carousel Entreprise*/
-    section
-    {
+    section {
         width: 100%;
         height: 52vh;
     }
 
     /*Entreprise*/
-    .ets
-    {
+    .ets {
         text-align: center;
     }
 
     /*Activités*/
-    .activités
-    {
+    .activités {
         text-align: center;
     }
 
     /*Activités*/
-    .sectionB
-    {
+    .sectionB {
         /* width: 100%; */
         height: 38vh;
         justify-content: space-around;
@@ -51,29 +45,25 @@ marquee.flash:hover
     }
 
     /*Activités*/
-    .derat
-    {
+    .derat {
         width: 33.3%;
         text-align: center;
     }
 
     /*Activités*/
-    .nettoyage
-    {
+    .nettoyage {
         width: 33.3%;
         text-align: center;
     }
 
     /*Activités*/
-    .espacevert
-    {
+    .espacevert {
         width: 33.3%;
         text-align: center;
     }
 
     /*Professionnel Particulier*/
-    main
-    {
+    main {
         height: 3vh;
         width: 100%;
         justify-content: space-between;
@@ -84,28 +74,24 @@ marquee.flash:hover
         height: 43vh;
     }
 
-    .part 
-    {
+    .part {
         width: 50%;
         height: 32vh;
     }
 
     /*Professionnel Particulier*/
-    .mainh
-        {
+    .mainh {
         width: 100%;
         height: 36vh;
         display: flex;
     }
 
-    .ppro 
-    {
+    .ppro {
         text-align: center;
     }
 
     /*avis*/
-    .mainb
-    {
+    .mainb {
         width: 100%;
         height: 25vh;
         display: flex;
@@ -113,36 +99,31 @@ marquee.flash:hover
     }
 
     /*carousel avis gauche*/
-    .carouL
-    {
+    .carouL {
         width: 90%;
     }
 
     /*carousel avis droite*/
-    .carouR 
-    {
+    .carouR {
         width: 90%;
         display: flex;
         margin: auto;
     }
 
     /*carousel avis droite et gauche*/
-    .carousel-control-prev
-    {
+    .carousel-control-prev {
         width: 10%;
         height: 18vh;
     }
 
     /*carousel avis droite et gauche*/
-    .carousel-control-next
-    {
+    .carousel-control-next {
         width: 10%;
         height: 18vh;
     }
 
     /*e-commerce*/
-    .sectionecom
-    {
+    .sectionecom {
         height: 39vh;
         margin-top: 12vh;
         display: flex;
@@ -196,28 +177,25 @@ marquee.flash:hover
 
     /*-------------------------------------------------section-ecran pc--------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
+
         /*carousel Entreprise*/
-        section
-        {
+        section {
             width: 100%;
             height: 52vh;
         }
 
         /*Entreprise*/
-        .ets
-        {
+        .ets {
             text-align: center;
         }
 
         /*Activités*/
-        .activités
-        {
+        .activités {
             text-align: center;
         }
 
         /*Activités*/
-        .sectionB
-        {
+        .sectionB {
             /* width: 100%; */
             height: 33vh;
             justify-content: space-around;
@@ -226,38 +204,34 @@ marquee.flash:hover
         }
 
         /*Activités*/
-        .derat
-        {
+        .derat {
             width: 30%;
             text-align: center;
             display: flow-root;
         }
 
         /*Activités*/
-        .nettoyage
-            {
-                width: 30%;
-                text-align: center;
-                display: flow-root;
-            }
+        .nettoyage {
+            width: 30%;
+            text-align: center;
+            display: flow-root;
+        }
 
         /*Activités*/
-        .espacevert
-            {
-                width: 30%;
-                text-align: center;
-                display: flow-root;
-            }
+        .espacevert {
+            width: 30%;
+            text-align: center;
+            display: flow-root;
+        }
 
         .cible {
-    
+
             margin-top: 15vh;
             text-align: center;
         }
 
         /*Professionnel Particulier*/
-        main
-            {
+        main {
             height: 3vh;
             width: 100%;
             justify-content: space-between;
@@ -270,16 +244,14 @@ marquee.flash:hover
         }
 
         /*Professionnel Particulier*/
-        .mainh
-            {
-                width: 100%;
-                height: 75vh;
-                display: flex;
-            }
+        .mainh {
+            width: 100%;
+            height: 75vh;
+            display: flex;
+        }
 
         /*avis*/
-        .mainb
-            {
+        .mainb {
             width: 100%;
             height: 25vh;
             display: flex;
@@ -287,176 +259,151 @@ marquee.flash:hover
         }
 
         /*carousel avis gauche*/
-        .carouL
-        {
+        .carouL {
             width: 100%;
         }
 
         /*carousel avis droite*/
-        .carouR
-        {
+        .carouR {
             height: 18vh;
             width: 100%;
         }
 
         /*carousel avis droite et gauche*/
-        .carousel-control-prev
-        {
+        .carousel-control-prev {
             width: 10%;
             height: 18vh;
         }
 
         /*carousel avis droite et gauche*/
-        .carousel-control-next
-        {
+        .carousel-control-next {
             width: 10%;
             height: 18vh;
         }
 
         /*e-commerce*/
-        .sectionecom
-        {
+        .sectionecom {
             height: 39vh;
             margin-top: 12vh;
             display: flex;
             justify-content: space-around;
         }
 
-        .ecom 
-        {
+        .ecom {
             text-align: center;
         }
 
-        .img1 
-        {
+        .img1 {
             margin-top: 30px;
             width: 40vh;
             height: 15vh;
         }
 
-        .img3 
-        {
+        .img3 {
             width: 95%;
             height: 190px;
         }
 
-        .img4 
-        {
+        .img4 {
             width: 2%;
             height: 20px;
         }
 
-        .imgC 
-        {
+        .imgC {
             width: 100%;
             margin-top: 1.5%;
         }
 
-        .imgM 
-        {
+        .imgM {
             display: flex;
             margin: auto;
         }
 
-        .imgl 
-        {
+        .imgl {
             width: 50%;
             height: 25vh;
         }
 
-        .imgp 
-        {
+        .imgp {
             width: 10%;
             height: 25vh;
             margin-top: 0;
         }
 
-        .fivetoile 
-        {
+        .fivetoile {
             width: 40%;
         }
 
-        .snap:hover 
-        {
+        .snap:hover {
             transition: all ease .3s .1s;
         }
 
-        .fb:hover 
-        {
+        .fb:hover {
             transition: all ease .3s .1s;
         }
 
-        .insta:hover 
-        {
+        .insta:hover {
             transition: all ease .3s .1s;
         }
+
         /*Entreprise*/
-        .sectionM
-        {
+        .sectionM {
             width: 75%;
-            height: 32
-vh;
+            height: 32 vh;
             /*display: flex;*/
             margin: 0 auto;
             display: flow-root;
         }
-        
+
     }
+
     /* --------------------------------------------section tablette----------------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
+
         /* Débaras*/
-        .flash
-        {
+        .flash {
             color: #00aeef;
         }
 
         /*carousel Entreprise*/
-        section
-            {
+        section {
             width: 100%;
             height: 52vh;
         }
 
         /*Entreprise*/
-        .sectionM
-            {
+        .sectionM {
             width: 100%;
         }
 
         /*Entreprise*/
-        .ets
-        {
+        .ets {
             text-align: center;
         }
 
         /*Activités*/
-        .activités
-            {
+        .activités {
             text-align: center;
         }
 
-        .sectionB 
-        {
+        .sectionB {
             height: 52vh;
         }
 
         /*Activités*/
-        .derat
-            {
+        .derat {
             width: 30.3%;
-            
+
         }
 
         /*Activités*/
-        .nettoyage
-        {
+        .nettoyage {
             width: 30.3%;
-            
+
         }
 
         /*Activités*/
-        .espacevert
-        {
+        .espacevert {
             width: 30.3%;
         }
 
@@ -466,31 +413,32 @@ vh;
         }
 
         /*Professionnel Particulier*/
-        main
-            {
+        main {
             height: 3vh;
             width: 100%;
             justify-content: center;
         }
 
         .mainh
+
         /*Professionnel Particulier*/
             {
-                width: 100%;
-                height: 57vh;
-                display: FLEX;
-                JUSTIFY-CONTENT: space-around;
-            }
+            width: 100%;
+            height: 57vh;
+            display: FLEX;
+            JUSTIFY-CONTENT: space-around;
+        }
 
         .img1 {
             margin-top: 30px;
             width: 40%;
             height: 15vh;
         }
-        .propart
-        {
+
+        .propart {
             width: 48%
         }
+
         .img3 {
             width: 90%;
             height: 190px;
@@ -513,33 +461,28 @@ vh;
 
     /* -------------------------------------------------------section-portable-----------------------------------------*/
     @media all and (max-width: 450px) {
-        body 
-        {
+        body {
             width: 100%
         }
-        
+
         /* Débaras*/
-        .flash
-            {
+        .flash {
             color: #00aeef;
         }
 
         /*carousel Entreprise*/
-        section
-            {
+        section {
             width: 100%;
             height: 52vh;
         }
 
-        .sectionM 
-        {
+        .sectionM {
             width: 100%;
             height: 94vh;
         }
 
         /*Entreprise*/
-        .ets
-            {
+        .ets {
             text-align: center;
         }
 
@@ -560,15 +503,13 @@ vh;
         }
 
         /*Activités*/
-        .nettoyage
-            {
+        .nettoyage {
             width: 100%;
             text-align: center;
         }
 
         /*Activités*/
-        .espacevert
-            {
+        .espacevert {
             width: 100%;
             text-align: center;
         }
@@ -600,8 +541,7 @@ vh;
             text-align: center
         }
 
-        .mainh
-            {
+        .mainh {
             height: 135vh;
             display: flex;
             flex-direction: column;
@@ -667,6 +607,7 @@ vh;
         .imgM {
             display: flex;
         }
+
         .imgl {
             width: 50%;
             height: 10vh;
@@ -680,14 +621,13 @@ vh;
             display: flex;
             margin: auto 0;
         }
-    
-    @media (min-width: 576px) {
-        .textMenu 
-        {
-            display: none;
-            font-family: 'Red Hat Display', serif;
+
+        @media (min-width: 576px) {
+            .textMenu {
+                display: none;
+                font-family: 'Red Hat Display', serif;
+            }
         }
-    }
 
     }
 </style>
@@ -695,8 +635,11 @@ vh;
 <div class="container-fluid">
     <section>
         <main class="text-center">
-            <a href="nettoyage.php#debarras" > <marquee class="flash" width="1000" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous
-                chargeons aussi de débarrasser!!</marquee></a>
+            <a href="nettoyage.php#debarras">
+                <marquee class="flash" width="1000" behavior="" direction="">Vous avez besoin de vos deux mains libres?
+                    Nous nous
+                    chargeons aussi de débarrasser!!</marquee>
+            </a>
             <!--le debaras en flash-->
         </main>
         <div class="sectionH">
@@ -732,17 +675,28 @@ vh;
         <!--l'entreprise CKMpro-->
         <div class="sectionM">
             <p class="text-justify">
-            Agence de proximité à taille humaine, CKM PRO fidélise ses clients par une personnalisation du service apporté et la mise en place d'une structure d'encadrement efficiente. 
-            L'expérience et l'ancienneté du gérant et de ses collaborateurs contribue au développement et à la bonne gestion de la société.   
-            Discrétion : Professionnels, que vous soyez restaurateurs, gérants d’hôtels ou autres, il est évident que la discrétion et la capacité à intervenir à des horaires qui ne gênent pas le bon fonctionnement 
-            de votre établissement sont primordiaux. C’est pourquoi nos contrats réservés aux professionnels et particuliers tiennent compte de ces contraintes pour vous offrir un service qui soit le plus discret possible.  
+                Agence de proximité à taille humaine, CKM PRO fidélise ses clients par une personnalisation du service
+                apporté et la mise en place d'une structure d'encadrement efficiente.
+                L'expérience et l'ancienneté du gérant et de ses collaborateurs contribue au développement et à la bonne
+                gestion de la société.
+                Discrétion : Professionnels, que vous soyez restaurateurs, gérants d’hôtels ou autres, il est évident
+                que la discrétion et la capacité à intervenir à des horaires qui ne gênent pas le bon fonctionnement
+                de votre établissement sont primordiaux. C’est pourquoi nos contrats réservés aux professionnels et
+                particuliers tiennent compte de ces contraintes pour vous offrir un service qui soit le plus discret
+                possible.
             </p>
             <p class="text-justify">
-            Réactivité / rapidité : Nous répondons aux urgences avec la même qualité et la même conscience professionnelle que pour toute autre mission.   Respect des délais :   Le temps de travail est estimé à sa juste valeur et les délais sont toujours respectés.   
-            Professionnalisme : Le travail est toujours rendu impeccable malgré les conditions parfois extrêmes dans lesquelles nous intervenons.   
-            Sécurité /Hygiène :  Toutes les mesures d'hygiène et de sécurité sont prises sur les chantiers pendant l'exécution des travaux. Éliminer les nuisible est notre mission.   Mais nous n’oublions pas la sécurité : de vos enfants, de vous-même de vos animaux domestiques et de l’environnement.     
-            Entreprise agréée et produits professionnels certifiés seront les gages d’une intervention efficace en toute sécurité.  
-            <p>
+                Réactivité / rapidité : Nous répondons aux urgences avec la même qualité et la même conscience
+                professionnelle que pour toute autre mission. Respect des délais : Le temps de travail est estimé à sa
+                juste valeur et les délais sont toujours respectés.
+                Professionnalisme : Le travail est toujours rendu impeccable malgré les conditions parfois extrêmes dans
+                lesquelles nous intervenons.
+                Sécurité /Hygiène : Toutes les mesures d'hygiène et de sécurité sont prises sur les chantiers pendant
+                l'exécution des travaux. Éliminer les nuisible est notre mission. Mais nous n’oublions pas la sécurité :
+                de vos enfants, de vous-même de vos animaux domestiques et de l’environnement.
+                Entreprise agréée et produits professionnels certifiés seront les gages d’une intervention efficace en
+                toute sécurité.
+                <p>
         </div><br>
 
         <h2 class="activités">Nos Activités</h2><br>
@@ -751,7 +705,9 @@ vh;
             <div class="derat">
                 <img src="include/img/3Dmaq.png" class="img3" alt="">
                 <h2><br>3D</h2>
-                <br><p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+                <br>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
                     Molestiae quasi magnam quos obcaecati?
@@ -760,7 +716,9 @@ vh;
             <div class="nettoyage">
                 <img src="include/img/nettoyagemaq.png" class="img3" alt="">
                 <h2><br>Nettoyage</h2>
-                <br><p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+                <br>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
                     Molestiae quasi magnam quos obcaecati?
@@ -769,7 +727,9 @@ vh;
             <div class="espacevert">
                 <img src="include/img/espacevertmaq.png" class="img3" alt="">
                 <h2><br>Espaces verts</h2>
-                <br><p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+                <br>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
                     Molestiae quasi magnam quos obcaecati?
@@ -787,88 +747,85 @@ vh;
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
                     praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
                     dignissimos iusto perspiciatis.
-                <P>
-                <div class="mainb">
-                    <!--Les Avis -->
-                    <div class="carouL">
-                        <!--Les Avis carousel de gauche -->
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner text-center">
-                                <div class="carousel-item active">
-                                    <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit
-                                        suscipit
-                                        assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum
-                                        ea qui!
-                                    </p>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit
-                                        suscipit
-                                        assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum
-                                        ea qui!
-                                    </p>
+                    <P>
+                        <div class="mainb">
+                            <!--Les Avis -->
+                            <div class="carouL">
+                                <!--Les Avis carousel de gauche -->
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner text-center">
+                                        <div class="carousel-item active">
+                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Asperiores voluptas voluptate libero, quasi adipisci vero
+                                                delectus odit suscipit assumenda rerum deleniti voluptates
+                                                nemo fuga mollitia unde. Quas earum ea qui!
+                                            </p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Asperiores voluptas voluptate libero, quasi adipisci vero
+                                                delectus odit suscipit assumenda rerum deleniti voluptates
+                                                nemo fuga mollitia unde. Quas earum ea qui!
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
             <div class="propart">
                 <img src="include/img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Particulier</h4>
                 <P class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
-                    praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
-                    dignissimos iusto perspiciatis.
-                <P>
-                <div class="carouR">
-                    <!--Les Avis carousel de droite -->
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner text-center">
-                            <div class="carousel-item active">
-                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores voluptas voluptate libero, quasi adipisci vero
-                                    delectus odit suscipit
-                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde.
-                                    Quas earum ea qui!
-                                </p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores voluptas voluptate libero, quasi adipisci vero
-                                    delectus odit suscipit
-                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde.
-                                    Quas earum ea qui!
-                                </p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores voluptas voluptate libero, quasi adipisci vero
+                    delectus odit suscipit assumenda rerum deleniti voluptates
+                    nemo fuga mollitia unde. Quas earum ea qui!
+                    <P>
+                        <div class="carouR">
+                            <!--Les Avis carousel de droite -->
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner text-center">
+                                    <div class="carousel-item active">
+                                        <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Asperiores voluptas voluptate libero, quasi adipisci vero
+                                            delectus odit suscipit assumenda rerum deleniti voluptates
+                                            nemo fuga mollitia unde. Quas earum ea qui!
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Asperiores voluptas voluptate libero, quasi adipisci vero
+                                            delectus odit suscipit assumenda rerum deleniti voluptates
+                                            nemo fuga mollitia unde. Quas earum ea qui!
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
             </div>
         </main>
-    
-    <h2 class="ecom">La Boutique CKM</h2>
-    <!--ecommerce-->
-    <div class="sectionecom">
-        <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl" alt="">
-        <img src="include/img/produitspray2.png" class="imgp" alt="">
-    </div>
+
+        <h2 class="ecom">La Boutique CKM</h2>
+        <!--ecommerce-->
+        <div class="sectionecom">
+            <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl" alt="">
+            <img src="include/img/produitspray2.png" class="imgp" alt="">
+        </div>
 
     </section>
 
-    </div>
-        
-    
+</div>
+
+
 
 <?php 
 	require_once("include/footer.php");
