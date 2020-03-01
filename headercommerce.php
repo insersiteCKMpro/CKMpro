@@ -180,10 +180,106 @@
 
     /* ------------------------------------------------------------------------------------FIN HEADER */
 
- section
- {
+section
+{
     background-color:gold;
- }
+    height:20vh;
+}
+/* -----------------------------------------------------FOOTER--------------------------------------- */
+.footercolone
+{
+    display:flex;
+    width:100%;
+    background-color:grey;
+    border-top:2px solid black;
+}
+.colone1
+{
+    display:flex;
+    flex-direction:column;
+    width:33.3%;
+    background-color:blue;
+    align-items:center;
+}
+.ckm
+{
+    width:30%;
+}
+.partieconnexion
+{
+    display:flex;
+}
+.profil
+{
+    width:20%;
+}
+
+.partiepanier
+{
+    display:flex;
+}
+.panier
+{
+    width:20%;
+}
+
+.partierecherche
+{
+    display:flex;
+}
+.loupe
+{
+    width:20%;
+}
+.texte1
+{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.colone2
+{
+    display:flex;
+    flex-direction:column;
+    width:33.3%;
+    background-color:white;
+    align-items:center;
+    justify-content:center;
+}
+.texte2
+{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+.colone3
+{
+    width:33.3%;
+    background-color:red;
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    
+}
+.fb
+{
+    width:5%;
+}
+.snap
+{
+    width:5%;
+}
+.insta
+{
+    width:5%;
+}
+.copy
+{
+    background-color:pink;
+    width:100%;
+}
 
 </style>
 
@@ -212,19 +308,69 @@
 <div class="image3"></div>
 
 
-
 </div>
 
 
 </header>
 
 <body>
+<div class="container-fluid">
+
 <section>
-<p>TETSTSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+
 </section>
-   
+
 </body>
 
+<footer>
+<div class="footercolone">
 
+<div class="colone1">
+<div class="texte1">
+<img class="ckm img-fluid"src="img/CKMHOMEFOOTER.png" alt="">
+<a href="">3D</a>
+<a href="">Nettoyage</a>
+
+<div class="partieconnexion"> 
+<img class="profil img-fluid" src="img/profil.png" alt="">
+<a href="">Connexion</a> 
+</div>
+
+<div class="partiepanier">
+<img class="panier img-fluid" src="img/panier.png" alt="">
+<a href="">Panier</a>
+</div>
+
+<div class="partierecherche">
+<img class="loupe img-fluid" src="img/loupe-recherche.png" alt="">
+<a href="">Rechercher</a>
+</div>
+
+</div>
+</div>
+
+<div class="colone2">
+<div class="texte2">
+<a href="">La Vitrine</a>
+<a href="">Contact</a>
+<a href="">Politique de confidentialité</a>
+<a href="">Mentions Légales</a>
+</div>
+</div>
+
+<div class="colone3">
+<img class="fb img-fluid" src="img/ckmfbblue.png" alt="">
+<img class="snap img-fluid" src="img/ckmsnapchatyellow.png" alt="">
+<img class="insta img-fluid" src="img/ckminstagramgreen.png" alt="">
+</div>
+
+</div>
+
+<div class="copy text-center">
+<div id="copyright" role="contentinfo">Copyright 2020 Insersite</div>
+</div>
+</footer>
+
+</div>
 </div>
 </html>
