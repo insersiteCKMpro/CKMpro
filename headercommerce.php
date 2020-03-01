@@ -12,6 +12,8 @@
 
 <style>
 
+/* ------------------------------------------------------------------------------------HEADER */
+
 /* tel+num+ckmboutique */
 .lignehaut  
 {
@@ -134,15 +136,15 @@
 }
 .image1
 {
-    width:33.3%;
+    width:23.3%;
 }
 .image2
 {
-    width:33.3%;
+    width:53.3%;
 }
 .image3
 {
-    width:33.3%;
+    width:23.3%;
 }
 
 .img1
@@ -175,6 +177,14 @@
 }
 
     }
+
+    /* ------------------------------------------------------------------------------------FIN HEADER */
+
+ section
+ {
+    background-color:gold;
+ }
+
 </style>
 
 <header>
@@ -199,12 +209,21 @@
 <img class="img2 img-fluid" src="img/CKMPROLOGODEFBOUTIQUE.png" alt="">
 </div>
 
-<div class="image3">
+<div class="image3"></div>
+
+
 
 </div>
 
-</div>
+
 </header>
+
+<body>
+<section>
+<p>TETSTSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+</section>
+   
+</body>
 
 
 </div>
