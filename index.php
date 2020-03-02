@@ -9,7 +9,17 @@
         width: 75%;
         margin: 0 auto;
     }
+
+    .carousel-control-prev {
+        left: 0;
+        margin: auto;
+    }
     
+    .carousel-control-next {
+        right: 0;
+        margin: auto;
+    }
+
     .pact{
         width: 95%;
         margin: 0 auto;
@@ -87,7 +97,12 @@
         justify-content: space-between;
     }
 
-    .propart {
+    .pro {
+        width: 50%;
+        height: 43vh;
+    }
+
+    .part {
         width: 50%;
         height: 43vh;
     }
@@ -113,7 +128,6 @@
         width: 100%;
         height: 25vh;
         display: flex;
-        justify-content: space-around;
     }
 
     /*carousel avis gauche*/
@@ -142,7 +156,6 @@
 
     /*e-commerce*/
     .sectionecom {
-        height: 39vh;
         margin: 5vh 0;
         display: flex;
         justify-content: space-around;
@@ -274,7 +287,13 @@
             justify-content: space-between;
         }
 
-        .propart {
+        .pro {
+            width: 50%;
+            height: 50vh;
+            margin: 0 3%;
+        }
+
+        .part {
             width: 50%;
             height: 50vh;
             margin: 0 3%;
@@ -292,7 +311,6 @@
             width: 100%;
             height: 25vh;
             display: flex;
-            justify-content: space-around;
         }
 
         /*carousel avis gauche*/
@@ -320,7 +338,6 @@
 
         /*e-commerce*/
         .sectionecom {
-            height: 39vh;
             margin: 5vh 0;
             display: flex;
             justify-content: space-around;
@@ -481,7 +498,11 @@
             height: 15vh;
         }
 
-        .propart {
+        .pro {
+            width: 48%
+        }
+
+        .part {
             width: 48%
         }
 
@@ -501,6 +522,7 @@
 
         .imgM {
             display: flex;
+            margin-top: 0.4px;
         }
     }
 
@@ -553,13 +575,12 @@
 
         .activités {
             text-align: center;
-            margin-top: 5vh;
+            margin-top: 1vh;
         }
 
         .sectionB {
             height: 210vh;
             flex-direction: column;
-            margin-top: 25%;
         }
 
         
@@ -592,12 +613,20 @@
             justify-content: center;
         }
 
-        .propart {
+        .pro {
             height: 70vh;
             width: 95%;
             display: flex;
             flex-direction: column;
-            margin: auto;
+            margin: 2vh auto;
+            border: 0.5px solid gray;
+        }
+        .part {
+            height: 70vh;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            margin: 2vh auto;
             border: 0.5px solid gray;
         }
 
@@ -606,14 +635,14 @@
         }
 
         .mainh {
-            height: 135vh;
+            height: 145vh;
             display: flex;
             flex-direction: column;
         }
 
         .mainb {
             width: 100%;
-            height: 20vh;
+            height: 23vh;
             display: flex;
             flex-direction: column;
             text-align: inherit;
@@ -632,7 +661,6 @@
         }
 
         .sectionecom {
-            height: 25vh;
             display: flex;
             flex-direction: row;
             JUSTIFY-CONTENT: space-around
@@ -667,6 +695,7 @@
 
         .imgM {
             display: flex;
+            margin-top: 0.4px;
         }
 
         .imgl {
@@ -797,7 +826,7 @@
         <h2 class="cible">Qui sont nos clients ?</h2><br>
         <!--les cibles de CKMpro-->
         <main class="mainh">
-            <div class="propart">
+            <div class="pro">
                 <img src="include/img/professionnelmaq.png" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Professionnel</h4>
                 <P class="text-justify">
@@ -836,7 +865,7 @@
                             </div>
                         </div>
             </div>
-            <div class="propart">
+            <div class="part">
                 <img src="include/img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Particulier</h4>
                 <P class="text-justify">
@@ -849,7 +878,7 @@
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner text-center">
                                     <div class="carousel-item active">
-                                        <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                        <img src="include/img/5STARS.png" class="fivetoile img-fluid" alt="">
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Asperiores voluptas voluptate libero, quasi adipisci vero
@@ -859,7 +888,7 @@
                                         </p>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                        <img src="include/img/5STARS.png" class="fivetoile img-fluid" alt="">
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Asperiores voluptas voluptate libero, quasi adipisci vero

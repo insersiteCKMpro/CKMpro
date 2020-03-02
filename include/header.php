@@ -47,6 +47,10 @@
         display: none;
       }
 
+      .boutonBtq {
+        display: none;
+      }
+
       /* ------------------------RESPONSIVE-header-ecran pc--------------------------------- */
       @media screen and (min-width: 769px) and (max-width: 2560px) {
         /* ENTÊTE FIXE STYLE */
@@ -57,7 +61,8 @@
         }
 
         /* ICONE TEL ENTÊTE FIXE STYLE */
-        #fas {
+        #fas 
+        {
           display: none;
         }
 
@@ -80,7 +85,8 @@
         }
 
         /* ICONE TEL ENTÊTE FIXE STYLE */
-        #fas {
+        #fas
+        {
           display: none;
         }
 
@@ -141,7 +147,29 @@
           top: 21vh;
         }
 
+        /* Bouton boutique  */
+        .boutonBtq {
+          width: 8vh;
+          height: 8vh;
+          background-color: lightgrey;
+          border: 1px solid black;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: fixed;
+          z-index: 1;
+          right: 5px;
+          top: 41vh;
+        }
+
         #lienTel 
+        {
+          color: black;
+          text-decoration: none;
+          background-color: transparent;
+        }
+        #lienBtq
         {
           color: black;
           text-decoration: none;
@@ -149,6 +177,11 @@
         }
 
         #iconTel 
+        {
+          font-size: 2em;
+          display: block;
+        }
+        #iconBtq 
         {
           font-size: 2em;
           display: block;
@@ -177,6 +210,8 @@
         <div class="logo">
           <a href="index.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre"></a></div>
         <div class="boutonTel"><a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
+        
+        <div class="boutonbtq"><a href="../boutique/index.php" id="lienBtq"><i class="fasss fa-phone-alt" id="iconBtq"></i></a>
         </div>
       </header>
     </div>
