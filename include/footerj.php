@@ -170,7 +170,7 @@
             <div class="footerhaut text-center">
                 <div class="colonne1 text-center">
 
-                    <a href="homepage.php"><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="100%"></a>
+                    <a href="index.php"><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="100%"></a>
                     <a class="ftext1" href="3D.php">3D</a>
                     <a class="ftext1" href="nettoyage.php">Nettoyage</a>
                     <a class="ftext1" href="espacevert.php">Espace Verts</a>

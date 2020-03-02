@@ -2,21 +2,41 @@
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
+
 <style>
-    /*-----------------------------------------------code source section-----------------------------------------*/
+    /*--------------------------------------------code source section----------------------------------*/
+    p{
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .pact{
+        width: 95%;
+        margin: 0 auto;
+    }
     /* Débaras*/
     marquee.flash:hover {
-        font-size: 2em;
-        height: 6.1vh;
-        background-color: rgba(0, 174, 239, 0.5);
-        margin-bottom: 5%;
+        font-size: x-large;
+        height: 5.5vh;
+        background-color: rgb(0, 174, 239);
         color: #fff200;
-        /* align-content: center; */
-        /* display: flex; */
+        transition: 1s;
+        display: flex;
+        padding-top: 0.25%;
+    }
+    .marki {
+    /* padding: .2em; */
+    /* background-color: #fcf8e3; */
+    display: flex;
+    font-size: large;
     }
 
     .flash {
         color: #00a651;
+        height: 5vh;
+        display: flex;
+        padding-top: 0.5%;
+        transition: 1s;
     }
 
     /*carousel Entreprise*/
@@ -37,10 +57,8 @@
 
     /*Activités*/
     .sectionB {
-        /* width: 100%; */
-        height: 38vh;
+        height: 68vh;
         justify-content: space-around;
-        /* flex-direction: column; */
         display: flex;
     }
 
@@ -64,7 +82,7 @@
 
     /*Professionnel Particulier*/
     main {
-        height: 3vh;
+        height: 1vh;
         width: 100%;
         justify-content: space-between;
     }
@@ -125,7 +143,7 @@
     /*e-commerce*/
     .sectionecom {
         height: 39vh;
-        margin-top: 12vh;
+        margin: 5vh 0;
         display: flex;
         justify-content: space-around;
     }
@@ -143,7 +161,6 @@
 
     .img3 {
         width: 95%;
-        height: 190px;
     }
 
     .img4 {
@@ -153,7 +170,7 @@
 
     .imgC {
         width: 100%;
-        margin-top: 1.5%;
+
     }
 
     .imgM {
@@ -175,9 +192,32 @@
         width: 40%;
     }
 
-    /*-------------------------------------------------section-ecran pc--------------------------------------- */
+    /*---------------------------------------------section-ecran pc----------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
 
+        marquee.flash:hover {
+            font-size: x-large;
+            height: 5.5vh;
+            background-color: rgb(0, 174, 239);
+            color: #fff200;
+            transition: 1s;
+            display: flex;
+            padding-top: 0.25%;
+        }
+        .marki {
+            /* padding: .2em; */
+            /* background-color: #fcf8e3; */
+            display: flex;
+            font-size: large;
+        }
+
+        .flash {
+            color: #00a651;
+            height: 5vh;
+            display: flex;
+            padding-top: 0.5%;
+            transition: 1s;
+        }
         /*carousel Entreprise*/
         section {
             width: 100%;
@@ -197,7 +237,7 @@
         /*Activités*/
         .sectionB {
             /* width: 100%; */
-            height: 33vh;
+            height: 68vh;
             justify-content: space-around;
             /* flex-direction: column; */
             display: flex;
@@ -225,14 +265,11 @@
         }
 
         .cible {
-
-            margin-top: 15vh;
             text-align: center;
         }
 
         /*Professionnel Particulier*/
         main {
-            height: 3vh;
             width: 100%;
             justify-content: space-between;
         }
@@ -284,7 +321,7 @@
         /*e-commerce*/
         .sectionecom {
             height: 39vh;
-            margin-top: 12vh;
+            margin: 5vh 0;
             display: flex;
             justify-content: space-around;
         }
@@ -301,7 +338,6 @@
 
         .img3 {
             width: 95%;
-            height: 190px;
         }
 
         .img4 {
@@ -311,7 +347,6 @@
 
         .imgC {
             width: 100%;
-            margin-top: 1.5%;
         }
 
         .imgM {
@@ -345,35 +380,48 @@
         .insta:hover {
             transition: all ease .3s .1s;
         }
-
-        /*Entreprise*/
-        .sectionM {
-            width: 75%;
-            height: 32 vh;
-            /*display: flex;*/
-            margin: 0 auto;
-            display: flow-root;
-        }
-
     }
 
-    /* --------------------------------------------section tablette----------------------------------------------*/
+    /* ---------------------------------------section tablette----------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
+        p{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .pact{
+            width: 95%;
+            margin: 0 auto;
+        }
 
-        /* Débaras*/
+        marquee.flash:hover {
+        font-size: x-large;
+        height: 5.5vh;
+        background-color:  rgb(0, 174, 239);
+        color: #fff200;
+        transition: 1s;
+        display: flex;
+        padding-top: 0.5%;
+        }
+
+        .marki {
+        /* padding: .2em; */
+        /* background-color: #fcf8e3; */
+        display: flex;
+        font-size: large;
+        }
+
         .flash {
-            color: #00aeef;
+            height: 4vh;
+            display: flex;
+            padding-top: 0.5%;
+            transition: 1s;
+            color: #00a651;
         }
 
         /*carousel Entreprise*/
         section {
             width: 100%;
             height: 52vh;
-        }
-
-        /*Entreprise*/
-        .sectionM {
-            width: 100%;
         }
 
         /*Entreprise*/
@@ -387,7 +435,7 @@
         }
 
         .sectionB {
-            height: 52vh;
+            height: 60vh;
         }
 
         /*Activités*/
@@ -409,7 +457,6 @@
 
         .cible {
             text-align: center;
-            margin: 0;
         }
 
         /*Professionnel Particulier*/
@@ -419,12 +466,11 @@
             justify-content: center;
         }
 
-        .mainh
 
         /*Professionnel Particulier*/
-            {
+        .mainh {
             width: 100%;
-            height: 57vh;
+            height: 70vh;
             display: FLEX;
             JUSTIFY-CONTENT: space-around;
         }
@@ -441,7 +487,6 @@
 
         .img3 {
             width: 90%;
-            height: 190px;
         }
 
         .img4 {
@@ -459,26 +504,46 @@
         }
     }
 
-    /* -------------------------------------------------------section-portable-----------------------------------------*/
+    /* -------------------------------------------------section-portable------------------------------*/
     @media all and (max-width: 450px) {
+        p{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+
         body {
             width: 100%
         }
 
-        /* Débaras*/
+        marquee.flash:hover {
+            font-size: x-large;
+            height: 5.5vh;
+            background-color:  rgb(0, 174, 239);
+            color: #fff200;
+            transition: 1s;
+            display: flex;
+            padding-top: 1%;
+        }
+        .marki {
+        /* padding: .2em; */
+        /* background-color: #fcf8e3; */
+        display: flex;
+        font-size: large;
+        }
+
         .flash {
-            color: #00aeef;
+            height: 4vh;
+            display: flex;
+            padding-top: 0.5%;
+            transition: 1s;
+            color: #00a651;
         }
 
         /*carousel Entreprise*/
         section {
             width: 100%;
             height: 52vh;
-        }
-
-        .sectionM {
-            width: 100%;
-            height: 94vh;
         }
 
         /*Entreprise*/
@@ -492,10 +557,12 @@
         }
 
         .sectionB {
-            height: 160vh;
+            height: 210vh;
             flex-direction: column;
-            margin-top: 0;
+            margin-top: 25%;
         }
+
+        
 
         .derat {
             width: 100%;
@@ -516,13 +583,10 @@
 
         .cible {
             text-align: center;
-            margin-top: 0;
         }
 
-        main
-
         /*Professionnel Particulier*/
-            {
+        main {
             height: 3vh;
             width: 100%;
             justify-content: center;
@@ -560,10 +624,8 @@
             width: 100%;
         }
 
-        .carouR
-
         /*carousel avis droite*/
-            {
+        .carouR {
             margin-top: 2vh;
             height: 18vh;
             width: 100%;
@@ -589,7 +651,6 @@
 
         .img3 {
             width: 100%;
-            height: 20vh;
             display: flex;
             margin: auto;
         }
@@ -621,27 +682,23 @@
             display: flex;
             margin: auto 0;
         }
-
-        @media (min-width: 576px) {
-            .textMenu {
-                display: none;
-                font-family: 'Red Hat Display', serif;
-            }
-        }
-
     }
+    @media (min-width: 576px) {
+        .textMenu {
+            display: none;
+            font-family: 'Red Hat Display', serif;
+        }
+    }
+
 </style>
 
 <div class="container-fluid">
     <section>
-        <main class="text-center">
-            <a href="nettoyage.php#debarras">
-                <marquee class="flash" width="1000" behavior="" direction="">Vous avez besoin de vos deux mains libres?
-                    Nous nous
-                    chargeons aussi de débarrasser!!</marquee>
-            </a>
-            <!--le debaras en flash-->
-        </main>
+        
+        <a href="nettoyage.php#debarras" class="marki">
+            <marquee class="flash infinite" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous chargeons aussi de débarrasser!!</marquee>
+        </a>
+        <!--le debaras en flash-->
         <div class="sectionH">
             <!--carousel-->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -652,13 +709,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="include/img/debarrascarrousel.png" class="imgC" alt="...">
+                        <img src="include/img/debarrascarrousel.png" class="imgC img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="include/img/newimg2560x765.png" class="imgC" alt="...">
+                        <img src="include/img/newimg2560x765.png" class="imgC img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="include/img/produitredim2560vw765vh.png" class="imgC" alt="...">
+                        <img src="include/img/produitredim2560vw765vh.png" class="imgC img-fluid" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -706,7 +763,7 @@
                 <img src="include/img/3Dmaq.png" class="img3" alt="">
                 <h2><br>3D</h2>
                 <br>
-                <p class="text-justify">
+                <p class="text-justify pact">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
@@ -714,10 +771,10 @@
                 </p>
             </div><br>
             <div class="nettoyage">
-                <img src="include/img/nettoyagemaq.png" class="img3" alt="">
+                <img src="include/img/nettoyagemaq.png" class="img3 img-fluid" alt="">
                 <h2><br>Nettoyage</h2>
                 <br>
-                <p class="text-justify">
+                <p class="text-justify pact">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
@@ -725,10 +782,10 @@
                 </p>
             </div><br>
             <div class="espacevert">
-                <img src="include/img/espacevertmaq.png" class="img3" alt="">
+                <img src="include/img/espacevertmaq.png" class="img3 img-fluid" alt="">
                 <h2><br>Espaces verts</h2>
                 <br>
-                <p class="text-justify">
+                <p class="text-justify pact">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
                     soluta sapiente sit corrupti similique vero in repellendus
                     laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
@@ -757,19 +814,21 @@
                                         <div class="carousel-item active">
                                             <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
                                             <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Asperiores voluptas voluptate libero, quasi adipisci vero
-                                                delectus odit suscipit assumenda rerum deleniti voluptates
-                                                nemo fuga mollitia unde. Quas earum ea qui!
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                                                exercitationem
+                                                praesentium suscipit non at ea, corporis aliquam sapiente ut quas
+                                                accusamus culpa
+                                                dignissimos iusto perspiciatis.
                                             </p>
                                         </div>
                                         <div class="carousel-item">
                                             <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
                                             <p>
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                Asperiores voluptas voluptate libero, quasi adipisci vero
-                                                delectus odit suscipit assumenda rerum deleniti voluptates
-                                                nemo fuga mollitia unde. Quas earum ea qui!
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                                                exercitationem
+                                                praesentium suscipit non at ea, corporis aliquam sapiente ut quas
+                                                accusamus culpa
+                                                dignissimos iusto perspiciatis.
                                             </p>
                                         </div>
                                     </div>
@@ -781,10 +840,9 @@
                 <img src="include/img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Particulier</h4>
                 <P class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores voluptas voluptate libero, quasi adipisci vero
-                    delectus odit suscipit assumenda rerum deleniti voluptates
-                    nemo fuga mollitia unde. Quas earum ea qui!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
+                    praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
+                    dignissimos iusto perspiciatis.
                     <P>
                         <div class="carouR">
                             <!--Les Avis carousel de droite -->
@@ -795,8 +853,9 @@
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Asperiores voluptas voluptate libero, quasi adipisci vero
-                                            delectus odit suscipit assumenda rerum deleniti voluptates
-                                            nemo fuga mollitia unde. Quas earum ea qui!
+                                            delectus odit suscipit
+                                            assumenda rerum deleniti voluptates nemo fuga mollitia unde.
+                                            Quas earum ea qui!
                                         </p>
                                     </div>
                                     <div class="carousel-item">
@@ -804,8 +863,9 @@
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Asperiores voluptas voluptate libero, quasi adipisci vero
-                                            delectus odit suscipit assumenda rerum deleniti voluptates
-                                            nemo fuga mollitia unde. Quas earum ea qui!
+                                            delectus odit suscipit
+                                            assumenda rerum deleniti voluptates nemo fuga mollitia unde.
+                                            Quas earum ea qui!
                                         </p>
                                     </div>
                                 </div>
@@ -817,16 +877,14 @@
         <h2 class="ecom">La Boutique CKM</h2>
         <!--ecommerce-->
         <div class="sectionecom">
-            <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl" alt="">
-            <img src="include/img/produitspray2.png" class="imgp" alt="">
+            <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl img-fluid" alt="">
+            <img src="include/img/produitspray2.png" class="imgp img-fluid" alt="">
         </div>
 
     </section>
 
 </div>
 
-
-
 <?php 
 	require_once("include/footer.php");
-?>
+    ?>

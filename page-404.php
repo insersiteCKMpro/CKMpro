@@ -151,7 +151,7 @@ if (($this->error->getCode()) == '404') {
     </video>
 
     <div class="click">
-        <a href="homepage.php" class="text-center"><button type="button" class="btn hvr-bounce-to-right">Retourner à la Vitrine</button></a>
+        <a href="index.php" class="text-center"><button type="button" class="btn hvr-bounce-to-right">Retourner à la Vitrine</button></a>
     </div>
 </body>
 </html>
