@@ -153,10 +153,10 @@
 
     .imgC {
         width: 100%;
-        margin-top: 1.5%;
+        
     }
 
-    .imgM {
+    .imgM{
         display: flex;
     }
 
@@ -177,6 +177,7 @@
 
     /*-------------------------------------------------section-ecran pc--------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
+
 
         /*carousel Entreprise*/
         section {
@@ -393,7 +394,6 @@
         /*Activités*/
         .derat {
             width: 30.3%;
-
         }
 
         /*Activités*/
@@ -519,10 +519,8 @@
             margin-top: 0;
         }
 
-        main
-
         /*Professionnel Particulier*/
-            {
+        main{
             height: 3vh;
             width: 100%;
             justify-content: center;
@@ -632,13 +630,13 @@
     }
 </style>
 
+
 <div class="container-fluid">
     <section>
         <main class="text-center">
             <a href="nettoyage.php#debarras">
                 <marquee class="flash" width="1000" behavior="" direction="">Vous avez besoin de vos deux mains libres?
-                    Nous nous
-                    chargeons aussi de débarrasser!!</marquee>
+                    Nous nous chargeons aussi de débarrasser!!</marquee>
             </a>
             <!--le debaras en flash-->
         </main>

@@ -154,7 +154,6 @@
 
     .imgC {
         width: 100%;
-
     }
 
     .imgM {
@@ -393,7 +392,6 @@
         /*Activités*/
         .derat {
             width: 30.3%;
-
         }
 
         /*Activités*/
@@ -628,9 +626,10 @@
 
 <div class="container-fluid">
     <section>
+
         <main>
             <a href="nettoyage.php#debarras">
-                <marquee class="flash" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous
+                <marquee class="flash" width="1000" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous
                     chargeons aussi de débarrasser!!</marquee>
             </a>
             <!--le debaras en flash-->
