@@ -16,19 +16,7 @@ if (($this->error->getCode()) == '404') {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        body {
-            color: #000000;
-            background-color: #FFFFFF;
-        }
-
-        a:link {
-            color: #0000CC;
-        }
-
-        p,
-        address {
-            margin-left: 3em;
-        }
+        
         .click {
             display: flex !important;
             width: 30%;
@@ -36,16 +24,12 @@ if (($this->error->getCode()) == '404') {
             margin: -34vh auto;
             position: relative !important;
         }
-        @media screen and (min-width: 1441px) and (max-width: 2560px)
-        { 
-            .click {
-                display: flex !important;
-                width: 7%;
-                right: 12vh;
-                margin: -55vh auto;
-                position: relative !important;
-            }
-            .hvr-bounce-to-right {
+        .btn
+        {
+            border: 3px solid black;
+            font-weight: bold;
+        }
+        .hvr-bounce-to-right {
                 display: inline-block;
                 vertical-align: middle;
                 -webkit-transform: translateZ(0);
@@ -70,7 +54,7 @@ if (($this->error->getCode()) == '404') {
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #00a651;
                 /* regler couleur de l'animation */
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -103,80 +87,26 @@ if (($this->error->getCode()) == '404') {
                 transform: scaleX(1);
                 -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
                 transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                background-color: none;
+                background-color: #00a651;
             }
-
+        @media screen and (min-width: 1441px) and (max-width: 2560px)
+        { 
+            .click {
+                display: flex !important;
+                width: 16%;
+                margin: -10vh auto;
+                position: relative !important;
+            }
         }
         @media screen and (min-width: 1025px) and (max-width: 1440px)
         { 
             .click {
                 display: flex !important;
                 width: 13%;
-                right: 9vh;
-                margin: -46vh auto;
+                right: 8vh;
+                margin: -7vh auto;
                 position: relative !important;
             }
-            .hvr-bounce-to-right {
-                display: inline-block;
-                vertical-align: middle;
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                -moz-osx-font-smoothing: red;
-                position: relative;
-                -webkit-transition-property: color;
-                transition-property: color;
-                -webkit-transition-duration: 0s;
-                transition-duration: 0s;
-
-            }
-
-            .hvr-bounce-to-right:before {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: black;
-                /* regler couleur de l'animation */
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 0 50%;
-                transform-origin: 0 50%;
-                -webkit-transition-property: transform;
-                transition-property: transform;
-                -webkit-transition-duration: 1.5s;
-                transition-duration: 1.5s;
-                /* regler vitesse animation */
-                -webkit-transition-timing-function: ease-out;
-                transition-timing-function: ease-out;
-                background-color: none;
-            }
-
-            .hvr-bounce-to-right:hover,
-            .hvr-bounce-to-right:focus,
-            .hvr-bounce-to-right:active {
-                color: white;
-                /* changer couleur du text dans l'animation */
-                background: none;
-                /* changer couleur background en dessous de l'animation */
-
-            }
-
-            .hvr-bounce-to-right:hover:before,
-            .hvr-bounce-to-right:focus:before,
-            .hvr-bounce-to-right:active:before {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                background-color: none;
-            }
-
         }
         @media screen and (min-width: 769px) and (max-width: 1024px)
         { 
@@ -184,71 +114,9 @@ if (($this->error->getCode()) == '404') {
                 display: flex !important;
                 width: 17%;
                 right: 7vh;
-                margin: -34vh auto;
+                margin: -7vh auto;
                 position: relative !important;
             }
-
-            .hvr-bounce-to-right {
-                display: inline-block;
-                vertical-align: middle;
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                -moz-osx-font-smoothing: red;
-                position: relative;
-                -webkit-transition-property: color;
-                transition-property: color;
-                -webkit-transition-duration: 0s;
-                transition-duration: 0s;
-
-            }
-
-            .hvr-bounce-to-right:before {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: black;
-                /* regler couleur de l'animation */
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 0 50%;
-                transform-origin: 0 50%;
-                -webkit-transition-property: transform;
-                transition-property: transform;
-                -webkit-transition-duration: 1.5s;
-                transition-duration: 1.5s;
-                /* regler vitesse animation */
-                -webkit-transition-timing-function: ease-out;
-                transition-timing-function: ease-out;
-                background-color: none;
-            }
-
-            .hvr-bounce-to-right:hover,
-            .hvr-bounce-to-right:focus,
-            .hvr-bounce-to-right:active {
-                color: white;
-                /* changer couleur du text dans l'animation */
-                background: none;
-                /* changer couleur background en dessous de l'animation */
-
-            }
-
-            .hvr-bounce-to-right:hover:before,
-            .hvr-bounce-to-right:focus:before,
-            .hvr-bounce-to-right:active:before {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                background-color: none;
-            }
-
         }
         @media screen and (min-width: 451px) and (max-width: 768px)
         { 
@@ -260,67 +128,6 @@ if (($this->error->getCode()) == '404') {
                 margin: -6vh auto;
                 position: relative !important;
             }
-            .hvr-bounce-to-right {
-                display: inline-block;
-                vertical-align: middle;
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                -moz-osx-font-smoothing: red;
-                position: relative;
-                -webkit-transition-property: color;
-                transition-property: color;
-                -webkit-transition-duration: 0s;
-                transition-duration: 0s;
-
-            }
-
-            .hvr-bounce-to-right:before {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: black;
-                /* regler couleur de l'animation */
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 0 50%;
-                transform-origin: 0 50%;
-                -webkit-transition-property: transform;
-                transition-property: transform;
-                -webkit-transition-duration: 1.5s;
-                transition-duration: 1.5s;
-                /* regler vitesse animation */
-                -webkit-transition-timing-function: ease-out;
-                transition-timing-function: ease-out;
-                background-color: none;
-            }
-
-            .hvr-bounce-to-right:hover,
-            .hvr-bounce-to-right:focus,
-            .hvr-bounce-to-right:active {
-                color: white;
-                /* changer couleur du text dans l'animation */
-                background: none;
-                /* changer couleur background en dessous de l'animation */
-
-            }
-
-            .hvr-bounce-to-right:hover:before,
-            .hvr-bounce-to-right:focus:before,
-            .hvr-bounce-to-right:active:before {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                background-color: none;
-            }
- 
         }
         @media screen and (max-width: 450px)
         { 
@@ -331,67 +138,6 @@ if (($this->error->getCode()) == '404') {
                 margin: -3vh auto;
                 position: relative !important;
             }
-            .hvr-bounce-to-right {
-                display: inline-block;
-                vertical-align: middle;
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                -moz-osx-font-smoothing: red;
-                position: relative;
-                -webkit-transition-property: color;
-                transition-property: color;
-                -webkit-transition-duration: 0s;
-                transition-duration: 0s;
-
-            }
-
-            .hvr-bounce-to-right:before {
-                content: "";
-                position: absolute;
-                z-index: -1;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: black;
-                /* regler couleur de l'animation */
-                -webkit-transform: scaleX(0);
-                transform: scaleX(0);
-                -webkit-transform-origin: 0 50%;
-                transform-origin: 0 50%;
-                -webkit-transition-property: transform;
-                transition-property: transform;
-                -webkit-transition-duration: 1.5s;
-                transition-duration: 1.5s;
-                /* regler vitesse animation */
-                -webkit-transition-timing-function: ease-out;
-                transition-timing-function: ease-out;
-                background-color: none;
-            }
-
-            .hvr-bounce-to-right:hover,
-            .hvr-bounce-to-right:focus,
-            .hvr-bounce-to-right:active {
-                color: white;
-                /* changer couleur du text dans l'animation */
-                background: none;
-                /* changer couleur background en dessous de l'animation */
-
-            }
-
-            .hvr-bounce-to-right:hover:before,
-            .hvr-bounce-to-right:focus:before,
-            .hvr-bounce-to-right:active:before {
-                -webkit-transform: scaleX(1);
-                transform: scaleX(1);
-                -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-                background-color: none;
-            }
-
         }
         
     </style>
@@ -402,13 +148,10 @@ if (($this->error->getCode()) == '404') {
 
     <video muted width="100%" autoplay>
         <source src="include/img/404 ANIM-V2.mp4" type="video/mp4">
-
     </video>
 
     <div class="click">
-        <a href="homepage.php" class="text-center">
-            <button type="button" class="btn border-dark hvr-bounce-to-right">retournez a la Vitrine</button>
-        </a>
+        <a href="homepage.php" class="text-center"><button type="button" class="btn hvr-bounce-to-right">Retourner à la Vitrine</button></a>
     </div>
 </body>
 </html>

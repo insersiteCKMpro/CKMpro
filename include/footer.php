@@ -82,19 +82,7 @@
         filter: drop-shadow(1px 2px 0px black);
         
     }
-
-    .snap:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .fb:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .insta:hover {
-        transition: all ease .3s .1s;
-    }
-
+    
     .ordi {
         display: none;
     }
