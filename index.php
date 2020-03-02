@@ -249,10 +249,8 @@
 
         /*Activités*/
         .sectionB {
-            /* width: 100%; */
-            height: 68vh;
+            height: 90vh;
             justify-content: space-around;
-            /* flex-direction: column; */
             display: flex;
         }
 
@@ -302,7 +300,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 75vh;
+            height: 95vh;
             display: flex;
         }
 
@@ -452,7 +450,7 @@
         }
 
         .sectionB {
-            height: 60vh;
+            height: 78vh;
         }
 
         /*Activités*/
@@ -487,7 +485,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 70vh;
+            height: 95vh;
             display: FLEX;
             JUSTIFY-CONTENT: space-around;
         }
@@ -579,7 +577,7 @@
         }
 
         .sectionB {
-            height: 210vh;
+            height: 270vh;
             flex-direction: column;
         }
 
@@ -614,7 +612,7 @@
         }
 
         .pro {
-            height: 70vh;
+            height: 90vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -622,7 +620,7 @@
             border: 0.5px solid gray;
         }
         .part {
-            height: 70vh;
+            height: 90vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -635,7 +633,7 @@
         }
 
         .mainh {
-            height: 145vh;
+            height: 175vh;
             display: flex;
             flex-direction: column;
         }
