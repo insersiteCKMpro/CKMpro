@@ -16,17 +16,12 @@
       /* ------------------------Css source-header------------------------------------- */
       @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
 
-      .container-fluid 
-      {
-        padding: 0 !important;
-      }
-
       .fixed-top 
       {
         display: flex;
         justify-content: flex-end;
-        margin-right: 2vh;
         font-size: 1.2em;
+        float: right !important;
         background-color: white;
         font-family: 'Red Hat Display',serif;
   
@@ -55,17 +50,14 @@
       /* ------------------------RESPONSIVE-header-ecran pc--------------------------------- */
       @media screen and (min-width: 769px) and (max-width: 2560px) {
         /* ENTÊTE FIXE STYLE */
-        .fixed-top 
-        {
-          width: 50% !important;
+        .fixed-top {
           float: right !important;
-          position: inherit !important;
           font-size: 1.2em;
           font-family: 'Red Hat Display',serif;
         }
 
         /* ICONE TEL ENTÊTE FIXE STYLE */
-        #fass {
+        #fas {
           display: none;
         }
 
@@ -81,11 +73,8 @@
 /* ------------------------RESPONSIVE-header-tablette--------------------------------- */      
       @media screen and (min-width: 451px) and (max-width: 768px) {
         /* ENTÊTE FIXE STYLE */
-        .fixed-top 
-        {
-          width: 50% !important;
+        .fixed-top {
           float: right !important;
-          position: inherit !important;
           font-size: 1.2em;
           font-family: 'Red Hat Display',serif;
         }
@@ -110,19 +99,21 @@
       /* ------------------------RESPONSIVE-header-mobile--------------------------------- */      
       @media screen and (max-width: 450px) {
         /* ENTÊTE FIXE STYLE */
-        .fixed-top 
-        {
-          width: 100% !important;
+        .fixed-top {
+          float: right !important;
+          font-size: 1.2em;
           font-family: 'Red Hat Display',serif;
         }
 
         /* ICONE TEL ENTÊTE FIXE STYLE */
-        #fas {
+        #fas 
+        {
           display: none;
         }
 
         /* NUMERO */
-        #num {
+        #num 
+        {
           display: none;
         }
 
@@ -150,13 +141,15 @@
           top: 21vh;
         }
 
-        #lienTel {
+        #lienTel 
+        {
           color: black;
           text-decoration: none;
           background-color: transparent;
         }
 
-        #iconTel {
+        #iconTel 
+        {
           font-size: 2em;
           display: block;
         }
