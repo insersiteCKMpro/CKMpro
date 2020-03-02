@@ -10,18 +10,24 @@
 </head>
 
 <style>
-    
+
+h1, p
+{
+    text-align: center;
+} 
+  
 </style>
     
 <body>
-<h1 class="align-text:center" >Oups!!!!! Ou est parti ratatouille </h1>
-<p>Vous avez tenté d’accéder à une page qui ne se trouve plus sur ce site. Veuillez revenir sur la page d'accueil afin de continuer votre navigation sur notre site.</p>
-<p><a href="http://localhost/CKMpro/">Revenir à l'accueil</a></p>
+<h1 class="text-justify:center">Oups!!!!! Ou est parti CKMpro </h1>
+
+<p><strong>le saviez-vous?<strond></p><br>
+<br><img src="img/ratdnparis.jpg" alt=""><br>
+<img src="img/ratz404.jpg" alt=""><br>
+<p><a href="http://localhost/CKMpro/">Revenez chez CKMpro</a></p>
 </body>
 
     
-
-
 
 
 

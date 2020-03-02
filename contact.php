@@ -165,7 +165,7 @@
         background-color: none;
     }
 
-    /********************************************format pc responsive-------------------------------------------------------------------- */
+    /**********************************format pc responsive------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
             height: 105vh;

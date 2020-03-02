@@ -194,6 +194,6 @@
         mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
     </p><br>
 
-    <?php 
+<?php 
     require_once("include/footerj.php");
 ?>
