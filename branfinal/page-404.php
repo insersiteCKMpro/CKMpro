@@ -147,7 +147,7 @@ if (($this->error->getCode()) == '404') {
     <h1 style="text-align:center"> RATS'S Alors!!! CKMpro introuvable </h1>
 
     <video muted width="100%" autoplay>
-        <source src="include/img/404 ANIM-V2.mp4" type="video/mp4">
+        <source src="img/404 ANIM-V2.mp4" type="video/mp4">
     </video>
 
     <div class="click">
