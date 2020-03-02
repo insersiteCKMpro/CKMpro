@@ -9,29 +9,25 @@
     {
     display: contents;
     }
-    footer 
-    {
-        background-color: rgba(255, 242, 0, 0.5);
+    footer {
+        background-color: rgba(0, 174, 239, 0.5);
         border-top: 1px solid black;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
     }
 
     .footerhaut {
         display: flex;
         justify-content: space-evenly;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+        font-size: 1.5em;
     }
 
     .footerbas {
         display: flex;
         justify-content: center;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+        font-size: 1em;
     }
 
     .colonne1 {
+
         width: 30%;
         align-items: center;
         color: black !important;
@@ -102,38 +98,36 @@
         
     }
 
-    /* ----------------------------------------------responsive ecran pc ------------------------------------------------------- */
+    /* ----------------------------------------------------------------------------------------------------- */
+    /* ORDINATEUR */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
         .flogo {
             width: 80%;
         }
 
-        .footerhaut,.footerbas {
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+        .footerhaut,
+        .footerbas {
+            font-size: 1em;
         }
     }
 
-    /*------------------------------------------------responsive tablette ---------------------------------------------------------*/
+    /* TABLETTE */
     @media screen and (min-width: 451px) and (max-width: 768px) {
-        .flogo 
-        {
+        .flogo {
             width: 70%;
         }
 
-        .footerhaut,.footerbas {
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+        .footerhaut,
+        .footerbas {
+            font-size: 1em;
         }
     }
 
-    /*----------------------------------------------------responsive telephone ------------------------------------------------------*/
+    /* TELEPHONE */
 
     @media screen and (max-width: 450px) {
         footer {
             border-top: 1px solid black;
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
         }
 
         .flogo {
@@ -141,16 +135,17 @@
             margin-bottom: 15%;
         }
 
-        .footerhaut ,.footerbas{
-            align-items: center;
-            text-align: center;
+        .footerhaut {
             flex-direction: column-reverse;
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
         }
 
         .colonne2 {
             order: -1;
+        }
+
+        .footerhaut {
+            align-items: center;
+            text-align: center;
         }
 
         .colonne3 {
@@ -159,9 +154,9 @@
             margin-top: 2vh;
         }
 
+        .footerhaut,
         .footerbas {
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+            font-size: 1em;
         }
     }
 </style>
@@ -185,18 +180,13 @@
 
                 <div class="colonne3 text-center">
                     <div class="snap">
-                        <a href="http://www.snapchat.com">
-                        <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%">
-                    </a>
+                    <a href="http://www.snapchat.com"><img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"></a>
+                    </div>
+                    <div class="fb">
+                    <a href="http://www.facebook.com"><img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%"></a>
                     </div>
                     <div class="snap">
-                        <a href="http://www.facebook.com">
-                        <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%">
-                    </a>
-                    </div>
-                    <div class="snap">
-                        <a href="http://www.instagram.com">
-                        <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
+                    <a href="http://www.instagram.com"><img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
                     </div>
                 </div>
             </div>

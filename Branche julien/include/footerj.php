@@ -9,28 +9,21 @@
     {
     display: contents;
     }
-    footer 
-    {
-        background-color: rgba(0, 166, 81, 0.5);
+    footer {
+        background-color: rgba(255, 242, 0, 0.5);
         border-top: 1px solid black;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
     }
 
-    .footerhaut 
-    {
+    .footerhaut {
         display: flex;
         justify-content: space-evenly;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+        font-size: 1.5em;
     }
 
-    .footerbas 
-    {
+    .footerbas {
         display: flex;
         justify-content: center;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+        font-size: 1em;
     }
 
     .colonne1 {
@@ -44,22 +37,19 @@
         margin-top: 2%;
     }
 
-    .ftext1 
-    {
+    .ftext1 {
         text-decoration: none;
         color: black;
     }
 
-    .ftext1:hover 
-    {
+    .ftext1:hover {
         text-decoration: none;
         color: black;
         background-color: blue;
         color: white;
     }
 
-    .colonne2 
-    {
+    .colonne2 {
 
         width: 30%;
         color: black !important;
@@ -67,22 +57,19 @@
         margin-top: 2%;
     }
 
-    .ftext2 
-    {
+    .ftext2 {
         text-decoration: none;
         color: black;
     }
 
-    .ftext2:hover 
-    {
+    .ftext2:hover {
         text-decoration: none;
         color: black;
         background-color: blue;
         color: white;
     }
 
-    .colonne3 
-    {
+    .colonne3 {
         display: flex;
         align-items: center;
         width: 30%;
@@ -90,23 +77,19 @@
         margin-top: 2%;
     }
 
-    .snap:hover 
-    {
+    .snap:hover {
         transition: all ease .3s .1s;
     }
 
-    .fb:hover 
-    {
+    .fb:hover {
         transition: all ease .3s .1s;
     }
 
-    .insta:hover 
-    {
+    .insta:hover {
         transition: all ease .3s .1s;
     }
 
-    .ordi 
-    {
+    .ordi {
         display: none;
     }
     .insta
@@ -115,39 +98,36 @@
         
     }
 
-    /* --------------------------------------------------------responsive ecran pc--------------------------------------------- */
+    /* ----------------------------------------------------------------------------------------------------- */
+    /* ORDINATEUR */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
-        .flogo 
-        {
+        .flogo {
             width: 80%;
         }
 
-        .footerhaut,.footerbas {
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+        .footerhaut,
+        .footerbas {
+            font-size: 1em;
         }
     }
 
-    /* -------------------------------------------------------responsive tablette------------------------------------------------*/
+    /* TABLETTE */
     @media screen and (min-width: 451px) and (max-width: 768px) {
-        .flogo 
-        {
+        .flogo {
             width: 70%;
         }
 
-        .footerhaut,.footerbas {
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+        .footerhaut,
+        .footerbas {
+            font-size: 1em;
         }
     }
 
-    /*----------------------------------------------------------responsive telephone------------------------------------------------*/
+    /* TELEPHONE */
 
     @media screen and (max-width: 450px) {
         footer {
             border-top: 1px solid black;
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
         }
 
         .flogo {
@@ -166,8 +146,6 @@
         .footerhaut {
             align-items: center;
             text-align: center;
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
         }
 
         .colonne3 {
@@ -176,9 +154,9 @@
             margin-top: 2vh;
         }
 
-        .footerhaut,.footerbas {
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+        .footerhaut,
+        .footerbas {
+            font-size: 1em;
         }
     }
 </style>
@@ -202,18 +180,13 @@
 
                 <div class="colonne3 text-center">
                     <div class="snap">
-                        <a href="http://www.snapchat.com">
-                        <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%">
-                    </a>
+                        <a href="http://www.snapchat.com"><img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"></a>
+                    </div>
+                    <div class="fb">
+                        <a href="http://www.facebook.com"><img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%"></a>
                     </div>
                     <div class="snap">
-                        <a href="http://www.facebook.com">
-                        <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%">
-                    </a>
-                    </div>
-                    <div class="snap">
-                        <a href="http://www.instagram.com">
-                        <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
+                        <a href="http://www.instagram.com"><img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
                     </div>
                 </div>
             </div>

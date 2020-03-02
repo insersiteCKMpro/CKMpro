@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
         crossorigin="anonymous">
     <title>CKMpro</title>
@@ -9,28 +9,21 @@
     {
     display: contents;
     }
-    footer 
-    {
-        background-color: rgba(0, 174, 239, 0.5);
+    footer {
+        background-color: white;
         border-top: 1px solid black;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
     }
 
-    .footerhaut 
-    {
+    .footerhaut {
         display: flex;
         justify-content: space-evenly;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+        font-size: 1.5em;
     }
 
-    .footerbas 
-    {
+    .footerbas {
         display: flex;
         justify-content: center;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+        font-size: 1em;
     }
 
     .colonne1 {
@@ -84,54 +77,42 @@
         margin-top: 2%;
     }
 
-    .snap:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .fb:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .insta:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .ordi {
-        display: none;
-    }
     .insta
     {
         filter: drop-shadow(1px 2px 0px black);
         
     }
+    
+    .ordi {
+        display: none;
+    }
 
-    /* ------------------------------------------------responsive ecran pc----------------------------------------------------- */
+    /* ----------------------------------------------------------------------------------------------------- */
+    /* ORDINATEUR */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
         .flogo {
-            width: 80%;
+            width: 10%;
         }
 
-        .footerhaut,.footerbas 
-        {
-            font-size: 0.95em;
-            font-family: 'Red Hat Display',serif;
+        .footerhaut,
+        .footerbas {
+            font-size: 1em;
         }
     }
 
-    /*--------------------------------------------------responsive tablette -----------------------------------------------------*/
+    /* TABLETTE */
     @media screen and (min-width: 451px) and (max-width: 768px) {
         .flogo {
-            width: 70%;
+            width: 20%;
         }
 
-        .footerhaut,.footerbas 
-        {
-            font-size: 1.5em;
-            
+        .footerhaut,
+        .footerbas {
+            font-size: 1em;
         }
     }
 
-    /*---------------------------------------------------responsive telephone------------------------------------------------------ */
+    /* TELEPHONE */
 
     @media screen and (max-width: 450px) {
         footer {
@@ -139,7 +120,7 @@
         }
 
         .flogo {
-            width: 70%;
+            width: 50%;
             margin-bottom: 15%;
         }
 
@@ -162,7 +143,8 @@
             margin-top: 2vh;
         }
 
-        .footerhaut,.footerbas {
+        .footerhaut,
+        .footerbas {
             font-size: 1em;
         }
     }
@@ -172,7 +154,7 @@
             <div class="footerhaut text-center">
                 <div class="colonne1 text-center">
 
-                    <a href="homepage.php"><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="100%"></a>
+                    <a href="homepage.php"></a><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="10%">
                     <a class="ftext1" href="3D.php">3D</a>
                     <a class="ftext1" href="nettoyage.php">Nettoyage</a>
                     <a class="ftext1" href="espacevert.php">Espace Verts</a>
@@ -186,19 +168,14 @@
                 </div>
 
                 <div class="colonne3 text-center">
-                    <div class="snap">
-                        <a href="http://www.snapchat.com">
-                        <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%">
-                    </a>
+                <div class="snap">
+                    <a href="http://www.snapchat.com"><img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"></a>
+                    </div>
+                    <div class="fb">
+                    <a href="http://www.facebook.com"><img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%"></a>
                     </div>
                     <div class="snap">
-                        <a href="http://www.facebook.com">
-                        <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%">
-                    </a>
-                    </div>
-                    <div class="snap">
-                        <a href="http://www.instagram.com">
-                        <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
+                    <a href="http://www.instagram.com"><img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
                     </div>
                 </div>
             </div>

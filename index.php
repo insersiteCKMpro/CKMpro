@@ -1,559 +1,131 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <title>CKMpro</title>
-</head>
-
+<?php 
+    require_once("include/header.php");
+    require_once("include/nav.php");
+?>
 <style>
-  /* ENTÊTE FIXE STYLE--------------------------------------------code source css-----------------------------------------------------------------------*/
-  .container-fluid
- {
-   padding: 0 !important;
- }
-
- nav{
-   border-bottom: 1px solid black;
- }
-
-  .fixed-top {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2vh;
-    font-size: 1.2em;
-    background-color: white;
-  }
-
-  .logo {
-    /*margin-top: 2.5em;*/
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-  }
-
-  /* LOGO TITRE STYLE */
-  .logoTitre {
-    height: 13vh;
-    width: 20vw!important; 
-  }
-
-  /* NAVBAR STYLE */
-  .bg-dark {
-    background-color: white !important;
-  }
-
-  .navbar-dark .navbar-toggler {
-    color: black;
-    border-color: transparent;
-  }
-
-  .navbar-dark .navbar-nav .active>.nav-link,
-  .navbar-dark .navbar-nav .nav-link.active,
-  .navbar-dark .navbar-nav .nav-link.show,
-  .navbar-dark .navbar-nav .show>.nav-link {
-    color: black;
-  }
-
-  .navbar-dark .navbar-nav .nav-link {
-    color: black !important;
-    font-size: x-large;
-  }
-
-  /* LOGO HOME STYLE */
-  #tailleLi {
-    height: 5vh;
-    width: 7%;
-  }
-
-  #tailleA {
-    width: 100%;
-  }
-
-  .logoHome {
-    width: 100%;
-    position: relative;
-    top: -0.9vh;
-  }
-
-  .navMarg {
-    margin-left: 10vh;
-  }
-
-  /* DROPDOWN MENU */
-  .dropdown-menu {
-    left: 8vh !important;
-    border: none !important;
-    background-color: #ffffffb8 !important;
-  }
-  .boutonTel 
-  {
-    display: none;
-  }
-
-  /* ----------RESPONSIVE--------------------------------------------FORMAT PC-------------------------------------------------------- */
-
-  @media screen and (min-width: 769px) and (max-width: 2560px) {
-
-    /* ENTÊTE FIXE STYLE */
-    .fixed-top {
-      /*display: flex;
-      justify-content: flex-end;
-      margin-right: 2vh;*/
-      font-size: 1.5em;
-    }
-    #fass /* ICONE TEL ENTÊTE FIXE STYLE */
-    {             
-    display: none;
-    }
-
-    /*.logo {
-      margin-top: 2.5em;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 20vh;
-    }*/
-
-    /* LOGO TITRE STYLE */
-    .logoTitre 
-    {
-      /*height: 17vh;*/
-      width: 40%;
-    }
-      /* HOVER LIENS */
-    .colorJ:hover
-    {
-      background-color: #fef200;
-      border-radius: 5px;
-    }
-    .colorB:hover
-    {
-      background-color: RGB(37, 170, 226);
-      border-radius: 5px;
-    }
-    .colorV:hover
-    {
-      background-color: #00a652;
-      border-radius: 5px;
-    }
-
-    /* HOVER LIENS DROPDOWN */
-    .dropdown-item01:hover 
-    {
-      background-color: #fef200 !important;
-      border-radius: 5px !important;
-      opacity: 0.5 !important;
-    }
-
-    /* hover style lien 3D */
-    .dropdown-item02:hover 
-    {
-      background-color: #fef200 !important;
-      border-radius: 5px !important;
-      opacity: 0.5 !important;
-    }
-
-    /* hover style lien Nettoyage */
-    .dropdown-item03:hover 
-    {
-      background-color: #25aae2 !important;
-      border-radius: 5px !important;
-      opacity: 0.5 !important;
-    }
-
-    /* hover style lien Espace Verts */
-    .dropdown-item04:hover 
-    {
-      background-color: #00a652 !important;
-      border-radius: 5px !important;
-      opacity: 0.5 !important;
-    }
-
-    /* NAVBAR STYLE 
-    .bg-dark {
-      background-color: white !important;
-    }
-
-    .navbar-dark .navbar-toggler {
-      color: black;
-      border-color: transparent;
-    }
-
-    .navbar-dark .navbar-nav .active>.nav-link,
-    .navbar-dark .navbar-nav .nav-link.active,
-    .navbar-dark .navbar-nav .nav-link.show,
-    .navbar-dark .navbar-nav .show>.nav-link {
-      color: black;
-    }
-
-    .navbar-dark .navbar-nav .nav-link {
-      color: black !important;
-      font-size: x-large;
-    }
-
-    /* LOGO HOME STYLE 
-    #tailleLi {
-      height: 5vh;
-      width: 7%;
-    }
-
-    #tailleA {
-      width: 100%;
-    }
-
-    .logoHome {
-      width: 100%;
-      position: relative;
-      top: -0.9vh;
-    }
-
-    .navMarg {
-      margin-left: 10vh;
-    }
-
-    /* DROPDOWN MENU
-    .dropdown-menu {
-      left: 8vh;
-      border: none;
-    }*/
-
-  }
-
-
-  /* ---------RESPONSIVE------------------------------------------------FORMAT TABLETTE----------------------------------------------------- */
-
-  @media screen and (min-width: 451px) and (max-width: 768px) {
-
-    /* ENTÊTE FIXE STYLE */
-    .fixed-top 
-      {
-        width: 50% !important;
-        float: right !important;
-        padding-left: 27vh !important;
-        position: inherit !important;
-        font-size:1.2em;
-        display: block;
-      }
-      /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas 
-      {
-        display: none;
-      }
-    /* LOGO STYLE */
-    .logoTitre {
-      /*height: 14vh;*/
-      width: 60%;
-    }
-
-    /* logo navbar 
-    .logoHome {
-      width: 7vw;
-      position: relative;
-      top: -0.9vh;
-    }
-    */
-
-    /* LOGO HOME STYLE */
-    .navMarg {
-      margin-left: 4vh;
-    }
-
-    /* DROPDOWN STYLE */
-    .dropdown-menu {
-      left: 15px !important;
-    }
-
-    /*
-    b,
-    strong {
-      font-weight: bolder;
-      display: none;
-    }
-    */
-  }
-
-  /* -------RESPONSIVE-------------------------------------------------FORMAT MOBILE------------------------------------------------------ */
-
-  @media screen and (max-width: 450px) {
-
-    /* ENTÊTE FIXE STYLE */
-    .fixed-top {
-      /*justify-content: space-between !important;*/
-      width: 100% !important;
-    }
-
-    /* ICONE TEL ENTÊTE FIXE STYLE */
-    #fas {
-      display: none;
-    }
-
-    /* NUMERO */
-
-    #num {
-     /* width: 50%;*/
-     /* padding-left: 4vh;*/
-     display:none;
-    }
-
-    /* NOM */
-
-    /*#nom {
-      width: 35%;
-    }
-    */
-    /* LOGO STYLE */
-
-    .logoTitre {
-      /*height: 11vh;*/
-      width: 90%;
-    }
-
-    /* MENU BURGER */
-    .textMenu {
-      margin-bottom: 0;
-    }
-
-    .fa-bars
-    {
-      color: black;
-    }
-    
-    /*
-    .logoHome {
-      width: 10vw;
-      position: relative;
-    }
-    */
-    #tailleLi {
-      width: 10%;
-    }
-
-    .nav-item {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .nav-link {
-      margin: 0;
-    }
-
-    .navbar-dark .navbar-nav .active>.nav-link,
-    .navbar-dark .navbar-nav .nav-link.active,
-    .navbar-dark .navbar-nav .nav-link.show,
-    .navbar-dark .navbar-nav .show>.nav-link {
-      text-align: center;
-    }
-
-    .navbar-nav .dropdown-menu {
-      text-align: center;
-    }
-
-    /*
-    .navbar-dark .navbar-toggler {
-      color: black !important;
-    }
-    */
-    hr
-    {
-      width: 10vh;
-      margin: 0;
-      height: 1vh;
-    }
-    /* Bouton téléphone  */
-    .boutonTel {
-      width: 8vh;
-      height: 8vh;
-      background-color: lightgrey;
-      border: 1px solid black;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      z-index: 1;
-      right: 5px;
-      top: 21vh;
-    }
-    #lienTel {
-      color: black;
-      text-decoration: none;
-      background-color: transparent;
-    }
-    #iconTel {
-      font-size: 2em;
-      display: block;
-    }
-  }
-
-  /* ---------------------------------------------------------- */
-
-  @media (min-width: 576px) {
-    .textMenu {
-      display: none;
-    }
-  }
-
     /*-----------------------------------------------code source section-----------------------------------------*/
-    .flash
     /* Débaras*/
-        {
-        color: #00aeef;
+    marquee.flash:hover {
+        font-size: 2em;
+        height: 6.1vh;
+        background-color: rgba(0, 174, 239, 0.5);
+        margin-bottom: 5%;
+        color: #fff200;
+        /* align-content: center; */
+        /* display: flex; */
     }
 
-    section
+    .flash {
+        color: #00a651;
+    }
 
     /*carousel Entreprise*/
-        {
+    section {
         width: 100%;
         height: 52vh;
     }
 
-    .ets
-
     /*Entreprise*/
-        {
+    .ets {
         text-align: center;
     }
 
-    .activités
-
     /*Activités*/
-        {
+    .activités {
         text-align: center;
     }
 
-    .sectionB
-
     /*Activités*/
-        {
-        display: flex;
+    .sectionB {
         /* width: 100%; */
-        height: 25vh;
+        height: 38vh;
         justify-content: space-around;
         /* flex-direction: column; */
         display: flex;
     }
 
-    .derat
-
     /*Activités*/
-        {
+    .derat {
         width: 33.3%;
         text-align: center;
     }
 
-    .nettoyage
-
     /*Activités*/
-        {
+    .nettoyage {
         width: 33.3%;
         text-align: center;
     }
 
-    .espacevert
-
     /*Activités*/
-        {
+    .espacevert {
         width: 33.3%;
         text-align: center;
     }
-
-    .cible {
-        text-align: center;
-        margin-top: 5vh;
-    }
-
-    main
 
     /*Professionnel Particulier*/
-        {
+    main {
         height: 3vh;
-        width: 97.5%;
+        width: 100%;
         justify-content: space-between;
-        margin-left: 1.5vh;
     }
 
-    .pro {
+    .propart {
         width: 50%;
         height: 43vh;
-        margin-right: 5%;
     }
 
     .part {
         width: 50%;
         height: 32vh;
-        margin-right: 1% !important;
     }
 
-    .mainh
-
     /*Professionnel Particulier*/
-        {
+    .mainh {
         width: 100%;
         height: 36vh;
         display: flex;
     }
 
     .ppro {
-        width: 90%;
+        text-align: center;
     }
 
-    .mainb
-
     /*avis*/
-        {
+    .mainb {
         width: 100%;
         height: 25vh;
         display: flex;
         justify-content: space-around;
     }
 
-    .carouL
-
     /*carousel avis gauche*/
-        {
-        height: 18vh;
-        width: 30%;
+    .carouL {
+        width: 90%;
     }
-
-    .carouR
 
     /*carousel avis droite*/
-        {
-        height: 18vh;
-        width: 30%;
+    .carouR {
+        width: 90%;
+        display: flex;
+        margin: auto;
     }
 
-    .carousel-control-prev
-
     /*carousel avis droite et gauche*/
-        {
+    .carousel-control-prev {
         width: 10%;
         height: 18vh;
     }
 
-    .carousel-control-next
-
     /*carousel avis droite et gauche*/
-        {
+    .carousel-control-next {
         width: 10%;
         height: 18vh;
     }
-
-    .sectionecom
 
     /*e-commerce*/
-        {
-        height: 30vh;
+    .sectionecom {
+        height: 39vh;
+        margin-top: 12vh;
         display: flex;
         justify-content: space-around;
     }
@@ -581,11 +153,10 @@
 
     .imgC {
         width: 100%;
+        margin-top: 1.5%;
     }
 
     .imgM {
-        width: 100%;
-        height: 20vh;
         display: flex;
     }
 
@@ -596,168 +167,124 @@
 
     .imgp {
         width: 10%;
-        height: 25vh;
+        height: 20vh;
+        margin-top: 3vh
     }
 
     .fivetoile {
         width: 40%;
     }
 
-    .sectionM
-
-    /*Entreprise*/
-        {
-        width: 100%;
-        height: 20vh;
-    }
-
     /*-------------------------------------------------section-ecran pc--------------------------------------- */
     @media screen and (min-width: 769px) and (max-width: 2560px) {
 
-        section
-
         /*carousel Entreprise*/
-            {
+        section {
             width: 100%;
             height: 52vh;
         }
 
-        .ets
-
         /*Entreprise*/
-            {
+        .ets {
             text-align: center;
         }
 
-        .activités
-
         /*Activités*/
-            {
+        .activités {
             text-align: center;
         }
 
-        .sectionB
-
         /*Activités*/
-            {
-            display: flex;
+        .sectionB {
             /* width: 100%; */
-            height: 35vh;
+            height: 33vh;
             justify-content: space-around;
             /* flex-direction: column; */
             display: flex;
         }
 
-        .derat
-
         /*Activités*/
-            {
-            width: 33.3%;
+        .derat {
+            width: 30%;
             text-align: center;
+            display: flow-root;
         }
 
-        .nettoyage
-
         /*Activités*/
-            {
-            width: 33.3%;
+        .nettoyage {
+            width: 30%;
             text-align: center;
+            display: flow-root;
         }
 
-        .espacevert
-
         /*Activités*/
-            {
-            width: 33.3%;
+        .espacevert {
+            width: 30%;
             text-align: center;
+            display: flow-root;
         }
 
         .cible {
+
+            margin-top: 15vh;
             text-align: center;
-            margin-top: 11vh;
         }
 
-        main
-
         /*Professionnel Particulier*/
-            {
+        main {
             height: 3vh;
-            width: 97.5%;
+            width: 100%;
             justify-content: space-between;
-            margin-left: 1.5vh;
         }
 
-        .pro {
+        .propart {
             width: 50%;
-            height: 43vh;
+            height: 50vh;
+            margin: 0 3%;
         }
-
-        .part {
-            width: 50%;
-            height: 32vh;
-            margin-right: 1%;
-        }
-
-        .mainh
 
         /*Professionnel Particulier*/
-            {
+        .mainh {
             width: 100%;
-            height: 36vh;
+            height: 75vh;
             display: flex;
         }
 
-        .ppro {
-            width: 90%;
-        }
-
-        .mainb
-
         /*avis*/
-            {
+        .mainb {
             width: 100%;
             height: 25vh;
             display: flex;
             justify-content: space-around;
         }
 
-        .carouL
-
         /*carousel avis gauche*/
-            {
-            height: 18vh;
-            width: 30%;
+        .carouL {
+            width: 100%;
         }
-
-        .carouR
 
         /*carousel avis droite*/
-            {
+        .carouR {
             height: 18vh;
-            width: 30%;
+            width: 100%;
         }
 
-        .carousel-control-prev
-
         /*carousel avis droite et gauche*/
-            {
+        .carousel-control-prev {
             width: 10%;
             height: 18vh;
         }
 
-        .carousel-control-next
-
         /*carousel avis droite et gauche*/
-            {
+        .carousel-control-next {
             width: 10%;
             height: 18vh;
         }
-
-        .sectionecom
 
         /*e-commerce*/
-            {
-            height: 30vh;
+        .sectionecom {
+            height: 39vh;
+            margin-top: 12vh;
             display: flex;
             justify-content: space-around;
         }
@@ -784,13 +311,12 @@
 
         .imgC {
             width: 100%;
-            height: 279px;
+            margin-top: 1.5%;
         }
 
         .imgM {
-            width: 100%;
-            height: 20vh;
             display: flex;
+            margin: auto;
         }
 
         .imgl {
@@ -801,11 +327,13 @@
         .imgp {
             width: 10%;
             height: 25vh;
+            margin-top: 0;
         }
 
         .fivetoile {
             width: 40%;
         }
+
         .snap:hover {
             transition: all ease .3s .1s;
         }
@@ -818,56 +346,43 @@
             transition: all ease .3s .1s;
         }
 
-        .part {
-            width: 50%;
-            height: 32vh;
-            margin-right: 5%;
-        }
-
-        .sectionM
-
         /*Entreprise*/
-            {
-            width: 100%;
-            height: 20vh;
+        .sectionM {
+            width: 75%;
+            height: 32 vh;
+            /*display: flex;*/
+            margin: 0 auto;
+            display: flow-root;
         }
+
     }
 
     /* --------------------------------------------section tablette----------------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
-        .flash
 
         /* Débaras*/
-            {
+        .flash {
             color: #00aeef;
         }
 
-        section
-
         /*carousel Entreprise*/
-            {
+        section {
             width: 100%;
             height: 52vh;
         }
 
-        .sectionM
-
         /*Entreprise*/
-            {
+        .sectionM {
             width: 100%;
         }
 
-        .ets
-
         /*Entreprise*/
-            {
+        .ets {
             text-align: center;
         }
 
-        .activités
-
         /*Activités*/
-            {
+        .activités {
             text-align: center;
         }
 
@@ -875,28 +390,21 @@
             height: 52vh;
         }
 
-        .derat
-
         /*Activités*/
-            {
-            width: 33.3%;
-            text-align: center;
+        .derat {
+            width: 30.3%;
+
         }
 
-        .nettoyage
-
         /*Activités*/
-            {
-            width: 33.3%;
-            text-align: center;
+        .nettoyage {
+            width: 30.3%;
+
         }
 
-        .espacevert
-
         /*Activités*/
-            {
-            width: 33.3%;
-            text-align: center;
+        .espacevert {
+            width: 30.3%;
         }
 
         .cible {
@@ -904,14 +412,11 @@
             margin: 0;
         }
 
-        main
-
         /*Professionnel Particulier*/
-            {
+        main {
             height: 3vh;
-            width: 97.5%;
+            width: 100%;
             justify-content: center;
-            margin-left: 1.5vh;
         }
 
         .mainh
@@ -919,14 +424,19 @@
         /*Professionnel Particulier*/
             {
             width: 100%;
-            height: 40vh;
-            display: flex;
+            height: 57vh;
+            display: FLEX;
+            JUSTIFY-CONTENT: space-around;
         }
 
         .img1 {
             margin-top: 30px;
             width: 40%;
             height: 15vh;
+        }
+
+        .propart {
+            width: 48%
         }
 
         .img3 {
@@ -945,38 +455,34 @@
         }
 
         .imgM {
-            width: 100%;
-            height: 20vh;
             display: flex;
         }
     }
 
     /* -------------------------------------------------------section-portable-----------------------------------------*/
     @media all and (max-width: 450px) {
-        .flash
+        body {
+            width: 100%
+        }
 
         /* Débaras*/
-            {
+        .flash {
             color: #00aeef;
         }
 
-        section
-
         /*carousel Entreprise*/
-            {
+        section {
             width: 100%;
             height: 52vh;
         }
 
         .sectionM {
             width: 100%;
-            height: 33vh;
+            height: 94vh;
         }
 
-        .ets
-
         /*Entreprise*/
-            {
+        .ets {
             text-align: center;
         }
 
@@ -986,7 +492,7 @@
         }
 
         .sectionB {
-            height: 142vh;
+            height: 160vh;
             flex-direction: column;
             margin-top: 0;
         }
@@ -996,18 +502,14 @@
             text-align: center;
         }
 
-        .nettoyage
-
         /*Activités*/
-            {
+        .nettoyage {
             width: 100%;
             text-align: center;
         }
 
-        .espacevert
-
         /*Activités*/
-            {
+        .espacevert {
             width: 100%;
             text-align: center;
         }
@@ -1022,36 +524,32 @@
         /*Professionnel Particulier*/
             {
             height: 3vh;
-            width: 97.5%;
+            width: 100%;
             justify-content: center;
-            margin-left: 1.5vh;
         }
 
-        .pro {
-            height: 43vh;
-            width: 100%;
-            margin-right: 4%;
+        .propart {
+            height: 70vh;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            border: 0.5px solid gray;
         }
 
-        .part {
-            width: 100%;
-            height: 32vh;
-            margin-right: 5%;
+        .ppro {
+            text-align: center
         }
 
-        .mainh
-
-        /*Professionnel Particulier*/
-            {
-            height: 72vh;
+        .mainh {
+            height: 135vh;
             display: flex;
             flex-direction: column;
         }
 
         .mainb {
             width: 100%;
-            height: 40vh;
-            margin-top: 11vh;
+            height: 20vh;
             display: flex;
             flex-direction: column;
             text-align: inherit;
@@ -1072,9 +570,10 @@
         }
 
         .sectionecom {
-            height: 28vh;
+            height: 25vh;
             display: flex;
             flex-direction: row;
+            JUSTIFY-CONTENT: space-around
         }
 
         .ecom {
@@ -1089,8 +588,10 @@
         }
 
         .img3 {
-            width: 92%;
-            height: 190px;
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            margin: auto;
         }
 
         .img4 {
@@ -1104,456 +605,228 @@
         }
 
         .imgM {
-            width: 92%;
-            height: 20vh;
             display: flex;
+        }
+
+        .imgl {
+            width: 50%;
+            height: 10vh;
+            display: flex;
+            margin: auto 0;
         }
 
         .imgp {
             width: 25%;
-            height: 25vh;
-        }
-    }
-        /*----------------------------------------------source footer--------------------------------------*/
-    header,
-    nav,
-    section {
-        display: contents;
-    }
-
-    footer {
-        background-color: white;
-        border-top: 1px solid black;
-    }
-
-    .footerhaut {
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 1.5em;
-    }
-
-    .footerbas {
-        display: flex;
-        justify-content: center;
-        font-size: 1em;
-    }
-
-    .colonne1 {
-
-        width: 30%;
-        align-items: center;
-        color: black !important;
-        text-decoration: none !important;
-        display: flex;
-        flex-direction: column;
-        margin-top: 2%;
-    }
-
-    .ftext1 {
-        text-decoration: none;
-        color: black;
-    }
-
-    .ftext1:hover {
-        text-decoration: none;
-        color: black;
-        background-color: blue;
-        color: white;
-    }
-
-    .colonne2 {
-
-        width: 30%;
-        color: black !important;
-        text-decoration: none !important;
-        margin-top: 2%;
-    }
-
-    .ftext2 {
-        text-decoration: none;
-        color: black;
-    }
-
-    .ftext2:hover {
-        text-decoration: none;
-        color: black;
-        background-color: blue;
-        color: white;
-    }
-
-    .colonne3 {
-        display: flex;
-        align-items: center;
-        width: 30%;
-        justify-content: center;
-        margin-top: 2%;
-    }
-
-    .snap:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .fb:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .insta:hover {
-        transition: all ease .3s .1s;
-    }
-
-    .ordi {
-        display: none;
-    }
-
-    /* -----------------------------------------------footer-ORDINATEUR-------------------------------------------------- */
-    @media screen and (min-width: 769px) and (max-width: 2560px) {
-        .flogo {
-            width: 10%;
+            height: 20vh;
+            display: flex;
+            margin: auto 0;
         }
 
-        .footerhaut,
-        .footerbas {
-            font-size: 1em;
-        }
-    }
-
-    /*-----------------------------------------------footer-TABLETTE---------------------------------------- */
-    @media screen and (min-width: 451px) and (max-width: 768px) {
-        .flogo {
-            width: 20%;
+        @media (min-width: 576px) {
+            .textMenu {
+                display: none;
+                font-family: 'Red Hat Display', serif;
+            }
         }
 
-        .footerhaut,
-        .footerbas {
-            font-size: 1em;
-        }
-    }
-
-    /*----------------------------------------------footer-TELEPHONE----------------------------------------- */
-
-    @media screen and (max-width: 450px) {
-        footer {
-            border-top: 1px solid black;
-        }
-
-        .flogo {
-            width: 50%;
-            margin-bottom: 15%;
-        }
-
-        .footerhaut {
-            flex-direction: column-reverse;
-        }
-
-        .colonne2 {
-            order: -1;
-        }
-
-        .footerhaut {
-            align-items: center;
-            text-align: center;
-        }
-
-        .colonne3 {
-            width: 100%;
-            margin-bottom: 10%;
-            margin-top: 2vh;
-        }
-
-        .footerhaut,
-        .footerbas {
-            font-size: 1em;
-        }
     }
 </style>
 
-<body>
-  <div class="container-fluid">
-    <header>
-      <div class="fixed-top">
-        <div id="num">
-          <i class="fas fa-phone-alt" id="fass"></i> &nbsp; 0123456789 <i class="fas fa-phone-alt" id="fas"></i> &nbsp;
-        </div>
-        <div id="nom">
-          &nbsp; CKM Boutique
-        </div>
-        <i class="baseline-speaker_phone"></i>
-      </div>
-      <div class="logo">
-        <a href="homepage.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre"></a>
-      </div>
-
-
-      <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
-        <div class="mx-auto">
-          <p class="textMenu">
-            <strong>Menu</strong>
-          </p>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
-            aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-        <div class="traitDeSeparattion2"></div>
-        <div class="collapse navbar-collapse" id="navbarsExample03">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item li1" id="tailleLi">
-              <a class="nav-link" id="tailleA" href="#"><img src="include/img/CKMHOMEFOOTER.png" alt="Logo Home"
-                  class="logoHome"></a>
-            </li>
-            <hr class="mx-auto bg-dark text-center">
-            <li class="nav-item dropdown li2">
-              <a class="nav-link dropdown-toggle navMarg colorJ" href="#" id="dropdown03" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">3D</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-                <a class="dropdown-item dropdown-item01" href="3D.php">Dératisation</a>
-                <a class="dropdown-item dropdown-item01" href="3D.php#Desinfection">Désinfection</a>
-                <a class="dropdown-item dropdown-item01" href="3D.php#Desinsectisation">Désinsectisation</a>
-              </div>
-            </li>
-            <hr class="mx-auto bg-dark text-center">
-            <li class="nav-item li3">
-              <a class="nav-link navMarg colorB" href="nettoyage.php">Nettoyage</a>
-            </li>
-            <hr class="mx-auto bg-dark text-center">
-            <li class="nav-item li4">
-              <a class="nav-link navMarg colorV" href="ecpacevert.php" tabindex="-1" aria-disabled="true">Espaces Verts</a>
-            </li>
-            <hr class="mx-auto bg-dark text-center">
-            <li class="nav-item dropdown li5">
-              <a class="nav-link dropdown-toggle navMarg" href="#" id="dropdown03" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Galeries</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown03">
-                <a class="dropdown-item dropdown-item02" href="galerie3D.php">3D</a>
-                <a class="dropdown-item dropdown-item03" href="galerienettoyage.php">Nettoyage</a>
-                <a class="dropdown-item dropdown-item04" href="galerieecpacevert.php">Espaces Verts</a>
-              </div>
-            </li>
-            <hr class="mx-auto bg-dark text-center">
-          </ul>
-        </div>
-      </nav>
-      <div class="boutonTel">
-        <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
-      </div>
-    </header>
-  </div>
-        <!-------------------------------------------------------------Section---------------------------------------------------------------------->
-        <section>
-            <main>
-                <marquee class="flash" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous
-                    chargeons
-                    aussi de débarraser!!</marquee>
-                <!--le debaras en flash-->
-            </main>
-            <div class="sectionH">
-                <!--carousel-->
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="include/img/debarrascarrousel.png" class="imgC" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="include/img/newimg2560x765.png" class="imgC" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="include/img/produitredim2560vw765vh.png" class="imgC" alt="...">
-                        </div>
+<div class="container-fluid">
+    <section>
+        <main class="text-center">
+            <a href="nettoyage.php#debarras">
+                <marquee class="flash" width="1000" behavior="" direction="">Vous avez besoin de vos deux mains libres?
+                    Nous nous
+                    chargeons aussi de débarrasser!!</marquee>
+            </a>
+            <!--le debaras en flash-->
+        </main>
+        <div class="sectionH">
+            <!--carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="include/img/debarrascarrousel.png" class="imgC" alt="...">
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="carousel-item">
+                        <img src="include/img/newimg2560x765.png" class="imgC" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="include/img/produitredim2560vw765vh.png" class="imgC" alt="...">
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <h1 class="ets">l'Entreprise</h1>
-            <!--l'entreprise CKMpro-->
-            <div class="sectionM">
-                <p class="text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, ab.
-                    Perferendis eos repellat provident alias quam pariatur ut.
-                    Fugiat impedit temporibus officiis accusamus aperiam nostrum reiciendis sequi tempora in et.
+        </div><br>
+        <h1 class="ets">L'entreprise</h1><br>
+        <!--l'entreprise CKMpro-->
+        <div class="sectionM">
+            <p class="text-justify">
+                Agence de proximité à taille humaine, CKM PRO fidélise ses clients par une personnalisation du service
+                apporté et la mise en place d'une structure d'encadrement efficiente.
+                L'expérience et l'ancienneté du gérant et de ses collaborateurs contribue au développement et à la bonne
+                gestion de la société.
+                Discrétion : Professionnels, que vous soyez restaurateurs, gérants d’hôtels ou autres, il est évident
+                que la discrétion et la capacité à intervenir à des horaires qui ne gênent pas le bon fonctionnement
+                de votre établissement sont primordiaux. C’est pourquoi nos contrats réservés aux professionnels et
+                particuliers tiennent compte de ces contraintes pour vous offrir un service qui soit le plus discret
+                possible.
+            </p>
+            <p class="text-justify">
+                Réactivité / rapidité : Nous répondons aux urgences avec la même qualité et la même conscience
+                professionnelle que pour toute autre mission. Respect des délais : Le temps de travail est estimé à sa
+                juste valeur et les délais sont toujours respectés.
+                Professionnalisme : Le travail est toujours rendu impeccable malgré les conditions parfois extrêmes dans
+                lesquelles nous intervenons.
+                Sécurité /Hygiène : Toutes les mesures d'hygiène et de sécurité sont prises sur les chantiers pendant
+                l'exécution des travaux. Éliminer les nuisible est notre mission. Mais nous n’oublions pas la sécurité :
+                de vos enfants, de vous-même de vos animaux domestiques et de l’environnement.
+                Entreprise agréée et produits professionnels certifiés seront les gages d’une intervention efficace en
+                toute sécurité.
+                <p>
+        </div><br>
+
+        <h2 class="activités">Nos Activités</h2><br>
+        <!--les activités de CKMpro-->
+        <div class="sectionB">
+            <div class="derat">
+                <img src="include/img/3Dmaq.png" class="img3" alt="">
+                <h2><br>3D</h2>
+                <br>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+                    soluta sapiente sit corrupti similique vero in repellendus
+                    laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
+                    Molestiae quasi magnam quos obcaecati?
                 </p>
-                <p class="text-center">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores nihil
-                    fugiat iusto dolorum, rerum quis delectus assumenda qui quasi recusandae,
-                    necessitatibus aliquid animi eum quae incidunt rem eos quisquam omnis.
-                    <p>
-            </div>
+            </div><br>
+            <div class="nettoyage">
+                <img src="include/img/nettoyagemaq.png" class="img3" alt="">
+                <h2><br>Nettoyage</h2>
+                <br>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+                    soluta sapiente sit corrupti similique vero in repellendus
+                    laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
+                    Molestiae quasi magnam quos obcaecati?
+                </p>
+            </div><br>
+            <div class="espacevert">
+                <img src="include/img/espacevertmaq.png" class="img3" alt="">
+                <h2><br>Espaces verts</h2>
+                <br>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+                    soluta sapiente sit corrupti similique vero in repellendus
+                    laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
+                    Molestiae quasi magnam quos obcaecati?
+                </p>
+            </div><br>
+        </div>
 
-            <h2 class="activités">Nos Activités</h2><br>
-            <!--les activités de CKMpro-->
-            <div class="sectionB">
-                <div class="derat">
-                    <img src="include/img/3Dmaq.png" class="img3" alt="">
-                    <h2>3D</h2>
-                    <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-                        soluta sapiente sit corrupti similique vero in repellendus
-                        laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
-                        Molestiae quasi magnam quos obcaecati?
-                    </p>
-                </div>
-                <div class="nettoyage">
-                    <img src="include/img/nettoyagemaq.png" class="img3" alt="">
-                    <h2>Nettoyage</h2>
-                    <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-                        soluta sapiente sit corrupti similique vero in repellendus
-                        laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
-                        Molestiae quasi magnam quos obcaecati?
-                    </p>
-                </div>
-                <div class="espacevert">
-                    <img src="include/img/espacevertmaq.png" class="img3" alt="">
-                    <h2>Espace vert</h2>
-                    <p class="dne">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-                        soluta sapiente sit corrupti similique vero in repellendus
-                        laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
-                        Molestiae quasi magnam quos obcaecati?
-                    </p>
-                </div>
-            </div>
-
-            <h2 class="cible">Qui sont nos clients ?</h2><br>
-            <!--les cibles de CKMpro-->
-            <main class="mainh">
-                <div class="pro">
-                    <img src="include/img/professionnelmaq.png" class="imgM" alt="">
-                    <h4 class="text-center">Professionnel</h4>
-                    <P class="ppro">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
-                        praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
-                        dignissimos iusto perspiciatis.
-                        <P>
-                </div>
-                <div class="part">
-                    <img src="include/img/particuliermaq.png" class="imgM" alt="">
-                    <h4 class="text-center">Particulier</h4>
-                    <P class="ppro">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
-                        praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
-                        dignissimos iusto perspiciatis.
-                        <P>
-                </div>
-            </main>
-            <div class="mainb">
-                <!--Les Avis -->
-                <div class="carouL">
-                    <!--Les Avis carousel de gauche -->
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner text-center">
-                            <div class="carousel-item active">
-                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                                </p>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                                </p>
+        <h2 class="cible">Qui sont nos clients ?</h2><br>
+        <!--les cibles de CKMpro-->
+        <main class="mainh">
+            <div class="propart">
+                <img src="include/img/professionnelmaq.png" class="imgM img-fluid" alt=""><br>
+                <h4 class="text-center">Professionnel</h4>
+                <P class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
+                    praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
+                    dignissimos iusto perspiciatis.
+                    <P>
+                        <div class="mainb">
+                            <!--Les Avis -->
+                            <div class="carouL">
+                                <!--Les Avis carousel de gauche -->
+                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner text-center">
+                                        <div class="carousel-item active">
+                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Asperiores voluptas voluptate libero, quasi adipisci vero
+                                                delectus odit suscipit assumenda rerum deleniti voluptates
+                                                nemo fuga mollitia unde. Quas earum ea qui!
+                                            </p>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Asperiores voluptas voluptate libero, quasi adipisci vero
+                                                delectus odit suscipit assumenda rerum deleniti voluptates
+                                                nemo fuga mollitia unde. Quas earum ea qui!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="carouR">
-                    <!--Les Avis carousel de droite -->
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner text-center">
-                            <div class="carousel-item active">
-                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                                </p>
+            </div>
+            <div class="propart">
+                <img src="include/img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
+                <h4 class="text-center">Particulier</h4>
+                <P class="text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores voluptas voluptate libero, quasi adipisci vero
+                    delectus odit suscipit assumenda rerum deleniti voluptates
+                    nemo fuga mollitia unde. Quas earum ea qui!
+                    <P>
+                        <div class="carouR">
+                            <!--Les Avis carousel de droite -->
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner text-center">
+                                    <div class="carousel-item active">
+                                        <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Asperiores voluptas voluptate libero, quasi adipisci vero
+                                            delectus odit suscipit assumenda rerum deleniti voluptates
+                                            nemo fuga mollitia unde. Quas earum ea qui!
+                                        </p>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="include/img/5STARS.png" class="fivetoile" alt="">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Asperiores voluptas voluptate libero, quasi adipisci vero
+                                            delectus odit suscipit assumenda rerum deleniti voluptates
+                                            nemo fuga mollitia unde. Quas earum ea qui!
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="include/img/5STARS.png" class="fivetoile" alt="">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Asperiores voluptas voluptate libero, quasi adipisci vero delectus odit suscipit
-                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde. Quas earum ea qui!
-                                </p>
-                            </div>
                         </div>
-
-                    </div>
-                </div>
             </div>
-            <h2 class="ecom">La Boutique CKM</h2><br>
-            <!--ecommerce-->
-            <div class="sectionecom">
-                <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl" alt="">
-                <img src="include/img/produitspray2.png" class="imgp" alt="">
-            </div>
-        </section>
-        <!-----------------------------------------------------------footer-------------------------------------------------------------------->
-        <footer>
-            <div class="ensemblefooter">
-                <div class="footerhaut text-center">
-                    <div class="colonne1 text-center">
+        </main>
 
-                       <a href="homepage.php"></a><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="10%">
-                        <a class="ftext1" href="3D.php">3D</a>
-                        <a class="ftext1" href="nettoyage.php">Nettoyage</a>
-                        <a class="ftext1" href="espacevert.php">Espace Verts</a>
-                    </div>
+        <h2 class="ecom">La Boutique CKM</h2>
+        <!--ecommerce-->
+        <div class="sectionecom">
+            <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl" alt="">
+            <img src="include/img/produitspray2.png" class="imgp" alt="">
+        </div>
 
-                    <div class="colonne2 text-center">
-                        <a class="ftext2" href="">La Boutique</a><br>
-                        <a class="ftext2" href="contact.php">Contact</a><br>
-                        <a class="ftext2" href="">Mention Légales</a><br>
-                        <a class="ftext2" href="">Politique de Confidentialité</a><br>
-                    </div>
+    </section>
 
-                    <div class="colonne3 text-center">
-                        <div class="snap">
-                            <img class="snap" src="include/img/ckmsnapchatyellow.png" alt="" width="50%"><a
-                                href="http://www.snapchat.com"></a>
-                        </div>
-                        <div class="fb">
-                            <img class="snap" src="include/img/ckmfbblue.png" alt="" width="50%"><a
-                                href="http://www.facebook.com"></a>
-                        </div>
-                        <div class="snap">
-                            <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"><a
-                                href="http://www.instagram.com"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footerbas">
-                    <div id="copyright" class="mt-5" role="contentinfo">Copyright 2020 Insersite</div>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-</body>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+</div>
 
 
-</html>
+
+<?php 
+	require_once("include/footer.php");
+?>

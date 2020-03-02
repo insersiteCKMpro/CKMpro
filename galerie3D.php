@@ -8,69 +8,320 @@
   .telep {
     display: none;
   }
+
   /*------------------------------------------------------------------------code source---------------------------------------------------------------------*/
-  .colon1{display:flex; flex-direction: column;}
-  .colon2{display: flex; flex-direction: row; width: 55.5%; margin: auto;}
-  .colum{width:100%;}
-  .imgg1{width: 50%; display: flex; margin: 3vh auto;}
-  .imgg2{width: 80%; display: flex; margin: 3vh auto;}
-  .imgg3{width: 80%; display: flex; margin: 3vh auto;}
-  .imgg4{width: 25%; display: flex; margin: 3vh auto;}
+  .colon1 {
+    display: flex;
+    flex-direction: column;
+  }
 
-  .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
-  .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
-  .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
-  .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
+  .colon2 {
+    display: flex;
+    flex-direction: row;
+    width: 55.5%;
+    margin: auto;
+  }
 
-  .mySlides1{width: 100%; height: 60vh; margin: 7vh auto; display: flex;}
-  .mySlides2{width: 75%; height: 75vh; margin: auto; display: flex;}
-  .mySlides3{width: 75%; height: 75h; margin: auto; display: flex;}
-  .mySlides4{width: 75%; height: 75vh; margin: auto; display: flex;}
+  .colum {
+    width: 100%;
+  }
+
+  .imgg1 {
+    width: 50%;
+    display: flex;
+    margin: 3vh auto;
+  }
+
+  .imgg2 {
+    width: 80%;
+    display: flex;
+    margin: 3vh auto;
+  }
+
+  .imgg3 {
+    width: 80%;
+    display: flex;
+    margin: 3vh auto;
+  }
+
+  .imgg4 {
+    width: 25%;
+    display: flex;
+    margin: 3vh auto;
+  }
+
+  .demo1 {
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+  }
+
+  .demo2 {
+    width: 30%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+  }
+
+  .demo3 {
+    width: 30%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+  }
+
+  .demo4 {
+    width: 30%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+  }
+
+  .mySlides1 {
+    width: 100%;
+    height: 60vh;
+    margin: 7vh auto;
+    display: flex;
+  }
+
+  .mySlides2 {
+    width: 75%;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+  }
+
+  .mySlides3 {
+    width: 75%;
+    height: 75h;
+    margin: auto;
+    display: flex;
+  }
+
+  .mySlides4 {
+    width: 75%;
+    height: 75vh;
+    margin: auto;
+    display: flex;
+  }
+
   /*------------------------------------------------------------------------Responsive PC---------------------------------------------------------------------*/
-  @media screen and (min-width:769px) and (max-width: 2560px){
-    .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
-    .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
-    .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
-    .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
+  @media screen and (min-width:769px) and (max-width: 2560px) {
+    .demo1 {
+      width: 100%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
 
-    .mySlides1{width: 100%; height: 60vh; margin: 7vh auto; display: flex;}
-    .mySlides2{width: 75%; height: 75vh; margin: auto; display: flex;}
-    .mySlides3{width: 75%; height: 75vh; margin: auto; display: flex;}
-    .mySlides4{width: 75%; height: 75vh; margin: auto; display: flex;}
+    .demo2 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .demo3 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .demo4 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides1 {
+      width: 100%;
+      height: 60vh;
+      margin: 7vh auto;
+      display: flex;
+    }
+
+    .mySlides2 {
+      width: 75%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides3 {
+      width: 75%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides4 {
+      width: 75%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
   }
+
   /*------------------------------------------------------------------------Responsive Tab---------------------------------------------------------------------*/
-  @media screen and (min-width: 451px) and (max-width: 769px){
-    .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
-    .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
-    .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
-    .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
+  @media screen and (min-width: 451px) and (max-width: 769px) {
+    .demo1 {
+      width: 100%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
 
-    .mySlides1{width: 100%; height: 60vh; margin: 7vh auto; display: flex;}
-    .mySlides2{width: 73%; height: 75vh; margin: auto; display: flex;}
-    .mySlides3{width: 73%; height: 75vh; margin: auto; display: flex;}
-    .mySlides4{width: 73%; height: 75vh; margin: auto; display: flex;}
+    .demo2 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .demo3 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .demo4 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides1 {
+      width: 100%;
+      height: 60vh;
+      margin: 7vh auto;
+      display: flex;
+    }
+
+    .mySlides2 {
+      width: 73%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides3 {
+      width: 73%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides4 {
+      width: 73%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
   }
+
   /*------------------------------------------------------------------------Responsive Mobil---------------------------------------------------------------------*/
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 450px) {
 
-    .colon1{display: flex; flex-direction: column;}
-    .colon2{display: flex; flex-direction: column; width: 55.5%; margin: auto;}
-    .colum{width:100%;}
+    .colon1 {
+      display: flex;
+      flex-direction: column;
+    }
 
-    .imgg1{width: 80%; display: flex; margin: 3vh auto;}
-    .imgg2{width: 80%; display: flex; margin: 3vh auto;}
-    .imgg3{width: 80%; display: flex; margin: 3vh auto;}
-    .imgg4{width: 44%; display: flex; margin: 3vh auto;}
+    .colon2 {
+      display: flex;
+      flex-direction: column;
+      width: 55.5%;
+      margin: auto;
+    }
 
-    .demo1{width: 100%; height: 10vh; margin:auto; display: flex;}
-    .demo2{width: 30%; height: 10vh; margin:auto; display: flex;}
-    .demo3{width: 30%; height: 10vh; margin:auto; display: flex;}
-    .demo4{width: 30%; height: 10vh; margin:auto; display: flex;}
+    .colum {
+      width: 100%;
+    }
 
-    .mySlides1{width: 100%; height: 25vh; margin: 28vh auto; display: flex;}
-    .mySlides2{width: 100%; height: 75vh; margin: auto; display: flex;}
-    .mySlides3{width: 100%; height: 75vh; margin: auto; display: flex;}
-    .mySlides4{width: 100%; height: 75vh; margin: auto; display: flex;}
+    .imgg1 {
+      width: 80%;
+      display: flex;
+      margin: 3vh auto;
+    }
+
+    .imgg2 {
+      width: 80%;
+      display: flex;
+      margin: 3vh auto;
+    }
+
+    .imgg3 {
+      width: 80%;
+      display: flex;
+      margin: 3vh auto;
+    }
+
+    .imgg4 {
+      width: 44%;
+      display: flex;
+      margin: 3vh auto;
+    }
+
+    .demo1 {
+      width: 100%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .demo2 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .demo3 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .demo4 {
+      width: 30%;
+      height: 10vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides1 {
+      width: 100%;
+      height: 25vh;
+      margin: 28vh auto;
+      display: flex;
+    }
+
+    .mySlides2 {
+      width: 100%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides3 {
+      width: 100%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
+
+    .mySlides4 {
+      width: 100%;
+      height: 75vh;
+      margin: auto;
+      display: flex;
+    }
   }
 
   .row>.column {
@@ -115,17 +366,17 @@
 
   /* The Close Button */
   .close {
-    color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    color: #fff !important;
   }
 
   .close:hover,
   .close:focus {
-    color: #999;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
   }
@@ -225,7 +476,7 @@
 
     <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <span class="close cursor bg-clr--green" onclick="closeModal()">&times;</span>
       <div class="modal-content">
 
         <div class="mySlides">
@@ -260,23 +511,19 @@
         <!-- Thumbnail image controls -->
         <div class="row">
           <div class="column">
-            <img class="demo1" src="include/img/3d-galerie-1.png"
-              onclick="currentSlide(1)" alt="Bonhomme">
+            <img class="demo1" src="include/img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
           </div>
 
           <div class="column">
-            <img class="demo2" src="include/img/3d-galerie-2.png"
-              onclick="currentSlide(2)" alt="Rat">
+            <img class="demo2" src="include/img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
           </div>
 
           <div class="column">
-            <img class="demo3" src="include/img/3d-galerie-3.png"
-              onclick="currentSlide(3)" alt="Spray">
+            <img class="demo3" src="include/img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
           </div>
 
           <div class="column">
-            <img class="demo4" src="include/img/3d-galerie-4.png"
-              onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="include/img/3d-galerie-4.png" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
@@ -284,6 +531,7 @@
   </div>
 </section>
 <script>
+  
   // Open the Modal
   function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -329,6 +577,7 @@
     captionText.innerHTML = dots[slideIndex - 1].alt;
   }
 </script>
+
 <?php 
-    require_once("footerecom.php");
+    require_once("include/footerj.php");
 ?>
