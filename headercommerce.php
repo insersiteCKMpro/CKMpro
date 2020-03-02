@@ -262,19 +262,17 @@ section
     flex-direction:row;
     justify-content:center;
     
-}
-.fb
-{
-    width:5%;
-}
-.snap
-{
-    width:5%;
+    
 }
 .insta
-{
-    width:5%;
-}
+    {
+        filter: drop-shadow(1px 2px 0px black);
+        
+    }
+    .texte3
+    {
+        display:flex;
+    }
 .copy
 {
     background-color:pink;
@@ -359,9 +357,11 @@ section
 </div>
 
 <div class="colone3">
-<img class="fb img-fluid" src="img/ckmfbblue.png" alt="">
-<img class="snap img-fluid" src="img/ckmsnapchatyellow.png" alt="">
-<img class="insta img-fluid" src="img/ckminstagramgreen.png" alt="">
+<div class="texte3">
+<a href="http://www.snapchat.com"><img class="insta" src="img/ckmsnapchatyellow.png" alt="" width="50%"></a>
+<a href="http://www.facebook.com"><img class="insta" src="img/ckmfbblue.png" alt="" width="50%"></a>
+<a href="http://www.instagram.com"><img class="insta" src="img/ckminstagramgreen.png" alt="" width="50%"></a>
+</div>
 </div>
 
 </div>
