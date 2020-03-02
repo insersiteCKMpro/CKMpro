@@ -7,12 +7,12 @@ $bdd = new PDO('mysql:host=localhost;dbname=ckmpro', 'root', '', array(PDO::ATTR
 session_start();
 
 //----------------- CHEMIN
-define('RACINE_SITE',$_SERVER['DOCUMENT_ROOT'] . '/CKMPro/include/');
+define('RACINE_SITE',$_SERVER['DOCUMENT_ROOT'] . '/CKMPro/');
 // echo RACINE_SITE . '<hr>';
 // Cette constante retourne le chemin physique du dossier 10-BOUTIQUE sur le serveur
 // Lors de l'enregistrement d'image/photos , nous aurons besoin du chemin complet du dossier photo pour enregistrer la photo
 
-define ('URL', 'http://localhost/CKMPro/include/img/');
+define ('URL', 'http://localhost/CKMPro/img/');
 /*
     echo URL . '<hr>';
     Cette constante servira , par exemple, à enregistrer l'URL d'une photo/image dans le BDD, on ne conserve jamais la photo 
