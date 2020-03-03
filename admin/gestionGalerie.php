@@ -110,7 +110,9 @@ if($_POST)
     $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>Le produit référence <strong></strong> a bien été enregistré ! </p>";
 }
 }
-require_once('../include/header.php');
+require_once('../galerie3D.php');
+
+
 
 //echo '<pre>';print_r($_POST); echo '</pre>';
 

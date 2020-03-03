@@ -181,7 +181,7 @@
             CKM Boutique </div><i class="baseline-speaker_phone"></i>
         </div>
         <div class="logo">
-          <a href="homepage.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre"></a></div>
+          <a href="homepage.php"><img src="../include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre"></a></div>
         <div class="boutonTel"><a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
         </div>
       </header>

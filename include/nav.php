@@ -206,7 +206,7 @@
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item li1" id="tailleLi">
-            <a class="nav-link" id="tailleA" href="homepage.php"><img src="include/img/CKMHOMEFOOTER.png"
+            <a class="nav-link" id="tailleA" href="homepage.php"><img src="../include/img/CKMHOMEFOOTER.png"
                 alt="Logo Home" class="logoHome"></a>
           </li>
           <hr class="mx-auto bg-dark text-center">
