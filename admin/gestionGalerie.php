@@ -211,17 +211,18 @@ $photo = (isset($produitActuel['photo'])) ? $produitActuel['photo'] : '';
 
 <form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto" action="">
 
-<div class="form-group col-md-6">
+<div class="form-group col-md-4 mx-auto">
 <label for="public">Photo</label>
 <div class="custom-file" >
 
     <input type="hidden" class="custom-file-input" id="photo" name="photoActuelle" value="<?= $photo ?>">
     <input type="file" class="custom-file-input" id="photo" name="photo" value="<?= $photo ?>">
-    <label class="custom-file-label" for="photo" aria-describedby="photo">Choisir Photo</label>
+    <label class="custom-file-label text-start" for="photo" aria-describedby="photo">Choisir Photo</label>
     <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
     </div>
+  
+  <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center"><?=ucfirst($action); ?> Produit</button>
   </div>
-  <button type="submit" class=" col-md-12 btn btn-info"><?=ucfirst($action); ?> Produit</button>
 <?php if(isset($validInsert)) echo $validInsert; ?>
 <?php if(isset($validUpdate)) echo $validUpdate; ?>
 

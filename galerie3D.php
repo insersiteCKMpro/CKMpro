@@ -481,22 +481,22 @@
 
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="include/img/3d-galerie-1.png" class="mySlides1">
+          <img src="../include/img/3d-galerie-1.png" class="mySlides1">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="include/img/3d-galerie-2.png" class="mySlides2">
+          <img src="../include/img/3d-galerie-2.png" class="mySlides2">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="include/img/3d-galerie-3.png" class="mySlides3">
+          <img src="../include/img/3d-galerie-3.png" class="mySlides3">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="include/img/3d-galerie-4.png" class="mySlides4">
+          <img src="../include/img/3d-galerie-4.png" class="mySlides4">
         </div>
 
         <!-- Next/previous controls -->
@@ -511,19 +511,19 @@
         <!-- Thumbnail image controls -->
         <div class="row">
           <div class="column">
-            <img class="demo1" src="include/img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
+            <img class="demo1" src="../include/img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
           </div>
 
           <div class="column">
-            <img class="demo2" src="include/img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
+            <img class="demo2" src="../include/img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
           </div>
 
           <div class="column">
-            <img class="demo3" src="include/img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
+            <img class="demo3" src="../include/img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
           </div>
 
           <div class="column">
-            <img class="demo4" src="include/img/3d-galerie-4.png" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="../include/img/3d-galerie-4.png" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
@@ -578,6 +578,6 @@
   }
 </script>
 
-<?php 
+<!-- ?php 
     require_once("include/footerj.php");
-?>
+?> -->
