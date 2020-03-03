@@ -11,7 +11,7 @@ if(!connecteAdmin()) // Si l'internaute n'es pas ADMIN, il n'a rien a faire ici,
 if(isset($_GET['action']) && $_GET['action'] == 'suppression')
 {
     //Exo : réaliser le traintement PHP permettant de supprimer un produit en fonction de l'id_produit  envoyé dans l'URL avec une requete preparee
-    $deleteProduit = $bdd->prepare("DELETE FROM produit WHERE id_produit = :id_produit");
+    $deleteProduit = $bdd->prepare("DELETE FROM galerie WHERE id_produit = :id_produit");
     $deleteProduit->bindValue(':id_produit', $id_produit, PDO::PARAM_INT);
     $deleteProduit->execute();
     $_GET['action']='affichage'; // quand on supprime on reste sur la page
@@ -83,7 +83,7 @@ if($_POST)
             if(isset($_GET['action']) && $_GET['action'] == 'ajout')
 
         {
-            $insertProduit = $bdd->prepare("INSERT INTO produit (photo) VALUES ( :photo)");
+            $insertProduit = $bdd->prepare("INSERT INTO galerie (photo) VALUES ( :photo)");
 
             $validUpdate = "<p class='col-md-5 mx-auto alert-success text-center'>Le produit référence <strong></strong> a bien été modifié ! </p>";
         }
@@ -91,7 +91,7 @@ if($_POST)
         {
                 // Exo : formuler la requête de modification UPDATE avec une requete préparee
 
-                $insertProduit = $bdd->prepare("UPDATE produit SET photo = :photo");
+                $insertProduit = $bdd->prepare("UPDATE galerie SET photo = :photo");
 
                 $insertProduit->bindValue(':id_produit', $id_produit, PDO::PARAM_INT);
                 
@@ -138,7 +138,7 @@ require_once('../galerie3D.php');
 if(isset($_GET['action']) && $_GET['action'] == 'affichage')
 {
 
-$resultat = $bdd->query("SELECT * FROM produit");
+$resultat = $bdd->query("SELECT * FROM galerie");
 
 echo '<h1 class="display-4 text-center mt-3">Affichage des produits</h1><hr>';
 
