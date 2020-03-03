@@ -60,7 +60,8 @@
       }
 
       /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas {
+      #fas 
+      {
         display: none;
       }
 
@@ -84,7 +85,8 @@
       }
 
       /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas {
+      #fas 
+      {
         display: none;
       }
 
@@ -112,12 +114,14 @@
       }
 
       /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas {
+      #fas 
+      {
         display: none;
       }
 
       /* NUMERO */
-      #num {
+      #num 
+      {
         display: none;
       }
 
@@ -131,8 +135,8 @@
 
       /* Bouton téléphone  */
       .boutonTel {
-        width: 9.5vh;
-        height: 9.5vh;
+        width: 7vh;
+        height: 7vh;
         background-color: white;
         border: 3px solid black;
         border-radius: 50%;
@@ -147,9 +151,10 @@
 
       /* Bouton boutique  */
       .boutonbtq {
-        width: 9vh;
-        height: 9vh;
-        border: 1px solid black;
+        width: 7vh;
+        height: 7vh;
+        background-color: white;
+        border: 3px solid black;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -157,18 +162,20 @@
         position: fixed;
         z-index: 1;
         right: 12px;
-        top: 35vh;
+        top: 32vh;
       }
 
       #lienTel,
-      #lienBtq {
+      #lienBtq 
+      {
         color: black;
         text-decoration: none;
         background-color: transparent;
       }
 
       #iconTel,
-      #iconBtq {
+      #iconBtq 
+      {
         font-size: 2em;
         display: block;
       }
@@ -208,7 +215,7 @@
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
       </div>
       <div class="boutonbtq">
-        <a href="../boutique/index.php" id="lienBtq"><img src="include/img/boutique-bouton-mobile.png" class="fabuleux"
+        <a href="../boutique/index.php" id="lienBtq"><img src="include/img/panier-ckm-mobilemodule.png" class="fabuleux"
             id="iconBtq"></i></a>
       </div>
     </header>

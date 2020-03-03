@@ -7,7 +7,7 @@
     /*--------------------------------------------code source section----------------------------------*/
     p{
         width: 75%;
-        margin: 0 auto;
+        margin: 2vh auto;
     }
 
     .carousel-control-prev {
@@ -169,7 +169,6 @@
     .img1 {
         margin-top: 30px;
         width: 40vh;
-        height: 15vh;
     }
 
     .img3 {
@@ -178,7 +177,6 @@
 
     .img4 {
         width: 2%;
-        height: 20px;
     }
 
     .imgC {
@@ -192,13 +190,10 @@
 
     .imgl {
         width: 50%;
-        height: 25vh;
     }
 
     .imgp {
         width: 10%;
-        height: 20vh;
-        margin-top: 3vh
     }
 
     .fivetoile {
@@ -249,7 +244,7 @@
 
         /*Activités*/
         .sectionB {
-            height: 90vh;
+            height: 70vh;
             justify-content: space-around;
             display: flex;
         }
@@ -258,21 +253,18 @@
         .derat {
             width: 30%;
             text-align: center;
-            display: flow-root;
         }
 
         /*Activités*/
         .nettoyage {
             width: 30%;
             text-align: center;
-            display: flow-root;
         }
 
         /*Activités*/
         .espacevert {
             width: 30%;
             text-align: center;
-            display: flow-root;
         }
 
         .cible {
@@ -300,7 +292,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 95vh;
+            height: 75vh;
             display: flex;
         }
 
@@ -348,7 +340,6 @@
         .img1 {
             margin-top: 30px;
             width: 40vh;
-            height: 15vh;
         }
 
         .img3 {
@@ -357,7 +348,6 @@
 
         .img4 {
             width: 2%;
-            height: 20px;
         }
 
         .imgC {
@@ -371,13 +361,10 @@
 
         .imgl {
             width: 50%;
-            height: 25vh;
         }
 
         .imgp {
             width: 10%;
-            height: 25vh;
-            margin-top: 0;
         }
 
         .fivetoile {
@@ -401,7 +388,7 @@
     @media all and (min-width: 451px) and (max-width: 768px) {
         p{
             width: 80%;
-            margin: 0 auto;
+            margin: 2vh auto;
         }
         .pact{
             width: 95%;
@@ -450,7 +437,7 @@
         }
 
         .sectionB {
-            height: 78vh;
+            height: 62vh;
         }
 
         /*Activités*/
@@ -485,7 +472,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 95vh;
+            height: 75vh;
             display: FLEX;
             JUSTIFY-CONTENT: space-around;
         }
@@ -528,7 +515,7 @@
     @media all and (max-width: 450px) {
         p{
             width: 90%;
-            margin: 0 auto;
+            margin: 1vh auto;
         }
 
 
@@ -577,7 +564,7 @@
         }
 
         .sectionB {
-            height: 270vh;
+            height: 210vh;
             flex-direction: column;
         }
 
@@ -612,7 +599,7 @@
         }
 
         .pro {
-            height: 90vh;
+            height: 70vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -620,7 +607,7 @@
             border: 0.5px solid gray;
         }
         .part {
-            height: 90vh;
+            height: 70vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -633,7 +620,7 @@
         }
 
         .mainh {
-            height: 175vh;
+            height: 150vh;
             display: flex;
             flex-direction: column;
         }
@@ -656,6 +643,7 @@
             margin-top: 2vh;
             height: 18vh;
             width: 100%;
+            margin: 0;
         }
 
         .sectionecom {
@@ -693,7 +681,7 @@
 
         .imgM {
             display: flex;
-            margin-top: 0.4px;
+            margin: 0.5px;
         }
 
         .imgl {

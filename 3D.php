@@ -147,13 +147,13 @@
         In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
         mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p><br>
 
-    <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);">
+    <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);" id="desinfection">
         <div class="imgligne2">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
         </div><br>
 
-        <h2 class="titre2 text-center mt-5" id="desinfection">3D</h2><br>
+        <h2 class="titre2 text-center mt-5">3D</h2><br>
         <p class="text2 text-justify"> Lorem ipsum dolor sit
             amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
@@ -175,9 +175,9 @@
             mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p><br>
     </div>
 
-    <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
+    <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" id="desinsectisation" alt="">
 
-    <h2 class="titre3 text-center mt-5" id="desinsectisation">3D</h2><br>
+    <h2 class="titre3 text-center mt-5">3D</h2><br>
     <p class="text-justify">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
         repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
