@@ -2,6 +2,7 @@
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 <style>
     .test {
         height: 100vh;
@@ -333,20 +334,23 @@
 
 
 
-        #customControlValidation1:checked~.custom-control-label::before {
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
             color: #fff200;
             border-color: #fff200;
             background-color: #fff200;
         }
 
-        #customControlValidation2:checked~.custom-control-label::before {
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
             color: #00aeef;
             border-color: #00aeef;
             background-color: #00aeef;
         }
 
 
-        #customControlValidation3:checked~.custom-control-label::before {
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
             color: #00a651;
             border-color: #00a651;
             background-color: #00a651;
@@ -442,19 +446,22 @@
             display: flex;
         }
 
-        #customControlValidation1:checked~.custom-control-label::before {
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
             color: #fff200;
             border-color: #fff200;
             background-color: #fff200;
         }
 
-        #customControlValidation2:checked~.custom-control-label::before {
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
             color: #00aeef;
             border-color: #00aeef;
             background-color: #00aeef;
         }
 
-        #customControlValidation3:checked~.custom-control-label::before {
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
             color: #00a651;
             border-color: #00a651;
             background-color: #00a651;
@@ -698,24 +705,28 @@
             background-color: none;
         }
 
-        #customControlValidation1:checked~.custom-control-label::before {
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
             color: #fff200;
             border-color: #fff200;
             background-color: #fff200;
         }
 
-        #customControlValidation2:checked~.custom-control-label::before {
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
             color: #00aeef;
             border-color: #00aeef;
             background-color: #00aeef;
         }
 
-        #customControlValidation3:checked~.custom-control-label::before {
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
             color: #00a651;
             border-color: #00a651;
             background-color: #00a651;
         }
     }
+    
 </style>
 
 
@@ -802,25 +813,25 @@
                         </div>
                     </div>
                     <br>
-                    <select class="form-control">3D
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
+                    <select class="form-control" style="display: none" id="showInDropDown1">3D
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
                     </select>
                     <br>
-                    <select class="form-control">Nettoyage
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
+                    <select class="form-control" style="display:none" id="showInDropDown2">Nettoyage
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
                     </select>
                     <br>
-                    <select class="form-control">Espace vert
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
+                    <select class="form-control" style="display:none" id="showInDropDown3">Espace vert
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
                     </select>
                     <br>
                     <div class="form-group">
@@ -861,6 +872,38 @@
                     to.parentNode.insertBefore(s, to);
                 })();
             </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                    $("#customControlValidation1").click(function () {
+                        if ($(this).is(":checked")) {
+                            $("#showInDropDown1").show();
+                        } else {
+                            $("#showInDropDown1").hide();
+                        }
+                    });
+                });
+
+                $(function () {
+                    $("#customControlValidation2").click(function () {
+                        if ($(this).is(":checked")) {
+                            $("#showInDropDown2").show();
+                        } else {
+                            $("#showInDropDown2").hide();
+                        }
+                    });
+                });
+
+                $(function () {
+                    $("#customControlValidation3").click(function () {
+                        if ($(this).is(":checked")) {
+                            $("#showInDropDown3").show();
+                        } else {
+                            $("#showInDropDown3").hide();
+                        }
+                    });
+                });
+            </script>
         </div>
 
 
