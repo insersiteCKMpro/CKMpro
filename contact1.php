@@ -1153,7 +1153,7 @@
             }
             else
             {
-        if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['prenom']))
+                if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['prenom']))
                 {
                     $erreurPrenomCaractere = "<p class='text-danger font-italic'>* Champs obligatoire et Caractères autorisés : [a-z et A-Z]</p>";
                     $erreur = true;
