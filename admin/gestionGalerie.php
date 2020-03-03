@@ -5,7 +5,7 @@ extract($_GET); // $_GET['id_produit'] devient --> $id_produit
 
 if(!connecteAdmin()) // Si l'internaute n'es pas ADMIN, il n'a rien a faire ici, on le redirige vers la page connexion.php
 {
-    header('Location:' . URL.'../include/header.php');
+    // header('Location:' . URL.'../include/header.php');
 }
 //----------------SUPRESSION PRODUIT
 if(isset($_GET['action']) && $_GET['action'] == 'suppression')
@@ -43,7 +43,7 @@ if($_POST)
        // echo $photobdd . '<hr>';
 
        // On définit le chemin physique de la photo du dossier 'photo' sur le serveur, c'est ce que l'on utilisera pour copier la photo dans le dossier 'photo'
-        $photoDossier = RACINE_SITE . "img/$nomPhoto";
+        $photoDossier = RACINE_SITE . "/$nomPhoto";
        // echo $photoDossier . '<hr>';
         // copy() : fonction predefinie permettant de copier la photo dans le dossier 'photo' sur le serveur
         //arguments : copy('nom_temporaire','chemin de la photo vers le dossier photo')
