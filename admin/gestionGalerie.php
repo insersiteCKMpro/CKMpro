@@ -1,22 +1,26 @@
 <?php
 require_once('../include/init.php');
 extract($_POST);
-extract($_GET); // $_GET['id_produit'] devient --> $id_produit
+extract($_GET); // $_GET['id_img'] devient --> $id_img
 
+
+// condition si on es admin
 if(!connecteAdmin()) // Si l'internaute n'es pas ADMIN, il n'a rien a faire ici, on le redirige vers la page connexion.php
 {
     // header('Location:' . URL.'../include/header.php');
 }
+
 //----------------SUPRESSION PRODUIT
 if(isset($_GET['action']) && $_GET['action'] == 'suppression')
 {
     //Exo : réaliser le traintement PHP permettant de supprimer un produit en fonction de l'id_produit  envoyé dans l'URL avec une requete preparee
-    $deleteProduit = $bdd->prepare("DELETE FROM galerie WHERE id_produit = :id_produit");
-    $deleteProduit->bindValue(':id_produit', $id_produit, PDO::PARAM_INT);
-    $deleteProduit->execute();
+
+    $deleteImg = $bdd->prepare("DELETE FROM galerie_img (photo) WHERE photo = :photo");
+    $deleteImg->bindValue(':photo', $photobdd, PDO::PARAM_STR);
+    $deleteImg->execute();
     $_GET['action']='affichage'; // quand on supprime on reste sur la page
 
-    $validDelete= "<p class='col-md-5 mx-auto alert-success text-center'>Le produit ID <strong>$id_produit</strong> a bien été supprimé!</p>";
+    $validDelete= "<p class='col-md-5 mx-auto alert-success text-center'>L'image' ID <strong>$id_img</strong> a bien été supprimé!</p>";
 
 }
 
@@ -83,31 +87,28 @@ if($_POST)
             if(isset($_GET['action']) && $_GET['action'] == 'ajout')
 
         {
-            $insertProduit = $bdd->prepare("INSERT INTO galerie (photo) VALUES ( :photo)");
-
-            $validUpdate = "<p class='col-md-5 mx-auto alert-success text-center'>Le produit référence <strong></strong> a bien été modifié ! </p>";
+            // $insertProduit = $bdd->prepare("INSERT INTO galerie_img VALUES ( :photo)");
+    $insertProduit = $bdd->prepare("INSERT INTO galerie_img (photo) VALUES ( :photo)");
+    $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
+    $insertProduit->execute();
+            
         }
         else
         {
                 // Exo : formuler la requête de modification UPDATE avec une requete préparee
 
-                $insertProduit = $bdd->prepare("UPDATE galerie SET photo = :photo");
+                $insertProduit = $bdd->prepare("UPDATE galerie_img (photo) SET photo = :photo");
 
-                $insertProduit->bindValue(':id_produit', $id_produit, PDO::PARAM_INT);
-                
+                $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
+                $insertProduit->execute();
         }
 
 
     // Exo : realiser le traitement PHP permettant d'inserer un produiit dans la BDD avec une requete préparé
 
 
-        
 
-  
-    $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
-    $insertProduit->execute();
-
-    $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>Le produit référence <strong></strong> a bien été enregistré ! </p>";
+    $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été enregistré ! </p>";
 }
 }
 require_once('../galerie3D.php');
@@ -139,13 +140,13 @@ require_once('../galerie3D.php');
 if(isset($_GET['action']) && $_GET['action'] == 'affichage')
 {
 
-$resultat = $bdd->query("SELECT * FROM galerie");
+$resultat = $bdd->query("SELECT * FROM galerie_img");
 
-echo '<h1 class="display-4 text-center mt-3">Affichage des produits</h1><hr>';
+echo '<h1 class="display-4 text-center mt-3">Affichage des images</h1><hr>';
 
 if(isset($validDelete)) echo $validDelete;
 
-echo '<p class="text-center">Nombre de produit(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
+echo '<p class="text-center">Nombre d\'image(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
 echo '<table class="table table-dark table table bordered text-center"><tr>';
 for($i =0; $i < $resultat->columnCount();$i++)
 {
@@ -155,11 +156,11 @@ for($i =0; $i < $resultat->columnCount();$i++)
 echo '<th>Modif</th>'; // On crééer manuellement 2 colonnes d'entetes suppléme,ntaire
 echo '<th>Supp</th>';
 echo '</tr>';
-while($produit = $resultat->fetch(PDO::FETCH_ASSOC))
+while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
 {
     //echo '<pre>'; print_r($produit);echo'<pre>';
     echo '</tr>';
-    foreach($produit as $key => $value)
+    foreach($galerie_img as $key => $value)
     {
         if($key =='photo'){
         echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
@@ -172,11 +173,9 @@ while($produit = $resultat->fetch(PDO::FETCH_ASSOC))
         }
 
 
-        
-        
     }
-    echo "<td><a href = '?action=modification&id_produit=$produit[id_produit]' class='text-info'><i class='far fa-edit'></i></a></td>"; // on crée manuelleùment 2 cellules supplémentaire pour chaque produit
-    echo "<td><a href='?action=suppression&id_produit=$produit[id_produit]' class='text-info'><i class='fas fa-trash-alt' onclick='return(confirm(\"En êtes-vous certain ? \"));'></i></a></td>";
+    echo "<td><a href = '?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>"; // on crée manuelleùment 2 cellules supplémentaire pour chaque produit
+    echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt' onclick='return(confirm(\"En êtes-vous certain ? \"));'></i></a></td>";
     echo '</tr>';
 }
 echo '</table>';
@@ -195,11 +194,11 @@ echo '</table>';
 <!-- Si l'indice 'action' est bien définit dans l'URL et que cette indice a pour valeur 'ajout', cela veut dire que l'utilisateur  -->
 <?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')): 
 
-if(isset($id_produit)) // $_GET['id_produit']
+if(isset($id_img)) // $_GET['id_img']
 {
-    // On selectionne en BDD toute les donnee du produit via l'id_produit envoyé dans l'url
-    $resultat = $bdd->prepare("SELECT * FROM produit WHERE id_produit = :id_produit");
-    $resultat->bindValue(':id_produit',$id_produit,PDO::PARAM_INT);
+    // On selectionne en BDD toute les donnee du produit via l'id_img envoyé dans l'url
+    $resultat = $bdd->prepare("SELECT * FROM galerie_img WHERE id_img = :id_img");
+    $resultat->bindValue(':id_img',$id_img,PDO::PARAM_INT);
     $resultat->execute();
 
     $produitActuel = $resultat->fetch(PDO::FETCH_ASSOC);
