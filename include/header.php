@@ -31,7 +31,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 25vh;
+      height: 18vh;
     }
 
     /* LOGO TITRE STYLE */
@@ -132,6 +132,9 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
+      }
+      .logo{
+        height: 25vh;
       }
 
       /* Bouton téléphone  */

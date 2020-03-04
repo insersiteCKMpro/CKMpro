@@ -1,14 +1,22 @@
-<html>
-
 <?php 
     require_once("include/header.php");
     require_once("include/nav.php")
 ?>
-
-<body>
-
-    <style>
+<style>
         /* ------------------------css-source-EV--------------------------------- */
+        .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .titr1{
+            margin: 4vh auto;
+            display: flex;
+            justify-content: center;
+        }
+
         .imgligne1 {
             display: flex;
             align-items: center;
@@ -26,19 +34,17 @@
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-family: 'Red Hat Display', serif;
             width: 75%;
-            margin: 0 auto;
+            margin: 0 auto 5vh;
         }
 
         .titre2,
         .titre3 {
-            width: 100%;
             font-size: 2.5rem;
             font-family: 'Red Hat Display', serif;
             font-weight: 800;
-            
         }
 
         /* ------------------------RESPONSIVE-EV-ecran pc-------------------------------- */
@@ -51,10 +57,12 @@
             .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
                 font-size: 2.5rem;
+                font-family: 'Red Hat Display', serif;
             }
 
             .bg {
                 width: 100%;
+                padding-bottom: 2vh;
             }
 
             .imgligne2 {
@@ -73,10 +81,12 @@
                 width: 100%;
                 font-size: 2.5rem;
                 font-family: 'Red Hat Display', serif;
+                font-weight: 800;
             }
 
             .bg {
                 width: 100%;
+                padding-bottom: 2vh;
             }
 
             .imgligne2 {
@@ -84,11 +94,10 @@
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 font-family: 'Red Hat Display', serif;
-                width: 75%;
-                margin: 0 auto;
-                display: flex;
+                width: 80%;
+                margin: 0 auto 5vh;
             }
         }
 
@@ -99,14 +108,20 @@
                 width: 100%;
             }
 
+            .para1 {
+                display: flex;
+                flex-direction: column;
+            }
+
             .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
                 font-size: 2.5rem;
                 font-family: 'Red Hat Display', serif;
-
+                font-weight: 800px;
             }
 
             .bg {
+                padding-bottom: 2vh;
                 width: 100%;
             }
 
@@ -115,47 +130,48 @@
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.3em;
                 font-family: 'Red Hat Display', serif;
-                width: 85%;
-                margin: 0 auto;
-                display: flex;
+                width: 80%;
+                margin: 0 auto 5vh;
             }
         }
     </style>
-
+<div class="container-fluid">
     <div class="imgligne1">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
-    <h1 class="text-center mt-5">Espaces verts</h1><br>
-    <p class="text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
-        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
-        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
-        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
-        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
-        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
-        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
-    </p>
-    <p class="text-justify">        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
-        illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
-        Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
-        cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
-        molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
-        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
-        perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
-    </p><br>
+    <div class="bg">
+        <h1 class="titr1">Espaces verts</h1>
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+            illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+            Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+            cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+            molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+            possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+            perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
+        </p>
+        <p class="text-justify">        
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
+            illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
+            Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
+            cupiditate earum quasi consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto 
+            molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
+            possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
+            perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+        </p>
+    </div>
 
     <div class="bg" style="background-color: rgba(0, 166, 81, 0.5);">
         <div class="imgligne2">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
             <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
-        </div><br>
+        </div>
 
-        <h2 class="titre2 text-center mt-5">Espaces verts</h2><br>
+        <h2 class="titr1">Espaces verts</h2>
         <p class="text2 text-justify">        
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
         illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
@@ -174,12 +190,12 @@
         molestias debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto 
         possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga 
         perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
-        </p><br>
+        </p>
     </div>
+    <div class="bg">
+        <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
-    <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
-
-        <h2 class="titre3 text-center mt-5">Espaces Verts</h2><br>
+        <h2 class="titr1">Espaces Verts</h2>
         <p class="text-justify">        
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
         illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
@@ -190,7 +206,7 @@
         perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
 
-        <p class="text-justify mb-5">        
+        <p class="text-justify">        
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
         illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
         Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -200,11 +216,7 @@
         perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
     </div>
-
-</body>
-
+</div>
 <?php 
     require_once("include/footerv.php");
 ?>
-
-</html>

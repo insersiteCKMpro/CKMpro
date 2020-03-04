@@ -252,9 +252,10 @@
 
         /*Activités*/
         .sectionB {
-            height: 70vh;
+            height: 75vh;
             justify-content: space-around;
             display: flex;
+            margin-left: 3vh;
         }
 
         /*Activités*/
@@ -300,7 +301,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 75vh;
+            height: 80vh;
             display: flex;
         }
 

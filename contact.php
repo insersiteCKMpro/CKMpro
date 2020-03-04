@@ -8,9 +8,14 @@
         height: 100vh;
         display: flex;
     }
+    .contac1 {
+        text-align: center!important;
+        margin: 2vh;
+    }
 
     .titrre {
         text-align: center;
+        margin: 2vh;
     }
 
     .test2 {
@@ -175,6 +180,7 @@
 
         .titrre {
             text-align: center;
+            margin: 2vh;
         }
 
         .test2 {
@@ -368,6 +374,7 @@
 
         .titrre {
             text-align: center;
+            margin-top: 2vh;
         }
 
         .test2 {
@@ -378,7 +385,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 22vh;
+            height: 12vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -562,7 +569,7 @@
 
         .titrre {
             text-align: center;
-            margin: 0;
+            margin: 2vh;
         }
 
         .test2 {
@@ -573,7 +580,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 23vh;
+            height: 12vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -739,7 +746,7 @@
         <main class="test">
             <div class="test2">
                 <div class="titrec">
-                    <h2 class="text-center">Contact</h2>
+                    <h2 class="contac1">Contact</h2>
                     <div class="num">
                         <p>Numero de téléphone: <br>
                             0123456789
@@ -753,7 +760,6 @@
                     <!--responsive tablette-->
                     <div class="titrec">
                         <h2 class="">Contact</h2>
-                        <br>
                         <div class="num">
                             <p>Numero de téléphone: <br>
                                 0123456789
