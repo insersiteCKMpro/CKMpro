@@ -187,7 +187,7 @@ echo '</table>';
 
 .img-thumbnail
 {
-    max-width:30%;
+    max-width:30% !important;
 }
 
 </style>
