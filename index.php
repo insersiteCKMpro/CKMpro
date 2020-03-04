@@ -205,7 +205,7 @@
     }
 
     .fivetoile {
-        width: 40%;
+        width: 30%;
     }
 
     /*---------------------------------------------section-ecran pc----------------------------------- */
@@ -377,19 +377,7 @@
         }
 
         .fivetoile {
-            width: 40%;
-        }
-
-        .snap:hover {
-            transition: all ease .3s .1s;
-        }
-
-        .fb:hover {
-            transition: all ease .3s .1s;
-        }
-
-        .insta:hover {
-            transition: all ease .3s .1s;
+            width: 30%;
         }
     }
 
