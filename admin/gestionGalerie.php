@@ -122,6 +122,7 @@ require_once('../galerie3D.php');
 //Exo : réaliser le traitement PHP permettant d'afficher l'ensemble de la table 'produit', avec les entêtes des colones.Prévoir un lien modification et suppressio, pour chaques produit
 ?>
 
+
 <ul class="col-md-4 list-group text-center mt-3 mx-auto">
 <li class="list-group-item bg-primary">BACK OFFICE</li>
 <li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE PRODUITS</a></li>
@@ -184,7 +185,13 @@ echo '</table>';
 
 <style>
 
+.img-thumbnail
+{
+    max-width:30%;
+}
+
 </style>
+
 <!-- Si l'indice 'action' est bien définit dans l'URL et que cette indice a pour valeur 'ajout', cela veut dire que l'utilisateur  -->
 <?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')): 
 
