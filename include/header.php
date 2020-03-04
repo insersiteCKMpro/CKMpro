@@ -111,6 +111,7 @@
         float: right !important;
         font-size: 1.2em;
         font-family: 'Red Hat Display', serif;
+        display: none;
       }
 
       /* ICONE TEL ENTÊTE FIXE STYLE */
@@ -145,8 +146,8 @@
         align-items: center;
         position: fixed;
         z-index: 1;
-        right: 9px;
-        top: 21vh;
+        right: 80px;
+        top: 1vh;
       }
 
       /* Bouton boutique  */
@@ -161,8 +162,8 @@
         align-items: center;
         position: fixed;
         z-index: 1;
-        right: 12px;
-        top: 32vh;
+        right: 10px;
+        top: 1vh;
       }
 
       #lienTel,

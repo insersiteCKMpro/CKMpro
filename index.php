@@ -5,6 +5,14 @@
 
 <style>
     /*--------------------------------------------code source section----------------------------------*/
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+        
     p{
         width: 75%;
         margin: 2vh auto;
@@ -513,6 +521,7 @@
 
     /* -------------------------------------------------section-portable------------------------------*/
     @media all and (max-width: 450px) {
+        
         p{
             width: 90%;
             margin: 1vh auto;
