@@ -8,7 +8,7 @@ function connecte()// cette fonction indique si le membre est connecté
 
 // Si l'indice membre dans le fichier session n'est pas définit, cela veut dire que l'inrernaute n'est pas passé par la page connexion ou inscription
 
-if(!isset($_SESSION['membre']))
+if(!isset($_SESSION['client']))
 
 {
     return false;
@@ -23,7 +23,7 @@ else // sino 'membre' dans la session existe,le membre est connecté,on retourne
 function connecteAdmin() // cette fonction indique si un membre est administrateur du site
 {
     // Si l'internaute est connecté et que dans la BDD le champ'statut' a pour valeur '1',cela veut dire que l'internaute est administrateur du site
-if(connecte() && $_SESSION['membre']['statut'] == 1)
+if(connecte() && $_SESSION['client']['statut'] == 1)
 {
     return true;
 }
