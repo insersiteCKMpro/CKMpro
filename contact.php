@@ -5,7 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 <style>
     .test {
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
     }
     .contac1 {
@@ -19,7 +19,7 @@
     }
 
     .test2 {
-        height: 75vh;
+        min-height: 75vh;
         display: flex;
         width: 30%;
     }
@@ -30,19 +30,19 @@
 
     .titrec {
         width: 100%;
-        height: 40vh;
+        min-height: 40vh;
     }
 
     .num {
         margin: 0 7vh;
         width: 75%;
-        height: 10vh;
+        min-height: 10vh;
     }
 
     .traits1 {
         width: 2%;
         border-left: 1px solid black;
-        height: 120vh;
+        min-height: 120vh;
     }
 
     .traits2 {
@@ -59,11 +59,11 @@
 
     .for {
         width: 45%;
-        height: 70vh;
+        min-height: 70vh;
     }
 
     .radbox {
-        height: 15vh;
+        min-height: 15vh;
         display: flex;
     }
 
@@ -74,7 +74,7 @@
     .star {
         display: initial;
         width: 75%;
-        height: 15vh;
+        min-height: 15vh;
     }
 
     form {
@@ -84,13 +84,13 @@
 
     .checkio {
         width: 100%;
-        height: 1vh;
+        min-height: 1vh;
         display: flex;
     }
 
     .checkio1 {
         width: 100%;
-        height: 10vh;
+        min-height: 10vh;
         display: flex;
     }
 
@@ -100,7 +100,7 @@
 
     .put1 {
         width: 33%;
-        height: 6vh;
+        min-height: 6vh;
         margin-top: 3vh;
     }
 
@@ -174,7 +174,7 @@
     /**********************************format pc responsive------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
-            height: 105vh;
+            min-height: 105vh;
             display: flex;
         }
 
@@ -185,7 +185,7 @@
 
         .test2 {
             width: 27%;
-            height: 75vh;
+            min-height: 75vh;
             display: flex;
         }
 
@@ -195,19 +195,19 @@
 
         .titrec {
             width: 100%;
-            height: 40vh;
+            min-height: 40vh;
         }
 
         .num {
             margin: 0 7vh;
             width: 75%;
-            height: 10vh;
+            min-height: 10vh;
         }
 
         .traits1 {
             width: 2%;
             border-left: 1px solid black;
-            height: 98vh;
+            min-height: 98vh;
             margin-right: 3vh;
         }
 
@@ -225,11 +225,11 @@
 
         .for {
             width: 45%;
-            height: 70vh;
+            min-height: 70vh;
         }
 
         .radbox {
-            height: 15vh;
+            min-height: 15vh;
             display: flex;
         }
 
@@ -240,7 +240,7 @@
         .star {
             display: initial;
             width: 75%;
-            height: 15vh;
+            min-height: 15vh;
         }
 
         form {
@@ -250,13 +250,13 @@
 
         .checkio {
             width: 100%;
-            height: 1vh;
+            min-height: 1vh;
             display: flex;
         }
 
         .checkio1 {
             width: 100%;
-            height: 10vh;
+            min-height: 10vh;
             display: flex;
         }
 
@@ -266,7 +266,7 @@
 
         .put1 {
             width: 33%;
-            height: 6vh;
+            min-height: 6vh;
             margin-top: 3vh;
         }
 
@@ -371,7 +371,7 @@
         }
 
         .test {
-            height: 120vh;
+            min-height: 120vh;
             display: flex;
             justify-content: center;
         }
@@ -389,7 +389,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 14vh;
+            min-height: 14vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -397,7 +397,7 @@
         .num {
             margin: auto;
             width: 75%;
-            height: 10vh;
+            min-height: 10vh;
         }
 
         .traits1 {
@@ -407,18 +407,18 @@
         .traits2 {
             width: 100%;
             border-top: 1px solid #000;
-            height: 0.5vh;
+            min-height: 0.5vh;
             align-items: center;
         }
 
         .titrec {
-            height: 5vh;
+            min-height: 5vh;
             text-align: center;
         }
 
         .traitori {
             background-color: black;
-            height: 2px;
+            min-height: 2px;
         }
 
         .espace {
@@ -426,7 +426,7 @@
         }
 
         .radbox {
-            height: 15vh;
+            min-height: 15vh;
             display: flex;
         }
 
@@ -437,7 +437,7 @@
         .star {
             display: initial;
             width: 75%;
-            height: 15vh;
+            min-height: 15vh;
         }
 
         form {
@@ -447,13 +447,13 @@
 
         .checkio {
             width: 100%;
-            height: 4vh;
+            min-height: 4vh;
             display: flex;
         }
 
         .checkio1 {
             width: 100%;
-            height: 10vh;
+            min-height: 10vh;
             display: flex;
         }
 
@@ -480,12 +480,12 @@
 
         .put {
             width: 33.3%;
-            height: 2vh;
+            min-height: 2vh;
         }
 
         .put1 {
             width: 33%;
-            height: 6vh;
+            min-height: 6vh;
             margin-top: 1vh;
         }
 
@@ -567,12 +567,12 @@
         }
         
         .radbox {
-            height: 15vh;
+            min-height: 15vh;
             display: flex;
         }
 
         .test {
-            height: 120vh;
+            min-height: 120vh;
             display: flex;
         }
 
@@ -589,7 +589,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 14vh;
+            min-height: 14vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -597,7 +597,7 @@
         .num {
             margin: auto;
             width: 75%;
-            height: 10vh;
+            min-height: 10vh;
         }
 
         .traits1 {
@@ -607,7 +607,7 @@
         .traits2 {
             width: 100%;
             border-top: 1px solid #000;
-            height: 0;
+            min-height: 0;
             align-items: center;
         }
 
@@ -618,12 +618,12 @@
         .star {
             display: initial;
             width: 75%;
-            height: 15vh;
+            min-height: 15vh;
         }
 
         .for {
             width: 100%;
-            height: 70vh;
+            min-height: 70vh;
         }
 
         form {
@@ -633,24 +633,24 @@
 
         .checkio {
             width: 100%;
-            height: 4vh;
+            min-height: 4vh;
             display: flex;
         }
 
         .checkio1 {
             width: 100%;
-            height: 10vh;
+            min-height: 10vh;
             display: flex;
         }
 
         .put {
             width: 33.3%;
-            height: 2vh;
+            min-height: 2vh;
         }
 
         .put1 {
             width: 33.3%;
-            height: 6vh;
+            min-height: 6vh;
         }
 
         .btn {

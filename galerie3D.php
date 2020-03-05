@@ -52,56 +52,56 @@
 
   .demo1 {
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .demo2 {
     width: 30%;
-    height: 10vh;
+    min-height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .demo3 {
     width: 30%;
-    height: 10vh;
+    min-height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .demo4 {
     width: 30%;
-    height: 10vh;
+    min-height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .mySlides1 {
     width: 100%;
-    height: 60vh;
+    min-height: 60vh;
     margin: 7vh auto;
     display: flex;
   }
 
   .mySlides2 {
     width: 75%;
-    height: 75vh;
+    min-height: 75vh;
     margin: auto;
     display: flex;
   }
 
   .mySlides3 {
     width: 75%;
-    height: 75h;
+    min-height: 75h;
     margin: auto;
     display: flex;
   }
 
   .mySlides4 {
     width: 75%;
-    height: 75vh;
+    min-height: 75vh;
     margin: auto;
     display: flex;
   }
@@ -110,56 +110,56 @@
   @media screen and (min-width:769px) and (max-width: 2560px) {
     .demo1 {
       width: 100%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo2 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo3 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo4 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides1 {
       width: 100%;
-      height: 60vh;
+      min-height: 60vh;
       margin: 7vh auto;
       display: flex;
     }
 
     .mySlides2 {
       width: 75%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
       width: 75%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides4 {
       width: 75%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
@@ -169,56 +169,56 @@
   @media screen and (min-width: 451px) and (max-width: 769px) {
     .demo1 {
       width: 100%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo2 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo3 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo4 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides1 {
       width: 100%;
-      height: 60vh;
+      min-height: 60vh;
       margin: 7vh auto;
       display: flex;
     }
 
     .mySlides2 {
       width: 73%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
       width: 73%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides4 {
       width: 73%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
@@ -269,56 +269,56 @@
 
     .demo1 {
       width: 100%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo2 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo3 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo4 {
       width: 30%;
-      height: 10vh;
+      min-height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides1 {
       width: 100%;
-      height: 25vh;
+      min-height: 25vh;
       margin: 28vh auto;
       display: flex;
     }
 
     .mySlides2 {
       width: 100%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
       width: 100%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides4 {
       width: 100%;
-      height: 75vh;
+      min-height: 75vh;
       margin: auto;
       display: flex;
     }
@@ -348,7 +348,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     overflow: auto;
     background-color: black;
   }
@@ -383,7 +383,7 @@
   /* Hide the slides by default */
   .mySlides {
     display: none;
-    height: 75vh;
+    min-height: 75vh;
     margin: auto;
   }
 

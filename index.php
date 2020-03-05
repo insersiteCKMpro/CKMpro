@@ -35,7 +35,7 @@
     /* Débaras*/
     marquee.flash:hover {
         font-size: x-large;
-        height: 5.5vh;
+        min-height: 5.5vh;
         background-color: rgb(0, 174, 239);
         color: #fff200;
         transition: 1s;
@@ -51,7 +51,7 @@
 
     .flash {
         color: #00a651;
-        height: 5vh;
+        min-height: 5vh;
         display: flex;
         padding-top: 0.5%;
         transition: 1s;
@@ -60,7 +60,7 @@
     /*carousel Entreprise*/
     section {
         width: 100%;
-        height: 52vh;
+        min-height: 52vh;
     }
 
     /*Entreprise*/
@@ -75,7 +75,7 @@
 
     /*Activités*/
     .sectionB {
-        height: 68vh;
+        min-height: 68vh;
         justify-content: space-around;
         display: flex;
     }
@@ -100,30 +100,30 @@
 
     /*Professionnel Particulier*/
     main {
-        height: 1vh;
+        min-height: 1vh;
         width: 100%;
         justify-content: space-between;
     }
 
     .pro {
         width: 50%;
-        height: 43vh;
+        min-height: 43vh;
     }
 
     .part {
         width: 50%;
-        height: 43vh;
+        min-height: 43vh;
     }
 
     .part {
         width: 50%;
-        height: 32vh;
+        min-height: 32vh;
     }
 
     /*Professionnel Particulier*/
     .mainh {
         width: 100%;
-        height: 36vh;
+        min-height: 36vh;
         display: flex;
     }
 
@@ -134,7 +134,7 @@
     /*avis*/
     .mainb {
         width: 100%;
-        height: 25vh;
+        min-height: 25vh;
         display: flex;
     }
 
@@ -153,13 +153,13 @@
     /*carousel avis droite et gauche*/
     .carousel-control-prev {
         width: 10%;
-        height: 18vh;
+        min-height: 18vh;
     }
 
     /*carousel avis droite et gauche*/
     .carousel-control-next {
         width: 10%;
-        height: 18vh;
+        min-height: 18vh;
     }
 
     /*e-commerce*/
@@ -213,7 +213,7 @@
 
         marquee.flash:hover {
             font-size: x-large;
-            height: 5.5vh;
+            min-height: 5.5vh;
             background-color: rgb(0, 174, 239);
             color: #fff200;
             transition: 1s;
@@ -229,7 +229,7 @@
 
         .flash {
             color: #00a651;
-            height: 5vh;
+            min-height: 5vh;
             display: flex;
             padding-top: 0.5%;
             transition: 1s;
@@ -237,7 +237,7 @@
         /*carousel Entreprise*/
         section {
             width: 100%;
-            height: 52vh;
+            min-height: 52vh;
         }
 
         /*Entreprise*/
@@ -252,7 +252,7 @@
 
         /*Activités*/
         .sectionB {
-            height: 75vh;
+            min-height: 75vh;
             justify-content: space-around;
             display: flex;
             margin-left: 3vh;
@@ -288,27 +288,27 @@
 
         .pro {
             width: 50%;
-            height: 50vh;
+            min-height: 50vh;
             margin: 0 3%;
         }
 
         .part {
             width: 50%;
-            height: 50vh;
+            min-height: 50vh;
             margin: 0 3%;
         }
 
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 80vh;
+            min-height: 80vh;
             display: flex;
         }
 
         /*avis*/
         .mainb {
             width: 100%;
-            height: 25vh;
+            min-height: 25vh;
             display: flex;
         }
 
@@ -319,20 +319,20 @@
 
         /*carousel avis droite*/
         .carouR {
-            height: 18vh;
+            min-height: 18vh;
             width: 100%;
         }
 
         /*carousel avis droite et gauche*/
         .carousel-control-prev {
             width: 10%;
-            height: 18vh;
+            min-height: 18vh;
         }
 
         /*carousel avis droite et gauche*/
         .carousel-control-next {
             width: 10%;
-            height: 18vh;
+            min-height: 18vh;
         }
 
         /*e-commerce*/
@@ -395,7 +395,7 @@
 
         marquee.flash:hover {
         font-size: x-large;
-        height: 5.5vh;
+        min-height: 5.5vh;
         background-color:  rgb(0, 174, 239);
         color: #fff200;
         transition: 1s;
@@ -411,7 +411,7 @@
         }
 
         .flash {
-            height: 4vh;
+            min-height: 4vh;
             display: flex;
             padding-top: 0.5%;
             transition: 1s;
@@ -421,7 +421,7 @@
         /*carousel Entreprise*/
         section {
             width: 100%;
-            height: 52vh;
+            min-height: 52vh;
         }
 
         /*Entreprise*/
@@ -435,7 +435,7 @@
         }
 
         .sectionB {
-            height: 62vh;
+            min-height: 62vh;
         }
 
         /*Activités*/
@@ -461,7 +461,7 @@
 
         /*Professionnel Particulier*/
         main {
-            height: 3vh;
+            min-height: 3vh;
             width: 100%;
             justify-content: center;
         }
@@ -470,7 +470,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 75vh;
+            min-height: 75vh;
             display: FLEX;
             JUSTIFY-CONTENT: space-around;
         }
@@ -478,7 +478,7 @@
         .img1 {
             margin-top: 30px;
             width: 40%;
-            height: 15vh;
+            min-height: 15vh;
         }
 
         .pro {
@@ -495,12 +495,12 @@
 
         .img4 {
             width: 2%;
-            height: 20px;
+            min-height: 20px;
         }
 
         .imgC {
             width: 100%;
-            height: 279px;
+            min-height: 279px;
         }
 
         .imgM {
@@ -524,7 +524,7 @@
 
         marquee.flash:hover {
             font-size: x-large;
-            height: 5.5vh;
+            min-height: 5.5vh;
             background-color:  rgb(0, 174, 239);
             color: #fff200;
             transition: 1s;
@@ -539,7 +539,7 @@
         }
 
         .flash {
-            height: 4vh;
+            min-height: 4vh;
             display: flex;
             padding-top: 0.5%;
             transition: 1s;
@@ -549,7 +549,7 @@
         /*carousel Entreprise*/
         section {
             width: 100%;
-            height: 52vh;
+            min-height: 52vh;
         }
 
         /*Entreprise*/
@@ -563,7 +563,7 @@
         }
 
         .sectionB {
-            height: 210vh;
+            min-height: 210vh;
             flex-direction: column;
         }
 
@@ -592,13 +592,13 @@
 
         /*Professionnel Particulier*/
         main {
-            height: 3vh;
+            min-height: 3vh;
             width: 100%;
             justify-content: center;
         }
 
         .pro {
-            height: 70vh;
+            min-height: 70vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -606,7 +606,7 @@
             border: 0.5px solid gray;
         }
         .part {
-            height: 70vh;
+            min-height: 70vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -619,28 +619,28 @@
         }
 
         .mainh {
-            height: 150vh;
+            min-height: 150vh;
             display: flex;
             flex-direction: column;
         }
 
         .mainb {
             width: 100%;
-            height: 23vh;
+            min-height: 23vh;
             display: flex;
             flex-direction: column;
             text-align: inherit;
         }
 
         .carouL {
-            height: 18vh;
+            min-height: 18vh;
             width: 100%;
         }
 
         /*carousel avis droite*/
         .carouR {
             margin-top: 2vh;
-            height: 18vh;
+            min-height: 18vh;
             width: 100%;
             margin: 0;
         }
@@ -659,7 +659,7 @@
         .img1 {
             margin-top: 30px;
             width: 92%;
-            height: 15vh;
+            min-height: 15vh;
         }
 
         .img3 {
@@ -670,12 +670,12 @@
 
         .img4 {
             width: 92%;
-            height: 20px;
+            min-height: 20px;
         }
 
         .imgC {
             width: 100%;
-            height: 279px;
+            min-height: 279px;
         }
 
         .imgM {
@@ -685,14 +685,14 @@
 
         .imgl {
             width: 50%;
-            height: 10vh;
+            min-height: 10vh;
             display: flex;
             margin: auto 0;
         }
 
         .imgp {
             width: 25%;
-            height: 20vh;
+            min-height: 20vh;
             display: flex;
             margin: auto 0;
         }

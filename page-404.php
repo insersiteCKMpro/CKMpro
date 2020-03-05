@@ -123,7 +123,7 @@ if (($this->error->getCode()) == '404') {
             .click {
                 display: flex !important;
                 width: 23%;
-                height: 4vh;
+                min-height: 4vh;
                 right: 5vh;
                 margin: -6vh auto;
                 position: relative !important;

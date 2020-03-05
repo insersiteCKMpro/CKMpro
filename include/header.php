@@ -31,12 +31,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 18vh;
+      min-height: 18vh;
     }
 
     /* LOGO TITRE STYLE */
     .logoTitre {
-      height: 10vh;
+      min-height: 10vh;
       margin-top: 4vh;
       width: 20vw;
     }
@@ -67,7 +67,7 @@
 
       /* LOGO TITRE STYLE */
       .logoTitre {
-        height: 12vh;
+        min-height: 12vh;
         width: 63%;
         display: flex;
         margin: 3vh auto 0;
@@ -92,14 +92,14 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        height: 10vh;
+        min-height: 10vh;
         width: 45%;
         display: flex;
         margin: auto;
       }
 
       .logo {
-        height: 14vh;
+        min-height: 14vh;
       }
     }
 
@@ -128,19 +128,19 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        height: 9vh;
+        min-height: 9vh;
         width: 90%;
         margin: 0 auto;
         display: flex;
       }
       .logo{
-        height: 25vh;
+        min-height: 25vh;
       }
 
       /* Bouton téléphone  */
       .boutonTel {
         width: 7vh;
-        height: 7vh;
+        min-height: 7vh;
         background-color: white;
         border: 3px solid black;
         border-radius: 50%;
@@ -156,7 +156,7 @@
       /* Bouton boutique  */
       .boutonbtq {
         width: 7vh;
-        height: 7vh;
+        min-height: 7vh;
         background-color: white;
         border: 3px solid black;
         border-radius: 50%;
