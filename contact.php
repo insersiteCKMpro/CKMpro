@@ -1,6 +1,6 @@
-<?php 
+<!-- <?php 
     require_once("include/header.php");
-?>
+?> -->
 
 <head>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -1116,10 +1116,9 @@
         if($_POST)
         {
             
-            // 3. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING
+            // 3. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING (input type checkbox et select option)
             echo '<pre>'; print_r($_POST); echo '</pre>';
             $categorie = implode(' ', $_POST['categorie']); 
-
             $question3D = implode(' ', $_POST['question3D']);
             $questionNet = implode(' ', $_POST['questionNet']);
             $questionEV = implode(' ', $_POST['questionEV']);
@@ -1134,7 +1133,19 @@
             $number = $_POST['telephone'];
             $description = $_POST['description'];
 
-            $data = $bdd->exec("INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')");
+            // $data = $bdd->exec("INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')");
+
+            $stmt = $bdd->prepare("INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUES (:nom, :prenom, :email, :telephone, :categorie, :question3D, :questionNet, :questionEV, :description)");
+            $stmt->bindParam(':nom', $nom, PDO::PARAM_STR);
+            $stmt->bindParam(':prenom', $prenom, PDO::PARAM_STR);
+            $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+            $stmt->bindParam(':telephone', $telephone, PDO::PARAM_INT);
+            $stmt->bindParam(':categorie', $categorie, PDO::PARAM_STR);
+            $stmt->bindParam(':question3D', $question3D, PDO::PARAM_STR);
+            $stmt->bindParam(':questionNet', $questionNet, PDO::PARAM_STR);
+            $stmt->bindParam(':questionEV', $questionEV, PDO::PARAM_STR);
+            $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+            $stmt->execute();
 
             // Nom
             if(empty($_POST['nom']))
