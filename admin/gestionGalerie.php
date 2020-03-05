@@ -219,7 +219,7 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
         <?php endif; ?>
 
 
-        <button type="submit" class="btn btn-info mb-4"><?= ucfirst($_GET['action']) ?></button>
+    
 
 
     </form>
