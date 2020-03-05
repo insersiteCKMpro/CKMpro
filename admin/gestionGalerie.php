@@ -11,21 +11,27 @@ if(!connecteAdmin()) // Si l'internaute n'es pas ADMIN, il n'a rien a faire ici,
 }
 
 //----------------SUPRESSION PRODUIT
-if(isset($_GET['action']) && $_GET['action'] == 'suppression')
-{
-    //Exo : réaliser le traintement PHP permettant de supprimer un produit en fonction de l'id_produit  envoyé dans l'URL avec une requete preparee
 
-    $deleteImg = $bdd->prepare("DELETE FROM galerie_img (photo) WHERE photo = :photo");
-    $deleteImg->bindValue(':photo', $photobdd, PDO::PARAM_STR);
-    $deleteImg->execute();
+if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
+{
+    $data = $bdd->query("SELECT photo FROM galerie_img WHERE id_img = '$_GET[id_img]'"); // on selectionne le référence en BDD pour l'inclure dans le message de validation
+    $id_img = $data->fetch(PDO::FETCH_ASSOC);
+
+    $data = $bdd->prepare("DELETE FROM galerie_img WHERE id_img = :id_img");
+    $data->bindValue(':id_img', $_GET['id_img'], PDO::PARAM_INT);
+    $data->execute();
+
     $_GET['action']='affichage'; // quand on supprime on reste sur la page
 
-    $validDelete= "<p class='col-md-5 mx-auto alert-success text-center'>L'image' ID <strong>$id_img</strong> a bien été supprimé!</p>";
+    $validDelete= "<p class='col-md-5 mx-auto alert-success text-center'>La photo a bien été supprimé!</p>";
+    
 
 }
 
 
-//----------------ENREGISTREMENT PRODUIT
+
+
+//----------------ENREGISTREMENT PHOTO
 
 
 if($_POST)
@@ -231,6 +237,7 @@ $photo = (isset($produitActuel['photo'])) ? $produitActuel['photo'] : '';
   </div>
 <?php if(isset($validInsert)) echo $validInsert; ?>
 <?php if(isset($validUpdate)) echo $validUpdate; ?>
+<?php if(isset($validDelete)) echo $validDelete; ?>
 
   <input type="hidden" name="photoActuelle" id="photoAxctuelle" value=" <?= $photo ?>">
 
