@@ -1115,18 +1115,24 @@
         
         if($_POST)
         {
+
+            // FAILLES XSS
+          
+
             
             // 3. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING
             echo '<pre>'; print_r($_POST); echo '</pre>';
-            $categorie = implode(' ', $_POST['categorie']); 
+            echo '<hr>';
+            echo '<pre>'; var_dump($_POST); echo '</pre>';
 
+            $categorie = implode(' ', $_POST['categorie']); 
             $question3D = implode(' ', $_POST['question3D']);
             $questionNet = implode(' ', $_POST['questionNet']);
             $questionEV = implode(' ', $_POST['questionEV']);
 
+
             // // 4. INSERTION DANS LA BASE DE DONNEES.
             // $data = $bdd->exec("INSERT INTO contact (categorie) VALUES ('$categorie')"); INSERTION UNIQUEMENT DES BOUTONS RADIO*
-           
 
             $name = $_POST['nom'];
             $surname = $_POST['prenom'];
