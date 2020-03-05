@@ -2,10 +2,21 @@
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
-
-<body>
-    <style>
+<style>
         /*------------------------css-source-3D---------------------------------*/
+        .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+            width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .titr1{
+            margin: 4vh auto;
+            display: flex;
+            justify-content: center;
+        }
+
         .imgligne1 {
             display: flex;
             align-items: center;
@@ -19,19 +30,20 @@
         }
 
         .imgligne3 {
-            background-color: red;
             height: 45vh;
         }
 
-        p.text-center {
+        p {
             font-size: 1.3em;
             font-family: 'Red Hat Display', serif;
+            width: 75%;
+            margin: 0 auto 5vh;
         }
 
         .titre2,
         .titre3 {
             font-size: 2.5rem;
-            font-weight: 800;
+            font-weight: 800px;
             font-family: 'Red Hat Display', serif;
         }
 
@@ -50,6 +62,7 @@
 
             .bg {
                 width: 100%;
+                padding-bottom: 2vh;
             }
 
             .imgligne2 {
@@ -73,15 +86,18 @@
 
             .bg {
                 width: 100%;
+                padding-bottom: 2vh;
             }
 
             .imgligne2 {
                 width: 100%;
             }
 
-            p.text-center {
-                font-size: 1.5em;
+            p {
+                font-size: 1.3em;
                 font-family: 'Red Hat Display', serif;
+                width: 80%;
+                margin: 0 auto 5vh;
             }
         }
 
@@ -92,6 +108,11 @@
                 width: 100%;
             }
 
+            .para1 {
+                display: flex;
+                flex-direction: column;
+            }
+
             .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
                 font-size: 2.5rem;
@@ -100,6 +121,7 @@
             }
 
             .bg {
+                padding-bottom: 2vh;
                 width: 100%;
             }
 
@@ -107,58 +129,34 @@
                 width: 100%;
             }
 
-            p.text-center {
-                font-size: 1.5em;
+            p {
+                font-size: 1.3em;
                 font-family: 'Red Hat Display', serif;
+                width: 80%;
+                margin: 0 auto 5vh;
             }
         }
     </style>
-
+<div class="container-fluid">
     <div class="imgligne1">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
         <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
-
-    <h1 class="text-center mt-5">3D</h1><br>
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify"> Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Illum sit repellat error obcaecati
-        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
-        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
-        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro
-        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
-        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
-        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
-        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p>
-
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
-        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
-        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
-        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro
-        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
-        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
-        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
-        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p><br>
-
-    <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);">
-        <div class="imgligne2">
-            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
-            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
-        </div><br>
-
-        <h2 class="titre2 text-center mt-5" id="desinfection">3D</h2><br>
-        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify"> Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Illum sit repellat error obcaecati
+    <div class="bg">
+        <h1 class="titr1">3D</h1>
+        <p class="text-justify"> 
+            Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
             magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro
             exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
             consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
             In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
-            mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p>
-
-        <p class="text2 text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
+            mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+        </p>
+        <p class="text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -166,34 +164,67 @@
             exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
             consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
             In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
-            mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.</p><br>
+            mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+        </p>
     </div>
 
-    <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
+    <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);" id="desinfection">
+        <div class="imgligne2">
+            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
+        </div>
 
-    <h2 class="titre3 text-center mt-5" id="desinsectisation">3D</h2><br>
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
-        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
-        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
-        magnam officiis velit harum magni cupiditate earum quasi
-        consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
-        debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto
-        possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod
-        fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
-    </p>
+        <h2 class="titr1">3D</h2>
+        <p class="text2 text-justify"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
+            repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
+            suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
+            magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro
+            exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
+            consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
+            In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
+            mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+        </p>
 
-    <p class="text-center mx-auto col-md-6 mt-3 border-dark rounded mb-3 text-justify">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
-        repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
-        suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
-        magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro
-        exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
-        consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
-        In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
-        mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
-    </p><br>
+        <p class="text2 text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
+            repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
+            suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
+            magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro
+            exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
+            consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
+            In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
+            mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+        </p>
+    </div>
 
+    <div class="bg" id="desinsectisation">
+        <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
+
+        <h2 class="titr1">3D</h2>
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
+            repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
+            suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
+            magnam officiis velit harum magni cupiditate earum quasi
+            consequatur maiores quisquam, porro exercitationem deleniti deserunt odio architecto molestias
+            debitis possimus tenetur incidunt consectetur! Maiores, nulla. Exercitationem facere architecto
+            possimus placeat ipsum. In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod
+            fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+        </p>
+
+        <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
+            repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
+            suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
+            magnam officiis velit harum magni cupiditate earum quasi consequatur maiores quisquam, porro
+            exercitationem deleniti deserunt odio architecto molestias debitis possimus tenetur incidunt
+            consectetur! Maiores, nulla.Exercitationem facere architecto possimus placeat ipsum.
+            In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
+            mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
+        </p>
+    </div>
+</div>
 <?php 
     require_once("include/footerj.php");
 ?>
