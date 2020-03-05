@@ -365,9 +365,13 @@
 
     /*-----------------------------responsive tablette------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
+        p {
+            margin-top: 2vh;
+            margin-bottom: 1rem;
+        }
 
         .test {
-            height: 128vh;
+            height: 120vh;
             display: flex;
             justify-content: center;
         }
@@ -385,7 +389,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 12vh;
+            height: 14vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -557,13 +561,18 @@
 
     /*-----------------------------responsive  mobile---------------------------------*/
     @media all and (max-width: 450px) {
+        p {
+            margin-top: 2vh;
+            margin-bottom: 1rem;
+        }
+        
         .radbox {
             height: 15vh;
             display: flex;
         }
 
         .test {
-            height: 128vh;
+            height: 120vh;
             display: flex;
         }
 
@@ -580,7 +589,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 12vh;
+            height: 14vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
