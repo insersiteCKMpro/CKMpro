@@ -368,7 +368,7 @@
     position: absolute;
     top: 10px;
     right: 25px;
-    font-size: 35px;
+    font-size: 3em;
     font-weight: bold;
     color: #fff !important;
   }
@@ -398,7 +398,7 @@
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2em;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -420,7 +420,7 @@
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 1em;
     padding: 8px 12px;
     position: absolute;
     top: 0;
