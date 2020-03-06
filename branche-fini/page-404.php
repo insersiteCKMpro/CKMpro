@@ -133,9 +133,8 @@ if (($this->error->getCode()) == '404') {
         { 
             .click {
                 display: flex !important;
-                width: 55%;
-                right: 0;
-                margin: -3vh auto;
+                width: 45%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -147,7 +146,7 @@ if (($this->error->getCode()) == '404') {
     <h1 style="text-align:center"> RATS'S Alors!!! CKMpro introuvable </h1>
 
     <video muted width="100%" autoplay>
-        <source src="img/404 ANIM-V2.mp4" type="video/mp4">
+        <source src="img/404 ANIM-V3.mp4" type="video/mp4">
     </video>
 
     <div class="click">

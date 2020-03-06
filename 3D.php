@@ -30,7 +30,7 @@
         }
 
         .imgligne3 {
-            min-height: 45vh;
+            height: 45vh;
         }
 
         p {
@@ -199,7 +199,7 @@
     </div>
 
     <div class="bg" id="desinsectisation">
-        <img class="imgligne3" src="include/img/produitsboutiquemaq.png" min-height="100%" width="100%" alt="">
+        <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
         <h2 class="titr1">3D</h2>
         <p class="text-justify">

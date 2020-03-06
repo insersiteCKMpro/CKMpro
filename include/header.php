@@ -14,6 +14,9 @@
   <style>
     /* ------------------------Css source-header------------------------------------- */
     @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+    body{
+      width: 100%
+    }
 
     .fixed-top {
       display: flex;
@@ -36,7 +39,7 @@
 
     /* LOGO TITRE STYLE */
     .logoTitre {
-      min-height: 10vh;
+      height: 10vh;
       margin-top: 4vh;
       width: 20vw;
     }
@@ -67,7 +70,7 @@
 
       /* LOGO TITRE STYLE */
       .logoTitre {
-        min-height: 12vh;
+        height: 12vh;
         width: 63%;
         display: flex;
         margin: 3vh auto 0;
@@ -92,14 +95,14 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        min-height: 10vh;
+        height: 10vh;
         width: 45%;
         display: flex;
         margin: auto;
       }
 
       .logo {
-        min-height: 14vh;
+        height: 14vh;
       }
     }
 
@@ -128,19 +131,19 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        min-height: 9vh;
+        height: 9vh;
         width: 90%;
         margin: 0 auto;
         display: flex;
       }
       .logo{
-        min-height: 25vh;
+        height: 25vh;
       }
 
       /* Bouton téléphone  */
       .boutonTel {
         width: 7vh;
-        min-height: 7vh;
+        height: 7vh;
         background-color: white;
         border: 3px solid black;
         border-radius: 50%;
@@ -156,7 +159,7 @@
       /* Bouton boutique  */
       .boutonbtq {
         width: 7vh;
-        min-height: 7vh;
+        height: 7vh;
         background-color: white;
         border: 3px solid black;
         border-radius: 50%;
@@ -213,7 +216,7 @@
           CKM Boutique </div><i class="baseline-speaker_phone"></i>
       </div>
       <div class="logo">
-        <a href="index.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre"></a>
+        <a href="index.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre img-fluid"></a>
       </div>
       <div class="boutonTel">
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>

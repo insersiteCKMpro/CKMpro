@@ -52,56 +52,56 @@
 
   .demo1 {
     width: 100%;
-    min-height: 10vh;
+    height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .demo2 {
     width: 30%;
-    min-height: 10vh;
+    height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .demo3 {
     width: 30%;
-    min-height: 10vh;
+    height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .demo4 {
     width: 30%;
-    min-height: 10vh;
+    height: 10vh;
     margin: auto;
     display: flex;
   }
 
   .mySlides1 {
     width: 100%;
-    min-height: 60vh;
+    height: 60vh;
     margin: 7vh auto;
     display: flex;
   }
 
   .mySlides2 {
     width: 75%;
-    min-height: 75vh;
+    height: 75vh;
     margin: auto;
     display: flex;
   }
 
   .mySlides3 {
     width: 75%;
-    min-height: 75h;
+    height: 75h;
     margin: auto;
     display: flex;
   }
 
   .mySlides4 {
     width: 75%;
-    min-height: 75vh;
+    height: 75vh;
     margin: auto;
     display: flex;
   }
@@ -110,56 +110,56 @@
   @media screen and (min-width:769px) and (max-width: 2560px) {
     .demo1 {
       width: 100%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo2 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo3 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo4 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides1 {
       width: 100%;
-      min-height: 60vh;
+      height: 60vh;
       margin: 7vh auto;
       display: flex;
     }
 
     .mySlides2 {
       width: 75%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
       width: 75%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides4 {
       width: 75%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
@@ -169,56 +169,56 @@
   @media screen and (min-width: 451px) and (max-width: 769px) {
     .demo1 {
       width: 100%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo2 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo3 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo4 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides1 {
       width: 100%;
-      min-height: 60vh;
+      height: 60vh;
       margin: 7vh auto;
       display: flex;
     }
 
     .mySlides2 {
       width: 73%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
       width: 73%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides4 {
       width: 73%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
@@ -269,56 +269,56 @@
 
     .demo1 {
       width: 100%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo2 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo3 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo4 {
       width: 30%;
-      min-height: 10vh;
+      height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides1 {
       width: 100%;
-      min-height: 25vh;
+      height: 25vh;
       margin: 28vh auto;
       display: flex;
     }
 
     .mySlides2 {
       width: 100%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
       width: 100%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides4 {
       width: 100%;
-      min-height: 75vh;
+      height: 75vh;
       margin: auto;
       display: flex;
     }
@@ -348,7 +348,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     overflow: auto;
     background-color: black;
   }
@@ -368,7 +368,7 @@
     position: absolute;
     top: 10px;
     right: 25px;
-    font-size: 35px;
+    font-size: 3em;
     font-weight: bold;
     color: #fff !important;
   }
@@ -383,7 +383,7 @@
   /* Hide the slides by default */
   .mySlides {
     display: none;
-    min-height: 75vh;
+    height: 75vh;
     margin: auto;
   }
 
@@ -398,7 +398,7 @@
     margin-top: -50px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2em;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -420,7 +420,7 @@
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 1em;
     padding: 8px 12px;
     position: absolute;
     top: 0;

@@ -37,7 +37,7 @@
   /* LOGO HOME STYLE */
   #tailleLi 
   {
-    min-height: 5vh;
+    height: 5vh;
     width: 7%;
   }
 
@@ -121,7 +121,7 @@
   @media screen and (min-width: 451px) and (max-width: 768px) {
 
     .logo {
-      min-height: 18vh;
+      height: 18vh;
     }
     /* logo navbar */
     .logoHome {
@@ -188,7 +188,7 @@
     hr {
       width: 10vh;
       margin: 0;
-      min-height: 1vh;
+      height: 1vh;
     }
   }
   .burg {

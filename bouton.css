@@ -1,0 +1,15 @@
+.btn{width: 15%;}
+.buton {background-color: white !important; color: black !important; border: 1px solid black !important;}
+.buton:hover {background-color: black !important; color: white !important;}
+
+.btn{width: 15%;}
+.butonj {background-color: white !important; color: black !important; border: 1px solid black !important;}
+.butonj:hover {background-color: #fff200 !important; color: black !important; border: 1px solid #fff200 !important;}
+
+.btn{width: 15%;}
+.butonb {background-color: white !important; color: black !important; border: 1px solid black !important;}
+.butonb:hover {background-color: #00aeef !important; color: white !important; border: 1px solid black !important;}
+
+.btn{width: 15%;}
+.butonv {background-color: white !important; color: black !important; border: 1px solid black !important;}
+.butonv:hover {background-color: #00a651 !important; color: white !important; border: 1px solid black !important;}
