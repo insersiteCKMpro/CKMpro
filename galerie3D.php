@@ -344,7 +344,6 @@
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -366,17 +365,17 @@
 
   /* The Close Button */
   .close {
-    color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    color: #fff !important;
   }
 
   .close:hover,
   .close:focus {
-    color: #999;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
   }
@@ -457,46 +456,46 @@
   <div class="container-fluid">
     <div class="colon1">
       <div class="colum">
-        <img src="../include/img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
+        <img src="include/img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
         <div class="colon2">
           <div class="colum">
-            <img src="../include/img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+            <img src="include/img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
           </div>
           <div class="colum">
-            <img src="../include/img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+            <img src="include/img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
           </div>
         </div>
       </div>
     </div>
     <div class="colon3">
       <div class="columm">
-        <img src="../include/img/3d-galerie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
+        <img src="include/img/3d-galerie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
       </div>
     </div>
 
     <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <span class="close cursor bg-clr--green" onclick="closeModal()">&times;</span>
       <div class="modal-content">
 
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="../include/img/3d-galerie-1.png" class="mySlides1">
+          <img src="include/img/3d-galerie-1.png" class="mySlides1">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="../include/img/3d-galerie-2.png" class="mySlides2">
+          <img src="include/img/3d-galerie-2.png" class="mySlides2">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="../include/img/3d-galerie-3.png" class="mySlides3">
+          <img src="include/img/3d-galerie-3.png" class="mySlides3">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="../include/img/3d-galerie-4.png" class="mySlides4">
+          <img src="include/img/3d-galerie-4.png" class="mySlides4">
         </div>
 
         <!-- Next/previous controls -->
@@ -511,19 +510,19 @@
         <!-- Thumbnail image controls -->
         <div class="row">
           <div class="column">
-            <img class="demo1" src="../include/img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
+            <img class="demo1" src="include/img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
           </div>
 
           <div class="column">
-            <img class="demo2" src="../include/img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
+            <img class="demo2" src="include/img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
           </div>
 
           <div class="column">
-            <img class="demo3" src="../include/img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
+            <img class="demo3" src="include/img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
           </div>
 
           <div class="column">
-            <img class="demo4" src="../include/img/3d-galerie-4.png" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="include/img/3d-galerie-4.png" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
@@ -578,6 +577,6 @@
   }
 </script>
 
-<!-- ?php 
+<?php 
     require_once("include/footerj.php");
-?> -->
+?>

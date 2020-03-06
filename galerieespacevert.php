@@ -344,7 +344,6 @@
   .modal {
     display: none;
     position: fixed;
-    z-index: 1;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -366,17 +365,17 @@
 
   /* The Close Button */
   .close {
-    color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    color: #fff !important;
   }
 
   .close:hover,
   .close:focus {
-    color: #999;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
   }

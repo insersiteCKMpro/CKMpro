@@ -1,9 +1,3 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-<title>CKMpro</title>
-</head>
-
 <style>
   /*-----------------------------------------------css source nav------------------- */
   header,
@@ -41,12 +35,14 @@
   }
 
   /* LOGO HOME STYLE */
-  #tailleLi {
+  #tailleLi 
+  {
     height: 5vh;
     width: 7%;
   }
 
-  #tailleA {
+  #tailleA 
+  {
     width: 100%;
   }
 
@@ -57,12 +53,17 @@
   }
 
   .navMarg {
-    margin-left: 10vh;
+    margin-left: 4vh;
+  }
+
+  .bg-transparent {
+      background-color: transparent!important;
+      display: block;
   }
 
   /* DROPDOWN MENU */
   .dropdown-menu {
-    left: 8vh !important;
+    left: 2vh !important;
     border: none !important;
     background-color: #ffffffb8 !important;
   }
@@ -119,16 +120,24 @@
   /*----------------------responsive tablette nav---------------------------------------*/
   @media screen and (min-width: 451px) and (max-width: 768px) {
 
+    .logo {
+      height: 18vh;
+    }
     /* logo navbar */
     .logoHome {
-      width: 7vw;
+      width: 6vw;
       position: relative;
-      top: -0.9vh;
+      top: 0vh;
+    }
+    #tailleA 
+    {
+      width: 100%;
+      margin-top: -1vh;
     }
 
     /* LOGO HOME STYLE */
     .navMarg {
-      margin-left: 4vh;
+      margin-left: 2vh;
     }
 
     /* DROPDOWN STYLE */
@@ -143,14 +152,16 @@
     /* MENU BURGER */
     .textMenu {
       margin-bottom: 0;
+      text-align: center;
     }
 
     .fa-bars {
       color: black;
     }
 
-    #tailleLi {
-      width: 10%;
+    #tailleLi 
+    {
+      width: 12%;
     }
 
     .nav-item {
@@ -180,10 +191,22 @@
       height: 1vh;
     }
   }
+  .burg {
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
   @media (min-width: 576px) {
     .textMenu {
       display: none;
+    }
+
+    .navbar-expand-sm .navbar-nav .nav-link {
+      padding-right: 0rem;
+      padding-left: .5rem;
     }
   }
 </style>
@@ -193,7 +216,7 @@
   <div class="container-fluid">
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
-      <div class="mx-auto">
+      <div class="burg">
         <p class="textMenu">
           <strong>Menu</strong>
         </p>
@@ -205,12 +228,12 @@
       <div class="traitDeSeparattion2"></div>
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item li1" id="tailleLi">
-            <a class="nav-link" id="tailleA" href="homepage.php"><img src="../include/img/CKMHOMEFOOTER.png"
-                alt="Logo Home" class="logoHome"></a>
+          <li class="nav-item" id="tailleLi">
+            <a class="nav-link" id="tailleA" href="index.php"><img src="include/img/CKMHOMEFOOTER.png" alt="Logo Home"
+                class="logoHome"></a>
           </li>
           <hr class="mx-auto bg-dark text-center">
-          <li class="nav-item dropdown li2">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle navMarg colorJ" href="#" id="dropdown03" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">3D</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
@@ -220,16 +243,16 @@
             </div>
           </li>
           <hr class="mx-auto bg-dark text-center">
-          <li class="nav-item li3">
+          <li class="nav-item">
             <a class="nav-link navMarg colorB" href="nettoyage.php">Nettoyage</a>
           </li>
           <hr class="mx-auto bg-dark text-center">
-          <li class="nav-item li4">
+          <li class="nav-item">
             <a class="nav-link navMarg colorV" href="espacevert.php" tabindex="-1" aria-disabled="true">Espaces
               Verts</a>
           </li>
           <hr class="mx-auto bg-dark text-center">
-          <li class="nav-item dropdown li5">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle navMarg" href="#" id="dropdown03" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">Galeries</a>
             <div class="dropdown-menu" aria-labelledby="dropdown03">
@@ -239,17 +262,11 @@
             </div>
           </li>
           <hr class="mx-auto bg-dark text-center">
+          <li class="nav-item">
+            <a class="nav-link navMarg" href="contact.php">Contact</a>
+          </li>
+          <hr class="mx-auto bg-dark text-center">
         </ul>
       </div>
     </nav>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>

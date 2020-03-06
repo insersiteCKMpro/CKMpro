@@ -2,14 +2,20 @@
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 <style>
     .test {
         height: 100vh;
         display: flex;
     }
+    .contac1 {
+        text-align: center!important;
+        margin: 2vh;
+    }
 
     .titrre {
         text-align: center;
+        margin: 2vh;
     }
 
     .test2 {
@@ -174,6 +180,7 @@
 
         .titrre {
             text-align: center;
+            margin: 2vh;
         }
 
         .test2 {
@@ -333,20 +340,23 @@
 
 
 
-        #customControlValidation1:checked~.custom-control-label::before {
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
             color: #fff200;
             border-color: #fff200;
             background-color: #fff200;
         }
 
-        #customControlValidation2:checked~.custom-control-label::before {
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
             color: #00aeef;
             border-color: #00aeef;
             background-color: #00aeef;
         }
 
 
-        #customControlValidation3:checked~.custom-control-label::before {
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
             color: #00a651;
             border-color: #00a651;
             background-color: #00a651;
@@ -355,15 +365,20 @@
 
     /*-----------------------------responsive tablette------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
+        p {
+            margin-top: 2vh;
+            margin-bottom: 1rem;
+        }
 
         .test {
-            height: 128vh;
+            height: 120vh;
             display: flex;
             justify-content: center;
         }
 
         .titrre {
             text-align: center;
+            margin-top: 2vh;
         }
 
         .test2 {
@@ -374,7 +389,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 22vh;
+            height: 14vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -442,19 +457,22 @@
             display: flex;
         }
 
-        #customControlValidation1:checked~.custom-control-label::before {
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
             color: #fff200;
             border-color: #fff200;
             background-color: #fff200;
         }
 
-        #customControlValidation2:checked~.custom-control-label::before {
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
             color: #00aeef;
             border-color: #00aeef;
             background-color: #00aeef;
         }
 
-        #customControlValidation3:checked~.custom-control-label::before {
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
             color: #00a651;
             border-color: #00a651;
             background-color: #00a651;
@@ -543,19 +561,24 @@
 
     /*-----------------------------responsive  mobile---------------------------------*/
     @media all and (max-width: 450px) {
+        p {
+            margin-top: 2vh;
+            margin-bottom: 1rem;
+        }
+        
         .radbox {
             height: 15vh;
             display: flex;
         }
 
         .test {
-            height: 128vh;
+            height: 120vh;
             display: flex;
         }
 
         .titrre {
             text-align: center;
-            margin: 0;
+            margin: 2vh;
         }
 
         .test2 {
@@ -566,7 +589,7 @@
             display: flex;
             flex-direction: column;
             text-align: center;
-            height: 23vh;
+            height: 14vh;
             width: 100%;
             border-bottom: 1px solid grey;
         }
@@ -698,24 +721,28 @@
             background-color: none;
         }
 
-        #customControlValidation1:checked~.custom-control-label::before {
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
             color: #fff200;
             border-color: #fff200;
             background-color: #fff200;
         }
 
-        #customControlValidation2:checked~.custom-control-label::before {
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
             color: #00aeef;
             border-color: #00aeef;
             background-color: #00aeef;
         }
 
-        #customControlValidation3:checked~.custom-control-label::before {
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
             color: #00a651;
             border-color: #00a651;
             background-color: #00a651;
         }
     }
+    
 </style>
 
 
@@ -728,7 +755,7 @@
         <main class="test">
             <div class="test2">
                 <div class="titrec">
-                    <h2 class="text-center">Contact</h2>
+                    <h2 class="contac1">Contact</h2>
                     <div class="num">
                         <p>Numero de téléphone: <br>
                             0123456789
@@ -742,7 +769,6 @@
                     <!--responsive tablette-->
                     <div class="titrec">
                         <h2 class="">Contact</h2>
-                        <br>
                         <div class="num">
                             <p>Numero de téléphone: <br>
                                 0123456789
@@ -802,25 +828,25 @@
                         </div>
                     </div>
                     <br>
-                    <select class="form-control">3D
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
+                    <select class="form-control" style="display: none" id="showInDropDown1">3D
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
                     </select>
                     <br>
-                    <select class="form-control">Nettoyage
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
+                    <select class="form-control" style="display:none" id="showInDropDown2">Nettoyage
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
                     </select>
                     <br>
-                    <select class="form-control">Espace vert
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
-                        <option>Default select</option>
+                    <select class="form-control" style="display:none" id="showInDropDown3">Espace vert
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
+                        <option disabled="disabled" selected="selected">Default select</option>
                     </select>
                     <br>
                     <div class="form-group">
@@ -861,6 +887,38 @@
                     to.parentNode.insertBefore(s, to);
                 })();
             </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
+            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                    $("#customControlValidation1").click(function () {
+                        if ($(this).is(":checked")) {
+                            $("#showInDropDown1").show();
+                        } else {
+                            $("#showInDropDown1").hide();
+                        }
+                    });
+                });
+
+                $(function () {
+                    $("#customControlValidation2").click(function () {
+                        if ($(this).is(":checked")) {
+                            $("#showInDropDown2").show();
+                        } else {
+                            $("#showInDropDown2").hide();
+                        }
+                    });
+                });
+
+                $(function () {
+                    $("#customControlValidation3").click(function () {
+                        if ($(this).is(":checked")) {
+                            $("#showInDropDown3").show();
+                        } else {
+                            $("#showInDropDown3").hide();
+                        }
+                    });
+                });
+            </script>
         </div>
 
 
