@@ -1133,15 +1133,27 @@
             $prenom = $_POST['prenom'];
             $email = $_POST['email'];
             $telephone = $_POST['telephone'];
+            $categorie = ['categorie'];
             $message = $_POST['message'];
             $question3D = $_POST['question3D'];
             $questionNet = $_POST['questionNet'];
             $questionEV = $_POST['questionEV'];
 
-            $data = $bdd->prepare("INSERT INTO contact (nom, prenom, email, telephone, categorie, message, question3D, questionNet, questionEV) VALUE ('$nom', '$prenom', '$email', '$telephone', '$categorie', '$message', '$question3D', '$questionNet', '$questionEV')");
+            
+            $data = $bdd->prepare("INSERT INTO contact (nom, prenom, email, telephone, categorie, message, question3D, questionNet, questionEV) VALUE ('$nom', '$prenom', '$email', '$telephone', '$categorie', '$message', '$question3D', '$questionNet', '$questionEV')";);
             $data->execute(array
+            (
+                ':nom' => $nom, 
+                ':prenom' => $prenom, 
+                ':email' => $email,
+                ':telephone' => $telephone, 
+                ':categorie' => $categorie,
+                ':message' => $message, 
+                ':question3D' => $question3D,
+                ':questionNet' => $questionNet, 
+                ':questionEV' => $questionEV, 
                 
-            );
+            ));
             // Nom
             if(empty($_POST['nom']))
             {
