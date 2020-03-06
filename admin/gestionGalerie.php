@@ -1,14 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <title>CKMpro</title>
+</head>
+<body>
+    
+</body>
+</html>
+
 <?php
 require_once('../include/init.php');
 extract($_POST);
 extract($_GET); // $_GET['id_img'] devient --> $id_img
 
-
-// condition si on es admin
-if(!connecteAdmin()) // Si l'internaute n'es pas ADMIN, il n'a rien a faire ici, on le redirige vers la page connexion.php
-{
-    // header('Location:' . URL.'../include/header.php');
-}
 
 //----------------SUPRESSION PRODUIT
 
@@ -94,6 +106,7 @@ if($_POST)
         //     'choices'  => [
         //         'Papeterie' => 'Papeterie',
         //         'Entretien' => 'Entretien',
+        
         //         'Eq' => 'Equipement'
         //     ],
 
@@ -107,8 +120,8 @@ if($_POST)
 
 ?>
 <ul class="col-md-4 list-group text-center mt-3 mx-auto">
-    <li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE PRODUITS</a></li>
-    <li class="list-group-item "><a href="?action=ajout" class="text-dark">AJOUT PRODUIT</a></li>
+    <li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE IMAGES</a></li>
+    <li class="list-group-item "><a href="?action=ajout" class="text-dark">AJOUT </a><b>+</b></li>
 </ul>
 <?php
 
@@ -124,8 +137,8 @@ echo '<h1 class="display-4 text-center mt-3">Affichage des images</h1><hr>';
 if(isset($validDelete)) echo $validDelete;
 
 echo '<p class="text-center">Nombre d\'image(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
-echo '<table class="table table-dark table table bordered text-center"><tr>';
-for($i =0; $i < $resultat->columnCount();$i++)
+echo '<table class="table-dark table bordered text-center"><tr>';
+for($i =1; $i < $resultat->columnCount();$i++)
 {
     $colonne = $resultat->getColumnMeta($i);
     echo "<th>$colonne[name]</th>";
@@ -135,25 +148,22 @@ echo '<th>Supp</th>';
 echo '</tr>';
 while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
 {
-    //echo '<pre>'; print_r($produit);echo'<pre>';
+    echo '<pre>'; print_r($galerie_img);echo'<pre>';
     echo '</tr>';
     foreach($galerie_img as $key => $value)
     {
         if($key =='photo'){
         echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
+        echo "<td>$value</td>";
     }
-    elseif($key == 'prix'){
-        echo "<td>$value €</td>";
-    }
-        else{
-            echo "<td>$value</td>";
-        }
+
     }
     echo "<td><a href='?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>"; 
     echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt ></i></a></td>";
     echo '</tr>';
+    echo '</table>';
 }
-echo '</table>';
+
 }
 ?>
 
@@ -179,11 +189,11 @@ if(isset($id_img)) // $_GET['id_img']
 
 
 
-$categorie = (isset($img_actuel['categorie'])) ? $img_actuel['categorie'] : '';
+$galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
 $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 
 ?>
-<h1 class="display-4 text-center text-success mt-3"><?=ucfirst($action); ?> d'un <b>Produit</b></h1>
+<h1 class="display-4 text-center text-success mt-3"><?=ucfirst($action); ?> d'une <b>Image</b></h1>
 <hr>
 
 
@@ -191,7 +201,7 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 
     <form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto" action="">
 
-        <div class="form-group col-md-4 mx-auto">
+        <div class="form-group col-md-6 text-center mx-auto">
             <label for="public">Photo</label>
             <div class="custom-file">
 
@@ -200,25 +210,18 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
                 <label class="custom-file-label text-start" for="photo" aria-describedby="photo">Choisir Photo</label>
                 <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
             </div>
-            <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center"><?=ucfirst($action);?>Produit</button>
-        </div>
-
-        <div class="form-row">
-        
-
-            <div class="form-group col-md-6">
-                <label for="selection">select</label>
+            
+                <label for="selection" class="mt-3">Galerie</label>
                 <select id="categories" class="form-control" name="selection" placeholder="Entrer catégories">
-                    <option value="3D"  <?php if($value == '3D') echo 'selected' ?>>3D</option>
-                    <option value="NET" <?php if($value == 'NET') echo 'selected' ?>>NET</option>
-                    <option value="EV"  <?php if($value == 'EV') echo 'selected' ?>>EV</option>
-                    <option value="G3D" <?php if($value == 'G3D') echo 'selected' ?>>G3D</option>
-                    <option value="GNET"<?php if($value == 'GNET') echo 'selected' ?>>GNET</option>
-                    <option value="GEV" <?php if($value == 'GEV') echo 'selected' ?>>GEV</option>
+                    <option value="3D"  <?php  echo 'selected' ?>>3D</option>
+                    <option value="NET" <?php  echo 'selected' ?>>NET</option>
+                    <option value="EV"  <?php  echo 'selected' ?>>EV</option>
+                    <option value="G3D" <?php  echo 'selected' ?>>G3D</option>
+                    <option value="GNET"<?php  echo 'selected' ?>>GNET</option>
+                    <option value="GEV" <?php  echo 'selected' ?>>GEV</option>
                 </select>
-            </div>
-        </div>
-
+    
+        <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center"><?=ucfirst($action);?> Image</button>
 
 
 
