@@ -17,13 +17,6 @@ if (($this->error->getCode()) == '404') {
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         
-        .click {
-            display: flex !important;
-            width: 30%;
-            right: 7vh;
-            margin: -34vh auto;
-            position: relative !important;
-        }
         .btn
         {
             border: 3px solid black;
@@ -93,8 +86,8 @@ if (($this->error->getCode()) == '404') {
         { 
             .click {
                 display: flex !important;
-                width: 16%;
-                margin: -10vh auto;
+                width: 8%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -102,9 +95,8 @@ if (($this->error->getCode()) == '404') {
         { 
             .click {
                 display: flex !important;
-                width: 13%;
-                right: 8vh;
-                margin: -7vh auto;
+                width: 18%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -112,9 +104,8 @@ if (($this->error->getCode()) == '404') {
         { 
             .click {
                 display: flex !important;
-                width: 17%;
-                right: 7vh;
-                margin: -7vh auto;
+                width: 19%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -122,10 +113,8 @@ if (($this->error->getCode()) == '404') {
         { 
             .click {
                 display: flex !important;
-                width: 23%;
-                height: 4vh;
-                right: 5vh;
-                margin: -6vh auto;
+                width: 25%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -133,9 +122,8 @@ if (($this->error->getCode()) == '404') {
         { 
             .click {
                 display: flex !important;
-                width: 55%;
-                right: 0;
-                margin: -3vh auto;
+                width: 45%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -147,7 +135,7 @@ if (($this->error->getCode()) == '404') {
     <h1 style="text-align:center"> RATS'S Alors!!! CKMpro introuvable </h1>
 
     <video muted width="100%" autoplay>
-        <source src="img/404 ANIM-V2.mp4" type="video/mp4">
+        <source src="img/404 ANIM-V3.mp4" type="video/mp4">
     </video>
 
     <div class="click">
