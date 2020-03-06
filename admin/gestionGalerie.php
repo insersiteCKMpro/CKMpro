@@ -88,6 +88,18 @@ if($_POST)
                 $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
                 $insertProduit->execute();
         }
+        // if(add($categorie))
+
+        //     if(isset($_GET['select']) && $_get
+        //     'choices'  => [
+        //         'Papeterie' => 'Papeterie',
+        //         'Entretien' => 'Entretien',
+        //         'Eq' => 'Equipement'
+        //     ],
+
+
+
+
     $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été enregistré ! </p>";
 }
 
@@ -166,7 +178,7 @@ if(isset($id_img)) // $_GET['id_img']
 }
 
 
-$nom = (isset($img_actuel['nom'])) ? $img_actuel['nom'] : '';
+
 $categorie = (isset($img_actuel['categorie'])) ? $img_actuel['categorie'] : '';
 $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 
@@ -192,18 +204,22 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
         </div>
 
         <div class="form-row">
+        
+
             <div class="form-group col-md-6">
-                <label for="categorie">categorie</label>
-                <select id="categories" class="form-control" name="categorie">
-                    <option value="3D"  <?php if($categorie == '3D') echo 'selected' ?>>3D</option>
-                    <option value="NET" <?php if($categorie == 'NET') echo 'selected' ?>>NET</option>
-                    <option value="EV"  <?php if($categorie == 'EV') echo 'selected' ?>>EV</option>
-                    <option value="G3D" <?php if($categorie == 'G3D') echo 'selected' ?>>G3D</option>
-                    <option value="GNET"<?php if($categorie == 'GNET') echo 'selected' ?>>GNET</option>
-                    <option value="GEV" <?php if($categorie == 'GEV') echo 'selected' ?>>GEV</option>
+                <label for="selection">select</label>
+                <select id="categories" class="form-control" name="selection" placeholder="Entrer catégories">
+                    <option value="3D"  <?php if($value == '3D') echo 'selected' ?>>3D</option>
+                    <option value="NET" <?php if($value == 'NET') echo 'selected' ?>>NET</option>
+                    <option value="EV"  <?php if($value == 'EV') echo 'selected' ?>>EV</option>
+                    <option value="G3D" <?php if($value == 'G3D') echo 'selected' ?>>G3D</option>
+                    <option value="GNET"<?php if($value == 'GNET') echo 'selected' ?>>GNET</option>
+                    <option value="GEV" <?php if($value == 'GEV') echo 'selected' ?>>GEV</option>
                 </select>
             </div>
         </div>
+
+
 
 
         <?php if(isset($validInsert)) echo $validInsert; ?>
