@@ -1,263 +1,182 @@
-<?php
+<?php 
 require_once('../include/init.php');
-extract($_POST);
-extract($_GET); // $_GET['id_produit'] devient --> $id_produit
 
-if(!connecteAdmin()) // Si l'internaute n'es pas ADMIN, il n'a rien a faire ici, on le redirige vers la page connexion.php
+// echo '<pre>'; print_r($_POST); echo '</pre>';
+// echo '<pre>'; print_r($_FILES); echo '</pre>';
+
+//---------- SUPPRESSION 
+if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
 {
-    // header('Location:' . URL.'../include/header.php');
+    $data = $bdd->query("SELECT nom FROM galerie_img WHERE id_img = '$_GET[id_img]'"); // on selectionne le référence en BDD pour l'inclure dans le message de validation
+    $id_img = $data->fetch(PDO::FETCH_ASSOC); 
+    //echo '<pre>'; print_r($id_img); echo '</pre>';
+
+    // Exo : Réaliser le traitement PHP permettant de supprimer un produit (requete préparée)
+    $data = $bdd->prepare("DELETE FROM galerie_img WHERE id_img = :id_img");
+    $data->bindValue(':id_img', $_GET['id_img'], PDO::PARAM_INT);
+    $data->execute();
+
+    $_GET['action'] = 'affichage'; // on affecte une nouvelle valeur à l'indice 'action' dans l'URL afin d'être redirigé sur l'affichage des produits 
+
+    $valid .= '<div class="col-md-4 mx-auto alert alert-success text-center">La photo nom <strong>' . $nom['nom'] . '</strong> a bien été supprimé !</div>';
+
 }
-//----------------SUPRESSION PRODUIT
-if(isset($_GET['action']) && $_GET['action'] == 'suppression')
-{
-    //Exo : réaliser le traintement PHP permettant de supprimer un produit en fonction de l'id_produit  envoyé dans l'URL avec une requete preparee
-    $deleteProduit = $bdd->prepare("DELETE FROM produit WHERE id_produit = :id_produit");
-    $deleteProduit->bindValue(':id_produit', $id_produit, PDO::PARAM_INT);
-    $deleteProduit->execute();
-    $_GET['action']='affichage'; // quand on supprime on reste sur la page
-
-    $validDelete= "<p class='col-md-5 mx-auto alert-success text-center'>Le produit ID <strong>$id_produit</strong> a bien été supprimé!</p>";
-
-}
-
-
-//----------------ENREGISTREMENT PRODUIT
-
 
 if($_POST)
 {
-    $photobdd = '';
+    $photo_bdd = '';
+    // Si l'indice 'name' est différent de vide dans la superglobale $_FILES, cela veut dire que noua avons bien uploader une image / photo 
+    
+    // Si on souhaite conserver la même photo en cas de modification, on affecte la valeur du champs photo caché ('hidden') dans la variable $photo_bdd, c'est dû au fait qu'un champ type 'file' ne peux pas avoir d'attribut 'value'
     if(isset($_GET['action']) && $_GET['action'] == 'modification')
     {
-        $photobdd = $_POST['photoActuelle'];
+        $photo_bdd = $_POST['photo_actuelle'];
     }
-    // Sil l'indice 'name' dans la superglobale $_FILES est différent de vide,cela veut dire que l'internaute a bien uploader une photo
+
     if(!empty($_FILES['photo']['name']))
     {
-        // on concatene la reference saisie dans le formulaire avec le nom de la photo recupere dans la superglobale $_FILES
-        $nomPhoto = $_FILES['photo']['name'];
-        //echo $nomPhoto . '<hr>';
 
-        // On definit l'URL de la photo jusqu'au dossirr 'photo' sur le serveur, c'est ce que l'on enregistrera dans la BDD
-        $photobdd = URL . "img/$nomPhoto";
-       // echo $photobdd . '<hr>';
+        $nom_photo = $_FILES['photo']['name'];
+        //echo $nom_photo . '<hr>'; // on concatène la référence saisie dans le formulaire avec le nom de la photo via la superglobale $_FILES
 
-       // On définit le chemin physique de la photo du dossier 'photo' sur le serveur, c'est ce que l'on utilisera pour copier la photo dans le dossier 'photo'
-        $photoDossier = RACINE_SITE . "/$nomPhoto";
-       // echo $photoDossier . '<hr>';
-        // copy() : fonction predefinie permettant de copier la photo dans le dossier 'photo' sur le serveur
-        //arguments : copy('nom_temporaire','chemin de la photo vers le dossier photo')
-        //copy($_FILES['photo']['tmp_name'], $photoDossier);
+        $photo_bdd = URL . "img/$nom_photo"; // on définit l'URL de la photo qui sera conservé en BDD
+        //echo  $photo_bdd . '<hr>';
 
+        $photo_dossier = RACINE_SITE . "/$nom_photo"; // on définit la chemin physique de la photo vers le dossier phot, cela nous sert pour copier la photo dans le dossier 'photo'
+        //echo $photo_dossier . '<hr>';
 
-        //----------- TRAITEMENT EXTENSION PHOTO
-        $listExt = [1 =>'.jpg', 2=>'.png',3=>'.jpeg'];
-        $positionPhoto = strpos($_FILES['photo']['name'], '.'); // o trouve a quel position se trouve le point dans le nom de la photo
-        //echo $positionPhoto;
-        $decoupeExt = substr($_FILES['photo']['name'], $positionPhoto); // on recup l'extension
-        // echo $decoupeExt;
-        // array_search() : fonction predefinie permettant de trouver a quel indice se trouve une donnée dans un tableau ARRAY
-        $extension = array_search($decoupeExt,$listExt);
-        //echo $extension;
-        // var_dump($extension);
-        // Si la position de l'extension (indice) dans le tableau ARRAY n'est pas trouvée  , array_search() retourne FALSE, on affiche un message d'erreur
-        if($extension ==false)
-        {
-            $erreurPhoto = '<p class="font-italic text-danger">Format photo non pris en compte</p>';
-            $erreur = true;
-        }
-
-         // copy() : fonction predefinie permettant de copier la photo dans le dossier 'photo' sur le serveur
-         //argument : copy('nom_temporaire','chemin de la photo vers le dossier photo')
-         // Si la valeur de $extension est différente de FALSE, cela veut dire que l'extenssion a bien été trouvé dans le tableau ARRAY $listExt,alors on copie la photo
-        if($extension !== false)
-        {
-            copy($_FILES['photo']['tmp_name'],$photoDossier);
-        }
+        copy($_FILES['photo']['tmp_name'], $photo_dossier); // on copie la photo direstement dans le dossier 'photo'. La fonction copy() reçoit 2 arguments:
+        // - 1: Le nom temporaire de la photo 
+        // - 2: le chemin du dossier 'photo' 
     }
 
-    if(!isset($erreur))
+    // On entre dans la condition IF seulement dans le cas où l'on a cliqué sur le lien 'ajout' d'un produit et par conséquent qu'on ai transmit 'action=ajout' dans l'URL 
+    if(isset($_GET['action']) && $_GET['action'] == 'ajout')
     {
-        // EXO : réaliser le traitement PHP permettant d'insérer un produit dans la BDD avec une requete
+        $data = $bdd->prepare("INSERT INTO galerie_img (nom,categorie,photo) VALUES (:nom,:categorie,:photo)");
 
-            if(isset($_GET['action']) && $_GET['action'] == 'ajout')
+        $_GET['action'] = 'affichage'; // aprés l'insertion, on renvoi vers l'affichage des produits
 
-        {
-            $insertProduit = $bdd->prepare("INSERT INTO produit (photo) VALUES ( :photo)");
+        $valid = '<div class="col-md-4 mx-auto alert alert-success text-center">La photo a bien été enregistré !</div>';
+    }
+    else
+    {
+        // Exo : Réaliser le traitement PHP pour la modification d'un produit
+        // prepare() + UPDATE
+    }
+    
+   
+    $data->bindValue(':id_img', $_POST['id_img'], PDO::PARAM_STR);
+    $data->bindValue(':categorie', $_POST['categorie'], PDO::PARAM_STR); 
+    $data->bindValue(':photo', $photo_bdd, PDO::PARAM_STR);
+   
+    
+    $data->execute();
 
-            $validUpdate = "<p class='col-md-5 mx-auto alert-success text-center'>Le produit référence <strong></strong> a bien été modifié ! </p>";
-        }
-        else
-        {
-                // Exo : formuler la requête de modification UPDATE avec une requete préparee
-
-                $insertProduit = $bdd->prepare("UPDATE produit SET photo = :photo");
-
-                $insertProduit->bindValue(':id_produit', $id_produit, PDO::PARAM_INT);
-                
-        }
-
-
-    // Exo : realiser le traitement PHP permettant d'inserer un produiit dans la BDD avec une requete préparé
-
-
-        
-
-  
-    $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
-    $insertProduit->execute();
-
-    $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>Le produit référence <strong></strong> a bien été enregistré ! </p>";
 }
-}
+
+
 require_once('../include/header.php');
-
-//echo '<pre>';print_r($_POST); echo '</pre>';
-
-// Les données liées au fichier uploader vont se stoker directment dans la superglobale $_FILES(ne pas oublier l'attribut enctype='multipart/form-data')dans le formulaire)
-//echo '<pre>';print_r($_FILES);echo '</pre>';
-
-//Exo : réaliser le traitement PHP permettant d'afficher l'ensemble de la table 'produit', avec les entêtes des colones.Prévoir un lien modification et suppressio, pour chaques produit
 ?>
 
-<ul class="col-md-4 list-group text-center mt-3 mx-auto">
-<li class="list-group-item bg-primary">BACK OFFICE</li>
-<li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE PRODUITS</a></li>
-<li class="list-group-item "><a href="?action=ajout" class="text-dark">AJOUT PRODUIT</a></li>
+<!-- ------- LIENS PRODUITS -->
+<ul class="col-md-4 mx-auto list-group my-4">
+  <li class="list-group-item text-center"><a href="?action=affichage" class="text-dark">Affichage photo</a></li>
+  <li class="list-group-item text-center"><a href="?action=ajout" class="text-dark">Ajout photo</a></li>
 </ul>
 
+<!-- ------- AFFICHAGE PRODUIT(S) -->
+<?php 
+// On entre dans la condition IF seulement dans le cas où l'on a cliqué sur le lien 'affichage photo' et par conséquent que l'on a envoyé 'action=affichage' dans l'URL
+if(isset($_GET['action']) && $_GET['action'] == 'affichage'):
 
-
-<?php
-
-// ------------------AFFICHAGE PRODUIT
-//Si l'indice 'action' est bien définie
-
-if(isset($_GET['action']) && $_GET['action'] == 'affichage')
-{
-
-$resultat = $bdd->query("SELECT * FROM produit");
-
-echo '<h1 class="display-4 text-center mt-3">Affichage des produits</h1><hr>';
-
-if(isset($validDelete)) echo $validDelete;
-
-echo '<p class="text-center">Nombre de produit(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
-echo '<table class="table table-dark table table bordered text-center"><tr>';
-for($i =0; $i < $resultat->columnCount();$i++)
-{
-    $colonne = $resultat->getColumnMeta($i);
-    echo "<th>$colonne[name]</th>";
-}
-echo '<th>Modif</th>'; // On crééer manuellement 2 colonnes d'entetes suppléme,ntaire
-echo '<th>Supp</th>';
-echo '</tr>';
-while($produit = $resultat->fetch(PDO::FETCH_ASSOC))
-{
-    //echo '<pre>'; print_r($produit);echo'<pre>';
-    echo '</tr>';
-    foreach($produit as $key => $value)
-    {
-        if($key =='photo'){
-        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
-    }
-    elseif($key == 'prix'){
-        echo "<td>$value €</td>";
-    }
-        else{
-            echo "<td>$value</td>";
-        }
-
-
-        
-        
-    }
-    echo "<td><a href = '?action=modification&id_produit=$produit[id_produit]' class='text-info'><i class='far fa-edit'></i></a></td>"; // on crée manuelleùment 2 cellules supplémentaire pour chaque produit
-    echo "<td><a href='?action=suppression&id_produit=$produit[id_produit]' class='text-info'><i class='fas fa-trash-alt' onclick='return(confirm(\"En êtes-vous certain ? \"));'></i></a></td>";
-    echo '</tr>';
-}
-echo '</table>';
-}
+    $data = $bdd->query("SELECT * FROM galerie_img");
 ?>
-
-<style>
-
-</style>
-<!-- Si l'indice 'action' est bien définit dans l'URL et que cette indice a pour valeur 'ajout', cela veut dire que l'utilisateur  -->
-<?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')): 
-
-if(isset($id_produit)) // $_GET['id_produit']
-{
-    // On selectionne en BDD toute les donnee du produit via l'id_produit envoyé dans l'url
-    $resultat = $bdd->prepare("SELECT * FROM produit WHERE id_produit = :id_produit");
-    $resultat->bindValue(':id_produit',$id_produit,PDO::PARAM_INT);
-    $resultat->execute();
-
-    $produitActuel = $resultat->fetch(PDO::FETCH_ASSOC);
-    //echo '<pre>' ; print_r($produitActuel);echo '</pre>';
-}
-
-
-$photo = (isset($produitActuel['photo'])) ? $produitActuel['photo'] : '';
-
-?>
-<h1 class="display-4 text-center text-success mt-3"><?=ucfirst($action); ?> d'un <b>Produit</b></h1><hr>
-
-
-
-<div class="ecran">
-
-<form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto" action="">
-
-<div class="form-group col-md-6">
-<label for="public">Photo</label>
-<div class="custom-file" >
-
-    <input type="hidden" class="custom-file-input" id="photo" name="photoActuelle" value="<?= $photo ?>">
-    <input type="file" class="custom-file-input" id="photo" name="photo" value="<?= $photo ?>">
-    <label class="custom-file-label" for="photo" aria-describedby="photo">Choisir Photo</label>
-    <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
-    </div>
-  </div>
-  <button type="submit" class=" col-md-12 btn btn-info"><?=ucfirst($action); ?> Produit</button>
-<?php if(isset($validInsert)) echo $validInsert; ?>
-<?php if(isset($validUpdate)) echo $validUpdate; ?>
-
-  <input type="hidden" name="photoActuelle" id="photoAxctuelle" value=" <?= $photo ?>">
-
-<?php if(!empty($photo)): ?>
-<em>Vous pouvez uploader une nouvelle photo si vous shouaitez la changer</em>
-<img src="<?=$photo ?>" alt="<?= $titre ?>" class="col-md-12 mx-auto d-block">
-
-<?php endif; ?>
-
  
+    <p class="text-center"><span class="badge badge-info"><?= $data->rowCount() ?></span> photo dans la galerie</p>
+
+    <table class="table text-center mb-4"><tr>
+    <?php for($i = 0; $i < $data->columnCount(); $i++): 
+          $colonne = $data->getColumnMeta($i);
+          //echo '<pre>'; print_r($colonne); echo '</pre>';  
+    ?>
+        <th><?= ucfirst($colonne['photo']) ?></th>
+    <?php endfor; ?>
+        <th>Edit</th>
+        <th>Supp</th>
+    </tr>
+    <?php while($emp = $data->fetch(PDO::FETCH_ASSOC)): 
+        //echo '<pre>'; print_r($emp); echo '</pre>';  
+    ?>
+    <tr>
+        <?php foreach($emp as $key=> $value): 
+            if($key == 'photo'): // Si l'indice est 'photo', on affiche la valeur dans l'attribut 'src' d'une balise 'img' poiur que la photo s'affiche
+        ?>
+            <td><img src="<?= $value ?>" alt="<?= $emp['nom'] ?>" class="img-thumbnail"></td>
+        <?php else: // sinon pour toute les autres valeurs, on les stock dans des cellules <td> ?>
+            <td><?= $value ?></td>
+        <?php 
+            endif;
+              endforeach; 
+        ?>
+        <td><a href="?action=modification&id_img=<?= $emp['id_img'] ?>"><i class="far fa-edit text-dark"></i></a></td>
+        <td><a href="?action=suppression&id_img=<?= $emp['id_img'] ?>"><i class="fas fa-trash-alt text-danger"></i></a></td>
+    </tr>    
+    <?php endwhile; ?>
+    </table> 
+
+<?php endif; ?>     
+<!-- ------- FIN AFFICHAGE PRODUIT(S) -->
+
+<?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')): // On entre dans la condition IF seulement dans le cas où l'on a cliqué sur le lien 'ajout produit' et par conséquent que l'on a envoyé 'action=ajout' dans l'URL 
+
+if(isset($_GET['id_img'])) // on contrôle si un ID a été passé dans l'URL, si c'est le cas, c'est que nous avons cliqué sur le lien 'modification'
+{
+    $data = $bdd->prepare("SELECT * FROM galeire_img WHERE id_img = :id_img");
+    $data->bindValue(':id_img', $_GET['id_img'], PDO::PARAM_INT);
+    $data->execute();// on selectionne les informations de la photo a modifié par rapport à l'ID envoyé dans l'URL
+    $img_actuel = $data->fetch(PDO::FETCH_ASSOC); // on crée un tableau ARRAY 
+    //echo '<pre>'; print_r($img_actuel);echo '</pre>';
+}
+// On stock chaque données du produit recupéré en BDD dans une variable 
+//On appel chaque variable dans les attributs 'value' de chaque champ 'input'
+
+$categorie = (isset($img_actuel['categorie'])) ? $img_actuel['categorie'] : '';
+$photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
+
+?>
+
+<form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto">
+
+<div class="form-row">
+    <div class="form-group col-md-6">
+        <label for="taille">categories</label>
+        <select id="taille" class="form-control" name="taille">
+            <option value="3D" <?php if($categorie == '3D') echo 'selected' ?>>3D</option>
+            <option value="net" <?php if($categorie == 'net') echo 'selected' ?>>NET</option>
+            <option value="ev" <?php if($categorie == 'ev') echo 'selected' ?>>EV</option>
+            <option value="g3D" <?php if($categorie == 'g3d') echo 'selected' ?>>G3D</option>
+            <option value="gnet" <?php if($categorie == 'gnet') echo 'selected' ?>>GNET</option>
+            <option value="gev" <?php if($categorie == 'gev') echo 'selected' ?>>GEV</option>
+        </select>
+    </div>
+</div>
+    
+    <div class="form-group col-md-6">
+    <label for="photo">Photo</label>
+    <input type="file" class="form-control" id="photo" name="photo" value="">
+    <!-- Champ caché pour la photo permettant de recupérer l'URL de la photo via l'attribut 'value' -->
+    <input type="hidden" name="photo_actuelle" value="<?= $photo ?>">
+    </div>
+    <?php if(!empty($photo)): ?>
+        <em class="mx-auto">Vous pouvez uploder une nouvelle photo si vous souaitez la changer</em><br>
+        <img src="<?= $photo ?>" alt="<?= $nom ?>" class="col-md-4 offset-md-4">
+    <?php endif; ?>
+</div>
+
+<button type="submit" class="btn btn-info mb-4"><?= ucfirst($_GET['action']) ?></button>
 </form>
 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php endif; ?>
-</div>
-
-<?php
+<?php 
+endif;
 require_once('../include/footer.php');
-?>
