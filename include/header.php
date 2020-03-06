@@ -14,6 +14,9 @@
   <style>
     /* ------------------------Css source-header------------------------------------- */
     @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+    body{
+      width: 100%
+    }
 
     .fixed-top {
       display: flex;
@@ -31,7 +34,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 18vh;
+      min-height: 18vh;
     }
 
     /* LOGO TITRE STYLE */
@@ -213,7 +216,7 @@
           CKM Boutique </div><i class="baseline-speaker_phone"></i>
       </div>
       <div class="logo">
-        <a href="index.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre"></a>
+        <a href="index.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre img-fluid"></a>
       </div>
       <div class="boutonTel">
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
