@@ -138,7 +138,7 @@ if(isset($validDelete)) echo $validDelete;
 
 echo '<p class="text-center">Nombre d\'image(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
 echo '<table class="table-dark table bordered text-center"><tr>';
-for($i =1; $i < $resultat->columnCount();$i++)
+for($i =0; $i < $resultat->columnCount();$i++)
 {
     $colonne = $resultat->getColumnMeta($i);
     echo "<th>$colonne[name]</th>";
@@ -148,7 +148,6 @@ echo '<th>Supp</th>';
 echo '</tr>';
 while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
 {
-    echo '<pre>'; print_r($galerie_img);echo'<pre>';
     echo '</tr>';
     foreach($galerie_img as $key => $value)
     {
@@ -158,11 +157,12 @@ while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
     }
 
     }
-    echo "<td><a href='?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>"; 
-    echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt ></i></a></td>";
-    echo '</tr>';
-    echo '</table>';
+    echo "<td><a href='?action=modification&id_img=$galerie_img[id_img]' class='text-info far fa-edit'></a></td>"; 
+    echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info fas fa-trash-alt'></a></td>";
+
 }
+echo '</tr>';
+echo '</table>';
 
 }
 ?>
@@ -201,18 +201,18 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 
     <form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto" action="">
 
-        <div class="form-group col-md-6 text-center mx-auto">
+        <div class="form-group col-md-4 text-center mx-auto border">
             <label for="public">Photo</label>
-            <div class="custom-file">
 
-                <input type="hidden" class="custom-file-input" id="photo" name="photoActuelle" value="<?= $photo ?>">
-                <input type="file" class="custom-file-input" id="photo" name="photo" value="<?= $photo ?>">
-                <label class="custom-file-label text-start" for="photo" aria-describedby="photo">Choisir Photo</label>
+            <div class="custom-file mx-auto border border-dark rounded">
+                <input type="hidden" class="custom-file mx-auto border" id="photo" name="photoActuelle" value="<?= $photo ?>">
+                <input type="file" class="custom-file mx-auto" id="photo" name="photo" value="<?= $photo ?>">
+                <!-- <label class="custom-file mx-auto" for="photo" aria-describedby="photo"></label> -->
                 <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
             </div>
             
                 <label for="selection" class="mt-3">Galerie</label>
-                <select id="categories" class="form-control" name="selection" placeholder="Entrer catégories">
+                <select id="categories" class="form-control col-md-4 mx-auto" name="selection" placeholder="Entrer catégories">
                     <option value="3D"  <?php  echo 'selected' ?>>3D</option>
                     <option value="NET" <?php  echo 'selected' ?>>NET</option>
                     <option value="EV"  <?php  echo 'selected' ?>>EV</option>
@@ -236,10 +236,6 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
         <em>Vous pouvez uploader une nouvelle photo si vous shouaitez la changer</em>
         <img src="<?=$photo ?>" alt="<?= $titre ?>" class="col-md-12 mx-auto d-block">
         <?php endif; ?>
-
-
-    
-
 
     </form>
 
