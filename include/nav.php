@@ -230,7 +230,7 @@
         <ul class="navbar-nav mx-auto">
           <li class="nav-item" id="tailleLi">
             <a class="nav-link" id="tailleA" href="index.php"><img src="include/img/CKMHOMEFOOTER.png" alt="Logo Home"
-                class="logoHome"></a>
+                class="logoHome img-fluid"></a>
           </li>
           <hr class="mx-auto bg-dark text-center">
           <li class="nav-item dropdown">

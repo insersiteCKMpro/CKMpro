@@ -252,10 +252,10 @@
 
         /*Activités*/
         .sectionB {
-            height: 75vh;
+            height: 69vh;
             justify-content: space-around;
             display: flex;
-            margin-left: 3vh;
+            margin-left: 2.5vh;
         }
 
         /*Activités*/
@@ -495,17 +495,18 @@
 
         .img4 {
             width: 2%;
-            height: 20px;
         }
 
         .imgC {
             width: 100%;
-            height: 279px;
         }
 
         .imgM {
             display: flex;
             margin-top: 0.4px;
+        }
+        .fivetoile {
+            width: 55%;
         }
     }
 
@@ -659,7 +660,6 @@
         .img1 {
             margin-top: 30px;
             width: 92%;
-            height: 15vh;
         }
 
         .img3 {
@@ -670,12 +670,10 @@
 
         .img4 {
             width: 92%;
-            height: 20px;
         }
 
         .imgC {
             width: 100%;
-            height: 279px;
         }
 
         .imgM {
@@ -685,16 +683,17 @@
 
         .imgl {
             width: 50%;
-            height: 10vh;
             display: flex;
             margin: auto 0;
         }
 
         .imgp {
             width: 25%;
-            height: 20vh;
             display: flex;
             margin: auto 0;
+        }
+        .fivetoile {
+            width: 65%;
         }
     }
     @media (min-width: 576px) {
@@ -774,7 +773,7 @@
         <!--les activités de CKMpro-->
         <div class="sectionB">
             <div class="derat">
-                <img src="include/img/3Dmaq.png" class="img3" alt="">
+                <img src="include/img/3Dmaq.png" class="img3 img-fluid" alt="">
                 <h2><br>3D</h2>
                 <br>
                 <p class="text-justify pact">
@@ -826,7 +825,7 @@
                                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner text-center">
                                         <div class="carousel-item active">
-                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <img src="include/img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
                                                 exercitationem
@@ -836,7 +835,7 @@
                                             </p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <img src="include/img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
                                                 exercitationem
