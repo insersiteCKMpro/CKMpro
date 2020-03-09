@@ -192,7 +192,7 @@
     }
   }
   .burg {
-    margin: 0 auto;
+    margin:
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -229,7 +229,7 @@
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item" id="tailleLi">
-            <a class="nav-link" id="tailleA" href="index.php"><img src="include/img/CKMHOMEFOOTER.png" alt="Logo Home"
+            <a class="nav-link" id="tailleA" href="index.php"><img src="img/CKMHOMEFOOTER.png" alt="Logo Home"
                 class="logoHome"></a>
           </li>
           <hr class="mx-auto bg-dark text-center">

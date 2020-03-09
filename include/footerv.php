@@ -3,12 +3,7 @@
     {
     display: contents;
     }
-    footer 
-    {
-        background-color: rgba(0, 166, 81, 0.5);
-        border-top: 1px solid black;
-        font-size: 0.95em;
-        font-family: 'Red Hat Display',serif;
+    foot   font-family: 'Red Hat Display',serif;
     }
 
     .footerhaut 
@@ -181,7 +176,7 @@
             <div class="footerhaut text-center">
                 <div class="colonne1 text-center">
 
-                    <a href="index.php"><img class="flogo" src="include/img/CKMHOMEFOOTER.png" width="100%"></a>
+                    <a href="index.php"><img class="flogo" src="img/CKMHOMEFOOTER.png" width="100%"></a>
                     <a class="ftext1" href="3D.php">3D</a>
                     <a class="ftext1" href="nettoyage.php">Nettoyage</a>
                     <a class="ftext1" href="espacevert.php">Espace Verts</a>
@@ -197,17 +192,17 @@
                 <div class="colonne3 text-center">
                     <div class="snap">
                         <a href="http://www.snapchat.com">
-                        <img class="insta" src="include/img/ckmsnapchatyellow.png" alt="" width="50%">
+                        <img class="insta" src="img/ckmsnapchatyellow.png" alt="" width="50%">
                     </a>
                     </div>
                     <div class="snap">
                         <a href="http://www.facebook.com">
-                        <img class="insta" src="include/img/ckmfbblue.png" alt="" width="50%">
+                        <img class="insta" src="img/ckmfbblue.png" alt="" width="50%">
                     </a>
                     </div>
                     <div class="snap">
                         <a href="http://www.instagram.com">
-                        <img class="insta" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
+                        <img class="insta" src="img/ckminstagramgreen.png" alt="" width="50%"></a>
                     </div>
                 </div>
             </div>
