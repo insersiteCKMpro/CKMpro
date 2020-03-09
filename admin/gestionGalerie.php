@@ -38,38 +38,30 @@ if($_POST)
     {
         $photobdd = $_POST['photoActuelle'];
     }
-    // Sil l'indice 'name' dans la superglobale $_FILES est différent de vide,cela veut dire que l'internaute a bien uploader une photo
     if(!empty($_FILES['photo']['name']))
     {
         $nomPhoto = $_FILES['photo']['name'];
         //echo $nomPhoto . '<hr>';
 
-        // On definit l'URL de la photo jusqu'au dossier 'photo' sur le serveur, c'est ce que l'on enregistrera dans la BDD
         $photobdd = URL . "img/$nomPhoto";
        // echo $photobdd . '<hr>';
 
-       // On définit le chemin physique de la photo du dossier 'photo' sur le serveur, c'est ce que l'on utilisera pour copier la photo dans le dossier 'photo'
         $photoDossier = RACINE_SITE . "/$nomPhoto";
        // echo $photoDossier . '<hr>';
-        // copy() : fonction predefinie permettant de copier la photo dans le dossier 'photo' sur le serveur
-        //arguments : copy('nom_temporaire','chemin de la photo vers le dossier photo')
-        //copy($_FILES['photo']['tmp_name'], $photoDossier);
-
-
+ 
         //----------- TRAITEMENT EXTENSION PHOTO
         $listExt = [1 =>'.jpg', 2=>'.png',3=>'.jpeg'];
-        $positionPhoto = strpos($_FILES['photo']['name'], '.'); // o trouve a quel position se trouve le point dans le nom de la photo
+        $positionPhoto = strpos($_FILES['photo']['name'], '.');  
         //echo $positionPhoto;
-        $decoupeExt = substr($_FILES['photo']['name'], $positionPhoto); // on recup l'extension
+        $decoupeExt = substr($_FILES['photo']['name'], $positionPhoto); 
         // echo $decoupeExt;
-        // array_search() : fonction predefinie permettant de trouver a quel indice se trouve une donnée dans un tableau ARRAY
+
         $extension = array_search($decoupeExt,$listExt);
         if($extension ==false)
         {
             $erreurPhoto = '<p class="font-italic text-danger">Format photo non pris en compte</p>';
             $erreur = true;
         }
-         //argument : copy('nom_temporaire','chemin de la photo vers le dossier photo')
         if($extension !== false)
         {
             copy($_FILES['photo']['tmp_name'],$photoDossier);
@@ -80,11 +72,9 @@ if($_POST)
     {
             if(isset($_GET['action']) && $_GET['action'] == 'ajout')
         {
-            // $insertProduit = $bdd->prepare("INSERT INTO galerie_img VALUES ( :photo)");
         $insertProduit = $bdd->prepare("INSERT INTO galerie_img (photo) VALUES ( :photo)");
         $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
         $insertProduit->execute();
-            
         }
         else
         {
@@ -118,7 +108,7 @@ if(isset($validDelete)) echo $validDelete;
 
         echo '<p class="text-center">Nombre d\'image(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
         echo '<table class="table-dark table bordered text-center"><tr>';
-        for($i =0; $i < $resultat->columnCount();$i++)
+        for($i =1; $i < $resultat->columnCount();$i++)
         {
             $colonne = $resultat->getColumnMeta($i);
             echo "<th>$colonne[name]</th>";
@@ -134,13 +124,15 @@ if(isset($validDelete)) echo $validDelete;
             {
                 if($key =='photo'){
                 echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
+                echo "<td>$value</td>";
             }
                 
             }
-            echo "<td><a href='?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>"; 
-            echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt ></i></a></td>";
-            echo '</tr>';
+            echo "<td><a href='?action=modification&id_img=$galerie_img[id_img]' class='text-info far fa-edit'</a></td>"; 
+            echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info fas fa-trash-alt'</a></td>";
+            
         }
+        echo '</tr>';
         echo '</table>';
         }
         ?>

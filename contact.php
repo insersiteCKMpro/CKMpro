@@ -1283,26 +1283,26 @@
                         </div>
                     </div>
                     <br>
-                    <select class="form-control" style="display:none" id="showInDropDown1" name="question3D[]">3D
-                        <option></option>
-                        <option value="question3D1">Question 3D 1</option>
-                        <option value="question3D2">Question 3D 2</option>
-                        <option value="question3D3">Question 3D 3</option>
+                    <select class="form-control" style="display:none" id="showInDropDown1" name="question3D[]">
+                        <option>3D</option>
+                        <option value="question3D1">Question 1</option>
+                        <option value="question3D2">Question 2</option>
+                        <option value="question3D3">Question 3</option>
                     </select>
                     <br>
                     <select class="form-control" style="display:none" id="showInDropDown2"
-                        name="questionNet[]">Nettoyage
-                        <option></option>
-                        <option value="questionNettoyage1">Question Nettoyage 1</option>
-                        <option value="questionNettoyage2">Question Nettoyage 2</option>
-                        <option value="questionNettoyage3">Question Nettoyage 3</option>
+                        name="questionNet[]">
+                        <option>Nettoyage</option>
+                        <option value="questionNettoyage1">Question 1</option>
+                        <option value="questionNettoyage2">Question 2</option>
+                        <option value="questionNettoyage3">Question 3</option>
                     </select>
                     <br>
-                    <select class="form-control" style="display:none" id="showInDropDown3" name="questionEV[]">Espaces verts
-                        <option></option>
-                        <option value="questionEspacesVerts1">Question Espaces Verts 1</option>
-                        <option value="questionEspacesVerts2">Question Espaces Verts 2</option>
-                        <option value="questionEspacesVerts3">Question Espaces Verts 3</option>
+                    <select class="form-control" style="display:none" id="showInDropDown3" name="questionEV[]">
+                        <option>Espaces verts</option>
+                        <option value="questionEspacesVerts1">Question 1</option>
+                        <option value="questionEspacesVerts2">Question 2</option>
+                        <option value="questionEspacesVerts3">Question 3</option>
                     </select>
                     <br>
                     <div class="form-group">
