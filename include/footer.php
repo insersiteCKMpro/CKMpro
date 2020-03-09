@@ -190,7 +190,7 @@
                     <a href="http://www.snapchat.com">
                         <img class="insta" src="img/ckmsnapchatyellow.png" alt="" width="50%">
                     </a>
-                </div>
+                </div>../
                 <div class="snap">
                     <a href="http://www.facebook.com">
                         <img class="insta" src="img/ckmfbblue.png" alt="" width="50%">

@@ -99,10 +99,25 @@ if($_POST)
         $insertPhoto->bindValue(':photo', $photobdd, PDO::PARAM_INT);
         $insertPhoto->execute();
         }
+<<<<<<< HEAD
         // if(add($galerie))
         //  if(isset($_GET['select']) && $_get
         // 'choices'=> ['Galerie'=>'Galerie','Entretien'=>'Entretien','Eq'=>'Equipement'],
 
+=======
+        // if(add($categorie))
+
+        //     if(isset($_GET['select']) && $_get
+        //     'choices'  => [
+        //         'Papeterie' => 'Papeterie',
+        //         'Entretien' => 'Entretien',
+        //         'Eq' => 'Equipement'
+        //     ],
+
+
+
+
+>>>>>>> 08478a32b3f76b9b3574716e1d73cc6c77761f04
     $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été enregistré ! </p>";
 }
 
@@ -110,12 +125,21 @@ if($_POST)
 
 ?>
 <ul class="col-md-4 list-group text-center mt-3 mx-auto">
+<<<<<<< HEAD
     <li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE IMAGES</a></li>
     <li class="list-group-item "><a href="?action=ajout" class="text-dark">AJOUT </a><b>+</b></li>
 </ul>
 <?php
 
 // ---------------------------------AFFICHAGE Photo------------------------------------
+=======
+    <li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE PRODUITS</a></li>
+    <li class="list-group-item "><a href="?action=ajout" class="text-dark">AJOUT PRODUIT</a></li>
+</ul>
+<?php
+
+// --------------------------------------------------------------------AFFICHAGE PRODUIT
+>>>>>>> 08478a32b3f76b9b3574716e1d73cc6c77761f04
 
 if(isset($_GET['action']) && $_GET['action'] == 'affichage')
 {
@@ -188,6 +212,7 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 
     <form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto" action="">
 
+<<<<<<< HEAD
         <div class="form-group col-md-4 text-center mx-auto border">
             <label for="public">Photo</label>
 
@@ -208,6 +233,38 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
                 </select>
 
         <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center"><?=ucfirst($action);?> Image</button>
+=======
+        <div class="form-group col-md-4 mx-auto">
+            <label for="public">Photo</label>
+            <div class="custom-file">
+
+                <input type="hidden" class="custom-file-input" id="photo" name="photoActuelle" value="<?= $photo ?>">
+                <input type="file" class="custom-file-input" id="photo" name="photo" value="<?= $photo ?>">
+                <label class="custom-file-label text-start" for="photo" aria-describedby="photo">Choisir Photo</label>
+                <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
+            </div>
+            <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center"><?=ucfirst($action);?>Produit</button>
+        </div>
+
+        <div class="form-row">
+        
+
+            <div class="form-group col-md-6">
+                <label for="selection">select</label>
+                <select id="categories" class="form-control" name="selection" placeholder="Entrer catégories">
+                    <option value="3D"  <?php if($value == '3D') echo 'selected' ?>>3D</option>
+                    <option value="NET" <?php if($value == 'NET') echo 'selected' ?>>NET</option>
+                    <option value="EV"  <?php if($value == 'EV') echo 'selected' ?>>EV</option>
+                    <option value="G3D" <?php if($value == 'G3D') echo 'selected' ?>>G3D</option>
+                    <option value="GNET"<?php if($value == 'GNET') echo 'selected' ?>>GNET</option>
+                    <option value="GEV" <?php if($value == 'GEV') echo 'selected' ?>>GEV</option>
+                </select>
+            </div>
+        </div>
+
+
+
+>>>>>>> 08478a32b3f76b9b3574716e1d73cc6c77761f04
 
         <?php if(isset($validInsert)) echo $validInsert; ?>
         <?php if(isset($validUpdate)) echo $validUpdate; ?>
