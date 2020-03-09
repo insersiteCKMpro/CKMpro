@@ -92,14 +92,15 @@ if($_POST)
         $insertProduit = $bdd->prepare("INSERT INTO galerie_img (photo) VALUES ( :photo)");
         $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
         $insertProduit->execute();
-            
+        $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été enregistré ! </p>";
         }
         else
         {
-                $insertProduit = $bdd->prepare("UPDATE galerie_img (photo) SET photo = :photo");
-                $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
-                $insertProduit->execute();
+            $ModifProduit = $bdd->prepare("UPDATE galerie_img (photo) VALUES ( :photo)");
+            $ModifProduit->bindValue(':photo', $photobdd, PDO::PARAM_INT);
+            $modifInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été MODIFIER ! </p>";
         }
+        
         // if(add($categorie))
 
         //     if(isset($_GET['select']) && $_get
@@ -112,8 +113,8 @@ if($_POST)
 
 
 
-
-    $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été enregistré ! </p>";
+       
+   
 }
 
 }        //echo '<pre>';print_r($_POST); echo '</pre>';
@@ -169,7 +170,7 @@ echo '</table>';
 
 <style>
     .img-thumbnail {
-        max-width: 30% !important;
+        max-width: 20% !important;
     }
 </style>
 
@@ -224,7 +225,7 @@ $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
         <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center"><?=ucfirst($action);?> Image</button>
 
 
-
+        <?php if(isset($modifInsert)) echo $modifInsert; ?>
         <?php if(isset($validInsert)) echo $validInsert; ?>
         <?php if(isset($validUpdate)) echo $validUpdate; ?>
         <?php if(isset($validDelete)) echo $validDelete; ?>
