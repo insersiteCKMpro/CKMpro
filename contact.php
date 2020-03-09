@@ -1115,37 +1115,33 @@
         
         if($_POST)
         {
-
-            // FAILLES XSS
-          
-
+            echo '<pre>'; print_r($_POST); echo '</pre>';
             
             // 3. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING
-            echo '<pre>'; print_r($_POST); echo '</pre>';
-            echo '<hr>';
-            echo '<pre>'; var_dump($_POST); echo '</pre>';
-
             $categorie = implode(' ', $_POST['categorie']); 
             $question3D = implode(' ', $_POST['question3D']);
             $questionNet = implode(' ', $_POST['questionNet']);
             $questionEV = implode(' ', $_POST['questionEV']);
+            // FAILLES XSS
+            $name = htmlspecialchars($_POST['nom']);
+            $surname = htmlspecialchars($_POST['prenom']);
+            $mail = htmlspecialchars($_POST['email']);
+            $number = htmlspecialchars($_POST['telephone']);
+            $description = htmlspecialchars($_POST['description']);
 
+            // 4. INSERTION DANS LA BASE DE DONNEES.
 
-            // // 4. INSERTION DANS LA BASE DE DONNEES.
+            // Insertion bdd bouton radio :
             // $data = $bdd->exec("INSERT INTO contact (categorie) VALUES ('$categorie')"); INSERTION UNIQUEMENT DES BOUTONS RADIO*
 
-            $name = $_POST['nom'];
-            $surname = $_POST['prenom'];
-            $mail = $_POST['email'];
-            $number = $_POST['telephone'];
-            $description = $_POST['description'];
-
+            // Insertion de tout les champs :
             // $data = $bdd->exec("INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')");
 
+            // PREPARATION DE L'INSERTION DANS LA BDD
             $data = "INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')";
             
             $stmt = $bdd->prepare($data);
-            $stmt->bindParam(':nom', $name, PDO::PARAM_STR);
+            $stmt->bindParam(':nom', $names, PDO::PARAM_STR);
             $stmt->bindParam(':prenom', $surname, PDO::PARAM_STR);
             $stmt->bindParam(':email', $mail, PDO::PARAM_STR);
             $stmt->bindParam(':telephone', $number, PDO::PARAM_INT);
@@ -1233,18 +1229,17 @@
                 $erreurCategorie = '<p class="text-danger font-italic">* Catégorie obligatoire</p>';
                 $erreur = true;
             }
-
-
-            // MESSAGE DE VALIDATION DE L'ENVOI DU FORMULAIRE
-            if(!isset($erreur))
-            {
-                echo 'test';
-                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé</p>';
-            }
+           
             // Si l'internaute à correctement rempli le formulaire, on affcihe le message de validation.
             if(isset($valid)) echo $valid;
 
         }
+        
+        
+
+
+
+                        
     ?>
 
     <script type="text/javascript">
@@ -1311,7 +1306,7 @@
                 <div class="traits2"></div>
 
                 
-                <form method="post">
+                <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="exampleInputName1">Nom*</label>
                         <input type="text" class="form-control" aria-describedby="nameHelp" id="nom" name="nom">
@@ -1430,6 +1425,7 @@
         </div>
 
         <hr>
+
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
