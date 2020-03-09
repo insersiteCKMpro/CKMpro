@@ -139,9 +139,9 @@
     </style>
 <div class="container-fluid">
     <div class="imgligne1">
-        <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1" src="img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1" src="img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1" src="img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
     <div class="bg">
         <h1 class="titr1">Nettoyage</h1><br>
@@ -167,8 +167,8 @@
     </div>
     <div class="bg" style="background-color: rgba(0, 174, 239, 0.5);">
         <div class="imgligne2">
-            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
-            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2" src="img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2" src="img/nettoyagemaq.png" width="50%" href="#">
         </div>
 
         <h2 class="titr1" id="debarras">Debarras</h2>
@@ -193,7 +193,7 @@
         </p>
     </div>
     <div class="bg">
-        <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
+        <img class="imgligne3" src="img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
 
         <h2 class="titr1">Nettoyage</h2><br>
         <p class="text-justify">
