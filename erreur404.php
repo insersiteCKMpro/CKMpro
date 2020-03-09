@@ -1,3 +1,11 @@
+<!--
+    ?php defined('_JEXEC') or die;
+if (($this->error->getCode()) == '404') {
+    header("HTTP/1.0 404 Not Found");
+    echo file_get_contents(JURI::root().'page-404');
+    exit;}
+  ?>
+  -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
@@ -6,10 +14,15 @@
     <title>Erreur 404</title>
     <link rev="made" href="mailto:postmaster@localhost">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         
+        .click {
+            display: flex !important;
+            width: 10%;
+            margin: auto;
+            position: relative !important;
+        }
         .btn
         {
             border: 3px solid black;
@@ -88,7 +101,7 @@
         { 
             .click {
                 display: flex !important;
-                width: 18%;
+                width: 14%;
                 margin: auto;
                 position: relative !important;
             }
@@ -115,7 +128,7 @@
         { 
             .click {
                 display: flex !important;
-                width: 45%;
+                width: 44%;
                 margin: auto;
                 position: relative !important;
             }
