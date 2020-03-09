@@ -88,17 +88,18 @@ if($_POST)
     {
             if(isset($_GET['action']) && $_GET['action'] == 'ajout')
         {
-            // $insertProduit = $bdd->prepare("INSERT INTO galerie_img VALUES ( :photo)");
-        $insertProduit = $bdd->prepare("INSERT INTO galerie_img (photo) VALUES ( :photo)");
-        $insertProduit->bindValue(':photo', $photobdd, PDO::PARAM_STR);
-        $insertProduit->execute();
+            // $insertPhoto = $bdd->prepare("INSERT INTO galerie_img VALUES ( :photo)");
+        $insertPhoto = $bdd->prepare("INSERT INTO galerie_img (photo) VALUES ( :photo)");
+        $insertPhoto->bindValue(':photo', $photobdd, PDO::PARAM_STR);
+        $insertPhoto->execute();
         $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été enregistré ! </p>";
         }
         else
         {
-            $ModifProduit = $bdd->prepare("UPDATE galerie_img (photo) VALUES ( :photo)");
-            $ModifProduit->bindValue(':photo', $photobdd, PDO::PARAM_INT);
-            $modifInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été MODIFIER ! </p>";
+            $ModifImage = $bdd->prepare("UPDATE galerie_img SET photo = :photo , galerie = :galerie WHERE id_img = :id_img");
+            $ModifImage->bindValue(':id_img' , $id_img, PDO::PARAM_INT);
+
+            $modifInsert = "<p class='mt-3 col-md-10 mx-auto alert-success text-center'>L'image a bien été MODIFIER ! </p>";
         }
         
         // if(add($categorie))
@@ -112,9 +113,6 @@ if($_POST)
         //     ],
 
 
-
-       
-   
 }
 
 }        //echo '<pre>';print_r($_POST); echo '</pre>';
@@ -170,7 +168,7 @@ echo '</table>';
 
 <style>
     .img-thumbnail {
-        max-width: 20% !important;
+        max-width: 15% !important;
     }
 </style>
 
