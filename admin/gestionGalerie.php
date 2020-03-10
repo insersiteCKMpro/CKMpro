@@ -150,7 +150,8 @@ while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
     echo '</tr>';
     foreach($galerie_img as $key => $value)
     {
-        if($key =='photo'){
+        if($key =='photo')
+    {
         echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
         echo "<td>$value</td>";
     }
