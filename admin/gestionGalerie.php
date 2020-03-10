@@ -6,6 +6,7 @@ extract($_POST);
 extract($_GET);
 
 
+
 //echo '<pre>';print_r($_GET); echo '</pre>';
 //echo '<pre>';print_r($_POST); echo '</pre>';
 
@@ -70,6 +71,7 @@ if($_POST)
             L\'image a bien été modifié !</p>';
         }
         $data->bindValue(':photo' , $photo_bdd, PDO::PARAM_STR);
+
         $data->bindValue(':galerie' , $_POST['galerie'], PDO::PARAM_STR);
     
         $data->execute();
@@ -93,8 +95,12 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage');
     ?>
 
     <h1 class="display-4 text-center mt-3">Affichage des Images</h1><hr>
-    <?php
-    if(isset($validDelete)) echo $validDelete; ?> 
+    <?php if(isset($validDelete)) echo $validDelete; ?> 
+    <?php if(isset($validInsert)) echo $validInsert; ?>
+    <?php if(isset($validModif)) echo $validModif; ?>
+
+
+    
 
     <p class="text-center"><span class="badge badge-info"><?= $data->rowCount()?></span> image(s) dans les galeries : <p>
     
@@ -111,10 +117,10 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage');
         <th>Supp</th>
 
     </tr>
+    <tr>
     <?php while($galerie_img = $data->fetch(PDO::FETCH_ASSOC));
     ?>
-    </tr>
-        <?php foreach($data as $key => $value):
+        <?php foreach($galerie_img as $key => $value):
             if($key =='photo'):
         ?>        
 
@@ -131,11 +137,11 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage');
     <td><a href="?action=modification&id_img=<?= $galerie_img['id_img']?>"><i class="text-info far fa-edit"></i></a></td>
     <td><a href="?action=suppression&id_img=<?= $galerie_img['id_img']?>"><i class="text-info fas fa-trash-alt"></i></a></td>
     
-
+    
     </tr>
-
+    
 </table>
-
+            
 <style>
     .img-thumbnail {
         max-width: 15% !important;
@@ -156,8 +162,8 @@ if(isset($_GET['id_img'])) // $_GET['id_img']
     $img_actuel = $data->fetch(PDO::FETCH_ASSOC);
     echo '<pre>' ; print_r($img_actuel); echo '</pre>';
 }
-$photo = (isset($img_actuel['photo'])) ? $img_ctuel['photo'] : '';
-$galerie = (isset($img_actuel['galerie'])) ? $imgActuel['galerie'] : '';
+$photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
+$galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
 ?>
 
 <h1 class="display-4 text-center text-success mt-3"><?=ucfirst($_GET['action']) ?> d'une image </h1>
