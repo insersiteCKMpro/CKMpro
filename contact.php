@@ -1115,6 +1115,8 @@
         
         if($_POST)
         {
+            extract($_POST);
+
             echo '<pre>'; print_r($_POST); echo '</pre>';
             
             // 3. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING
@@ -1128,6 +1130,10 @@
             $mail = htmlspecialchars($_POST['email']);
             $number = htmlspecialchars($_POST['telephone']);
             $description = htmlspecialchars($_POST['description']);
+
+            $email = $_POST['email'];
+
+            $post = $_POST['prenom'] . $_POST['nom'] . $_POST['email'] . $_POST['telephone'] . $categorie . $question3D . $questionNet . $questionEV . $_POST['description'];
 
             // 4. INSERTION DANS LA BASE DE DONNEES.
 
@@ -1229,17 +1235,64 @@
                 $erreurCategorie = '<p class="text-danger font-italic">* Catégorie obligatoire</p>';
                 $erreur = true;
             }
-           
+        
             // Si l'internaute à correctement rempli le formulaire, on affcihe le message de validation.
+            if(!isset($erreur))
+            {
+                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé </p>';
+            }
             if(isset($valid)) echo $valid;
 
-        }
-        
-        
 
+            // MAIL
+            if(isset($_POST['mailform']))
+            {
+                $header = "MINE-Version: 1.0\r\n";
+                $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
+                $header .= 'Content-Type:text/html; charset="utf-8"' . "\n";
+                $header .= 'Content-Transfert-Encoding: 8bit';
 
+                $message = '
 
-                        
+                    
+                            <table class="table table-striped table-dark">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Prenom :
+                                            <td>' . $_POST['prenom'] . '</td>
+                                        </th>
+                                        <th scope="row">Nom :
+                                            <td>' . $_POST['nom'] . '</td>
+                                        </th>
+                                        <th scope="row">Email :
+                                            <td>' . $_POST['email'] . '</td>
+                                        </th>
+                                        <th scope="row">Telephone :
+                                            <td>' . $_POST['telephone'] . '</td>
+                                        </th>
+                                        <th scope="row">Catégorie :
+                                            <td>' . $categorie . '</td>
+                                        </th>
+                                        <th scope="row">Question :
+                                            <td>' . $question3D . '</td>
+                                            <td>' . $questionNet . '</td>
+                                            <td>' . $questionEV . '</td>
+                                        </th>
+                                        <th scope="row">Description :
+                                            <td>' . $_POST['description'] . '</td>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                     
+
+                ';
+                mail("usertest.sendmail1@gmail.com", "Salut test", $message, $header);
+            }
+
+            
+
+        }               
     ?>
 
     <script type="text/javascript">
@@ -1306,7 +1359,7 @@
                 <div class="traits2"></div>
 
                 
-                <form action="cible_envoi.php" method="post" enctype="multipart/form-data">
+                <form action="" method="post">
                     <div class="form-group">
                         <label for="exampleInputName1">Nom*</label>
                         <input type="text" class="form-control" aria-describedby="nameHelp" id="nom" name="nom">
@@ -1387,7 +1440,7 @@
                         <textarea class="form-control" id="description" name="description" rows="5" placeholder="saisir votre description"></textarea>
                     </div>
                     <br>
-                    <button type="submit" class="btn border-dark hvr-bounce-to-right">Envoyer</button>
+                    <button type="submit" class="btn border-dark hvr-bounce-to-right" value="Recevoir un mail !" name="mailform">Envoyer</button>
                 </form>
 
             </div>
