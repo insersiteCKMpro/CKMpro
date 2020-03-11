@@ -212,21 +212,13 @@
           CKM Boutique </div><i class="baseline-speaker_phone"></i>
       </div>
       <div class="logo">
-<<<<<<< HEAD
-        <a href="index.php"><img src="../include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre img-fluid"></a>
-=======
         <a href="index.php"><img src="img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre img-fluid"></a>
->>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f
       </div>
       <div class="boutonTel">
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
       </div>
       <div class="boutonbtq">
-<<<<<<< HEAD
-        <a href="../boutique/index.php" id="lienBtq"><img src="../include/img/panier-ckm-mobilemodule.png" class="fabuleux img-fluid"
-=======
         <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodule.png" class="fabuleux img-fluid"
->>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f
             id="iconBtq"></i></a>
       </div>
     </header>

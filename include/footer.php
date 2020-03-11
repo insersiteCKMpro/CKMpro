@@ -160,11 +160,7 @@
         <div class="footerhaut text-center">
             <div class="colonne1 text-center">
 
-<<<<<<< HEAD
-                <a href="index.php"></a><img class="flogo img-fluid" src="../include/img/CKMHOMEFOOTER.png" width="10%">
-=======
                 <a href="index.php"></a><img class="flogo img-fluid" src="img/CKMHOMEFOOTER.png" width="10%">
->>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f
                 <a class="ftext1" href="3D.php">3D</a>
                 <a class="ftext1" href="nettoyage.php">Nettoyage</a>
                 <a class="ftext1" href="espacevert.php">Espace Verts</a>
