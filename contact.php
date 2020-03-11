@@ -1,5 +1,6 @@
 <?php 
     require_once("include/header.php");
+    require_once("include/nav.php");
 ?>
 
 <head>
@@ -1142,7 +1143,7 @@
 
         if($_POST)
         {
-            echo '<pre>'; print_r($_POST); echo '</pre>';
+            // echo '<pre>'; print_r($_POST); echo '</pre>';
             $categorie = implode(' ', $_POST['categorie']); 
 
             // // 4. INSERTION DANS LA BASE DE DONNEES.
