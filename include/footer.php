@@ -160,7 +160,7 @@
         <div class="footerhaut text-center">
             <div class="colonne1 text-center">
 
-                <a href="index.php"></a><img class="flogo img-fluid" src="img/CKMHOMEFOOTER.png" width="10%">
+                <a href="index.php"></a><img class="flogo img-fluid" src="../include/img/CKMHOMEFOOTER.png" width="10%">
                 <a class="ftext1" href="3D.php">3D</a>
                 <a class="ftext1" href="nettoyage.php">Nettoyage</a>
                 <a class="ftext1" href="espacevert.php">Espace Verts</a>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="snap">
                     <a href="http://www.instagram.com">
-                        <img class="insta img-fluid" src="../CKMpro/img/ckminstagramgreen.png" alt="" width="50%"></a>
+                        <img class="insta img-fluid" src="img/ckminstagramgreen.png" alt="" width="50%"></a>
                 </div>
             </div>
         </div>

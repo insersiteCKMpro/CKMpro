@@ -135,9 +135,9 @@
     </style>
 <div class="container-fluid">
     <div class="imgligne1">
-        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
     <div class="bg">
         <h1 class="titr1">Espaces verts</h1>
@@ -163,8 +163,8 @@
 
     <div class="bg" style="background-color: rgba(0, 166, 81, 0.5);">
         <div class="imgligne2">
-            <img class="img2 img-fluid" src="img/nettoyagemaq.png" width="50%" href="#">
-            <img class="img2 img-fluid" src="img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2 img-fluid" src="include/img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2 img-fluid" src="include/img/nettoyagemaq.png" width="50%" href="#">
         </div>
 
         <h2 class="titr1">Espaces verts</h2>
@@ -189,7 +189,7 @@
         </p>
     </div>
     <div class="bg">
-        <img class="imgligne3 img-fluid" src="img/produitsboutiquemaq.png" width="100%" alt="">
+        <img class="imgligne3 img-fluid" src="include/img/produitsboutiquemaq.png" width="100%" alt="">
 
         <h2 class="titr1">Espaces Verts</h2>
         <p class="text-justify">        

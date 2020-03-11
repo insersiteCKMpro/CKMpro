@@ -76,7 +76,8 @@ if($_POST)
        
 }
 
-require_once('../include/header.php');
+require_once("../include/header.php");
+
 ?>
 
 <ul class="col-md-4 list-group text-center mt-3 mx-auto">
@@ -197,7 +198,7 @@ $galerie = (isset($img_actuel['galerie'])) ? $imgActuel['galerie'] : '';
 
 </div>
 <?php endif; ?>
-<?php require_once('..\CKMpro\include\footer.php');?>
+<?php require_once('../include/footer.php');?>
         <!--
         //----------- TRAITEMENT EXTENSION PHOTO
         $listExt = [1 =>'.jpg', 2=>'.png',3=>'.jpeg'];
