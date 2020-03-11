@@ -13,43 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-</head>
 
-<script type="text/javascript">
-    $(function () {
-        $("#customControlValidation1").click(function () {
-            if ($(this).is(":checked")) {
-                $("#showInDropDown1").show();
-            } else {
-                $("#showInDropDown1").hide();
-            }
-        });
-    });
-
-    $(function () {
-        $("#customControlValidation2").click(function () {
-            if ($(this).is(":checked")) {
-                $("#showInDropDown2").show();
-            } else {
-                $("#showInDropDown2").hide();
-            }
-        });
-    });
-
-    $(function () {
-        $("#customControlValidation3").click(function () {
-            if ($(this).is(":checked")) {
-                $("#showInDropDown3").show();
-            } else {
-                $("#showInDropDown3").hide();
-            }
-        });
-    });
-</script>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-
-<body>
     <style>
         .test {
             height: 119vh;
@@ -174,7 +138,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a651;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -473,7 +437,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #00a651;
                 /* regler couleur de l'animation */
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -794,7 +758,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #00a651;
                 /* regler couleur de l'animation */
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -1005,7 +969,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #00a651;
                 /* regler couleur de l'animation */
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -1135,69 +1099,229 @@
             }
         }
     </style>
-
+</head>
+<body>
     <?php
+
+    // 1. Contrôler en PHP que l'on receptionne bien toute les données saisies dans le formulaire.
+    // echo '<pre>'; print_r($_POST); echo '</pre>';
+
+    // 2. CONNEXION BDD :
+    $bdd = new PDO('mysql:host=localhost;dbname=CKMpro', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+
+
+    if($_POST)
+    {
+        extract($_POST);
+
         // echo '<pre>'; print_r($_POST); echo '</pre>';
-        // 2. CONNEXION BDD :
-        $bdd = new PDO('mysql:host=localhost;dbname=ckmpro', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-
-        if($_POST)
+        
+        // DECLARATION DES VARIABLES
+            // 1. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING
+        if(isset($_POST['categorie']))
         {
-            // echo '<pre>'; print_r($_POST); echo '</pre>';
-            $categorie = implode(' ', $_POST['categorie']); 
-
-            // // 4. INSERTION DANS LA BASE DE DONNEES.
-
-            $nom = $_POST['nom'];
-            $prenom = $_POST['prenom'];
-            $email = $_POST['email'];
-            $telephone = $_POST['telephone'];
-            $message = $_POST['message'];
-
-            $data = $bdd->exec("INSERT INTO contact (nom, prenom, email, telephone, categorie, message) VALUE ('$nom', '$prenom', '$email', '$telephone', '$categorie', '$message')");
-
-            // Nom
-            if(empty($_POST['nom']))
-            {
-                $erreurNom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
-                $erreur = true;
-            }
-            else
-            {
-                if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['nom']))
-                {
-                    $erreurNomCaractere = "<p class='text-danger font-italic'>* Caractères autorisés : [a-z et A-Z]</p>";
-                    $erreur = true;
-                }
-            }
-            // Prenom
-            if(empty($_POST['prenom']))
-            {
-                $erreurPrenom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
-                $erreur = true;
-            }
-            else
-            {
-                if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['prenom']))
-                {
-                    $erreurPrenomCaractere = "<p class='text-danger font-italic'>* Caractères autorisés : [a-z et A-Z]</p>";
-                    $erreur = true;
-                }
-            }
-
-            // MESSAGE DE VALIDATION DE L'ENVOI DU FORMULAIRE
-            if(!isset($error))
-            {
-                echo 'test';
-                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé</p>';
-            }
-            // Si l'internaute à correctement rempli le formulaire, on affcihe le message de validation.
-            if(isset($valid)) echo $valid;
-            
+            $categorie = implode(' ', (array)$_POST['categorie']);
         }
+        else
+        {
+            $categorie = '';
+        }
+        $question3D = implode(' ', $_POST['question3D']);
+        $questionNet = implode(' ', $_POST['questionNet']);
+        $questionEV = implode(' ', $_POST['questionEV']);
+
+            // 2. EMPÊCHER LES FAILLES XSS
+        $name = htmlspecialchars($_POST['nom']);
+        $surname = htmlspecialchars($_POST['prenom']);
+        $mail = htmlspecialchars($_POST['email']);
+        $number = htmlspecialchars($_POST['telephone']);
+        $description = htmlspecialchars($_POST['description']);
+        $email = $_POST['email'];
+
+        // 3. TEST INSERTION DANS LA BDD 
+
+        // Insertion bdd bouton radio :
+        // $data = $bdd->exec("INSERT INTO contact (categorie) VALUES ('$categorie')"); INSERTION UNIQUEMENT DES BOUTONS RADIO*
+
+        // Insertion de tout les champs :
+        // $data = $bdd->exec("INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')");
+
+
+        // 4. TRAITEMENT DES ERREURS
+            // Nom
+        if(empty($_POST['nom']))
+        {
+            $erreurNom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
+            $erreur = true;
+        }
+        else
+        {
+            if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['nom']))
+            {
+                $erreurNomCaractere = "<p class='text-danger font-italic'>* Caractères autorisés : [a-z et A-Z] (entre 2 et 20 caractères)</p>";
+                $erreur = true;
+            }
+        }
+            // Prénom
+        if(empty($_POST['prenom']))
+        {
+            $erreurPrenom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
+            $erreur = true;
+        }
+        else
+        {
+            if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['prenom']))
+            {
+                $erreurPrenomCaractere = "<p class='text-danger font-italic'>* Caractères autorisés : [a-z et A-Z]</p>";
+                $erreur = true;
+            }
+        }
+            // Email
+        if(empty($_POST['email']))
+        {
+            $erreurEmail =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
+            $erreur = true;
+        }
+        else
+        {
+            if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
+            {
+                $erreurEmailCaractere = "<p class='text-danger font-italic'>* Format email invalide </p>";
+                $erreur = true;
+            }
+        }
+            // Téléphone
+        if(isset($_POST['telephone']))
+        {
+            if(!preg_match('#^0[6-7]{1}\d{8}+$#', $_POST['telephone']) || !is_numeric($_POST['telephone']) || iconv_strlen($_POST['telephone']) !== 10)
+            {
+                $erreurTelephone = '<p class="text-danger font-italic">* Le numero de téléphone n\'est pas correct</p>';
+                $erreur = true;
+            }
+        }
+            // Catégorie 
+        if(empty($categorie)) 
+        {
+            $erreurCategorie = '<p class="text-danger font-italic">* Catégorie obligatoire</p>';
+            $erreur = true;
+        }
+
+        // 5. SI L'INTERNAUTE A CORRECTEMENT REMPLI LE FORMULAIRE, ON AFFICHE LE MESSAGE DE VALIDATION
+        if(!isset($erreur))
+        {
+            // 6. PREPARATION ET INSERTION DANS LA BDD
+            $data = "INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')";
+            
+            $stmt = $bdd->prepare($data);
+            $stmt->bindParam(':nom', $names, PDO::PARAM_STR);
+            $stmt->bindParam(':prenom', $surname, PDO::PARAM_STR);
+            $stmt->bindParam(':email', $mail, PDO::PARAM_STR);
+            $stmt->bindParam(':telephone', $number, PDO::PARAM_INT);
+            $stmt->bindParam(':categorie', $categorie, PDO::PARAM_STR);
+            $stmt->bindParam(':question3D', $question3D, PDO::PARAM_STR);
+            $stmt->bindParam(':questionNet', $questionNet, PDO::PARAM_STR);
+            $stmt->bindParam(':questionEV', $questionEV, PDO::PARAM_STR);
+            $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+            $stmt->execute(array
+            (
+                ':nom' => $name, 
+                ':prenom' => $surname, 
+                ':email' => $mail,
+                ':telephone' => $number, 
+                ':categorie' => $categorie, 
+                ':question3D' => $question3D,
+                ':questionNet' => $questionNet, 
+                ':questionEV' => $questionEV, 
+                ':description' => $description
+            ));
+
+            // MESSAGE DE VALIDATION
+            $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
+        
+            // 7. MAIL A L'ADMINISTRATEUR
+            if(isset($_POST['mailform']))
+            {
+                $header = "MINE-Version: 1.0\r\n";
+                $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
+                $header .= 'Content-Type:text/html; charset="utf-8"' . "\n";
+                $header .= 'Content-Transfert-Encoding: 8bit';
+
+                $message = '
+
+                        <div class="container-fluid">
+                            <table class="table table-striped table-dark">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Prenom :
+                                            <td>' . $_POST['prenom'] . '</td>
+                                        </th>
+                                        <th scope="row">Nom :
+                                            <td>' . $_POST['nom'] . '</td>
+                                        </th>
+                                        <th scope="row">Email :
+                                            <td>' . $_POST['email'] . '</td>
+                                        </th>
+                                        <th scope="row">Telephone :
+                                            <td>' . $_POST['telephone'] . '</td>
+                                        </th>
+                                        <th scope="row">Catégorie :
+                                            <td>' . $categorie . '</td>
+                                        </th>
+                                        <th scope="row">Question :
+                                            <td>' . $question3D . '</td>
+                                            <td>' . $questionNet . '</td>
+                                            <td>' . $questionEV . '</td>
+                                        </th>
+                                        <th scope="row">Description :
+                                            <td>' . $_POST['description'] . '</td>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    
+
+                ';
+                mail("usertest.sendmail1@gmail.com", "Salut test", $message, $header);
+            }
+        }
+        if(isset($valid)) echo $valid;
+
+    }               
     ?>
 
 
+    <script type="text/javascript">
+    $(function () {
+        $("#customControlValidation1").click(function () {
+            if ($(this).is(":checked")) {
+                $("#showInDropDown1").show();
+            } else {
+                $("#showInDropDown1").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#customControlValidation2").click(function () {
+            if ($(this).is(":checked")) {
+                $("#showInDropDown2").show();
+            } else {
+                $("#showInDropDown2").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#customControlValidation3").click(function () {
+            if ($(this).is(":checked")) {
+                $("#showInDropDown3").show();
+            } else {
+                $("#showInDropDown3").hide();
+            }
+        });
+    });
+    </script>
     <div class="container-fluid">
         <h2 class="text-center">Ecrivez-nous</h2>
         <main class="test">
@@ -1229,49 +1353,49 @@
                 <div class="traits2"></div>
 
 
-                <form method="post">
+                <form action="" method="post">
                     <div class="form-group">
                         <label for="exampleInputName1">Nom*</label>
                         <input type="text" class="form-control" aria-describedby="nameHelp" id="nom" name="nom">
                         <?php if(isset($erreurNom)) echo $erreurNom; // Erreur nom ?>
-                        <?php if(isset($erreurNomCaractere)) echo $erreurNomCaractere; // Erreur nom Caractère?>
+                        <?php if(isset($erreurNomCaractere)) echo $erreurNomCaractere; // Erreur nom Caractère ?>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFirsteName1">Prenom*</label>
                         <input type="text" class="form-control" id="prenom" name="prenom">
                         <?php if(isset($erreurPrenom)) echo $erreurPrenom; // Erreur prenom ?>
-                        <?php if(isset($erreurPrenomCaractere)) echo $erreurPrenomCaractere; // Erreur prenom Caractère?>
+                        <?php if(isset($erreurPrenomCaractere)) echo $erreurPrenomCaractere; // Erreur prenom Caractère ?>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email*</label>
-                        <input type="text" class="form-control" aria-describedby="emailHelp" id="email" name="email"
-                            placeholder="saisir votre email">
+                        <input type="text" class="form-control"aria-describedby="emailHelp" id="email" name="email" placeholder="saisir votre email">
+                        <?php if(isset($erreurEmail)) echo $erreurEmail; // Erreur email ?>
+                        <?php if(isset($erreurEmailCaractere)) echo $erreurEmailCaractere; // Erreur email Caractère ?>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPhone1">Téléphone</label>
-                        <input type="phone" class="form-control" aria-describedby="phoneHelp" id="telephone"
-                            name="telephone" placeholder="saisir votre téléphone">
+                        <input type="phone" class="form-control" aria-describedby="phoneHelp" id="telephone" name="telephone" placeholder="saisir votre téléphone">
+                        <?php if(isset($erreurTelephone)) echo $erreurTelephone; // Erreur téléphone ?>
                     </div>
                     <div class="radbox">
-                        <div class="form-check labe">Activité*</div>
+                    <?php if(isset($erreurCategorie)) echo $erreurCategorie; // Erreur catégorie 3D ?>
+                        <div class="form-check labe">Catégorie*</div>
                         <div class="star">
                             <div class="checkio">
                                 <div class="custom-control custom-radio text-center put">
-                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1"
-                                        name="categorie[]" value="3D">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" name="categorie[]" value="3D">
                                     <label class="custom-control-label" for="customControlValidation1"></label>
                                 </div>
                                 <div class="custom-control custom-radio text-center put">
-                                    <input type="checkbox" class="custom-control-input" id="customControlValidation2"
-                                        name="categorie[]" value="nettoyage">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation2" name="categorie[]" value="nettoyage">
                                     <label class="custom-control-label" for="customControlValidation2"></label>
                                 </div>
                                 <div class="custom-control custom-radio text-center put">
-                                    <input type="checkbox" class="custom-control-input" id="customControlValidation3"
-                                        name="categorie[]" value="espacesVerts">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation3" name="categorie[]" value="espacesVerts">
                                     <label class="custom-control-label" for="customControlValidation3"></label>
                                 </div>
                             </div>
+                            
                             <div class="checkio1">
                                 <p class="text-center put1">3D<br>
                                     Deratisation <br>
@@ -1284,35 +1408,33 @@
                         </div>
                     </div>
                     <br>
-                    <select class="form-control" style="display:none" id="showInDropDown1" name="question3D[]">
-                        <option>3D</option>
-                        <option value="question3D1">Question 1</option>
-                        <option value="question3D2">Question 2</option>
-                        <option value="question3D3">Question 3</option>
+                    <select class="form-control" style="display:none" id="showInDropDown1" name="question3D[]">3D
+                        <option></option>
+                        <option value="question3D1">Question 3D 1</option>
+                        <option value="question3D2">Question 3D 2</option>
+                        <option value="question3D3">Question 3D 3</option>
                     </select>
                     <br>
-                    <select class="form-control" style="display:none" id="showInDropDown2"
-                        name="questionNet[]">
-                        <option>Nettoyage</option>
-                        <option value="questionNettoyage1">Question 1</option>
-                        <option value="questionNettoyage2">Question 2</option>
-                        <option value="questionNettoyage3">Question 3</option>
+                    <select class="form-control" style="display:none" id="showInDropDown2" name="questionNet[]">Nettoyage
+                        <option></option>
+                        <option value="questionNettoyage1">Question Nettoyage 1</option>
+                        <option value="questionNettoyage2">Question Nettoyage 2</option>
+                        <option value="questionNettoyage3">Question Nettoyage 3</option>
                     </select>
                     <br>
-                    <select class="form-control" style="display:none" id="showInDropDown3" name="questionEV[]">
-                        <option>Espaces verts</option>
-                        <option value="questionEspacesVerts1">Question 1</option>
-                        <option value="questionEspacesVerts2">Question 2</option>
-                        <option value="questionEspacesVerts3">Question 3</option>
+                    <select class="form-control" style="display:none" id="showInDropDown3" name="questionEV[]">Espaces verts
+                        <option></option>
+                        <option value="questionEspacesVerts1">Question Espaces Verts 1</option>
+                        <option value="questionEspacesVerts2">Question Espaces Verts 2</option>
+                        <option value="questionEspacesVerts3">Question Espaces Verts 3</option>
                     </select>
                     <br>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Description</label>
-                        <textarea class="form-control" id="message" name="message" rows="5"
-                            placeholder="saisir votre message"></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="5" placeholder="saisir votre description"></textarea>
                     </div>
                     <br>
-                    <button type="submit" class="btn border-dark hvr-bounce-to-right">Envoyer</button>
+                    <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="mailform">Envoyer</button>
                 </form>
 
             </div>
