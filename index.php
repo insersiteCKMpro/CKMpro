@@ -252,7 +252,7 @@
 
         /*Activités*/
         .sectionB {
-            height: 75vh;
+            height: 70vh;
             justify-content: space-around;
             display: flex;
             margin-left: 3vh;
@@ -278,6 +278,7 @@
 
         .cible {
             text-align: center;
+            margin-bottom: 5vh;
         }
 
         /*Professionnel Particulier*/
@@ -457,6 +458,7 @@
 
         .cible {
             text-align: center;
+            margin-bottom: 3vh;
         }
 
         /*Professionnel Particulier*/
@@ -560,12 +562,13 @@
 
         .activités {
             text-align: center;
-            margin-top: 1vh;
+            margin: 3vh;
         }
 
         .sectionB {
-            height: 210vh;
+            height: 215vh;
             flex-direction: column;
+            margin-bottom: 3vh;
         }
 
         
@@ -809,7 +812,7 @@
             </div><br>
         </div>
 
-        <h2 class="cible">Qui sont nos clients ?</h2><br>
+        <h2 class="cible">Qui sont nos clients ?</h2>
         <!--les cibles de CKMpro-->
         <main class="mainh">
             <div class="pro">
