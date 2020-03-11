@@ -197,7 +197,7 @@ $galerie = (isset($img_actuel['galerie'])) ? $imgActuel['galerie'] : '';
 
 </div>
 <?php endif; ?>
-<?php require_once('../include/footer.php');?>
+<?php require_once('..\CKMpro\include\footer.php');?>
         <!--
         //----------- TRAITEMENT EXTENSION PHOTO
         $listExt = [1 =>'.jpg', 2=>'.png',3=>'.jpeg'];
