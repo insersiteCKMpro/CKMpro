@@ -111,7 +111,7 @@
 
             .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
-                font-size: 2.5rem;
+                font-size: 0.8rem;
                 font-family: 'Red Hat Display', serif;
                 font-weight: 800px;
             }
@@ -126,7 +126,7 @@
             }
 
             p {
-                font-size: 1.3em;
+                font-size: 0.8em;
                 font-family: 'Red Hat Display', serif;
                 width: 98%;
                 margin: 0 auto 5vh;

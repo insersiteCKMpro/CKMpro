@@ -113,18 +113,14 @@ while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
         if($key =='photo'){
         echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
     }
-    elseif($key == 'prix'){
-        echo "<td>$value €</td>";
+    elseif($key == 'galerie'){
+        echo "<td>$value</td>";
     }
         else{
             echo "<td>$value</td>";
-        }
-
-
-        
-        
+        }  
     }
-    echo "<td><a href = '?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>"; // on crée manuelleùment 2 cellules supplémentaire pour chaque produit
+    echo "<td><a href ='?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>";
     echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt' onclick='return(confirm(\"En êtes-vous certain ? \"));'></i></a></td>";
     echo '</tr>';
 }
@@ -146,7 +142,7 @@ if(isset($_GET['id_img'])) // $_GET['id_img']
 }
 $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
-
+$emplacement = (isset($img_actuel['emplacement'])) ? $img_actuel['emplacement'] : '';
 ?>
 
 <h1 class="display-4 text-center text-success mt-3"><?=ucfirst($_GET['action']) ?> d'une image </h1>
@@ -177,6 +173,15 @@ $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
                     <option value="G3D"<?php if ($galerie == 'G3D') echo 'selected' ?>>G3D</option>
                     <option value="GNET"<?php if ($galerie == 'GNET') echo 'selected' ?>>GNET</option>
                     <option value="GEV"<?php if ($galerie == 'GEV') echo 'selected' ?>>GEV</option>
+                </select>
+            </div>
+            <div class="form-group col-md-11 mx-auto text-center mt-3">
+                <label for="emplacement">Position de l'image : </label>
+                <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$galerie?>">
+                    <option value="1"<?php if ($emplacement == '1') echo 'selected' ?>>Emplacement 1</option>
+                    <option value="2"<?php if ($emplacement == '2') echo 'selected' ?>>Emplacement 2</option>
+                    <option value="3"<?php if ($emplacement == '3') echo 'selected' ?>>Emplacement 3</option>
+                    <option value="4"<?php if ($emplacement == '4') echo 'selected' ?>>Emplacement 4</option>
                 </select>
             </div>
     
