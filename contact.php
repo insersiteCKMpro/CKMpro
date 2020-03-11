@@ -967,7 +967,6 @@
                 <div class="traits1"></div>
             </div>
             <div class="for">
-                <div class="traits2"></div>
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="exampleInputName1">Nom*</label>

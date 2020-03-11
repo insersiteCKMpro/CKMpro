@@ -29,10 +29,6 @@
             justify-content: center;
         }
 
-        .imgligne3 {
-            height: 45vh;
-        }
-
         p {
             font-size: 1.3em;
             font-family: 'Red Hat Display', serif;

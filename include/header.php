@@ -39,7 +39,6 @@
 
     /* LOGO TITRE STYLE */
     .logoTitre {
-      height: 10vh;
       margin-top: 4vh;
       width: 20vw;
     }
@@ -70,7 +69,6 @@
 
       /* LOGO TITRE STYLE */
       .logoTitre {
-        height: 12vh;
         width: 63%;
         display: flex;
         margin: 3vh auto 0;
@@ -95,7 +93,6 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        height: 10vh;
         width: 45%;
         display: flex;
         margin: auto;
@@ -131,7 +128,6 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        height: 9vh;
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -222,7 +218,8 @@
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
       </div>
       <div class="boutonbtq">
-        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodule.png" class="fabuleux"
+        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodule.png" class="fabuleux img-fluid"
             id="iconBtq"></i></a>
       </div>
     </header>
+  </div>

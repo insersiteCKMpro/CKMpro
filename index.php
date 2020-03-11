@@ -495,17 +495,18 @@
 
         .img4 {
             width: 2%;
-            height: 20px;
         }
 
         .imgC {
             width: 100%;
-            height: 279px;
         }
 
         .imgM {
             display: flex;
             margin-top: 0.4px;
+        }
+        .fivetoile {
+            width: 55%;
         }
     }
 
