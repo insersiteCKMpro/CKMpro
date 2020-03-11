@@ -456,20 +456,20 @@
   <div class="container-fluid">
     <div class="colon1">
       <div class="colum">
-        <img src="include/img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
+        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
         <div class="colon2">
           <div class="colum">
-            <img src="include/img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+            <img src="img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
           </div>
           <div class="colum">
-            <img src="include/img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+            <img src="img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
           </div>
         </div>
       </div>
     </div>
     <div class="colon3">
       <div class="columm">
-        <img src="include/img/3d-galerie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
+        <img src="img/3d-galerie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
       </div>
     </div>
 

@@ -2,14 +2,18 @@
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
+
 <style>
     .test {
         height: 115vh;
+
         display: flex;
     }
     .contac1 {
         text-align: center!important;
+
         margin: 0 2vh;
+
     }
 
     .titrre {
@@ -18,13 +22,16 @@
     }
 
     .test2 {
+
+
         display: flex;
         width: 30%;
     }
 
-    .titrec {
+   .titrec {
         width: 100%;
         height: 8vh;
+
     }
 
     .num {
@@ -36,6 +43,7 @@
     .traits1 {
         width: 2%;
         border-left: 1px solid black;
+
     }
 
     .traits2 {
@@ -162,7 +170,9 @@
     /**********************************format pc responsive------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
+
             height: 125vh;
+
             display: flex;
         }
 
@@ -191,6 +201,7 @@
         .traits1 {
             width: 2%;
             border-left: 1px solid black;
+
             margin-right: 3vh;
         }
 
@@ -316,8 +327,6 @@
             background-color: none;
         }
 
-
-
         #customControlValidation1:checked~.custom-control-label::before 
         {
             color: #fff200;
@@ -332,7 +341,6 @@
             background-color: #00aeef;
         }
 
-
         #customControlValidation3:checked~.custom-control-label::before 
         {
             color: #00a651;
@@ -340,6 +348,7 @@
             background-color: #00a651;
         }
     }
+
 
     /*-----------------------------responsive tablette------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
@@ -353,10 +362,12 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+
         }
 
         .titrre {
             text-align: center;
+
             margin-top: 2vh;
         }
 
@@ -365,6 +376,7 @@
             display: flex;
             height: 17vh;
             margin: 2vh auto;
+
         }
 
         .num {
@@ -710,6 +722,7 @@
             background-color: #00aeef;
         }
 
+
         #customControlValidation3:checked~.custom-control-label::before 
         {
             color: #00a651;
@@ -719,6 +732,7 @@
     }
     
 </style>
+
 </head>
 <body>
     <?php
@@ -909,8 +923,9 @@
 
     }               
     ?>
+
     <div class="container-fluid">
-        
+
         <main class="test">
         <div class="test2">
                 <div class="titrec">
@@ -925,6 +940,7 @@
                 <div class="traits1"></div>
             </div>
             <div class="for">
+
             <h2 class="text-center">Ecrivez-nous</h2>
                 <form action="" method="post">
                     <div class="form-group">
@@ -956,6 +972,7 @@
                         <div class="star">
                             <div class="checkio">
                                 <div class="custom-control custom-radio text-center put">
+
                                     <input type="checkbox" class="custom-control-input" id="customControlValidation1" name="categorie[]" value="3D">
                                     <label class="custom-control-label" for="customControlValidation1"></label>
                                 </div>
@@ -965,6 +982,7 @@
                                 </div>
                                 <div class="custom-control custom-radio text-center put">
                                     <input type="checkbox" class="custom-control-input" id="customControlValidation3" name="categorie[]" value="espacesVerts">
+
                                     <label class="custom-control-label" for="customControlValidation3"></label>
                                 </div>
                             </div>
@@ -981,6 +999,7 @@
                         </div>
                     </div>
                     <br>
+
                     <select class="form-control" style="display:none" id="showInDropDown1" name="question3D[]">3D
                         <option></option>
                         <option value="question3D1">Question 3D 1</option>
@@ -1000,16 +1019,18 @@
                         <option value="questionEspacesVerts1">Question Espaces Verts 1</option>
                         <option value="questionEspacesVerts2">Question Espaces Verts 2</option>
                         <option value="questionEspacesVerts3">Question Espaces Verts 3</option>
+
                     </select>
                     <br>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Description</label>
+
                         <textarea class="form-control" id="description" name="description" rows="5" placeholder="saisir votre description"></textarea>
+
                     </div>
                     <br>
                     <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="mailform">Envoyer</button>
                 </form>
-
             </div>
         </main>
         <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
@@ -1077,5 +1098,5 @@
         
 
         <?php 
-    require_once("include/footer.php");
+require_once("include/footer.php");
 ?>

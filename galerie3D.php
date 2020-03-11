@@ -79,7 +79,7 @@
   }
 
   .mySlides1 {
-    widt
+    width: 100%;
     height: 60vh;
     margin: 7vh auto;
     display: flex;
@@ -275,21 +275,21 @@
     }
 
     .demo2 {
-      width: 30%;
+      width: 90%;
       height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo3 {
-      width: 30%;
+      width: 90%;
       height: 10vh;
       margin: auto;
       display: flex;
     }
 
     .demo4 {
-      width: 30%;
+      width: 90%;
       height: 10vh;
       margin: auto;
       display: flex;
@@ -475,7 +475,7 @@
 
     <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
-      <span class="close cursor bg-clr--green" onclick="closeModal()">&times;</span>
+      <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
 
         <div class="mySlides">
@@ -530,7 +530,6 @@
   </div>
 </section>
 <script>
-  
   // Open the Modal
   function openModal() {
     document.getElementById("myModal").style.display = "block";
@@ -576,7 +575,6 @@
     captionText.innerHTML = dots[slideIndex - 1].alt;
   }
 </script>
-
 <?php 
     require_once("include/footerj.php");
 ?>

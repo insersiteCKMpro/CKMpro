@@ -252,10 +252,12 @@
 
         /*Activités*/
         .sectionB {
+
             height: 70vh;
+
             justify-content: space-around;
             display: flex;
-            margin-left: 3vh;
+            margin-left: 2.5vh;
         }
 
         /*Activités*/
@@ -663,7 +665,6 @@
         .img1 {
             margin-top: 30px;
             width: 92%;
-            height: 15vh;
         }
 
         .img3 {
@@ -674,12 +675,10 @@
 
         .img4 {
             width: 92%;
-            height: 20px;
         }
 
         .imgC {
             width: 100%;
-            height: 279px;
         }
 
         .imgM {
@@ -689,16 +688,17 @@
 
         .imgl {
             width: 50%;
-            height: 10vh;
             display: flex;
             margin: auto 0;
         }
 
         .imgp {
             width: 25%;
-            height: 20vh;
             display: flex;
             margin: auto 0;
+        }
+        .fivetoile {
+            width: 65%;
         }
     }
     @media (min-width: 576px) {
@@ -727,13 +727,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="include/img/debarrascarrousel.png" class="imgC img-fluid" alt="...">
+                        <img src="img/debarrascarrousel.png" class="imgC img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="include/img/newimg2560x765.png" class="imgC img-fluid" alt="...">
+                        <img src="img/newimg2560x765.png" class="imgC img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="include/img/produitredim2560vw765vh.png" class="imgC img-fluid" alt="...">
+                        <img src="img/produitredim2560vw765vh.png" class="imgC img-fluid" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -778,7 +778,7 @@
         <!--les activités de CKMpro-->
         <div class="sectionB">
             <div class="derat">
-                <img src="img/3Dmaq.png" class="img3" alt="">
+                <img src="img/3Dmaq.png" class="img3 img-fluid" alt="">
                 <h2><br>3D</h2>
                 <br>
                 <p class="text-justify pact">
@@ -830,7 +830,7 @@
                                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner text-center">
                                         <div class="carousel-item active">
-                                            <img src="img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <img src="img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
                                                 exercitationem
@@ -840,7 +840,7 @@
                                             </p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <img src="img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
                                                 exercitationem

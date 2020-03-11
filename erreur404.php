@@ -1,3 +1,11 @@
+<!--
+    ?php defined('_JEXEC') or die;
+if (($this->error->getCode()) == '404') {
+    header("HTTP/1.0 404 Not Found");
+    echo file_get_contents(JURI::root().'page-404');
+    exit;}
+  ?>
+  -->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
@@ -6,15 +14,13 @@
     <title>Erreur 404</title>
     <link rev="made" href="mailto:postmaster@localhost">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-        crossorigin="anonymous">
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         
         .click {
             display: flex !important;
-            width: 30%;
-            right: 7vh;
-            margin: -34vh auto;
+            width: 10%;
+            margin: auto;
             position: relative !important;
         }
         .btn
@@ -86,8 +92,8 @@
         { 
             .click {
                 display: flex !important;
-                width: 16%;
-                margin: -10vh auto;
+                width: 8%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -95,9 +101,8 @@
         { 
             .click {
                 display: flex !important;
-                width: 13%;
-                right: 8vh;
-                margin: -7vh auto;
+                width: 14%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -105,9 +110,8 @@
         { 
             .click {
                 display: flex !important;
-                width: 17%;
-                right: 7vh;
-                margin: -7vh auto;
+                width: 19%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -115,10 +119,8 @@
         { 
             .click {
                 display: flex !important;
-                width: 23%;
-                height: 4vh;
-                right: 5vh;
-                margin: -6vh auto;
+                width: 25%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -126,9 +128,8 @@
         { 
             .click {
                 display: flex !important;
-                width: 55%;
-                right: 0;
-                margin: -3vh auto;
+                width: 44%;
+                margin: auto;
                 position: relative !important;
             }
         }
@@ -140,7 +141,7 @@
     <h1 style="text-align:center"> RATS'S Alors!!! CKMpro introuvable </h1>
 
     <video muted width="100%" autoplay>
-        <source src="img/404 ANIM-V2.mp4" type="video/mp4">
+        <source src="img/404 ANIM-V3.mp4" type="video/mp4">
     </video>
 
     <div class="click">
