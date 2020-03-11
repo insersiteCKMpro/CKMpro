@@ -924,37 +924,6 @@
     }               
     ?>
 
-    <script type="text/javascript">
-    $(function () {
-        $("#customControlValidation1").click(function () {
-            if ($(this).is(":checked")) {
-                $("#showInDropDown1").show();
-            } else {
-                $("#showInDropDown1").hide();
-            }
-        });
-    });
-
-    $(function () {
-        $("#customControlValidation2").click(function () {
-            if ($(this).is(":checked")) {
-                $("#showInDropDown2").show();
-            } else {
-                $("#showInDropDown2").hide();
-            }
-        });
-    });
-
-    $(function () {
-        $("#customControlValidation3").click(function () {
-            if ($(this).is(":checked")) {
-                $("#showInDropDown3").show();
-            } else {
-                $("#showInDropDown3").hide();
-            }
-        });
-    });
-    </script>
     <div class="container-fluid">
 
         <main class="test">
@@ -1126,8 +1095,7 @@
                 });
             </script>
         </div>
-
-
+        
 
         <?php 
 require_once("include/footer.php");
