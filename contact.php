@@ -172,7 +172,7 @@
     /**********************************format pc responsive------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
-            height: 115vh;
+            height: 125vh;
             display: flex;
         }
 
@@ -184,7 +184,7 @@
         .test2 {
             width: 27%;
             display: flex;
-            height: 108vh;
+            height: 118vh;
         }
 
         .titrec {
@@ -359,7 +359,7 @@
         }
 
         .test {
-            height: 135vh;
+            height: 145vh;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -374,7 +374,7 @@
             width: 62%;
             display: flex;
             height: 17vh;
-            margin: auto;
+            margin: 2vh auto;
         }
 
         .num {
@@ -405,7 +405,7 @@
         }
         .for {
             width: 45%;
-            margin: auto;
+            margin: 0 auto;
         }
 
         .espace {
@@ -556,8 +556,9 @@
         .radbox {
             height: 15vh;
             display: flex;
-        }.test {
-            height: 135vh;
+        }
+        .test {
+            height: 145vh;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -952,7 +953,7 @@
     });
     </script>
     <div class="container-fluid">
-        <h2 class="text-center">Ecrivez-nous</h2>
+        
         <main class="test">
         <div class="test2">
                 <div class="titrec">
@@ -967,6 +968,7 @@
                 <div class="traits1"></div>
             </div>
             <div class="for">
+            <h2 class="text-center">Ecrivez-nous</h2>
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="exampleInputName1">Nom*</label>
@@ -1083,7 +1085,6 @@
                 })();
             </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
         </div>
-        <hr>
 
 
 
