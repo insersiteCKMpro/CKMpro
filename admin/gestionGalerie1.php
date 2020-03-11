@@ -4,8 +4,12 @@ require_once('../include/init.php');
 extract($_POST);
 extract($_GET);
 
+<<<<<<< HEAD:admin/gestionGalerie1.php
 echo '<pre>';print_r($_GET); echo '</pre>';
 echo '<pre>';print_r($_POST); echo '</pre>';
+=======
+
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
 
 //----------------SUPRESSION PRODUIT
 
@@ -21,7 +25,11 @@ if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
     $_GET['action'] ='affichage'; // valeur de l'indice action pour rediriger sur affichage image
 
     $validDelete ='<div class="col-md-6 mx-auto alert alert-success text-center">
+<<<<<<< HEAD:admin/gestionGalerie1.php
     Le produit ref<strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
+=======
+    Le produit de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
 }
 //--------------------------ENREGISTREMENT PHOTO
 if($_POST)
@@ -29,7 +37,7 @@ if($_POST)
     $_photo_bdd = '';
     if(isset($_GET['action']) && $_GET['action'] == 'modification')
     {
-        $photo_bdd = $_POST['photo_actuelle'];
+        $photo_bdd = $_POST['photo_actuel'];
     }
     if(!empty($_FILES['photo']['name']))
     {
@@ -83,13 +91,13 @@ require_once('../include/header.php');
 </ul>
 
 
-<!-----------------AFFICHAGE PRODUIT----------------------------->
+<!---------------AFFICHAGE PRODUIT----------------------------->
 <?php
-if(isset($_GET['action']) && $_GET['action'] == 'affichage');
 
-    $data = $bdd->query("SELECT * FROM galerie_img");
-    ?>
+if(isset($_GET['action']) && $_GET['action'] == 'affichage')
+{
 
+<<<<<<< HEAD:admin/gestionGalerie1.php
     <h1 class="display-4 text-center mt-3">Affichage des Images</h1><hr>
         <?php $validInsert; ?>
         <?php $validUpdate; ?>
@@ -145,6 +153,51 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage');
      
 
 
+=======
+$resultat = $bdd->query("SELECT * FROM galerie_img");
+
+echo '<h1 class="display-4 text-center mt-3">Affichage des produits</h1><hr>';
+
+if(isset($validDelete)) echo $validDelete;
+
+echo '<p class="mx-auto text-center">Nombre de produit(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
+echo '<table class="table table-dark table table bordered text-center col-md-6 mx-auto"><tr>';
+for($i =0; $i < $resultat->columnCount();$i++)
+{
+    $colonne = $resultat->getColumnMeta($i);
+    echo "<th>$colonne[name]</th>";
+}
+echo '<th>Modif</th>'; // On crééer manuellement 2 colonnes d'entetes suppléme,ntaire
+echo '<th>Supp</th>';
+echo '</tr>';
+while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
+{
+    //echo '<pre>'; print_r($produit);echo'<pre>';
+    echo '</tr>';
+    foreach($galerie_img as $key => $value)
+    {
+        if($key =='photo'){
+        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
+    }
+    elseif($key == 'prix'){
+        echo "<td>$value €</td>";
+    }
+        else{
+            echo "<td>$value</td>";
+        }
+
+
+        
+        
+    }
+    echo "<td><a href = '?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>"; // on crée manuelleùment 2 cellules supplémentaire pour chaque produit
+    echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt' onclick='return(confirm(\"En êtes-vous certain ? \"));'></i></a></td>";
+    echo '</tr>';
+}
+echo '</table>';
+}
+?>
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
 
 <?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')): 
 
@@ -156,24 +209,41 @@ if(isset($_GET['id_img'])) // $_GET['id_img']
     $data->execute();
 
     $img_actuel = $data->fetch(PDO ::FETCH_ASSOC);
+<<<<<<< HEAD:admin/gestionGalerie1.php
     echo '<pre>' ; print_r($img_actuel); echo '</pre>';
+=======
+
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
 }
 $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
 
 ?>
 
+<<<<<<< HEAD:admin/gestionGalerie1.php
 <h1 class="display-4 text-center text-success mt-3"><?=ucfirst($_GET['action']) ?> d'une image </h1><hr>
+=======
+<h1 class="display-4 text-center text-success mt-3"><?=ucfirst($_GET['action']) ?> d'une image </h1>
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
 
 <hr>
 
-<div class="ecran">
 
+<<<<<<< HEAD:admin/gestionGalerie1.php
     <form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto">
+=======
+<div class="ecran mx-auto text-center mb-3">
 
-        <div class="form-group col-md-4 text-center mx-auto border">
+    <form method="post" enctype="multipart/form-data" class="col-md-3 mx-auto rounded border border-dark">
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
+
+        <div class="form-group col-md-9 text-center mx-auto">
             <label for="photo">Photo</label>
+<<<<<<< HEAD:admin/gestionGalerie1.php
             <input type="file" class="custom-file mx-auto" id="photo" name="photo" value="">
+=======
+            <input type="file" class="custom-file mx-auto border" id="photo" name="photo" value="">
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
             <input type="hidden" class="custom-file mx-auto border" id="photo" name="photo_actuel" value="<?=$photo?>">
         </div>
 
@@ -184,7 +254,7 @@ $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
 
             <div class="form-group col-md-6 mx-auto text-center mt-3">
                 <label for="galerie">Galerie</label>
-                <select id="galerie" class="form-control col-md-8 mx-auto text-center" name="galerie" placeholder="Entrer Galerie" value="<?=$galerie?>">
+                <select id="galerie" class="form-control col-md-5 mx-auto text-center" name="galerie" placeholder="Entrer Galerie" value="<?=$galerie?>">
                     <option value="3D"<?php if ($galerie == '3D') echo 'selected' ?>>3D</option>
                     <option value="NET"<?php if ($galerie == 'NET') echo 'selected' ?>>NET</option>
                     <option value="EV"<?php if ($galerie == 'EV') echo 'selected' ?>>EV</option>
@@ -193,8 +263,13 @@ $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
                     <option value="GEV"<?php if ($galerie == 'GEV') echo 'selected' ?>>GEV</option>
                 </select>
             </div>
+<<<<<<< HEAD:admin/gestionGalerie1.php
        
         <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center">
+=======
+    
+        <button type="submit" class="col-md-4 mt-2 mb-3 btn btn-info mx-auto text-center">
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
             <?= ucfirst($_GET['action']);?> Image</button>
     </form>
 
@@ -221,6 +296,9 @@ $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
         {
             copy($_FILES['photo']['tmp_name'],$photoDossier);
         }-->
+<<<<<<< HEAD:admin/gestionGalerie1.php
         <style>
             .img-thumbnail { max-width: 15% !important;}
         </style>
+=======
+>>>>>>> 24f3cca8eee968ff94974e7baf89ada1778d647f:admin/gestionGalerie.php
