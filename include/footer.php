@@ -176,17 +176,17 @@
             <div class="colonne3 text-center">
                 <div class="snap">
                     <a href="http://www.snapchat.com">
-                        <img class="insta img-fluid" src="../include/img/ckmsnapchatyellow.png" alt="" width="50%">
+                        <img class="insta img-fluid" src="include/img/ckmsnapchatyellow.png" alt="" width="50%">
                     </a>
                 </div>
                 <div class="snap">
                     <a href="http://www.facebook.com">
-                        <img class="insta img-fluid" src="../include/img/ckmfbblue.png" alt="" width="50%">
+                        <img class="insta img-fluid" src="include/img/ckmfbblue.png" alt="" width="50%">
                     </a>
                 </div>
                 <div class="snap">
                     <a href="http://www.instagram.com">
-                        <img class="insta img-fluid" src="../include/img/ckminstagramgreen.png" alt="" width="50%"></a>
+                        <img class="insta img-fluid" src="include/img/ckminstagramgreen.png" alt="" width="50%"></a>
                 </div>
             </div>
         </div>
