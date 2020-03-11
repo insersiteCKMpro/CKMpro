@@ -45,7 +45,7 @@
   }
 
   .imgg4 {
-    width: 25%;
+    width: 50%;
     display: flex;
     margin: 3vh auto;
   }
@@ -72,7 +72,7 @@
   }
 
   .demo4 {
-    width: 30%;
+    width: 100%;
     height: 10vh;
     margin: auto;
     display: flex;
@@ -100,9 +100,9 @@
   }
 
   .mySlides4 {
-    width: 75%;
-    height: 75vh;
-    margin: auto;
+    width: 100%;
+    height: 60vh;
+    margin: 7vh auto;
     display: flex;
   }
 
@@ -130,7 +130,7 @@
     }
 
     .demo4 {
-      width: 30%;
+      width: 100%;
       height: 10vh;
       margin: auto;
       display: flex;
@@ -158,9 +158,9 @@
     }
 
     .mySlides4 {
-      width: 75%;
-      height: 75vh;
-      margin: auto;
+      width: 100%;
+      height: 60vh;
+      margin: 7vh auto;
       display: flex;
     }
   }
@@ -189,7 +189,7 @@
     }
 
     .demo4 {
-      width: 30%;
+      width: 100%;
       height: 10vh;
       margin: auto;
       display: flex;
@@ -217,9 +217,9 @@
     }
 
     .mySlides4 {
-      width: 73%;
-      height: 75vh;
-      margin: auto;
+      width: 100%;
+      height: 60vh;
+      margin: 7vh auto;
       display: flex;
     }
   }
@@ -262,7 +262,7 @@
     }
 
     .imgg4 {
-      width: 44%;
+      width: 80%;
       display: flex;
       margin: 3vh auto;
     }
@@ -289,7 +289,7 @@
     }
 
     .demo4 {
-      width: 90%;
+      width: 100%;
       height: 10vh;
       margin: auto;
       display: flex;
@@ -318,8 +318,8 @@
 
     .mySlides4 {
       width: 100%;
-      height: 75vh;
-      margin: auto;
+      height: 25vh;
+      margin: 28vh auto;
       display: flex;
     }
   }
@@ -467,9 +467,9 @@
         </div>
       </div>
     </div>
-    <div class="colon3">
-      <div class="columm">
-        <img src="img/3d-galerie-4.png" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
+    <div class="colon1">
+      <div class="colum">
+        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg4">
       </div>
     </div>
 
@@ -522,7 +522,7 @@
           </div>
 
           <div class="column">
-            <img class="demo4" src="img/3d-galerie-4.png" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="img/3d-galerie-1.png" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
@@ -574,8 +574,7 @@
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
   }
-  
 </script>
 <?php 
-    require_once("include/footerb.php");
+    require_once("include/footerj.php");
 ?>
