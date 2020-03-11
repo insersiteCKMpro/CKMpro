@@ -19,7 +19,6 @@ define ('URL', 'http://localhost/CKMpro/');
     elle même dans la BDD, ce serait trop lourd pour le serveur.
 */
 
-
 //---------------- FAILLES XSS
 foreach($_POST as $key => $value)
 {
@@ -29,3 +28,5 @@ foreach($_POST as $key => $value)
 
 //-------------------- INCLUSIONS
 require_once('fonction.php');
+
+

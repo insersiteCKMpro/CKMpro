@@ -774,7 +774,7 @@
         <!--les activités de CKMpro-->
         <div class="sectionB">
             <div class="derat">
-                <img src="include/img/3Dmaq.png" class="img3" alt="">
+                <img src="img/3Dmaq.png" class="img3" alt="">
                 <h2><br>3D</h2>
                 <br>
                 <p class="text-justify pact">
@@ -785,7 +785,7 @@
                 </p>
             </div><br>
             <div class="nettoyage">
-                <img src="include/img/nettoyagemaq.png" class="img3 img-fluid" alt="">
+                <img src="img/nettoyagemaq.png" class="img3 img-fluid" alt="">
                 <h2><br>Nettoyage</h2>
                 <br>
                 <p class="text-justify pact">
@@ -796,7 +796,7 @@
                 </p>
             </div><br>
             <div class="espacevert">
-                <img src="include/img/espacevertmaq.png" class="img3 img-fluid" alt="">
+                <img src="img/espacevertmaq.png" class="img3 img-fluid" alt="">
                 <h2><br>Espaces verts</h2>
                 <br>
                 <p class="text-justify pact">
@@ -812,7 +812,7 @@
         <!--les cibles de CKMpro-->
         <main class="mainh">
             <div class="pro">
-                <img src="include/img/professionnelmaq.png" class="imgM img-fluid" alt=""><br>
+                <img src="img/professionnelmaq.png" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Professionnel</h4>
                 <P class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -826,7 +826,7 @@
                                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner text-center">
                                         <div class="carousel-item active">
-                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <img src="img/5STARS.png" class="fivetoile" alt=""><br>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
                                                 exercitationem
@@ -836,7 +836,7 @@
                                             </p>
                                         </div>
                                         <div class="carousel-item">
-                                            <img src="include/img/5STARS.png" class="fivetoile" alt=""><br>
+                                            <img src="img/5STARS.png" class="fivetoile" alt=""><br>
                                             <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
                                                 exercitationem
@@ -851,7 +851,7 @@
                         </div>
             </div>
             <div class="part">
-                <img src="include/img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
+                <img src="img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Particulier</h4>
                 <P class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -863,7 +863,7 @@
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner text-center">
                                     <div class="carousel-item active">
-                                        <img src="include/img/5STARS.png" class="fivetoile img-fluid" alt="">
+                                        <img src="img/5STARS.png" class="fivetoile img-fluid" alt="">
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Asperiores voluptas voluptate libero, quasi adipisci vero
@@ -873,7 +873,7 @@
                                         </p>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="include/img/5STARS.png" class="fivetoile img-fluid" alt="">
+                                        <img src="img/5STARS.png" class="fivetoile img-fluid" alt="">
                                         <p>
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Asperiores voluptas voluptate libero, quasi adipisci vero
@@ -891,8 +891,8 @@
         <h2 class="ecom">La Boutique CKM</h2>
         <!--ecommerce-->
         <div class="sectionecom">
-            <img src="include/img/CKMPROLOGODEFBOUTIQUE.png" class="imgl img-fluid" alt="">
-            <img src="include/img/produitspray2.png" class="imgp img-fluid" alt="">
+            <img src="img/CKMPROLOGODEFBOUTIQUE.png" class="imgl img-fluid" alt="">
+            <img src="img/produitspray2.png" class="imgp img-fluid" alt="">
         </div>
 
     </section>
