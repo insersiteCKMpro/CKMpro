@@ -5,7 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 <style>
     .test {
-        height: 100vh;
+        height: 115vh;
         display: flex;
     }
     .contac1 {
@@ -19,18 +19,13 @@
     }
 
     .test2 {
-        height: 75vh;
         display: flex;
         width: 30%;
     }
 
-    .test3 {
-        display: none;
-    }
-
     .titrec {
         width: 100%;
-        height: 40vh;
+        height: 8vh;
     }
 
     .num {
@@ -42,7 +37,6 @@
     .traits1 {
         width: 2%;
         border-left: 1px solid black;
-        height: 120vh;
     }
 
     .traits2 {
@@ -55,7 +49,6 @@
 
     .for {
         width: 45%;
-        height: 70vh;
     }
 
     .radbox {
@@ -170,7 +163,7 @@
     /**********************************format pc responsive------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
-            height: 105vh;
+            height: 115vh;
             display: flex;
         }
 
@@ -181,12 +174,8 @@
 
         .test2 {
             width: 27%;
-            height: 75vh;
             display: flex;
-        }
-
-        .test3 {
-            display: none;
+            height: 108vh;
         }
 
         .titrec {
@@ -203,7 +192,6 @@
         .traits1 {
             width: 2%;
             border-left: 1px solid black;
-            height: 98vh;
             margin-right: 3vh;
         }
 
@@ -217,7 +205,6 @@
 
         .for {
             width: 45%;
-            height: 70vh;
         }
 
         .radbox {
@@ -363,9 +350,10 @@
         }
 
         .test {
-            height: 120vh;
+            height: 135vh;
             display: flex;
             justify-content: center;
+            flex-direction: column;
         }
 
         .titrre {
@@ -374,16 +362,10 @@
         }
 
         .test2 {
-            display: none !important;
-        }
-
-        .test3 {
+            width: 62%;
             display: flex;
-            flex-direction: column;
-            text-align: center;
-            height: 14vh;
-            width: 100%;
-            border-bottom: 1px solid grey;
+            height: 17vh;
+            margin: auto;
         }
 
         .num {
@@ -401,16 +383,20 @@
             border-top: 1px solid #000;
             height: 0.5vh;
             align-items: center;
+            display: flex;
         }
 
         .titrec {
-            height: 5vh;
             text-align: center;
         }
 
         .traitori {
             background-color: black;
             height: 2px;
+        }
+        .for {
+            width: 45%;
+            margin: auto;
         }
 
         .espace {
@@ -561,35 +547,26 @@
         .radbox {
             height: 15vh;
             display: flex;
+        }.test {
+            height: 135vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
 
-        .test {
-            height: 130vh;
+        .test2 {
+            width: 100%;
             display: flex;
+            height: 17vh;
+        }
+
+        .titrec {
+            text-align: center;
         }
 
         .titrre {
             text-align: center;
             margin: 2vh;
-        }
-
-        .test2 {
-            display: none;
-        }
-
-        .test3 {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            height: 14vh;
-            width: 100%;
-            border-bottom: 1px solid grey;
-        }
-
-        .num {
-            margin: auto;
-            width: 75%;
-            height: 10vh;
         }
 
         .traits1 {
@@ -599,8 +576,15 @@
         .traits2 {
             width: 100%;
             border-top: 1px solid #000;
-            height: 0;
+            height: 0.5vh;
+            display: flex;
             align-items: center;
+        }
+
+        .num {
+            margin: auto;
+            width: 75%;
+            height: 10vh;
         }
 
         .labe {
@@ -615,7 +599,6 @@
 
         .for {
             width: 100%;
-            height: 70vh;
         }
 
         form {
@@ -753,23 +736,14 @@
                             0123456789
                         </p>
                     </div>
+                    <div class="traits2"></div>
                 </div>
+                <div class="traits1"></div>
             </div>
-            <div class="traits1"></div>
+            
             <div class="for">
-                <div class="test3">
-                    <!--responsive tablette-->
-                    <div class="titrec">
-                        <h2 class="">Contact</h2>
-                        <div class="num">
-                            <p>Numero de téléphone: <br>
-                                0123456789
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <!--responsive tablette-->
-                <div class="traits2"></div>
+                
                 <form>
                     <h2 class="titrre">Ecrivez-nous</h2>
                     <div class="form-group espace">
