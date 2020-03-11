@@ -229,7 +229,7 @@
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item" id="tailleLi">
-            <a class="nav-link" id="tailleA" href="index.php"><img src="img/CKMHOMEFOOTER.png" alt="Logo Home"
+            <a class="nav-link" id="tailleA" href="index.php"><img src="admin/img/CKMHOMEFOOTER.png" alt="Logo Home"
                 class="logoHome img-fluid"></a>
           </li>
           <hr class="mx-auto bg-dark text-center">
