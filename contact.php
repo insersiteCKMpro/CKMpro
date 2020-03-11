@@ -139,7 +139,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a652;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -438,7 +438,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #00a652;
                 /* regler couleur de l'animation */
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -759,7 +759,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #00a652;
                 /* regler couleur de l'animation */
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -970,7 +970,7 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background-color: black;
+                background-color: #00a652;
                 /* regler couleur de l'animation */
                 -webkit-transform: scaleX(0);
                 transform: scaleX(0);
@@ -1117,25 +1117,31 @@
         {
             extract($_POST);
 
-            echo '<pre>'; print_r($_POST); echo '</pre>';
+            // echo '<pre>'; print_r($_POST); echo '</pre>';
             
-            // 3. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING
-            $categorie = implode(' ', $_POST['categorie']); 
+            // DECLARATION DES VARIABLES
+                // 1. RASSEMBLE LES DONNEES D'UN TABLEAU ARRAY EN STRING
+            if(isset($_POST['categorie']))
+            {
+                $categorie = implode(' ', (array)$_POST['categorie']);
+            }
+            else
+            {
+                $categorie = '';
+            }
             $question3D = implode(' ', $_POST['question3D']);
             $questionNet = implode(' ', $_POST['questionNet']);
             $questionEV = implode(' ', $_POST['questionEV']);
-            // FAILLES XSS
+
+                // 2. EMPÊCHER LES FAILLES XSS
             $name = htmlspecialchars($_POST['nom']);
             $surname = htmlspecialchars($_POST['prenom']);
             $mail = htmlspecialchars($_POST['email']);
             $number = htmlspecialchars($_POST['telephone']);
             $description = htmlspecialchars($_POST['description']);
-
             $email = $_POST['email'];
 
-            $post = $_POST['prenom'] . $_POST['nom'] . $_POST['email'] . $_POST['telephone'] . $categorie . $question3D . $questionNet . $questionEV . $_POST['description'];
-
-            // 4. INSERTION DANS LA BASE DE DONNEES.
+            // 3. TEST INSERTION DANS LA BDD 
 
             // Insertion bdd bouton radio :
             // $data = $bdd->exec("INSERT INTO contact (categorie) VALUES ('$categorie')"); INSERTION UNIQUEMENT DES BOUTONS RADIO*
@@ -1143,35 +1149,9 @@
             // Insertion de tout les champs :
             // $data = $bdd->exec("INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')");
 
-            // PREPARATION DE L'INSERTION DANS LA BDD
-            $data = "INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')";
-            
-            $stmt = $bdd->prepare($data);
-            $stmt->bindParam(':nom', $names, PDO::PARAM_STR);
-            $stmt->bindParam(':prenom', $surname, PDO::PARAM_STR);
-            $stmt->bindParam(':email', $mail, PDO::PARAM_STR);
-            $stmt->bindParam(':telephone', $number, PDO::PARAM_INT);
-            $stmt->bindParam(':categorie', $categorie, PDO::PARAM_STR);
-            $stmt->bindParam(':question3D', $question3D, PDO::PARAM_STR);
-            $stmt->bindParam(':questionNet', $questionNet, PDO::PARAM_STR);
-            $stmt->bindParam(':questionEV', $questionEV, PDO::PARAM_STR);
-            $stmt->bindParam(':description', $description, PDO::PARAM_STR);
-            $stmt->execute(array
-            (
-                ':nom' => $name, 
-                ':prenom' => $surname, 
-                ':email' => $mail,
-                ':telephone' => $number, 
-                ':categorie' => $categorie, 
-                ':question3D' => $question3D,
-                ':questionNet' => $questionNet, 
-                ':questionEV' => $questionEV, 
-                ':description' => $description
-            ));
 
-
-            
-            // Nom
+            // 4. TRAITEMENT DES ERREURS
+                // Nom
             if(empty($_POST['nom']))
             {
                 $erreurNom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
@@ -1185,8 +1165,7 @@
                     $erreur = true;
                 }
             }
-
-            // Prénom
+                // Prénom
             if(empty($_POST['prenom']))
             {
                 $erreurPrenom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
@@ -1200,8 +1179,7 @@
                     $erreur = true;
                 }
             }
-
-            // Email
+                // Email
             if(empty($_POST['email']))
             {
                 $erreurEmail =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
@@ -1215,9 +1193,7 @@
                     $erreur = true;
                 }
             }
-            
-
-            // Téléphone
+                // Téléphone
             if(isset($_POST['telephone']))
             {
                 if(!preg_match('#^0[6-7]{1}\d{8}+$#', $_POST['telephone']) || !is_numeric($_POST['telephone']) || iconv_strlen($_POST['telephone']) !== 10)
@@ -1226,74 +1202,97 @@
                     $erreur = true;
                 }
             }
-            
-
-            // Catégorie
-            // if($_POST['categorie'] == '3D' || $_POST['categorie'] == 'nettoyage' || $_POST['categorie'] == 'espacesVerts')  
+                // Catégorie 
             if(empty($categorie)) 
             {
                 $erreurCategorie = '<p class="text-danger font-italic">* Catégorie obligatoire</p>';
                 $erreur = true;
             }
         
-            // Si l'internaute à correctement rempli le formulaire, on affcihe le message de validation.
+            // 5. SI L'INTERNAUTE A CORRECTEMENT REMPLI LE FORMULAIRE, ON AFFICHE LE MESSAGE DE VALIDATION
             if(!isset($erreur))
             {
-                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé </p>';
+                // 6. PREPARATION ET INSERTION DANS LA BDD
+                $data = "INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')";
+                
+                $stmt = $bdd->prepare($data);
+                $stmt->bindParam(':nom', $names, PDO::PARAM_STR);
+                $stmt->bindParam(':prenom', $surname, PDO::PARAM_STR);
+                $stmt->bindParam(':email', $mail, PDO::PARAM_STR);
+                $stmt->bindParam(':telephone', $number, PDO::PARAM_INT);
+                $stmt->bindParam(':categorie', $categorie, PDO::PARAM_STR);
+                $stmt->bindParam(':question3D', $question3D, PDO::PARAM_STR);
+                $stmt->bindParam(':questionNet', $questionNet, PDO::PARAM_STR);
+                $stmt->bindParam(':questionEV', $questionEV, PDO::PARAM_STR);
+                $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+                $stmt->execute(array
+                (
+                    ':nom' => $name, 
+                    ':prenom' => $surname, 
+                    ':email' => $mail,
+                    ':telephone' => $number, 
+                    ':categorie' => $categorie, 
+                    ':question3D' => $question3D,
+                    ':questionNet' => $questionNet, 
+                    ':questionEV' => $questionEV, 
+                    ':description' => $description
+                ));
+
+                // MESSAGE DE VALIDATION
+                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
+            
+                // 7. MAIL A L'ADMINISTRATEUR
+                if(isset($_POST['mailform']))
+                {
+                    $header = "MINE-Version: 1.0\r\n";
+                    $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
+                    $header .= 'Content-Type:text/html; charset="utf-8"' . "\n";
+                    $header .= 'Content-Transfert-Encoding: 8bit';
+
+                    $message = '
+
+                            <div class="container-fluid">
+                                <table class="table table-striped table-dark">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Prenom :
+                                                <td>' . $_POST['prenom'] . '</td>
+                                            </th>
+                                            <th scope="row">Nom :
+                                                <td>' . $_POST['nom'] . '</td>
+                                            </th>
+                                            <th scope="row">Email :
+                                                <td>' . $_POST['email'] . '</td>
+                                            </th>
+                                            <th scope="row">Telephone :
+                                                <td>' . $_POST['telephone'] . '</td>
+                                            </th>
+                                            <th scope="row">Catégorie :
+                                                <td>' . $categorie . '</td>
+                                            </th>
+                                            <th scope="row">Question :
+                                                <td>' . $question3D . '</td>
+                                                <td>' . $questionNet . '</td>
+                                                <td>' . $questionEV . '</td>
+                                            </th>
+                                            <th scope="row">Description :
+                                                <td>' . $_POST['description'] . '</td>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        
+
+                    ';
+                    mail("usertest.sendmail1@gmail.com", "Salut test", $message, $header);
+                }
             }
             if(isset($valid)) echo $valid;
 
-
-            // MAIL
-            if(isset($_POST['mailform']))
-            {
-                $header = "MINE-Version: 1.0\r\n";
-                $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
-                $header .= 'Content-Type:text/html; charset="utf-8"' . "\n";
-                $header .= 'Content-Transfert-Encoding: 8bit';
-
-                $message = '
-
-                    
-                            <table class="table table-striped table-dark">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Prenom :
-                                            <td>' . $_POST['prenom'] . '</td>
-                                        </th>
-                                        <th scope="row">Nom :
-                                            <td>' . $_POST['nom'] . '</td>
-                                        </th>
-                                        <th scope="row">Email :
-                                            <td>' . $_POST['email'] . '</td>
-                                        </th>
-                                        <th scope="row">Telephone :
-                                            <td>' . $_POST['telephone'] . '</td>
-                                        </th>
-                                        <th scope="row">Catégorie :
-                                            <td>' . $categorie . '</td>
-                                        </th>
-                                        <th scope="row">Question :
-                                            <td>' . $question3D . '</td>
-                                            <td>' . $questionNet . '</td>
-                                            <td>' . $questionEV . '</td>
-                                        </th>
-                                        <th scope="row">Description :
-                                            <td>' . $_POST['description'] . '</td>
-                                        </th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                     
-
-                ';
-                mail("usertest.sendmail1@gmail.com", "Salut test", $message, $header);
-            }
-
-            
-
         }               
     ?>
+
 
     <script type="text/javascript">
         $(function () {
@@ -1440,7 +1439,7 @@
                         <textarea class="form-control" id="description" name="description" rows="5" placeholder="saisir votre description"></textarea>
                     </div>
                     <br>
-                    <button type="submit" class="btn border-dark hvr-bounce-to-right" value="Recevoir un mail !" name="mailform">Envoyer</button>
+                    <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="mailform">Envoyer</button>
                 </form>
 
             </div>
