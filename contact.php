@@ -358,7 +358,7 @@
         }
 
         .test {
-            height: 145vh;
+            height: 135vh;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -395,6 +395,9 @@
             height: 0.5vh;
             align-items: center;
             display: flex;
+        }
+        .text-center {
+            margin: 0;
         }
 
         .titrec {
@@ -560,7 +563,7 @@
             display: flex;
         }
         .test {
-            height: 145vh;
+            height: 125vh;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -610,7 +613,8 @@
         }
 
         .for {
-            width: 100%;
+            width: 90%;
+            margin: auto;
         }
 
         form {
@@ -873,7 +877,7 @@
             $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
         
             // 7. MAIL A L'ADMINISTRATEUR
-            if(isset($_POST['mailform']))
+            if(isset($_POST['submit']))
             {
                 $header = "MINE-Version: 1.0\r\n";
                 $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
@@ -1029,7 +1033,7 @@
 
                     </div>
                     <br>
-                    <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="mailform">Envoyer</button>
+                    <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="submit">Envoyer</button>
                 </form>
             </div>
         </main>

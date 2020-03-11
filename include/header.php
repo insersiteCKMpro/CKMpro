@@ -106,6 +106,17 @@
     /* ------------------------RESPONSIVE-header-mobile--------------------------------- */
     @media screen and (max-width: 450px) {
 
+      .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .text-center{
+        margin: 0;
+      }
+
       /* ENTÊTE FIXE STYLE */
       .fixed-top {
         float: right !important;
