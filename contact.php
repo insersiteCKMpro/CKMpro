@@ -420,13 +420,14 @@
                 }
             }
                 // Téléphone
-            if(isset($_POST['telephone']))
+            if(!empty($_POST['telephone']))
             {
                 if(!preg_match('#^0[6-7]{1}\d{8}+$#', $_POST['telephone']) || !is_numeric($_POST['telephone']) || iconv_strlen($_POST['telephone']) !== 10)
                 {
-                    $erreurTelephone = '<p class="text-danger font-italic">* Le numero de téléphone n\'est pas correct</p>';
-                    $erreur = true;
+                        $erreurTelephone = '<p class="text-danger font-italic">* Le numero de téléphone n\'est pas correct</p>';
+                        $erreur = true;
                 }
+                
             }
                 // Catégorie 
             if(empty($categorie)) 
@@ -436,9 +437,16 @@
             }
         
             // 5. SI L'INTERNAUTE A CORRECTEMENT REMPLI LE FORMULAIRE, ON AFFICHE LE MESSAGE DE VALIDATION
-            if(!isset($erreur))
+            if(isset($erreurNom, $erreurPrenom, $erreurEmail, $erreurCategorie))
+            { 
+
+                // 6. MESSAGE D'ERREUR AU MOMENT DE LA VALIDATION SI IL A DES ERREURS
+                echo '<p class="alert alert-danger text-center col-md-6 mx-auto">Votre message n\'à pas été envoyé, <br>Veuillez verifier vos champs.<br><br></p>';
+        
+            }
+            else
             {
-                // 6. PREPARATION ET INSERTION DANS LA BDD
+                // 7. PREPARATION ET INSERTION DANS LA BDD
                 $data = "INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')";
                 
                 $stmt = $bdd->prepare($data);
@@ -464,10 +472,7 @@
                     ':description' => $description
                 ));
 
-                // MESSAGE DE VALIDATION
-                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
-            
-                // 7. MAIL A L'ADMINISTRATEUR
+                // 8. MAIL A L'ADMINISTRATEUR
                 if(isset($_POST['mailform']))
                 {
                     $header = "MINE-Version: 1.0\r\n";
@@ -513,6 +518,10 @@
                     ';
                     mail("usertest.sendmail1@gmail.com", "Salut test", $message, $header);
                 }
+
+                // 9. MESSAGE DE VALIDATION
+                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
+                
             }
             if(isset($valid)) echo $valid;
 
