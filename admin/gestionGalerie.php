@@ -4,8 +4,8 @@ require_once('../include/init.php');
 extract($_POST);
 extract($_GET);
 
-echo '<pre>'; print_r($_POST);echo'<pre>';
-echo '<pre>'; print_r($_GET);echo'<pre>';
+// echo '<pre>'; print_r($_POST);echo'<pre>';
+// echo '<pre>'; print_r($_GET);echo'<pre>';
 
 
 
@@ -75,7 +75,7 @@ if($_POST)
         $data->bindValue(':emplacement' , $_POST['emplacement'], PDO::PARAM_INT);
     
         $data->execute();
-       
+    
 }
 
 require_once('../include/header.php');
@@ -87,7 +87,7 @@ require_once('../include/header.php');
 </ul>
 
 
-<!---------------AFFICHAGE PRODUIT----------------------------->
+<!---------------------------------AFFICHAGE PRODUIT----------------------------->
 <?php
 
 if(isset($_GET['action']) && $_GET['action'] == 'affichage')

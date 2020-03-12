@@ -30,24 +30,28 @@
     width: 50%;
     display: flex;
     margin: 3vh auto;
+    height:40vh;
   }
 
   .imgg2 {
     width: 80%;
     display: flex;
     margin: 3vh auto;
+    height:60vh;
   }
 
   .imgg3 {
     width: 80%;
     display: flex;
     margin: 3vh auto;
+    height:60vh;
   }
 
   .imgg4 {
     width: 50%;
     display: flex;
     margin: 3vh auto;
+    height:40vh;
   }
 
   .demo1 {
@@ -454,22 +458,22 @@
 
 <section>
   <div class="container-fluid">
-    <div class="colon1">
+    <div class="colon1 border border-danger">
       <div class="colum">
-        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
-        <div class="colon2">
+      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612"onclick="openModal();currentSlide(1)" class="hover-shadow imgg1 border border-dark">
+        <div class="colon2 border border-warning">
           <div class="colum">
-            <img src="img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+            <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="hover-shadow imgg2 border border-dark" onclick="openModal();currentSlide(2)">
           </div>
           <div class="colum">
-            <img src="img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+            <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
           </div>
         </div>
       </div>
     </div>
     <div class="colon1">
       <div class="colum">
-        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg4">
+        <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="4" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
       </div>
     </div>
 
@@ -480,22 +484,23 @@
 
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="img/3d-galerie-1.png" class="mySlides1">
+          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="demo1 mySlides1" src="<?=$emplacement ?>" value="<?='1' ?>">
+          </div>;
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="img/3d-galerie-2.png" class="mySlides2">
+          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="2" class="mySlides2">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="img/3d-galerie-3.png" class="mySlides3">
+          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="3" class="mySlides3">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="img/3d-galerie-1.png" class="mySlides4">
+          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="4" class="mySlides4">
         </div>
 
         <!-- Next/previous controls -->
@@ -510,19 +515,22 @@
         <!-- Thumbnail image controls -->
         <div class="row">
           <div class="column">
-            <img class="demo1" src="img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
+          
+          <img class="demo1" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612 " 
+          onclick="currentSlide(1)">
+        
+          </div>
+          
+          <div class="column">
+            <img class="demo2" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="2" onclick="currentSlide(2)" alt="Rat">
           </div>
 
           <div class="column">
-            <img class="demo2" src="img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
+            <img class="demo3" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="3" onclick="currentSlide(3)" alt="Spray">
           </div>
 
           <div class="column">
-            <img class="demo3" src="img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
-          </div>
-
-          <div class="column">
-            <img class="demo4" src="img/3d-galerie-1.png" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="4" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
@@ -575,6 +583,7 @@
     captionText.innerHTML = dots[slideIndex - 1].alt;
   }
 </script>
+
 <?php 
     require_once("include/footerj.php");
 ?>
