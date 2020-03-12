@@ -30,7 +30,7 @@
         }
 
         p {
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-family: 'Red Hat Display', serif;
             width: 75%;
             margin: 0 auto 5vh;
@@ -102,7 +102,7 @@
             }
 
             p {
-                font-size: 1.3em;
+                font-size: 1.2em;
                 font-family: 'Red Hat Display', serif;
                 width: 80%;
                 margin: 0 auto 5vh;
@@ -142,7 +142,7 @@
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.2em;
                 font-family: 'Red Hat Display', serif;
                 width: 90%;
                 margin: 0 auto 5vh;
