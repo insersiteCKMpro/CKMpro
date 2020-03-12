@@ -854,7 +854,7 @@
             width: 65%;
         }
         .pact {
-width: 90%;
+            width: 90%;
         }
     }
 

@@ -13,7 +13,7 @@
     }
 
     .test {
-        height: 115vh;
+        height: 120vh;
         display: flex;
     }
     .contac1 {
@@ -183,7 +183,7 @@
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
 
-            height: 115vh;
+            height: 120vh;
 
             display: flex;
         }
@@ -372,7 +372,7 @@
         }
 
         .test {
-            height: 135vh;
+            height: 140vh;
             display: flex;
             flex-direction: column;
 
@@ -576,11 +576,7 @@
             display: flex;
         }
         .test {
-<<<<<<< HEAD
-            height: 125vh;
-=======
             height: 132vh;
->>>>>>> 121f0ff377920aa7717df31fded32608ec852308
             display: flex;
             flex-direction: column;
         }
@@ -636,11 +632,7 @@
 
         .for {
             width: 90%;
-<<<<<<< HEAD
-            margin: auto;
-=======
             margin: 1vh auto;
->>>>>>> 121f0ff377920aa7717df31fded32608ec852308
         }
 
         form {
@@ -759,6 +751,43 @@
             border-color: #00a651;
             background-color: #00a651;
         }
+
+        /* Format iphone 6, 7, 8+ */
+        @media (max-width: 414px) {
+            .test {
+                height: 155vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .radbox {
+                height: 18vh !important;
+                display: flex;
+            }
+        }
+        /* Format iphone 6, 7, 8 */
+        @media (max-width: 375px) {
+            .test {
+                height: 168vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .radbox {
+                height: 18vh !important;
+                display: flex;
+            }
+        }
+        @media screen and (min-height: 812px){
+            .test {
+                height: 145vh;
+                display: flex;
+                flex-direction: column;
+            }
+            .radbox {
+                height: 18vh !important;
+                display: flex;
+            }
+        }
+        
     }
     
 </style>
@@ -957,7 +986,7 @@
     <div class="container-fluid">
 
         <main class="test">
-        <div class="test2">
+            <div class="test2">
                 <div class="titrec">
                     <h2 class="contac1">Contact</h2>
                     <div class="num">
@@ -970,8 +999,7 @@
                 <div class="traits1"></div>
             </div>
             <div class="for">
-
-            <h2 class="text-center">Ecrivez-nous</h2>
+                <h2 class="text-center">Ecrivez-nous</h2>
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="exampleInputName1">Nom*</label>
