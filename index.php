@@ -902,13 +902,16 @@
         .sectionB {
             height: 225vh;
         }
+
         .pro, .part {
             height: 85vh;
             padding-bottom: 8%;
         }
         .part {
-            padding-bottom: 70%;
+            padding-bottom: 17%;
         }
+        
+        
         .cible {
             padding-bottom: 10%;
         }
