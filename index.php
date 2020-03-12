@@ -17,7 +17,6 @@
         position: relative;
         width: 100%;
         overflow: hidden;
-        height: 50vh;
     }
         
     p{
