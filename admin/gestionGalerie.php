@@ -4,6 +4,9 @@ require_once('../include/init.php');
 extract($_POST);
 extract($_GET);
 
+echo '<pre>'; print_r($_POST);echo'<pre>';
+echo '<pre>'; print_r($_GET);echo'<pre>';
+
 
 
 //----------------SUPRESSION PRODUIT
@@ -20,7 +23,7 @@ if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
     $_GET['action'] ='affichage'; // valeur de l'indice action pour rediriger sur affichage image
 
     $validDelete ='<div class="col-md-6 mx-auto alert alert-success text-center">
-    Le produit de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
+    La photo <strong>' . $ref['emplacement'] . '</strong> de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
 }
 //--------------------------ENREGISTREMENT PHOTO
 if($_POST)
@@ -48,7 +51,7 @@ if($_POST)
 
         if(isset($_GET['action']) && $_GET['action'] == 'ajout')
         {
-        $data = $bdd->prepare("INSERT INTO galerie_img (photo , galerie) VALUES (:photo, :galerie)");
+        $data = $bdd->prepare("INSERT INTO galerie_img (photo , galerie, emplacement) VALUES (:photo, :galerie, :emplacement)");
 
         $_GET['action'] = 'affichage' ;
 
@@ -57,17 +60,19 @@ if($_POST)
         }
         else
         {
-            $data = $bdd->prepare("UPDATE galerie_img SET photo = :photo,galerie = :galerie WHERE id_img = :id_img");
+            $data = $bdd->prepare("UPDATE galerie_img SET photo = :photo,galerie = :galerie,emplacement = :emplacement WHERE id_img = :id_img");
 
             $data->bindValue(':id_img', $_GET['id_img'], PDO::PARAM_INT);
 
             $_GET['action'] ='affichage'; // quand on supprime on reste sur la page
             
-            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['emplacement'] . '</strong> a bien été modifié !!</strong></div>';
+            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
         }
         $data->bindValue(':photo' , $photo_bdd, PDO::PARAM_STR);
 
         $data->bindValue(':galerie' , $_POST['galerie'], PDO::PARAM_STR);
+
+        $data->bindValue(':emplacement' , $_POST['emplacement'], PDO::PARAM_INT);
     
         $data->execute();
        
@@ -92,7 +97,8 @@ $resultat = $bdd->query("SELECT * FROM galerie_img");
 
 echo '<h1 class="display-4 text-center mt-3">Affichage des photos</h1><hr>';
 
-if(isset($validDelete)) echo $validDelete;
+if(isset($validDelete)) echo $validDelete;  
+if(isset($validInsert)) echo $validInsert;
 
 echo '<p class="mx-auto text-center">Nombre de photo(s) dans la galerie : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
 echo '<table class="table table-dark table table bordered text-center col-md-6 mx-auto"><tr>';
@@ -145,7 +151,7 @@ if(isset($_GET['id_img'])) // $_GET['id_img']
 }
 $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
-$emplacement = (isset($img_actuel['emplacement'])) ? $img_actuel['emplacement'] : '';
+$emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'] : '';
 ?>
 
 <h1 class="display-4 text-center text-success mt-3"><?=ucfirst($_GET['action']) ?> d'une image </h1>
