@@ -53,7 +53,7 @@ if($_POST)
         $_GET['action'] = 'affichage' ;
 
 
-        $validInsert='<div class="col-md-6 mx-auto alert alert-success text-center"> Le produit ref <strong>' . $_POST['galerie'] . '</strong> a bien été rajouté !!</strong></div>';
+        $validInsert='<div class="col-md-6 mx-auto alert alert-success text-center"> La photo de la galerie <strong>' . $_POST['galerie'] . '</strong> a bien été rajouté  !!</strong></div>';
         }
         else
         {
@@ -63,7 +63,7 @@ if($_POST)
 
             $_GET['action'] ='affichage'; // quand on supprime on reste sur la page
             
-            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo de la galerie <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
+            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['emplacement'] . '</strong> a bien été modifié !!</strong></div>';
         }
         $data->bindValue(':photo' , $photo_bdd, PDO::PARAM_STR);
 
@@ -90,32 +90,35 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage')
 
 $resultat = $bdd->query("SELECT * FROM galerie_img");
 
-echo '<h1 class="display-4 text-center mt-3">Affichage des produits</h1><hr>';
+echo '<h1 class="display-4 text-center mt-3">Affichage des photos</h1><hr>';
 
 if(isset($validDelete)) echo $validDelete;
 
-echo '<p class="mx-auto text-center">Nombre de produit(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
+echo '<p class="mx-auto text-center">Nombre de photo(s) dans la galerie : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
 echo '<table class="table table-dark table table bordered text-center col-md-6 mx-auto"><tr>';
 for($i =0; $i < $resultat->columnCount();$i++)
 {
     $colonne = $resultat->getColumnMeta($i);
     echo "<th>$colonne[name]</th>";
 }
-echo '<th>Modif</th>'; // On crééer manuellement 2 colonnes d'entetes suppléme,ntaire
+echo '<th>Modif</th>'; 
 echo '<th>Supp</th>';
 echo '</tr>';
 while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
 {
-    //echo '<pre>'; print_r($produit);echo'<pre>';
+    //echo '<pre>'; print_r($photo);echo'<pre>';
     echo '</tr>';
     foreach($galerie_img as $key => $value)
     {
         if($key =='photo'){
-        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
-    }
-    elseif($key == 'galerie'){
-        echo "<td>$value</td>";
-    }
+        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>"; 
+        }
+        elseif($key == 'galerie'){
+            echo "<td>$value</td>"; 
+        }
+        elseif($key == 'emplacement'){
+            echo "<td>$value</td>";
+        }
         else{
             echo "<td>$value</td>";
         }  
@@ -177,7 +180,7 @@ $emplacement = (isset($img_actuel['emplacement'])) ? $img_actuel['emplacement'] 
             </div>
             <div class="form-group col-md-11 mx-auto text-center mt-3">
                 <label for="emplacement">Position de l'image : </label>
-                <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$galerie?>">
+                <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$emplacement?>">
                     <option value="1"<?php if ($emplacement == '1') echo 'selected' ?>>Emplacement 1</option>
                     <option value="2"<?php if ($emplacement == '2') echo 'selected' ?>>Emplacement 2</option>
                     <option value="3"<?php if ($emplacement == '3') echo 'selected' ?>>Emplacement 3</option>
