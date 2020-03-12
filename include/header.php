@@ -206,9 +206,10 @@
       .fa-phone-alt:before {
         content: "\f879";
       }
-.logoHome {
-  padding-bottom: 20%;
-}
+      
+      .logoHome {
+        padding-bottom: 20%;
+      }
 
     }
 
@@ -238,7 +239,7 @@
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
       </div>
       <div class="boutonbtq">
-        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodule.png" class="fabuleux img-fluid"
+        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodulle.png" class="img-fluid"
             id="iconBtq"></i></a>
       </div>
     </header>
