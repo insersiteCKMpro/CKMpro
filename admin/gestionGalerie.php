@@ -179,6 +179,16 @@ $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
                     <option value="GEV"<?php if ($galerie == 'GEV') echo 'selected' ?>>GEV</option>
                 </select>
             </div>
+
+            <div class="form-group col-md-11 mx-auto text-center mt-3">
+                <label for="emplacement">Position de l'image : </label>
+                <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$galerie?>">
+                    <option value="1"<?php if ($galerie == '1') echo 'selected' ?>>Emplacement 1</option>
+                    <option value="2"<?php if ($galerie == '2') echo 'selected' ?>>Emplacement 2</option>
+                    <option value="3"<?php if ($galerie == '3') echo 'selected' ?>>Emplacement 3</option>
+                    <option value="4"<?php if ($galerie == '4') echo 'selected' ?>>Emplacement 4</option>
+                </select>
+            </div>
     
         <button type="submit" class="col-md-4 mt-2 mb-3 btn btn-info mx-auto text-center">
             <?= ucfirst($_GET['action']);?> Image</button>

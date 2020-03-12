@@ -51,7 +51,7 @@ if($_POST)
 
         if(isset($_GET['action']) && $_GET['action'] == 'ajout')
         {
-        $data = $bdd->prepare("INSERT INTO galerie_img ( photo , galerie) VALUES ( :photo, :galerie)");
+        $data = $bdd->prepare("INSERT INTO galerie_img (id_img , photo , galerie) VALUES (:id_img, :photo, :galerie)");
 
         $_GET['action'] = 'affichage' ;
 
