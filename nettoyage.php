@@ -36,7 +36,7 @@
             margin: 0 auto 5vh;
         }
 
-        .text-center{
+        .text-center1{
             text-align: justify!important;
         }
 
@@ -60,7 +60,7 @@
                 font-family: 'Red Hat Display', serif;
             }
 
-            .text-center{
+            .text-center1{
                 text-align: justify!important;
             }
 
@@ -93,7 +93,7 @@
                 padding-bottom: 2vh;
             }
 
-            .text-center{
+            .text-center1{
                 text-align: center!important;
             }
 
@@ -128,7 +128,7 @@
                 font-family: 'Red Hat Display', serif;
             }
 
-            .text-center{
+            .text-center1{
                 text-align: center!important;
             }
 
@@ -157,7 +157,7 @@
     </div>
     <div class="bg">
         <h1 class="titr1">Nettoyage</h1><br>
-        <p class="text-center">
+        <p class="text-center1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -167,7 +167,7 @@
             perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
 
-        <p class="text-center"> Lorem ipsum dolor sit amet
+        <p class="text-center1"> Lorem ipsum dolor sit amet
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -184,7 +184,7 @@
         </div>
 
         <h2 class="titr1" id="debarras">Debarras</h2>
-        <p class="text2 text-center">
+        <p class="text2 text-center1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
         illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
         Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -194,7 +194,7 @@
         perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
 
-        <p class="text2 text-center">
+        <p class="text2 text-center1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
         illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
         Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -208,7 +208,7 @@
         <img class="imgligne3 img-fluid" src="img/produitsboutiquemaq.png" width="100%" alt="">
 
         <h2 class="titr1">Nettoyage</h2><br>
-        <p class="text-center">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -218,7 +218,7 @@
             perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
 
-        <p class="text-center">         
+        <p class="text-center1">         
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 

@@ -23,7 +23,7 @@
             justify-content: center;
         }
 
-        .text-center{
+        .text-center1{
             text-align: justify!important;
         }
 
@@ -60,7 +60,7 @@
                 font-family: 'Red Hat Display', serif;
             }
 
-            .text-center{
+            .text-center1{
                 text-align: justify!important;
             }
 
@@ -88,7 +88,7 @@
                 font-weight: 800;
             }
 
-            .text-center{
+            .text-center1{
                 text-align: center!important;
             }
 
@@ -133,7 +133,7 @@
                 width: 100%;
             }
 
-            .text-center{
+            .text-center1{
                 text-align: center!important;
             }
 
@@ -157,7 +157,7 @@
     </div>
     <div class="bg">
         <h1 class="titr1">3D</h1>
-        <p class="text-center"> 
+        <p class="text-center1"> 
             Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
@@ -168,7 +168,7 @@
             In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
             mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
         </p>
-        <p class="text-center">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -187,7 +187,7 @@
         </div>
 
         <h2 class="titr1">3D</h2>
-        <p class="text2 text-center"> 
+        <p class="text2 text-center1"> 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -198,7 +198,7 @@
             mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
         </p>
 
-        <p class="text2 text-center">
+        <p class="text2 text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -214,7 +214,7 @@
         <img class="imgligne3 img-fluid" src="img/produitsboutiquemaq.png" width="100%" alt="">
 
         <h2 class="titr1">3D</h2>
-        <p class="text-center">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -225,7 +225,7 @@
             fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
         </p>
 
-        <p class="text-center">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
