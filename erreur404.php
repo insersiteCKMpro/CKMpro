@@ -19,9 +19,12 @@ if (($this->error->getCode()) == '404') {
         
         .click {
             display: flex !important;
-            width: 10%;
+            width: 14%;
             margin: auto;
-            position: relative !important;
+            position: absolute !important;
+            z-index: 1;
+            top: 80vh;
+            left: 42%;
         }
         .btn
         {
@@ -94,7 +97,10 @@ if (($this->error->getCode()) == '404') {
                 display: flex !important;
                 width: 8%;
                 margin: auto;
-                position: relative !important;
+                position: absolute !important;
+                z-index: 1;
+                top: 88vh;
+                left: 45%;
             }
         }
         @media screen and (min-width: 1025px) and (max-width: 1440px)
@@ -103,7 +109,10 @@ if (($this->error->getCode()) == '404') {
                 display: flex !important;
                 width: 14%;
                 margin: auto;
-                position: relative !important;
+                position: absolute !important;
+                z-index: 1;
+                top: 80vh;
+                left: 43%;
             }
         }
         @media screen and (min-width: 769px) and (max-width: 1024px)
@@ -112,7 +121,10 @@ if (($this->error->getCode()) == '404') {
                 display: flex !important;
                 width: 19%;
                 margin: auto;
-                position: relative !important;
+                position: absolute !important;
+                z-index: 1;
+                top: 55vh;
+                left: 40%;
             }
         }
         @media screen and (min-width: 451px) and (max-width: 768px)
@@ -121,16 +133,22 @@ if (($this->error->getCode()) == '404') {
                 display: flex !important;
                 width: 25%;
                 margin: auto;
-                position: relative !important;
+                position: absolute !important;
+                z-index: 1;
+                top: 45vh;
+                left: 37%;
             }
         }
         @media screen and (max-width: 450px)
         { 
             .click {
                 display: flex !important;
-                width: 44%;
+                width: 45%;
                 margin: auto;
-                position: relative !important;
+                position: absolute !important;
+                z-index: 1;
+                top: 33vh;
+                left: 28%;
             }
         }
         

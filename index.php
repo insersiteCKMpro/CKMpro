@@ -5,21 +5,25 @@
 
 <style>
     /*--------------------------------------------code source section----------------------------------*/
-    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
         width: 100%;
         padding-right: 0;
         padding-left: 0;
         margin-right: auto;
         margin-left: auto;
     }
-    
+
     .carousel-inner {
         position: relative;
         width: 100%;
         overflow: hidden;
     }
-        
-    p{
+
+    p {
         width: 75%;
         margin: 2vh auto;
     }
@@ -28,16 +32,17 @@
         left: 0;
         margin: auto;
     }
-    
+
     .carousel-control-next {
         right: 0;
         margin: auto;
     }
 
-    .pact{
+    .pact {
         width: 95%;
         margin: 0 auto;
     }
+
     /* Débaras*/
     marquee.flash:hover {
         font-size: x-large;
@@ -48,11 +53,12 @@
         display: flex;
         padding-top: 0.25%;
     }
+
     .marki {
-    /* padding: .2em; */
-    /* background-color: #fcf8e3; */
-    display: flex;
-    font-size: large;
+        /* padding: .2em; */
+        /* background-color: #fcf8e3; */
+        display: flex;
+        font-size: large;
     }
 
     .flash {
@@ -81,7 +87,7 @@
 
     /*Activités*/
     .sectionB {
-        height: 70vh;
+        height: 74vh;
         justify-content: space-around;
         display: flex;
     }
@@ -215,7 +221,7 @@
     }
 
     /*---------------------------------------------section-ecran pc----------------------------------- */
-    @media screen and (min-width: 1025px) and (max-width: 2560px) {
+    @media screen and (min-width: 769px) and (max-width: 2560px) {
 
         marquee.flash:hover {
             font-size: x-large;
@@ -226,6 +232,7 @@
             display: flex;
             padding-top: 0.25%;
         }
+
         .marki {
             /* padding: .2em; */
             /* background-color: #fcf8e3; */
@@ -240,6 +247,7 @@
             padding-top: 0.5%;
             transition: 1s;
         }
+
         /*carousel Entreprise*/
         section {
             width: 100%;
@@ -258,8 +266,7 @@
 
         /*Activités*/
         .sectionB {
-
-            height: 70vh;
+            height: 74vh;
             justify-content: space-around;
             display: flex;
             margin-left: 2.5vh;
@@ -309,7 +316,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 77vh;
+            height: 80vh;
             display: flex;
         }
 
@@ -392,7 +399,7 @@
 
     /* ---------------------------------------section petit PC----------------------------------------*/
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-        
+
         .sectionB {
             height: 62vh;
             justify-content: space-around;
@@ -527,30 +534,31 @@
 
     /* ---------------------------------------section tablette----------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
-        p{
+        p {
             width: 80%;
             margin: 2vh auto;
         }
-        .pact{
+
+        .pact {
             width: 95%;
             margin: 0 auto;
         }
 
         marquee.flash:hover {
-        font-size: x-large;
-        height: 5.5vh;
-        background-color:  rgb(0, 174, 239);
-        color: #fff200;
-        transition: 1s;
-        display: flex;
-        padding-top: 0.5%;
+            font-size: x-large;
+            height: 5.5vh;
+            background-color: rgb(0, 174, 239);
+            color: #fff200;
+            transition: 1s;
+            display: flex;
+            padding-top: 0.5%;
         }
 
         .marki {
-        /* padding: .2em; */
-        /* background-color: #fcf8e3; */
-        display: flex;
-        font-size: large;
+            /* padding: .2em; */
+            /* background-color: #fcf8e3; */
+            display: flex;
+            font-size: large;
         }
 
         .flash {
@@ -650,6 +658,7 @@
             display: flex;
             margin-top: 0.4px;
         }
+
         .fivetoile {
             width: 55%;
         }
@@ -657,8 +666,8 @@
 
     /* -------------------------------------------------section-portable------------------------------*/
     @media all and (max-width: 450px) {
-        
-        p{
+
+        p {
             width: 90%;
             margin: 1vh auto;
         }
@@ -671,17 +680,18 @@
         marquee.flash:hover {
             font-size: x-large;
             height: 5.5vh;
-            background-color:  rgb(0, 174, 239);
+            background-color: rgb(0, 174, 239);
             color: #fff200;
             transition: 1s;
             display: flex;
             padding-top: 1%;
         }
+
         .marki {
-        /* padding: .2em; */
-        /* background-color: #fcf8e3; */
-        display: flex;
-        font-size: large;
+            /* padding: .2em; */
+            /* background-color: #fcf8e3; */
+            display: flex;
+            font-size: large;
         }
 
         .flash {
@@ -714,7 +724,7 @@
             margin-bottom: 3vh;
         }
 
-        
+
 
         .derat {
             width: 100%;
@@ -752,6 +762,7 @@
             margin: 2vh auto;
             border: 0.5px solid gray;
         }
+
         .part {
             height: 70vh;
             width: 95%;
@@ -838,24 +849,26 @@
             display: flex;
             margin: auto 0;
         }
+
         .fivetoile {
             width: 65%;
         }
     }
+
     @media (min-width: 576px) {
         .textMenu {
             display: none;
             font-family: 'Red Hat Display', serif;
         }
     }
-
 </style>
 
 <div class="container-fluid">
     <section>
-        
+
         <a href="nettoyage.php#debarras" class="marki">
-            <marquee class="flash infinite" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous chargeons aussi de débarrasser!!</marquee>
+            <marquee class="flash infinite" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous
+                nous chargeons aussi de débarrasser!!</marquee>
         </a>
         <!--le debaras en flash-->
         <div class="sectionH">

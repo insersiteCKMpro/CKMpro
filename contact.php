@@ -11,7 +11,7 @@
         margin-right: auto;
         margin-left: auto;
     }
-    
+
     .test {
         height: 115vh;
         display: flex;
@@ -143,7 +143,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: black;
+        background-color: #00a651;
         /* regler couleur de l'animation */
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
@@ -305,7 +305,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a651;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -523,7 +523,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a651;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -691,7 +691,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a651;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
