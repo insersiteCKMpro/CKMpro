@@ -495,7 +495,7 @@
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="img/3d-galerie-4.png" class="mySlides4">
+          <img src="img/3d-galerie-1.png" class="mySlides4">
         </div>
 
         <!-- Next/previous controls -->

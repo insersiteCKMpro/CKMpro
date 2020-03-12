@@ -4,6 +4,9 @@ require_once('../include/init.php');
 extract($_POST);
 extract($_GET);
 
+echo '<pre>'; print_r($_POST);echo'<pre>';
+echo '<pre>'; print_r($_GET);echo'<pre>';
+
 
 
 //----------------SUPRESSION PRODUIT
@@ -20,7 +23,7 @@ if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
     $_GET['action'] ='affichage'; // valeur de l'indice action pour rediriger sur affichage image
 
     $validDelete ='<div class="col-md-6 mx-auto alert alert-success text-center">
-    Le produit de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
+    La photo <strong>' . $ref['emplacement'] . '</strong> de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
 }
 //--------------------------ENREGISTREMENT PHOTO
 if($_POST)
@@ -48,26 +51,28 @@ if($_POST)
 
         if(isset($_GET['action']) && $_GET['action'] == 'ajout')
         {
-        $data = $bdd->prepare("INSERT INTO galerie_img (photo , galerie) VALUES (:photo, :galerie)");
+        $data = $bdd->prepare("INSERT INTO galerie_img (photo , galerie, emplacement) VALUES (:photo, :galerie, :emplacement)");
 
         $_GET['action'] = 'affichage' ;
 
 
-        $validInsert='<div class="col-md-6 mx-auto alert alert-success text-center"> Le produit ref <strong>' . $_POST['galerie'] . '</strong> a bien été rajouté !!</strong></div>';
+        $validInsert='<div class="col-md-6 mx-auto alert alert-success text-center"> La photo de la galerie <strong>' . $_POST['galerie'] . '</strong> a bien été rajouté  !!</strong></div>';
         }
         else
         {
-            $data = $bdd->prepare("UPDATE galerie_img SET photo = :photo,galerie = :galerie WHERE id_img = :id_img");
+            $data = $bdd->prepare("UPDATE galerie_img SET photo = :photo,galerie = :galerie,emplacement = :emplacement WHERE id_img = :id_img");
 
             $data->bindValue(':id_img', $_GET['id_img'], PDO::PARAM_INT);
 
             $_GET['action'] ='affichage'; // quand on supprime on reste sur la page
             
-            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo de la galerie <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
+            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
         }
         $data->bindValue(':photo' , $photo_bdd, PDO::PARAM_STR);
 
         $data->bindValue(':galerie' , $_POST['galerie'], PDO::PARAM_STR);
+
+        $data->bindValue(':emplacement' , $_POST['emplacement'], PDO::PARAM_INT);
     
         $data->execute();
        
@@ -90,41 +95,41 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage')
 
 $resultat = $bdd->query("SELECT * FROM galerie_img");
 
-echo '<h1 class="display-4 text-center mt-3">Affichage des produits</h1><hr>';
+echo '<h1 class="display-4 text-center mt-3">Affichage des photos</h1><hr>';
 
-if(isset($validDelete)) echo $validDelete;
+if(isset($validDelete)) echo $validDelete;  
+if(isset($validInsert)) echo $validInsert;
 
-echo '<p class="mx-auto text-center">Nombre de produit(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
+echo '<p class="mx-auto text-center">Nombre de photo(s) dans la galerie : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
 echo '<table class="table table-dark table table bordered text-center col-md-6 mx-auto"><tr>';
 for($i =0; $i < $resultat->columnCount();$i++)
 {
     $colonne = $resultat->getColumnMeta($i);
     echo "<th>$colonne[name]</th>";
 }
-echo '<th>Modif</th>'; // On crééer manuellement 2 colonnes d'entetes suppléme,ntaire
+echo '<th>Modif</th>'; 
 echo '<th>Supp</th>';
 echo '</tr>';
 while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
 {
-    //echo '<pre>'; print_r($produit);echo'<pre>';
+    //echo '<pre>'; print_r($photo);echo'<pre>';
     echo '</tr>';
     foreach($galerie_img as $key => $value)
     {
         if($key =='photo'){
-        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
-    }
-    elseif($key == 'prix'){
-        echo "<td>$value €</td>";
-    }
-        else{
+        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>"; 
+        }
+        elseif($key == 'galerie'){
+            echo "<td>$value</td>"; 
+        }
+        elseif($key == 'emplacement'){
             echo "<td>$value</td>";
         }
-
-
-        
-        
+        else{
+            echo "<td>$value</td>";
+        }  
     }
-    echo "<td><a href = '?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>"; // on crée manuelleùment 2 cellules supplémentaire pour chaque produit
+    echo "<td><a href ='?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>";
     echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt' onclick='return(confirm(\"En êtes-vous certain ? \"));'></i></a></td>";
     echo '</tr>';
 }
@@ -146,7 +151,7 @@ if(isset($_GET['id_img'])) // $_GET['id_img']
 }
 $photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
 $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
-
+$emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'] : '';
 ?>
 
 <h1 class="display-4 text-center text-success mt-3"><?=ucfirst($_GET['action']) ?> d'une image </h1>
@@ -179,14 +184,13 @@ $galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
                     <option value="GEV"<?php if ($galerie == 'GEV') echo 'selected' ?>>GEV</option>
                 </select>
             </div>
-
             <div class="form-group col-md-11 mx-auto text-center mt-3">
                 <label for="emplacement">Position de l'image : </label>
-                <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$galerie?>">
-                    <option value="1"<?php if ($galerie == '1') echo 'selected' ?>>Emplacement 1</option>
-                    <option value="2"<?php if ($galerie == '2') echo 'selected' ?>>Emplacement 2</option>
-                    <option value="3"<?php if ($galerie == '3') echo 'selected' ?>>Emplacement 3</option>
-                    <option value="4"<?php if ($galerie == '4') echo 'selected' ?>>Emplacement 4</option>
+                <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$emplacement?>">
+                    <option value="1"<?php if ($emplacement == '1') echo 'selected' ?>>Emplacement 1</option>
+                    <option value="2"<?php if ($emplacement == '2') echo 'selected' ?>>Emplacement 2</option>
+                    <option value="3"<?php if ($emplacement == '3') echo 'selected' ?>>Emplacement 3</option>
+                    <option value="4"<?php if ($emplacement == '4') echo 'selected' ?>>Emplacement 4</option>
                 </select>
             </div>
     

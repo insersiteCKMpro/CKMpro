@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  ven. 06 mars 2020 à 11:56
+-- Généré le :  jeu. 12 mars 2020 à 11:05
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.1.33
 
@@ -53,6 +53,14 @@ CREATE TABLE `contact` (
   `questionEV` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `contact`
+--
+
+INSERT INTO `contact` (`id`, `nom`, `prenom`, `email`, `telephone`, `categorie`, `message`, `question3D`, `questionNet`, `questionEV`) VALUES
+(236, 'ducellier', 'anthony', 'rastaforeyes@leneuf.com', 245326945, '3D nettoyage', 'GF?VB  ', '', '', 0),
+(237, 'ducellier', 'anthony', 'rastaforeyes@leneuf.com', 245326945, '3D nettoyage', 'SZDZD', '', '', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -62,9 +70,26 @@ CREATE TABLE `contact` (
 CREATE TABLE `galerie_img` (
   `id_img` int(3) NOT NULL,
   `photo` varchar(250) NOT NULL,
-  `catégorie` varchar(50) NOT NULL,
-  `nom` varchar(30) NOT NULL
+  `galerie` varchar(50) NOT NULL,
+  `emplacement` enum('1','2','3','4') CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `galerie_img`
+--
+
+INSERT INTO `galerie_img` (`id_img`, `photo`, `galerie`, `emplacement`) VALUES
+(33, 'http://localhost/ckmpro/img/GNET-14A89-KEK.png', 'GNET', NULL),
+(49, 'http://localhost/ckmpro/img/GEV-git-logo_bv0ydu.jpg', 'GEV', '4'),
+(52, 'http://localhost/ckmpro/img/NET-nouveaudossier.PNG', 'NET', '3'),
+(53, 'http://localhost/ckmpro/img/NET-nouveaudossier.PNG', 'NET', '3'),
+(56, 'http://localhost/ckmpro/img/G3D-GITHUB.jpeg', 'G3D', '4'),
+(57, 'http://localhost/ckmpro/img/G3D-GITHUB.jpeg', 'G3D', '4'),
+(58, 'http://localhost/ckmpro/img/G3D-GITHUB.jpeg', 'G3D', '4'),
+(59, 'http://localhost/ckmpro/img/G3D-GITHUB.jpeg', 'G3D', '4'),
+(61, 'http://localhost/ckmpro/img/G3D-GITHUB.jpeg', 'G3D', '4'),
+(62, 'http://localhost/ckmpro/img/NET-15min-github.jpg', 'NET', '2'),
+(63, 'http://localhost/ckmpro/img/GNET-tempsnip.png', 'GNET', '4');
 
 -- --------------------------------------------------------
 
@@ -159,13 +184,13 @@ ALTER TABLE `gestion_produit`
 -- AUTO_INCREMENT pour la table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=236;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=238;
 
 --
 -- AUTO_INCREMENT pour la table `galerie_img`
 --
 ALTER TABLE `galerie_img`
-  MODIFY `id_img` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_img` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
 -- AUTO_INCREMENT pour la table `gestion_client`

@@ -522,7 +522,7 @@
           </div>
 
           <div class="column">
-            <img class="demo4" src="img/3d-galerie-1.png" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="img3d-galerie-1.png" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
@@ -576,5 +576,5 @@
   }
 </script>
 <?php 
-    require_once("include/footerj.php");
+    require_once("include/footerb.php");
 ?>
