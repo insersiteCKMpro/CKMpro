@@ -18,6 +18,14 @@
       width: 100%
     }
 
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .fixed-top {
       display: flex;
       justify-content: flex-end;
@@ -142,6 +150,7 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
+        padding-top: 10%;
       }
       .logo{
         height: 25vh;
@@ -197,10 +206,9 @@
       .fa-phone-alt:before {
         content: "\f879";
       }
-
-      .fabuleux {
-        background-image: url("img/boutique-bouton-mobile.png");
-      }
+.logoHome {
+  padding-bottom: 20%;
+}
 
     }
 
@@ -210,6 +218,7 @@
         display: none;
         font-family: 'Red Hat Display', serif;
       }
+
     }
   </style>
 <body>

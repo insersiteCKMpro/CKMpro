@@ -5,15 +5,25 @@
 
 <style>
     /*--------------------------------------------code source section----------------------------------*/
-    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
         width: 100%;
         padding-right: 0;
         padding-left: 0;
         margin-right: auto;
         margin-left: auto;
     }
-        
-    p{
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    p {
         width: 75%;
         margin: 2vh auto;
     }
@@ -22,16 +32,17 @@
         left: 0;
         margin: auto;
     }
-    
+
     .carousel-control-next {
         right: 0;
         margin: auto;
     }
 
-    .pact{
+    .pact {
         width: 95%;
         margin: 0 auto;
     }
+
     /* Débaras*/
     marquee.flash:hover {
         font-size: x-large;
@@ -42,11 +53,12 @@
         display: flex;
         padding-top: 0.25%;
     }
+
     .marki {
-    /* padding: .2em; */
-    /* background-color: #fcf8e3; */
-    display: flex;
-    font-size: large;
+        /* padding: .2em; */
+        /* background-color: #fcf8e3; */
+        display: flex;
+        font-size: large;
     }
 
     .flash {
@@ -75,7 +87,7 @@
 
     /*Activités*/
     .sectionB {
-        height: 68vh;
+        height: 74vh;
         justify-content: space-around;
         display: flex;
     }
@@ -220,6 +232,7 @@
             display: flex;
             padding-top: 0.25%;
         }
+
         .marki {
             /* padding: .2em; */
             /* background-color: #fcf8e3; */
@@ -234,6 +247,7 @@
             padding-top: 0.5%;
             transition: 1s;
         }
+
         /*carousel Entreprise*/
         section {
             width: 100%;
@@ -252,9 +266,7 @@
 
         /*Activités*/
         .sectionB {
-
-            height: 70vh;
-
+            height: 74vh;
             justify-content: space-around;
             display: flex;
             margin-left: 2.5vh;
@@ -385,32 +397,168 @@
         }
     }
 
+    /* ---------------------------------------section petit PC----------------------------------------*/
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+        .sectionB {
+            height: 62vh;
+            justify-content: space-around;
+            display: flex;
+            margin-left: 2.5vh;
+        }
+
+        /*Activités*/
+        .derat {
+            width: 30%;
+            text-align: center;
+        }
+
+        /*Activités*/
+        .nettoyage {
+            width: 30%;
+            text-align: center;
+        }
+
+        /*Activités*/
+        .espacevert {
+            width: 30%;
+            text-align: center;
+        }
+
+        .cible {
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+
+        /*Professionnel Particulier*/
+        main {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .pro {
+            width: 50%;
+            height: 50vh;
+            margin: 0 3%;
+        }
+
+        .part {
+            width: 50%;
+            height: 50vh;
+            margin: 0 3%;
+        }
+
+        /*Professionnel Particulier*/
+        .mainh {
+            width: 100%;
+            height: 75vh;
+            display: flex;
+        }
+
+        /*avis*/
+        .mainb {
+            width: 100%;
+            height: 25vh;
+            display: flex;
+        }
+
+        /*carousel avis gauche*/
+        .carouL {
+            width: 100%;
+        }
+
+        /*carousel avis droite*/
+        .carouR {
+            height: 18vh;
+            width: 100%;
+        }
+
+        /*carousel avis droite et gauche*/
+        .carousel-control-prev {
+            width: 10%;
+            height: 18vh;
+        }
+
+        /*carousel avis droite et gauche*/
+        .carousel-control-next {
+            width: 10%;
+            height: 18vh;
+        }
+
+        /*e-commerce*/
+        .sectionecom {
+            margin: 5vh 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .ecom {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .img1 {
+            margin-top: 30px;
+            width: 40vh;
+        }
+
+        .img3 {
+            width: 95%;
+        }
+
+        .img4 {
+            width: 2%;
+        }
+
+        .imgC {
+            width: 100%;
+        }
+
+        .imgM {
+            display: flex;
+            margin: auto;
+        }
+
+        .imgl {
+            width: 50%;
+        }
+
+        .imgp {
+            width: 10%;
+        }
+
+        .fivetoile {
+            width: 30%;
+        }
+    }
+
     /* ---------------------------------------section tablette----------------------------------------*/
     @media all and (min-width: 451px) and (max-width: 768px) {
-        p{
+        p {
             width: 80%;
             margin: 2vh auto;
         }
-        .pact{
+
+        .pact {
             width: 95%;
             margin: 0 auto;
         }
 
         marquee.flash:hover {
-        font-size: x-large;
-        height: 5.5vh;
-        background-color:  rgb(0, 174, 239);
-        color: #fff200;
-        transition: 1s;
-        display: flex;
-        padding-top: 0.5%;
+            font-size: x-large;
+            height: 5.5vh;
+            background-color: rgb(0, 174, 239);
+            color: #fff200;
+            transition: 1s;
+            display: flex;
+            padding-top: 0.5%;
         }
 
         .marki {
-        /* padding: .2em; */
-        /* background-color: #fcf8e3; */
-        display: flex;
-        font-size: large;
+            /* padding: .2em; */
+            /* background-color: #fcf8e3; */
+            display: flex;
+            font-size: large;
         }
 
         .flash {
@@ -439,6 +587,7 @@
 
         .sectionB {
             height: 62vh;
+            margin-left: 1vh;
         }
 
         /*Activités*/
@@ -509,6 +658,7 @@
             display: flex;
             margin-top: 0.4px;
         }
+
         .fivetoile {
             width: 55%;
         }
@@ -516,8 +666,8 @@
 
     /* -------------------------------------------------section-portable------------------------------*/
     @media all and (max-width: 450px) {
-        
-        p{
+
+        p {
             width: 90%;
             margin: 1vh auto;
         }
@@ -530,17 +680,18 @@
         marquee.flash:hover {
             font-size: x-large;
             height: 5.5vh;
-            background-color:  rgb(0, 174, 239);
+            background-color: rgb(0, 174, 239);
             color: #fff200;
             transition: 1s;
             display: flex;
             padding-top: 1%;
         }
+
         .marki {
-        /* padding: .2em; */
-        /* background-color: #fcf8e3; */
-        display: flex;
-        font-size: large;
+            /* padding: .2em; */
+            /* background-color: #fcf8e3; */
+            display: flex;
+            font-size: large;
         }
 
         .flash {
@@ -573,7 +724,7 @@
             margin-bottom: 3vh;
         }
 
-        
+
 
         .derat {
             width: 100%;
@@ -611,6 +762,7 @@
             margin: 2vh auto;
             border: 0.5px solid gray;
         }
+
         .part {
             height: 70vh;
             width: 95%;
@@ -697,24 +849,78 @@
             display: flex;
             margin: auto 0;
         }
+
         .fivetoile {
             width: 65%;
         }
+        .pact {
+width: 90%;
+        }
     }
+
     @media (min-width: 576px) {
         .textMenu {
             display: none;
             font-family: 'Red Hat Display', serif;
         }
     }
-
+    /* Format iphone 6, 7, 8+ */
+    @media (max-width: 414px) {
+        .mainh {
+            height: 170vh;
+        }
+        .sectionB {
+            height: 270vh;
+        }
+        .pro, .part {
+            height: 85vh;
+        }
+    }
+    /* Format iphone 6, 7, 8 */
+    @media (max-width: 375px) {
+        .mainh {
+            height: 170vh;
+        }
+        .sectionB {
+            height: 270vh;
+        }
+        .pro, .part {
+            height: 85vh;
+            padding-bottom: 8%;
+        }
+        .part {
+            padding-bottom: 17%;
+        }
+        .cible {
+            padding-bottom: 10%;
+        }
+    }
+    @media screen and (min-height: 812px){
+        .mainh {
+            height: 150vh;
+        }
+        .sectionB {
+            height: 225vh;
+        }
+        .pro, .part {
+            height: 85vh;
+            padding-bottom: 8%;
+        }
+        .part {
+            padding-bottom: 70%;
+        }
+        .cible {
+            padding-bottom: 10%;
+        }
+    }
 </style>
 
 <div class="container-fluid">
     <section>
-        
+
         <a href="nettoyage.php#debarras" class="marki">
-            <marquee class="flash infinite" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous nous chargeons aussi de débarrasser!!</marquee>
+            <marquee class="flash infinite" behavior="" direction="">Vous avez besoin de vos deux mains libres? Nous
+                nous chargeons aussi de débarrasser!!</marquee>
         </a>
         <!--le debaras en flash-->
         <div class="sectionH">
@@ -782,10 +988,7 @@
                 <h2><br>3D</h2>
                 <br>
                 <p class="text-justify pact">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-                    soluta sapiente sit corrupti similique vero in repellendus
-                    laboriosam. Ipsum, praesentium aut tenetur in dolore autem?
-                    Molestiae quasi magnam quos obcaecati?
+                Il est important de ne pas laisser le problème de l’invasion par les nuisibles s’éterniser car vous pourriez être confrontés à des dégradations d’ordres matériels ou alimentaires (stocks de nourriture…), ainsi qu’à des souillages divers à cause des déjections des rats souris.
                 </p>
             </div><br>
             <div class="nettoyage">

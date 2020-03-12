@@ -4,9 +4,16 @@
 ?>
 
 <style>
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .test {
         height: 115vh;
-
         display: flex;
     }
     .contac1 {
@@ -30,7 +37,6 @@
 
    .titrec {
         width: 100%;
-        height: 8vh;
 
     }
 
@@ -56,6 +62,12 @@
 
     .for {
         width: 45%;
+    }
+
+    .form-check {
+        position: relative;
+        display: block;
+        padding-left: 0;
     }
 
     .radbox {
@@ -171,7 +183,7 @@
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
 
-            height: 125vh;
+            height: 115vh;
 
             display: flex;
         }
@@ -184,16 +196,17 @@
         .test2 {
             width: 27%;
             display: flex;
-            height: 118vh;
+            height: 108vh;
         }
 
         .titrec {
             width: 100%;
             height: 40vh;
+            margin: 2vh 0;
         }
 
         .num {
-            margin: 0 7vh;
+            margin: 3vh 5vh;
             width: 75%;
             height: 10vh;
         }
@@ -215,6 +228,7 @@
 
         .for {
             width: 45%;
+            margin: 2vh 0;
         }
 
         .radbox {
@@ -360,7 +374,6 @@
         .test {
             height: 135vh;
             display: flex;
-            justify-content: center;
             flex-direction: column;
 
         }
@@ -563,10 +576,18 @@
             display: flex;
         }
         .test {
+<<<<<<< HEAD
             height: 125vh;
+=======
+            height: 132vh;
+>>>>>>> 121f0ff377920aa7717df31fded32608ec852308
             display: flex;
-            justify-content: center;
             flex-direction: column;
+        }
+
+        .text-center {
+            text-align: center!important;
+            margin-bottom: 2vh;
         }
 
         .test2 {
@@ -589,8 +610,9 @@
         }
 
         .traits2 {
-            width: 100%;
+            width: 85%;
             border-top: 1px solid #000;
+            margin: auto;
             height: 0.5vh;
             display: flex;
             align-items: center;
@@ -614,7 +636,11 @@
 
         .for {
             width: 90%;
+<<<<<<< HEAD
             margin: auto;
+=======
+            margin: 1vh auto;
+>>>>>>> 121f0ff377920aa7717df31fded32608ec852308
         }
 
         form {
