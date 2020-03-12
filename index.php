@@ -719,7 +719,7 @@
         }
 
         .sectionB {
-            height: 215vh;
+            height: 250vh;
             flex-direction: column;
             margin-bottom: 3vh;
         }
@@ -755,7 +755,7 @@
         }
 
         .pro {
-            height: 70vh;
+            height: 85vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -764,7 +764,7 @@
         }
 
         .part {
-            height: 70vh;
+            height: 85vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -777,7 +777,7 @@
         }
 
         .mainh {
-            height: 150vh;
+            height: 170vh;
             display: flex;
             flex-direction: column;
         }
@@ -881,7 +881,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/debarrascarrousel.png" class="imgC img-fluid" alt="...">
+                        <img src="img/debarrascarrousell.png" class="imgC img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="img/newimg2560x765.png" class="imgC img-fluid" alt="...">
@@ -976,37 +976,37 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
                     praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
                     dignissimos iusto perspiciatis.
-                    <P>
-                        <div class="mainb">
-                            <!--Les Avis -->
-                            <div class="carouL">
-                                <!--Les Avis carousel de gauche -->
-                                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner text-center">
-                                        <div class="carousel-item active">
-                                            <img src="img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                                                exercitationem
-                                                praesentium suscipit non at ea, corporis aliquam sapiente ut quas
-                                                accusamus culpa
-                                                dignissimos iusto perspiciatis.
-                                            </p>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                                                exercitationem
-                                                praesentium suscipit non at ea, corporis aliquam sapiente ut quas
-                                                accusamus culpa
-                                                dignissimos iusto perspiciatis.
-                                            </p>
-                                        </div>
-                                    </div>
+                <P>
+                <div class="mainb">
+                    <!--Les Avis -->
+                    <div class="carouL">
+                        <!--Les Avis carousel de gauche -->
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active">
+                                    <img src="img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                                        exercitationem
+                                        praesentium suscipit non at ea, corporis aliquam sapiente ut quas
+                                        accusamus culpa
+                                        dignissimos iusto perspiciatis.
+                                    </p>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/5STARS.png" class="fivetoile img-fluid" alt=""><br>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+                                        exercitationem
+                                        praesentium suscipit non at ea, corporis aliquam sapiente ut quas
+                                        accusamus culpa
+                                        dignissimos iusto perspiciatis.
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
             </div>
             <div class="part">
                 <img src="img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
@@ -1015,34 +1015,34 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
                     praesentium suscipit non at ea, corporis aliquam sapiente ut quas accusamus culpa
                     dignissimos iusto perspiciatis.
-                    <P>
-                        <div class="carouR">
-                            <!--Les Avis carousel de droite -->
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner text-center">
-                                    <div class="carousel-item active">
-                                        <img src="img/5STARS.png" class="fivetoile img-fluid" alt="">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Asperiores voluptas voluptate libero, quasi adipisci vero
-                                            delectus odit suscipit
-                                            assumenda rerum deleniti voluptates nemo fuga mollitia unde.
-                                            Quas earum ea qui!
-                                        </p>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/5STARS.png" class="fivetoile img-fluid" alt="">
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                            Asperiores voluptas voluptate libero, quasi adipisci vero
-                                            delectus odit suscipit
-                                            assumenda rerum deleniti voluptates nemo fuga mollitia unde.
-                                            Quas earum ea qui!
-                                        </p>
-                                    </div>
-                                </div>
+                <P>
+                <div class="carouR">
+                    <!--Les Avis carousel de droite -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner text-center">
+                            <div class="carousel-item active">
+                                <img src="img/5STARS.png" class="fivetoile img-fluid" alt="">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores voluptas voluptate libero, quasi adipisci vero
+                                    delectus odit suscipit
+                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde.
+                                    Quas earum ea qui!
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/5STARS.png" class="fivetoile img-fluid" alt="">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Asperiores voluptas voluptate libero, quasi adipisci vero
+                                    delectus odit suscipit
+                                    assumenda rerum deleniti voluptates nemo fuga mollitia unde.
+                                    Quas earum ea qui!
+                                </p>
                             </div>
                         </div>
+                    </div>
+                </div>
             </div>
         </main>
 

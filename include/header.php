@@ -194,11 +194,6 @@
       .fa-phone-alt:before {
         content: "\f879";
       }
-
-      .fabuleux {
-        background-image: url("img/boutique-bouton-mobile.png");
-      }
-
     }
 
     /* ----------------------------------------------------------*/
@@ -226,7 +221,7 @@
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
       </div>
       <div class="boutonbtq">
-        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodule.png" class="fabuleux img-fluid"
+        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodulle.png" class="img-fluid"
             id="iconBtq"></i></a>
       </div>
     </header>
