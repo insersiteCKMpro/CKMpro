@@ -18,6 +18,14 @@
       width: 100%
     }
 
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .fixed-top {
       display: flex;
       justify-content: flex-end;

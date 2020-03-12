@@ -12,6 +12,13 @@
         margin-right: auto;
         margin-left: auto;
     }
+    
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 50vh;
+    }
         
     p{
         width: 75%;
@@ -75,7 +82,7 @@
 
     /*Activités*/
     .sectionB {
-        height: 68vh;
+        height: 70vh;
         justify-content: space-around;
         display: flex;
     }
@@ -209,7 +216,7 @@
     }
 
     /*---------------------------------------------section-ecran pc----------------------------------- */
-    @media screen and (min-width: 769px) and (max-width: 2560px) {
+    @media screen and (min-width: 1025px) and (max-width: 2560px) {
 
         marquee.flash:hover {
             font-size: x-large;
@@ -254,7 +261,6 @@
         .sectionB {
 
             height: 70vh;
-
             justify-content: space-around;
             display: flex;
             margin-left: 2.5vh;
@@ -304,7 +310,142 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 80vh;
+            height: 77vh;
+            display: flex;
+        }
+
+        /*avis*/
+        .mainb {
+            width: 100%;
+            height: 25vh;
+            display: flex;
+        }
+
+        /*carousel avis gauche*/
+        .carouL {
+            width: 100%;
+        }
+
+        /*carousel avis droite*/
+        .carouR {
+            height: 18vh;
+            width: 100%;
+        }
+
+        /*carousel avis droite et gauche*/
+        .carousel-control-prev {
+            width: 10%;
+            height: 18vh;
+        }
+
+        /*carousel avis droite et gauche*/
+        .carousel-control-next {
+            width: 10%;
+            height: 18vh;
+        }
+
+        /*e-commerce*/
+        .sectionecom {
+            margin: 5vh 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .ecom {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .img1 {
+            margin-top: 30px;
+            width: 40vh;
+        }
+
+        .img3 {
+            width: 95%;
+        }
+
+        .img4 {
+            width: 2%;
+        }
+
+        .imgC {
+            width: 100%;
+        }
+
+        .imgM {
+            display: flex;
+            margin: auto;
+        }
+
+        .imgl {
+            width: 50%;
+        }
+
+        .imgp {
+            width: 10%;
+        }
+
+        .fivetoile {
+            width: 30%;
+        }
+    }
+
+    /* ---------------------------------------section petit PC----------------------------------------*/
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        
+        .sectionB {
+            height: 62vh;
+            justify-content: space-around;
+            display: flex;
+            margin-left: 2.5vh;
+        }
+
+        /*Activités*/
+        .derat {
+            width: 30%;
+            text-align: center;
+        }
+
+        /*Activités*/
+        .nettoyage {
+            width: 30%;
+            text-align: center;
+        }
+
+        /*Activités*/
+        .espacevert {
+            width: 30%;
+            text-align: center;
+        }
+
+        .cible {
+            text-align: center;
+            margin-bottom: 5vh;
+        }
+
+        /*Professionnel Particulier*/
+        main {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .pro {
+            width: 50%;
+            height: 50vh;
+            margin: 0 3%;
+        }
+
+        .part {
+            width: 50%;
+            height: 50vh;
+            margin: 0 3%;
+        }
+
+        /*Professionnel Particulier*/
+        .mainh {
+            width: 100%;
+            height: 75vh;
             display: flex;
         }
 
@@ -439,6 +580,7 @@
 
         .sectionB {
             height: 62vh;
+            margin-left: 1vh;
         }
 
         /*Activités*/
