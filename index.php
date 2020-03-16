@@ -895,7 +895,7 @@
             padding-bottom: 10%;
         }
     }
-    @media screen and (min-height: 812px){
+    @media screen and (min-height: 800px) and (max-height: 820px){
         .mainh {
             height: 150vh;
         }

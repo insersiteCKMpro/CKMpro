@@ -776,7 +776,7 @@
                 display: flex;
             }
         }
-        @media screen and (min-height: 812px){
+        @media screen and (min-height: 800px) and (max-height: 820px){
             .test {
                 height: 145vh;
                 display: flex;
