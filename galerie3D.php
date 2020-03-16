@@ -121,22 +121,19 @@
   .emplacement2
   {
     height:80vh;
-    width:100%;
+    width:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:5vh;
-
   }
   .emplacement3
   {
     height:80vh;
-    width:100%;
+    width:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:5vh;
- 
+  
   }
   .emplacement4
   {
@@ -217,13 +214,13 @@
   .deuximages
   {
     display:flex;
-    flex-direction:space-between;
     width:60%;
+    height:80vh;
   }
   .emplacement2
   {
     height:80vh;
-    width:100%;
+    width:60%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -232,7 +229,7 @@
   .emplacement3
   {
     height:80vh;
-    width:100%;
+    width:60%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -308,8 +305,8 @@
 
     .emplacement1
   {
-    height:40vh;
-    width:60%;
+    height:25vh;
+    width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -341,12 +338,37 @@
   }
   .emplacement4
   {
-    height:40vh;
-    width:60%;
+    height:25vh;
+    width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
   }
+  .imgg1 {
+      width: 100%;
+      display: flex;
+      margin: 3vh auto;
+      height:25vh;
+    }
+
+    .imgg2 {
+      width: 80%;
+      display: flex;
+      margin: 3vh auto;
+    }
+
+    .imgg3 {
+      width: 80%;
+      display: flex;
+      margin: 3vh auto;
+    }
+
+    .imgg4 {
+      width: 100%;
+      display: flex;
+      margin: 3vh auto;
+      height:25vh;
+    }
   }
 
   /*------------------------------------------------------------------------Responsive Mobil---------------------------------------------------------------------*/
@@ -377,6 +399,7 @@
       width: 100%;
       display: flex;
       margin: 3vh auto;
+      height:20vh;
     }
 
     .imgg2 {
@@ -395,6 +418,7 @@
       width: 100%;
       display: flex;
       margin: 3vh auto;
+      height:20vh;
     }
 
     .demo1 {
@@ -455,8 +479,8 @@
 
     .emplacement1
   {
-    height:40vh;
-    width:60%;
+    height:20vh;
+    width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -489,8 +513,8 @@
   }
   .emplacement4
   {
-    height:40vh;
-    width:60%;
+    height:20vh;
+    width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -630,27 +654,26 @@
 
     
       
-      <div class="emplacement1 border border-dark mx-auto text-center">
-      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
+      <div class="emplacement1 mx-auto text-center mt-5">
+      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow imgg1 mt-5">
       </div>
       
-      <div class="deuximages">
+      <div class="deuximages bg-warning">
 
-        <div class="emplacement2 mx-auto text-center">
-      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(2)" 
+        <div class="emplacement2 mx-auto text-center bg-danger">
+      <img src="" onclick="openModal();currentSlide(2)" 
       class="hover-shadow imgg2">
       </div>
 
       <div class="emplacement3 mx-auto text-center">
-      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(3)" 
+      <img src="" onclick="openModal();currentSlide(3)" 
       class="hover-shadow imgg3">
       </div>
   
       </div>
       
-      <div class="emplacement4 border border-dark mx-auto text-center mb-5">
-      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(4)" 
-      class="hover-shadow imgg4">
+      <div class="emplacement4 mx-auto text-center mb-5">
+      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(4)" class="img-fluid hover-shadow imgg4 mb-5">
       </div>
 
     <!-- The Modal/Lightbox -->
