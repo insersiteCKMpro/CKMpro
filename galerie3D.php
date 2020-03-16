@@ -10,45 +10,38 @@
   }
 
   /*------------------------------------------------------------------------code source---------------------------------------------------------------------*/
-  .colon1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .colon2 {
-    display: flex;
-    flex-direction: row;
-    width: 55.5%;
-    margin: auto;
-  }
-
-  .colum {
-    width: 100%;
+  
+  .container-fluid
+  {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
   }
 
   .imgg1 {
-    width: 50%;
+    width: 100%;
     display: flex;
-    margin: 3vh auto;
     height:40vh;
   }
 
   .imgg2 {
-    width: 80%;
+    width: 100%;
     display: flex;
     margin: 3vh auto;
-    height:60vh;
+    height:80vh;
+    margin:2.5vh;
   }
 
   .imgg3 {
-    width: 80%;
+    width: 100%;
     display: flex;
-    margin: 3vh auto;
-    height:60vh;
+    height:80vh;
+    margin:2.5vh;
   }
 
   .imgg4 {
-    width: 50%;
+    width: 100%;
     display: flex;
     margin: 3vh auto;
     height:40vh;
@@ -98,7 +91,7 @@
 
   .mySlides3 {
     width: 75%;
-    height: 75h;
+    height: 75vh;
     margin: auto;
     display: flex;
   }
@@ -108,6 +101,51 @@
     height: 60vh;
     margin: 7vh auto;
     display: flex;
+  }
+  .emplacement1
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .deuximages
+  {
+    display:flex;
+    flex-direction:space-between;
+    width:60%;
+    height:80vh;
+    margin:5vh auto;
+  }
+  .emplacement2
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:5vh;
+
+  }
+  .emplacement3
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:5vh;
+ 
+  }
+  .emplacement4
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:10vh;
   }
 
   /*------------------------------------------------------------------------Responsive PC---------------------------------------------------------------------*/
@@ -167,6 +205,47 @@
       margin: 7vh auto;
       display: flex;
     }
+
+    .emplacement1
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .deuximages
+  {
+    display:flex;
+    flex-direction:space-between;
+    width:60%;
+  }
+  .emplacement2
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+  }
+  .emplacement3
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+  }
+  .emplacement4
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
   }
 
   /*------------------------------------------------------------------------Responsive Tab---------------------------------------------------------------------*/
@@ -226,6 +305,48 @@
       margin: 7vh auto;
       display: flex;
     }
+
+    .emplacement1
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .deuximages
+  {
+    display:flex;
+    flex-direction:space-between;
+    width:57.5%;
+    height:80vh;
+  }
+  .emplacement2
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+  }
+  .emplacement3
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+  }
+  .emplacement4
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
   }
 
   /*------------------------------------------------------------------------Responsive Mobil---------------------------------------------------------------------*/
@@ -246,9 +367,14 @@
     .colum {
       width: 100%;
     }
+    .deuximages
+    {
+      display:flex;
+      flex-direction:column;
+    }
 
     .imgg1 {
-      width: 80%;
+      width: 100%;
       display: flex;
       margin: 3vh auto;
     }
@@ -266,7 +392,7 @@
     }
 
     .imgg4 {
-      width: 80%;
+      width: 100%;
       display: flex;
       margin: 3vh auto;
     }
@@ -326,8 +452,51 @@
       margin: 28vh auto;
       display: flex;
     }
-  }
 
+    .emplacement1
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .deuximages
+  {
+    display:flex;
+    flex-direction:space-between;
+    width:57.5%;
+    height:80vh;
+    
+  }
+  .emplacement2
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+  }
+  .emplacement3
+  {
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  
+  }
+  .emplacement4
+  {
+    height:40vh;
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  }
+/* ----------------------------------------------------------- */
   .row>.column {
     padding: 0 8px;
   }
@@ -455,52 +624,59 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 </style>
-
+<!-- _____________________________VISUEL SUR LA PAGE----------------------------------------------------------------- -->
 <section>
   <div class="container-fluid">
-    <div class="colon1 border border-danger">
-      <div class="colum">
-      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612"onclick="openModal();currentSlide(1)" class="hover-shadow imgg1 border border-dark">
-        <div class="colon2 border border-warning">
-          <div class="colum">
-            <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="hover-shadow imgg2 border border-dark" onclick="openModal();currentSlide(2)">
-          </div>
-          <div class="colum">
-            <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
-          </div>
-        </div>
+
+    
+      
+      <div class="emplacement1 border border-dark mx-auto text-center">
+      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
       </div>
-    </div>
-    <div class="colon1">
-      <div class="colum">
-        <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="4" onclick="openModal();currentSlide(4)" class="hover-shadow imgg4">
+      
+      <div class="deuximages">
+
+        <div class="emplacement2 mx-auto text-center">
+      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(2)" 
+      class="hover-shadow imgg2">
       </div>
-    </div>
+
+      <div class="emplacement3 mx-auto text-center">
+      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(3)" 
+      class="hover-shadow imgg3">
+      </div>
+  
+      </div>
+      
+      <div class="emplacement4 border border-dark mx-auto text-center mb-5">
+      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(4)" 
+      class="hover-shadow imgg4">
+      </div>
 
     <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-
+      
+<!-- _____________________________VISUEL DU ZOOM----------------------------------------------------------------- -->
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="demo1 mySlides1" src="<?=$emplacement ?>" value="<?='1' ?>">
-          </div>;
-        </div>
+          <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" class="mySlides1" src="<?=$emplacement ?>" value="<?='1' ?>">
+          </div>
+       
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="2" class="mySlides2">
+          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="mySlides2">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="3" class="mySlides3">
+          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="mySlides3">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="4" class="mySlides4">
+          <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" class="mySlides4">
         </div>
 
         <!-- Next/previous controls -->
@@ -515,8 +691,8 @@
         <!-- Thumbnail image controls -->
         <div class="row">
           <div class="column">
-          
-          <img class="demo1" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612 " 
+        <!-- _____________________________VISUEL DES IMAGES EN BAS QUAND ON ZOOM----------------------------------------------------------------- --> 
+          <img class="demo1" src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg " 
           onclick="currentSlide(1)">
         
           </div>
@@ -530,7 +706,7 @@
           </div>
 
           <div class="column">
-            <img class="demo4" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="4" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" id="4" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>

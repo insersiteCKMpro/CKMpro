@@ -22,8 +22,8 @@ if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
 
     $_GET['action'] ='affichage'; // valeur de l'indice action pour rediriger sur affichage image
 
-    $validDelete ='<div class="col-md-6 mx-auto alert alert-success text-center">
-    La photo <strong>' . $ref['emplacement'] . '</strong> de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
+    $validDelete ='<div class="col-md-6 mx-auto alert alert-danger text-center">
+    La photo de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
 }
 //--------------------------ENREGISTREMENT PHOTO
 if($_POST)
@@ -66,7 +66,7 @@ if($_POST)
 
             $_GET['action'] ='affichage'; // quand on supprime on reste sur la page
             
-            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
+            $validModif='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
         }
         $data->bindValue(':photo' , $photo_bdd, PDO::PARAM_STR);
 
@@ -96,7 +96,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage')
 $resultat = $bdd->query("SELECT * FROM galerie_img");
 
 echo '<h1 class="display-4 text-center mt-3">Affichage des photos</h1><hr>';
-
+if(isset($validModif)) echo $validModif;
 if(isset($validDelete)) echo $validDelete;  
 if(isset($validInsert)) echo $validInsert;
 
@@ -196,7 +196,11 @@ $emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'
     
         <button type="submit" class="col-md-4 mt-2 mb-3 btn btn-info mx-auto text-center">
             <?= ucfirst($_GET['action']);?> Image</button>
+            
     </form>
+
+
+
 
 </div>
 <?php endif; ?>
