@@ -401,7 +401,7 @@
     @media screen and (min-width: 769px) and (max-width: 1024px) {
 
         .sectionB {
-            height: 62vh;
+            height: 70vh;
             justify-content: space-around;
             display: flex;
             margin-left: 2.5vh;
@@ -451,7 +451,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 75vh;
+            height: 80vh;
             display: flex;
         }
 
@@ -719,7 +719,7 @@
         }
 
         .sectionB {
-            height: 250vh;
+            height: 220vh;
             flex-direction: column;
             margin-bottom: 3vh;
         }
@@ -777,7 +777,7 @@
         }
 
         .mainh {
-            height: 170vh;
+            height: 150vh;
             display: flex;
             flex-direction: column;
         }
@@ -853,10 +853,13 @@
         .fivetoile {
             width: 65%;
         }
+
         .pact {
             width: 90%;
         }
     }
+
+
 
     @media (min-width: 576px) {
         .textMenu {
@@ -864,54 +867,68 @@
             font-family: 'Red Hat Display', serif;
         }
     }
+
     /* Format iphone 6, 7, 8+ */
-    @media (max-width: 414px) {
+    @media (min-height: 730px) and (max-height: 740px) {
         .mainh {
             height: 170vh;
         }
+
         .sectionB {
             height: 270vh;
         }
-        .pro, .part {
+
+        .pro,
+        .part {
             height: 85vh;
         }
     }
+
     /* Format iphone 6, 7, 8 */
-    @media (max-width: 375px) {
+    @media (max-height: 670px) and (min-height: 660px) {
         .mainh {
             height: 170vh;
         }
+
         .sectionB {
             height: 270vh;
         }
-        .pro, .part {
+
+        .pro,
+        .part {
             height: 85vh;
             padding-bottom: 8%;
         }
+
         .part {
             padding-bottom: 17%;
         }
+
         .cible {
             padding-bottom: 10%;
         }
     }
-    @media screen and (min-height: 800px) and (max-height: 820px){
+
+    @media screen and (min-height: 800px) and (max-height: 820px) {
         .mainh {
             height: 150vh;
         }
+
         .sectionB {
             height: 225vh;
         }
 
-        .pro, .part {
+        .pro,
+        .part {
             height: 85vh;
             padding-bottom: 8%;
         }
+
         .part {
             padding-bottom: 17%;
         }
-        
-        
+
+
         .cible {
             padding-bottom: 10%;
         }
@@ -991,7 +1008,9 @@
                 <h2><br>3D</h2>
                 <br>
                 <p class="text-justify pact">
-                Il est important de ne pas laisser le problème de l’invasion par les nuisibles s’éterniser car vous pourriez être confrontés à des dégradations d’ordres matériels ou alimentaires (stocks de nourriture…), ainsi qu’à des souillages divers à cause des déjections des rats souris.
+                    Il est important de ne pas laisser le problème de l’invasion par les nuisibles s’éterniser car vous
+                    pourriez être confrontés à des dégradations d’ordres matériels ou alimentaires (stocks de
+                    nourriture…), ainsi qu’à des souillages divers à cause des déjections des rats souris.
                 </p>
             </div><br>
             <div class="nettoyage">
