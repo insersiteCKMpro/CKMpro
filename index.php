@@ -87,7 +87,6 @@
 
     /*Activités*/
     .sectionB {
-        height: 74vh;
         justify-content: space-around;
         display: flex;
     }
@@ -266,7 +265,6 @@
 
         /*Activités*/
         .sectionB {
-            height: 74vh;
             justify-content: space-around;
             display: flex;
             margin-left: 2.5vh;
@@ -401,7 +399,6 @@
     @media screen and (min-width: 769px) and (max-width: 1024px) {
 
         .sectionB {
-            height: 70vh;
             justify-content: space-around;
             display: flex;
             margin-left: 2.5vh;
@@ -586,7 +583,6 @@
         }
 
         .sectionB {
-            height: 62vh;
             margin-left: 1vh;
         }
 
@@ -719,7 +715,6 @@
         }
 
         .sectionB {
-            height: 220vh;
             flex-direction: column;
             margin-bottom: 3vh;
         }
@@ -874,10 +869,6 @@
             height: 170vh;
         }
 
-        .sectionB {
-            height: 270vh;
-        }
-
         .pro,
         .part {
             height: 85vh;
@@ -890,8 +881,44 @@
             height: 170vh;
         }
 
-        .sectionB {
-            height: 270vh;
+        .pro,
+        .part {
+            height: 85vh;
+            padding-bottom: 8%;
+        }
+
+        .part {
+            padding-bottom: 17%;
+        }
+
+        .cible {
+            padding-bottom: 10%;
+        }
+    }
+
+    @media (max-height: 420px) and (min-height: 360px) {
+        .mainh {
+            height: 170vh;
+        }
+
+        .pro,
+        .part {
+            height: 85vh;
+            padding-bottom: 8%;
+        }
+
+        .part {
+            padding-bottom: 17%;
+        }
+
+        .cible {
+            padding-bottom: 10%;
+        }
+    }
+
+    @media (max-height: 359px) and (min-height: 310px) {
+        .mainh {
+            height: 190vh;
         }
 
         .pro,
@@ -912,10 +939,6 @@
     @media screen and (min-height: 800px) and (max-height: 820px) {
         .mainh {
             height: 150vh;
-        }
-
-        .sectionB {
-            height: 225vh;
         }
 
         .pro,
@@ -997,7 +1020,7 @@
                 de vos enfants, de vous-même de vos animaux domestiques et de l’environnement.
                 Entreprise agréée et produits professionnels certifiés seront les gages d’une intervention efficace en
                 toute sécurité.
-                <p>
+            <p>
         </div><br>
 
         <h2 class="activités">Nos Activités</h2><br>
