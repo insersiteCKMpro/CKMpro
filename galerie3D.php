@@ -28,16 +28,13 @@
   .imgg2 {
     width: 100%;
     display: flex;
-    margin: 3vh auto;
     height:80vh;
-    margin:2.5vh;
   }
 
   .imgg3 {
     width: 100%;
     display: flex;
     height:80vh;
-    margin:2.5vh;
   }
 
   .imgg4 {
@@ -113,27 +110,24 @@
   .deuximages
   {
     display:flex;
-    flex-direction:space-between;
     width:60%;
     height:80vh;
-    margin:5vh auto;
+    margin-top:5vh;
+    margin-bottom:5vh;
+
   }
   .emplacement2
   {
     height:80vh;
     width:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    margin-bottom:5vh;
+    margin-right:5vh;
   }
   .emplacement3
   {
     height:80vh;
     width:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
+    margin-bottom:5vh;
   }
   .emplacement4
   {
@@ -142,7 +136,6 @@
     display:flex;
     align-items:center;
     justify-content:center;
-    margin-top:10vh;
   }
 
   /*------------------------------------------------------------------------Responsive PC---------------------------------------------------------------------*/
@@ -206,7 +199,7 @@
     .emplacement1
   {
     height:40vh;
-    width:60%;
+    width:57%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -215,12 +208,12 @@
   {
     display:flex;
     width:60%;
-    height:80vh;
+    height:60vh;
   }
   .emplacement2
   {
-    height:80vh;
-    width:60%;
+    height:60vh;
+    width:45%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -228,8 +221,8 @@
   }
   .emplacement3
   {
-    height:80vh;
-    width:60%;
+    height:60vh;
+    width:45%;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -238,10 +231,34 @@
   .emplacement4
   {
     height:40vh;
-    width:60%;
+    width:57%;
     display:flex;
     align-items:center;
     justify-content:center;
+  }
+  .imgg1 {
+    width: 100%;
+    display: flex;
+    height:40vh;
+  }
+
+  .imgg2 {
+    width: 100%;
+    display: flex;
+    height:60vh;
+  }
+
+  .imgg3 {
+    width: 100%;
+    display: flex;
+    height:60vh;
+  }
+
+  .imgg4 {
+    width: 100%;
+    display: flex;
+    margin: 3vh auto;
+    height:40vh;
   }
   }
 
@@ -314,13 +331,12 @@
   .deuximages
   {
     display:flex;
-    flex-direction:space-between;
-    width:57.5%;
-    height:80vh;
+    width:97%;
+    height:60vh;
   }
   .emplacement2
   {
-    height:80vh;
+    height:60vh;
     width:100%;
     display:flex;
     align-items:center;
@@ -329,7 +345,7 @@
   }
   .emplacement3
   {
-    height:80vh;
+    height:60vh;
     width:100%;
     display:flex;
     align-items:center;
@@ -345,26 +361,28 @@
     justify-content:center;
   }
   .imgg1 {
-      width: 100%;
+      width: 90%;
       display: flex;
       margin: 3vh auto;
       height:25vh;
     }
 
     .imgg2 {
-      width: 80%;
+      width: 85%;
       display: flex;
       margin: 3vh auto;
+      height:60vh;
     }
 
     .imgg3 {
-      width: 80%;
+      width: 86%;
       display: flex;
       margin: 3vh auto;
+      height:60vh;
     }
 
     .imgg4 {
-      width: 100%;
+      width: 90%;
       display: flex;
       margin: 3vh auto;
       height:25vh;
@@ -373,6 +391,16 @@
 
   /*------------------------------------------------------------------------Responsive Mobil---------------------------------------------------------------------*/
   @media screen and (max-width: 450px) {
+/* menu burger */
+    .bg-transparent {
+    background-color: transparent!important;
+    display: contents;
+    }
+/* logo dans nav */
+    #tailleLi {
+    width: 25%;
+    margin-top: 1vh;
+}
 
     .colon1 {
       display: flex;
@@ -393,6 +421,8 @@
     {
       display:flex;
       flex-direction:column;
+      width: 57.5%;
+      height: 65vh;
     }
 
     .imgg1 {
@@ -403,15 +433,17 @@
     }
 
     .imgg2 {
-      width: 80%;
+      width: 100%;
       display: flex;
       margin: 3vh auto;
+      height: 30vh;
     }
 
     .imgg3 {
-      width: 80%;
+      width: 100%;
       display: flex;
       margin: 3vh auto;
+      height: 30vh;
     }
 
     .imgg4 {
@@ -490,21 +522,20 @@
     display:flex;
     flex-direction:space-between;
     width:57.5%;
-    height:80vh;
+    height:65vh;
     
   }
   .emplacement2
   {
-    height:80vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .emplacement3
   {
-    height:80vh;
+    height:30vh;
     width:100%;
     display:flex;
     align-items:center;
@@ -655,25 +686,25 @@
     
       
       <div class="emplacement1 mx-auto text-center mt-5">
-      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow imgg1 mt-5">
+      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow imgg1 ">
       </div>
       
-      <div class="deuximages bg-warning">
+      <div class="deuximages">
 
-        <div class="emplacement2 mx-auto text-center bg-danger">
-      <img src="" onclick="openModal();currentSlide(2)" 
+        <div class="emplacement2 mx-auto text-center">
+      <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" onclick="openModal();currentSlide(2)" 
       class="hover-shadow imgg2">
       </div>
 
       <div class="emplacement3 mx-auto text-center">
-      <img src="" onclick="openModal();currentSlide(3)" 
+      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(3)" 
       class="hover-shadow imgg3">
       </div>
   
       </div>
       
       <div class="emplacement4 mx-auto text-center mb-5">
-      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(4)" class="img-fluid hover-shadow imgg4 mb-5">
+      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(4)" class="img-fluid hover-shadow imgg4">
       </div>
 
     <!-- The Modal/Lightbox -->
