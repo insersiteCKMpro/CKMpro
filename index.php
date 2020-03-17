@@ -748,7 +748,7 @@
         }
 
         .pro {
-            height: 85vh;
+            height: 90vh;
             width: 95%;
             display: flex;
             flex-direction: column;
@@ -757,7 +757,7 @@
         }
 
         .part {
-            height: 85vh;
+            height: 90vh;
             width: 95%;
             display: flex;
             flex-direction: column;
