@@ -609,7 +609,6 @@
 
         /*Professionnel Particulier*/
         main {
-            height: 3vh;
             width: 100%;
             justify-content: center;
         }
@@ -744,7 +743,6 @@
 
         /*Professionnel Particulier*/
         main {
-            height: 3vh;
             width: 100%;
             justify-content: center;
         }
@@ -971,7 +969,7 @@
                 de vos enfants, de vous-même de vos animaux domestiques et de l’environnement.
                 Entreprise agréée et produits professionnels certifiés seront les gages d’une intervention efficace en
                 toute sécurité.
-                <p>
+            <p>
         </div><br>
 
         <h2 class="activités">Nos Activités</h2><br>
