@@ -176,14 +176,14 @@
     }
 
     .mySlides2 {
-      width: 75%;
+      width: 33%;
       height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
-      width: 75%;
+      width: 33%;
       height: 75vh;
       margin: auto;
       display: flex;
@@ -697,7 +697,7 @@
       </div>
 
       <div class="emplacement3 mx-auto text-center">
-      <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" onclick="openModal();currentSlide(3)" 
+      <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" onclick="openModal();currentSlide(3)" 
       class="hover-shadow imgg3">
       </div>
   
@@ -720,12 +720,12 @@
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="mySlides2">
+          <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" class="mySlides2">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" class="mySlides3">
+          <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" class="mySlides3">
         </div>
 
         <div class="mySlides">
@@ -752,11 +752,11 @@
           </div>
           
           <div class="column">
-            <img class="demo2" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="2" onclick="currentSlide(2)" alt="Rat">
+            <img class="demo2" src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" id="2" onclick="currentSlide(2)" alt="Rat">
           </div>
 
           <div class="column">
-            <img class="demo3" src="https://media.gettyimages.com/photos/cropped-image-of-person-eye-picture-id942369796?s=612x612" id="3" onclick="currentSlide(3)" alt="Spray">
+            <img class="demo3" src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" id="3" onclick="currentSlide(3)" alt="Spray">
           </div>
 
           <div class="column">
