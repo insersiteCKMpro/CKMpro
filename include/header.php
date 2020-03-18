@@ -151,7 +151,9 @@
         margin: 0 auto;
         display: flex;
         padding-top: 10%;
+        margin-top:10vh;
       }
+      
       .logo{
         height: 25vh;
       }

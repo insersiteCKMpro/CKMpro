@@ -267,7 +267,7 @@
         .sectionB {
             justify-content: space-around;
             display: flex;
-            margin-left: 2.5vh;
+            margin: 0 0 5vh 2.5vh;
         }
 
         /*Activités*/
@@ -401,7 +401,7 @@
         .sectionB {
             justify-content: space-around;
             display: flex;
-            margin-left: 2.5vh;
+            margin: 0 0 5vh 2.5vh;
         }
 
         /*Activités*/
@@ -583,7 +583,7 @@
         }
 
         .sectionB {
-            margin-left: 1vh;
+            margin: 0 0 5vh 1vh;
         }
 
         /*Activités*/
@@ -619,7 +619,7 @@
         /*Professionnel Particulier*/
         .mainh {
             width: 100%;
-            height: 75vh;
+            height: 80vh;
             display: FLEX;
             JUSTIFY-CONTENT: space-around;
         }
@@ -901,6 +901,10 @@
             height: 170vh;
         }
 
+        .sectionB {
+            margin: 0 0 10vh 1vh;
+        }
+
         .pro,
         .part {
             height: 85vh;
@@ -912,7 +916,7 @@
         }
 
         .cible {
-            padding-bottom: 10%;
+            padding-bottom: 3%;
         }
     }
 
@@ -955,6 +959,42 @@
         .cible {
             padding-bottom: 10%;
         }
+    }
+
+    @media screen and (min-height: 1360px) and (max-height: 1370px) {
+        .mainh {
+            height: 50vh;
+        }
+
+        .pro,
+        .part {
+            height: 85vh;
+        }
+
+        .part {
+            padding-bottom: 17%;
+        }
+
+
+        .cible {
+            padding-bottom: 10%;
+        }
+    }
+
+    @media screen and (min-height: 1020px) and (max-height: 1030px) {
+        .mainh {
+            height: 64vh;
+        }
+
+        .pro,
+        .part {
+            height: 85vh;
+        }
+
+        .part {
+            padding-bottom: 17%;
+        }
+
     }
 </style>
 
