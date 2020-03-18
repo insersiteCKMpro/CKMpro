@@ -131,6 +131,7 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
+        margin-top:10vh;
       }
       .logo{
         height: 25vh;
@@ -185,10 +186,6 @@
 
       .fa-phone-alt:before {
         content: "\f879";
-      }
-
-      .fabuleux {
-        background-image: url("img/boutique-bouton-mobile.png");
       }
 
     }
