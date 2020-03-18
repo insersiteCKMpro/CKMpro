@@ -1326,7 +1326,7 @@
         }
     }
 
-    @media (max-height: 420px) and (min-height: 360px) {
+    @media (max-height: 430px) and (min-height: 360px) {
         p {
             width: 90%;
             margin: 1vh auto;
