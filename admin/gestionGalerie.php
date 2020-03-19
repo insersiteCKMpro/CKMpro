@@ -1,69 +1,220 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <title>CKMpro</title>
-</head>
-<body>
-    
-</body>
-</html>
-
 <?php
 require_once('../include/init.php');
+
 extract($_POST);
-extract($_GET); // $_GET['id_img'] devient --> $id_img
+extract($_GET);
+
+// echo '<pre>'; print_r($_POST);echo'<pre>';
+// echo '<pre>'; print_r($_GET);echo'<pre>';
+
 
 
 //----------------SUPRESSION PRODUIT
 
 if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
 {
-    $data = $bdd->query("SELECT photo FROM galerie_img WHERE id_img = '$_GET[id_img]'"); // on selectionne le référence en BDD pour l'inclure dans le message de validation
-    $id_img = $data->fetch(PDO::FETCH_ASSOC);
+    $data = $bdd->query("SELECT galerie FROM galerie_img WHERE id_img = '$_GET[id_img]'"); // on selectionne la photo en BDD pour l'inclure dans le message de validation
+    $ref = $data->fetch(PDO::FETCH_ASSOC);
 
     $data = $bdd->prepare("DELETE FROM galerie_img WHERE id_img = :id_img");
     $data->bindValue(':id_img', $_GET['id_img'], PDO::PARAM_INT);
     $data->execute();
 
-    $_GET['action']='affichage'; // quand on supprime on reste sur la page
+    $_GET['action'] ='affichage'; // valeur de l'indice action pour rediriger sur affichage image
 
-    $validDelete= "<p class='col-md-5 mx-auto alert-success text-center'>La photo a bien été supprimé!</p>";
+    $validDelete ='<div class="col-md-6 mx-auto alert alert-danger text-center">
+    La photo de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
 }
-//-----------------------------------------------------------------ENREGISTREMENT PHOTO
+//--------------------------ENREGISTREMENT PHOTO
 if($_POST)
 {
-    $photobdd = '';
+    $_photo_bdd = '';
     if(isset($_GET['action']) && $_GET['action'] == 'modification')
     {
-        $photobdd = $_POST['photoActuelle'];
+        $photo_bdd = $_POST['photo_actuel'];
     }
-    // Sil l'indice 'name' dans la superglobale $_FILES est différent de vide,cela veut dire que l'internaute a bien uploader une photo
     if(!empty($_FILES['photo']['name']))
     {
         // on concatene la reference saisie dans le formulaire avec le nom de la photo recupere dans la superglobale $_FILES
-        $nomPhoto = $_FILES['photo']['name'];
-        //echo $nomPhoto . '<hr>';
+        $nom_photo = $_POST['galerie'].'-'.  $_FILES['photo']['name'];
+        //echo $nom_photo . '<hr>';
 
-        // On definit l'URL de la photo jusqu'au dossirr 'photo' sur le serveur, c'est ce que l'on enregistrera dans la BDD
-        $photobdd = URL . "img/$nomPhoto";
-       // echo $photobdd . '<hr>';
+        // On definit l'URL de la photo jusqu'au dossier 'photo' sur le serveur, c'est ce que l'on enregistrera dans la BDD
+        $photo_bdd = URL . "img/$nom_photo";
+        // echo $photo_bdd . '<hr>';
 
-       // On définit le chemin physique de la photo du dossier 'photo' sur le serveur, c'est ce que l'on utilisera pour copier la photo dans le dossier 'photo'
-        $photoDossier = RACINE_SITE . "/$nomPhoto";
-       // echo $photoDossier . '<hr>';
-        // copy() : fonction predefinie permettant de copier la photo dans le dossier 'photo' sur le serveur
-        //arguments : copy('nom_temporaire','chemin de la photo vers le dossier photo')
-        //copy($_FILES['photo']['tmp_name'], $photoDossier);
+        $photo_dossier = RACINE_SITE . "/$nom_photo";// On définit le chemin physique de la photo du dossier 'photo' sur le serveur, c'est ce que l'on utilisera pour copier la photo dans le dossier 'photo'
+        // echo $photo_dossier . '<hr>';
+        
+        copy($_FILES['photo']['tmp_name'], $photo_dossier);
+    }
+
+        if(isset($_GET['action']) && $_GET['action'] == 'ajout')
+        {
+        $data = $bdd->prepare("INSERT INTO galerie_img (photo , galerie, emplacement) VALUES (:photo, :galerie, :emplacement)");
+
+        $_GET['action'] = 'affichage' ;
 
 
+        $validInsert='<div class="col-md-6 mx-auto alert alert-success text-center"> La photo de la galerie <strong>' . $_POST['galerie'] . '</strong> a bien été rajouté  !!</strong></div>';
+        }
+        else
+        {
+            $data = $bdd->prepare("UPDATE galerie_img SET photo = :photo,galerie = :galerie,emplacement = :emplacement WHERE id_img = :id_img");
+
+            $data->bindValue(':id_img', $_GET['id_img'], PDO::PARAM_INT);
+
+            $_GET['action'] ='affichage'; // quand on supprime on reste sur la page
+            
+            $validModif='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
+        }
+        $data->bindValue(':photo' , $photo_bdd, PDO::PARAM_STR);
+
+        $data->bindValue(':galerie' , $_POST['galerie'], PDO::PARAM_STR);
+
+        $data->bindValue(':emplacement' , $_POST['emplacement'], PDO::PARAM_INT);
+    
+        $data->execute();
+    
+}
+
+require_once('../include/header.php');
+?>
+
+<ul class="col-md-4 list-group text-center mt-3 mx-auto">
+    <li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE IMAGES</a></li>
+    <li class="list-group-item "><a href="?action=ajout" class="text-dark">AJOUT </a></li>
+</ul>
+
+
+<!---------------------------------AFFICHAGE PRODUIT----------------------------->
+<?php
+
+if(isset($_GET['action']) && $_GET['action'] == 'affichage')
+{
+
+$resultat = $bdd->query("SELECT * FROM galerie_img");
+
+echo '<h1 class="display-4 text-center mt-3">Affichage des photos</h1><hr>';
+if(isset($validModif)) echo $validModif;
+if(isset($validDelete)) echo $validDelete;  
+if(isset($validInsert)) echo $validInsert;
+
+echo '<p class="mx-auto text-center">Nombre de photo(s) dans la galerie : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
+echo '<table class="table table-dark table table bordered text-center col-md-6 mx-auto"><tr>';
+for($i =0; $i < $resultat->columnCount();$i++)
+{
+    $colonne = $resultat->getColumnMeta($i);
+    echo "<th>$colonne[name]</th>";
+}
+echo '<th>Modif</th>'; 
+echo '<th>Supp</th>';
+echo '</tr>';
+while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
+{
+    //echo '<pre>'; print_r($photo);echo'<pre>';
+    echo '</tr>';
+    foreach($galerie_img as $key => $value)
+    {
+        if($key =='photo'){
+        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>"; 
+        }
+        elseif($key == 'galerie'){
+            echo "<td>$value</td>"; 
+        }
+        elseif($key == 'emplacement'){
+            echo "<td>$value</td>";
+        }
+        else{
+            echo "<td>$value</td>";
+        }  
+    }
+    echo "<td><a href ='?action=modification&id_img=$galerie_img[id_img]' class='text-info'><i class='far fa-edit'></i></a></td>";
+    echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info'><i class='fas fa-trash-alt' onclick='return(confirm(\"En êtes-vous certain ? \"));'></i></a></td>";
+    echo '</tr>';
+}
+echo '</table>';
+}
+?>
+
+<?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')): 
+
+if(isset($_GET['id_img'])) // $_GET['id_img']
+{
+    // On selectionne en BDD toute les données de la photo via l'id_img envoyé dans l'url
+    $data = $bdd->prepare("SELECT * FROM galerie_img WHERE id_img = :id_img");
+    $data->bindValue(':id_img',$_GET['id_img'], PDO ::PARAM_INT);
+    $data->execute();
+
+    $img_actuel = $data->fetch(PDO ::FETCH_ASSOC);
+
+}
+$photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
+$galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
+$emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'] : '';
+?>
+
+<h1 class="display-4 text-center text-success mt-3"><?=ucfirst($_GET['action']) ?> d'une image </h1>
+
+
+
+<div class="ecran mx-auto text-center mb-3">
+
+    <form method="post" enctype="multipart/form-data" class="col-md-3 mx-auto rounded border border-dark">
+
+        <div class="form-group col-md-9 text-center mx-auto">
+
+            <label for="public">Photo</label>
+
+            <input type="hidden" class="custom-file_imput  mx-auto border" id="photo" name="photo_actuel" value="<?= $photo ?>">
+
+            <input type="file" class="custom-file_imput  mx-auto border" id="photo" name="photo" value="<?= $photo ?>" >
+
+            <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
+            
+        </div>
+
+        <input type="hidden" name="photoActuelle" id="photoActuelle" value=" <?= $photo ?>">
+
+        <?php if(!empty($photo)): ?>
+        <em>Vous pouvez uploader une nouvelle photo si vous shouaitez la changer</em><br>
+        <img src="<?=$photo ?>" alt="<?=$galerie ?>" class="col-md-12 mx-auto d-block">
+        <?php endif; ?>
+
+            <div class="form-group col-md-6 mx-auto text-center mt-3">
+                <label for="galerie">Galerie photo :</label>
+                <select id="galerie" class="form-control col-md-5 mx-auto text-center" name="galerie" placeholder="Entrer Galerie" value="<?=$galerie?>">
+                    <option value="3D"<?php if ($galerie == '3D') echo 'selected' ?>>3D</option>
+                    <option value="NET"<?php if ($galerie == 'NET') echo 'selected' ?>>NET</option>
+                    <option value="EV"<?php if ($galerie == 'EV') echo 'selected' ?>>EV</option>
+                    <option value="G3D"<?php if ($galerie == 'G3D') echo 'selected' ?>>G3D</option>
+                    <option value="GNET"<?php if ($galerie == 'GNET') echo 'selected' ?>>GNET</option>
+                    <option value="GEV"<?php if ($galerie == 'GEV') echo 'selected' ?>>GEV</option>
+                </select>
+            </div>
+            <div class="form-group col-md-11 mx-auto text-center mt-3">
+                <label for="emplacement">Emplacement photo : </label>
+                <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$emplacement?>">
+                    <option value="1"<?php if ($emplacement == '1') echo 'selected' ?>>Emplacement 1</option>
+                    <option value="2"<?php if ($emplacement == '2') echo 'selected' ?>>Emplacement 2</option>
+                    <option value="3"<?php if ($emplacement == '3') echo 'selected' ?>>Emplacement 3</option>
+                    <option value="4"<?php if ($emplacement == '4') echo 'selected' ?>>Emplacement 4</option>
+                </select>
+            </div>
+    
+        <button type="submit" class="col-md-4 mt-2 mb-3 btn btn-info mx-auto text-center">
+            <?= ucfirst($_GET['action']);?> Image</button>
+            
+    </form>
+
+
+
+
+</div>
+<?php endif; ?>
+
+<?php require_once('../include/footer.php');?>
+        <!--
         //----------- TRAITEMENT EXTENSION PHOTO
         $listExt = [1 =>'.jpg', 2=>'.png',3=>'.jpeg'];
         $positionPhoto = strpos($_FILES['photo']['name'], '.'); // o trouve a quel position se trouve le point dans le nom de la photo
@@ -81,165 +232,4 @@ if($_POST)
         if($extension !== false)
         {
             copy($_FILES['photo']['tmp_name'],$photoDossier);
-        }
-    }
-
-    if(!isset($erreur))
-    {
-            if(isset($_GET['action']) && $_GET['action'] == 'ajout')
-        {
-            // $insertPhoto = $bdd->prepare("INSERT INTO galerie_img VALUES ( :photo)");
-        $insertPhoto = $bdd->prepare("INSERT INTO galerie_img (photo) VALUES ( :photo)");
-        $insertPhoto->bindValue(':photo', $photobdd, PDO::PARAM_STR);
-        $insertPhoto->execute();
-        $validInsert = "<p class='col-md-5 mx-auto alert-success text-center'>L'image a bien été enregistré ! </p>";
-        }
-        else
-        {
-            $ModifImage = $bdd->prepare("UPDATE galerie_img SET photo = :photo , galerie = :galerie WHERE id_img = :id_img");
-            $ModifImage->bindValue(':id_img' , $id_img, PDO::PARAM_INT);
-
-            $modifInsert = "<p class='mt-3 col-md-10 mx-auto alert-success text-center'>L'image a bien été MODIFIER ! </p>";
-        }
-        
-        // if(add($categorie))
-
-        //     if(isset($_GET['select']) && $_get
-        //     'choices'  => [
-        //         'Papeterie' => 'Papeterie',
-        //         'Entretien' => 'Entretien',
-        
-        //         'Eq' => 'Equipement'
-        //     ],
-
-
-}
-
-}        //echo '<pre>';print_r($_POST); echo '</pre>';
-
-?>
-<ul class="col-md-4 list-group text-center mt-3 mx-auto">
-    <li class="list-group-item "><a href="?action=affichage" class="text-dark">AFFICHAGE IMAGES</a></li>
-    <li class="list-group-item "><a href="?action=ajout" class="text-dark">AJOUT </a><b>+</b></li>
-</ul>
-<?php
-
-// --------------------------------------------------------------------AFFICHAGE PRODUIT
-
-if(isset($_GET['action']) && $_GET['action'] == 'affichage')
-{
-
-$resultat = $bdd->query("SELECT * FROM galerie_img");
-
-echo '<h1 class="display-4 text-center mt-3">Affichage des images</h1><hr>';
-
-if(isset($validDelete)) echo $validDelete;
-
-echo '<p class="text-center">Nombre d\'image(s) dans la boutique : <span class="badge badge-info">'. $resultat->rowCount(). '</span></p>';
-echo '<table class="table-dark table bordered text-center"><tr>';
-for($i =0; $i < $resultat->columnCount();$i++)
-{
-    $colonne = $resultat->getColumnMeta($i);
-    echo "<th>$colonne[name]</th>";
-}
-echo '<th>Modif</th>'; 
-echo '<th>Supp</th>';
-echo '</tr>';
-while($galerie_img = $resultat->fetch(PDO::FETCH_ASSOC))
-{
-    echo '</tr>';
-    foreach($galerie_img as $key => $value)
-    {
-        if($key =='photo')
-    {
-        echo "<td><img src='$value' alt='' class='img-thumbnail'></td>";
-        echo "<td>$value</td>";
-    }
-
-    }
-    echo "<td><a href='?action=modification&id_img=$galerie_img[id_img]' class='text-info far fa-edit'></a></td>"; 
-    echo "<td><a href='?action=suppression&id_img=$galerie_img[id_img]' class='text-info fas fa-trash-alt'></a></td>";
-
-}
-echo '</tr>';
-echo '</table>';
-
-}
-?>
-
-<style>
-    .img-thumbnail {
-        max-width: 15% !important;
-    }
-</style>
-
-<!-- Si l'indice 'action' est bien définit dans l'URL et que cette indice a pour valeur 'ajout', cela veut dire que l'utilisateur  -->
-<?php if(isset($_GET['action']) && ($_GET['action'] == 'ajout' || $_GET['action'] == 'modification')): 
-
-if(isset($id_img)) // $_GET['id_img']
-{
-    // On selectionne en BDD toute les donnee du produit via l'id_img envoyé dans l'url
-    $resultat = $bdd->prepare("SELECT * FROM galerie_img WHERE id_img = :id_img");
-    $resultat->bindValue(':id_img',$id_img,PDO::PARAM_INT);
-    $resultat->execute();
-
-    $produitActuel = $resultat->fetch(PDO::FETCH_ASSOC);
-    //echo '<pre>' ; print_r($produitActuel);echo '</pre>';
-}
-
-
-
-$galerie = (isset($img_actuel['galerie'])) ? $img_actuel['galerie'] : '';
-$photo = (isset($img_actuel['photo'])) ? $img_actuel['photo'] : '';
-
-?>
-<h1 class="display-4 text-center text-success mt-3"><?=ucfirst($action); ?> d'une <b>Image</b></h1>
-<hr>
-
-
-<div class="ecran">
-
-    <form method="post" enctype="multipart/form-data" class="col-md-6 mx-auto" action="">
-
-        <div class="form-group col-md-4 text-center mx-auto border">
-            <label for="public">Photo</label>
-
-            <div class="custom-file mx-auto border border-dark rounded">
-                <input type="hidden" class="custom-file mx-auto border" id="photo" name="photoActuelle" value="<?= $photo ?>">
-                <input type="file" class="custom-file mx-auto" id="photo" name="photo" value="<?= $photo ?>">
-                <!-- <label class="custom-file mx-auto" for="photo" aria-describedby="photo"></label> -->
-                <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
-            </div>
-            
-                <label for="selection" class="mt-3">Galerie</label>
-                <select id="categories" class="form-control col-md-4 mx-auto" name="selection" placeholder="Entrer catégories">
-                    <option value="3D"  <?php  echo 'selected' ?>>3D</option>
-                    <option value="NET" <?php  echo 'selected' ?>>NET</option>
-                    <option value="EV"  <?php  echo 'selected' ?>>EV</option>
-                    <option value="G3D" <?php  echo 'selected' ?>>G3D</option>
-                    <option value="GNET"<?php  echo 'selected' ?>>GNET</option>
-                    <option value="GEV" <?php  echo 'selected' ?>>GEV</option>
-                </select>
-    
-        <button type="submit" class="col-md-6 mt-2 btn btn-info mx-auto text-center"><?=ucfirst($action);?> Image</button>
-
-
-        <?php if(isset($modifInsert)) echo $modifInsert; ?>
-        <?php if(isset($validInsert)) echo $validInsert; ?>
-        <?php if(isset($validUpdate)) echo $validUpdate; ?>
-        <?php if(isset($validDelete)) echo $validDelete; ?>
-
-        <!-- Champ caché pour la photo permettant de recupérer l'URL de la photo via l'attribut 'value' -->
-        <input type="hidden" name="photoActuelle" id="photoAxctuelle" value=" <?= $photo ?>">
-
-        <?php if(!empty($photo)): ?>
-        <em>Vous pouvez uploader une nouvelle photo si vous shouaitez la changer</em>
-        <img src="<?=$photo ?>" alt="<?= $titre ?>" class="col-md-12 mx-auto d-block">
-        <?php endif; ?>
-
-    </form>
-
-</div>
-
-<?php 
-endif; ?>
+        }-->

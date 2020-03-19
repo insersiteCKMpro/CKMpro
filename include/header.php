@@ -14,6 +14,9 @@
   <style>
     /* ------------------------Css source-header------------------------------------- */
     @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+    body{
+      width: 100%
+    }
 
     .fixed-top {
       display: flex;
@@ -31,12 +34,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 18vh;
+      min-height: 18vh;
     }
 
     /* LOGO TITRE STYLE */
     .logoTitre {
-      height: 10vh;
       margin-top: 4vh;
       width: 20vw;
     }
@@ -67,7 +69,6 @@
 
       /* LOGO TITRE STYLE */
       .logoTitre {
-        height: 12vh;
         width: 63%;
         display: flex;
         margin: 3vh auto 0;
@@ -92,7 +93,6 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        height: 10vh;
         width: 45%;
         display: flex;
         margin: auto;
@@ -128,7 +128,6 @@
 
       /* LOGO STYLE */
       .logoTitre {
-        height: 9vh;
         width: 90%;
         margin: 0 auto;
         display: flex;
@@ -213,13 +212,13 @@
           CKM Boutique </div><i class="baseline-speaker_phone"></i>
       </div>
       <div class="logo">
-        <a href="index.php"><img src="include/img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre"></a>
+        <a href="index.php"><img src="img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre img-fluid"></a>
       </div>
       <div class="boutonTel">
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
       </div>
       <div class="boutonbtq">
-        <a href="../boutique/index.php" id="lienBtq"><img src="include/img/panier-ckm-mobilemodule.png" class="fabuleux"
+        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodule.png" class="fabuleux img-fluid"
             id="iconBtq"></i></a>
       </div>
     </header>

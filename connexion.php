@@ -1,143 +1,85 @@
-<?php
-require_once('include/init.php');
-extract($_POST); // $_POST['pseudo'] devient $pseudo
+// condition si on es admin
+if(!connecteAdmin()) // Si l'internaute n'es pas ADMIN, il n'a rien a faire ici, on le redirige vers la page connexion.php
+{
+    // header('Location:' . URL.'../include/header.php');
+}
+<?php 
+require_once('../include/init.php');
 
-//----  DECONNEXION
-// Si l'indice 'action' est présent dans l'URL et a 
+//'action' est bien définit dans l'URL et a pour valeur 'deconnexion', cela veut dire que nous avons cliqué sur le lien 'deconnexion' et à ce moment la on détruit la SESSION
 if(isset($_GET['action']) && $_GET['action'] == 'deconnexion')
 {
     session_destroy();
 }
 
-if(connecte()) // si l'internaute est connecté, il n'a rien a fazire sur la page connecxion, on le redirige vers sa pas profil
+// Si l'internaute est connecté, il n'a rien à faire sur la page connexion, on le redirige vers sa page profil
+if(internauteEstConnecte())
 {
-    header('Location:' . URL . 'index.php');
+    header("Location:profil.php");
 }
-//message de validation d'inscription
-if(isset($_GET['inscription']) && $_GET['inscription'] == 'valid')
-{
-    $validInscription = "<p class= 'col-md-6 alert-success mx-auto text-center font-italic'>Inscription réussite ! Connectez vous !</p>";
-    
-}
+
+//echo '<pre>'; print_r($_POST); echo '</pre>';
 
 if($_POST)
 {
-    $resultat = $bdd->prepare("SELECT * FROM membre WHERE pseudo = :pseudo OR email = :email");
-    $resultat->bindvalue(':pseudo' , $emailPseudo, PDO::PARAM_STR);
-    $resultat->bindvalue(':email' , $emailPseudo, PDO::PARAM_STR);
-    $resultat->execute();
-    if($resultat->rowCount() > 0)
+    $data = $bdd->prepare("SELECT * FROM membre WHERE pseudo = :pseudo || email = :email"); 
+    $data->bindValue(':pseudo', $_POST['pseudoEmail'], PDO::PARAM_STR);
+    $data->bindValue(':email', $_POST['pseudoEmail'], PDO::PARAM_STR);
+    $data->execute();
 
+    if($data->rowCount() > 0) 
     {
+        //echo 'OK pseudo ou  email existant';
+        $membre = $data->fetch(PDO::FETCH_ASSOC);
+        //echo '<pre>'; print_r($membre); echo '</pre>';
 
-        //echo '<p class="font-italic col-md-3 text-success">Pseudo ou Mail existant</p>';
-        $membre = $resultat->fetch(PDO::FETCH_ASSOC);
-        if($mdp ==$membre['mdp'])
-        //if(password_verify($mdp, $membre['mdp']))
+        // $membre['mdp'] == $_POST['mdp']
+        if(password_verify($_POST['mdp'],$membre['mdp'])) // Si le mot de passe de la BDD est égal au mot de passe saisie dans le formulaire, on netre dans la condition IF
         {
-           // echo "mot de passe ok";
-        foreach ($membre as $key =>$value)
-        {
-            if($key != 'mdp')
+            //echo 'mot de passe OK !!';
+            foreach($membre as $key => $value) 
             {
-                   $_SESSION['membre'][$key] = $value; // on créer dans le fichier session un tableau 
-                   //indice 'membre' et on enregistre les donnes de l'internaute qui pourra des a present naviger sur le site sans être deconnecté
+                if($key != 'mdp') 
+                {
+                    $_SESSION['membre'][$key] = $value; // on crée dans le fichier session un tableau 'membre' et on enregistre les données de l'internaute qui pourra dès à présent naviguer sur le site sans être deconnecté 
+                }
             }
-        }
-        echo '<pre>';print_r($_SESSION);echo '</pre>';
-        header("Location:".URL."profil.php"); // Une fois l'internaute connecté, on le redirige vers sa page de profil
-        }
-        else
+            //echo '<pre>'; print_r($_SESSION); echo '</pre>';
+            header("Location:profil.php"); 
+           
+        else 
         {
-            // echo"vérifier le mot de passe";
-            $erreurMdp = '<p class="font-italic text-danger">Mot de Passe incorrect !</p>';
+            //echo 'mot de passe erroné !!';
+            $erreurMdp = '<p class="font-italic text-danger">* Mot de passe erroné !</p>';
         }
     }
-    else{
-        $erreurEmail = '<p class="font-italic text-danger">Mail inexistant</p>';
+    else /
+    {
+        $erreurPseudoEmail = '<p class="font-italic text-danger">* Pseudo ou  Email inexistant</p>';
     }
+
 }
 
-require_once('include/header.php');
-// echo '<pre>';print_r($_POST);echo '</pre>'; 
-
-
+require_once('../include/header.php');
 ?>
-<style>
-    .hvr-bounce-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: red;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 1.5s; 
-  transition-duration: 1.5s; 
 
-}
-.hvr-bounce-to-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;  /* regler couleur de l'animation */ 
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 1.5s; 
-  transition-duration: 1.5s; /* regler vitesse animation */ 
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-  background-color:none;
-}
-.hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
-  color:white;  /* changer couleur du text dans l'animation */
-  background:none; /* changer couleur background en dessous de l'animation */
-  
-}
-.hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  background-color:none;
-}
-
-</style>
-
-<h1 class= "display-4 text-center col-md-4 mx-auto  ">Connexion</h1>
-<?php if(isset($validInscription)) echo $validInscription; ?>
+<h1 class="display-4 text-info text-center mt-2">Connexion</h1><hr>
 
 
-    <form method="post" class="col-md-6 mx-auto text-center border rounded-lg mb-5" style= "min-height : 300px" action="">
-
-    <div class="form-group col-md-6 mx-auto text-center mt-4">
-
-  <label for="emailPseudo">Email ou Pseudo</label>
-  <input type="text" class="form-control" id="emailPseudo" placeholder="Email" name="email" value="<?php if(isset($email)) echo $email; ?>">
-  <?php if(isset($erreurEmail)) echo $erreurEmail; ?>
-</div>
-
-<div class="form-group col-md-6 mx-auto text-center">
-  
-  <label for="mdp">Mot de passe</label>
-  <input type="text" class="form-control" id="mdp" placeholder="Mot de passe" name="mdp">
-  <?php if(isset($erreurMdp)) echo $erreurMdp; ?>
-  
-</div>
-
-<button type="submit" class=" col-md-3 text-center mx-auto btn hvr-bounce-to-right border border-dark"><b>Identifiez vous !</b></button><br>
-
+<form method="post" class="col-md-4 mx-auto">
+    <div class="form-group">
+        <label for="pseudoEmail">Pseudo ou Email</label>
+        <input type="text" class="form-control" id="pseudoEmail" name="pseudoEmail" aria-describedby="emailHelp" placeholder="Enter email or Pseudo">
+        <?php if(isset($erreurPseudoEmail)) echo $erreurPseudoEmail; ?>
+    </div>
+    <div class="form-group">
+        <label for="mdp">Mot de passe</label>
+        <input type="password" class="form-control" id="mdp" name="mdp" placeholder="Password">
+        <?php if(isset($erreurMdp)) echo $erreurMdp; ?>
+    </div>
+    <button type="submit" class="col-md-12 btn btn-info">Connexion</button>
 </form>
-<?php require_once('include/footer.php'); ?>;
+
+<?php 
+require_once('../include/footer.php');
+?>

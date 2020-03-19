@@ -29,10 +29,6 @@
             justify-content: center;
         }
 
-        .imgligne3 {
-            height: 45vh;
-        }
-
         p {
             font-size: 1.3em;
             font-family: 'Red Hat Display', serif;
@@ -115,7 +111,7 @@
 
             .imgligne2 .titre2 .titre3 .text2 .bg {
                 width: 100%;
-                font-size: 2.5rem;
+                font-size: 0.8rem;
                 font-family: 'Red Hat Display', serif;
                 font-weight: 800px;
             }
@@ -130,18 +126,18 @@
             }
 
             p {
-                font-size: 1.3em;
+                font-size: 0.8em;
                 font-family: 'Red Hat Display', serif;
-                width: 80%;
+                width: 98%;
                 margin: 0 auto 5vh;
             }
         }
     </style>
 <div class="container-fluid">
     <div class="imgligne1">
-        <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1" src="include/img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
     </div>
     <div class="bg">
         <h1 class="titr1">3D</h1>
@@ -170,8 +166,8 @@
 
     <div class="bg" style="background-color: rgba(255, 242, 0, 0.5);" id="desinfection">
         <div class="imgligne2">
-            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
-            <img class="img2" src="include/img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2 img-fluid" src="img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2 img-fluid" src="img/nettoyagemaq.png" width="50%" href="#">
         </div>
 
         <h2 class="titr1">3D</h2>
@@ -199,7 +195,7 @@
     </div>
 
     <div class="bg" id="desinsectisation">
-        <img class="imgligne3" src="include/img/produitsboutiquemaq.png" height="100%" width="100%" alt="">
+        <img class="imgligne3 img-fluid" src="img/produitsboutiquemaq.png" width="100%" alt="">
 
         <h2 class="titr1">3D</h2>
         <p class="text-justify">
