@@ -557,7 +557,7 @@
         }
         
         .radbox {
-            height: 22vh;
+            height: 30vh;
         }
         
         .test {
@@ -751,9 +751,15 @@
         }
         
         .radbox {
-            height: 18vh !important;
-            display: flex;
+            height: 40vh;
         }
+
+        .put1 {
+            width: 33%;
+            height: 6vh;
+            margin-top: 7vh;
+        }
+
         .test {
             display: flex;
             flex-direction: column;
@@ -936,7 +942,7 @@
     }
 
     .radbox {
-        height: 22vh;
+        height: 25vh;
     }
 
     .test {
