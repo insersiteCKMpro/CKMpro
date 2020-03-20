@@ -68,7 +68,6 @@
 
     .radbox {
         height: 15vh;
-        display: flex;
     }
 
     .labe {
@@ -558,9 +557,9 @@
         }
         
         .radbox {
-            height: 15vh;
-            display: flex;
+            height: 22vh;
         }
+        
         .test {
             display: flex;
             flex-direction: column;
@@ -604,7 +603,8 @@
         }
 
         .labe {
-            width: 25%;
+            width: 100%;
+            margin-bottom: 2vh;
         }
 
         .star {
@@ -741,8 +741,7 @@
             flex-direction: column;
         }
         .radbox {
-            height: 18vh !important;
-            display: flex;
+            height: 22vh;
         }
     }
 
@@ -930,10 +929,14 @@
         }
     }
 
-    @media (min-height: 700px) and (max-height: 1400px) {
+    @media (min-height: 600px) and (max-height: 800px) {
     p {
         margin-top: 2vh;
         margin-bottom: 1rem;
+    }
+
+    .radbox {
+        height: 22vh;
     }
 
     .test {
@@ -992,8 +995,7 @@
     }
 
     .radbox {
-        height: 15vh;
-        display: flex;
+        height: 22vh;
     }
 
     .labe {

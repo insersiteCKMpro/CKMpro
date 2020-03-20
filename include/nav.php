@@ -69,6 +69,12 @@
   /*-------------------------------------------responsive nav ecran pc--------------------*/
   @media screen and (min-width: 769px) and (max-width: 2560px) {
 
+    .textMenu {
+      margin-bottom: 0;
+      text-align: center;
+      display: none;
+    }
+
     /* HOVER LIENS */
     .colorJ:hover {
       background-color: #fef200;
@@ -117,6 +123,12 @@
 
   /*----------------------responsive tablette nav---------------------------------------*/
   @media screen and (min-width: 451px) and (max-width: 768px) {
+
+    .textMenu {
+      margin-bottom: 0;
+      text-align: center;
+      display: none;
+    }
 
     .logo {
       height: 18vh;
@@ -200,12 +212,13 @@
     }
   }
 
-  @media screen and (min-height: 320px) and (max-height: 370px) {
+  @media screen and (min-height: 320px) and (max-height: 359px) {
 
   /* MENU BURGER */
   .textMenu {
     margin-bottom: 0;
-    text-align: center;
+    text-align: center;    
+    display: block;
   }
 
   .fa-bars {
@@ -295,9 +308,17 @@
 }
 }
 
-@media screen and (min-height: 371px) and (max-height: 400px){
+@media screen and (min-height: 360px) and (max-height: 400px){
   .textMenu {
     display: none;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+    font-size: large;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+    font-size: large;
   }
 }
 
