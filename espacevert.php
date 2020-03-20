@@ -31,9 +31,6 @@
 
         .text-center1{
             text-align: justify!important;
-        }
-
-        p {
             font-size: 1.1em;
             font-family: 'Red Hat Display', serif;
             width: 75%;
@@ -90,6 +87,10 @@
 
             .text-center1{
                 text-align: center!important;
+                font-size: 1.2em;
+                font-family: 'Red Hat Display', serif;
+                width: 80%;
+                margin: 0 auto 5vh;
             }
 
             .bg {
@@ -99,13 +100,6 @@
 
             .imgligne2 {
                 width: 100%;
-            }
-
-            p {
-                font-size: 1.2em;
-                font-family: 'Red Hat Display', serif;
-                width: 80%;
-                margin: 0 auto 5vh;
             }
         }
 
@@ -135,17 +129,14 @@
 
             .text-center1{
                 text-align: center!important;
-            }
-
-            .imgligne2 {
-                width: 100%;
-            }
-
-            p {
                 font-size: 1.2em;
                 font-family: 'Red Hat Display', serif;
                 width: 90%;
                 margin: 0 auto 5vh;
+            }
+
+            .imgligne2 {
+                width: 100%;
             }
         }
     </style>

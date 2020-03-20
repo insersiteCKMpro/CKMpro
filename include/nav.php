@@ -35,14 +35,12 @@
   }
 
   /* LOGO HOME STYLE */
-  #tailleLi 
-  {
+  #tailleLi {
     height: 5vh;
     width: 7%;
   }
 
-  #tailleA 
-  {
+  #tailleA {
     width: 100%;
   }
 
@@ -57,8 +55,8 @@
   }
 
   .bg-transparent {
-      background-color: transparent!important;
-      display: block;
+    background-color: transparent !important;
+    display: block;
   }
 
   /* DROPDOWN MENU */
@@ -123,14 +121,17 @@
     .logo {
       height: 18vh;
     }
+
     /* logo navbar */
     .logoHome {
       width: 6vw;
       position: relative;
       top: 0vh;
     }
-    #tailleA 
-    {
+
+    
+
+    #tailleA {
       width: 100%;
       margin-top: -1vh;
     }
@@ -159,8 +160,7 @@
       color: black;
     }
 
-    #tailleLi 
-    {
+    #tailleLi {
       width: 12%;
     }
 
@@ -190,25 +190,128 @@
       margin: 0;
       height: 1vh;
     }
+
+    .burg {
+      margin: 0 auto;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
+
+  @media screen and (min-height: 320px) and (max-height: 370px) {
+
+  /* MENU BURGER */
+  .textMenu {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .fa-bars {
+    color: black;
+  }
+
+  #tailleLi {
+    height: 15vh;
+    width: 7%;
+  }
+
+  .nav-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
+
+  .navbar-dark .navbar-nav .active>.nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show>.nav-link {
+    text-align: center;
+  }
+
+  .navbar-nav .dropdown-menu {
+    text-align: center;
+    font-family: 'Red Hat Display', serif;
+  }
+
   .burg {
-    margin: 0 auto;
     width: 30%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
+  }
 }
 
-  @media (min-width: 576px) {
-    .textMenu {
-      display: none;
-    }
+@media screen and (min-height: 400px) and (max-height: 450px) {
 
-    .navbar-expand-sm .navbar-nav .nav-link {
-      padding-right: 0rem;
-      padding-left: .5rem;
-    }
+/* MENU BURGER */
+.textMenu {
+  margin-bottom: 0;
+  text-align: center;
+  display:none;
+}
+
+.fa-bars {
+  color: black;
+}
+
+#tailleLi {
+  height: 15vh;
+  width: 7%;
+}
+
+.nav-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link {
+  margin: 0;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+  text-align: center;
+}
+
+.navbar-nav .dropdown-menu {
+  text-align: center;
+  font-family: 'Red Hat Display', serif;
+}
+
+.burg {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+}
+
+@media screen and (min-height: 371px) and (max-height: 400px){
+  .textMenu {
+    display: none;
   }
+}
+
+@media screen and (min-height: 737px) and (max-height: 800px){
+  .textMenu {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 851px) and (max-height: 1400px){
+  .textMenu {
+    display: none;
+  }
+}
 </style>
 
 <body>

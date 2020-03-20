@@ -37,12 +37,10 @@
     }
 
     .logo {
-      /*margin-top: 2.5em;*/
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 18vh;
     }
 
     /* LOGO TITRE STYLE */
@@ -150,12 +148,7 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
-        padding-top: 10%;
         margin-top:10vh;
-      }
-      
-      .logo{
-        height: 25vh;
       }
 
       /* Bouton téléphone  */
@@ -215,11 +208,102 @@
 
     }
 
-    /* ----------------------------------------------------------*/
-    @media (min-width: 576px) {
-      .textMenu {
-        display: none;
+    @media screen and (max-height: 450px) {
+      .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .text-center{
+        margin: 0;
+      }
+
+      /* ENTÊTE FIXE STYLE */
+      .fixed-top {
+        float: right !important;
+        font-size: 1.2em;
         font-family: 'Red Hat Display', serif;
+        display: none;
+      }
+
+      .logo{
+        height: 30vh !important;
+      }
+
+      /* ICONE TEL ENTÊTE FIXE STYLE */
+      #fas 
+      {
+        display: none;
+      }
+
+      /* NUMERO */
+      #num 
+      {
+        display: none;
+      }
+
+      /* LOGO STYLE */
+      .logoTitre {
+        width: 50%;
+        margin: 10vh auto 0;
+        display: flex;
+      }
+
+      /* Bouton téléphone  */
+      .boutonTel {
+        width: 13vh;
+        height: 13vh;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        right: 80px;
+        top: 1vh;
+      }
+
+      /* Bouton boutique  */
+      .boutonbtq {
+        width: 13vh;
+        height: 13vh;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        right: 10px;
+        top: 1vh;
+      }
+
+      #lienTel,
+      #lienBtq 
+      {
+        color: black;
+        text-decoration: none;
+        background-color: transparent;
+      }
+
+      #iconTel,
+      #iconBtq 
+      {
+        font-size: 1.5em;
+        display: block;
+      }
+
+      .fa-phone-alt:before {
+        content: "\f879";
+      }
+      
+      .logoHome {
+        padding-bottom: 20%;
       }
 
     }

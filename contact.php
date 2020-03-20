@@ -13,12 +13,11 @@
     }
 
     .test {
-        height: 120vh;
+        margin-bottom: 3vh;
         display: flex;
     }
     .contac1 {
         text-align: center!important;
-
         margin: 0 2vh;
 
     }
@@ -29,8 +28,6 @@
     }
 
     .test2 {
-
-
         display: flex;
         width: 30%;
     }
@@ -43,7 +40,6 @@
     .num {
         margin: 0 7vh;
         width: 75%;
-        height: 10vh;
     }
 
     .traits1 {
@@ -182,9 +178,6 @@
     /**********************************format pc responsive------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
-
-            height: 120vh;
-
             display: flex;
         }
 
@@ -196,19 +189,16 @@
         .test2 {
             width: 27%;
             display: flex;
-            height: 108vh;
         }
 
         .titrec {
             width: 100%;
-            height: 40vh;
             margin: 2vh 0;
         }
 
         .num {
             margin: 3vh 5vh;
             width: 75%;
-            height: 10vh;
         }
 
         .traits1 {
@@ -372,10 +362,8 @@
         }
 
         .test {
-            height: 140vh;
             display: flex;
             flex-direction: column;
-
         }
 
         .titrre {
@@ -387,7 +375,6 @@
         .test2 {
             width: 62%;
             display: flex;
-            height: 17vh;
             margin: 2vh auto;
 
         }
@@ -395,7 +382,6 @@
         .num {
             margin: auto;
             width: 75%;
-            height: 10vh;
         }
 
         .traits1 {
@@ -576,7 +562,6 @@
             display: flex;
         }
         .test {
-            height: 132vh;
             display: flex;
             flex-direction: column;
         }
@@ -589,7 +574,6 @@
         .test2 {
             width: 100%;
             display: flex;
-            height: 17vh;
         }
 
         .titrec {
@@ -617,7 +601,6 @@
         .num {
             margin: auto;
             width: 75%;
-            height: 10vh;
         }
 
         .labe {
@@ -632,7 +615,7 @@
 
         .for {
             width: 90%;
-            margin: 1vh auto;
+            margin: 5vh auto;
         }
 
         form {
@@ -663,7 +646,7 @@
         }
 
         .btn {
-            width: 50%;
+            width: 30%;
             margin: auto;
         }
 
@@ -751,45 +734,395 @@
             border-color: #00a651;
             background-color: #00a651;
         }
+    }
+    @media (min-height: 801px) and (max-height: 820px){
+        .test {
+            display: flex;
+            flex-direction: column;
+        }
+        .radbox {
+            height: 18vh !important;
+            display: flex;
+        }
+    }
 
-        /* Format iphone 6, 7, 8+ */
-        @media (max-width: 414px) {
-            .test {
-                height: 155vh;
-                display: flex;
-                flex-direction: column;
-            }
-            .radbox {
-                height: 18vh !important;
-                display: flex;
-            }
-        }
-        /* Format iphone 6, 7, 8 */
-        @media (max-width: 375px) {
-            .test {
-                height: 168vh;
-                display: flex;
-                flex-direction: column;
-            }
-            .radbox {
-                height: 18vh !important;
-                display: flex;
-            }
-        }
-        @media screen and (min-height: 800px) and (max-height: 820px){
-            .test {
-                height: 145vh;
-                display: flex;
-                flex-direction: column;
-            }
-            .radbox {
-                height: 18vh !important;
-                display: flex;
-            }
+    @media (max-height: 425px) {
+        p {
+            margin: auto;
         }
         
+        .radbox {
+            height: 18vh !important;
+            display: flex;
+        }
+        .test {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text-center {
+            text-align: center!important;
+            margin-bottom: 2vh;
+        }
+
+        .test2 {
+            width: 100%;
+            display: flex;
+        }
+
+        .titrec {
+            text-align: center;
+        }
+
+        .titrre {
+            text-align: center;
+            margin: 2vh;
+        }
+
+        .traits1 {
+            display: none;
+        }
+
+        .traits2 {
+            width: 85%;
+            border-top: 1px solid #000;
+            margin: auto;
+            height: 0.5vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .num {
+            margin: 5vh auto;
+            width: 75%;
+        }
+
+        .labe {
+            width: 25%;
+        }
+
+        .star {
+            display: initial;
+            width: 75%;
+            height: 15vh;
+        }
+
+        .for {
+            width: 90%;
+            margin: 8vh auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .checkio {
+            width: 100%;
+            height: 4vh;
+            display: flex;
+        }
+
+        .checkio1 {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+        }
+
+        .put {
+            width: 33.3%;
+            height: 2vh;
+        }
+
+        .put1 {
+            width: 33.3%;
+            height: 6vh;
+        }
+
+        .btn {
+            width: 30%;
+            margin: auto;
+        }
+
+        /* animation bouton */
+
+        .hvr-bounce-to-right {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: red;
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+
+        }
+
+        .hvr-bounce-to-right:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #00a651;
+            /* regler couleur de l'animation */
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+            /* regler vitesse animation */
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            background-color: none;
+        }
+
+        .hvr-bounce-to-right:hover,
+        .hvr-bounce-to-right:focus,
+        .hvr-bounce-to-right:active {
+            color: white;
+            /* changer couleur du text dans l'animation */
+            background: none;
+            /* changer couleur background en dessous de l'animation */
+
+        }
+
+        .hvr-bounce-to-right:hover:before,
+        .hvr-bounce-to-right:focus:before,
+        .hvr-bounce-to-right:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            background-color: none;
+        }
+
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
+            color: #fff200;
+            border-color: #fff200;
+            background-color: #fff200;
+        }
+
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
+            color: #00aeef;
+            border-color: #00aeef;
+            background-color: #00aeef;
+        }
+
+
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
+            color: #00a651;
+            border-color: #00a651;
+            background-color: #00a651;
+        }
     }
-    
+
+    @media (min-height: 700px) and (max-height: 1400px) {
+    p {
+        margin-top: 2vh;
+        margin-bottom: 1rem;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titrre {
+        text-align: center;
+
+        margin-top: 2vh;
+    }
+
+    .test2 {
+        width: 62%;
+        display: flex;
+        margin: 2vh auto 0 auto;
+
+    }
+
+    .num {
+        margin: 3vh auto;
+        width: 75%;
+    }
+
+    .traits1 {
+        display: none;
+    }
+
+    .traits2 {
+        width: 100%;
+        border-top: 1px solid #000;
+        height: 0.5vh;
+        align-items: center;
+        display: flex;
+    }
+    .text-center {
+        margin: 0;
+    }
+
+    .titrec {
+        text-align: center;
+    }
+
+    .traitori {
+        background-color: black;
+        height: 2px;
+    }
+    .for {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .espace {
+        margin-top: 5px;
+    }
+
+    .radbox {
+        height: 15vh;
+        display: flex;
+    }
+
+    .labe {
+        width: 25%;
+    }
+
+    .star {
+        display: initial;
+        width: 75%;
+        height: 15vh;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkio {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+    }
+
+    .checkio1 {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+    }
+
+    #customControlValidation1:checked~.custom-control-label::before 
+    {
+        color: #fff200;
+        border-color: #fff200;
+        background-color: #fff200;
+    }
+
+    #customControlValidation2:checked~.custom-control-label::before 
+    {
+        color: #00aeef;
+        border-color: #00aeef;
+        background-color: #00aeef;
+    }
+
+    #customControlValidation3:checked~.custom-control-label::before 
+    {
+        color: #00a651;
+        border-color: #00a651;
+        background-color: #00a651;
+    }
+
+    .put {
+        width: 33.3%;
+        height: 2vh;
+    }
+
+    .put1 {
+        width: 33%;
+        height: 6vh;
+        margin-top: 1vh;
+    }
+
+    .btn {
+        margin: auto;
+        width: 40%;
+    }
+
+    /* animation bouton */
+
+    .hvr-bounce-to-right {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: red;
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+
+    }
+
+    .hvr-bounce-to-right:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00a651;
+        /* regler couleur de l'animation */
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 1.5s;
+        transition-duration: 1.5s;
+        /* regler vitesse animation */
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        background-color: none;
+    }
+
+    .hvr-bounce-to-right:hover,
+    .hvr-bounce-to-right:focus,
+    .hvr-bounce-to-right:active {
+        color: white;
+        /* changer couleur du text dans l'animation */
+        background: none;
+        /* changer couleur background en dessous de l'animation */
+
+    }
+
+    .hvr-bounce-to-right:hover:before,
+    .hvr-bounce-to-right:focus:before,
+    .hvr-bounce-to-right:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        background-color: none;
+    }
+}
 </style>
 
 </head>

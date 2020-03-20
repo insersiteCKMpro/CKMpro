@@ -147,10 +147,30 @@ if (($this->error->getCode()) == '404') {
                 margin: auto;
                 position: absolute !important;
                 z-index: 1;
-                top: 33vh;
+                top: 41vh;
                 left: 28%;
             }
         }
+        @media screen and (min-height: 320px) and (max-height: 425px){
+            video{
+                height:70vh;
+            }
+            
+            .click {
+                display: flex !important;
+                width: 27%;
+                margin: 30vh 0 auto ;
+            }
+        }
+
+        @media screen and (min-height: 700px) and (max-height: 800px){            
+            .click {
+                display: flex !important;
+                width: 27%;
+                margin: 5vh 0 auto ;
+            }
+        }
+        
         
     </style>
 </head>
