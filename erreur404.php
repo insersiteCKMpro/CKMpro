@@ -17,7 +17,7 @@ if (($this->error->getCode()) == '404') {
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         
-        .click {
+        /* .click {
             display: flex !important;
             width: 14%;
             margin: auto;
@@ -25,7 +25,7 @@ if (($this->error->getCode()) == '404') {
             z-index: 1;
             top: 80vh;
             left: 42%;
-        }
+        } */
         .btn
         {
             border: 3px solid black;
@@ -151,23 +151,118 @@ if (($this->error->getCode()) == '404') {
                 left: 28%;
             }
         }
-        @media screen and (min-height: 320px) and (max-height: 425px){
+        @media screen and (min-height: 320px) and (max-height: 369px){
+            video{
+                height:35vh;
+            }
+            
+            .click {
+                display: flex !important;
+                width: 30%;
+                margin: 44vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 30vh;
+                left: 35%;
+            }
+        }
+        @media screen and (min-height: 370px) and (max-height: 425px){
             video{
                 height:70vh;
             }
             
             .click {
                 display: flex !important;
-                width: 27%;
-                margin: 30vh 0 auto ;
+                width: 30%;
+                margin: 30vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 55vh;
+                left: 38.5%;
             }
         }
 
-        @media screen and (min-height: 700px) and (max-height: 800px){            
+        @media screen and (min-height: 426px) and (max-height: 599px){
+            video{
+                height:35vh;
+            }
+            
             .click {
                 display: flex !important;
-                width: 27%;
-                margin: 5vh 0 auto ;
+                width: 43.5%;
+                margin: 16vh auto ;
+            }
+        }
+
+        @media screen and (min-height: 600px) and (max-height: 650px){            
+            .click {
+                display: flex !important;
+                width: 44%;
+                margin: 10vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 40vh;
+                left: 28%;
+            }
+        }
+
+        @media screen and (min-height: 651px) and (max-height: 699px){            
+            .click {
+                display: flex !important;
+                width: 44%;
+                margin: 10vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 30vh;
+                left: 28%;
+            }
+        }
+
+        @media screen and (min-height: 700px) and (max-height: 769px){            
+            .click {
+                display: flex !important;
+                width: 44%;
+                margin: 10vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 54vh;
+                left: 41%;
+            }
+        }
+
+        @media screen and (min-height: 770px) and (max-height: 839px){            
+            .click {
+                display: flex !important;
+                width: 44%;
+                margin: 10vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 30vh;
+                left: 28%;
+            }
+        }
+
+        @media screen and (min-height: 840px) and (max-height: 1024px){            
+            .click {
+                display: flex !important;
+                width: 44%;
+                margin: 10vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 55vh;
+                left: 44%;
+            }
+        }
+
+        @media screen and (min-height: 1025px) and (max-height: 1400px){            
+            .click {
+                display: flex !important;
+                width: 44%;
+                margin: 10vh auto ;
+                position: absolute;
+                z-index: 1;
+                top: 27vh;
+                left: 40.5%;
             }
         }
         
