@@ -140,7 +140,7 @@ body
   ?>
   <div class="list-group ">
 
-  <?php while($galerie = $galDOStatement->fetch(PDO::FETCH_ASSOC)):
+  <?php while($galerie = $galPDOStatement->fetch(PDO::FETCH_ASSOC)):
  
  ?>
 

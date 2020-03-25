@@ -473,20 +473,20 @@
   <div class="container-fluid">
     <div class="IMGHAUT">
     <div class="emplacement1">
-      <a href='#'><img class="img-1"  onclick="openModal();currentSlide(1)" class="hover-shadow imgg1" >
+      <a href='#'><img src="<?= $galerie['galerie']?>" class="img-1" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1" >
     </div>
     </div>
     <div class="IMGMILIEU">
       <div class="emplacement2">
-        <a href="#"><img class="img-2" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+        <a href="#"><img src="" class="img-2" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
       </div>
       <div class="emplacement3">
-      <a href="#"><img class="img-3" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+      <a href="#"><img src="" class="img-3" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
       </div>
     </div>
     <div class="IMGBAS">
       <div class="emplacement4">
-      <a href="#"><img class="img-4" onclick="openModal();currentSlide(1)" class="hover-shadow imgg4">
+      <a href="#"><img src="" class="img-4" onclick="openModal();currentSlide(1)" class="hover-shadow imgg4">
       </div>
     </div>
 
@@ -559,8 +559,9 @@ else // Sinon si l'indice categorie n'est pas presente dans l'url, au premier ch
     $data = $bdd->prepare("SELECT * FROM galerie_img");
     //echo '<pre>';print_r($data);echo '</pre>';
 }
+echo '<pre>';print_r($galerie);echo '</pre>';
 $data->execute();
-
+echo '<pre>';print_r($galerie);echo '</pre>';
 ?>
 <?php while($galerie =$data->fetch(PDO::FETCH_ASSOC)):?>
 
@@ -568,23 +569,23 @@ $data->execute();
 <div class="col-lg-4 col-md-6 mb-4">
 
     <div class="IMGHAUT">
-      <div class="emplacement1"><?= $galerie          ['emplacement'] . '1'?>
-          <a href="#"><img class="img1" src="<?= $galerie['photo']?>" alt=""></a>
+      <div class="emplacement1"><?= $galerie['emplacement'] . '1'?>
+          <a href="#"><img class="img1" src="<?= $galerie['galerie']?>" alt=""></a>
         </div>
     </div>  
 
       <div class="IMGMILIEU">
-        <div class="emplacement2"><?= $galerie         ['emplacement'] . '2'?>
+        <div class="emplacement2"><?= $galerie['emplacement'] . '2'?>
           <a href="#"><img class="img2" src="<?= $galerie['photo']?>" alt=""></a>
         </div>
       
-        <div class="emplacement3"><?= $galerie         ['emplacement'] . '3'?>
+        <div class="emplacement3"><?= $galerie['emplacement'] . '3'?>
           <a href="#"><img class="img3" src="<?= $galerie['photo']?>" alt=""></a>
         </div>
       </div>
 
       <div class="IMBAS">
-      <div class="emplacement4"><?= $galerie          ['emplacement'] . '4'?>
+      <div class="emplacement4"><?= $galerie['emplacement'] . '4'?>
           <a href="#"><img class="img4" src="<?= $galerie['photo']?>" alt=""></a>
         </div>
     </div> 
