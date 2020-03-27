@@ -1,6 +1,5 @@
 <html>
 <?php 
-    require_once('include/init.php');
     require_once("include/header.php");
     require_once("include/nav.php");
 ?>
@@ -453,40 +452,24 @@
   }
 </style>
 
-
 <section>
-
-<?php
-  $galPDOStatement = $bdd->query("SELECT DISTINCT galerie FROM galerie_img");
-  ?>
-  <div class="list-group ">
-
-  <?php while($galerie = $galPDOStatement->fetch(PDO::FETCH_ASSOC)):
-  //echo '<pre>';print_r($category);echo '</pre>';
-  ?>
-
-    <a href="?galerie=<?= $galerie['galerie']?>" class="list-group-item"><?= $galerie['galerie']?></a><br>
-
-  <?php endwhile; ?>
-  </div>
-  
   <div class="container-fluid">
-    <div class="IMGHAUT">
-    <div class="emplacement1">
-      <a href='#'><img src="<?= $galerie['galerie']?>" class="img-1" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1" >
-    </div>
-    </div>
-    <div class="IMGMILIEU">
-      <div class="emplacement2">
-        <a href="#"><img src="" class="img-2" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+    <div class="colon1">
+      <div class="colum">
+        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
+        <div class="colon2">
+          <div class="colum">
+            <img src="img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+          </div>
+          <div class="colum">
+            <img src="img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+          </div>
+        </div>
       </div>
-      <div class="emplacement3">
-      <a href="#"><img src="" class="img-3" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
-      </div>
     </div>
-    <div class="IMGBAS">
-      <div class="emplacement4">
-      <a href="#"><img src="" class="img-4" onclick="openModal();currentSlide(1)" class="hover-shadow imgg4">
+    <div class="colon1">
+      <div class="colum">
+        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg4">
       </div>
     </div>
 
@@ -497,22 +480,22 @@
 
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="img1" class="mySlides1">
+          <img src="img/3d-galerie-1.png" class="mySlides1">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="img2" class="mySlides2">
+          <img src="img/3d-galerie-2.png" class="mySlides2">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="img3" class="mySlides3">
+          <img src="img/3d-galerie-3.png" class="mySlides3">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="img4" class="mySlides4">
+          <img src="img/3d-galerie-4.png" class="mySlides4">
         </div>
 
         <!-- Next/previous controls -->
@@ -527,75 +510,25 @@
         <!-- Thumbnail image controls -->
         <div class="row">
           <div class="column">
-            <img class="demo1" src="img1" onclick="currentSlide(1)" alt="Bonhomme">
+            <img class="demo1" src="img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
           </div>
 
           <div class="column">
-            <img class="demo2" src="img2" onclick="currentSlide(2)" alt="Rat">
+            <img class="demo2" src="img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
           </div>
 
           <div class="column">
-            <img class="demo3" src="img3" onclick="currentSlide(3)" alt="Spray">
+            <img class="demo3" src="img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
           </div>
 
           <div class="column">
-            <img class="demo4" src="img4" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo4" src="img3d-galerie-1.png" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-<?php
-// Si l'indice categorie est definit dans l'URL, cela veut dire que l'utilisateur a cliqué sur un lien d'une categorie,donc on selectionne tout les produits lies a la categorie dans l4URL
-if(isset($_GET['galerie']))
-{
-    $data =$bdd->prepare("SELECT * FROM galerie_img WHERE galerie = :galerie");
-    $data->bindValue(':galerie',$_GET['galerie'], PDO::PARAM_STR);
-}
-else // Sinon si l'indice categorie n'est pas presente dans l'url, au premier chargement de l apage l'utilsateur n'a cliquer sur aucun lien categorie, on selectionne touts les produits
-{
-    $data = $bdd->prepare("SELECT * FROM galerie_img");
-    //echo '<pre>';print_r($data);echo '</pre>';
-}
-echo '<pre>';print_r($galerie);echo '</pre>';
-$data->execute();
-echo '<pre>';print_r($galerie);echo '</pre>';
-?>
-<?php while($galerie =$data->fetch(PDO::FETCH_ASSOC)):?>
-
-
-<div class="col-lg-4 col-md-6 mb-4">
-
-    <div class="IMGHAUT">
-      <div class="emplacement1"><?= $galerie['emplacement'] . '1'?>
-          <a href="#"><img class="img1" src="<?= $galerie['galerie']?>" alt=""></a>
-        </div>
-    </div>  
-
-      <div class="IMGMILIEU">
-        <div class="emplacement2"><?= $galerie['emplacement'] . '2'?>
-          <a href="#"><img class="img2" src="<?= $galerie['photo']?>" alt=""></a>
-        </div>
-      
-        <div class="emplacement3"><?= $galerie['emplacement'] . '3'?>
-          <a href="#"><img class="img3" src="<?= $galerie['photo']?>" alt=""></a>
-        </div>
-      </div>
-
-      <div class="IMBAS">
-      <div class="emplacement4"><?= $galerie['emplacement'] . '4'?>
-          <a href="#"><img class="img4" src="<?= $galerie['photo']?>" alt=""></a>
-        </div>
-    </div> 
-</div>
-
-
-  </div>
-</div>
-
-<?php endwhile; ?>
 <script>
   // Open the Modal
   function openModal() {

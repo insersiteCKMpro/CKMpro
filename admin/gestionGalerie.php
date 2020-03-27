@@ -4,8 +4,8 @@ require_once('../include/init.php');
 extract($_POST);
 extract($_GET);
 
-// echo '<pre>'; print_r($_POST);echo'<pre>';
-// echo '<pre>'; print_r($_GET);echo'<pre>';
+//echo '<pre>'; print_r($_POST);echo'<pre>';
+//echo '<pre>'; print_r($_GET);echo'<pre>';
 
 
 
@@ -22,8 +22,8 @@ if(isset($_GET['action']) &&  $_GET['action'] == 'suppression')
 
     $_GET['action'] ='affichage'; // valeur de l'indice action pour rediriger sur affichage image
 
-    $validDelete ='<div class="col-md-6 mx-auto alert alert-danger text-center">
-    La photo de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
+    $validDelete ='<div class="col-md-6 mx-auto alert alert-success text-center">
+    La photo <strong>' . $ref['emplacement'] . '</strong> de la galerie <strong>' . $ref['galerie'] . '</strong> a bien été supprimé !!</strong></div>';
 }
 //--------------------------ENREGISTREMENT PHOTO
 if($_POST)
@@ -36,7 +36,7 @@ if($_POST)
     if(!empty($_FILES['photo']['name']))
     {
         // on concatene la reference saisie dans le formulaire avec le nom de la photo recupere dans la superglobale $_FILES
-        $nom_photo = $_POST['galerie'].'-'.  $_FILES['photo']['name'];
+        $nom_photo = $_POST['galerie'] .'-'.  $_FILES['photo']['name'];
         //echo $nom_photo . '<hr>';
 
         // On definit l'URL de la photo jusqu'au dossier 'photo' sur le serveur, c'est ce que l'on enregistrera dans la BDD
@@ -66,7 +66,7 @@ if($_POST)
 
             $_GET['action'] ='affichage'; // quand on supprime on reste sur la page
             
-            $validModif='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
+            $validDelete='<div class="col-md-4 mx-auto alert alert-success text-center"> La photo  <strong>' . $_POST['galerie'] . '</strong> a bien été modifié !!</strong></div>';
         }
         $data->bindValue(':photo' , $photo_bdd, PDO::PARAM_STR);
 
@@ -75,7 +75,7 @@ if($_POST)
         $data->bindValue(':emplacement' , $_POST['emplacement'], PDO::PARAM_INT);
     
         $data->execute();
-    
+       
 }
 
 require_once('../include/header.php');
@@ -87,7 +87,7 @@ require_once('../include/header.php');
 </ul>
 
 
-<!---------------------------------AFFICHAGE PRODUIT----------------------------->
+<!---------------AFFICHAGE PRODUIT----------------------------->
 <?php
 
 if(isset($_GET['action']) && $_GET['action'] == 'affichage')
@@ -96,7 +96,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'affichage')
 $resultat = $bdd->query("SELECT * FROM galerie_img");
 
 echo '<h1 class="display-4 text-center mt-3">Affichage des photos</h1><hr>';
-if(isset($validModif)) echo $validModif;
+
 if(isset($validDelete)) echo $validDelete;  
 if(isset($validInsert)) echo $validInsert;
 
@@ -163,18 +163,10 @@ $emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'
     <form method="post" enctype="multipart/form-data" class="col-md-3 mx-auto rounded border border-dark">
 
         <div class="form-group col-md-9 text-center mx-auto">
-
-            <label for="public">Photo</label>
-
-            <input type="hidden" class="custom-file_imput  mx-auto border" id="photo" name="photo_actuel" value="<?= $photo ?>">
-
-            <input type="file" class="custom-file_imput  mx-auto border" id="photo" name="photo" value="<?= $photo ?>" >
-
-            <?php if(isset($erreurPhoto)) echo $erreurPhoto; ?>
-            
+            <label for="photo">Photo</label>
+            <input type="file" class="custom-file mx-auto border" id="photo" name="photo" value="">
+            <input type="hidden" class="custom-file mx-auto border" id="photo" name="photo_actuel" value="<?=$photo?>">
         </div>
-
-        <input type="hidden" name="photoActuelle" id="photoActuelle" value=" <?= $photo ?>">
 
         <?php if(!empty($photo)): ?>
         <em>Vous pouvez uploader une nouvelle photo si vous shouaitez la changer</em><br>
@@ -182,7 +174,7 @@ $emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'
         <?php endif; ?>
 
             <div class="form-group col-md-6 mx-auto text-center mt-3">
-                <label for="galerie">Galerie photo :</label>
+                <label for="galerie">Galerie</label>
                 <select id="galerie" class="form-control col-md-5 mx-auto text-center" name="galerie" placeholder="Entrer Galerie" value="<?=$galerie?>">
                     <option value="3D"<?php if ($galerie == '3D') echo 'selected' ?>>3D</option>
                     <option value="NET"<?php if ($galerie == 'NET') echo 'selected' ?>>NET</option>
@@ -193,7 +185,7 @@ $emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'
                 </select>
             </div>
             <div class="form-group col-md-11 mx-auto text-center mt-3">
-                <label for="emplacement">Emplacement photo : </label>
+                <label for="emplacement">Position de l'image : </label>
                 <select id="emplacement" class="custom-select form-control col-md-5 mx-auto text-center" name="emplacement" value="<?=$emplacement?>">
                     <option value="1"<?php if ($emplacement == '1') echo 'selected' ?>>Emplacement 1</option>
                     <option value="2"<?php if ($emplacement == '2') echo 'selected' ?>>Emplacement 2</option>
@@ -204,11 +196,7 @@ $emplacement = (isset($emplacement['emplacement'])) ? $emplacement['emplacement'
     
         <button type="submit" class="col-md-4 mt-2 mb-3 btn btn-info mx-auto text-center">
             <?= ucfirst($_GET['action']);?> Image</button>
-            
     </form>
-
-
-
 
 </div>
 <?php endif; ?>

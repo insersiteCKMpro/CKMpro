@@ -10,38 +10,44 @@
   }
 
   /*------------------------------------------------------------------------code source---------------------------------------------------------------------*/
-  
-  .container-fluid
-  {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+  .colon1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .colon2 {
+    display: flex;
+    flex-direction: row;
+    width: 55.5%;
+    margin: auto;
+  }
+
+  .colum {
+    width: 100%;
   }
 
   .imgg1 {
-    width: 100%;
+    width: 50%;
     display: flex;
-    height:40vh;
+    margin: 3vh auto;
   }
 
   .imgg2 {
-    width: 100%;
+    width: 80%;
     display: flex;
-    height:80vh;
+    margin: 3vh auto;
   }
 
   .imgg3 {
-    width: 100%;
+    width: 80%;
     display: flex;
-    height:80vh;
+    margin: 3vh auto;
   }
 
   .imgg4 {
-    width: 100%;
+    width: 50%;
     display: flex;
     margin: 3vh auto;
-    height:40vh;
   }
 
   .demo1 {
@@ -88,7 +94,7 @@
 
   .mySlides3 {
     width: 75%;
-    height: 75vh;
+    height: 75h;
     margin: auto;
     display: flex;
   }
@@ -98,44 +104,6 @@
     height: 60vh;
     margin: 7vh auto;
     display: flex;
-  }
-  .emplacement1
-  {
-    height:40vh;
-    width:60%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .deuximages
-  {
-    display:flex;
-    width:60%;
-    height:80vh;
-    margin-top:5vh;
-    margin-bottom:5vh;
-
-  }
-  .emplacement2
-  {
-    height:80vh;
-    width:50%;
-    margin-bottom:5vh;
-    margin-right:5vh;
-  }
-  .emplacement3
-  {
-    height:80vh;
-    width:50%;
-    margin-bottom:5vh;
-  }
-  .emplacement4
-  {
-    height:40vh;
-    width:60%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
   }
 
   /*------------------------------------------------------------------------Responsive PC---------------------------------------------------------------------*/
@@ -176,14 +144,14 @@
     }
 
     .mySlides2 {
-      width: 33%;
+      width: 75%;
       height: 75vh;
       margin: auto;
       display: flex;
     }
 
     .mySlides3 {
-      width: 33%;
+      width: 75%;
       height: 75vh;
       margin: auto;
       display: flex;
@@ -195,71 +163,6 @@
       margin: 7vh auto;
       display: flex;
     }
-
-    .emplacement1
-  {
-    height:40vh;
-    width:57%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .deuximages
-  {
-    display:flex;
-    width:60%;
-    height:60vh;
-  }
-  .emplacement2
-  {
-    height:60vh;
-    width:45%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-  }
-  .emplacement3
-  {
-    height:60vh;
-    width:45%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-  }
-  .emplacement4
-  {
-    height:40vh;
-    width:57%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .imgg1 {
-    width: 100%;
-    display: flex;
-    height:40vh;
-  }
-
-  .imgg2 {
-    width: 100%;
-    display: flex;
-    height:60vh;
-  }
-
-  .imgg3 {
-    width: 100%;
-    display: flex;
-    height:60vh;
-  }
-
-  .imgg4 {
-    width: 100%;
-    display: flex;
-    margin: 3vh auto;
-    height:40vh;
-  }
   }
 
   /*------------------------------------------------------------------------Responsive Tab---------------------------------------------------------------------*/
@@ -319,88 +222,10 @@
       margin: 7vh auto;
       display: flex;
     }
-
-    .emplacement1
-  {
-    height:25vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .deuximages
-  {
-    display:flex;
-    width:97%;
-    height:60vh;
-  }
-  .emplacement2
-  {
-    height:60vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-  }
-  .emplacement3
-  {
-    height:60vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-  }
-  .emplacement4
-  {
-    height:25vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .imgg1 {
-      width: 90%;
-      display: flex;
-      margin: 3vh auto;
-      height:25vh;
-    }
-
-    .imgg2 {
-      width: 85%;
-      display: flex;
-      margin: 3vh auto;
-      height:60vh;
-    }
-
-    .imgg3 {
-      width: 86%;
-      display: flex;
-      margin: 3vh auto;
-      height:60vh;
-    }
-
-    .imgg4 {
-      width: 90%;
-      display: flex;
-      margin: 3vh auto;
-      height:25vh;
-    }
   }
 
   /*------------------------------------------------------------------------Responsive Mobil---------------------------------------------------------------------*/
   @media screen and (max-width: 450px) {
-/* menu burger */
-    .bg-transparent {
-    background-color: transparent!important;
-    display: contents;
-    }
-/* logo dans nav */
-    #tailleLi {
-    width: 25%;
-    margin-top: 1vh;
-}
 
     .colon1 {
       display: flex;
@@ -417,40 +242,29 @@
     .colum {
       width: 100%;
     }
-    .deuximages
-    {
-      display:flex;
-      flex-direction:column;
-      width: 57.5%;
-      height: 65vh;
-    }
 
     .imgg1 {
-      width: 100%;
+      width: 80%;
       display: flex;
       margin: 3vh auto;
-      height:20vh;
     }
 
     .imgg2 {
-      width: 100%;
+      width: 80%;
       display: flex;
       margin: 3vh auto;
-      height: 30vh;
     }
 
     .imgg3 {
-      width: 100%;
+      width: 80%;
       display: flex;
       margin: 3vh auto;
-      height: 30vh;
     }
 
     .imgg4 {
-      width: 100%;
+      width: 80%;
       display: flex;
       margin: 3vh auto;
-      height:20vh;
     }
 
     .demo1 {
@@ -508,50 +322,8 @@
       margin: 28vh auto;
       display: flex;
     }
+  }
 
-    .emplacement1
-  {
-    height:20vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .deuximages
-  {
-    display:flex;
-    flex-direction:space-between;
-    width:57.5%;
-    height:65vh;
-    
-  }
-  .emplacement2
-  {
-    height: 30vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .emplacement3
-  {
-    height:30vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  
-  }
-  .emplacement4
-  {
-    height:20vh;
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  }
-/* ----------------------------------------------------------- */
   .row>.column {
     padding: 0 8px;
   }
@@ -679,58 +451,51 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 </style>
-<!-- _____________________________VISUEL SUR LA PAGE----------------------------------------------------------------- -->
+
 <section>
   <div class="container-fluid">
-
-    
-      
-      <div class="emplacement1 mx-auto text-center mt-5">
-      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow imgg1 ">
+    <div class="colon1">
+      <div class="colum">
+        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg1">
+        <div class="colon2">
+          <div class="colum">
+            <img src="img/3d-galerie-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow imgg2">
+          </div>
+          <div class="colum">
+            <img src="img/3d-galerie-3.png" onclick="openModal();currentSlide(3)" class="hover-shadow imgg3">
+          </div>
+        </div>
       </div>
-      
-      <div class="deuximages">
-
-        <div class="emplacement2 mx-auto text-center">
-      <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" onclick="openModal();currentSlide(2)" 
-      class="hover-shadow imgg2">
+    </div>
+    <div class="colon1">
+      <div class="colum">
+        <img src="img/3d-galerie-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow imgg4">
       </div>
-
-      <div class="emplacement3 mx-auto text-center">
-      <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" onclick="openModal();currentSlide(3)" 
-      class="hover-shadow imgg3">
-      </div>
-  
-      </div>
-      
-      <div class="emplacement4 mx-auto text-center mb-5">
-      <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" onclick="openModal();currentSlide(4)" class="img-fluid hover-shadow imgg4">
-      </div>
+    </div>
 
     <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
-      
-<!-- _____________________________VISUEL DU ZOOM----------------------------------------------------------------- -->
+      <div class="modal-content">
+
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" class="mySlides1" src="<?=$emplacement ?>" value="<?='1' ?>">
-          </div>
-       
+          <img src="img/3d-galerie-1.png" class="mySlides1">
+        </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" class="mySlides2">
+          <img src="img/3d-galerie-2.png" class="mySlides2">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" class="mySlides3">
+          <img src="img/3d-galerie-3.png" class="mySlides3">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" class="mySlides4">
+          <img src="img/3d-galerie-1.png" class="mySlides4">
         </div>
 
         <!-- Next/previous controls -->
@@ -745,22 +510,19 @@
         <!-- Thumbnail image controls -->
         <div class="row">
           <div class="column">
-        <!-- _____________________________VISUEL DES IMAGES EN BAS QUAND ON ZOOM----------------------------------------------------------------- --> 
-          <img class="demo1" src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg " 
-          onclick="currentSlide(1)">
-        
-          </div>
-          
-          <div class="column">
-            <img class="demo2" src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" id="2" onclick="currentSlide(2)" alt="Rat">
+            <img class="demo1" src="img/3d-galerie-1.png" onclick="currentSlide(1)" alt="Bonhomme">
           </div>
 
           <div class="column">
-            <img class="demo3" src="https://laboutiquedemei.fr/img/cms/Photographie/chute%20eau%20vertical%20per1%20450.jpg" id="3" onclick="currentSlide(3)" alt="Spray">
+            <img class="demo2" src="img/3d-galerie-2.png" onclick="currentSlide(2)" alt="Rat">
           </div>
 
           <div class="column">
-            <img class="demo4" src="https://ironcodestudio.com/wp-content/uploads/2015/03/css-remove-horizontal-scrollbar.jpg" id="4" onclick="currentSlide(4)" alt="Savon">
+            <img class="demo3" src="img/3d-galerie-3.png" onclick="currentSlide(3)" alt="Spray">
+          </div>
+
+          <div class="column">
+            <img class="demo4" src="img/3d-galerie-1.png" onclick="currentSlide(4)" alt="Savon">
           </div>
         </div>
       </div>
@@ -813,7 +575,6 @@
     captionText.innerHTML = dots[slideIndex - 1].alt;
   }
 </script>
-
 <?php 
     require_once("include/footerj.php");
 ?>

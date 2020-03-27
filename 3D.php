@@ -23,17 +23,18 @@
             justify-content: center;
         }
 
+        .text-center1{
+            text-align: justify!important;
+            font-size: 1.1em;
+            font-family: 'Red Hat Display', serif;
+            width: 75%;
+            margin: 0 auto 5vh;
+        }
+
         .imgligne2 {
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-
-        p {
-            font-size: 1.3em;
-            font-family: 'Red Hat Display', serif;
-            width: 75%;
-            margin: 0 auto 5vh;
         }
 
         .titre2,
@@ -54,6 +55,14 @@
                 width: 100%;
                 font-size: 2.5rem;
                 font-family: 'Red Hat Display', serif;
+            }
+
+            .text-center1{
+                text-align: justify!important;
+                font-size: 1.2em;
+                font-family: 'Red Hat Display', serif;
+                width: 80%;
+                margin: 0 auto 5vh;
             }
 
             .bg {
@@ -80,6 +89,14 @@
                 font-weight: 800;
             }
 
+            .text-center1{
+                text-align: center!important;
+                font-size: 1.2em;
+                font-family: 'Red Hat Display', serif;
+                width: 80%;
+                margin: 0 auto 5vh;
+            }
+
             .bg {
                 width: 100%;
                 padding-bottom: 2vh;
@@ -87,13 +104,6 @@
 
             .imgligne2 {
                 width: 100%;
-            }
-
-            p {
-                font-size: 1.3em;
-                font-family: 'Red Hat Display', serif;
-                width: 80%;
-                margin: 0 auto 5vh;
             }
         }
 
@@ -121,15 +131,16 @@
                 width: 100%;
             }
 
-            .imgligne2 {
-                width: 100%;
+            .text-center1{
+                text-align: center!important;
+                font-size: 1.2em;
+                font-family: 'Red Hat Display', serif;
+                width: 90%;
+                margin: 0 auto 5vh;
             }
 
-            p {
-                font-size: 0.8em;
-                font-family: 'Red Hat Display', serif;
-                width: 98%;
-                margin: 0 auto 5vh;
+            .imgligne2 {
+                width: 100%;
             }
         }
     </style>
@@ -141,7 +152,7 @@
     </div>
     <div class="bg">
         <h1 class="titr1">3D</h1>
-        <p class="text-justify"> 
+        <p class="text-center1"> 
             Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
@@ -152,7 +163,7 @@
             In excepturi debitis doloremque? Eos molestiae, ex natus enim iure quod fuga perspiciatis
             mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
         </p>
-        <p class="text-justify">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -171,7 +182,7 @@
         </div>
 
         <h2 class="titr1">3D</h2>
-        <p class="text2 text-justify"> 
+        <p class="text2 text-center1"> 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -182,7 +193,7 @@
             mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
         </p>
 
-        <p class="text2 text-justify">
+        <p class="text2 text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -198,7 +209,7 @@
         <img class="imgligne3 img-fluid" src="img/produitsboutiquemaq.png" width="100%" alt="">
 
         <h2 class="titr1">3D</h2>
-        <p class="text-justify">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero
@@ -209,7 +220,7 @@
             fuga perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio.
         </p>
 
-        <p class="text-justify">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati
             repudiandae illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque
             suscipit nobis quae! Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero

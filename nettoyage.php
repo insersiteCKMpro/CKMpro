@@ -30,10 +30,14 @@
         }
 
         p {
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-family: 'Red Hat Display', serif;
             width: 75%;
             margin: 0 auto 5vh;
+        }
+
+        .text-center1{
+            text-align: justify!important;
         }
 
         .titre2,
@@ -54,6 +58,10 @@
                 width: 100%;
                 font-size: 2.5rem;
                 font-family: 'Red Hat Display', serif;
+            }
+
+            .text-center1{
+                text-align: justify!important;
             }
 
             .bg {
@@ -85,12 +93,16 @@
                 padding-bottom: 2vh;
             }
 
+            .text-center1{
+                text-align: center!important;
+            }
+
             .imgligne2 {
                 width: 100%;
             }
 
             p {
-                font-size: 1.3em;
+                font-size: 1.2em;
                 font-family: 'Red Hat Display', serif;
                 width: 80%;
                 margin: 0 auto 5vh;
@@ -116,6 +128,10 @@
                 font-family: 'Red Hat Display', serif;
             }
 
+            .text-center1{
+                text-align: center!important;
+            }
+
             .bg {
                 width: 100%;
                 padding-bottom: 2vh;
@@ -126,9 +142,9 @@
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1.2em;
                 font-family: 'Red Hat Display', serif;
-                width: 98%;
+                width: 90%;
                 margin: 0 auto 5vh;
             }
         }
@@ -141,7 +157,7 @@
     </div>
     <div class="bg">
         <h1 class="titr1">Nettoyage</h1><br>
-        <p class="text-justify">
+        <p class="text-center1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -151,7 +167,7 @@
             perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
 
-        <p class="text-justify"> Lorem ipsum dolor sit amet
+        <p class="text-center1"> Lorem ipsum dolor sit amet
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -168,7 +184,7 @@
         </div>
 
         <h2 class="titr1" id="debarras">Debarras</h2>
-        <p class="text2 text-justify">
+        <p class="text2 text-center1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
         illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
         Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -178,7 +194,7 @@
         perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
 
-        <p class="text2 text-justify">
+        <p class="text2 text-center1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
         illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
         Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -192,7 +208,7 @@
         <img class="imgligne3 img-fluid" src="img/produitsboutiquemaq.png" width="100%" alt="">
 
         <h2 class="titr1">Nettoyage</h2><br>
-        <p class="text-justify">
+        <p class="text-center1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 
@@ -202,7 +218,7 @@
             perspiciatis mollitia earum, saepe consequatur voluptatum delectus! Beatae et sit iusto odio
         </p>
 
-        <p class="text-justify">         
+        <p class="text-center1">         
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit repellat error obcaecati repudiandae
             illo? Soluta mollitia tempore, aspernatur, esse harum, vitae nostrum rem atque suscipit nobis quae! 
             Voluptate, eligendi. Accusantium quibusdam veritatis laudantium libero magnam officiis velit harum magni 

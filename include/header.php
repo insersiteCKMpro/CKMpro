@@ -18,6 +18,14 @@
       width: 100%
     }
 
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .fixed-top {
       display: flex;
       justify-content: flex-end;
@@ -29,12 +37,10 @@
     }
 
     .logo {
-      /*margin-top: 2.5em;*/
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 18vh;
     }
 
     /* LOGO TITRE STYLE */
@@ -106,6 +112,17 @@
     /* ------------------------RESPONSIVE-header-mobile--------------------------------- */
     @media screen and (max-width: 450px) {
 
+      .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .text-center{
+        margin: 0;
+      }
+
       /* ENTÊTE FIXE STYLE */
       .fixed-top {
         float: right !important;
@@ -131,9 +148,7 @@
         width: 90%;
         margin: 0 auto;
         display: flex;
-      }
-      .logo{
-        height: 25vh;
+        margin-top:10vh;
       }
 
       /* Bouton téléphone  */
@@ -186,19 +201,111 @@
       .fa-phone-alt:before {
         content: "\f879";
       }
-
-      .fabuleux {
-        background-image: url("img/boutique-bouton-mobile.png");
+      
+      .logoHome {
+        padding-bottom: 20%;
       }
 
     }
 
-    /* ----------------------------------------------------------*/
-    @media (min-width: 576px) {
-      .textMenu {
-        display: none;
-        font-family: 'Red Hat Display', serif;
+    @media screen and (max-height: 450px) {
+      .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
       }
+      .text-center{
+        margin: 0;
+      }
+
+      /* ENTÊTE FIXE STYLE */
+      .fixed-top {
+        float: right !important;
+        font-size: 1.2em;
+        font-family: 'Red Hat Display', serif;
+        display: none;
+      }
+
+      .logo{
+        height: 30vh !important;
+      }
+
+      /* ICONE TEL ENTÊTE FIXE STYLE */
+      #fas 
+      {
+        display: none;
+      }
+
+      /* NUMERO */
+      #num 
+      {
+        display: none;
+      }
+
+      /* LOGO STYLE */
+      .logoTitre {
+        width: 50%;
+        margin: 10vh auto 0;
+        display: flex;
+      }
+
+      /* Bouton téléphone  */
+      .boutonTel {
+        width: 13vh;
+        height: 13vh;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        right: 80px;
+        top: 1vh;
+      }
+
+      /* Bouton boutique  */
+      .boutonbtq {
+        width: 13vh;
+        height: 13vh;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        right: 10px;
+        top: 1vh;
+      }
+
+      #lienTel,
+      #lienBtq 
+      {
+        color: black;
+        text-decoration: none;
+        background-color: transparent;
+      }
+
+      #iconTel,
+      #iconBtq 
+      {
+        font-size: 1.5em;
+        display: block;
+      }
+
+      .fa-phone-alt:before {
+        content: "\f879";
+      }
+      
+      .logoHome {
+        padding-bottom: 20%;
+      }
+
     }
   </style>
 <body>
@@ -218,7 +325,7 @@
         <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
       </div>
       <div class="boutonbtq">
-        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodule.png" class="fabuleux img-fluid"
+        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodulle.png" class="img-fluid"
             id="iconBtq"></i></a>
       </div>
     </header>

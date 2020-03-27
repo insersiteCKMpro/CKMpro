@@ -4,14 +4,20 @@
 ?>
 
 <style>
-    .test {
-        height: 115vh;
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
+    .test {
+        margin-bottom: 3vh;
         display: flex;
     }
     .contac1 {
         text-align: center!important;
-
         margin: 0 2vh;
 
     }
@@ -22,22 +28,18 @@
     }
 
     .test2 {
-
-
         display: flex;
         width: 30%;
     }
 
    .titrec {
         width: 100%;
-        height: 8vh;
 
     }
 
     .num {
         margin: 0 7vh;
         width: 75%;
-        height: 10vh;
     }
 
     .traits1 {
@@ -58,9 +60,14 @@
         width: 45%;
     }
 
+    .form-check {
+        position: relative;
+        display: block;
+        padding-left: 0;
+    }
+
     .radbox {
         height: 15vh;
-        display: flex;
     }
 
     .labe {
@@ -131,7 +138,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: black;
+        background-color: #00a651;
         /* regler couleur de l'animation */
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
@@ -170,9 +177,6 @@
     /**********************************format pc responsive------------------------------------------- */
     @media screen and (min-width: 769px) and (max-width:2560px) {
         .test {
-
-            height: 125vh;
-
             display: flex;
         }
 
@@ -184,18 +188,16 @@
         .test2 {
             width: 27%;
             display: flex;
-            height: 118vh;
         }
 
         .titrec {
             width: 100%;
-            height: 40vh;
+            margin: 2vh 0;
         }
 
         .num {
-            margin: 0 7vh;
+            margin: 3vh 5vh;
             width: 75%;
-            height: 10vh;
         }
 
         .traits1 {
@@ -215,6 +217,7 @@
 
         .for {
             width: 45%;
+            margin: 2vh 0;
         }
 
         .radbox {
@@ -291,7 +294,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a651;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -358,11 +361,8 @@
         }
 
         .test {
-            height: 145vh;
             display: flex;
-            justify-content: center;
             flex-direction: column;
-
         }
 
         .titrre {
@@ -374,7 +374,6 @@
         .test2 {
             width: 62%;
             display: flex;
-            height: 17vh;
             margin: 2vh auto;
 
         }
@@ -382,7 +381,6 @@
         .num {
             margin: auto;
             width: 75%;
-            height: 10vh;
         }
 
         .traits1 {
@@ -395,6 +393,9 @@
             height: 0.5vh;
             align-items: center;
             display: flex;
+        }
+        .text-center {
+            margin: 0;
         }
 
         .titrec {
@@ -510,7 +511,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a651;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -556,20 +557,22 @@
         }
         
         .radbox {
-            height: 15vh;
-            display: flex;
+            height: 30vh;
         }
+        
         .test {
-            height: 145vh;
             display: flex;
-            justify-content: center;
             flex-direction: column;
+        }
+
+        .text-center {
+            text-align: center!important;
+            margin-bottom: 2vh;
         }
 
         .test2 {
             width: 100%;
             display: flex;
-            height: 17vh;
         }
 
         .titrec {
@@ -586,8 +589,9 @@
         }
 
         .traits2 {
-            width: 100%;
+            width: 85%;
             border-top: 1px solid #000;
+            margin: auto;
             height: 0.5vh;
             display: flex;
             align-items: center;
@@ -596,11 +600,11 @@
         .num {
             margin: auto;
             width: 75%;
-            height: 10vh;
         }
 
         .labe {
-            width: 25%;
+            width: 100%;
+            margin-bottom: 2vh;
         }
 
         .star {
@@ -610,7 +614,8 @@
         }
 
         .for {
-            width: 100%;
+            width: 90%;
+            margin: 5vh auto;
         }
 
         form {
@@ -641,7 +646,7 @@
         }
 
         .btn {
-            width: 50%;
+            width: 30%;
             margin: auto;
         }
 
@@ -672,7 +677,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: black;
+            background-color: #00a651;
             /* regler couleur de l'animation */
             -webkit-transform: scaleX(0);
             transform: scaleX(0);
@@ -730,7 +735,402 @@
             background-color: #00a651;
         }
     }
-    
+    @media (min-height: 801px) and (max-height: 820px){
+        .test {
+            display: flex;
+            flex-direction: column;
+        }
+        .radbox {
+            height: 22vh;
+        }
+    }
+
+    @media (max-height: 425px) {
+        p {
+            margin: auto;
+        }
+        
+        .radbox {
+            height: 40vh;
+        }
+
+        .put1 {
+            width: 33%;
+            height: 6vh;
+            margin-top: 7vh;
+        }
+
+        .test {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text-center {
+            text-align: center!important;
+            margin-bottom: 2vh;
+        }
+
+        .test2 {
+            width: 100%;
+            display: flex;
+        }
+
+        .titrec {
+            text-align: center;
+        }
+
+        .titrre {
+            text-align: center;
+            margin: 2vh;
+        }
+
+        .traits1 {
+            display: none;
+        }
+
+        .traits2 {
+            width: 85%;
+            border-top: 1px solid #000;
+            margin: auto;
+            height: 0.5vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .num {
+            margin: 5vh auto;
+            width: 75%;
+        }
+
+        .labe {
+            width: 25%;
+        }
+
+        .star {
+            display: initial;
+            width: 75%;
+            height: 15vh;
+        }
+
+        .for {
+            width: 90%;
+            margin: 8vh auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .checkio {
+            width: 100%;
+            height: 4vh;
+            display: flex;
+        }
+
+        .checkio1 {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+        }
+
+        .put {
+            width: 33.3%;
+            height: 2vh;
+        }
+
+        .put1 {
+            width: 33.3%;
+            height: 6vh;
+        }
+
+        .btn {
+            width: 30%;
+            margin: auto;
+        }
+
+        /* animation bouton */
+
+        .hvr-bounce-to-right {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: red;
+            position: relative;
+            -webkit-transition-property: color;
+            transition-property: color;
+            -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+
+        }
+
+        .hvr-bounce-to-right:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #00a651;
+            /* regler couleur de l'animation */
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-duration: 1.5s;
+            transition-duration: 1.5s;
+            /* regler vitesse animation */
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            background-color: none;
+        }
+
+        .hvr-bounce-to-right:hover,
+        .hvr-bounce-to-right:focus,
+        .hvr-bounce-to-right:active {
+            color: white;
+            /* changer couleur du text dans l'animation */
+            background: none;
+            /* changer couleur background en dessous de l'animation */
+
+        }
+
+        .hvr-bounce-to-right:hover:before,
+        .hvr-bounce-to-right:focus:before,
+        .hvr-bounce-to-right:active:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            background-color: none;
+        }
+
+        #customControlValidation1:checked~.custom-control-label::before 
+        {
+            color: #fff200;
+            border-color: #fff200;
+            background-color: #fff200;
+        }
+
+        #customControlValidation2:checked~.custom-control-label::before 
+        {
+            color: #00aeef;
+            border-color: #00aeef;
+            background-color: #00aeef;
+        }
+
+
+        #customControlValidation3:checked~.custom-control-label::before 
+        {
+            color: #00a651;
+            border-color: #00a651;
+            background-color: #00a651;
+        }
+    }
+
+    @media (min-height: 600px) and (max-height: 800px) {
+    p {
+        margin-top: 2vh;
+        margin-bottom: 1rem;
+    }
+
+    .radbox {
+        height: 25vh;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titrre {
+        text-align: center;
+
+        margin-top: 2vh;
+    }
+
+    .test2 {
+        width: 62%;
+        display: flex;
+        margin: 2vh auto 0 auto;
+
+    }
+
+    .num {
+        margin: 3vh auto;
+        width: 75%;
+    }
+
+    .traits1 {
+        display: none;
+    }
+
+    .traits2 {
+        width: 100%;
+        border-top: 1px solid #000;
+        height: 0.5vh;
+        align-items: center;
+        display: flex;
+    }
+    .text-center {
+        margin: 0;
+    }
+
+    .titrec {
+        text-align: center;
+    }
+
+    .traitori {
+        background-color: black;
+        height: 2px;
+    }
+    .for {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .espace {
+        margin-top: 5px;
+    }
+
+    .radbox {
+        height: 22vh;
+    }
+
+    .labe {
+        width: 25%;
+    }
+
+    .star {
+        display: initial;
+        width: 75%;
+        height: 15vh;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .checkio {
+        width: 100%;
+        height: 4vh;
+        display: flex;
+    }
+
+    .checkio1 {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+    }
+
+    #customControlValidation1:checked~.custom-control-label::before 
+    {
+        color: #fff200;
+        border-color: #fff200;
+        background-color: #fff200;
+    }
+
+    #customControlValidation2:checked~.custom-control-label::before 
+    {
+        color: #00aeef;
+        border-color: #00aeef;
+        background-color: #00aeef;
+    }
+
+    #customControlValidation3:checked~.custom-control-label::before 
+    {
+        color: #00a651;
+        border-color: #00a651;
+        background-color: #00a651;
+    }
+
+    .put {
+        width: 33.3%;
+        height: 2vh;
+    }
+
+    .put1 {
+        width: 33%;
+        height: 6vh;
+        margin-top: 1vh;
+    }
+
+    .btn {
+        margin: auto;
+        width: 40%;
+    }
+
+    /* animation bouton */
+
+    .hvr-bounce-to-right {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: red;
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0s;
+        transition-duration: 0s;
+
+    }
+
+    .hvr-bounce-to-right:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #00a651;
+        /* regler couleur de l'animation */
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 1.5s;
+        transition-duration: 1.5s;
+        /* regler vitesse animation */
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        background-color: none;
+    }
+
+    .hvr-bounce-to-right:hover,
+    .hvr-bounce-to-right:focus,
+    .hvr-bounce-to-right:active {
+        color: white;
+        /* changer couleur du text dans l'animation */
+        background: none;
+        /* changer couleur background en dessous de l'animation */
+
+    }
+
+    .hvr-bounce-to-right:hover:before,
+    .hvr-bounce-to-right:focus:before,
+    .hvr-bounce-to-right:active:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        background-color: none;
+    }
+}
 </style>
 
 </head>
@@ -873,7 +1273,7 @@
             $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
         
             // 7. MAIL A L'ADMINISTRATEUR
-            if(isset($_POST['mailform']))
+            if(isset($_POST['submit']))
             {
                 $header = "MINE-Version: 1.0\r\n";
                 $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
@@ -927,7 +1327,7 @@
     <div class="container-fluid">
 
         <main class="test">
-        <div class="test2">
+            <div class="test2">
                 <div class="titrec">
                     <h2 class="contac1">Contact</h2>
                     <div class="num">
@@ -940,8 +1340,7 @@
                 <div class="traits1"></div>
             </div>
             <div class="for">
-
-            <h2 class="text-center">Ecrivez-nous</h2>
+                <h2 class="text-center">Ecrivez-nous</h2>
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="exampleInputName1">Nom*</label>
@@ -1029,7 +1428,7 @@
 
                     </div>
                     <br>
-                    <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="mailform">Envoyer</button>
+                    <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="submit">Envoyer</button>
                 </form>
             </div>
         </main>
