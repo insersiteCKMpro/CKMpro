@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <title><?php echo $galerie->titre; ?></title>
 
 <?php $galerie->js(); ?>
@@ -11,31 +12,41 @@
 #images li img {
 	max-height:<?php echo $galerie->hmin; ?>px;
 }
+
 </style>
 
 </head>
 
-<body <?php $galerie->body(); ?> >
+<?php 
+    require_once("inc/headerr.php");
+?>
+
+
+<body>
 
 <div id="menu">
 	<ul>
-        <?php $galerie->dossier_ant("<li id='return'>","<img rel='nozoom' src='themes/black/up.png' />","</li>"); ?>
+        <?php $galerie->dossier_ant("<li id='return'>","<img rel='nozoom' src='themes/black/up.png' /><br>RETOUR","</li>"); ?>
 		<?php $galerie->dossiers("<li>", "</li>"); ?>
 	</ul>
 </div>
 
+
 <div id="content">
 
-	<ul id="images">
-		<?php $galerie->images("<li>", "</li>"); ?>
-	</ul>
+<?php 
+    require_once("inc/galerie3D.php");
+?>
+
     
 </div>
 
-
 <div id="footer">
-	Propuls&eacute; par <a target="_blank" href="http://photis.groupe-is.org">Photis</a>
+<?php
+
+?>
 </div>
+
 
 </body>
 </html>

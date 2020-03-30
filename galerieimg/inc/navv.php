@@ -14,7 +14,7 @@
 
   /* NAVBAR STYLE */
   .bg-dark {
-    background-color: white !important;
+    background-color: black !important;
   }
 
   .navbar-dark .navbar-toggler {
@@ -341,7 +341,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-transparent">
       <div class="burg">
-        <p class="textMenu">
+        <p class="textMenu text-white">
           <strong>Menu</strong>
         </p>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
@@ -353,28 +353,28 @@
       <div class="collapse navbar-collapse" id="navbarsExample03">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item" id="tailleLi">
-            <a class="nav-link" id="tailleA" href="index.php"><img src="admin/img/CKMHOMEFOOTER.png" alt="Logo Home"
+            <a class="nav-link" id="tailleA" href="index.php"><img src="../img/CKMHOMEFOOTER.png" alt="Logo Home"
                 class="logoHome img-fluid"></a>
           </li>
-          <hr class="mx-auto bg-dark text-center">
+          <hr class="mx-auto bg-dark text-center text-white">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle navMarg colorJ" href="#" id="dropdown03" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle navMarg colorJ text-white" href="#" id="dropdown03" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">3D</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdownDiv01">
-              <a class="dropdown-item dropdown-item01" href="3D.php">Dératisation</a>
-              <a class="dropdown-item dropdown-item01" href="3D.php#desinfection">Désinfection</a>
-              <a class="dropdown-item dropdown-item01" href="3D.php#desinsectisation">Désinsectisation</a>
+              <a class="dropdown-item dropdown-item01 text-white" href="3D.php">Dératisation</a>
+              <a class="dropdown-item dropdown-item01 text-white" href="3D.php#desinfection">Désinfection</a>
+              <a class="dropdown-item dropdown-item01 text-white" href="3D.php#desinsectisation">Désinsectisation</a>
             </div>
           </li>
 
 
-          <hr class="mx-auto bg-dark text-center">
+          <hr class="mx-auto bg-dark text-center text-white">
           <li class="nav-item">
             <a class="nav-link navMarg colorB" href="nettoyage.php">Nettoyage</a>
           </li>
 
 
-          <hr class="mx-auto bg-dark text-center">
+          <hr class="mx-auto bg-dark text-center text-white">
           <li class="nav-item">
             <a class="nav-link navMarg colorV" href="espacevert.php" tabindex="-1" aria-disabled="true">Espaces
               Verts</a>

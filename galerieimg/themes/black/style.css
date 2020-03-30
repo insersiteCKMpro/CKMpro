@@ -18,7 +18,7 @@ a {
 /* Menu */
 
 #menu {
-	width:90%;
+	width:100%;
 	min-height:50px;
 	margin:20px auto;
 }
@@ -68,31 +68,26 @@ a {
 	margin:0px;
 	padding:0px;
 	list-style:none;
+	background:white;
 }
 
 #images li {
 	margin:10px;
 	float:left;
+	background:white;
 }
 
 #images li img {
 	padding:2px;
-	background:#111;
+	background:white;
 	border:1px solid #333;
 }
 
 #images li #erreur {
 	padding:10px;
-	background:#333;
+	background:white;
 	border:1px solid #CCC;
 	font-weight:bold;
 }
 
 /* Pied de page */
-
-#footer {
-	width:100%;
-	padding:5px 0px;
-	float:left;
-	text-align:center;
-}
