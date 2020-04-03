@@ -1,3 +1,4 @@
+
       <style>
   .telep {
     display: none;
@@ -678,8 +679,7 @@
   <div class="container-fluid">
     
       <div class="emplacement1 mx-auto text-center mt-5">
-      <img src="<div src="<?php $galerie->images("<div class='emplacement1 border border-dark mx-auto text-center'>", "</div>"); ?>" onclick="openModal();currentSlide(1)">
-      </div>" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow img1">
+      <img src="" onclick="openModal();currentSlide(1)" class="img-fluid hover-shadow img1">
       </div>
       
       <div class="deuximages">

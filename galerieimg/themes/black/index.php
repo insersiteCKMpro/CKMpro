@@ -32,14 +32,15 @@
 </div>
 
 
-<div id="content">
 
+
+<div id="content">
+<?php $galerie->images("<li>", "</li>"); ?>
+</div>
 <?php 
-    require_once("inc/galerie3D.php");
+	require_once("inc/galerie3D.php");
 ?>
 
-    
-</div>
 
 <div id="footer">
 <?php
