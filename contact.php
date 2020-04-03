@@ -3,6 +3,53 @@
     require_once("include/nav.php");
 ?>
 
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</head>
+
+<script type="text/javascript">
+    $(function () {
+        $("#customControlValidation1").click(function () {
+            if ($(this).is(":checked")) {
+                $("#showInDropDown1").show();
+            } else {
+                $("#showInDropDown1").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#customControlValidation2").click(function () {
+            if ($(this).is(":checked")) {
+                $("#showInDropDown2").show();
+            } else {
+                $("#showInDropDown2").hide();
+            }
+        });
+    });
+
+    $(function () {
+        $("#customControlValidation3").click(function () {
+            if ($(this).is(":checked")) {
+                $("#showInDropDown3").show();
+            } else {
+                $("#showInDropDown3").hide();
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<body>
 <style>
     .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
         width: 100%;
@@ -172,6 +219,14 @@
         -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
         transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
         background-color: none;
+    }
+    .pdc
+    {
+        margin: 2vh;
+    }
+    .input-group
+    {
+        margin-top: 2vh;
     }
 
     /**********************************format pc responsive------------------------------------------- */
@@ -1133,10 +1188,7 @@
 }
 </style>
 
-</head>
-<body>
-    <?php
-
+<?php
     // 1. Contrôler en PHP que l'on receptionne bien toute les données saisies dans le formulaire.
     // echo '<pre>'; print_r($_POST); echo '</pre>';
 
@@ -1170,6 +1222,14 @@
         $mail = htmlspecialchars($_POST['email']);
         $number = htmlspecialchars($_POST['telephone']);
         $description = htmlspecialchars($_POST['description']);
+        if(isset($_POST['confidentialite']))
+        {
+            $confidentialite = $_POST['confidentialite'];
+        }
+        else
+        {
+            $confidentialite = '';
+        }
         $email = $_POST['email'];
 
         // 3. TEST INSERTION DANS LA BDD 
@@ -1225,7 +1285,7 @@
             }
         }
             // Téléphone
-        if(isset($_POST['telephone']))
+        if(!empty($_POST['telephone']))
         {
             if(!preg_match('#^0[6-7]{1}\d{8}+$#', $_POST['telephone']) || !is_numeric($_POST['telephone']) || iconv_strlen($_POST['telephone']) !== 10)
             {
@@ -1241,88 +1301,137 @@
         }
 
         // 5. SI L'INTERNAUTE A CORRECTEMENT REMPLI LE FORMULAIRE, ON AFFICHE LE MESSAGE DE VALIDATION
-        if(!isset($erreur))
+        if(!isset($erreurNom) || !isset($erreurPrenom) || !isset($erreurEmail) || !isset($erreurCategorie))
         {
-            // 6. PREPARATION ET INSERTION DANS LA BDD
-            $data = "INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description')";
+            if($confidentialite == "on")
+            {    
+
+                // 6. PREPARATION ET INSERTION DANS LA BDD
+                $data = "INSERT INTO contact (nom, prenom, email, telephone, categorie, question3D, questionNet, questionEV, description, confidentialite) VALUE ('$name', '$surname', '$mail', '$number', '$categorie', '$question3D', '$questionNet', '$questionEV', '$description', '$confidentialite')";
+                
+                $stmt = $bdd->prepare($data);
+                $stmt->bindParam(':nom', $names, PDO::PARAM_STR);
+                $stmt->bindParam(':prenom', $surname, PDO::PARAM_STR);
+                $stmt->bindParam(':email', $mail, PDO::PARAM_STR);
+                $stmt->bindParam(':telephone', $number, PDO::PARAM_INT);
+                $stmt->bindParam(':categorie', $categorie, PDO::PARAM_STR);
+                $stmt->bindParam(':question3D', $question3D, PDO::PARAM_STR);
+                $stmt->bindParam(':questionNet', $questionNet, PDO::PARAM_STR);
+                $stmt->bindParam(':questionEV', $questionEV, PDO::PARAM_STR);
+                $stmt->bindParam(':description', $description, PDO::PARAM_STR);
+                $stmt->bindParam(':confidentialite', $confidentialite, PDO::PARAM_STR);
+                $stmt->execute(array
+                (
+                    ':nom' => $name, 
+                    ':prenom' => $surname, 
+                    ':email' => $mail,
+                    ':telephone' => $number, 
+                    ':categorie' => $categorie, 
+                    ':question3D' => $question3D,
+                    ':questionNet' => $questionNet, 
+                    ':questionEV' => $questionEV, 
+                    ':description' => $description,
+                    ':confidentialite' => $confidentialite
+                ));
+
+                // MESSAGE DE VALIDATION
+                $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
             
-            $stmt = $bdd->prepare($data);
-            $stmt->bindParam(':nom', $names, PDO::PARAM_STR);
-            $stmt->bindParam(':prenom', $surname, PDO::PARAM_STR);
-            $stmt->bindParam(':email', $mail, PDO::PARAM_STR);
-            $stmt->bindParam(':telephone', $number, PDO::PARAM_INT);
-            $stmt->bindParam(':categorie', $categorie, PDO::PARAM_STR);
-            $stmt->bindParam(':question3D', $question3D, PDO::PARAM_STR);
-            $stmt->bindParam(':questionNet', $questionNet, PDO::PARAM_STR);
-            $stmt->bindParam(':questionEV', $questionEV, PDO::PARAM_STR);
-            $stmt->bindParam(':description', $description, PDO::PARAM_STR);
-            $stmt->execute(array
-            (
-                ':nom' => $name, 
-                ':prenom' => $surname, 
-                ':email' => $mail,
-                ':telephone' => $number, 
-                ':categorie' => $categorie, 
-                ':question3D' => $question3D,
-                ':questionNet' => $questionNet, 
-                ':questionEV' => $questionEV, 
-                ':description' => $description
-            ));
+                // 7. MAIL A L'ADMINISTRATEUR
+                if(isset($_POST['submit']))
+                {
+                    $header = "MINE-Version: 1.0\r\n";
+                    $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
+                    $header .= 'Content-Type:text/html; charset="utf-8"' . "\n";
+                    $header .= 'Content-Transfert-Encoding: 8bit';
 
-            // MESSAGE DE VALIDATION
-            $valid = '<p class="alert alert-success text-center col-md-6 mx-auto">Votre message à bien été envoyé, <br>nous vous recontacterons dans les plus brefs délais.<br> Merci de votre confiance. <br><br><a href="index.php"><button class="btn bg-info col-md-3 text-light">Page d\'accueil</button></a></p>';
-        
-            // 7. MAIL A L'ADMINISTRATEUR
-            if(isset($_POST['submit']))
+                    $message = '
+
+                            <div class="container-fluid">
+                                <table class="table table-striped table-dark">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Prenom :
+                                                <td>' . $_POST['prenom'] . '</td>
+                                            </th>
+                                            <th scope="row">Nom :
+                                                <td>' . $_POST['nom'] . '</td>
+                                            </th>
+                                            <th scope="row">Email :
+                                                <td>' . $_POST['email'] . '</td>
+                                            </th>
+                                            <th scope="row">Telephone :
+                                                <td>' . $_POST['telephone'] . '</td>
+                                            </th>
+                                            <th scope="row">Catégorie :
+                                                <td>' . $categorie . '</td>
+                                            </th>
+                                            <th scope="row">Question :
+                                                <td>' . $question3D . '</td>
+                                                <td>' . $questionNet . '</td>
+                                                <td>' . $questionEV . '</td>
+                                            </th>
+                                            <th scope="row">Description :
+                                                <td>' . $_POST['description'] . '</td>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        
+
+                    ';
+                    mail("usertest.sendmail1@gmail.com", "Salut test", $message, $header);
+                }
+            }
+            else
             {
-                $header = "MINE-Version: 1.0\r\n";
-                $header .= 'FROM: ' . $email . '<support@gmail.com>' . "\n";
-                $header .= 'Content-Type:text/html; charset="utf-8"' . "\n";
-                $header .= 'Content-Transfert-Encoding: 8bit';
-
-                $message = '
-
-                        <div class="container-fluid">
-                            <table class="table table-striped table-dark">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Prenom :
-                                            <td>' . $_POST['prenom'] . '</td>
-                                        </th>
-                                        <th scope="row">Nom :
-                                            <td>' . $_POST['nom'] . '</td>
-                                        </th>
-                                        <th scope="row">Email :
-                                            <td>' . $_POST['email'] . '</td>
-                                        </th>
-                                        <th scope="row">Telephone :
-                                            <td>' . $_POST['telephone'] . '</td>
-                                        </th>
-                                        <th scope="row">Catégorie :
-                                            <td>' . $categorie . '</td>
-                                        </th>
-                                        <th scope="row">Question :
-                                            <td>' . $question3D . '</td>
-                                            <td>' . $questionNet . '</td>
-                                            <td>' . $questionEV . '</td>
-                                        </th>
-                                        <th scope="row">Description :
-                                            <td>' . $_POST['description'] . '</td>
-                                        </th>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    
-
-                ';
-                mail("usertest.sendmail1@gmail.com", "Salut test", $message, $header);
+                echo '<p class="alert alert-danger text-center col-md-6 mx-auto">Votre message n\'a pas été envoyé, veuillez accepeté les politiques de confidentialité</p>';
             }
         }
+        else
+        {
+            echo '<p class="alert alert-danger text-center col-md-6 mx-auto">Votre message n\'a pas été envoyé, veuillez remplir tout les champs obligatoire</p>';
+        }
+    
         if(isset($valid)) echo $valid;
 
     }               
-    ?>
+?>
+
+<script type="text/javascript">
+        $(function () {
+            $("#customControlValidation1").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#showInDropDown1").show();
+                } else {
+                    $("#showInDropDown1").hide();
+                }
+            });
+        });
+
+        $(function () {
+            $("#customControlValidation2").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#showInDropDown2").show();
+                } else {
+                    $("#showInDropDown2").hide();
+                }
+            });
+        });
+
+        $(function () {
+            $("#customControlValidation3").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#showInDropDown3").show();
+                } else {
+                    $("#showInDropDown3").hide();
+                }
+            });
+        });
+</script>
+
+
 
     <div class="container-fluid">
 
@@ -1400,21 +1509,21 @@
                     <br>
 
                     <select class="form-control" style="display:none" id="showInDropDown1" name="question3D[]">3D
-                        <option></option>
+                        <option>3D</option>
                         <option value="question3D1">Question 3D 1</option>
                         <option value="question3D2">Question 3D 2</option>
                         <option value="question3D3">Question 3D 3</option>
                     </select>
                     <br>
                     <select class="form-control" style="display:none" id="showInDropDown2" name="questionNet[]">Nettoyage
-                        <option></option>
+                        <option>Nettoyage</option>
                         <option value="questionNettoyage1">Question Nettoyage 1</option>
                         <option value="questionNettoyage2">Question Nettoyage 2</option>
                         <option value="questionNettoyage3">Question Nettoyage 3</option>
                     </select>
                     <br>
                     <select class="form-control" style="display:none" id="showInDropDown3" name="questionEV[]">Espaces verts
-                        <option></option>
+                        <option>Espaces verts</option>
                         <option value="questionEspacesVerts1">Question Espaces Verts 1</option>
                         <option value="questionEspacesVerts2">Question Espaces Verts 2</option>
                         <option value="questionEspacesVerts3">Question Espaces Verts 3</option>
@@ -1422,18 +1531,27 @@
                     </select>
                     <br>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Description</label>
-
+                        <label for="exampleFormControlTextarea1">Message</label>
                         <textarea class="form-control" id="description" name="description" rows="5" placeholder="saisir votre description"></textarea>
-
                     </div>
+                    
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                            <input type="checkbox" name="confidentialite" id="confidentialite" aria-label="Checkbox for following text input">
+                            </div>
+                        </div>
+                        <p class="pdc">J'accepte les <a href="politiqueConfidentialite.php">politiques de confidentialité</a>.</p>
+                    </div>
+
                     <br>
                     <button type="submit" class="btn border-success hvr-bounce-to-right" value="mailform" name="submit">Envoyer</button>
                 </form>
             </div>
         </main>
         <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3">
+            </div>
             <script>
                 (function () {
                     var setting = {
@@ -1461,41 +1579,11 @@
                     to.parentNode.insertBefore(s, to);
                 })();
             </script><a href="https://1map.com/fr/map-embed?embed_id=156020">1 Map</a>
-            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-            <script type="text/javascript">
-                $(function () {
-                    $("#customControlValidation1").click(function () {
-                        if ($(this).is(":checked")) {
-                            $("#showInDropDown1").show();
-                        } else {
-                            $("#showInDropDown1").hide();
-                        }
-                    });
-                });
-
-                $(function () {
-                    $("#customControlValidation2").click(function () {
-                        if ($(this).is(":checked")) {
-                            $("#showInDropDown2").show();
-                        } else {
-                            $("#showInDropDown2").hide();
-                        }
-                    });
-                });
-
-                $(function () {
-                    $("#customControlValidation3").click(function () {
-                        if ($(this).is(":checked")) {
-                            $("#showInDropDown3").show();
-                        } else {
-                            $("#showInDropDown3").hide();
-                        }
-                    });
-                });
-            </script>
         </div>
-        
+      
 
-        <?php 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<?php 
 require_once("include/footer.php");
 ?>

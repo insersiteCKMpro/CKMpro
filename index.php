@@ -164,6 +164,7 @@
         margin: 5vh 0;
         display: flex;
         justify-content: space-around;
+        
     }
 
     .ecom {
@@ -194,11 +195,12 @@
     }
 
     .imgl {
-        width: 50%;
+        width: 100%;
     }
 
     .imgp {
-        width: 10%;
+        width: 100%;
+
     }
 
     .fivetoile {
@@ -330,6 +332,19 @@
             margin: 5vh 0;
             display: flex;
             justify-content: space-around;
+            width:  100%;
+           
+        }
+        .colonneG {
+            width: 100%;
+            display:flex;
+            justify-content: center;
+
+        }
+        .colonneD {
+            width: 100%;
+            display:flex;
+            justify-content: center;
         }
 
         .ecom {
@@ -360,11 +375,12 @@
         }
 
         .imgl {
-            width: 50%;
+            width: 80%;
         }
 
         .imgp {
-            width: 10%;
+           
+            width: 228px;
         }
 
         .fivetoile {
@@ -485,7 +501,7 @@
         }
 
         .imgl {
-            width: 50%;
+            width: 100%;
         }
 
         .imgp {
@@ -2179,13 +2195,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/debarrascarrousell.png" class="imgC img-fluid" alt="...">
+                        <img src="img/Homepage_img_1_carrousel.jpg" class="imgC img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/newimg2560x765.png" class="imgC img-fluid" alt="...">
+                        <img src="img/Taille_haie.jpg" class="imgC img-fluid" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/produitredim2560vw765vh.png" class="imgC img-fluid" alt="...">
+                        <img src="img/Net_img_6.jpg" class="imgC img-fluid" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -2230,7 +2246,7 @@
         <!--les activités de CKMpro-->
         <div class="sectionB">
             <div class="derat">
-                <img src="img/3Dmaq.png" class="img3 img-fluid" alt="">
+                <img src="img/Home_page_3D_img-V2.jpg" class="img3 img-fluid" alt="">
                 <h2><br>3D</h2>
                 <br>
                 <p class="text-justify pact">
@@ -2240,7 +2256,7 @@
                 </p>
             </div><br>
             <div class="nettoyage">
-                <img src="img/nettoyagemaq.png" class="img3 img-fluid" alt="">
+                <img src="img/Home_page_net_img.jpg" class="img3 img-fluid" alt="">
                 <h2><br>Nettoyage</h2>
                 <br>
                 <p class="text-justify pact">
@@ -2251,7 +2267,7 @@
                 </p>
             </div><br>
             <div class="espacevert">
-                <img src="img/espacevertmaq.png" class="img3 img-fluid" alt="">
+                <img src="img/Home_page_EV_img.jpg" class="img3 img-fluid" alt="">
                 <h2><br>Espaces verts</h2>
                 <br>
                 <p class="text-justify pact">
@@ -2267,7 +2283,7 @@
         <!--les cibles de CKMpro-->
         <main class="mainh">
             <div class="pro">
-                <img src="img/professionnelmaq.png" class="imgM img-fluid" alt=""><br>
+                <img src="img/Home_page_pro.jpg" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Professionnel</h4>
                 <P class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -2306,7 +2322,7 @@
                 </div>
             </div>
             <div class="part">
-                <img src="img/particuliermaq.png" class="imgM img-fluid" alt=""><br>
+                <img src="img/Home_page_part.jpg" class="imgM img-fluid" alt=""><br>
                 <h4 class="text-center">Particulier</h4>
                 <P class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos exercitationem
@@ -2346,8 +2362,12 @@
         <h2 class="ecom">La Boutique CKM</h2>
         <!--ecommerce-->
         <div class="sectionecom">
+            <div class="colonneG">
             <img src="img/CKMPROLOGODEFBOUTIQUE.png" class="imgl img-fluid" alt="">
-            <img src="img/produitspray2.png" class="imgp img-fluid" alt="">
+            </div>
+            <div class="colonneD">
+            <img src="img/Homepage_img_digrain.png" class="imgp img-fluid" alt="">
+            </div>
         </div>
 
     </section>

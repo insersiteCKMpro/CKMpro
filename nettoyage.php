@@ -151,9 +151,9 @@
     </style>
 <div class="container-fluid">
     <div class="imgligne1">
-        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
-        <img class="img1 img-fluid" src="img/nettoyagemaq.png" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="img/Net_img_3.jpg" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="img/Net_img_1.jpg" width="33.3%" href="#">
+        <img class="img1 img-fluid" src="img/Net_img_2.jpg" width="33.3%" href="#">
     </div>
     <div class="bg">
         <h1 class="titr1">Nettoyage</h1><br>
@@ -179,8 +179,8 @@
     </div>
     <div class="bg" style="background-color: rgba(0, 174, 239, 0.5);">
         <div class="imgligne2">
-            <img class="img2 img-fluid" src="img/nettoyagemaq.png" width="50%" href="#">
-            <img class="img2 img-fluid" src="img/nettoyagemaq.png" width="50%" href="#">
+            <img class="img2 img-fluid" src="img/NET_img_4.jpg" width="50%" href="#">
+            <img class="img2 img-fluid" src="img/NET_img_5.jpg" width="50%" href="#">
         </div>
 
         <h2 class="titr1" id="debarras">Debarras</h2>
@@ -205,7 +205,7 @@
         </p>
     </div>
     <div class="bg">
-        <img class="imgligne3 img-fluid" src="img/produitsboutiquemaq.png" width="100%" alt="">
+        <img class="imgligne3 img-fluid" src="img/Net_img_6_Débarras.jpg" width="100%" alt="">
 
         <h2 class="titr1">Nettoyage</h2><br>
         <p class="text-center1">
