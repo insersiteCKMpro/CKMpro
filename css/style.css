@@ -13,6 +13,11 @@
 }
   /* nav */
 
+  /* mettre le contenu au milieu */
+  .navbar-collapse {
+      flex-grow: 0 !important;
+  }
+/* ------------------------------ */
   .HoverBleu:hover
   {
     background-color: rgba(0, 174, 239, 0.5);
