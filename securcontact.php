@@ -3,14 +3,14 @@
     require_once("include/nav.php");
     //require_once("include/contact.js"); a tester pour le moment appeler a la ligne 1196 src="../include/contact.js
 
-    // // Afficher les erreurs à l'écran
-    // ini_set('display_errors', 1);
-    // // Enregistrer les erreurs dans un fichier de log
-    // ini_set('log_errors', 1);
-    // // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
-    // ini_set('error_log', dirname(__file__) . 'log_error_php.txt');
-    // // Afficher les erreurs et les avertissements
-    // error_reporting(E_ALL);
+    // Afficher les erreurs à l'écran
+    ini_set('display_errors', 1);
+    // Enregistrer les erreurs dans un fichier de log
+    ini_set('log_errors', 1);
+    // Nom du fichier qui enregistre les logs (attention aux droits à l'écriture)
+    ini_set('error_log', dirname(__file__) . 'log_error_php.txt');
+    // Afficher les erreurs et les avertissements
+    error_reporting(E_ALL);
 ?>
 
 <style>
@@ -236,6 +236,7 @@
         form {
             display: flex;
             flex-direction: column;
+            margin-left: 12em;
         }
 
         .put {
@@ -332,11 +333,10 @@
             height: 15vh;
         }
 
-        #form {
+        form {
             display: flex;
             flex-direction: column;
-            width: 98%;
-            align-items:center;
+            width: 93%;
         }
 
         .put {
@@ -354,14 +354,7 @@
             margin-left: 5vh;
             width: 75%;
         }
-        /* case + pdc */
-        div.input-group-prepend-text {
-    display: flex;
-    align-items: baseline;
-    }
-    #confidentialite {
-        margin-right:1em;
-    }
+
     }
 
     /*-----------------------------responsive  mobile---------------------------------*/
@@ -434,6 +427,7 @@
             flex-direction: column;
             margin-left: 1em;
             margin-right: 1em;
+            width:80%;
         }
 
         .put {
@@ -627,7 +621,7 @@
         form {
             display: flex;
             flex-direction: column;
-            width: 50%;
+            width: 90%;
         }
 
         .put {
@@ -664,92 +658,80 @@ require_once("include/init.php");
 </head>
 
 <?php
-//Base de donnée
-if(!empty($_POST["send"])) {
-    $nom = $_POST["nom"];
-    $prenom = $_POST["prenom"];
-	$email = $_POST["email"];
-    $telephone = $_POST["telephone"];
-    $message = $_POST["message"];
 
-    $connexion = mysqli_connect("localhost", "root", "", "ckmpro") or die("Erreur de connexion: " . mysqli_error($connexion)); 
-    
-    $result = mysqli_query($connexion, "INSERT INTO contact (nom, prenom, email, telephone,  message) VALUES ('" . $nom. "', '" . $prenom. "','" . $email. "','" . $telephone. "','" . $message. "')");
-    
-	if($result){
-		$db_msg = "Vos informations de contact sont enregistrées avec succès.";
-		$type_db_msg = "success";
-	}else{
-		$db_msg = "Erreur lors de la tentative d'enregistrement de contact.";
-		$type_db_msg = "error";
-    }
-    
-    }
-    // envoie d'un mail 
-    if(isset($_POST['send'])) {
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "test-mail@insersite-prezweb.fr";
-    $email_subject = "Demande d'informations CKMPRO";
- 
-    function died($error) {
-        // your error code can go here
-        echo 
-        "Nous sommes désolés, mais des erreurs ont été détectées dans le" . " formulaire que vous avez envoyé. ";
-        echo "Ces erreurs apparaissent ci-dessous.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Merci de corriger ces erreurs.<br /><br />";
-        die();
-    }
- 
- 
-    // si la validation des données attendues existe
-     if(!isset($_POST['nom']) ||
-        !isset($_POST['prenom']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
-        !isset($_POST['message'])) {
-        died(
-    'Nous sommes désolés, mais le formulaire que vous avez soumis semble poser' . ' problème.');
-    }
- 
-    $nom = $_POST['nom']; // required
-    $prenom = $_POST['prenom']; // required
-    $email = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $message = $_POST['message']; // required
- 
-    $error_message = "";
-    $telephone_exp = '"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"';
+if($_POST) 
+{
 
-    if(empty($_POST['nom']))
+    // insertion bdd 
+    if(!empty($_POST["send"])) {
+        $nom = $_POST["nom"];
+        $prenom = $_POST["prenom"];
+        $email = $_POST["email"];
+        $telephone = $_POST["telephone"];
+        $message = $_POST["message"];
+        // $type_db_msg = "success";
+
+
+        //Connexion a la Base de donnée
+        $connexion = mysqli_connect("localhost", "root", "", "ckmpro") or die("Erreur de connexion: " . mysqli_error($connexion)); 
+
+        $result = mysqli_query($connexion, "INSERT INTO contact (nom, prenom, email, telephone,  message) VALUES ('" . $nom. "', '" . $prenom. "','" . $email. "','" . $telephone. "','" . $message. "')");
+    
+        if($result)
+        {
+            $db_msg = "Vos informations de contact sont enregistrées avec succès.";
+            $type_db_msg = "success";
+        }else{
+            $db_msg = "Erreur lors de la tentative d'enregistrement de contact.";
+            $type_db_msg = "error";
+        }
+    } 
+
+
+  
+
+    extract($_POST);
+
+    // . EMPÊCHER LES FAILLES XSS
+    $nom = htmlspecialchars($_POST["nom"]);
+    $prenom = htmlspecialchars($_POST["prenom"]);
+	$email = htmlspecialchars($_POST["email"]);
+    $telephone = htmlspecialchars($_POST["telephone"]);
+    $message = htmlspecialchars($_POST["message"]);
+    // $email_msg = $_POST['send'];
+
+    //  . TRAITEMENT DES ERREURS
+    // Nom    "/^[A-Za-z0-9 .'-]+$/"; Prend les caractères alphanumériques + le point et le tiret 6
+    if(empty($_POST['nom'])) 
     {
         $erreurNom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
-        $erreur = true;
+        $erreur = true;  
     }
     else
     {
-        if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['nom']))
+        if(!preg_replace("#^[a-zA-Z]+$#", '', $_POST['nom']))
         {
-            $erreurNomCaractere = "<p class='text-danger font-italic'>* Caractères autorisés : [a-z et A-Z] (entre 2 et 20 caractères)</p>";
-            $erreur = true;
+            $erreurNomCaractere = "<p class='text-danger font-italic'>* Caractères non autorisés </p>" ;
+            $erreur = true; 
         }
     }
-        // Prénom
-    if(empty($_POST['prenom']))
+    
+
+    // Prenom
+    if(empty($_POST['prenom'])) 
     {
         $erreurPrenom =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
-        $erreur = true;
+        $erreur = true;  
     }
     else
-    
     {
-        if(!preg_match('#^[a-zA-Z0-9._-]{2,20}+$#',$_POST['prenom']))
+        if(!preg_replace("~^[-’' ]+|[- ]+$| +(?=['’-])| \K +|-\K(?: +|-+)|’\K’+|'\K'+~uS", '', $_POST['prenom']))
         {
-            $erreurPrenomCaractere = "<p class='text-danger font-italic'>* Caractères autorisés : [a-z et A-Z]</p>";
-            $erreur = true;
+            $erreurPrenomCaractere = "<p class='text-danger font-italic'>* Caractères non autorisés </p>" ;
+            $erreur = true; 
         }
     }
+
     // Email
     if(empty($_POST['email']))
     {
@@ -764,54 +746,68 @@ if(!empty($_POST["send"])) {
             $erreur = true;
         }
     }
-    // telephone
-    if(!preg_match($telephone_exp, $telephone)) {
 
-        $erreurTelephone = "<p class='text-danger font-italic'>* Format téléphone invalide </p>"; 
+    // Téléphone a tester preg_match('#(0|\+33)[1-9]( *[0-9]{2}){4}#'
+    if(isset($_POST['telephone']))
+    {
+        if(!preg_match('#(0|\+33)[1-9]( *[0-9]{2}){4}#', $_POST['telephone']) || !is_numeric($_POST['telephone']) || iconv_strlen($_POST['telephone']) !== 10)
+        {
+            $erreurTelephone = '<p class="text-danger font-italic">* Le numero de téléphone n\'est pas correct </p>';
+            $erreur = true;
+        }
     }
-    // // Téléphone
-    // if(isset($_POST['telephone']))
+
+    // // Message   ('#^0[0-9]{1}\d{8}+$#'
+    // if(empty($_POST['message'])) 
     // {
-    //     if(!preg_match('#^0[6-7]{1}\d{8}+$#', $_POST['telephone']) || !is_numeric($_POST['telephone']) || iconv_strlen($_POST['telephone']) !== 10)
+    //     $erreurmessage =  "<p class='text-danger font-italic'>* Champs obligatoire </p>";
+    //     $erreur = true;  
+    // }
+    // else
+    // {
+    //     if(!preg_match("~^[-’' ]+|[- ]+$| +(?=['’-])| \K +|-\K(?: +|-+)|’\K’+|'\K'+~uS", '', $_POST['message']))
     //     {
-    //         $erreurTelephone = '<p class="text-danger font-italic">* Le numero de téléphone n\'est pas correct</p>';
-    //         $erreur = true;
+    //         $erreurMessageCaractere = "<p class='text-danger font-italic'>* Caractères non autorisés </p>" ;
+    //         $erreur = true; 
     //     }
     // }
 
-    // if (preg_match('~[#[{}\];]~',$_POST['prenom'])) {
-    //     $erreurCaractere = "Caractères spéciaux interdit !"
-    //     $erreur = true;
-    // }
-    // // texte invalide
+    // envoie d'un mail 
+    if(!isset($erreur)) {
 
-   
-    if(strlen($error_message) > 0) {
-      died($error_message);
-    }
+    // editer deux lignes pour : le mail de reception  et le sujet par defaut du mail 
+    $email_to = "test-mail@insersite-prezweb.fr";
+    $email_subject = "Demande d'informations CKMPRO";
+
+    // message de validation d'envoie mail
+    $valid = '<p class="bg-success text-white text-center mx-auto"> Merci de nous avoir contacté, nous reviendrons vers vous dans les plus brefs délais</p>' ;
+
+    $nom = $_POST['nom']; // required
+    $prenom = $_POST['prenom']; // required
+    $email = $_POST['email']; // required
+    $telephone = $_POST['telephone']; // not required
+    $message = $_POST['message']; // required
  
-    $email_message = "Détail de la demande en cours : \n\n";
+    $error_message = "";
+
+    $email_message = "Détail.\n\n";
     $email_message .= "Nom: ".$nom."\n";
     $email_message .= "Prenom: ".$prenom."\n";
     $email_message .= "Email: ".$email."\n";
     $email_message .= "Telephone: ".$telephone."\n";
     $email_message .= "Message: ".$message."\n";
  
-    // create email headers
+    // creation de l'email administrateur
     $headers = 'From: '.$email."\r\n".
     'Reply-To: '.$email."\r\n" .
     'X-Mailer: PHP/' . phpversion();
     mail($email_to, $email_subject, $email_message, $headers);
 
-    ?>
+    
 
-<!-- mettez ici votre propre message de succès en html -->
-
-<p class="bg-success text-white text-center mx-auto">Merci de nous avoir contacté. Nous vous contacterons très bientôt !
-</p>
-
-<?php
-    } 
+ }
+ if(isset($valid)) echo $valid;
+} 
 ?>
 
 
@@ -830,7 +826,6 @@ if(!empty($_POST["send"])) {
             <div class="traits1"></div>
         </div>
 
-
         <!--REQUEST_URI a essayer a la place'PHP_SELF'-->
         <form id="form" enctype="multipart/form-data" method="post" name="contact_form"
             action="<?php echo $_SERVER['REQUEST_URI']; ?>">
@@ -839,33 +834,38 @@ if(!empty($_POST["send"])) {
 
             <div class="form">
                 <label for="Nom">Nom*</label>
-                <input type="text" id="nom" name="nom" placeholder="Nom" class="form-control" required>
+                <input type="text" id="nom" name="nom" placeholder="Nom" class="form-control"required>
+                <?php if(isset($erreurNom)) echo $erreurNom; // Erreur nom ?>
+                <?php if(isset($erreurNomCaractere)) echo $erreurNomCaractere; // Erreur nom Caractère ?> 
             </div>
             <div class="form">
-                <label for="Prenom">Prenom*</label>
-                <input type="text" id="prenom" name="prenom" placeholder="Prenom" class="form-control" required>
+                <label for="Prenom">Prénom*</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom" class="form-control" required>
+                <?php if(isset($erreurPrenom)) echo $erreurPrenom; // Erreur prenom ?>
+                <?php if(isset($erreurPrenomCaractere)) echo $erreurPrenomCaractere; // Erreur prenom Caractère ?>
             </div>
             <div class="form">
                 <label for="Email">Email*<span id="info" class="info"></span></label>
-                <input type="text" id="email" name="email" placeholder="Email" class="form-control" value="<?php if 
-(isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>" required>
+                <input type="text" id="email" name="email" placeholder="Email" class="form-control"required >
+                <?php if(isset($erreurEmail)) echo $erreurEmail; // Erreur email ?>
+                <?php if(isset($erreurEmailCaractere)) echo $erreurEmailCaractere; // Erreur email Caractère ?> 
             </div>
             <div class="form">
-                <label for="Telephone">Telephone<span id="info" class="info"></span></label>
-                <input type="phone" id="telephone" name="telephone" placeholder="Telephone" class="form-control" value="<?php if(isset($_POST['telephone'])) echo htmlspecialchars ($_POST['telephone']);?>">
+                <label for="Telephone">Téléphone<span id="info" class="info"></span></label>
+                <input type="phone" id="telephone" name="telephone" placeholder="Téléphone" class="form-control"> 
+                <?php if(isset($erreurTelephone)) echo $erreurTelephone; // Erreur téléphone ?>
             </div>
 
             <div class="form" style="padding-bottom: 1.5em;">
                 <label for="Email">Votre message :<span id="info" class="info"></span></label>
-                <textarea id="message" name="message" class="form-control" placeholder="Message..." row="5"><?php if (isset($_POST[
-'message'])) echo htmlspecialchars($_POST['message']);?></textarea>
+                <textarea id="message" name="message" class="form-control" placeholder="Message..." row="5"></textarea>
             </div>
 
             <div class="input-group-prepend-text">
                 <input type="checkbox" name="confidentialite" id="confidentialite"
                     style="margin-top: 0.4em; margin-right: 0.2em;" aria-label="Checkbox for following text input"
                     value="" required>
-                <p>J'accepte les <a href="politiqueConfidentialite.php">politiques de confidentialité</a>.</p>
+                <p>J'accepte les <a href="politiqueConfidentialite.php">Politiques de confidentialité</a>.</p>
             </div>
 
             <input type="submit" name="send" id="submit" value="Envoyer le message" />
@@ -881,7 +881,6 @@ if(!empty($_POST["send"])) {
 
         </form>
     </main>
-
 </div>
 
 

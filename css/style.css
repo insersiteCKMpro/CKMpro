@@ -1,16 +1,162 @@
-<!-- <style>
-    header,
-    nav,
-    section {
+/* HEADER */
+.headline {
+  z-index: 1;
+  background-color: #ffffff;
+  position: relative;
+}
+.col-md-6{
+    float:none !important;
+}
+.logo
+{
+    width: 100%;
+}
+  /* nav */
+
+  .HoverBleu:hover
+  {
+    background-color: rgba(0, 174, 239, 0.5);
+    color:black;
+    text-decoration:none;
+  }
+
+
+  .HoverVert:hover
+  {
+    background-color: rgba(0, 166, 81, 0.5);
+    color:black;
+    text-decoration:none;
+  }
+
+.h4{
+    color:black;
+    text-decoration:none;
+}
+
+  .HoverJaune:hover
+  {
+    background-color: rgba(255, 242, 0, 0.5);
+    color:black;
+    text-decoration:none;
+  }
+.LinkDecorationNone , .LinkDecorationNone:hover
+{
+  text-decoration:none;
+  color:black;
+}
+
+/* --------------------------v A GARDER v-------------------------------- */
+.BackgroundNav{
+    background-color: #ffffffb8;
+}
+    .Background-Bleu
+    {
+      background-color: rgba(0, 174, 239, 0.5);
+    }
+    .Background-Vert
+    {
+      background-color: rgba(0, 166, 81, 0.5);
+    }
+    .Background-Jaune
+    {
+      background-color: rgba(255, 242, 0, 0.5);
+    }
+    /* box de même taille */
+    .align-box {
+      min-height: 10em !important;
+  }
+  /* image des com */
+  .img-circle {
+    border-radius: 50%;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5);
+    position:relative;
+    z-index: 5;
+    transition: 1s;
+  }
+
+
+  
+
+
+  /* test pour la partie galerie */
+  .gallery-title
+  {
+      font-size: 2em;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 70px;
+      transition: 1s;
+  }
+  .gallery-title:after {
+      content: "";
+      position: absolute;
+      width: 7.5%;
+      left: 46.5%;
+      height: 45px;
+      border-bottom: 1px solid #5e5e5e;
+      transition: 1s;
+  }
+  .filter-button
+  {
+      font-size: 18px;
+      border: 1px solid #42B32F;
+      border-radius: 5px;
+      text-align: center;
+      margin-bottom: 30px;
+      transition: 1s;
+  
+  }
+  .filter-button:hover
+  {
+      font-size: 18px;
+      border: 1px solid #42B32F;
+      border-radius: 5px;
+      text-align: center;
+  
+  }
+  .btn-default:active .filter-button:active
+  {
+      transition: 5s;
+  }
+  
+  .port-image
+  {
+      width: 100%;
+  }
+
+      /* ------------------------------------------responsive tablette pour les h1 ----------------------------------------------------------- */
+      @media screen and (max-width: 768px) {
+        .h1 , h1 {
+            font-size: 1.5rem;
+        }
+
+        .footerhaut,
+        .footerbas {
+            font-size: 0.95em;
+            font-family: 'Red Hat Display', serif;
+        }
+    }
+  
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+/* CSS FOOTER */
+
+    header,nav,section {
         display: contents;
     }
 
     footer {
-        background-color: white;
+        /* background-color: white; */
         border-top: 1px solid black;
         font-size: 0.95em;
         font-family: 'Red Hat Display', serif;
+        
     }
+    /* CSS COULEUR FOOTER */
 
     .footerhaut {
         display: flex;
@@ -153,59 +299,7 @@
             font-size: 0.95em;
             font-family: 'Red Hat Display', serif;
         }
+        
+
+
     }
-</style> -->
-<footer>
-    <div class="ensemblefooter">
-        <div class="footerhaut text-center">
-            <div class="colonne1 text-center">
-
-                <a href="index.php"></a><img class="flogo img-fluid" src="img/CKMHOMEFOOTER.png" width="10%">
-                <a class="ftext1" href="3D.php">3D</a>
-                <a class="ftext1" href="nettoyage.php">Nettoyage</a>
-                <a class="ftext1" href="espacevert.php">Espace Verts</a>
-            </div>
-
-            <div class="colonne2 text-center">
-                <a class="ftext2" href="erreur404.php">La Boutique</a><br>
-                <a class="ftext2" href="contact.php">Contact</a><br>
-                <a class="ftext2" href="mentionLegal.php">Mention Légales</a><br>
-                <a class="ftext2" href="politiqueConfidentialite.php">Politique de Confidentialité</a><br>
-                <a class="ftext2" href="faq.php">FAQ</a><br>
-            </div>
-
-            <div class="colonne3 text-center">
-                <div class="snap">
-                    <a href="http://www.snapchat.com">
-                        <img class="insta img-fluid" src="img/ckmsnapchatyellow.png" alt="" width="50%">
-                    </a>
-                </div>
-                <div class="snap">
-                    <a href="http://www.facebook.com">
-                        <img class="insta img-fluid" src="img/ckmfbblue.png" alt="" width="50%">
-                    </a>
-                </div>
-                <div class="snap">
-                    <a href="http://www.instagram.com">
-                        <img class="insta img-fluid" src="img/ckminstagramgreen.png" alt="" width="50%"></a>
-                </div>
-            </div>
-        </div>
-        <div class="footerbas">
-            <div id="copyright" class="mt-5" role="contentinfo">Copyright 2020 Insersite</div>
-        </div>
-    </div>
-</footer>
-</body>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-</script>
-
-</html>

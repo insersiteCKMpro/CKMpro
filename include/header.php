@@ -1,332 +1,54 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="fr">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+      <!-- Custom styles for this template -->
+      <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  
+<link rel="stylesheet" href="js/galerie.js">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+
+
+
+
+
+
+ 
   <title>CKMpro</title>
 
-  <style>
-    /* ------------------------Css source-header------------------------------------- */
-    @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
-    body{
-      width: 100%
-    }
+</head>
 
-    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .fixed-top {
-      display: flex;
-      justify-content: flex-end;
-      font-size: 1.2em;
-      float: right !important;
-      background-color: white;
-      font-family: 'Red Hat Display', serif;
-
-    }
-
-    .logo {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* LOGO TITRE STYLE */
-    .logoTitre {
-      margin-top: 4vh;
-      width: 20vw;
-    }
-
-    .boutonTel {
-      display: none;
-    }
-
-    .boutonbtq {
-      display: none;
-    }
-
-    /* ------------------------RESPONSIVE-header-ecran pc--------------------------------- */
-    @media screen and (min-width: 769px) and (max-width: 2560px) {
-
-      /* ENTÊTE FIXE STYLE */
-      .fixed-top {
-        float: right !important;
-        font-size: 1.2em;
-        font-family: 'Red Hat Display', serif;
-      }
-
-      /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas 
-      {
-        display: none;
-      }
-
-      /* LOGO TITRE STYLE */
-      .logoTitre {
-        width: 63%;
-        display: flex;
-        margin: 3vh auto 0;
-      }
-    }
-
-    /* ------------------------RESPONSIVE-header-tablette--------------------------------- */
-    @media screen and (min-width: 451px) and (max-width: 768px) {
-
-      /* ENTÊTE FIXE STYLE */
-      .fixed-top {
-        float: right !important;
-        font-size: 1.2em;
-        font-family: 'Red Hat Display', serif;
-      }
-
-      /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas 
-      {
-        display: none;
-      }
-
-      /* LOGO STYLE */
-      .logoTitre {
-        width: 45%;
-        display: flex;
-        margin: auto;
-      }
-
-      .logo {
-        height: 14vh;
-      }
-    }
-
-    /* ------------------------RESPONSIVE-header-mobile--------------------------------- */
-    @media screen and (max-width: 450px) {
-
-      .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .text-center{
-        margin: 0;
-      }
-
-      /* ENTÊTE FIXE STYLE */
-      .fixed-top {
-        float: right !important;
-        font-size: 1.2em;
-        font-family: 'Red Hat Display', serif;
-        display: none;
-      }
-
-      /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas 
-      {
-        display: none;
-      }
-
-      /* NUMERO */
-      #num 
-      {
-        display: none;
-      }
-
-      /* LOGO STYLE */
-      .logoTitre {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        margin-top:10vh;
-      }
-
-      /* Bouton téléphone  */
-      .boutonTel {
-        width: 7vh;
-        height: 7vh;
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        right: 80px;
-        top: 1vh;
-      }
-
-      /* Bouton boutique  */
-      .boutonbtq {
-        width: 7vh;
-        height: 7vh;
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        right: 10px;
-        top: 1vh;
-      }
-
-      #lienTel,
-      #lienBtq 
-      {
-        color: black;
-        text-decoration: none;
-        background-color: transparent;
-      }
-
-      #iconTel,
-      #iconBtq 
-      {
-        font-size: 2em;
-        display: block;
-      }
-
-      .fa-phone-alt:before {
-        content: "\f879";
-      }
-      
-      .logoHome {
-        padding-bottom: 20%;
-      }
-
-    }
-
-    @media screen and (max-height: 450px) {
-      .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-        width: 100%;
-        padding-right: 0;
-        padding-left: 0;
-        margin-right: auto;
-        margin-left: auto;
-      }
-      .text-center{
-        margin: 0;
-      }
-
-      /* ENTÊTE FIXE STYLE */
-      .fixed-top {
-        float: right !important;
-        font-size: 1.2em;
-        font-family: 'Red Hat Display', serif;
-        display: none;
-      }
-
-      .logo{
-        height: 30vh !important;
-      }
-
-      /* ICONE TEL ENTÊTE FIXE STYLE */
-      #fas 
-      {
-        display: none;
-      }
-
-      /* NUMERO */
-      #num 
-      {
-        display: none;
-      }
-
-      /* LOGO STYLE */
-      .logoTitre {
-        width: 50%;
-        margin: 10vh auto 0;
-        display: flex;
-      }
-
-      /* Bouton téléphone  */
-      .boutonTel {
-        width: 13vh;
-        height: 13vh;
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        right: 80px;
-        top: 1vh;
-      }
-
-      /* Bouton boutique  */
-      .boutonbtq {
-        width: 13vh;
-        height: 13vh;
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        z-index: 1;
-        right: 10px;
-        top: 1vh;
-      }
-
-      #lienTel,
-      #lienBtq 
-      {
-        color: black;
-        text-decoration: none;
-        background-color: transparent;
-      }
-
-      #iconTel,
-      #iconBtq 
-      {
-        font-size: 1.5em;
-        display: block;
-      }
-
-      .fa-phone-alt:before {
-        content: "\f879";
-      }
-      
-      .logoHome {
-        padding-bottom: 20%;
-      }
-
-    }
-  </style>
 <body>
   <div class="container-fluid">
-    <header>
-      <div class="fixed-top">
-        <div id="num"><i class="fas fa-phone-alt" id="fass"></i>&nbsp;
-          0123456789 <i class="fas fa-phone-alt" id="fas"></i>&nbsp;
-        </div>
-        <div id="nom">&nbsp;
-          CKM Boutique </div><i class="baseline-speaker_phone"></i>
-      </div>
-      <div class="logo">
-        <a href="index.php"><img src="img/LOGOCKMPRODEF.png" alt="logo" class="logoTitre img-fluid"></a>
-      </div>
-      <div class="boutonTel">
-        <a href="tel:+33123456789" id="lienTel"><i class="fas fa-phone-alt" id="iconTel"></i></a>
-      </div>
-      <div class="boutonbtq">
-        <a href="../boutique/index.php" id="lienBtq"><img src="img/panier-ckm-mobilemodulle.png" class="img-fluid"
-            id="iconBtq"></i></a>
-      </div>
-    </header>
+  <header>
+
+<div class="col-md-12 d-flex">
+
+
+    <div class="fixed-top d-flex justify-content-left mx-auto ">
+
+        <img class="border border-secondary col-md-2 col-sm-5 col-xs-4 img-fluid ml-auto rounded d-none d-sm-block" src="img/certibiocide.png" alt="">
+    </div>
+
+    <div class="logo mx-auto text-center mb-5 mt-5">
+        <img class="col-md-6" src="img/LOGOCKMPRODEF.png" alt="">
+    </div>
+
+    
+</div>
+</header>
   </div>
